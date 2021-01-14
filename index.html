@@ -11,11 +11,11 @@
   </head>
   <!-- Body -->
   <body>
-    <section class="showcase">
+    <section class="showcase active">
       <!-- Header -->
       <header>
         <h2 class="logo">Dan Tech Media</h2>
-        <div class="toggle"></div>
+        <div class="toggle active"></div>
       </header>
       <!-- Video -->
       <video
@@ -44,5 +44,16 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
+
+    <script>
+      const menuToggle = document.querySelector('.toggle')
+      const showcase = document.querySelector('.showcase')
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active')
+        showcase.classList.toggle('active')
+      })
+    </script>
+
   </body>
 </html>
