@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Neo Tech';
+  src: url('/projects/slide-menu/fonts/neotech.otf') format('opentype');
+}
+
+nav {
+  background-color: #2e2e2e;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: 'Neo Tech';
+}
+
+.menu {
+  color: rgb(226, 226, 226);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 22px;
+}
