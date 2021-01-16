@@ -1,5 +1,5 @@
 :root {
-  --overlay-color: #00eeff;
+  --hover-color: #00eeff;
 }
 
 * {
@@ -19,6 +19,24 @@
   font-family: 'Perfect Dark';
   src: url('/media/fonts/PerfectDark.ttf') format('truetype');
 }
+/* Scrollbar Color --START */
+body {
+  overflow: overlay;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #00cbda;
+  border-radius: 8px;
+}
+/* Scrollbar Color --END */
 
 .showcase {
   position: absolute;
@@ -58,6 +76,9 @@
   font-size: 2em;
 }
 
+p {
+  max-width: 700px;
+}
 
 .toggle {
   position: relative;
@@ -71,6 +92,7 @@
   cursor: pointer;
 }
 
+/* --OLD Toggle.active X */
 .toggle.active {
   background: url('/media/icons/close.png');
   background-repeat: no-repeat;
@@ -182,8 +204,13 @@
 }
 
 .menu ul li a:hover {
-  color: var(--overlay-color);
+  color: var(--hover-color);
 }
+
+/* Dark Mode to Light Mode Filter */
+/* video {
+  filter: invert(1);
+} */
 
 @media (max-width: 798px) {
   .showcase,
