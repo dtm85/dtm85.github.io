@@ -1,26 +1,125 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  padding: 0;
+  margin: 0%;
   box-sizing: border-box;
+  font-family: 'Neo Tech', sans-serif;
 }
 
+/* Font START */
 @font-face {
   font-family: 'Neo Tech';
-  src: url('/projects/slide-menu/fonts/neotech.otf') format('opentype');
+  src: url('/media/fonts/neotech.otf') format('opentype');
+}
+/* Font END */
+
+/* Scrollbar Color --START */
+body {
+  overflow: overlay;
+}
+
+body::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #00cbda;
+  border-radius: 8px;
+}
+/* Scrollbar Color --END */
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(29, 29, 29, .6);
+  mix-blend-mode: overlay;
+}
+
+header {
+  z-index: 1000;
+  position: sticky;
+  width: 100%;
+  height: 7vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo-container,.nav-links {
+  display: flex;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  margin-left: 50px;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 2px;
 }
 
 nav {
-  background-color: #2e2e2e;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
-  font-family: 'Neo Tech';
+  flex: 2;
 }
 
-.menu {
-  color: rgb(226, 226, 226);
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: 22px;
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  color: #fefefe;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.text {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 15%;
+  margin-left: 10%;
+  color: #fff;
+  font-size: 3.5em;
+  line-height: 1em;
+}
+
+.social {
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  display: inline-block;
+  filter: invert(1);
+  margin-right: 15px;
+  transform: scale(0.25);
+  transition: 0.3s;
+}
+
+.social li a:hover {
+  transform: scale(0.25) translateY(-25px);
 }

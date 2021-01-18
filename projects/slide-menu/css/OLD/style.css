@@ -2,59 +2,126 @@
   --hover-color: #00eeff;
 }
 
+/* Universal Styles START */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Neo Tech', sans-serif;
 }
+/* Universal Styles END */
 
-
+/* Font START */
 @font-face {
   font-family: 'Neo Tech';
   src: url('/media/fonts/neotech.otf') format('opentype');
 }
+/* Font END */
+
+/* Nav Bar START */
+nav {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  min-height: 5vh;
+  z-index: 5000;
+  background-color: transparent;
+}
+/* Nav Bar END */
+
+/* DTM Logo START */
+.logo {
+  color: #e2e2e2;
+  letter-spacing: 4px;
+  font-family: 'Neo Tech';
+  font-size: 1.6em;
+  padding-left: 150px;
+}
+/* DTM Logo END */
+
+/* Nav Menu START */
+.nav-menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  padding-left: 500px;
+}
+/* Nav Menu END */
+
+/* Nav Menu Links START */
+.nav-menu a {
+  text-decoration: none;
+  color: #e2e2e2;
+}
+/* Nav Menu Links END */
+
+/* Nav Menu List Items START */
+.nav-menu li {
+  list-style: none;
+}
+/* Nav Menu List Items END */
 
 /* Scrollbar Color --START */
+
+/* Overflow START */
 body {
   overflow: overlay;
 }
+/* Overflow END */
 
+/* Scrollbar Color Change START */
+
+/* Scrollbar-Size START */
 body::-webkit-scrollbar {
   width: 0.6rem;
 }
+/* Scrollbar-Size END */
 
+/* Scrollbar-Track START */
 body::-webkit-scrollbar-track {
   background: transparent;
 }
+/* Scrollbar-Track END */
 
+/* Scrollbar-Thumb START */
 body::-webkit-scrollbar-thumb {
   background: #00cbda;
   border-radius: 8px;
 }
-/* Scrollbar Color --END */
+/* Scrollbar-Thumb END */
 
+/* Scrollbar Color Change --END */
+
+/* Showcase START */
 .showcase {
   position: absolute;
-  right: 0;
+  top: 0;
   width: 100%;
   min-height: 100vh;
   padding: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgb(18, 18, 18);
+  background: #111;
   color: #fff;
-  z-index: 2;
+  /* z-index: 2; */
   transition: 0.5s ease-in-out;
 }
+/* Showcase END */
 
-.showcase.active {
+/* Showcase.Active START */
+/* .showcase.active {
   right: 300px;
+} */
+/* Showcase.Active END */
 
-}
-
-.showcase header {
+/* Showcase Header START */
+/* .showcase header {
   position: absolute;
   top: 0;
   left: 0;
@@ -64,20 +131,17 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+} */
+/* Showcase Header END */
 
-.logo {
-  letter-spacing: 3px;
-  cursor: pointer;
-  font-family: 'Neo Tech';
-  font-size: 2em;
-}
-
+/* Paragraph Width START */
 p {
   max-width: 700px;
 }
+/* Paragraph Width END */
 
-.toggle {
+/* Menu Toggle START */
+/* .toggle {
   position: relative;
   width: 60px;
   height: 60px;
@@ -87,16 +151,19 @@ p {
   background-size: 30px;
   background-position: center;
   cursor: pointer;
-}
+} */
+/* Menu Toggle END */
 
-/* --OLD Toggle.active X */
-.toggle.active {
+/* OLD Menu Toggle.active X<--Close Button START */
+/* .toggle.active {
   background: url('/media/icons/close.png');
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
-}
+} */
+/* !~OLD~! Menu Toggle.active X<--Close Button END */
 
+/* Background Video START */
 .showcase video {
   position: absolute;
   top: 0;
@@ -105,27 +172,35 @@ p {
   height: 100%;
   object-fit: cover;
 }
+/* Background Video END */
 
+/* Video Overlay START */
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(29, 29, 29, .9);
+  background: #2e2e2e;
   mix-blend-mode: overlay;
 }
+/* Video Overlay END */
 
+/* Text Div START */
 .text {
   position: relative;
   z-index: 10;
 }
+/* Text Div END */
 
+/* H2 Text START */
 .text h2 {
   font-size: 5em;
   line-height: 1em;
 }
+/* H2 Text END */
 
+/* Text Link Styles START */
 .text a {
   border-radius: 4px;
   display: inline-block;
@@ -139,7 +214,9 @@ p {
   letter-spacing: 2.5px;
   transition: .45s ease-in-out;
 }
+/* Text Link Styles END */
 
+/* Text Link Hover Effect START */
 .text a:hover {
   background: hsla(184, 100%, 50%, 0.8);
   color: rgba(0, 0, 0, 0.885);
@@ -147,7 +224,9 @@ p {
   transform: scale(1.05);
   transition: .35s ease-in-out;
 }
+/* Text Link Hover Effect END */
 
+/* Social Media Icons START */
 .social {
   position: absolute;
   bottom: 20px;
@@ -156,11 +235,15 @@ p {
   justify-content: center;
   align-items: center;
 }
+/* Social Media Icons END */
 
+/* Social Media Icons Remove Bullet Points START */
 .social li {
   list-style: none;
 }
+/* Social Media Icons Remove Bullet Points END */
 
+/* Social Media Icon Links START */
 .social li a {
   display: inline-block;
   filter: invert(1);
@@ -168,11 +251,15 @@ p {
   transform: scale(0.25);
   transition: 0.3s;
 }
+/* Social Media Icon Links END */
 
+/* Social Media Icon Hover Effects START */
 .social li a:hover {
   transform: scale(0.25) translateY(-25px);
 }
+/* Social Media Icon Hover Effects END */
 
+/* !~OLD~! Menu Toggle START */
 /* .menu {
   background: #2e2e2e;
   position: absolute;
@@ -184,42 +271,57 @@ p {
   align-items: center;
   justify-content: center;
 } */
+/* !~OLD~! Menu Toggle END */
 
+/* Menu Remove Bullet Points START */
 /* .menu ul {
   position: relative;
   list-style: none;
-}
+} */
+/* Menu Remove Bullet Points END */
 
-.menu li {
+/* Menu List Items Padding START */
+/* .menu li {
   padding: 10px;
-}
+} */
+/* Menu List Items Padding END */
 
+/* Menu Link Decoration START */
+/*
 .menu ul li a {
   text-decoration: none;
   font-size: 24px;
   color: #fff;
-}
+} */
+/* Menu Link Decoration END */
 
+/* Menu Link Hover Effect START */
+/*
 .menu ul li a:hover {
   color: var(--hover-color);
 } */
+/* Menu Link Hover Effect END */
 
-/* Dark Mode to Light Mode Filter */
+
+/* Dark Mode to Light Mode Filter START */
 /* video {
   filter: invert(1);
 } */
+/* Dark Mode to Light Mode Filter END */
 
+/* @media query -Responsive for Mobile START */
 @media (max-width: 798px) {
   .showcase,
   .showcase header {
     padding: 40px;
   }
-
+  
   .text h2 {
     font-size: 3em;
   }
-
+  
   .logo {
     font-size: 1.25em;
   }
 }
+/* @media query -Responsive for Mobile END */

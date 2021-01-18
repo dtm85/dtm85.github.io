@@ -1,0 +1,6 @@
+{
+  "editor.hover.delay": 150,
+  "html.hover.documentation": false,
+  "html.hover.references": false,
+  "editor.hover.enabled": false
+}
