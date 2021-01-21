@@ -1,19 +1,25 @@
+/* Reset */
 * {
   padding: 0;
   margin: 0%;
   box-sizing: border-box;
-  font-family: 'Neo Tech', sans-serif;
+  font-family: "Neo Tech", sans-serif;
 }
 
-/* Font START */
+/* Font */
 @font-face {
-  font-family: 'Neo Tech';
-  src: url('/media/fonts/neotech.otf') format('opentype');
+  font-family: "Neo Tech";
+  src: url("/media/fonts/neotech.otf") format("opentype");
 }
-/* Font END */
 
-/* Scrollbar Color --START */
+@font-face {
+  font-family: "Neo Tech Black";
+  src: url("/media/fonts/neotech-black.otf") format("opentype");
+}
+
+/* Scrollbar Color */
 body {
+  font-family: "Neo Tech", sans-serif;
   overflow: overlay;
 }
 
@@ -32,55 +38,73 @@ body::-webkit-scrollbar-thumb {
   color: transparent;
   border-radius: 8rem;
 }
-/* Scrollbar Color --END */
+/* Scrollbar Color */
 
-.hero-container video {
+.hero-container {
+  display: flex;
+  top: 5vh;
+  width: 85%;
+  min-height: 30vh;
+  margin: auto;
+  align-items: center;
+}
+
+.glass-container {
+  z-index: 100;
+  /* background: lightblue; */
+}
+
+.video-background {
+  z-index: -2;
   position: fixed;
   object-fit: cover;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 .overlay {
+  z-index: -1;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(29, 29, 29, .6);
+  background: rgb(29, 29, 29, 0.65);
   mix-blend-mode: overlay;
 }
 
 .nav-container {
-  z-index: 1000;
+  z-index: 99999;
   position: fixed;
-  background: #00010B;
+  background: #000107;
   top: 0;
   width: 100%;
-  height: 7vh;
+  height: 5vh;
   display: flex;
   align-items: center;
 }
 
-.logo-container,.nav-links {
+.logo-container,
+.nav-links {
   display: flex;
-  /* justify-content: space-evenly; */
 }
 
 .logo-container {
-  flex: 1;
+  flex: 2.5;
 }
 
 .logo {
-  margin-left: 12%;
+  margin-left: 130px;
+  font-family: "Neo Tech";
   font-size: 2rem;
   color: #fff;
   letter-spacing: 2px;
 }
 
 nav {
-  flex: 2;
+  flex: 2.5;
 }
 
 .nav-links {
@@ -97,14 +121,14 @@ nav {
 /* Start HERE -- figure out why content displays as rows when columns are selected */
 .content-container {
   display: flex;
-  flex-direction: column;
   position: relative;
-  top: 7vh;
-  /* margin-top: 3%; */
+  top: 5vh;
+  margin-top: 3%;
   padding: 1.5rem;
   color: #fff;
   font-size: 1.5em;
-  /* line-height: 1em; */
+  line-height: 1em;
+  /* overflow: hidden; */
 }
 
 .content-container h2 {
@@ -114,28 +138,55 @@ nav {
 }
 
 p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+/* .social-container {
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40vh;
   
 }
 
-/* .social {
-  position: fixed;
-  bottom: 5px;
-  margin-left: 20px;
+.social-icons {
   display: flex;
+  flex: 1;
 }
 
-.social li {
+.social-icons li {
   list-style: none;
 }
 
-.social li a {
+.social-icons li a {
   display: flex;
   filter: invert(1);
-  margin-right: 15px;
   transform: scale(0.25);
   transition: 0.3s;
 }
 
-.social li a:hover {
+.social-icons li a:hover {
   transform: scale(0.25) translateY(-25px);
+} */
+
+/* Footer */
+
+/* @media (min-aspect-ratio: 16/9) {
+  .video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+  }
 } */
