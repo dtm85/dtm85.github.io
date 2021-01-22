@@ -227,8 +227,7 @@ p {
   .nav-list {
     z-index: 999999;
     width: 275px;
-    height: 94%;
-    background: #2e2e2e2b;
+    height: 92%;
     position: fixed;
     top: 6vh;
     right: -275px;
@@ -236,9 +235,14 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 50px 0 0 50px;
-    transition: 0.5s all ease-in-out;
-    transition: right 0.7s cubic-bezier(1, 0, 0, 1);
+    border-radius: 25px 0 0 25px;
+    transition: right 0.6s cubic-bezier(1, 0, 0, 1);
+    /* transition: 0.5s all ease-in-out; */
+    background: rgba(0, 0, 0, 0.05);
+    box-shadow: none;
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
   }
 
   .nav-list li {
@@ -253,5 +257,6 @@ p {
 
   .change {
     right: 0;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.7);
   }
 }
