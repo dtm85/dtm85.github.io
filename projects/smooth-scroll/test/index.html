@@ -1,25 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Font Awesome Link -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-      crossorigin="anonymous"
-    /> -->
-    <!-- CSS File -->
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Dan Tech Media</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/projects/smooth-scroll/test/style.css" />
+  <title>Smooth Scroll Test</title>
+</head>
+<body>
   <body>
     <!-- Navbar -->
     <header class="nav-container">
       <div class="container flex">
-        <h1 class="logo">Dan Tech Media</h1>
+        <h1 class="logo">Logo</h1>
         <nav class="navbar">
           <div class="menu-btn">
             <div class="menu-burger"></div>
@@ -33,17 +25,7 @@
         </nav>
       </div>
     </header>
-    <!-- Video Background -->
-    <video
-      class="video-background"
-      src="/media/videos/(1080p)_Tech_Network.mp4"
-      muted
-      loop
-      autoplay
-      playsinline
-    ></video>
-    <!-- Video Overlay -->
-    <div class="overlay"></div>
+    
     <!-- Content -->
     <div class="content-wrapper">
       <div class="smooth-scroll-wrapper">
@@ -129,6 +111,28 @@
       </div>
     </div>
     <!-- JavaScript File -->
-    <script src="/js/script.js"></script>
-  </body>
+    <script>
+      const body = document.body,
+        scrollWrap = document.getElementsByClassName(
+          "smooth-scroll-wrapper"
+        )[0],
+        height = scrollWrap.getBoundingClientRect().height - 1,
+        speed = 0.04;
+
+      var offset = 0;
+
+      body.style.height = Math.floor(height) + "px";
+
+      function smoothScroll() {
+        offset += (window.pageYOffset - offset) * speed;
+
+        var scroll = "translateY(-" + offset + "px) translateZ(0)";
+        scrollWrap.style.transform = scroll;
+
+        callScroll = requestAnimationFrame(smoothScroll);
+      }
+
+      smoothScroll();
+    </script>
+</body>
 </html>
