@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/projects/smooth-scroll/test/style.css" />
-  <title>Smooth Scroll Test</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../smooth-scroll-with-js/style.css" />
+    <title>Smooth Scroll Test</title>
+  </head>
   <body>
     <!-- Navbar -->
     <header class="nav-container">
@@ -25,7 +24,7 @@
         </nav>
       </div>
     </header>
-    
+
     <!-- Content -->
     <div class="content-wrapper">
       <div class="smooth-scroll-wrapper">
@@ -112,7 +111,7 @@
     </div>
     <!-- JavaScript File -->
     <script>
-      const body = document.body,
+      const body = document.getElementsByClassName("content-wrapper")[0],
         scrollWrap = document.getElementsByClassName(
           "smooth-scroll-wrapper"
         )[0],
@@ -120,7 +119,6 @@
         speed = 0.04;
 
       var offset = 0;
-
       body.style.height = Math.floor(height) + "px";
 
       function smoothScroll() {
@@ -134,5 +132,5 @@
 
       smoothScroll();
     </script>
-</body>
+  </body>
 </html>

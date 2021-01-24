@@ -16,8 +16,23 @@ body {
   width: 100%;
 }
 
+.content-wrapper {
+  background: rgba(255, 255, 255, 0.01);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.7);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 25px;
+  width: 90%;
+  height: 75vh;
+  margin: 5%;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 .smooth-scroll-wrapper {
-  position: fixed;
+  position: relative;
   z-index: 2;
   top: 0;
   left: 0;

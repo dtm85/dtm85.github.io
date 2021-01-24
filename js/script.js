@@ -20,13 +20,12 @@ menuIcon.addEventListener("click", () => {
 // Sticky Navbar
 
 // Smooth Scroll
-const body = document.body,
+const body = document.getElementsByClassName("content-wrapper")[0],
   scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
   height = scrollWrap.getBoundingClientRect().height - 1,
   speed = 0.04;
 
 var offset = 0;
-
 body.style.height = Math.floor(height) + "px";
 
 function smoothScroll() {

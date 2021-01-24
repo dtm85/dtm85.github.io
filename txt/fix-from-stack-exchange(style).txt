@@ -5,13 +5,6 @@
   margin: 0;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
-  overflow: hidden;
-  background: #161616;
-}
-
 /* Scrollbar Color */
 .content-wrapper::-webkit-scrollbar {
   width: 0.6rem;
@@ -32,6 +25,14 @@ body {
   border-radius: 8rem;
 }
 
+/* Universal Styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background: #161616;
+  overflow: hidden;
+}
+
 /* Smooth Scroll */
 .content-wrapper {
   background: rgb(112, 111, 111);
@@ -39,13 +40,11 @@ body {
   width: 90%;
   height: 90%;
   margin: 4% 5%;
-  position: absolute;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 
 .smooth-scroll-wrapper {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   overflow: hidden;
@@ -73,7 +72,7 @@ body {
   margin-top: 30px;
   width: 100%;
   height: 300px;
-  background: url(/projects/smooth-scroll/test/banner.jpg) no-repeat 50% 50%;
+  background: #140214 no-repeat 50% 50%;
   background-size: cover;
 }
 
