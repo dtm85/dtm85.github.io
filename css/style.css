@@ -17,6 +17,8 @@
 }
 
 /* Scrollbar Color */
+
+/* Container Scrollbar color */
 .content-wrapper::-webkit-scrollbar {
   width: 0.6rem;
   height: 0.6rem;
@@ -36,12 +38,32 @@
   border-radius: 8rem;
 }
 
+/* Body Scrollbar color */
+body::-webkit-scrollbar {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+  margin-top: 7vh;
+  height: 95vh;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(31, 38, 135, 0.7);
+  color: transparent;
+  border-radius: 8rem;
+}
+
 /* Universal Styling */
 body {
   font-family: "Neo Tech", sans-serif;
   color: #fff;
-  overflow: hidden;
-  /* position: relative; */
+  overflow-x: hidden;
+  overflow: overlay;
+  height: 10000px;
+  position: relative;
 }
 
 /* START OF SMOOT SCROLL TEST */
@@ -49,17 +71,19 @@ body {
 /* Smooth Scroll */
 .content-wrapper {
   background: rgba(255, 255, 255, 0.01);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.7);
+  backdrop-filter: blur(8.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  -webkit-backdrop-filter: blur(8.5px);
+  top: 7vh;
   border-radius: 25px;
   width: 90%;
   max-height: 750px;
   margin: 4% 5%;
-  top: 7vh;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.7);
-  backdrop-filter: blur(8.5px);
-  -webkit-backdrop-filter: blur(8.5px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  position: relative;
+  position: absolute;
   overflow-y: scroll;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 .smooth-scroll-wrapper {
@@ -122,7 +146,12 @@ img {
 }
 
 .nav-container {
-  z-index: 10;
+  background: rgba(255, 255, 255, 0.01);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.7);
+  /* backdrop-filter: blur(8.5px); */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  -webkit-backdrop-filter: blur(8.5px);
+  z-index: 1000;
   background-color: #000107;
   position: fixed;
   top: 0;
@@ -218,7 +247,7 @@ img {
 }
 
 /* Responsive Media Queries for Mobile*/
-@media (max-width: 872px) {
+@media screen and (max-width: 872px) {
   /* Mobile Nav Menu Styles */
 
   /* Hamburger Menu Container */
@@ -284,11 +313,11 @@ img {
   /* Menu ul element, consists of li & a elements */
   .change,
   .nav-list {
-    z-index: 999999;
+    z-index: 99999999999;
     width: 275px;
     height: 92%;
     position: fixed;
-    top: 6vh;
+    top: 7vh;
     right: -275px;
     display: flex;
     justify-content: center;
