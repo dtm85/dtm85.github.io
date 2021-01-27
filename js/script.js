@@ -1,3 +1,4 @@
+// Hamburger Menu Animation
 const menuBtn = document.querySelector(".menu-btn");
 let menuOpen = false;
 menuBtn.addEventListener("click", () => {
@@ -17,30 +18,29 @@ menuIcon.addEventListener("click", () => {
   navbar.classList.toggle("change");
 });
 
-// Sticky Navbar
+// Navbar Styles applied on Scroll Y
+window.addEventListener("scroll", function () {
+  let header = document.querySelector("header");
+  let windowPosition = window.scrollY > 0;
+  header.classList.toggle("scrolling-active", windowPosition);
+});
 
 // Smooth Scroll
-const body = document.getElementsByClassName("content-wrapper")[0],
-  scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
-  height = scrollWrap.getBoundingClientRect().height - 1,
-  speed = 0.04;
+// const body = document.getElementsByClassName("content-wrapper")[0],
+//   scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
+//   height = scrollWrap.getBoundingClientRect().height - 1,
+//   speed = 0.04;
 
-var offset = 0;
-body.style.height = Math.floor(height) + "px";
+// var offset = 0;
+// body.style.height = Math.floor(height) + "px";
 
-function smoothScroll() {
-  offset += (window.pageYOffset - offset) * speed;
+// function smoothScroll() {
+//   offset += (window.pageYOffset - offset) * speed;
 
-  var scroll = "translateY(-" + offset + "px) translateZ(0)";
-  scrollWrap.style.transform = scroll;
+//   var scroll = "translateY(-" + offset + "px) translateZ(0)";
+//   scrollWrap.style.transform = scroll;
 
-  callScroll = requestAnimationFrame(smoothScroll);
-}
+//   callScroll = requestAnimationFrame(smoothScroll);
+// }
 
-smoothScroll();
-
-// When the modal is hidden...
-const scrollY = document.body.style.top;
-document.body.style.position = "";
-document.body.style.top = "";
-window.scrollTo(0, parseInt(scrollY || "0") * -1);
+// smoothScroll();
