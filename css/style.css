@@ -211,63 +211,55 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Projects Container */
 .projects-container {
-  /* background-color: lightblue; */
-  margin: 10vh auto;
-  height: auto;
-  position: relative;
+  background-color: lightblue;
+  margin: 7vh auto;
   width: 90%;
+  height: auto;
   overflow-x: hidden;
   overflow-y: auto;
-}
-
-/* Projects Header with Image */
-.projects-header {
-  /* background-color: #00eeff; */
-  position: relative;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Windoes Image */
-.windows {
-  /* background-color: antiquewhite; */
-  width: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* height: 100px; */
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "projects-heading windows" "glass-container glass-container";
 }
 
 /* Projects H1 Heading */
 .projects-heading {
-  position: relative;
+  grid-area: projects-heading;
+  align-self: center;
+  justify-self: center;
   color: #fff;
-  /* background-color: blueviolet; */
-  margin-top: 13vh;
-  margin-bottom: 7vh;
-  /* left: 25%; */
   font-size: 4rem;
   letter-spacing: 2px;
+  /* margin: 30rem 50rem; */
+}
+
+/* Windoes Image */
+.windows {
+  grid-area: windows;
+  align-self: center;
+  justify-self: center;
+  max-width: 60%;
+  max-height: 60%;
 }
 
 /* Glass Container */
 .glass-container {
+  grid-area: glass-container;
+  align-self: center;
+  justify-self: center;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
   backdrop-filter: blur(8.5px);
   -webkit-backdrop-filter: blur(8.5px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  top: 7vh;
   border-radius: 25px;
   width: 90%;
-  height: auto;
-  margin: auto;
-  margin-bottom: 200px;
-  padding: 3rem 5rem;
-  position: relative;
+  height: 90%;
+  /* margin: 30rem 50rem; */
+  /* margin-bottom: 200px; */
+  /* padding: 30rem 50rem; */
+  /* position: relative; */
   overflow-x: hidden;
   overflow-y: auto;
 }
