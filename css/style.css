@@ -216,17 +216,39 @@ body::-webkit-scrollbar-thumb:hover {
   height: auto;
   position: relative;
   width: 90%;
+  overflow-x: hidden;
   overflow-y: auto;
+}
+
+/* Projects Header with Image */
+.projects-header {
+  /* background-color: #00eeff; */
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Windoes Image */
+.windows {
+  /* background-color: antiquewhite; */
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100px; */
+  position: relative;
 }
 
 /* Projects H1 Heading */
 .projects-heading {
   position: relative;
   color: #fff;
-  width: fit-content;
+  /* background-color: blueviolet; */
   margin-top: 13vh;
   margin-bottom: 7vh;
-  left: 25%;
+  /* left: 25%; */
   font-size: 4rem;
   letter-spacing: 2px;
 }
@@ -234,7 +256,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* Glass Container */
 .glass-container {
   background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.7);
+  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
   backdrop-filter: blur(8.5px);
   -webkit-backdrop-filter: blur(8.5px);
   border: 1px solid rgba(255, 255, 255, 0.1);
