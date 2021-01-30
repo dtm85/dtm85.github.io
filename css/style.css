@@ -211,7 +211,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Projects Container */
 .projects-container {
-  background-color: lightblue;
+  /* background-color: lightblue; */
   margin: 7vh auto;
   width: 90%;
   height: auto;
