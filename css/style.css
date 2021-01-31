@@ -211,12 +211,12 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Projects Container */
 .projects-container {
-  /* background-color: lightblue; */
+  position: relative;
+  background-color: lightblue;
   margin: 7vh auto;
   width: 90%;
   height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -231,11 +231,12 @@ body::-webkit-scrollbar-thumb:hover {
   color: #fff;
   font-size: 4rem;
   letter-spacing: 2px;
-  /* margin: 30rem 50rem; */
+  /* margin-top: 5rem; */
 }
 
 /* Windoes Image */
 .windows {
+  /* margin-top: 5rem; */
   grid-area: windows;
   align-self: center;
   justify-self: center;
@@ -255,13 +256,12 @@ body::-webkit-scrollbar-thumb:hover {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 25px;
   width: 90%;
-  height: 90%;
-  /* margin: 30rem 50rem; */
+  /* top: 25vh; */
+  padding: 75px;
+  /* margin-top: 10rem; */
   /* margin-bottom: 200px; */
-  /* padding: 30rem 50rem; */
   /* position: relative; */
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 /* Glass Container Paragrah - JUST FOR TESTING */
@@ -272,7 +272,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Project Cards */
 .card-wrapper {
-  width: 80%;
+  width: 100%;
 }
 
 .card-wrapper h1 {
@@ -282,7 +282,7 @@ body::-webkit-scrollbar-thumb:hover {
 .card-wrapper p {
   margin-top: 20px;
   font-size: 20px;
-  line-height: 200px;
+  line-height: 20px;
 }
 
 /* Responsive Media Queries for Mobile*/
