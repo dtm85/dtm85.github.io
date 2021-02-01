@@ -47,10 +47,6 @@ p {
   color: silver;
 }
 
-img {
-  width: 100%;
-}
-
 /* Utilities */
 .container {
   max-width: 1600px;
@@ -90,12 +86,12 @@ img {
 /* Scrollbar Colors */
 
 /* Container Scrollbar color */
-.card-wrapper::-webkit-scrollbar {
+.glass-container::-webkit-scrollbar {
   width: 0.7rem;
   height: 0.7rem;
 }
 
-.card-wrapper::-webkit-scrollbar-track {
+.glass-container::-webkit-scrollbar-track {
   background: rgba(31, 38, 135, 0.25);
   margin-top: 15px;
   margin-bottom: 15px;
@@ -103,12 +99,12 @@ img {
   border-radius: 8px;
 }
 
-.card-wrapper::-webkit-scrollbar-thumb {
+.glass-container::-webkit-scrollbar-thumb {
   background: rgba(31, 38, 135, 0.7);
   border-radius: 8px;
 }
 
-.card-wrapper::-webkit-scrollbar-thumb:hover {
+.glass-container::-webkit-scrollbar-thumb:hover {
   background: rgba(31, 38, 135, 1);
 }
 
@@ -212,36 +208,31 @@ body::-webkit-scrollbar-thumb:hover {
 /* Projects Container */
 .projects-container {
   position: relative;
-  background-color: lightblue;
   margin: 7vh auto;
   width: 90%;
   height: auto;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "projects-heading windows" "glass-container glass-container";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "projects-heading-container" "glass-container";
 }
 
-/* Projects H1 Heading */
-.projects-heading {
-  grid-area: projects-heading;
-  align-self: center;
-  justify-self: center;
+/* Projects Heading Container */
+.projects-heading-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   color: #fff;
   font-size: 4rem;
   letter-spacing: 2px;
-  /* margin-top: 5rem; */
+  margin-top: 5rem;
 }
 
-/* Windoes Image */
+/* Windows Image */
 .windows {
-  /* margin-top: 5rem; */
-  grid-area: windows;
-  align-self: center;
-  justify-self: center;
-  max-width: 60%;
-  max-height: 60%;
+  max-width: 30%;
+  max-height: 30%;
 }
 
 /* Glass Container */
@@ -256,33 +247,75 @@ body::-webkit-scrollbar-thumb:hover {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 25px;
   width: 90%;
-  /* top: 25vh; */
   padding: 75px;
-  /* margin-top: 10rem; */
-  /* margin-bottom: 200px; */
-  /* position: relative; */
+  margin: 10rem auto;
   overflow: hidden;
-}
-
-/* Glass Container Paragrah - JUST FOR TESTING */
-.glass-container p {
-  line-height: 1.8rem;
-  font-size: 1.25rem;
 }
 
 /* Project Cards */
 .card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "projects-heading" "glass-container"; */
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  width: 10%;
+}
+
+.github-container {
+  margin: 10px auto;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card-wrapper h1 {
-  font-size: 55px;
+.github {
+  width: 25px;
+  height: auto;
 }
 
-.card-wrapper p {
-  margin-top: 20px;
-  font-size: 20px;
-  line-height: 20px;
+.github:hover {
+  color: #6e5494;
+}
+
+/* Code Languages */
+.code-languages {
+  display: flex;
+  justify-content: space-around;
+}
+
+.html5 {
+  width: 25px;
+  height: auto;
+}
+.css3 {
+  width: 25px;
+  height: auto;
+}
+.js {
+  width: 25px;
+  height: auto;
+}
+
+.html5:hover {
+  color: #dc4d25;
+}
+
+.css3:hover {
+  color: #254bdd;
+}
+
+.js:hover {
+  color: #e8d44d;
 }
 
 /* Responsive Media Queries for Mobile*/
