@@ -21,8 +21,6 @@ body {
   font-family: "Neo Tech", sans-serif;
   overflow-x: hidden;
   overflow: overlay;
-  /* height: 1000vh; */
-  /* overflow: hidden; */
 }
 
 ul {
@@ -37,7 +35,7 @@ a {
 h1,
 h2 {
   font-family: "Neo Tech";
-  /* line-height: 1.2; */
+  line-height: 1.2;
   margin: 10px 0;
   letter-spacing: 1.5px;
   color: #fff;
@@ -45,20 +43,6 @@ h2 {
 
 p {
   color: silver;
-}
-
-/* Utilities */
-.container {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 0 40px;
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
 }
 
 /* Video Background */
@@ -132,6 +116,20 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 8rem;
 }
 
+/* Navbar Utility Classes */
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 /* Navbar */
 .menu-btn {
   display: none;
@@ -167,6 +165,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: none;
 }
 
+/* Shadow Effect applied on Scroll with JavaScript */
 .scrolling-active {
   background-color: rgba(0, 1, 5);
   box-shadow: 0 1px 10px 0 rgba(31, 38, 135, 1);
@@ -174,7 +173,7 @@ body::-webkit-scrollbar-thumb:hover {
   height: 6vh;
 }
 
-/* Animation Effect on Top Navbar */
+/* Animation Effects on Top Navbar */
 .nav-list a::before {
   top: 2px;
   transform-origin: left;
@@ -205,7 +204,7 @@ body::-webkit-scrollbar-thumb:hover {
   transform: scaleX(1);
 }
 
-/* Projects Container */
+/* Projects Container that contains the Glass Container GLOBAL */
 .projects-container {
   position: relative;
   margin: 7vh auto;
@@ -218,7 +217,7 @@ body::-webkit-scrollbar-thumb:hover {
   grid-template-areas: "projects-heading-container" "glass-container";
 }
 
-/* Projects Heading Container */
+/* Projects Heading Container GLOBAL */
 .projects-heading-container {
   display: flex;
   justify-content: space-around;
@@ -229,13 +228,13 @@ body::-webkit-scrollbar-thumb:hover {
   margin-top: 5rem;
 }
 
-/* Windows Image */
+/* Windows Image on the right of the Projects Heading Container */
 .windows {
   max-width: 30%;
   max-height: 30%;
 }
 
-/* Glass Container */
+/* Glass Container displaying all Project Cards GLOBAL */
 .glass-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -271,35 +270,8 @@ body::-webkit-scrollbar-thumb:hover {
   overflow: hidden;
 }
 
-/* Project 1 Card */
-.card-wrapper-project1::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(/media/images/projects/code.jpg);
-  clip-path: circle(150px at 80% 20%);
-  transition: 0.65s ease-in-out;
-  z-index: 1;
-}
-
-.card-wrapper-project1:hover::before {
-  clip-path: circle(300px at 80% -20%);
-}
-
-/* Card Grey Background with text PROJECT */
-/* .card-wrapper-project1::after {
-  content: "Project 1";
-  position: absolute;
-  top: 30%;
-  left: -20%;
-  font-size: 10em;
-  color: rgba(255, 255, 255, 0.05);
-} */
-
-.project1-content {
+/* Project Card Content GLOBAL */
+.project-content {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -309,11 +281,66 @@ body::-webkit-scrollbar-thumb:hover {
   z-index: 1;
 }
 
-.card-wrapper-project1:hover .project1-content {
+/* Project Circle with Image of project before hover GLOBAL */
+.card-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.55s ease-in-out;
+  z-index: 1;
+}
+
+/* Project Circle with Image of project on hover - Circle will move to the left GLOBAL */
+.card-wrapper:hover::before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+/* Project Card Grey Background on card with greyed out text on background GLOBAL*/
+/* .card-wrapper::after {
+  content: "Project 1";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 10em;
+  color: rgba(255, 255, 255, 0.05);
+} */
+
+/* Project Specific Image for Circle */
+.card-wrapper-project1::before {
+  background: url(/media/images/projects/code.jpg);
+}
+
+.card-wrapper-project2::before {
+  background: url(/media/images/projects/code.jpg);
+}
+
+.card-wrapper-project3::before {
+  background: url(/media/images/projects/code.jpg);
+}
+
+.card-wrapper-project4::before {
+  background: url(/media/images/projects/code.jpg);
+}
+
+.card-wrapper-project5::before {
+  background: url(/media/images/projects/code.jpg);
+}
+
+.card-wrapper-project6::before {
+  background: url(/media/images/projects/code.jpg);
+}
+
+/* Project Content moves up on Hover GLOBAL */
+.card-wrapper:hover .project-content {
   height: 225px;
 }
 
-.card-wrapper-project1 h2 {
+/* Project H2 Styling GLOBAL */
+.card-wrapper h2 {
   position: relative;
   letter-spacing: 2px;
   color: silver;
@@ -321,31 +348,34 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 0 auto;
 }
 
-.card-wrapper-project1 a {
+/* View Project Button Styling GLOBAL */
+.card-wrapper a {
   display: inline-block;
   padding: 10px 20px;
   background: rgba(112, 128, 144, 0.4);
   border-radius: 25px;
   margin-top: 1.6rem;
   opacity: 0;
-  transition: 0.75s ease-in-out;
-  transform: translateY(100px);
+  transition: 0.65s ease-in-out;
+  transform: translateY(110px);
   letter-spacing: 1.5px;
 }
 
-.card-wrapper-project1 a:hover {
+/* Project Card Hover - Styling for View Projects Button on Hover - Transition Effect GLOBAL */
+.card-wrapper:hover a {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+  transform: translateY(0px);
+}
+
+/* View Projects Button Styling on Hover GLOBAL */
+.card-wrapper a:hover {
   background: #00eeff;
   color: #1f1f1f;
-  transition: 2s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
-.card-wrapper-project1:hover a {
-  opacity: 1;
-  transform: translateY(0px);
-  transition: 0.8s ease-in-out;
-  /* transition-delay: 0.2s; */
-}
-
+/* GitHub Icon Layout GLOBAL */
 .github-container {
   margin-top: 20px;
   width: 100%;
@@ -354,17 +384,11 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: 0.7s ease-in-out;
+  transition: 0.55s ease-in-out;
   transform: translateY(100px);
 }
 
-.card-wrapper-project1:hover .github-container {
-  opacity: 1;
-  transition: 0.7s ease-in-out;
-  transform: translateY(0px);
-  transition-delay: 0.2s;
-}
-
+/* GitHub Icon Styling GLOBAL */
 .github {
   width: 30px;
   height: auto;
@@ -372,27 +396,38 @@ body::-webkit-scrollbar-thumb:hover {
   transition: 0.4s ease-in-out;
 }
 
+/* GitHub Icon Styling on Hover GLOBAL */
 .github:hover {
   color: #6e5494;
   transition: 0.4s ease-in-out;
 }
 
-/* Code Languages */
+/* GitHub Icon Transition on Hover GLOBAL */
+.card-wrapper:hover .github-container {
+  opacity: 1;
+  transition: 0.45s ease-in-out;
+  transform: translateY(0px);
+  transition-delay: 0.315s;
+}
+
+/* Code Languages Container GLOBAL */
 .code-languages {
   width: fit-content;
-  margin: 48px 0 0 15px;
+  margin: 42px 0 0 15px;
   opacity: 0;
-  transition: 0.775s ease-in-out;
+  transition: 0.5s ease-in-out;
   transform: translateY(75px);
 }
 
-.card-wrapper-project1:hover .code-languages {
+/* Code Languages Container Transition on Hover GLOBAL */
+.card-wrapper:hover .code-languages {
   opacity: 1;
-  transition: 0.9s ease-in-out;
+  transition: 0.55s ease-in-out;
   transform: translateY(0px);
-  transition-delay: 0.2s;
+  transition-delay: 0.4s;
 }
 
+/* HTML5 Icon Styling */
 .html5 {
   width: 15px;
   height: auto;
@@ -401,11 +436,13 @@ body::-webkit-scrollbar-thumb:hover {
   transition: 0.4s ease-in-out;
 }
 
+/* HTML5 Icon Styling on Hover */
 .html5:hover {
   color: #dc4d25;
   transition: 0.4s ease-in-out;
 }
 
+/* CSS3 Icon Styling */
 .css3 {
   width: 15px;
   height: auto;
@@ -414,11 +451,13 @@ body::-webkit-scrollbar-thumb:hover {
   transition: 0.4s ease-in-out;
 }
 
+/* CSS3 Icon Styling on Hover */
 .css3:hover {
   color: #254bdd;
   transition: 0.4s ease-in-out;
 }
 
+/* JavaScript Icon Styling */
 .js {
   width: 17px;
   height: auto;
@@ -427,12 +466,13 @@ body::-webkit-scrollbar-thumb:hover {
   transition: 0.4s ease-in-out;
 }
 
+/* JavaScript Icon Styling on Hover */
 .js:hover {
   color: #e8d44d;
   transition: 0.4s ease-in-out;
 }
 
-/* Responsive Media Queries for Mobile*/
+/* Responsive Media Queries for Mobile */
 @media screen and (max-width: 872px) {
   /* Mobile Nav Menu Styles */
 
