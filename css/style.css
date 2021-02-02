@@ -37,7 +37,7 @@ a {
 h1,
 h2 {
   font-family: "Neo Tech";
-  line-height: 1.2;
+  /* line-height: 1.2; */
   margin: 10px 0;
   letter-spacing: 1.5px;
   color: #fff;
@@ -259,7 +259,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   align-self: center;
   justify-self: center;
-  background-color: rgba(23, 23, 23, 0.8);
+  background-color: rgba(23, 23, 23, 0.6);
   box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
   backdrop-filter: blur(8.5px);
   -webkit-backdrop-filter: blur(8.5px);
@@ -271,6 +271,7 @@ body::-webkit-scrollbar-thumb:hover {
   overflow: hidden;
 }
 
+/* Project 1 Card */
 .card-wrapper-project1::before {
   content: "";
   position: absolute;
@@ -280,7 +281,8 @@ body::-webkit-scrollbar-thumb:hover {
   height: 100%;
   background: url(/media/images/projects/code.jpg);
   clip-path: circle(150px at 80% 20%);
-  transition: 0.5s ease-in-out;
+  transition: 0.6s ease-in-out;
+  z-index: 1;
 }
 
 .card-wrapper-project1:hover::before {
@@ -292,26 +294,81 @@ body::-webkit-scrollbar-thumb:hover {
   position: absolute;
   top: 30%;
   left: -20%;
-  font-size: 12em;
-  color: rgba(255, 255, 255, 0.03);
+  font-size: 10em;
+  color: rgba(255, 255, 255, 0.05);
+}
+
+.project1-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 0.75s;
+  z-index: 1;
+}
+
+.card-wrapper-project1:hover .project1-content {
+  height: 225px;
+}
+
+.card-wrapper-project1 h2 {
+  position: relative;
+  letter-spacing: 2px;
+  color: silver;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+.card-wrapper-project1 a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgba(112, 128, 144, 0.4);
+  border-radius: 25px;
+  margin-top: 1.6rem;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  visibility: hidden;
+}
+
+.card-wrapper-project1:hover a {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-wrapper-project1 a:hover {
+  /* opacity: 1; */
+  background: #00eeff;
+  color: #1f1f1f;
 }
 
 .github-container {
-  margin: 10px auto;
+  margin-top: 20px;
   width: 100%;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  visibility: hidden;
+}
+
+.card-wrapper-project1:hover .github-container {
+  opacity: 1;
+  transition: 0.75s;
+  visibility: visible;
 }
 
 .github {
-  width: 35px;
+  width: 30px;
   height: auto;
   color: silver;
 }
 
 .github:hover {
   color: #6e5494;
+  transition: 0.2s ease-in-out;
 }
 
 /* Code Languages */
@@ -320,8 +377,7 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: space-evenly;
   align-items: center;
   width: 50%;
-  margin-left: 20px;
-  /* background-color: tan; */
+  padding-top: 40px;
 }
 
 .html5 {
@@ -332,6 +388,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .html5:hover {
   color: #dc4d25;
+  transition: 0.2s ease-in-out;
 }
 
 .css3 {
@@ -342,6 +399,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .css3:hover {
   color: #254bdd;
+  transition: 0.2s ease-in-out;
 }
 
 .js {
@@ -352,6 +410,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .js:hover {
   color: #e8d44d;
+  transition: 0.2s ease-in-out;
 }
 
 /* Responsive Media Queries for Mobile*/
