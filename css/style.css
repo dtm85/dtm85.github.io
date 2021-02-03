@@ -259,11 +259,6 @@ body::-webkit-scrollbar-thumb:hover {
   align-self: center;
   justify-self: center;
   background: rgba(23, 23, 23, 0.6);
-  background: radial-gradient(
-    circle farthest-corner at 100% 100%,
-    #1f2687 1%,
-    #ffffff0d 30%
-  );
   box-shadow: 0 2px 8px 0 #1f2687b3;
   backdrop-filter: blur(8.5px);
   -webkit-backdrop-filter: blur(8.5px);
@@ -282,7 +277,7 @@ body::-webkit-scrollbar-thumb:hover {
   width: 100%;
   height: 100px;
   text-align: center;
-  transition: 0.7s;
+  transition: 0.7s ease-in-out;
   z-index: 1;
 }
 
@@ -475,6 +470,29 @@ body::-webkit-scrollbar-thumb:hover {
 .js:hover {
   color: #e8d44d;
   transition: 0.4s ease-in-out;
+}
+
+/* Gradient Container */
+.gradient-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  transform: translateY(0px);
+  z-index: -2;
+}
+
+/* Gradient Container Transition on Hover */
+.card-wrapper:hover .gradient-container {
+  background: radial-gradient(
+    circle farthest-corner at 100% 100%,
+    #1f2687 1%,
+    #0e0e0e0d 35%
+  );
+  opacity: 1;
+  transition: 0.95s ease-in-out;
+  transform: translateY(-220px);
 }
 
 /* Responsive Media Queries for Mobile */
