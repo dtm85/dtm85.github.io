@@ -258,8 +258,13 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   align-self: center;
   justify-self: center;
-  background-color: rgba(23, 23, 23, 0.6);
-  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+  background: rgba(23, 23, 23, 0.6);
+  background: radial-gradient(
+    circle farthest-corner at 100% 100%,
+    #1f2687 1%,
+    #ffffff0d 30%
+  );
+  box-shadow: 0 2px 8px 0 #1f2687b3;
   backdrop-filter: blur(8.5px);
   -webkit-backdrop-filter: blur(8.5px);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -306,7 +311,7 @@ body::-webkit-scrollbar-thumb:hover {
   top: 30%;
   left: -20%;
   font-size: 10em;
-  color: rgba(255, 255, 255, 0.05);
+  color: #ffffff0d;
 } */
 
 /* Project Specific Image for Circle */
