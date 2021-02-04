@@ -207,13 +207,17 @@ body::-webkit-scrollbar-thumb:hover {
 /* Projects Container that contains the Glass Container GLOBAL */
 .projects-container {
   position: relative;
-  margin: 7vh auto;
-  width: 90%;
+  /* margin: inherit; */
+  /* background: #6e5494; */
+  width: 100%;
   height: auto;
   overflow: hidden;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  /* overflow-x: hidden; */
+  /* display: grid; */
+  /* justify-content: center;
+  justify-self: center; */
+  /* grid-template-columns: 1fr; */
+  /* grid-template-rows: 1fr; */
   grid-template-areas: "projects-heading-container" "glass-container";
 }
 
@@ -239,7 +243,6 @@ body::-webkit-scrollbar-thumb:hover {
   display: grid;
   gap: 50px;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  /* grid-template-rows: 1fr 1fr; */
   grid-template-areas: "glass-container";
   background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
@@ -247,7 +250,7 @@ body::-webkit-scrollbar-thumb:hover {
   -webkit-backdrop-filter: blur(8.5px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 25px;
-  width: 100%;
+  width: 90%;
   padding: 75px;
   margin: 10rem auto;
   overflow: hidden;
@@ -256,7 +259,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Project Cards GLOBAL */
 .card-wrapper {
-  display: flex;
+  display: grid;
   align-self: center;
   justify-self: center;
   background: rgba(23, 23, 23, 0.6);
