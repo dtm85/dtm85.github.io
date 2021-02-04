@@ -258,9 +258,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Project Cards GLOBAL */
 .card-wrapper {
-  /* display: flex;
-  justify-content: center;
-  justify-items: center; */
   background: rgba(23, 23, 23, 0.6);
   box-shadow: 0 2px 8px 0 #1f2687b3;
   backdrop-filter: blur(8.5px);
@@ -270,6 +267,7 @@ body::-webkit-scrollbar-thumb:hover {
   position: relative;
   width: 320px;
   height: 450px;
+  overflow: hidden;
 }
 
 /* Project Card Content GLOBAL */
