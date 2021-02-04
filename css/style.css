@@ -207,17 +207,14 @@ body::-webkit-scrollbar-thumb:hover {
 /* Projects Container that contains the Glass Container GLOBAL */
 .projects-container {
   position: relative;
-  /* margin: inherit; */
-  /* background: #6e5494; */
   width: 100%;
   height: auto;
   overflow: hidden;
-  /* overflow-x: hidden; */
-  /* display: grid; */
-  /* justify-content: center;
-  justify-self: center; */
-  /* grid-template-columns: 1fr; */
-  /* grid-template-rows: 1fr; */
+  display: grid;
+  justify-content: center;
+  justify-self: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   grid-template-areas: "projects-heading-container" "glass-container";
 }
 
@@ -244,6 +241,8 @@ body::-webkit-scrollbar-thumb:hover {
   gap: 50px;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-template-areas: "glass-container";
+  justify-content: center;
+  justify-self: center;
   background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
   backdrop-filter: blur(8.5px);
@@ -259,9 +258,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Project Cards GLOBAL */
 .card-wrapper {
-  display: grid;
-  align-self: center;
-  justify-self: center;
+  margin: auto;
   background: rgba(23, 23, 23, 0.6);
   box-shadow: 0 2px 8px 0 #1f2687b3;
   backdrop-filter: blur(8.5px);
