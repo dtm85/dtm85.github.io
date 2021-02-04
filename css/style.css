@@ -237,8 +237,9 @@ body::-webkit-scrollbar-thumb:hover {
 /* Glass Container displaying all Project Cards GLOBAL */
 .glass-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  /* grid-template-rows: 1fr 1fr; */
   grid-template-areas: "glass-container";
   background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
@@ -478,8 +479,13 @@ body::-webkit-scrollbar-thumb:hover {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: 0.5s ease-in-out;
+  transition: 0.85s ease-in-out;
   transform: translateY(0px);
+  background: radial-gradient(
+    circle farthest-corner at 100% 100%,
+    #1f2687 1%,
+    #0e0e0e0d 35%
+  );
   z-index: -2;
 }
 
@@ -491,7 +497,7 @@ body::-webkit-scrollbar-thumb:hover {
     #0e0e0e0d 35%
   );
   opacity: 1;
-  transition: 0.95s ease-in-out;
+  transition: 0.85s ease-in-out;
   transform: translateY(-220px);
 }
 
