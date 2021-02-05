@@ -309,28 +309,43 @@ body::-webkit-scrollbar-thumb:hover {
   color: #ffffff0d;
 } */
 
-/* Project Specific Image for Circle */
+/* Project 1 Image for Circle */
 .card-wrapper-project1::before {
   background: url(/media/images/projects/code.jpg);
 }
 
+/* Project 2 Image for Circle */
 .card-wrapper-project2::before {
   background: url(/media/images/projects/code.jpg);
 }
 
+/* Project 3 Image for Circle */
 .card-wrapper-project3::before {
   background: url(/media/images/projects/code.jpg);
 }
 
+/* Project 4 Image for Circle */
 .card-wrapper-project4::before {
   background: url(/media/images/projects/code.jpg);
 }
 
+/* Project 5 Image for Circle */
 .card-wrapper-project5::before {
   background: url(/media/images/projects/code.jpg);
 }
 
+/* Project 6 Image for Circle */
 .card-wrapper-project6::before {
+  background: url(/media/images/projects/code.jpg);
+}
+
+/* Project 7 Image for Circle */
+.card-wrapper-project7::before {
+  background: url(/media/images/projects/code.jpg);
+}
+
+/* Project 8 Image for Circle */
+.card-wrapper-project8::before {
   background: url(/media/images/projects/code.jpg);
 }
 
@@ -472,8 +487,8 @@ body::-webkit-scrollbar-thumb:hover {
   transition: 0.4s ease-in-out;
 }
 
-/* Gradient Container */
-.gradient-container {
+/* Project 1 Gradient Container */
+.project1-gradient-container {
   position: relative;
   width: 100%;
   height: 100%;
@@ -488,11 +503,206 @@ body::-webkit-scrollbar-thumb:hover {
   z-index: -2;
 }
 
-/* Gradient Container Transition on Hover */
-.card-wrapper:hover .gradient-container {
+/* Project 1 Gradient Container Transition on Hover */
+.card-wrapper:hover .project1-gradient-container {
   background: radial-gradient(
     circle farthest-corner at 100% 100%,
     #1f2687 1%,
+    #0e0e0e0d 35%
+  );
+  opacity: 1;
+  transition: 0.85s ease-in-out;
+  transform: translateY(-220px);
+}
+
+/* Project 2 Gradient Container */
+.project2-gradient-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.85s ease-in-out;
+  transform: translateY(0px);
+  background: radial-gradient(
+    circle farthest-corner at 100% 100%,
+    #bb332e 1%,
+    #0e0e0e0d 35%
+  );
+  z-index: -2;
+}
+
+/* Project 2 Gradient Container Transition on Hover */
+.card-wrapper:hover .project2-gradient-container {
+  background: radial-gradient(
+    circle farthest-corner at 100% 100%,
+    #bb332e 1%,
+    #0e0e0e0d 35%
+  );
+  opacity: 1;
+  transition: 0.85s ease-in-out;
+  transform: translateY(-220px);
+}
+
+/* Project 3 Gradient Container */
+.project3-gradient-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.85s ease-in-out;
+  transform: translateY(0px);
+  background: radial-gradient(
+    circle farthest-corner at 100% 100%,
+    #b7db35 1%,
+    #0e0e0e0d 35%
+  );
+  z-index: -2;
+}
+
+/* Project 3 Gradient Container Transition on Hover */
+.card-wrapper:hover .project3-gradient-container {
+  background: radial-gradient(
+    circle farthest-corner at 100% 100%,
+    #b7db35 1%,
+    #0e0e0e0d 35%
+  );
+  opacity: 1;
+  transition: 0.85s ease-in-out;
+  transform: translateY(-220px);
+}
+
+/* Project 4 Gradient Container */
+.project4-gradient-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.85s ease-in-out;
+  transform: translateY(0px);
+  background: radial-gradient(
+    circle farthest-corner at 100% 100%,
+    #22ad7f 1%,
+    #0e0e0e0d 35%
+  );
+  z-index: -2;
+}
+
+/* Project 4 Gradient Container Transition on Hover */
+.card-wrapper:hover .project4-gradient-container {
+  background: radial-gradient(
+    circle farthest-corner at 100% 100%,
+    #22ad7f 1%,
+    #0e0e0e0d 35%
+  );
+  opacity: 1;
+  transition: 0.85s ease-in-out;
+  transform: translateY(-220px);
+}
+
+/* Project 5 Gradient Container */
+.project5-gradient-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.85s ease-in-out;
+  transform: translateY(0px);
+  background: radial-gradient(
+    circle farthest-corner at 100% 100%,
+    #258faf 1%,
+    #0e0e0e0d 35%
+  );
+  z-index: -2;
+}
+
+/* Project 5 Gradient Container Transition on Hover */
+.card-wrapper:hover .project5-gradient-container {
+  background: radial-gradient(
+    circle farthest-corner at 100% 100%,
+    #258faf 1%,
+    #0e0e0e0d 35%
+  );
+  opacity: 1;
+  transition: 0.85s ease-in-out;
+  transform: translateY(-220px);
+}
+
+/* Project 6 Gradient Container */
+.project6-gradient-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.85s ease-in-out;
+  transform: translateY(0px);
+  background: radial-gradient(
+    circle farthest-corner at 100% 100%,
+    #c731a1 1%,
+    #0e0e0e0d 35%
+  );
+  z-index: -2;
+}
+
+/* Project 6 Gradient Container Transition on Hover */
+.card-wrapper:hover .project6-gradient-container {
+  background: radial-gradient(
+    circle farthest-corner at 100% 100%,
+    #c731a1 1%,
+    #0e0e0e0d 35%
+  );
+  opacity: 1;
+  transition: 0.85s ease-in-out;
+  transform: translateY(-220px);
+}
+/* Project 7 Gradient Container */
+.project7-gradient-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.85s ease-in-out;
+  transform: translateY(0px);
+  background: radial-gradient(
+    circle farthest-corner at 100% 100%,
+    #867836 1%,
+    #0e0e0e0d 35%
+  );
+  z-index: -2;
+}
+
+/* Project 7 Gradient Container Transition on Hover */
+.card-wrapper:hover .project7-gradient-container {
+  background: radial-gradient(
+    circle farthest-corner at 100% 100%,
+    #867836 1%,
+    #0e0e0e0d 35%
+  );
+  opacity: 1;
+  transition: 0.85s ease-in-out;
+  transform: translateY(-220px);
+}
+
+/* Project 8 Gradient Container */
+.project8-gradient-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.85s ease-in-out;
+  transform: translateY(0px);
+  background: radial-gradient(
+    circle farthest-corner at 100% 100%,
+    #c2c2c2 1%,
+    #0e0e0e0d 35%
+  );
+  z-index: -2;
+}
+
+/* Project 8 Gradient Container Transition on Hover */
+.card-wrapper:hover .project8-gradient-container {
+  background: radial-gradient(
+    circle farthest-corner at 100% 100%,
+    #c2c2c2 1%,
     #0e0e0e0d 35%
   );
   opacity: 1;
