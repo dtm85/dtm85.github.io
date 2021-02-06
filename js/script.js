@@ -26,13 +26,13 @@ window.addEventListener("scroll", function () {
 });
 
 // No Background Scroll when Menu is Open
-$(".menu-burger").on("click", function () {
-  $("body").toggleClass("no-scroll");
-});
+// $(".menu-burger").on("click", function () {
+//   $("body").toggleClass("no-scroll");
+// });
 
-$(".menu-burger.open").on("click", function () {
-  $("body").removeClass("no-scroll");
-});
+// $(".menu-burger.open").on("click", function () {
+//   $("body").removeClass("no-scroll");
+// });
 
 // Smooth Scroll
 // const body = document.body,
