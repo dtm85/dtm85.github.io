@@ -772,6 +772,11 @@ body::-webkit-scrollbar-thumb:hover {
     transform: rotate(-45deg) translate(25px, 25px);
   }
 
+  /* No Background Scroll when menu is open */
+  .no-scroll {
+    overflow: hidden;
+  }
+
   /* Menu ul element, consists of li & a elements */
   .change,
   .nav-list {

@@ -25,6 +25,15 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("scrolling-active", windowPosition);
 });
 
+// No Background Scroll when Menu is Open
+$(".menu-burger").on("click", function () {
+  $("body").toggleClass("no-scroll");
+});
+
+$(".menu-burger.open").on("click", function () {
+  $("body").removeClass("no-scroll");
+});
+
 // Smooth Scroll
 // const body = document.body,
 //   scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
