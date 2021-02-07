@@ -36,13 +36,13 @@ h1,
 h2 {
   font-family: "Neo Tech";
   line-height: 1.2;
-  margin: 10px 0;
   letter-spacing: 1.5px;
   color: #fff;
 }
 
 p {
   color: silver;
+  letter-spacing: 1px;
 }
 
 /* Video Background */
@@ -66,8 +66,6 @@ p {
   background: rgb(29, 29, 29, 0.65);
   mix-blend-mode: overlay;
 }
-
-/* Smooth Scroll */
 
 /* Scrollbar Colors */
 
@@ -206,29 +204,83 @@ body::-webkit-scrollbar-thumb:hover {
   transform: scaleX(1);
 }
 
-/* .smooth-scroll {
-  position: absolute;
-  top: 0;
-  left: 0;
+/* Sections */
+.home {
+  position: relative;
   width: 100%;
   height: 100vh;
-  will-change: transform;
-  overflow: hidden;
-} */
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgba(255, 122, 122, 0.185); */
+}
+
+.text h1 {
+  font-size: 5em;
+  line-height: 2em;
+}
+
+.text h2 {
+  font-size: 3em;
+  /* line-height: 1.5em; */
+}
+
+/* Hire Me Button */
+.text a {
+  display: inline-block;
+  font-size: 1.1em;
+  background: gray;
+  padding: 13px 30px 9.5px 30px;
+  margin-top: 50px;
+  letter-spacing: 1.5px;
+  transition: 0.385s ease-in-out;
+  border-radius: 6px;
+}
+
+/* Hire Me Button on Hover */
+.text a:hover {
+  letter-spacing: 3px;
+  background: #00eeff;
+  color: rgb(71, 71, 71);
+  transform: scale(1.05);
+  transition: 0.385s ease-in-out;
+  box-shadow: 0 0 10px 2px #00eeff;
+}
+
+.about {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: rgba(246, 255, 122, 0.247); */
+}
 
 /* Projects Container that contains the Glass Container GLOBAL */
-.projects-container {
+.projects {
   position: relative;
   width: 100%;
   height: auto;
-  overflow: hidden;
   display: grid;
   justify-content: center;
   justify-self: center;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "projects-heading-container" "glass-container";
-  will-change: transform;
+}
+
+.contact {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: rgba(122, 206, 255, 0.397); */
 }
 
 /* Projects Heading Container GLOBAL */
@@ -239,7 +291,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: #fff;
   font-size: 4rem;
   letter-spacing: 2px;
-  margin-top: 15rem;
+  /* margin-top: 15rem; */
 }
 
 /* Windows Image on the right of the Projects Heading Container */
