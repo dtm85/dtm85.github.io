@@ -213,8 +213,68 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* z-index: 100; */
   overflow: hidden;
   /* background-color: rgba(255, 122, 122, 0.185); */
+}
+
+.social-container {
+  position: absolute;
+  bottom: 20px;
+  height: 50px;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.social,
+.social-li {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  height: 100px;
+}
+
+.github-social,
+.linkedin-social,
+.twitter-social {
+  position: relative;
+  color: lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  transition: 0.4s ease-in-out;
+}
+
+.github-social:hover,
+.linkedin-social:hover,
+.twitter-social:hover {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  transition: 0.4s ease-in-out;
+  transform: scale(1.35);
+}
+
+.github-social:hover {
+  color: #6e5494;
+}
+
+.linkedin-social:hover {
+  color: #054ca8;
+}
+
+.twitter-social:hover {
+  color: #1c9ceb;
 }
 
 .text-type {
@@ -280,6 +340,12 @@ body::-webkit-scrollbar-thumb:hover {
   width: 40%;
 }
 
+.about .text p {
+  font-size: 1.2rem;
+  line-height: 1.65rem;
+  letter-spacing: 2.6px;
+}
+
 /* Projects Container that contains the Glass Container GLOBAL */
 .projects {
   position: relative;
@@ -308,6 +374,12 @@ body::-webkit-scrollbar-thumb:hover {
 
 .contact .text {
   width: 40%;
+}
+
+.contact .text p {
+  font-size: 1.2rem;
+  line-height: 1.65rem;
+  letter-spacing: 2.6px;
 }
 
 /* Projects Heading Container GLOBAL */
@@ -390,16 +462,6 @@ body::-webkit-scrollbar-thumb:hover {
 .card-wrapper:hover::before {
   clip-path: circle(300px at 80% -20%);
 }
-
-/* Project Card Grey Background on card with greyed out text on background GLOBAL*/
-/* .card-wrapper::after {
-  content: "Project 1";
-  position: absolute;
-  top: 30%;
-  left: -20%;
-  font-size: 10em;
-  color: #ffffff0d;
-} */
 
 /* Project 1 Image for Circle */
 .card-wrapper-project1::before {
@@ -933,8 +995,8 @@ body::-webkit-scrollbar-thumb:hover {
 
   .about .text p {
     font-size: 0.9rem;
-    line-height: 1.5rem;
-    letter-spacing: 1.5px;
+    line-height: 1.2rem;
+    letter-spacing: 2px;
   }
 
   .projects-heading-container {
@@ -961,7 +1023,22 @@ body::-webkit-scrollbar-thumb:hover {
 
   .contact .text p {
     font-size: 0.9rem;
-    line-height: 1.1rem;
-    letter-spacing: 1.5px;
+    line-height: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  .github-social,
+  .linkedin-social,
+  .twitter-social {
+    width: 25px;
+    height: 25px;
+  }
+
+  .github-social:hover,
+  .linkedin-social:hover,
+  .twitter-social:hover {
+    width: 25px;
+    height: 25px;
+    transform: none;
   }
 }
