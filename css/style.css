@@ -1027,6 +1027,11 @@ body::-webkit-scrollbar-thumb:hover {
     letter-spacing: 2px;
   }
 
+  .social-container {
+    left: 0px;
+    margin-bottom: 50px;
+  }
+
   .github-social,
   .linkedin-social,
   .twitter-social {
