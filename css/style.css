@@ -899,7 +899,11 @@ body::-webkit-scrollbar-thumb:hover {
 
   .home .text {
     width: 100%;
-    font-size: 0.69rem;
+    font-size: 0.5rem;
+  }
+
+  .home a {
+    font-size: 0.85rem;
   }
 
   .about .text {
