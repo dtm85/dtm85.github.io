@@ -19,7 +19,7 @@
 /* Universal Styling */
 body {
   font-family: "Neo Tech", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
   overflow: overlay;
 }
 
@@ -100,7 +100,7 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-track {
   background: rgba(31, 38, 135, 0.25);
-  margin-top: 7.15vh;
+  margin-top: 55px;
   margin-bottom: 1px;
   height: 95vh;
   border-radius: 8px;
@@ -141,7 +141,7 @@ body::-webkit-scrollbar-thumb:hover {
   top: 0;
   width: 100%;
   border: none;
-  height: 7vh;
+  height: 60px;
   transition: 0.25s all ease-in-out;
 }
 
@@ -168,9 +168,9 @@ body::-webkit-scrollbar-thumb:hover {
 /* Shadow Effect on Navbar applied on Scroll with JavaScript */
 .scrolling-active {
   background-color: rgba(0, 1, 5);
-  box-shadow: 0 1px 10px 0 rgba(31, 38, 135, 1);
+  box-shadow: 0 2px 10px 1px rgba(31, 38, 135, 1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  height: 6vh;
+  height: 50px;
 }
 
 /* Animation Effects on Top Navbar */
@@ -213,6 +213,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
   /* background-color: rgba(255, 122, 122, 0.185); */
 }
 
@@ -257,6 +258,11 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
   justify-content: space-between;
   /* background-color: rgba(246, 255, 122, 0.247); */
+  overflow: hidden;
+}
+
+.about .text {
+  width: 40%;
 }
 
 /* Projects Container that contains the Glass Container GLOBAL */
@@ -270,6 +276,7 @@ body::-webkit-scrollbar-thumb:hover {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "projects-heading-container" "glass-container";
+  overflow: hidden;
 }
 
 .contact {
@@ -281,6 +288,11 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
   justify-content: space-between;
   /* background-color: rgba(122, 206, 255, 0.397); */
+  overflow: hidden;
+}
+
+.contact .text {
+  width: 40%;
 }
 
 /* Projects Heading Container GLOBAL */
@@ -841,9 +853,9 @@ body::-webkit-scrollbar-thumb:hover {
   .change,
   .nav-list {
     width: 275px;
-    height: 93.5%;
+    height: 90%;
     position: fixed;
-    top: 6vh;
+    top: 50px;
     right: -275px;
     display: flex;
     justify-content: center;
@@ -873,5 +885,59 @@ body::-webkit-scrollbar-thumb:hover {
   .change {
     right: 0;
     box-shadow: 0 1px 7px 0 rgba(31, 38, 135, 0.8);
+  }
+
+  .logo {
+    font-size: 1.85rem;
+  }
+
+  .home,
+  .about,
+  .contact {
+    padding: 8%;
+  }
+
+  .home .text {
+    width: 100%;
+    font-size: 0.69rem;
+  }
+
+  .about .text {
+    width: 100%;
+    font-size: 0.69rem;
+  }
+
+  .about .text p {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    letter-spacing: 1.5px;
+  }
+
+  .projects-heading-container {
+    display: block;
+    padding: 8%;
+  }
+
+  .projects-heading {
+    font-size: 3rem;
+    display: inline-block;
+    margin: 0;
+  }
+
+  .windows {
+    display: block;
+    width: 100%;
+    background: chartreuse;
+  }
+
+  .contact .text {
+    width: 100%;
+    font-size: 0.69rem;
+  }
+
+  .contact .text p {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    letter-spacing: 1.5px;
   }
 }
