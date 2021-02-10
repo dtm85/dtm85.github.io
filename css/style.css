@@ -408,10 +408,10 @@ body::-webkit-scrollbar-thumb:hover {
   grid-template-areas: "glass-container";
   justify-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
-  backdrop-filter: blur(8.5px);
-  -webkit-backdrop-filter: blur(8.5px);
+  /* backdrop-filter: blur(8.5px); */
+  /* -webkit-backdrop-filter: blur(8.5px); */
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 25px;
   width: 90%;
@@ -424,10 +424,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Project Cards GLOBAL */
 .card-wrapper {
-  background: rgba(23, 23, 23, 0.6);
+  background: rgba(23, 23, 23, 0.9);
   box-shadow: 0 2px 8px 0 #1f2687b3;
-  backdrop-filter: blur(8.5px);
-  -webkit-backdrop-filter: blur(8.5px);
+  /* backdrop-filter: blur(8.5px); */
+  /* -webkit-backdrop-filter: blur(8.5px); */
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 25px;
   position: relative;
