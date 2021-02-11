@@ -410,8 +410,6 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.9);
   box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
-  /* backdrop-filter: blur(8.5px); */
-  /* -webkit-backdrop-filter: blur(8.5px); */
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 25px;
   width: 90%;
@@ -419,22 +417,18 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 10rem auto;
   overflow: hidden;
   position: relative;
-  will-change: transform;
 }
 
 /* Project Cards GLOBAL */
 .card-wrapper {
   background: rgba(23, 23, 23, 0.9);
   box-shadow: 0 2px 8px 0 #1f2687b3;
-  /* backdrop-filter: blur(8.5px); */
-  /* -webkit-backdrop-filter: blur(8.5px); */
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 25px;
   position: relative;
   width: 320px;
   height: 450px;
   overflow: hidden;
-  will-change: transform;
 }
 
 /* Project Card Content GLOBAL */
@@ -446,7 +440,6 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: center;
   transition: 0.7s ease-in-out;
   z-index: 1;
-  will-change: transform;
 }
 
 /* Project Circle with Image of project before hover GLOBAL */
@@ -460,13 +453,11 @@ body::-webkit-scrollbar-thumb:hover {
   clip-path: circle(150px at 80% 20%);
   transition: 0.55s ease-in-out;
   z-index: 1;
-  will-change: transform;
 }
 
 /* Project Circle with Image of project on hover - Circle will move to the left GLOBAL */
 .card-wrapper:hover::before {
   clip-path: circle(300px at 80% -20%);
-  will-change: transform;
 }
 
 /* Project 1 Image for Circle */
@@ -513,7 +504,6 @@ body::-webkit-scrollbar-thumb:hover {
 /* Project Content moves up on Hover GLOBAL */
 .card-wrapper:hover .project-content {
   height: 225px;
-  will-change: transform;
 }
 
 /* Project H2 Styling GLOBAL */
@@ -523,7 +513,6 @@ body::-webkit-scrollbar-thumb:hover {
   color: silver;
   font-size: 2rem;
   margin: 0 auto;
-  will-change: transform;
 }
 
 /* View Project Button Styling GLOBAL */
@@ -537,7 +526,7 @@ body::-webkit-scrollbar-thumb:hover {
   transition: 0.65s ease-in-out;
   transform: translateY(110px);
   letter-spacing: 1.5px;
-  will-change: transform;
+  padding-top: 13px;
 }
 
 /* Project Card Hover - Styling for View Projects Button on Hover - Transition Effect GLOBAL */
@@ -545,7 +534,6 @@ body::-webkit-scrollbar-thumb:hover {
   opacity: 1;
   transition: 0.5s ease-in-out;
   transform: translateY(0px);
-  will-change: transform;
 }
 
 /* View Projects Button Styling on Hover GLOBAL */
@@ -553,7 +541,8 @@ body::-webkit-scrollbar-thumb:hover {
   background: #00eeff;
   color: #1f1f1f;
   transition: 0.5s ease-in-out;
-  will-change: transform;
+  box-shadow: 0 0 10px 2px #00eeff;
+  transform: scale(1.05);
 }
 
 /* GitHub Icon Layout GLOBAL */
@@ -567,7 +556,6 @@ body::-webkit-scrollbar-thumb:hover {
   opacity: 0;
   transition: 0.55s ease-in-out;
   transform: translateY(100px);
-  will-change: transform;
 }
 
 /* GitHub Icon Styling GLOBAL */
@@ -664,7 +652,7 @@ body::-webkit-scrollbar-thumb:hover {
   transform: translateY(0px);
   background: radial-gradient(
     circle farthest-corner at 100% 100%,
-    #1f2687 1%,
+    #3e4f0f 1%,
     #0e0e0e0d 35%
   );
   z-index: -2;
@@ -674,7 +662,7 @@ body::-webkit-scrollbar-thumb:hover {
 .card-wrapper:hover .project1-gradient-container {
   background: radial-gradient(
     circle farthest-corner at 100% 100%,
-    #1f2687 1%,
+    #3e4f0f 1%,
     #0e0e0e0d 35%
   );
   opacity: 1;
