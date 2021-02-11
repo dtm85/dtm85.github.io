@@ -471,7 +471,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Project 1 Image for Circle */
 .card-wrapper-project1::before {
-  background: url(/media/images/projects/code.jpg);
+  background: url("/media/images/projects/tea-station/main-bcg.png")
+    center/cover no-repeat;
 }
 
 /* Project 2 Image for Circle */

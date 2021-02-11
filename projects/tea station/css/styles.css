@@ -91,6 +91,18 @@ p {
 }
 
 /* 
+======
+Header
+======
+*/
+
+.header {
+  min-height: 100vh;
+  background: url("/projects/tea station/media/images/main-bcg.jpg")
+    center/cover no-repeat fixed;
+}
+
+/* 
 =============
 Media Queries
 =============
