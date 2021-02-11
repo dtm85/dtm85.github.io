@@ -542,7 +542,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: #1f1f1f;
   transition: 0.5s ease-in-out;
   box-shadow: 0 0 10px 2px #00eeff;
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 /* GitHub Icon Layout GLOBAL */
