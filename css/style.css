@@ -462,8 +462,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Project 1 Image for Circle */
 .card-wrapper-project1::before {
-  background: url(/media/images/projects/tea-station/main-bcg.jpg) center/cover
-    no-repeat;
+  background: url(/media/images/projects/tea-station/main-bcg.jpg) center/cover;
 }
 
 /* Project 2 Image for Circle */
@@ -517,7 +516,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* View Project Button Styling GLOBAL */
 .card-wrapper a {
-  position: relative;
   display: inline-block;
   padding: 10px 20px;
   background: rgba(112, 128, 144, 0.4);
@@ -654,7 +652,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: radial-gradient(
     circle farthest-corner at 100% 100%,
     #3e4f0f 1%,
-    #0e0e0e0d 35%
+    rgba(14, 14, 14, 0) 35%
   );
   z-index: -2;
 }
@@ -664,7 +662,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: radial-gradient(
     circle farthest-corner at 100% 100%,
     #3e4f0f 1%,
-    #0e0e0e0d 35%
+    rgba(14, 14, 14, 0) 35%
   );
   opacity: 1;
   transition: 0.85s ease-in-out;
@@ -682,7 +680,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: radial-gradient(
     circle farthest-corner at 100% 100%,
     #bb332e 1%,
-    #0e0e0e0d 35%
+    rgba(14, 14, 14, 0) 35%
   );
   z-index: -2;
 }
@@ -692,7 +690,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: radial-gradient(
     circle farthest-corner at 100% 100%,
     #bb332e 1%,
-    #0e0e0e0d 35%
+    rgba(14, 14, 14, 0) 35%
   );
   opacity: 1;
   transition: 0.85s ease-in-out;
@@ -710,7 +708,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: radial-gradient(
     circle farthest-corner at 100% 100%,
     #b7db35 1%,
-    #0e0e0e0d 35%
+    rgba(14, 14, 14, 0) 35%
   );
   z-index: -2;
 }
@@ -720,7 +718,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: radial-gradient(
     circle farthest-corner at 100% 100%,
     #b7db35 1%,
-    #0e0e0e0d 35%
+    rgba(14, 14, 14, 0) 35%
   );
   opacity: 1;
   transition: 0.85s ease-in-out;
@@ -738,7 +736,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: radial-gradient(
     circle farthest-corner at 100% 100%,
     #22ad7f 1%,
-    #0e0e0e0d 35%
+    rgba(14, 14, 14, 0) 35%
   );
   z-index: -2;
 }
@@ -748,7 +746,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: radial-gradient(
     circle farthest-corner at 100% 100%,
     #22ad7f 1%,
-    #0e0e0e0d 35%
+    rgba(14, 14, 14, 0) 35%
   );
   opacity: 1;
   transition: 0.85s ease-in-out;
@@ -766,7 +764,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: radial-gradient(
     circle farthest-corner at 100% 100%,
     #258faf 1%,
-    #0e0e0e0d 35%
+    rgba(14, 14, 14, 0) 35%
   );
   z-index: -2;
 }
@@ -776,7 +774,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: radial-gradient(
     circle farthest-corner at 100% 100%,
     #258faf 1%,
-    #0e0e0e0d 35%
+    rgba(14, 14, 14, 0) 35%
   );
   opacity: 1;
   transition: 0.85s ease-in-out;
@@ -794,7 +792,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: radial-gradient(
     circle farthest-corner at 100% 100%,
     #c731a1 1%,
-    #0e0e0e0d 35%
+    rgba(14, 14, 14, 0) 35%
   );
   z-index: -2;
 }
@@ -804,7 +802,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: radial-gradient(
     circle farthest-corner at 100% 100%,
     #c731a1 1%,
-    #0e0e0e0d 35%
+    rgba(14, 14, 14, 0) 35%
   );
   opacity: 1;
   transition: 0.85s ease-in-out;
@@ -821,7 +819,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: radial-gradient(
     circle farthest-corner at 100% 100%,
     #867836 1%,
-    #0e0e0e0d 35%
+    rgba(14, 14, 14, 0) 35%
   );
   z-index: -2;
 }
@@ -831,7 +829,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: radial-gradient(
     circle farthest-corner at 100% 100%,
     #867836 1%,
-    #0e0e0e0d 35%
+    rgba(14, 14, 14, 0) 35%
   );
   opacity: 1;
   transition: 0.85s ease-in-out;
@@ -849,7 +847,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: radial-gradient(
     circle farthest-corner at 100% 100%,
     #c2c2c2 1%,
-    #0e0e0e0d 35%
+    rgba(14, 14, 14, 0) 35%
   );
   z-index: -2;
 }
@@ -859,7 +857,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: radial-gradient(
     circle farthest-corner at 100% 100%,
     #c2c2c2 1%,
-    #0e0e0e0d 35%
+    rgba(14, 14, 14, 0) 35%
   );
   opacity: 1;
   transition: 0.85s ease-in-out;
