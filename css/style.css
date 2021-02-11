@@ -358,7 +358,7 @@ body::-webkit-scrollbar-thumb:hover {
   grid-template-rows: 1fr;
   grid-template-areas: "projects-heading-container" "glass-container";
   overflow: hidden;
-  will-change: transform;
+  /* will-change: transform; */
 }
 
 .contact {
@@ -462,8 +462,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Project 1 Image for Circle */
 .card-wrapper-project1::before {
-  background: url("/media/images/projects/tea-station/main-bcg.png")
-    center/cover no-repeat;
+  background: url(/media/images/projects/tea-station/main-bcg.png) center/cover
+    no-repeat;
 }
 
 /* Project 2 Image for Circle */
@@ -941,10 +941,10 @@ body::-webkit-scrollbar-thumb:hover {
     flex-direction: column;
     border-radius: 25px 0 0 25px;
     transition: right 0.6s cubic-bezier(1, 0, 0, 1);
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.955);
     box-shadow: none;
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
+    /* backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px); */
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     border-left: 1px solid rgba(255, 255, 255, 0.1);
