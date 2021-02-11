@@ -462,7 +462,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Project 1 Image for Circle */
 .card-wrapper-project1::before {
-  background: url(/media/images/projects/tea-station/main-bcg.png) center/cover
+  background: url(/media/images/projects/tea-station/main-bcg.jpg) center/cover
     no-repeat;
 }
 
@@ -517,11 +517,12 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* View Project Button Styling GLOBAL */
 .card-wrapper a {
+  position: relative;
   display: inline-block;
   padding: 10px 20px;
   background: rgba(112, 128, 144, 0.4);
   border-radius: 25px;
-  margin-top: 1.6rem;
+  margin-top: 1.5rem;
   opacity: 0;
   transition: 0.65s ease-in-out;
   transform: translateY(110px);
