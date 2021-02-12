@@ -655,7 +655,6 @@ body::-webkit-scrollbar-thumb:hover {
     #3e4f0f 1%,
     rgba(14, 14, 14, 0) 35%
   );
-  z-index: -2;
 }
 
 /* Project 1 Gradient Container Transition on Hover */
@@ -683,7 +682,7 @@ body::-webkit-scrollbar-thumb:hover {
     #bb332e 1%,
     rgba(14, 14, 14, 0) 35%
   );
-  z-index: -2;
+  /* z-index: -2; */
 }
 
 /* Project 2 Gradient Container Transition on Hover */
