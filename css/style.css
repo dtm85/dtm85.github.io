@@ -462,7 +462,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Project 1 Image for Circle */
 .card-wrapper-project1::before {
-  background: url(/media/images/projects/tea-station/main-bcg.jpg) center/cover;
+  background: url(/media/images/projects/tea-station/main-bcg.jpg);
 }
 
 /* Project 2 Image for Circle */
@@ -930,7 +930,7 @@ body::-webkit-scrollbar-thumb:hover {
   .change,
   .nav-list {
     width: 275px;
-    height: 90%;
+    height: 91%;
     position: fixed;
     top: 50px;
     right: -275px;
