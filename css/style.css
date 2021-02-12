@@ -440,6 +440,7 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: center;
   transition: 0.7s ease-in-out;
   z-index: 1;
+  will-change: transform;
 }
 
 /* Project Circle with Image of project before hover GLOBAL */
@@ -667,8 +668,6 @@ body::-webkit-scrollbar-thumb:hover {
   transition: 0.85s ease-in-out;
   transform: translateY(-219px);
   z-index: -1;
-  position: relative;
-  overflow: hidden;
 }
 
 /* Project 2 Gradient Container */
