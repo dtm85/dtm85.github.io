@@ -452,7 +452,6 @@ body::-webkit-scrollbar-thumb:hover {
   height: 100%;
   clip-path: circle(150px at 80% 20%);
   transition: 0.55s ease-in-out;
-  /* z-index: 1; */
 }
 
 /* Project Circle with Image of project on hover - Circle will move to the left GLOBAL */
@@ -667,6 +666,7 @@ body::-webkit-scrollbar-thumb:hover {
   opacity: 1;
   transition: 0.85s ease-in-out;
   transform: translateY(-220px);
+  z-index: -1;
 }
 
 /* Project 2 Gradient Container */
@@ -682,7 +682,6 @@ body::-webkit-scrollbar-thumb:hover {
     #bb332e 1%,
     rgba(14, 14, 14, 0) 35%
   );
-  /* z-index: -2; */
 }
 
 /* Project 2 Gradient Container Transition on Hover */
@@ -695,6 +694,7 @@ body::-webkit-scrollbar-thumb:hover {
   opacity: 1;
   transition: 0.85s ease-in-out;
   transform: translateY(-220px);
+  z-index: -1;
 }
 
 /* Project 3 Gradient Container */
@@ -710,7 +710,6 @@ body::-webkit-scrollbar-thumb:hover {
     #b7db35 1%,
     rgba(14, 14, 14, 0) 35%
   );
-  z-index: -2;
 }
 
 /* Project 3 Gradient Container Transition on Hover */
@@ -723,6 +722,7 @@ body::-webkit-scrollbar-thumb:hover {
   opacity: 1;
   transition: 0.85s ease-in-out;
   transform: translateY(-220px);
+  z-index: -1;
 }
 
 /* Project 4 Gradient Container */
@@ -738,7 +738,6 @@ body::-webkit-scrollbar-thumb:hover {
     #22ad7f 1%,
     rgba(14, 14, 14, 0) 35%
   );
-  z-index: -2;
 }
 
 /* Project 4 Gradient Container Transition on Hover */
@@ -751,6 +750,7 @@ body::-webkit-scrollbar-thumb:hover {
   opacity: 1;
   transition: 0.85s ease-in-out;
   transform: translateY(-220px);
+  z-index: -1;
 }
 
 /* Project 5 Gradient Container */
@@ -766,7 +766,6 @@ body::-webkit-scrollbar-thumb:hover {
     #258faf 1%,
     rgba(14, 14, 14, 0) 35%
   );
-  z-index: -2;
 }
 
 /* Project 5 Gradient Container Transition on Hover */
@@ -779,6 +778,7 @@ body::-webkit-scrollbar-thumb:hover {
   opacity: 1;
   transition: 0.85s ease-in-out;
   transform: translateY(-220px);
+  z-index: -1;
 }
 
 /* Project 6 Gradient Container */
@@ -794,7 +794,6 @@ body::-webkit-scrollbar-thumb:hover {
     #c731a1 1%,
     rgba(14, 14, 14, 0) 35%
   );
-  z-index: -2;
 }
 
 /* Project 6 Gradient Container Transition on Hover */
@@ -807,6 +806,7 @@ body::-webkit-scrollbar-thumb:hover {
   opacity: 1;
   transition: 0.85s ease-in-out;
   transform: translateY(-220px);
+  z-index: -1;
 }
 /* Project 7 Gradient Container */
 .project7-gradient-container {
@@ -821,7 +821,6 @@ body::-webkit-scrollbar-thumb:hover {
     #867836 1%,
     rgba(14, 14, 14, 0) 35%
   );
-  z-index: -2;
 }
 
 /* Project 7 Gradient Container Transition on Hover */
@@ -834,6 +833,7 @@ body::-webkit-scrollbar-thumb:hover {
   opacity: 1;
   transition: 0.85s ease-in-out;
   transform: translateY(-220px);
+  z-index: -1;
 }
 
 /* Project 8 Gradient Container */
@@ -849,7 +849,6 @@ body::-webkit-scrollbar-thumb:hover {
     #c2c2c2 1%,
     rgba(14, 14, 14, 0) 35%
   );
-  z-index: -2;
 }
 
 /* Project 8 Gradient Container Transition on Hover */
@@ -862,6 +861,7 @@ body::-webkit-scrollbar-thumb:hover {
   opacity: 1;
   transition: 0.85s ease-in-out;
   transform: translateY(-220px);
+  z-index: -1;
 }
 
 /* Responsive Media Queries for Mobile */
