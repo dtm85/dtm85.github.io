@@ -424,11 +424,11 @@ body::-webkit-scrollbar-thumb:hover {
   box-shadow: 0 2px 8px 0 #1f2687b3;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 25px;
-  /*-webkit-backdrop-filter: blur(0.0001px);*/
   position: relative;
   width: 320px;
   height: 450px;
   overflow: hidden;
+  will-change: transform;
 }
 
 /* Project Card Content GLOBAL */
