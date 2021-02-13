@@ -98,13 +98,13 @@ body::-webkit-scrollbar {
   height: 0.7rem;
 }
 
-/* body::-webkit-scrollbar-track {
-  background: rgba(31, 38, 135, 0.25);
+body::-webkit-scrollbar-track {
+  background: none;
   margin-top: 55px;
   margin-bottom: 1px;
   height: 95vh;
   border-radius: 8px;
-} */
+}
 
 body::-webkit-scrollbar-thumb {
   background: rgba(31, 38, 135, 0.7);
