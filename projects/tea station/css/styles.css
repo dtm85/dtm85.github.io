@@ -209,7 +209,8 @@ Skills
   margin-bottom: 1.25rem;
   transition: var(--transition);
   display: inline-block;
-  color: var(--clr-primary);
+  /* color: var(--clr-primary); */
+  color: red;
 }
 
 .skill-text {
