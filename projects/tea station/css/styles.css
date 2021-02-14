@@ -204,13 +204,14 @@ Skills
   transition: var(--transition);
 }
 
-.skill-icon {
+.skill-icons {
   font-size: 2.5rem;
   margin-bottom: 1.25rem;
   transition: var(--transition);
   display: inline-block;
-  /* color: var(--clr-primary); */
-  color: red;
+  color: var(--clr-primary);
+  width: 50px;
+  height: 50px;
 }
 
 .skill-text {
@@ -224,7 +225,7 @@ Skills
   box-shadow: 0 2px var(--clr-primary);
 }
 
-.skill:hover .skill-icon {
+.skill:hover .skill-icons {
   transform: translateY(-7.5px);
 }
 
