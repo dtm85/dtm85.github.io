@@ -344,6 +344,124 @@ Services
   margin-top: 1.25rem;
 }
 
+.service-img-container {
+  position: relative;
+}
+
+.service-icons {
+  padding: 0.35rem;
+  margin-top: 0.25rem;
+  margin-right: 0.05rem;
+  margin-bottom: 0;
+  /* width: 40px;
+  height: 40px; */
+}
+
+.hot-tea {
+  margin-left: 7px;
+}
+
+.service-icon {
+  position: absolute;
+  height: ;
+  left: 50%;
+  bottom: 0;
+  /* font-size: -40rem; */
+  color: var(--clr-primary);
+  background: var(--clr-primary-light);
+  padding: 0.25rem 0.6rem;
+  border-radius: 50%;
+  transform: translate(-50%, 50%);
+  border: 0.375rem solid var(--clr-grey-10);
+}
+
+/* 
+=======
+Contact
+=======
+*/
+.contact-icons {
+  width: 25px;
+  height: 25px;
+}
+
+.contact {
+  background: var(--clr-grey-10);
+}
+
+.contact-form,
+.contact-info {
+  margin: 1rem 0;
+}
+
+.contact-item {
+  margin-bottom: 1.75rem;
+}
+
+.contact-title {
+  color: var(--clr-primary);
+  font-weight: 400;
+}
+
+.contact-text {
+  text-transform: uppercase;
+}
+
+.contact-form {
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transition: var(--transition);
+  max-width: 35rem;
+}
+
+.contact-form:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.contact-form h3 {
+  padding-top: 1.25rem;
+  color: var(--clr-grey-5);
+}
+
+.form-group {
+  padding: 1rem 1.5rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  margin-bottom: 1.25rem;
+  background: var(--clr-grey-10);
+  border-radius: var(--radius);
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+}
+
+.form-control::placeholder {
+  font-family: var(--ff-primary);
+  color: var(--clr-grey-1);
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+
+/* 
+======
+Footer
+======
+*/
+
 /* 
 =============
 Media Queries
@@ -453,5 +571,13 @@ Media Queries
   .service-card {
     width: 30%;
     margin-right: 3.333%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact-form,
+  .contact-info {
+    float: left;
+    width: 50%;
   }
 }
