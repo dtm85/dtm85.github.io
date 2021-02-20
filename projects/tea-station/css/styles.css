@@ -38,17 +38,47 @@ Variables
 }
 
 /* 
+==========
+Scrollbars
+==========
+*/
+/* Body Scrollbar color */
+body::-webkit-scrollbar {
+  width: 0.7rem;
+  height: 0.7rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: none;
+  margin-top: 55px;
+  margin-bottom: 1px;
+  /* height: 95vh; */
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--clr-primary);
+  border-radius: 8rem;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-primary-light);
+  border-radius: 8rem;
+}
+
+/* 
 =============
 Global Styles
 =============
 */
-
 body {
   font-family: var(--ff-primary);
   background: var(--clr-white);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
+  overflow-x: hidden;
+  overflow: overlay;
 }
 
 a {
@@ -144,7 +174,74 @@ Header
 ======
 */
 
-.header {
+/* Hamburger Menu Container */
+.nav-btn {
+  top: 0.5rem;
+  left: 0.8rem;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+}
+
+/* Menu Button Burger Styling*/
+.menu-burger {
+  width: 32px;
+  height: 3.8px;
+  background-color: var(--clr-primary-light);
+  border-radius: 5px;
+  box-shadow: 0 1px 4px var(--clr-grey-1);
+  transition: all 0.5s ease-in-out;
+}
+
+/* Menu Burger BEFORE & AFTER Elements */
+.menu-burger::before,
+.menu-burger::after {
+  content: "";
+  position: fixed;
+  width: 32px;
+  height: 3.8px;
+  background: var(--clr-primary-light);
+  border-radius: 5px;
+  box-shadow: 0 1px 4px var(--clr-grey-1);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-burger::before {
+  transform: translateY(-11px);
+}
+
+.menu-burger::after {
+  transform: translateY(11px);
+}
+
+/* Menu Button Burger ANIMATION */
+.nav-btn.open .menu-burger {
+  transform: translateX(-35px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.nav-btn.open .menu-burger::before {
+  transform: rotate(45deg) translate(25px, -25px);
+}
+
+.nav-btn.open .menu-burger::after {
+  transform: rotate(-45deg) translate(25px, 25px);
+}
+
+/* 
+======
+Body
+======
+*/
+
+.showcase {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("/projects/tea-station/media/images/main-bcg.jpg") center/cover
@@ -490,65 +587,6 @@ Footer
 
 .company {
   color: var(--clr-primary);
-}
-
-/* Hamburger Menu Container */
-.nav-btn {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-  z-index: 1;
-}
-
-/* Menu Button Burger Styling*/
-.menu-burger {
-  width: 29px;
-  height: 3.8px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 1px 4px var(--clr-primary);
-  transition: all 0.5s ease-in-out;
-}
-
-/* Menu Burger BEFORE & AFTER Elements */
-.menu-burger::before,
-.menu-burger::after {
-  content: "";
-  position: absolute;
-  width: 29px;
-  height: 3.8px;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 1px 4px var(--clr-primary);
-  transition: all 0.5s ease-in-out;
-}
-
-.menu-burger::before {
-  transform: translateY(-11px);
-}
-
-.menu-burger::after {
-  transform: translateY(11px);
-}
-
-/* Menu Button Burger ANIMATION */
-.menu-btn.open .menu-burger {
-  transform: translateX(-35px);
-  background: transparent;
-  box-shadow: none;
-}
-
-.menu-btn.open .menu-burger::before {
-  transform: rotate(45deg) translate(25px, -25px);
-}
-
-.menu-btn.open .menu-burger::after {
-  transform: rotate(-45deg) translate(25px, 25px);
 }
 
 /* 
