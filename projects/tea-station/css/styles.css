@@ -60,6 +60,11 @@ img {
   display: block;
 }
 
+.svg-icon-social {
+  width: 30px;
+  height: 30px;
+}
+
 h1,
 h2,
 h3,
@@ -363,7 +368,6 @@ Services
 
 .service-icon {
   position: absolute;
-  height: ;
   left: 50%;
   bottom: 0;
   /* font-size: -40rem; */
@@ -461,6 +465,91 @@ Contact
 Footer
 ======
 */
+.footer {
+  background: #222;
+  text-align: center;
+}
+
+.social-icon {
+  color: var(--clr-white);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: var(--transition);
+}
+
+.social-icon:hover {
+  color: var(--clr-primary);
+}
+
+.footer-text {
+  margin-top: 1.25rem;
+  text-transform: uppercase;
+  color: var(--clr-white);
+  font-weight: 400;
+}
+
+.company {
+  color: var(--clr-primary);
+}
+
+/* Hamburger Menu Container */
+.nav-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+
+/* Menu Button Burger Styling*/
+.menu-burger {
+  width: 29px;
+  height: 3.8px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px var(--clr-primary);
+  transition: all 0.5s ease-in-out;
+}
+
+/* Menu Burger BEFORE & AFTER Elements */
+.menu-burger::before,
+.menu-burger::after {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 3.8px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px var(--clr-primary);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-burger::before {
+  transform: translateY(-11px);
+}
+
+.menu-burger::after {
+  transform: translateY(11px);
+}
+
+/* Menu Button Burger ANIMATION */
+.menu-btn.open .menu-burger {
+  transform: translateX(-35px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-burger::before {
+  transform: rotate(45deg) translate(25px, -25px);
+}
+
+.menu-btn.open .menu-burger::after {
+  transform: rotate(-45deg) translate(25px, 25px);
+}
 
 /* 
 =============

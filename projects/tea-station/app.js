@@ -11,6 +11,6 @@ navClose.addEventListener("click", () => {
   navbar.classList.remove("showNav");
 });
 //setup date
-const date = (document.getElementById(
-  "date"
-).innerHTML = new Date().getFullYear());
+// const date = (document.getElementById(
+//   "date"
+// ).innerHTML = new Date().getFullYear());
