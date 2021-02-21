@@ -204,8 +204,9 @@ Header
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: var(--transition);
   z-index: 2;
+  animation: bounce 1.5s ease-in-out infinite;
 }
 
 /* Menu Button Burger Styling*/
@@ -215,7 +216,7 @@ Header
   background-color: var(--clr-primary-light);
   border-radius: 5px;
   box-shadow: 0 1px 4px var(--clr-grey-1);
-  transition: all 0.5s ease-in-out;
+  transition: var(--transition);
 }
 
 /* Menu Burger BEFORE & AFTER Elements */
@@ -228,7 +229,7 @@ Header
   background: var(--clr-primary-light);
   border-radius: 5px;
   box-shadow: 0 1px 4px var(--clr-grey-1);
-  transition: all 0.5s ease-in-out;
+  transition: var(--transition);
 }
 
 .menu-burger::before {
@@ -248,10 +249,20 @@ Header
 
 .nav-btn.open .menu-burger::before {
   transform: rotate(45deg) translate(25px, -25px);
+  background: #f29c9c;
 }
 
 .nav-btn.open .menu-burger::after {
   transform: rotate(-45deg) translate(25px, 25px);
+  background: #f29c9c;
+}
+
+.nav-btn.open .menu-burger:hover::after {
+  background: #c40000;
+}
+
+.nav-btn.open .menu-burger:hover::before {
+  background: #c40000;
 }
 
 /* Menu ul element, consists of li & a elements */
@@ -262,25 +273,27 @@ Header
   position: fixed;
   top: 0;
   left: -280px;
-  /* justify-content: center;
-  align-items: center;
-  flex-direction: column; */
-  transition: 0.55s all ease-in-out;
+  transition: var(--transition);
   background: rgba(49, 54, 59, 0.9);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   box-shadow: 2.5px 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.nav-list-container {
-  text-align: center;
+.home {
+  margin-top: 7.5rem;
+}
+
+.nav-list li {
+  display: block;
 }
 
 .nav-list a {
+  padding-top: 1.15rem;
+  padding-bottom: 1rem;
+  padding-left: 1.25rem;
   display: block;
-  list-style-type: none;
   font-size: 1.5rem;
-  padding: 0.25rem 1rem;
   text-transform: uppercase;
   color: var(--clr-grey-10);
   transition: var(--transition);
@@ -290,12 +303,88 @@ Header
 .nav-list a:hover {
   background: var(--clr-primary-light);
   color: var(--clr-primary);
-  padding-left: 1.7rem;
+  padding-left: 2.55rem;
   border-left: 0.35rem solid var(--clr-primary);
 }
 
 .change {
   left: 0;
+}
+
+/* 
+=========
+Animation
+=========
+*/
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(-200px);
+    opacity: 0.5;
+  }
+
+  75% {
+    transform: translateX(50px);
+    opacity: 0.75;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(200px);
+    opacity: 0.5;
+  }
+
+  75% {
+    transform: translateX(-50px);
+    opacity: 0.75;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    transform: scale(1.25);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* 
@@ -310,7 +399,6 @@ Body
     url("/projects/tea-station/media/images/main-bcg.jpg") center/cover
       no-repeat fixed;
   position: relative;
-  /* Animation */
   overflow-x: hidden;
 }
 
@@ -325,7 +413,7 @@ Body
 .banner h2 {
   font-family: var(--ff-secondary);
   color: var(--clr-primary);
-  /* Animation */
+  animation: slideFromRight 4s ease-in-out 1;
 }
 
 .banner h1 {
@@ -333,7 +421,7 @@ Body
   color: var(--clr-white);
   margin-top: 1.25rem;
   margin-bottom: 2rem;
-  /* Animation */
+  animation: slideFromLeft 4s ease-in-out 1;
 }
 
 .banner-btn {
@@ -341,6 +429,7 @@ Body
   outline-offset: 0.25rem;
   font-size: 1.25rem;
   padding: 1rem 1.75rem;
+  animation: show 4s linear 1;
 }
 
 /* Content Divider */
@@ -775,5 +864,13 @@ Media Queries
 @media screen and (max-width: 768px) {
   .change {
     width: 100vw;
+  }
+
+  .nav-list a {
+    padding-left: 2rem;
+  }
+
+  .nav-list a:hover {
+    padding-left: 3.35rem;
   }
 }
