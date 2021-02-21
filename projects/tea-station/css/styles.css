@@ -692,6 +692,7 @@ Contact
   border-radius: var(--radius);
   text-transform: uppercase;
   letter-spacing: var(--spacing);
+  font-family: var(--ff-primary);
 }
 
 .form-control::placeholder {
