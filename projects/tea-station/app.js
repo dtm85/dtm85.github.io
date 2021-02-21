@@ -1,16 +1,3 @@
-// setup nav
-// const navBtn = document.getElementById("nav-btn");
-// const navbar = document.getElementById("navbar");
-// const navClose = document.getElementById("nav-close");
-// show nav
-// navBtn.addEventListener("click", () => {
-//   navbar.classList.add("showNav");
-// });
-// close nav
-// navClose.addEventListener("click", () => {
-//   navbar.classList.remove("showNav");
-// });
-
 // Hamburger Menu Animation
 const menuBtn = document.querySelector(".nav-btn");
 let menuOpen = false;
@@ -24,7 +11,16 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
-//setup date
-// const date = (document.getElementById(
-//   "date"
-// ).innerHTML = new Date().getFullYear());
+const menuIcon = document.querySelector(".nav-btn");
+const navbar = document.querySelector(".nav-list");
+
+menuIcon.addEventListener("click", () => {
+  navbar.classList.toggle("change");
+});
+
+// Navbar Styles applied on Scroll Y
+window.addEventListener("scroll", function () {
+  let header = document.querySelector("header");
+  let windowPosition = window.scrollY > 0;
+  header.classList.toggle("scrolling-active", windowPosition);
+});
