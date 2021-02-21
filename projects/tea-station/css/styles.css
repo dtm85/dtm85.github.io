@@ -272,15 +272,26 @@ Header
   box-shadow: 2.5px 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.nav-list li {
-  margin: 25px;
-  list-style-type: none;
+.nav-list-container {
+  text-align: center;
 }
 
 .nav-list a {
   display: block;
+  list-style-type: none;
   font-size: 1.5rem;
   padding: 0.25rem 1rem;
+  text-transform: uppercase;
+  color: var(--clr-grey-10);
+  transition: var(--transition);
+  letter-spacing: var(--spacing);
+}
+
+.nav-list a:hover {
+  background: var(--clr-primary-light);
+  color: var(--clr-primary);
+  padding-left: 1.7rem;
+  border-left: 0.35rem solid var(--clr-primary);
 }
 
 .change {
