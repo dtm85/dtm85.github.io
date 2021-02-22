@@ -191,7 +191,7 @@ Header
 
 /* Shadow Effect on Navbar applied on Scroll with JavaScript */
 .scrolling-active {
-  background: rgba(49, 54, 59, 0.93);
+  background: rgba(49, 54, 59, 0.965);
   box-shadow: 0 2px 6px 1px var(--clr-primary-light);
 }
 
@@ -274,9 +274,7 @@ Header
   top: 0;
   left: -280px;
   transition: var(--transition);
-  background: rgba(49, 54, 59, 0.9);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  background: rgba(49, 54, 59, 0.975);
   box-shadow: 2.5px 0 5px rgba(0, 0, 0, 0.5);
 }
 
