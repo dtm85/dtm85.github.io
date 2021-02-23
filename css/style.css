@@ -680,7 +680,7 @@ body::-webkit-scrollbar-thumb:hover {
   transform: translateY(0px);
   background: radial-gradient(
     circle farthest-corner at 100% 100%,
-    #bb332e 1%,
+    #2caeba 1%,
     rgba(14, 14, 14, 0) 35%
   );
 }
@@ -689,7 +689,7 @@ body::-webkit-scrollbar-thumb:hover {
 .card-wrapper:hover .project2-gradient-container {
   background: radial-gradient(
     circle farthest-corner at 100% 100%,
-    #bb332e 1%,
+    #2caeba 1%,
     rgba(14, 14, 14, 0) 35%
   );
   opacity: 1;
@@ -942,10 +942,8 @@ body::-webkit-scrollbar-thumb:hover {
     flex-direction: column;
     border-radius: 25px 0 0 25px;
     transition: right 0.6s cubic-bezier(1, 0, 0, 1);
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.955);
     box-shadow: none;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     border-left: 1px solid rgba(255, 255, 255, 0.1);
