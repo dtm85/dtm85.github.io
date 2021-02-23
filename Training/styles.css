@@ -5,6 +5,19 @@ body {
 
 .container {
   border: 5px solid red;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-1 {
+  height: 800px;
+  border: 5px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .box {
@@ -32,4 +45,8 @@ body {
 
 .box-5 {
   background: #51cb20;
+}
+
+.generic {
+  background: cornflowerblue;
 }
