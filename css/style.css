@@ -462,13 +462,14 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Project 1 Image for Circle */
 .card-wrapper-project1::before {
-  background: url("/media/images/projects/tea-station/main-bcg.png")
-    center/cover no-repeat;
+  background: url(/media/images/projects/tea-station/main-bcg.png) center/cover
+    no-repeat;
 }
 
 /* Project 2 Image for Circle */
 .card-wrapper-project2::before {
-  background: url(/media/images/projects/backRoads/main.png);
+  background: url(/media/images/projects/backRoads/main2.png) center/cover
+    no-repeat;
 }
 
 /* Project 3 Image for Circle */
