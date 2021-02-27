@@ -1,23 +1,29 @@
-// ********** set date ************
-// select span
-const date = (document.getElementById(
-  "date"
-).innerHTML = new Date().getFullYear());
-
 // ********** nav toggle ************
-// select button and links
-const navBtn = document.getElementById("nav-toggle");
-const links = document.getElementById("nav-links");
-// add event listener
-navBtn.addEventListener("click", () => {
-  links.classList.toggle("show-links");
+// Hamburger Menu Animation
+const menuBtn = document.querySelector(".nav-btn");
+let menuOpen = false;
+menuBtn.addEventListener("click", () => {
+  if (!menuOpen) {
+    menuBtn.classList.add("open");
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove("open");
+    menuOpen = false;
+  }
+});
+
+const menuIcon = document.querySelector(".nav-btn");
+const navbar = document.querySelector(".nav-links");
+
+menuIcon.addEventListener("click", () => {
+  navbar.classList.toggle("show-links");
 });
 
 // ********** smooth scroll ************
 // select links
 const scrollLinks = document.querySelectorAll(".scroll-link");
-scrollLinks.forEach(link => {
-  link.addEventListener("click", e => {
+scrollLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
     // prevent default
     e.preventDefault();
     links.classList.remove("show-links");
@@ -31,7 +37,15 @@ scrollLinks.forEach(link => {
       left: 0,
       // top: element.offsetTop,
       top: position,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   });
+});
+
+// ********** Navbar Styles on Scroll Y ************
+// Navbar Styles applied on Scroll Y
+window.addEventListener("scroll", function () {
+  let header = document.querySelector("header");
+  let windowPosition = window.scrollY > 0;
+  header.classList.toggle("scrolling-active", windowPosition);
 });
