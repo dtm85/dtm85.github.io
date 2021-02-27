@@ -45,7 +45,7 @@ scrollLinks.forEach((link) => {
 // ********** Navbar Styles on Scroll Y ************
 // Navbar Styles applied on Scroll Y
 window.addEventListener("scroll", function () {
-  let header = document.querySelector("header");
+  let header = document.querySelector(".navbar");
   let windowPosition = window.scrollY > 0;
   header.classList.toggle("scrolling-active", windowPosition);
 });

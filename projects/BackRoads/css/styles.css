@@ -159,14 +159,18 @@ p {
 Navbar
 ======
 */
+.scrolling-active {
+  background: var(--clr-grey-1);
+  box-shadow: 0 2px 6px 1px var(--clr-primary-1);
+}
+
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--clr-white);
-  box-shadow: var(--dark-shadow);
   z-index: 2;
+  transition: var(--transition);
 }
 
 .social-icons {
@@ -259,7 +263,7 @@ Hero
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgb(44, 174, 186, 0.6), rgba(0, 0, 0, 0.7)),
     url(../media/images/main.jpg) center/cover no-repeat;
 }
 
@@ -616,7 +620,7 @@ Media Queries
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   /* Hamburger Menu Container */
   .nav-btn {
     width: 32px;
