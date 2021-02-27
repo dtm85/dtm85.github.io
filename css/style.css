@@ -468,7 +468,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Project 2 Image for Circle */
 .card-wrapper-project2::before {
-  background: url(/media/images/projects/code.jpg);
+  background: url(/media/images/projects/backRoads/main.png);
 }
 
 /* Project 3 Image for Circle */
