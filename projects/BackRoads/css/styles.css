@@ -184,7 +184,7 @@ Navbar
 
 .nav-center {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -620,7 +620,24 @@ Media Queries
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 992px) {
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    height: auto;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    box-shadow: 0 2px 6px 1px var(--clr-primary-1);
+    background: var(--clr-grey-4);
+  }
+
   /* Hamburger Menu Container */
   .nav-btn {
     width: 32px;
@@ -642,7 +659,7 @@ Media Queries
   .menu-burger {
     width: 32px;
     height: 3.8px;
-    background-color: var(--clr-primary-7);
+    background: #88ebf2;
     border-radius: 5px;
     box-shadow: 0 1px 4px var(--clr-grey-5);
     transition: var(--transition);
@@ -655,7 +672,7 @@ Media Queries
     position: absolute;
     width: 32px;
     height: 3.8px;
-    background: var(--clr-primary-7);
+    background: #88ebf2;
     border-radius: 5px;
     box-shadow: 0 1px 4px var(--clr-grey-5);
     transition: var(--transition);
