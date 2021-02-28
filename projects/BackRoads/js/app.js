@@ -49,3 +49,19 @@ window.addEventListener("scroll", function () {
   let windowPosition = window.scrollY > 0;
   header.classList.toggle("scrolling-active", windowPosition);
 });
+
+// Navbar Hide on Top - Shows on scroll down
+const nav = document.querySelector(".navbar");
+let prevScrollpos = window.pageYOffset;
+
+window.addEventListener("scroll", () => {
+  let currentScrollPos = window.pageYOffset;
+
+  if (prevScrollpos > currentScrollPos) {
+    nav.classList.add("hide");
+  } else {
+    nav.classList.remove("hide");
+  }
+
+  prevScrollpos = currentScrollPos;
+});
