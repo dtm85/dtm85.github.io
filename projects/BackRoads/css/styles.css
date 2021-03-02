@@ -175,10 +175,11 @@ Navbar
 
 .social-icons {
   display: none;
+  padding: 0 2rem;
 }
 
 .nav-icon {
-  width: 1.75rem;
+  width: 1.4rem;
   height: auto;
 }
 
@@ -192,7 +193,7 @@ Navbar
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 2.7rem;
 }
 
 .nav-link {
@@ -361,7 +362,19 @@ Featured Tours
 }
 
 .tour-card:hover .tour-title {
-  color: var(--clr-grey-9);
+  color: var(--clr-grey-10);
+}
+
+.tour-card:hover .tour-title p {
+  color: var(--clr-grey-6);
+}
+
+.tour-card:hover .tour-info > p {
+  color: var(--clr-grey-7);
+}
+
+.tour-card:hover .tour-footer p {
+  color: var(--clr-primary-6);
 }
 
 .tour-img-container {
@@ -574,14 +587,13 @@ Footer
   letter-spacing: 2px;
 }
 
-.back-white,
-.roads-primary-5 {
+.back-white {
   color: var(--clr-white);
   font-weight: 700;
 }
 
-.roads-primary-5 {
-  color: var(--clr-primary-5);
+.roads-primary-8 {
+  color: var(--clr-primary-8);
   font-weight: 700;
 }
 
@@ -620,15 +632,45 @@ Media Queries
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 993px) {
   .nav-center {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .nav-links {
     height: auto;
     display: flex;
+  }
+
+  .nav-link {
+    padding: 0 0;
+    margin-right: 1rem;
+  }
+
+  .nav-link:hover {
+    padding: 0;
+    color: var(--clr-primary-8);
+    background: transparent;
+    transform: scale(1.05);
+  }
+
+  .social-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-icon {
+    margin-right: 0.7rem;
+    color: var(--clr-primary-8);
+    width: 1.2rem;
+    height: auto;
+    transition: var(--transition);
+  }
+
+  .nav-icon:hover {
+    color: var(--clr-primary-6);
   }
 }
 
@@ -640,8 +682,8 @@ Media Queries
 
   /* Hamburger Menu Container */
   .nav-btn {
-    width: 32px;
-    height: 32px;
+    width: 1.75rem;
+    height: 1.75rem;
     position: relative;
     display: flex;
     justify-content: center;
@@ -657,9 +699,9 @@ Media Queries
 
   /* Menu Button Burger Styling*/
   .menu-burger {
-    width: 32px;
+    width: 1.75rem;
     height: 3.8px;
-    background: #88ebf2;
+    background: var(--clr-primary-8);
     border-radius: 5px;
     box-shadow: 0 1px 4px var(--clr-grey-5);
     transition: var(--transition);
@@ -670,9 +712,9 @@ Media Queries
   .menu-burger::after {
     content: "";
     position: absolute;
-    width: 32px;
+    width: 1.75rem;
     height: 3.8px;
-    background: #88ebf2;
+    background: var(--clr-primary-8);
     border-radius: 5px;
     box-shadow: 0 1px 4px var(--clr-grey-5);
     transition: var(--transition);
