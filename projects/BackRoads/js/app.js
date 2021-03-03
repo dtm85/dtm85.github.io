@@ -21,7 +21,7 @@ menuIcon.addEventListener("click", () => {
 
 // ********** smooth scroll ************
 // select links
-const scrollLinks = document.querySelectorAll(".scroll-link");
+const scrollLinks = document.querySelectorAll("scroll-link");
 scrollLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     // prevent default
