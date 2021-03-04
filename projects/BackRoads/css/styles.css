@@ -383,6 +383,7 @@ Featured Tours
 
 .tour-img {
   height: 15rem;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -479,6 +480,22 @@ Contact
   border: transparent;
 }
 
+.form-control::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.form-control::-moz-placeholder {
+  color: inherit;
+}
+
+.form-control:-ms-input-placeholder {
+  color: inherit;
+}
+
+.form-control::-ms-input-placeholder {
+  color: inherit;
+}
+
 .form-control::placeholder {
   color: inherit;
 }
@@ -525,6 +542,7 @@ Gallery
 
 .gallery-img {
   height: 17rem;
+  -o-object-fit: cover;
   object-fit: cover;
   transition: var(--transition);
 }
