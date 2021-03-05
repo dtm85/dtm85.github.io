@@ -1,0 +1,23 @@
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #222;
+}
+
+.container {
+  border: 5px solid black;
+}
+
+.cell {
+  padding: 2rem;
+  background: #dedede;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid red;
+}
