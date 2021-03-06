@@ -41,8 +41,8 @@ a {
 }
 
 img {
+  object-fit: cover;
   width: 100%;
-  height: 100%;
 }
 
 h1,
@@ -194,23 +194,90 @@ Tiles
 }
 
 /* 
+======
+Layout
+======
+*/
+.header {
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.navbar {
+  background: var(--darkGrey);
+}
+.navbar li {
+  list-style-type: none;
+}
+
+.navbar a {
+  padding: 1rem;
+  display: inline-block;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  font-size: 1.2rem;
+  color: var(--mainBlack);
+  transition: var(--mainTransition);
+}
+
+.navbar a:hover {
+  color: var(--mainWhite);
+}
+
+.content {
+  padding: 2rem;
+}
+
+.content p {
+  font-size: 1rem;
+}
+
+.sidebar {
+  background: var(--primaryColor);
+}
+
+.sidebar span {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  color: var(--mainWhite);
+}
+
+/* 
+====
+Main
+====
+*/
+.main {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto auto;
+}
+
+/* 
+======
+Footer
+======
+*/
+.footer {
+  background: var(--mainBlack);
+  color: var(--mainWhite);
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0.5rem 0;
+}
+.footer p {
+  font-size: 1.2rem;
+}
+
+/* 
 =============
 Media Queries
 =============
 */
-@media screen and (min-width: 992px) {
-  .main-navbar ul {
-    max-width: 1170px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .main-navbar a {
-    text-align: center;
-  }
-}
-
 @media screen and (max-width: 600px) {
   .hero-banner {
     padding: 0 3rem;
@@ -227,18 +294,15 @@ Media Queries
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
   }
-}
 
-@media screen and (min-width: 1170px) {
-  .cards-center {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (min-width: 768px) {
   .tiles-center {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
+  }
+
+  .navbar ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -246,11 +310,122 @@ Media Queries
   .tiles-center {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .main-navbar ul {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .main-navbar a {
+    text-align: center;
+  }
+
+  .main {
+    grid-template-columns: [start] 200px [col-1-end] 1fr [col-2-end] 50px [end];
+    grid-template-rows: [start] auto [row-1-end] 1fr [row-2-end] auto [end];
+  }
+
+  .header {
+    grid-column: start/end;
+    grid-row: start/row-1-end;
+  }
+
+  .navbar {
+    grid-column: start/col-1-end;
+    grid-row: row-1-end/row-2-end;
+  }
+
+  .content {
+    grid-column: col-1-end/col-2-end;
+    grid-row: row-1-end/row-2-end;
+  }
+
+  .sidebar {
+    grid-column: col-2-end/end;
+    grid-row: row-1-end/row-2-end;
+  }
+
+  .footer {
+    grid-column: start/end;
+    grid-row: row-2-end/end;
+  }
+
+  .navbar ul {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    min-height: 100%;
+  }
+
+  .navbar li a {
+    color: var(--primaryColor);
+  }
+
+  .sidebar span {
+    grid-template-columns: 1fr;
+    align-items: center;
+    min-height: 100%;
+    background: var(--darkGrey);
+    color: var(--primaryColor);
+  }
 }
 
-@media screen and (min-width: 1110px) {
+@media screen and (min-width: 1170px) {
+  .cards-center {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   .tiles-center {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 200px);
+    grid-template-areas:
+      "a a a b"
+      "a a a c"
+      "d d d d"
+      "e f f f"
+      "e g h i";
+  }
+
+  .tiles img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .tile-1 {
+    grid-area: a;
+  }
+
+  .tile-2 {
+    grid-area: b;
+  }
+
+  .tile-3 {
+    grid-area: c;
+  }
+
+  .tile-4 {
+    grid-area: d;
+  }
+
+  .tile-5 {
+    grid-area: e;
+  }
+
+  .tile-6 {
+    grid-area: f;
+  }
+
+  .tile-7 {
+    grid-area: g;
+  }
+
+  .tile-8 {
+    grid-area: h;
+  }
+
+  .tile-9 {
+    grid-area: i;
   }
 }
