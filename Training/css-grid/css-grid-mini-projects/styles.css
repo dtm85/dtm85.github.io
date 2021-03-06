@@ -42,6 +42,7 @@ a {
 
 img {
   width: 100%;
+  height: 100%;
 }
 
 h1,
@@ -176,6 +177,23 @@ Cards
 }
 
 /* 
+=====
+Tiles
+=====
+*/
+.tiles {
+  padding: 4rem 0;
+}
+
+.tiles-center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 2rem auto;
+  display: grid;
+  grid-row-gap: 2rem;
+}
+
+/* 
 =============
 Media Queries
 =============
@@ -214,5 +232,25 @@ Media Queries
 @media screen and (min-width: 1170px) {
   .cards-center {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tiles-center {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .tiles-center {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1110px) {
+  .tiles-center {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
   }
 }
