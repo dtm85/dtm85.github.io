@@ -75,7 +75,7 @@ li {
   display: inline-block;
   padding: 0.5rem 1rem;
   text-transform: capitalize;
-  border: 3px solid --primaryColor;
+  border: 3px solid var(--primaryColor);
   color: var(--primaryColor);
   margin: 3rem;
   transition: var(--mainTransition);
@@ -109,6 +109,38 @@ Main Navbar
   color: var(--mainBlack);
 }
 
+/* 
+====
+Hero
+====
+*/
+.hero-header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(223, 29, 29, 0.75), rgba(0, 0, 0, 0.75)),
+    url(./images/image-2.jpeg) center/cover fixed no-repeat;
+  color: var(--mainWhite);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-banner p {
+  width: 80%;
+  max-width: 560px;
+  font-size: 1rem;
+}
+
+/* 
+=====
+Cards
+=====
+*/
+
+/* 
+=============
+Media Queries
+=============
+*/
 @media screen and (min-width: 992px) {
   .main-navbar ul {
     max-width: 1170px;
@@ -119,5 +151,17 @@ Main Navbar
 
   .main-navbar a {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-banner {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-header {
+    padding: 0 3rem;
   }
 }
