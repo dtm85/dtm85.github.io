@@ -105,29 +105,7 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
-@media screen and (min-width: 800px) {
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 1.75rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  body {
-    font-size: 1rem;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
-  }
-}
+
 /*  global classes */
 
 .btn {
@@ -246,3 +224,116 @@ Single Page
 Products Page
 =============
 */
+
+/*
+============= 
+Media Queries
+=============
+*/
+
+/******* Global *******/
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/******* Nav *******/
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    box-shadow: 0 2px 6px 1px var(--clr-primary-1);
+    background: var(--clr-grey-4);
+  }
+
+  /* Hamburger Menu Container */
+  .nav-btn {
+    width: 1.75rem;
+    height: 1.75rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: var(--transition);
+    z-index: 2;
+  }
+
+  .nav-btn:hover {
+    transform: scale(1.2);
+  }
+
+  /* Menu Button Burger Styling*/
+  .menu-burger {
+    width: 1.75rem;
+    height: 3.8px;
+    background: var(--clr-primary-8);
+    border-radius: 5px;
+    box-shadow: 0 1px 4px var(--clr-grey-5);
+    transition: var(--transition);
+  }
+
+  /* Menu Burger BEFORE & AFTER Elements */
+  .menu-burger::before,
+  .menu-burger::after {
+    content: "";
+    position: absolute;
+    width: 1.75rem;
+    height: 3.8px;
+    background: var(--clr-primary-8);
+    border-radius: 5px;
+    box-shadow: 0 1px 4px var(--clr-grey-5);
+    transition: var(--transition);
+  }
+
+  .menu-burger::before {
+    transform: translateY(-11px);
+  }
+
+  .menu-burger::after {
+    transform: translateY(11px);
+  }
+
+  /* Menu Button Burger ANIMATION */
+  .nav-btn.open .menu-burger {
+    transform: translateX(35px);
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .nav-btn.open .menu-burger::before {
+    transform: rotate(45deg) translate(-25px, 25px);
+    background: #f29c9c;
+  }
+
+  .nav-btn.open .menu-burger::after {
+    transform: rotate(-45deg) translate(-25px, -25px);
+    background: #f29c9c;
+  }
+
+  .nav-btn.open .menu-burger:hover::after {
+    background: #c40000;
+  }
+
+  .nav-btn.open .menu-burger:hover::before {
+    background: #c40000;
+  }
+}
