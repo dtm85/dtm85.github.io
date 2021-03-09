@@ -39,11 +39,11 @@ menuBtn.addEventListener("click", () => {
 
 // ********** nav toggle ************
 const navBtn = document.getElementById("nav-btn");
-const links = document.getElementById("nav-links");
+const links = document.getElementById("sidebar-links");
 
 // Add Event Listener
 navBtn.addEventListener("click", () => {
-  links.classList.toggle("show-links");
+  links.classList.toggle("show-sidebar");
 });
 
 // ********** smooth scroll ************
@@ -53,7 +53,7 @@ scrollLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
 
-    links.classList.remove("show-links");
+    links.classList.remove("show-sidebar");
     // Remove the open class for nav-btn to change menu animation from X to Menu
     if (!menuOpen) {
       menuBtn.classList.add("open");
