@@ -150,6 +150,33 @@ p {
 Navbar
 ======
 */
+.nav-links {
+  display: none;
+}
+
+.nav {
+  height: 5rem;
+  padding: 1rem;
+  display: grid;
+  align-items: center;
+}
+
+.nav-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.nav-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.nav-btn {
+  cursor: pointer;
+  justify-self: self-end;
+}
 
 /*
 =======
@@ -256,9 +283,41 @@ Media Queries
   }
 }
 
-/******* Nav *******/
+/******* Navbar *******/
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
+  .nav {
+    background: var(--clr-primary-10);
+  }
+
+  .nav-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    column-gap: 2rem;
+    justify-self: end;
+  }
+
+  .nav-links a {
+    text-transform: capitalize;
+    color: var(--clr-grey-1);
+    font-weight: bold;
+    letter-spacing: var(--spacing);
+    transition: var(--transition);
+  }
+
+  .nav-links a:hover {
+    color: var(--clr-primary-5);
+  }
+
+  .nav-center {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 766px) {
   .navbar {
     box-shadow: 0 2px 6px 1px var(--clr-primary-1);
     background: var(--clr-grey-4);
@@ -285,7 +344,7 @@ Media Queries
   .menu-burger {
     width: 1.75rem;
     height: 3.8px;
-    background: var(--clr-primary-8);
+    background: var(--clr-primary-5);
     border-radius: 5px;
     box-shadow: 0 1px 4px var(--clr-grey-5);
     transition: var(--transition);
@@ -298,7 +357,7 @@ Media Queries
     position: absolute;
     width: 1.75rem;
     height: 3.8px;
-    background: var(--clr-primary-8);
+    background: var(--clr-primary-5);
     border-radius: 5px;
     box-shadow: 0 1px 4px var(--clr-grey-5);
     transition: var(--transition);
