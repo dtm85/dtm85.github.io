@@ -378,7 +378,8 @@ Media Queries
   .nav-btn {
     width: 1.75rem;
     height: 1.75rem;
-    position: fixed;
+    position: relative;
+    right: 0;
     margin-right: 10px;
     display: flex;
     justify-content: center;
