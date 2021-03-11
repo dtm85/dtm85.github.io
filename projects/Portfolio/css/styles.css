@@ -67,6 +67,7 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
+  overflow: overlay;
 }
 ul {
   list-style-type: none;
@@ -116,7 +117,6 @@ p {
   letter-spacing: var(--spacing);
   display: inline-block;
   font-weight: 700;
-  -webkit-transition: var(--transition);
   transition: var(--transition);
   font-size: 0.875rem;
   border: 2px solid transparent;
@@ -144,6 +144,34 @@ p {
   }
 }
 /* added during recording */
+
+/* 
+==========
+Scrollbars
+==========
+*/
+/* Body Scrollbar color */
+body::-webkit-scrollbar {
+  width: 0.7rem;
+  height: 0.7rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: none;
+  margin-top: 82px;
+  margin-bottom: 3px;
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--clr-primary-5);
+  border-radius: 8rem;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-primary-6);
+  border-radius: 8rem;
+}
 
 /*
 ======
@@ -176,6 +204,17 @@ Navbar
 .nav-btn {
   cursor: pointer;
   justify-self: self-end;
+}
+
+/* Fixed Navbar */
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--clr-white);
+  z-index: 2;
+  box-shadow: var(--dark-shadow);
 }
 
 /*
@@ -223,6 +262,7 @@ Sidebar
   margin-top: 3rem;
   width: 23rem;
   grid-template-columns: repeat(7, 1fr);
+  -moz-column-gap: 1.75rem;
   column-gap: 1.75rem;
 }
 
@@ -241,6 +281,10 @@ Hero
 ====
 */
 /* underline added to globals */
+.hero {
+  background: tan;
+  min-height: 180vh;
+}
 
 /*
 =====
@@ -345,6 +389,7 @@ Media Queries
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
+    -moz-column-gap: 2rem;
     column-gap: 2rem;
     justify-self: end;
   }

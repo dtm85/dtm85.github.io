@@ -100,23 +100,24 @@ smoothScroll.forEach((link) => {
 
 // ********** Navbar Styles on ScrollY ************
 window.addEventListener("scroll", function () {
-  let header = document.querySelector(".navbar");
+  let header = document.querySelector("nav");
   let windowPosition = window.scrollY > 0;
-  header.classList.toggle("scrolling-active", windowPosition);
+  header.classList.toggle("navbar-fixed", windowPosition);
 });
 
+// ********** Do I really need this one??? ************
 // Navbar Hide on Top - Shows on scroll down
-const nav = document.querySelector(".navbar");
-let prevScrollpos = window.pageYOffset;
+// const nav = document.querySelector(".navbar");
+// let prevScrollpos = window.pageYOffset;
 
-window.addEventListener("scroll", () => {
-  let currentScrollPos = window.pageYOffset;
+// window.addEventListener("scroll", () => {
+//   let currentScrollPos = window.pageYOffset;
 
-  if (prevScrollpos > currentScrollPos) {
-    nav.classList.add("hide");
-  } else {
-    nav.classList.remove("hide");
-  }
+//   if (prevScrollpos > currentScrollPos) {
+//     nav.classList.add("hide");
+//   } else {
+//     nav.classList.remove("hide");
+//   }
 
-  prevScrollpos = currentScrollPos;
-});
+//   prevScrollpos = currentScrollPos;
+// });
