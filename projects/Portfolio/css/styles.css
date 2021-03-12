@@ -148,7 +148,7 @@ p {
 
 /* Underline */
 .underline {
-  width: 5rem;
+  width: 5.5rem;
   height: 0.25rem;
   margin-bottom: 1.25rem;
   background: var(--clr-primary-5);
@@ -207,7 +207,7 @@ Navbar
   display: grid;
   align-items: center;
   transition: var(--transition);
-  z-index: 1000;
+  z-index: 10;
 }
 
 .nav-center {
@@ -229,7 +229,7 @@ Navbar
 
 /* Fixed Navbar */
 .navbar-fixed {
-  background: var(--clr-primary-10);
+  background: var(--clr-white);
   box-shadow: var(--dark-shadow);
 }
 
@@ -249,7 +249,7 @@ Sidebar
   place-items: center;
   transition: var(--transition);
   transform: translateX(-100%);
-  z-index: 1;
+  z-index: 11;
 }
 
 .show-sidebar {
@@ -346,12 +346,17 @@ About
 
 .about-title .underline {
   margin-left: 0;
+  width: 8rem;
 }
 
 .about-center {
   display: grid;
-  gap: 3rem;
-  grid-template-columns: 1fr 1fr;
+  gap: 3rem 2rem;
+  /* grid-template-columns: 1fr 1fr; */
+}
+
+.about-img {
+  justify-self: center;
 }
 
 /*
@@ -439,13 +444,19 @@ Media Queries
   }
 }
 
+@media screen and (max-width: 800px) {
+  .underline {
+    width: 4.5rem;
+  }
+
+  .about-title .underline {
+    width: 6.5rem;
+  }
+}
+
 /******* Navbar *******/
 
 @media screen and (min-width: 768px) {
-  .nav {
-    background: var(--clr-primary-10);
-  }
-
   .nav-links {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -475,11 +486,6 @@ Media Queries
 }
 
 @media screen and (max-width: 766px) {
-  .navbar-fixed {
-    background: var(--clr-grey-10);
-    box-shadow: none;
-  }
-
   /* Hamburger Menu Container */
   .nav-btn {
     width: 1.75rem;
@@ -492,7 +498,7 @@ Media Queries
     align-items: center;
     cursor: pointer;
     transition: var(--transition);
-    z-index: 2;
+    z-index: 100;
   }
 
   .nav-btn:hover {
