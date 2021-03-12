@@ -100,9 +100,9 @@ smoothScroll.forEach((link) => {
 
 // ********** Navbar Styles on ScrollY ************
 window.addEventListener("scroll", function () {
-  let header = document.querySelector("nav");
+  let nav = document.querySelector("nav");
   let windowPosition = window.scrollY > 0;
-  header.classList.toggle("navbar-fixed", windowPosition);
+  nav.classList.toggle("navbar-fixed", windowPosition);
 });
 
 // ********** Do I really need this one??? ************
