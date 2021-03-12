@@ -161,6 +161,10 @@ p {
   text-align: center;
 }
 
+.bg-grey {
+  background: var(--clr-grey-10);
+}
+
 /* 
 ==========
 Scrollbars
@@ -339,6 +343,10 @@ Hero
 About
 =====
 */
+.about {
+  margin-bottom: 2.5rem;
+}
+
 .about-title {
   text-align: left;
   margin-bottom: 2rem;
@@ -352,7 +360,6 @@ About
 .about-center {
   display: grid;
   gap: 3rem 2rem;
-  /* grid-template-columns: 1fr 1fr; */
 }
 
 .about-img {
@@ -365,7 +372,47 @@ Services
 ========
 */
 /* small screen layout setup */
-/* bg-grey in globals */
+.service-icon {
+  width: 2rem;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.service {
+  background: var(--clr-white);
+  padding: 3rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.services-underline {
+  width: 11.2rem;
+}
+
+.service .underline {
+  width: 3rem;
+  height: 0.17rem;
+  transition: var(--transition);
+}
+
+.service p {
+  transition: var(--transition);
+}
+
+.service:hover {
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+}
+
+.service:hover p {
+  color: var(--clr-white);
+}
+
+.service:hover .underline {
+  background: var(--clr-white);
+}
 
 /*
 ======== 
@@ -420,6 +467,14 @@ Media Queries
 */
 
 /******* Global *******/
+@media screen and (min-width: 676px) {
+  .services-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
@@ -485,7 +540,7 @@ Media Queries
   }
 }
 
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 767px) {
   /* Hamburger Menu Container */
   .nav-btn {
     width: 1.75rem;
@@ -572,7 +627,8 @@ Media Queries
     grid-template-columns: 1fr 1fr;
   }
 
-  .hero-img::before {
+  .hero-img::before,
+  .about-img::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -581,5 +637,26 @@ Media Queries
     top: 2rem;
     right: -2rem;
     border-radius: var(--radius);
+  }
+
+  .about-center {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-img {
+    position: relative;
+  }
+
+  .about-img::before {
+    left: -2rem;
+  }
+
+  .about-info {
+    align-self: center;
+  }
+
+  .services-center {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 }
