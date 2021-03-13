@@ -819,6 +819,16 @@ Footer
   text-transform: capitalize;
 }
 
+.john-white {
+  color: var(--clr-white);
+  font-weight: bold;
+}
+
+.doe-primary-5 {
+  color: var(--clr-primary-5);
+  font-weight: bold;
+}
+
 /*
 =========== 
 Single Page
