@@ -431,7 +431,7 @@ Projects
 }
 
 .projects .underline {
-  width: 17.5rem;
+  width: 17.4rem;
 }
 
 .project-info {
@@ -566,7 +566,7 @@ Skills
 ======
 */
 .skills .underline {
-  width: 7.4rem;
+  width: 7rem;
 }
 
 .skills {
@@ -708,6 +708,31 @@ Timeline
 Blog
 ====
 */
+.blog .underline {
+  width: 6rem;
+}
+
+.blog {
+  background: var(--clr-grey-10);
+}
+
+.card {
+  height: 27rem;
+  position: relative;
+  perspective: 1500px;
+}
+
+.card-front {
+  background: red;
+}
+
+.card-back {
+  background: green;
+}
+
+.card:hover .card-front {
+  transform: rotateY(-180deg);
+}
 
 /*
 ======
@@ -794,16 +819,24 @@ Media Queries
     width: 9.5rem;
   }
 
-  .projects-underline {
-    width: 14.6rem;
+  .projects .underline {
+    width: 14rem;
   }
 
-  .connect-underline {
+  .connect .underline {
     width: 19.8rem;
   }
 
-  .skills-underline {
+  .skills .underline {
     width: 6rem;
+  }
+
+  .timeline .underline {
+    width: 9.4rem;
+  }
+
+  .blog .underline {
+    width: 5rem;
   }
 }
 
