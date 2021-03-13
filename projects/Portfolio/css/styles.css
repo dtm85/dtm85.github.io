@@ -357,6 +357,10 @@ About
   width: 8rem;
 }
 
+.about_me-underline {
+  width: 19.75rem;
+}
+
 .about-center {
   display: grid;
   gap: 3rem 2rem;
@@ -834,12 +838,96 @@ Footer
 Single Page
 ===========
 */
+/****** Contact page ******/
+.contact_me-underline {
+  width: 23rem;
+}
+
+.single-page {
+  background: var(--clr-primary-10);
+  min-height: calc(100vh - 5rem - 120px);
+}
+
+.single-page .section-title {
+  display: grid;
+  place-items: center;
+}
+
+.page-info {
+  max-width: 700px;
+}
+
+.page-info a {
+  text-transform: uppercase;
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
+
+.page-info a:hover {
+  color: var(--clr-primary-1);
+}
 
 /*
 ============= 
 Products Page
 =============
 */
+.my_projects-underline {
+  width: 24rem;
+}
+
+.svg-home {
+  width: 2rem;
+  height: 2rem;
+}
+
+.code {
+  width: 15px;
+  height: auto;
+  margin: 0 10px;
+  transition: var(--transition);
+}
+
+.js {
+  width: 17px;
+  height: 20px;
+}
+
+.html5:hover {
+  color: #dc4d25;
+  transition: var(--transition);
+}
+
+.css3:hover {
+  color: #254bdd;
+  transition: var(--transition);
+}
+
+.js:hover {
+  color: #e8d44d;
+  transition: var(--transition);
+}
+
+.svg-github {
+  width: 17px;
+  height: 19px;
+  color: var(--clr-grey-1);
+}
+
+.svg-github:hover {
+  color: #6e5494;
+  transition: var(--transition);
+}
+
+.projects-hero {
+  /* height: 40vh; */
+  /* display: grid; */
+  /* place-items: center; */
+}
+
+.projects-hero .section-title {
+  margin-bottom: 0;
+}
 
 /*
 ============= 
@@ -905,12 +993,24 @@ Media Queries
     width: 6.5rem;
   }
 
+  .single-page .about_me-underline {
+    width: 15rem;
+  }
+
+  .single-page .contact_me-underline {
+    width: 18rem;
+  }
+
   .services-underline {
     width: 9.5rem;
   }
 
   .projects .underline {
     width: 14rem;
+  }
+
+  .my_projects-underline {
+    width: 18.25rem;
   }
 
   .connect .underline {
