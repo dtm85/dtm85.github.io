@@ -371,7 +371,6 @@ About
 Services
 ========
 */
-/* small screen layout setup */
 .service-icon {
   width: 2rem;
   height: auto;
@@ -379,9 +378,9 @@ Services
 }
 
 .service {
+  margin-bottom: 2rem;
   background: var(--clr-white);
   padding: 3rem 1.5rem;
-  margin-bottom: 2rem;
   border-radius: var(--radius);
   text-align: center;
   transition: var(--transition);
@@ -419,23 +418,224 @@ Services
 Projects
 ========
 */
+.projects-text {
+  width: 85vw;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.project {
+  position: relative;
+  background: var(--clr-primary-5);
+  border-radius: var(--radius);
+}
+
+.projects .underline {
+  width: 17.5rem;
+}
+
+.project-info {
+  text-align: center;
+  color: var(--clr-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: var(--transition);
+  opacity: 0;
+}
+
+.project-info p {
+  text-transform: capitalize;
+  color: var(--clr-white);
+}
+
+.project:hover .project-info {
+  opacity: 1;
+}
+
+.project-img {
+  transition: var(--transition);
+  border-radius: var(--radius);
+  height: 15rem;
+  object-fit: cover;
+}
+
+.project:hover .project-img {
+  opacity: 0.1;
+}
+
+.project::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0.25rem solid var(--clr-white);
+  border-radius: var(--radius);
+  transition: var(--transition);
+  opacity: 0;
+}
+
+.project:hover::after {
+  opacity: 1;
+  transform: scale(0.8);
+}
 
 /*
 =======
 Connect
 =======
 */
+.connect {
+  min-height: 40vh;
+  position: relative;
+  padding: 10rem 0 5rem 0;
+  margin: 5rem 0;
+}
+
+.connect .underline {
+  width: 23.5rem;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.connect::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--clr-white);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.connect {
+  display: grid;
+  place-items: center;
+  -webkit-clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
+  clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
+}
+
+.video-banner .section-title {
+  margin-bottom: 2rem;
+}
+
+.video-text {
+  max-width: 30rem;
+}
+
+.video-banner {
+  background: var(--clr-primary-10);
+  padding: 3rem 5rem 12rem 5rem;
+  text-align: center;
+  -webkit-clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+}
 
 /*
 ======
 Skills
 ======
 */
+.skills .underline {
+  width: 7.4rem;
+}
+
+.skills {
+  background: var(--clr-primary-9);
+}
+
+.skills h3 {
+  margin: 1.5rem 0;
+  color: var(--clr-primary-1);
+}
+
+.skill {
+  margin-bottom: 1.25rem;
+}
+
+.skill p {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  color: var(--clr-primary-1);
+}
+
+.skill-container {
+  background: var(--clr-white);
+  height: 1.2rem;
+  width: 100%;
+  border-radius: var(--radius);
+  position: relative;
+}
+
+.skill-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--clr-primary-5);
+  height: 100%;
+  width: 50%;
+  border-radius: var(--radius);
+}
+
+.value-70 {
+  width: 70%;
+}
+
+.value-80 {
+  width: 80%;
+}
+
+.skill-text {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.skill-text-70 {
+  left: 70%;
+}
+
+.skill-text-80 {
+  left: 80%;
+}
 /*
 ======== 
 Timeline
 ========
 */
+.timeline .underline {
+  width: 11.2rem;
+}
 
 /*
 ==== 
@@ -468,10 +668,26 @@ Media Queries
 
 /******* Global *******/
 @media screen and (min-width: 676px) {
+  .service {
+    margin-bottom: 0;
+  }
+
   .services-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+  }
+
+  .projects-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .project {
+    margin-bottom: 2rem;
   }
 }
 
@@ -507,6 +723,22 @@ Media Queries
   .about-title .underline {
     width: 6.5rem;
   }
+
+  .services-underline {
+    width: 9.5rem;
+  }
+
+  .projects-underline {
+    width: 14.6rem;
+  }
+
+  .connect-underline {
+    width: 19.8rem;
+  }
+
+  .skills-underline {
+    width: 6rem;
+  }
 }
 
 /******* Navbar *******/
@@ -537,6 +769,12 @@ Media Queries
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
+  }
+
+  .skills-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
 }
 
@@ -658,5 +896,40 @@ Media Queries
   .services-center {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+  }
+
+  .projects-center {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .projects-center {
+    grid-template-rows: 200px 200px;
+    gap: 1rem;
+    grid-template-areas:
+      "a b b"
+      "a c d";
+  }
+
+  .project-img {
+    height: 100%;
+  }
+
+  .project {
+    height: 100%;
+  }
+
+  .project-1 {
+    grid-area: a;
+  }
+  .project-2 {
+    grid-area: b;
+  }
+  .project-3 {
+    grid-area: c;
+  }
+  .project-4 {
+    grid-area: d;
   }
 }
