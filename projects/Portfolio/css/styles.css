@@ -679,6 +679,30 @@ Timeline
   border-bottom-left-radius: 0;
 }
 
+.number {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 0;
+  background: var(--clr-primary-5);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--clr-primary-1);
+  font-weight: bold;
+}
+
+.timeline-item:nth-child(even) .number {
+  left: 0;
+}
+
+.timeline-item:nth-child(odd) .number {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
 /*
 ==== 
 Blog
