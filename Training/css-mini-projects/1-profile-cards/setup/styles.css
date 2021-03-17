@@ -1,7 +1,7 @@
 /*
-=============== 
+=========
 Variables
-===============
+=========
 */
 
 :root {
@@ -48,9 +48,9 @@ Variables
   --clr-ui-dark-blue: #141f64;
 }
 /*
-=============== 
+=============
 Global Styles
-===============
+=============
 */
 
 *,
@@ -127,9 +127,9 @@ p {
   margin: 4rem 0 6rem 0;
 }
 /*
-=============== 
+=======
 Card 1
-===============
+=======
 */
 .card {
   width: 90vw;
@@ -197,13 +197,60 @@ Card 1
 }
 
 /*
-=============== 
+=======
 Card 2
-===============
+=======
+*/
+.card-2 {
+  max-width: 641px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 2rem 2.5rem;
+  column-gap: 3rem;
+}
+
+.card2 h4 {
+  font-size: 26px;
+}
+
+.card-2 p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.card-2 .btn {
+  margin-top: 1.5rem;
+  background: transparent;
+  border: 2px solid var(--clr-ui-dark-blue);
+  color: var(--clr-ui-dark-blue);
+  font-weight: bold;
+  transition: var(--transition);
+}
+
+.card-2 .btn:hover {
+  background: var(--clr-ui-dark-blue);
+  color: var(--clr-white);
+  transition: var(--transition);
+}
+
+/*
+=======
+Card 3
+=======
 */
 
 /*
-=============== 
-Card 3
-===============
+============= 
+Media Queries
+=============
 */
+@media screen and (max-width: 776px) {
+  .card-2 {
+    max-width: 446px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    row-gap: 1rem;
+    text-align: center;
+    justify-items: center;
+  }
+}
