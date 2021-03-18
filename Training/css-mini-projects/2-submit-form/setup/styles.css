@@ -204,3 +204,48 @@ form {
   padding: 0.75rem 0.5rem;
   color: #151749;
 }
+
+.form-input::-webkit-input-placeholder {
+  color: #151749;
+}
+
+.form-input::-moz-placeholder {
+  color: #151749;
+}
+
+.form-input:-ms-input-placeholder {
+  color: #151749;
+}
+
+.form-input::-ms-input-placeholder {
+  color: #151749;
+}
+
+.form-input::placeholder {
+  color: #151749;
+}
+
+.submit-btn {
+  width: 247px;
+  height: 77px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 38.5px;
+  border-color: transparent;
+  color: var(--clr-white);
+  text-transform: capitalize;
+  background: var(--clr-ui-dark-blue);
+  box-shadow: var(--dark-shadow);
+  font-size: 18px;
+  letter-spacing: var(--spacing);
+  margin-top: 4rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.submit-btn:hover {
+  background: var(--clr-white);
+  color: var(--clr-ui-dark-blue);
+  border-color: solid var(--clr-ui-dark-blue);
+  transition: var(--transition);
+}
