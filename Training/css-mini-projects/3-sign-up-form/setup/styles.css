@@ -217,3 +217,46 @@ input[type="checkbox"] {
   background: var(--ui-clr-body-bcg);
   color: var(--ui-clr-primary);
 }
+
+/*
+============= 
+Media Queries
+=============
+*/
+@media screen and (min-width: 992px) {
+  .services {
+    display: block;
+    padding: 4rem;
+    background: linear-gradient(135deg, #ba91e9 0%, #6d58ce 100%);
+    border-radius: var(--radius);
+    color: var(--clr-white);
+    min-height: 785px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+    align-items: center;
+  }
+
+  .service {
+    max-width: 240px;
+    margin-bottom: 2.5rem;
+  }
+
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 1.75rem;
+  }
+
+  .service h4 {
+    font-weight: 500;
+  }
+}
