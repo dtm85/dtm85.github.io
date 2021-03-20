@@ -133,7 +133,124 @@ Pricing Cards
   width: 90vw;
   margin: 4rem auto;
   max-width: 992px;
+  display: grid;
   gap: 4rem;
+}
+
+.card {
+  background: var(--clr-white);
+  padding: 4rem 3.5rem;
+  border-radius: 1.25rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  transition: var(--transition);
+}
+
+.card:hover {
+  box-shadow: var(--dark-shadow);
+}
+
+.card header {
+  padding: 4rem;
+  margin-bottom: 5rem;
+}
+
+.card-title {
+  margin-bottom: 2rem;
+}
+
+.card-title p {
+  text-transform: capitalize;
+  color: var(--clr-grey-5);
+}
+
+.card-price {
+  font-size: 52px;
+  line-height: 65px;
+  font-weight: 700;
+}
+
+.services {
+  padding-left: 4rem;
+  margin-bottom: 3rem;
+}
+
+.service {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.service p {
+  margin-bottom: 0;
+  color: var(--clr-grey-3);
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+  background: var(--clr-black);
+  border-radius: var(--radius);
+  color: var(--clr-white);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.btn {
+  background: var(--clr-black);
+  color: var(--clr-white);
+  display: block;
+  width: 100%;
+  text-transform: capitalize;
+  padding: 1rem;
+  border-radius: 1.25rem;
+  font-size: 1rem;
+  border-color: transparent;
+  font-weight: 600;
+  letter-spacing: var(--spacing);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: var(--clr-white);
+  color: var(--clr-black);
+  border-color: solid var(--clr-black);
+}
+
+.card-black {
+  background: var(--clr-black);
+  color: var(--clr-white);
+  transition: var(--transition);
+}
+
+.card-black:hover {
+  box-shadow: var(--dark-shadow);
+}
+
+.card-black .btn,
+.card-black .icon {
+  background: var(--clr-white);
+  color: var(--clr-black);
+}
+
+.card-black .service p {
+  color: var(--clr-white);
+}
+
+.card-black .card-title p {
+  color: var(--clr-grey-8);
+}
+
+.card-black .btn:hover {
+  background: var(--clr-black);
+  color: var(--clr-white);
+  border-color: solid var(--clr-white);
 }
 
 /*
