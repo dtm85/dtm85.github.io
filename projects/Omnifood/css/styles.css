@@ -24,16 +24,15 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-.row {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
 /* 
 ===================
 Reusable Components
 ===================
 */
+/* ---------- Buttons ---------- */
+.nav-logo {
+  width: 100px;
+}
 
 /* ---------- Buttons ---------- */
 .btn:link,
@@ -108,7 +107,15 @@ header h1 {
   margin-bottom: 20px;
 }
 
-/* ---------- Logo ---------- */
-.logo {
-  height: 100px;
+/* 
+======
+Navbar
+======
+*/
+nav {
+  background: coral;
 }
+
+/* ---------- Logo ---------- */
+
+/* ---------- Navbar ---------- */
