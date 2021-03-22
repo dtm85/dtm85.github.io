@@ -11,9 +11,9 @@ Reset
 }
 
 /* 
-======
-Global
-======
+===========
+Basic Setup
+===========
 */
 html {
   background: #fff;
@@ -29,7 +29,52 @@ html {
   margin: 0 auto;
 }
 
-.btn {
+/* 
+===================
+Reusable Components
+===================
+*/
+
+/* ---------- Buttons ---------- */
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: 0.4s all ease-in-out;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #e67e22;
+  color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+  background: #cf6d17;
+  transition: 0.4s all ease-in-out;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #e67e22;
+  color: #fff;
 }
 
 /* 
@@ -60,4 +105,10 @@ header h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+/* ---------- Logo ---------- */
+.logo {
+  height: 100px;
 }
