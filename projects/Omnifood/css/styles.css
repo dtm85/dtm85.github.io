@@ -117,13 +117,13 @@ Scrollbars
 */
 /* Body Scrollbar color */
 body::-webkit-scrollbar {
-  width: 0.7rem;
-  height: 0.7rem;
+  width: 0.6rem;
+  height: 0.6rem;
 }
 
 body::-webkit-scrollbar-track {
   background: none;
-  margin-top: 8rem;
+  margin-top: 7rem;
   margin-bottom: 1px;
   border-radius: 8px;
 }
@@ -179,13 +179,13 @@ Reusable Components
 
 .btn:hover,
 .btn:active {
-  background: var(--clr-primary-4);
+  background: var(--clr-primary-3);
   transition: var(--transition);
 }
 
 .btn-full:hover,
 .btn-full:active {
-  border: 1px solid var(--clr-primary-4);
+  border: 1px solid var(--clr-primary-3);
 }
 
 .btn-ghost:hover,
@@ -221,7 +221,7 @@ Reusable Components
 }
 
 .section-title {
-  margin-bottom: 4rem;
+  margin: 4rem 0;
   text-align: center;
 }
 
@@ -308,7 +308,7 @@ Navbar
 
 /* Fixed Navbar */
 .navbar-fixed {
-  background: var(--clr-grey-5);
+  background: #2f2f2f;
   box-shadow: var(--dark-shadow);
 }
 
@@ -374,6 +374,20 @@ Sidebar
 
 .social-icon:hover {
   color: var(--clr-primary-5);
+}
+
+/*
+======
+Footer
+======
+*/
+.featured {
+  margin-bottom: 2rem;
+  background: var(--clr-white);
+  padding: 3rem 1.5rem;
+  border-radius: var(--radius);
+  text-align: center;
+  transition: var(--transition);
 }
 
 /*
