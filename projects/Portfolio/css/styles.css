@@ -386,6 +386,7 @@ Services
   width: 2rem;
   height: auto;
   margin-bottom: 1.5rem;
+  color: var(--clr-primary-5);
 }
 
 .service {
