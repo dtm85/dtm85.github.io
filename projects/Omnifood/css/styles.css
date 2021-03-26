@@ -431,15 +431,23 @@ Featured
 Meals
 =====
 */
+.section-meals {
+  margin-bottom: 5rem;
+}
+
 .add-2-cart {
   font-size: 3rem;
 }
 
 .meal-img-container {
-  width: fit-content;
-  height: fit-content;
   position: relative;
   background: var(--clr-primary-5);
+  overflow: hidden;
+}
+
+.meal-img-container:hover img {
+  transform: scale(1.15);
+  transition: var(--transition);
 }
 
 .meal-icon {
@@ -469,6 +477,59 @@ Meals
 
 .meal-img-container:hover .meal-icon {
   opacity: 1;
+}
+
+/*
+===== 
+Steps
+=====
+*/
+.section-steps {
+  margin-bottom: 5rem;
+}
+
+.section-steps-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  /* place-items: center; */
+  margin-top: 3rem;
+}
+
+.iphone {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.app-screen {
+  width: 230px;
+  height: auto;
+}
+
+.steps {
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.steps p {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  margin: auto 0.5rem;
+}
+
+.steps div {
+  color: var(--clr-primary-5);
+  border: 2px solid var(--clr-primary-5);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 /*
