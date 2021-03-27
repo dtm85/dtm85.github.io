@@ -431,9 +431,6 @@ Featured
 Meals
 =====
 */
-.section-meals {
-  margin-bottom: 5rem;
-}
 
 .add-2-cart {
   font-size: 3rem;
@@ -488,17 +485,24 @@ Steps
   margin-bottom: 5rem;
 }
 
+.steps-container {
+  margin: auto 1.5rem auto 3rem;
+}
+
 .section-steps-container {
   display: grid;
   grid-template-columns: 1fr auto;
-  /* place-items: center; */
-  margin-top: 3rem;
+  place-items: center;
+  margin: 3rem auto;
 }
 
 .iphone {
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
+  margin: auto 3rem;
+  width: 230px;
+  height: 471px;
 }
 
 .app-screen {
@@ -507,9 +511,17 @@ Steps
 }
 
 .steps {
-  margin: 3rem auto;
+  margin: 0 auto 3rem auto;
   display: grid;
   grid-template-columns: auto 1fr;
+}
+
+.section-steps .section-title {
+  margin-bottom: 0;
+}
+
+.section-steps .section-title .underline {
+  margin-bottom: 1.5rem;
 }
 
 .steps p {
@@ -530,6 +542,16 @@ Steps
   place-items: center;
   font-size: 1.25rem;
   font-weight: bold;
+}
+
+.btn-app img {
+  height: 50px;
+}
+
+.download-app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
 }
 
 /*
@@ -657,10 +679,17 @@ Media Queries
   .section-features {
     padding-bottom: 5rem;
   }
+}
 
-  /* .section-center {
-    width: 90vw;
-  } */
+@media screen and (max-width: 862px) {
+  .section-steps-container {
+    grid-template-columns: 1fr;
+    margin-top: 3.5rem;
+  }
+
+  .steps-container {
+    margin-top: 3rem;
+  }
 }
 
 @media screen and (max-width: 676px) {
@@ -676,9 +705,18 @@ Media Queries
   .section-title p {
     font-size: 0.9rem;
   }
+
+  .section-steps-container {
+    margin-top: 3.5rem;
+  }
 }
 
 @media screen and (max-width: 472px) {
+  .steps-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .section-features .section-title h2 {
     font-size: 0.93rem;
   }
@@ -690,6 +728,14 @@ Media Queries
 
   .section-title p {
     font-size: 0.815rem;
+  }
+
+  .section-steps .section-title h2 {
+    font-size: 1.25rem;
+  }
+
+  .section-steps p {
+    font-size: 0.825rem;
   }
 }
 
