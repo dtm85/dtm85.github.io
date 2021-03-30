@@ -221,8 +221,7 @@ Reusable Components
 
 .bg-grey {
   background: var(--clr-grey-10);
-  width: 100%;
-  height: 100%;
+  padding: 5rem 0;
 }
 
 /* 
@@ -466,7 +465,6 @@ Meals
 
 .meal-img-container:hover .meal-img {
   opacity: 0.6;
-  /* transform: scale(1.1); */
 }
 
 .meal-img-container:hover .meal-icon {
@@ -478,9 +476,6 @@ Meals
 Steps
 =====
 */
-.section-steps {
-  margin-bottom: 5rem;
-}
 
 .steps-container {
   margin: auto 1.5rem auto 3rem;
@@ -490,7 +485,7 @@ Steps
   display: grid;
   grid-template-columns: 1fr auto;
   place-items: center;
-  margin: 3rem auto;
+  margin-top: 5rem;
 }
 
 .iphone {
@@ -514,6 +509,7 @@ Steps
 }
 
 .section-steps .section-title {
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -543,12 +539,51 @@ Steps
 
 .btn-app img {
   height: 50px;
+  transition: var(--transition);
+}
+
+.btn-app img:hover {
+  transition: var(--transition);
+  transform: scale(1.1);
+  box-shadow: var(--dark-shadow);
 }
 
 .download-app {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
+}
+
+/*
+======
+Cities
+======
+*/
+.section-cities {
+  margin-bottom: 5rem;
+}
+
+.section-cities h3,
+.city-feature {
+  color: var(--clr-grey-5);
+}
+
+.cities-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  column-gap: 2rem;
+}
+
+.city-img {
+  width: 100%;
+}
+
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: var(--clr-primary-5);
 }
 
 /*
@@ -681,7 +716,7 @@ Media Queries
 @media screen and (max-width: 862px) {
   .section-steps-container {
     grid-template-columns: 1fr;
-    margin-top: 3.5rem;
+    /* margin-top: 3.5rem; */
   }
 
   .steps-container {
@@ -739,7 +774,6 @@ Media Queries
 @media screen and (max-width: 800px) {
   .features {
     grid-template-columns: 1fr;
-    /* row-gap: 1rem; */
   }
 }
 
