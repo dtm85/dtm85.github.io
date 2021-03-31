@@ -235,6 +235,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 .hero-center {
@@ -561,11 +562,19 @@ Cities
 */
 .section-cities {
   margin-bottom: 5rem;
+  height: 66vh;
 }
 
 .section-cities h3,
 .city-feature {
   color: var(--clr-grey-5);
+}
+
+.city-container h3 {
+  padding-top: 0.7rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  color: var(--clr-grey-4);
 }
 
 .cities-container {
@@ -577,13 +586,89 @@ Cities
 
 .city-img {
   width: 100%;
+  border-radius: var(--radius);
 }
 
 .icon-small {
   display: inline-block;
-  width: 30px;
-  text-align: center;
+  width: 22px;
+  height: 22px;
   color: var(--clr-primary-5);
+}
+
+.city-features-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.city-feature {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin: 0.4rem 0 0.4rem 0.5rem;
+  column-gap: 0.5rem;
+}
+
+.city-feature a:link,
+.city-feature a:visited {
+  color: var(--clr-grey-5);
+  transition: var(--transition);
+}
+
+.city-feature a:hover,
+.city-feature a:active {
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
+
+/*
+===========
+Testimonial
+===========
+*/
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url(/projects/Omnifood/media/images/back-customers.jpg);
+  background-size: cover;
+  color: var(--clr-white);
+  background-attachment: fixed;
+  padding-bottom: 5rem;
+  height: 85.5vh;
+}
+
+.section-testimonials .section-title {
+  padding-top: 5rem;
+}
+
+.section-testimonials .section-title .underline {
+  margin-bottom: 5rem;
+}
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+
+blockquote {
+  font-style: italic;
+  line-height: 145%;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+cite {
+  display: block;
+  margin-top: 25px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+cite img {
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 /*
