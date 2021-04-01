@@ -387,6 +387,7 @@ Services
   height: auto;
   margin-bottom: 1.5rem;
   color: var(--clr-primary-5);
+  transition: var(--transition);
 }
 
 .service {
@@ -400,6 +401,7 @@ Services
 
 .services-underline {
   width: 11.2rem;
+  transition: var(--transition);
 }
 
 .service .underline {
@@ -415,14 +417,22 @@ Services
 .service:hover {
   background: var(--clr-primary-5);
   color: var(--clr-white);
+  transition: var(--transition);
 }
 
 .service:hover p {
   color: var(--clr-white);
+  transition: var(--transition);
 }
 
 .service:hover .underline {
   background: var(--clr-white);
+  transition: var(--transition);
+}
+
+.service:hover .service-icon {
+  color: var(--clr-white);
+  transition: var(--transition);
 }
 
 /*
@@ -726,12 +736,16 @@ Blog
   width: 6rem;
 }
 
+.card h4 {
+  margin-bottom: 1rem;
+}
+
 .blog {
   background: var(--clr-grey-10);
 }
 
 .card {
-  height: 27rem;
+  height: 25.5rem;
   position: relative;
   perspective: 1750px;
 }
@@ -753,6 +767,7 @@ Blog
 
 .card-front {
   background: var(--clr-white);
+  position: relative;
 }
 
 .card-back {
@@ -791,9 +806,13 @@ Blog
 }
 
 .card-footer {
-  display: grid;
-  grid-template-columns: auto 1fr;
+  display: flex;
+  /* grid-template-columns: auto 1fr; */
+  margin: 1rem 1.5rem;
   align-items: center;
+  justify-content: space-between;
+  position: relative;
+  bottom: 2.25rem;
 }
 
 .card-footer p {
@@ -807,7 +826,7 @@ Blog
 .blog-center {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-  gap: 3rem 1rem;
+  gap: 2rem;
 }
 
 /*
@@ -1317,5 +1336,35 @@ Media Queries
   }
   .project-4 {
     grid-area: d;
+  }
+}
+
+@media screen and (max-width: 1109px) {
+  .card-footer {
+    bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .card-footer {
+    bottom: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-footer {
+    bottom: -0.5rem;
+  }
+}
+
+@media screen and (max-width: 554px) {
+  .card-footer {
+    bottom: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card-footer {
+    bottom: 1.75rem;
   }
 }
