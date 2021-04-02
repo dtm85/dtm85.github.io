@@ -819,7 +819,12 @@ Media Queries
   }
 
   .city-feature {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+  }
+
+  .testimonials-container {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
   }
 }
 
