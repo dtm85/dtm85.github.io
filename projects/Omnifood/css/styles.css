@@ -18,6 +18,7 @@ Variables
   --clr-primary-8: #f0b37e;
   --clr-primary-9: #f4c59c;
   --clr-primary-10: #f7d7bb;
+  --clr-primary-11: #f5e4d6;
   /* darkest grey - used for headings */
   --clr-grey-1: #102a42;
   --clr-grey-2: #243a52;
@@ -702,6 +703,107 @@ cite img {
 Pricing
 =======
 */
+.section-plans {
+  background: var(--clr-grey-10);
+  padding-bottom: 5rem;
+}
+
+.section-plans .section-title {
+  margin-top: 0;
+  padding-top: 5rem;
+}
+
+.pricing-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box {
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  box-shadow: var(--dark-shadow);
+  transition: var(--transition);
+}
+
+.plan-box:hover {
+  box-shadow: var(--primary-4-card-shadow);
+  transition: var(--transition);
+}
+
+.plan-box h3 {
+  font-size: 1.15rem;
+  text-align: center;
+  color: var(--clr-grey-1);
+  margin-bottom: 2rem;
+}
+
+.plan-price {
+  font-size: 3rem;
+  margin-bottom: 0.35rem;
+  font-weight: 100 bold;
+  color: var(--clr-primary-5);
+}
+
+.plan-price span {
+  font-size: 30%;
+  font-weight: 300;
+  color: var(--clr-grey-1);
+}
+
+.plan-price-meal {
+  color: var(--clr-grey-1);
+  font-size: 90%;
+  font-weight: bold;
+}
+
+.plan-box li {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  margin: 0.75rem auto;
+  color: var(--clr-grey-1);
+}
+
+.plan-box .icon-small {
+  width: 25px;
+  height: 25px;
+  color: green;
+  margin-right: 1rem;
+}
+
+.plan-box .red {
+  color: rgb(196, 23, 23);
+}
+
+.plan-box .btn-full,
+.plan-box .btn-ghost {
+  /* font-weight: bold; */
+}
+
+.plan-box div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan-box div:last-child .btn-ghost,
+.plan-box div:last-child .btn-full {
+  margin: 0;
+}
+
+.plan-box .btn-ghost {
+  color: var(--clr-primary-3);
+}
+
+.plan-box .btn-ghost:hover {
+  color: var(--clr-white);
+}
 
 /*
 ======
