@@ -737,10 +737,10 @@ Pricing
 }
 
 .plan-box h3 {
-  font-size: 1.15rem;
+  font-size: 1.5rem;
   text-align: center;
   color: var(--clr-grey-1);
-  margin-bottom: 2rem;
+  margin: 1rem auto 1.5rem auto;
 }
 
 .plan-price {
@@ -781,9 +781,13 @@ Pricing
   color: rgb(196, 23, 23);
 }
 
-.plan-box .btn-full,
-.plan-box .btn-ghost {
-  /* font-weight: bold; */
+.plan-box .btn-full:hover,
+.plan-box .btn-ghost:hover {
+  box-shadow: var(--primary-4-card-shadow);
+}
+
+.plan-box div:first-child {
+  padding-bottom: 0;
 }
 
 .plan-box div:last-child {
@@ -927,6 +931,18 @@ Media Queries
   .testimonials-container {
     grid-template-columns: 1fr;
     row-gap: 5rem;
+  }
+
+  .plan-price {
+    font-size: 2.25rem;
+  }
+
+  .plan-price span {
+    font-size: 26.5%;
+  }
+
+  .plan-box h3 {
+    font-size: 1.25rem;
   }
 }
 
@@ -1171,5 +1187,25 @@ Media Queries
 @media screen and (max-width: 676px) {
   .cities-container {
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 862px) {
+  .pricing-container {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 652px) {
+  .plan-box {
+    width: 363.33px;
+    height: 498px;
+  }
+
+  .pricing-container {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    place-items: center;
   }
 }
