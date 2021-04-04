@@ -788,12 +788,16 @@ Pricing
 
 .plan-box div:first-child {
   padding-bottom: 0;
+  background: #fafafa;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
 }
 
 .plan-box div:last-child {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 0;
 }
 
 .plan-box div:last-child .btn-ghost,
@@ -807,6 +811,104 @@ Pricing
 
 .plan-box .btn-ghost:hover {
   color: var(--clr-white);
+}
+
+/* 
+=======
+Contact
+=======
+*/
+.section-form {
+  background: var(--clr-primary-11);
+}
+
+.section-form .section-title {
+  margin-top: 0;
+  padding-top: 5rem;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: var(--clr-white);
+  padding: 2.5rem;
+  border-radius: var(--radius);
+  width: 90vw;
+  max-width: var(--max-width);
+}
+
+.form h2 {
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.form-control {
+  margin-bottom: 2rem;
+}
+
+.form-control label {
+  display: block;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  border: 1px solid var(--clr-grey-9);
+  padding: 1.25rem;
+  width: 100%;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  color: var(--clr-grey-3);
+}
+
+.form-input::placeholder {
+  color: var(--clr-grey-5);
+  text-transform: capitalize;
+}
+
+input[type="checkbox"] {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.updates {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.updates p {
+  margin-bottom: 0;
+  text-transform: capitalize;
+  color: var(--clr-grey-5);
+}
+
+.btn {
+  background: var(--ui-clr-primary);
+  display: block;
+  width: 100%;
+  color: var(--clr-white);
+  border-radius: var(--radius);
+  border-color: transparent;
+  padding: 1.25rem 0;
+  text-transform: capitalize;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  transition: var(--transition);
+  background: var(--ui-clr-body-bcg);
+  color: var(--ui-clr-primary);
 }
 
 /*
@@ -1168,6 +1270,13 @@ Media Queries
 @media screen and (min-width: 992px) {
   .hero-center {
     grid-template-columns: 1fr;
+  }
+
+  .contact-form,
+  .contact-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* column-gap: 5rem; */
   }
 }
 
