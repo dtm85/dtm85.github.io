@@ -891,7 +891,7 @@ input[type="checkbox"] {
   color: var(--clr-grey-5);
 }
 
-.btn {
+/* .btn {
   background: var(--ui-clr-primary);
   display: block;
   width: 100%;
@@ -909,7 +909,7 @@ input[type="checkbox"] {
   transition: var(--transition);
   background: var(--ui-clr-body-bcg);
   color: var(--ui-clr-primary);
-}
+} */
 
 /*
 ======
