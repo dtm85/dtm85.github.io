@@ -105,6 +105,11 @@ h3 {
 h4 {
   font-size: 0.5rem;
 }
+
+.contact-item h4 {
+  font-size: 0.75rem;
+}
+
 body {
   font-size: 0.75rem;
 }
@@ -1107,6 +1112,10 @@ Media Queries
   .section-title p {
     font-size: 1.25rem;
   }
+
+  /* .contact-item h4 {
+    font-size: 0.75rem;
+  } */
 }
 
 @media screen and (max-width: 912px) {
@@ -1459,5 +1468,19 @@ Media Queries
     grid-template-columns: 1fr;
     row-gap: 2rem;
     place-items: center;
+  }
+}
+
+@media screen and (max-width: 872px) {
+  .info-container {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 612px) {
+  .info-container {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
   }
 }
