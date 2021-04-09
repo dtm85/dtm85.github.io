@@ -246,6 +246,7 @@ form {
 .submit-btn:hover {
   background: var(--clr-white);
   color: var(--clr-ui-dark-blue);
-  border-color: solid var(--clr-ui-dark-blue);
+  border: 2px solid var(--clr-ui-dark-blue);
+  transform: scale(1.03);
   transition: var(--transition);
 }

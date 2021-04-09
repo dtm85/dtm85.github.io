@@ -35,7 +35,7 @@ Variables
   --ff-primary: "Lato", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
-  --spacing: 0.15rem;
+  --spacing: 0.1rem;
   --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -914,14 +914,35 @@ Contact
 
 .contact-form h3 {
   margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   font-weight: 400;
   font-size: 1.75rem;
   color: var(--clr-primary-3);
   text-align: center;
 }
 
+.message {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--clr-grey-8);
+  margin-bottom: 6rem;
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  letter-spacing: 2px;
+  font-family: var(--ff-primary);
+  color: var(--clr-primary-4);
+  resize: vertical;
+}
+
+.message::placeholder {
+  color: var(--clr-grey-8);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
 .form-control {
+  letter-spacing: var(--spacing);
   margin-bottom: 2rem;
 }
 
@@ -932,6 +953,7 @@ Contact
   font-size: 1rem;
   margin-bottom: 0.5rem;
   color: var(--clr-grey-4);
+  padding-left: 0.5rem;
 }
 
 .form-input {
@@ -946,6 +968,7 @@ Contact
 .form-input::placeholder {
   color: var(--clr-grey-8);
   text-transform: capitalize;
+  letter-spacing: var(--spacing);
 }
 
 input[type="checkbox"] {
@@ -965,6 +988,7 @@ input[type="checkbox"] {
   margin-bottom: 0;
   text-transform: capitalize;
   color: var(--clr-grey-1);
+  letter-spacing: 1.25px;
 }
 
 .contact-btn {

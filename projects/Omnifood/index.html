@@ -697,17 +697,6 @@
           <form>
             <div class="form-control">
               <!-- Input -->
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                class="form-input"
-                placeholder="Enter Your Email"
-              />
-            </div>
-
-            <div class="form-control">
-              <!-- Input -->
               <label for="name">Full Name</label>
               <input
                 type="name"
@@ -719,18 +708,39 @@
 
             <div class="form-control">
               <!-- Input -->
-              <label for="password">Password</label>
+              <label for="email">Email</label>
               <input
-                type="password"
-                id="password"
+                type="email"
+                id="email"
                 class="form-input"
-                placeholder="Enter Your Password"
+                placeholder="Enter Your Email"
               />
             </div>
+
+            <!-- Category -->
+            <div class="form-control find-us">
+              <label for="category">How Did You Find Us?</label>
+              <select id="category" class="form-input">
+                <option value="" selected disabled hidden>
+                  Select An Option
+                </option>
+                <option value="first">Friends</option>
+                <option value="second">Search</option>
+                <option value="third">Ad</option>
+                <option value="fourth">Other</option>
+              </select>
+            </div>
+
             <div class="updates">
               <input type="checkbox" />
-              <p>Get Updates & Notifications On Our Latest Creations</p>
+              <p>Get Updates On Our Latest Creations</p>
             </div>
+            <textarea
+              name="message"
+              placeholder="Drop Us A Line!"
+              class="message"
+              rows="5"
+            ></textarea>
             <button type="submit" class="contact-btn">Submit</button>
           </form>
         </article>
