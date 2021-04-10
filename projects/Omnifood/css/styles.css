@@ -1022,38 +1022,40 @@ input[type="checkbox"] {
 Footer
 ======
 */
-.footer {
-  padding-bottom: 2rem;
-  background: #222;
+.section {
+  background: #333;
+}
+
+.section-footer {
   display: grid;
-  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10rem;
 }
 
-.footer .social-icons {
-  margin-bottom: 2rem;
-}
-
-.footer .social-icon {
+.section-footer li a {
   color: var(--clr-primary-5);
 }
 
-.footer .social-icon:hover {
-  color: var(--clr-primary-8);
+p {
+  margin-bottom: 0;
 }
 
-.footer p {
-  font-size: 1.25rem;
-  text-transform: capitalize;
+.copyright {
+  color: grey;
 }
 
-.john-white {
-  color: var(--clr-white);
-  font-weight: bold;
+.footer-nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 2rem;
+  justify-items: center;
+  width: fit-content;
 }
 
-.doe-primary-5 {
-  color: var(--clr-primary-5);
-  font-weight: bold;
+.footer-social-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
 }
 
 /*
