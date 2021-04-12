@@ -62,17 +62,18 @@ Global Styles
 Basic Setup
 ===========
 */
-body {
-  overflow: overlay;
-  overflow-x: hidden;
-}
+/* body {
+} */
 
+body,
 html {
   background: var(--clr-white);
   color: var(--clr-grey-7);
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 300;
   font-size: 20px;
+  overflow: overlay;
+  overflow-x: hidden;
   text-rendering: optimizeLegibility;
 }
 
@@ -380,6 +381,7 @@ Featured
 .features {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 1rem;
   column-gap: 1rem;
 }
 
@@ -594,6 +596,7 @@ Cities
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   place-items: center;
+  -moz-column-gap: 2rem;
   column-gap: 2rem;
 }
 
@@ -620,6 +623,7 @@ Cities
   display: grid;
   grid-template-columns: auto 1fr;
   margin: 0.4rem 0 0.4rem 1rem;
+  -moz-column-gap: 0.5rem;
   column-gap: 0.5rem;
   color: var(--clr-grey-2);
 }
@@ -661,6 +665,7 @@ Testimonial
 .testimonials-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 2rem;
   column-gap: 2rem;
 }
 
@@ -714,6 +719,7 @@ Pricing
 .pricing-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 2rem;
   column-gap: 2rem;
 }
 
@@ -940,6 +946,30 @@ Contact
   resize: vertical;
 }
 
+.message::-webkit-input-placeholder {
+  color: var(--clr-grey-8);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.message::-moz-placeholder {
+  color: var(--clr-grey-8);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.message:-ms-input-placeholder {
+  color: var(--clr-grey-8);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.message::-ms-input-placeholder {
+  color: var(--clr-grey-8);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
 .message::placeholder {
   color: var(--clr-grey-8);
   text-transform: capitalize;
@@ -970,6 +1000,30 @@ Contact
   color: var(--clr-primary-4);
 }
 
+.form-input::-webkit-input-placeholder {
+  color: var(--clr-grey-8);
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+}
+
+.form-input::-moz-placeholder {
+  color: var(--clr-grey-8);
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+}
+
+.form-input:-ms-input-placeholder {
+  color: var(--clr-grey-8);
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+}
+
+.form-input::-ms-input-placeholder {
+  color: var(--clr-grey-8);
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+}
+
 .form-input::placeholder {
   color: var(--clr-grey-8);
   text-transform: capitalize;
@@ -984,6 +1038,7 @@ input[type="checkbox"] {
 .updates {
   display: grid;
   grid-template-columns: auto 1fr;
+  -moz-column-gap: 0.5rem;
   column-gap: 0.5rem;
   align-items: center;
   margin-bottom: 2rem;
@@ -1213,6 +1268,15 @@ Media Queries
 
   .plan-box h3 {
     font-size: 1.25rem;
+  }
+
+  .section-footer-container {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+
+  .copyright {
+    margin-top: 2.5rem;
   }
 }
 
@@ -1540,5 +1604,12 @@ Media Queries
   .info-container {
     grid-template-columns: 1fr;
     row-gap: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-nav li {
+    display: block;
+    margin: 0.4rem auto;
   }
 }
