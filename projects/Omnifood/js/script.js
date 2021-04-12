@@ -40,28 +40,7 @@ scrollLinks.forEach((link) => {
     const id = e.target.getAttribute("href").slice(1);
     const element = document.getElementById(id);
 
-    let position = element.offsetTop - 62;
-
-    // Window scrollTo
-    window.scrollTo({
-      left: 0,
-      top: position,
-      behavior: "smooth",
-    });
-  });
-});
-
-// ********** Smooth Scroll on Footer Links ************
-const smoothScroll = document.querySelectorAll(".smooth-scroll");
-
-smoothScroll.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    const id = e.target.getAttribute("href").slice(1);
-    const element = document.getElementById(id);
-
-    let position = element.offsetTop - 62;
+    let position = element.offsetTop - 180;
 
     // Window scrollTo
     window.scrollTo({
