@@ -407,7 +407,7 @@ Featured
 .featured {
   margin-bottom: 5rem;
   background: var(--clr-grey-10);
-  padding: 2rem 1.5rem 1.25rem 1.5rem;
+  padding: 2rem 1.5rem 0.25rem 1.5rem;
   border-radius: var(--radius);
   text-align: center;
   transition: var(--transition);
@@ -565,11 +565,12 @@ Cities
 ======
 */
 .section-cities {
-  margin: 0 auto 5rem auto;
+  margin: 0 auto 6.9rem auto;
 }
 
 .section-cities .section-title {
   padding-top: 5rem;
+  padding-bottom: 1rem;
 }
 
 .section-cities h3,
@@ -1177,6 +1178,77 @@ Footer
 .fa-facebook-square:hover {
   color: #4267b2;
   transition: var(--transition);
+}
+
+/*
+==========
+Animations
+==========
+*/
+.fade-in {
+  opacity: 0;
+  transform: scale(1.2);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.fade-in.appear {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.from-left {
+  transform: translateX(-80%);
+}
+
+.from-right {
+  transform: translateX(35%);
+}
+
+.from-left,
+.from-right {
+  opacity: 0;
+  transition: transform 0.85s ease, opacity 0.75s ease;
+}
+
+.from-left.appear,
+.from-right.appear {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.zoom1 {
+  opacity: 0;
+  transform: scale(1.2);
+  transition: transform 1.2s ease, opacity 0.75s ease;
+}
+
+.zoom1.appear {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.zoom2 {
+  opacity: 0;
+  transform: scale(1.2);
+  transition: transform 1.1s ease, opacity 0.75s ease;
+  transition-delay: 0.75s;
+}
+
+.zoom2.appear {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.zoom3 {
+  opacity: 0;
+  transform: scale(1.2);
+  transition: transform 1.35s ease, opacity 0.75s ease;
+  transition-delay: 1.5s;
+}
+
+.zoom3.appear {
+  opacity: 1;
+  transform: scale(1);
 }
 
 /*

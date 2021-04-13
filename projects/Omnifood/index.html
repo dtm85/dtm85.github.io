@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+
+    <meta
+      name="description"
+      content="Omnifood is premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible."
+    />
     <!-- CSS (Omnifood)-->
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- Font Awesome CDN -->
@@ -12,6 +18,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
+    />
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -28,6 +39,37 @@
       nomodule=""
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./media/favicons/android-chrome-256x256.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./media/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./media/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./media/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./media/favicons/safari-pinned-tab.svg"
+      color="#ababab"
+    />
+    <link rel="shortcut icon" href="./media/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="./media/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#e0e0e0" />
 
     <title>Omnifood</title>
   </head>
@@ -79,8 +121,12 @@
 
         <!-- Nav-Links -->
         <ul class="nav-links" id="nav-links">
-          <li><a href="#food" class="nav-link scroll-link">Food Delivery</a></li>
-          <li><a href="#steps" class="nav-link scroll-link">How It Works</a></li>
+          <li>
+            <a href="#food" class="nav-link scroll-link">Food Delivery</a>
+          </li>
+          <li>
+            <a href="#steps" class="nav-link scroll-link">How It Works</a>
+          </li>
           <li><a href="#cities" class="nav-link scroll-link">Our Cities</a></li>
           <li><a href="#pricing" class="nav-link scroll-link">Sign Up</a></li>
         </ul>
@@ -117,7 +163,7 @@
       </div>
       <div class="features section-center">
         <!-- Single Feature -->
-        <article class="featured">
+        <article class="featured fade-in">
           <ion-icon class="icon-big" name="calendar-number-outline"></ion-icon>
           <h3>Up To 365 Days/Year</h3>
           <p>
@@ -128,7 +174,7 @@
         </article>
 
         <!-- Single Feature -->
-        <article class="featured">
+        <article class="featured fade-in">
           <ion-icon class="icon-big" name="stopwatch-outline"></ion-icon>
           <h3>Ready In 20 Minutes</h3>
           <p>
@@ -139,7 +185,7 @@
         </article>
 
         <!-- Single Feature -->
-        <article class="featured">
+        <article class="featured fade-in">
           <ion-icon class="icon-big" name="nutrition-outline"></ion-icon>
           <h3>100% Organic</h3>
           <p>
@@ -150,7 +196,7 @@
         </article>
 
         <!-- Single Feature -->
-        <article class="featured">
+        <article class="featured fade-in">
           <ion-icon class="icon-big" name="cart-outline"></ion-icon>
           <h3>Order Anything</h3>
           <p>
@@ -283,14 +329,14 @@
         </div>
 
         <div class="section-steps-container">
-          <span class="iphone">
+          <span class="iphone slide-in from-left">
             <img
               src="./media/images/app-iPhone.png"
               alt="Omnifood App on iPhone"
               class="app-screen"
             />
           </span>
-          <div class="steps-container">
+          <div class="steps-container slide-in from-right">
             <article class="step-1 steps">
               <div>1</div>
               <p>
@@ -338,7 +384,7 @@
       </div>
       <!-- End of Section Title -->
       <div class="cities-container">
-        <div class="city-container">
+        <div class="city-container slide-in from-right">
           <img
             src="./media/images/lisbon-3.jpg"
             class="city-img"
@@ -361,7 +407,7 @@
           </div>
         </div>
 
-        <div class="city-container">
+        <div class="city-container slide-in from-left">
           <img
             src="./media/images/san-francisco.jpg"
             class="city-img"
@@ -384,7 +430,7 @@
           </div>
         </div>
 
-        <div class="city-container">
+        <div class="city-container slide-in from-right">
           <img src="./media/images/berlin.jpg" class="city-img" alt="Berlin" />
           <h3>Berlin</h3>
           <div class="city-features-container">
@@ -403,7 +449,7 @@
           </div>
         </div>
 
-        <div class="city-container">
+        <div class="city-container slide-in from-left">
           <img src="./media/images/london.jpg" class="city-img" alt="London" />
           <h3>London</h3>
           <div class="city-features-container">
@@ -495,7 +541,7 @@
 
         <!-- Premium Plan -->
         <div class="section-center pricing-container">
-          <div class="plan-box">
+          <div class="plan-box zoom1">
             <div>
               <h3>Premium</h3>
               <p class="plan-price">$399<span>/ Month</span></p>
@@ -539,7 +585,7 @@
           </div>
 
           <!-- Pro Plan -->
-          <div class="plan-box">
+          <div class="plan-box zoom2">
             <div>
               <h3>Pro</h3>
               <p class="plan-price">$149<span>/ Month</span></p>
@@ -583,7 +629,7 @@
           </div>
 
           <!-- Starter Plan -->
-          <div class="plan-box">
+          <div class="plan-box zoom3">
             <div>
               <h3>Starter</h3>
               <p class="plan-price">$19<span>/ Meal</span></p>
@@ -699,7 +745,7 @@
               <!-- Input -->
               <label for="name">Full Name</label>
               <input
-                type="name"
+                type="text"
                 id="name"
                 class="form-input"
                 placeholder="Enter Your Full Name"
@@ -751,34 +797,44 @@
     <footer>
       <section class="section-footer">
         <div class="section-center section-footer-container">
-        <article class="footer-nav-container">
-        <ul class="footer-nav">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Press</a></li>
-          <li><a href="#">iOS App</a></li>
-          <li><a href="#">Android App</a></li>
-        </ul>
-        </article>
-        <article class="footer-social-container">
-          <ul class="footer-social-links">
-            <li><a href="#"><i class="fab fa-facebook-square"></i></ion-icon></a></li>
-            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-            <li><a href="#"><i class="fab fa-snapchat-square"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-          </ul>
-        </article>
-        <!-- Copyright -->
-      </div>
-      <p class="copyright">
-          Copyright &copy; 
+          <article class="footer-nav-container">
+            <ul class="footer-nav">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">iOS App</a></li>
+              <li><a href="#">Android App</a></li>
+            </ul>
+          </article>
+          <article class="footer-social-container">
+            <ul class="footer-social-links">
+              <li>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-snapchat-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+              </li>
+            </ul>
+          </article>
+          <!-- Copyright -->
+        </div>
+        <p class="copyright">
+          Copyright &copy;
           <script>
             document.write(new Date().getFullYear());
-          </script> <span class="omnifood">Omnifood</span> - All Rights Reserved.
+          </script>
+          <span class="omnifood">Omnifood</span> - All Rights Reserved.
         </p>
       </section>
     </footer>
     <!-- JS -->
     <script src="./js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </body>
 </html>

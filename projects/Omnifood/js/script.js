@@ -40,7 +40,7 @@ scrollLinks.forEach((link) => {
     const id = e.target.getAttribute("href").slice(1);
     const element = document.getElementById(id);
 
-    let position = element.offsetTop - 140;
+    let position = element.offsetTop - 100;
 
     // Window scrollTo
     window.scrollTo({
@@ -56,4 +56,41 @@ window.addEventListener("scroll", function () {
   let nav = document.querySelector("nav");
   let windowPosition = window.scrollY > 0;
   nav.classList.toggle("navbar-fixed", windowPosition);
+});
+
+// ********** Animations on Scroll **********
+
+const faders = document.querySelectorAll(".fade-in");
+const sliders = document.querySelectorAll(".slide-in");
+const scales = document.querySelectorAll(".zoom1,.zoom2,.zoom3");
+const appearOptions = {
+  threshold: 0,
+  rootMargin: "-200px 0px -300px 0px",
+};
+
+const appearOnScroll = new IntersectionObserver(function (
+  enteries,
+  appearOnScroll
+) {
+  enteries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+},
+appearOptions);
+
+faders.forEach((fader) => {
+  appearOnScroll.observe(fader);
+});
+
+sliders.forEach((slider) => {
+  appearOnScroll.observe(slider);
+});
+
+scales.forEach((scale) => {
+  appearOnScroll.observe(scale);
 });
