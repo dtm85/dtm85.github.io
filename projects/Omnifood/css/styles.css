@@ -62,8 +62,6 @@ Global Styles
 Basic Setup
 ===========
 */
-/* body {
-} */
 
 body,
 html {
@@ -230,12 +228,9 @@ Header
 ======
 */
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../media/images/hero.jpg);
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../media/images/hero.jpg) center/cover no-repeat;
   height: 100vh;
-  background-attachment: fixed;
 }
 
 .hero-center {
@@ -653,11 +648,10 @@ Testimonial
 ===========
 */
 .section-testimonials {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
-    url(/projects/Omnifood/media/images/back-customers.jpg);
-  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url(/projects/Omnifood/media/images/back-customers.jpg) center/cover
+      no-repeat;
   color: var(--clr-white);
-  background-attachment: fixed;
   padding-bottom: 5rem;
 }
 
