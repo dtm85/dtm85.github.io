@@ -37,6 +37,7 @@ Variables
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
   --radius: 0.5rem;
+  --btn-radius: 1.875rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --primary-3-big-shadow: 0 0 14px 4px #36a059;
@@ -127,12 +128,14 @@ Hero
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .heading-primary {
   color: var(--clr-white);
   text-transform: uppercase;
   backface-visibility: hidden;
+  margin-bottom: 3.75rem;
 }
 
 .heading-primary-main {
@@ -145,6 +148,7 @@ Hero
 
 .heading-primary-sub {
   display: block;
+  margin-right: 1rem;
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 1.088rem;
@@ -186,4 +190,32 @@ Animations on Hero Text
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+/* 
+---------- 
+CTA Button
+----------
+ */
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.938rem 2.5rem;
+  display: inline-block;
+  border-radius: var(--btn-radius);
+  transition: all 0.25s;
+}
+
+.btn:hover {
+  transform: translateY(-0.188rem);
+}
+
+.btn:active {
+  transform: translateY(-0.063rem);
+}
+
+.btn-white {
+  background: var(--clr-white);
+  color: var(--clr-grey-4);
 }
