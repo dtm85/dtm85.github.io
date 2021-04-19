@@ -201,18 +201,18 @@ CTA Button
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 0.938rem 2.5rem;
+  padding: 16px 40px;
   display: inline-block;
   border-radius: var(--btn-radius);
   transition: all 0.25s;
 }
 
 .btn:hover {
-  transform: translateY(-0.188rem);
+  transform: translateY(-3px);
 }
 
 .btn:active {
-  transform: translateY(-0.063rem);
+  transform: translateY(-1px);
 }
 
 .btn-white {
