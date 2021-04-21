@@ -131,6 +131,10 @@ Hero
   text-align: center;
 }
 
+.hero-text .btn-white {
+  margin-right: 1rem;
+}
+
 .heading-primary {
   color: var(--clr-white);
   text-transform: uppercase;
@@ -192,6 +196,18 @@ Animations on Hero Text
   }
 }
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(1.875rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 /* 
 ---------- 
 CTA Button
@@ -205,17 +221,47 @@ CTA Button
   display: inline-block;
   border-radius: var(--btn-radius);
   transition: all 0.25s;
+  position: relative;
 }
 
 .btn:hover {
   transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
   transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn-white {
   background: var(--clr-white);
   color: var(--clr-grey-4);
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: var(--btn-radius);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+  transition: var(--transition);
+}
+
+.btn-white::after {
+  background: var(--clr-white);
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom 0.5s ease-in-out 0.7s;
+  animation-fill-mode: backwards;
 }
