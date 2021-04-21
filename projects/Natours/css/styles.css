@@ -132,7 +132,7 @@ Hero
 }
 
 .hero-text .btn-white {
-  margin-right: 1rem;
+  margin-right: 1.35rem;
 }
 
 .heading-primary {
@@ -238,30 +238,8 @@ CTA Button
   background: var(--clr-white);
   color: var(--clr-grey-4);
 }
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: var(--btn-radius);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s;
-  transition: var(--transition);
-}
 
-.btn-white::after {
-  background: var(--clr-white);
-}
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-
-.btn-animated {
+/* .btn-animated {
   animation: moveInBottom 0.5s ease-in-out 0.7s;
   animation-fill-mode: backwards;
-}
+} */
