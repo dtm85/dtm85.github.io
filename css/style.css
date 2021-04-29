@@ -9,20 +9,36 @@
   src: url("/media/fonts/neotech-black.otf") format("opentype");
 }
 
+/* 
+=============
+Global Styles
+=============
+*/
+
 /* Reset */
-* {
-  box-sizing: border-box;
-  padding: 0;
+*,
+::after,
+::before {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+===========
+Basic Setup
+===========
+*/
+
+body,
+html {
+  overflow: overlay;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  font-family: "Neo Tech", sans-serif;
 }
 
 /* Universal Styling */
-body {
-  font-family: "Neo Tech", sans-serif;
-  overflow-x: hidden;
-  overflow: overlay;
-}
-
 ul {
   list-style-type: none;
 }
