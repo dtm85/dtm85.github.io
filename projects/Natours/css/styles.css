@@ -55,18 +55,22 @@ Global Styles
 ::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
   font-family: var(--ff-primary);
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.7;
   color: var(--clr-grey-4);
   overflow: overlay;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
+  box-sizing: border-box;
 }
 
 /* 
@@ -113,17 +117,17 @@ Hero
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-.logo-container {
+.header__logo-container {
   position: absolute;
   top: 2.5rem;
   left: 2.5rem;
 }
 
-.logo {
+.header__logo {
   height: 2.25rem;
 }
 
-.hero-text {
+.header__hero-text {
   position: absolute;
   top: 45%;
   left: 50%;
@@ -131,7 +135,7 @@ Hero
   text-align: center;
 }
 
-.hero-text .btn-white {
+.header__hero-text .btn--white {
   margin-right: 1.35rem;
 }
 
@@ -142,7 +146,7 @@ Hero
   margin-bottom: 3.75rem;
 }
 
-.heading-primary-main {
+.heading-primary--main {
   display: block;
   font-size: 3.75rem;
   font-weight: 400;
@@ -150,12 +154,12 @@ Hero
   animation: moveInLeft 1s ease-out;
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
   margin-right: 1rem;
   font-size: 1.25rem;
   font-weight: 700;
-  letter-spacing: 1.088rem;
+  letter-spacing: 1.094rem;
   animation: moveInRight 1s ease-out;
 }
 
@@ -217,7 +221,7 @@ CTA Button
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 16px 40px;
+  padding: 1rem 2.5rem;
   display: inline-block;
   border-radius: var(--btn-radius);
   transition: all 0.25s;
@@ -226,20 +230,21 @@ CTA Button
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.313rem 0.625rem rgba(0, 0, 0, 0.2);
 }
 
-.btn-white {
+.btn--white {
   background: var(--clr-white);
   color: var(--clr-grey-4);
+  letter-spacing: 1.5px;
 }
 
-/* .btn-animated {
+/* .btn--animated {
   animation: moveInBottom 0.5s ease-in-out 0.7s;
   animation-fill-mode: backwards;
 } */
