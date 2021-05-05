@@ -244,7 +244,19 @@ CTA Button
   letter-spacing: 1.5px;
 }
 
-/* .btn--animated {
-  animation: moveInBottom 0.5s ease-in-out 0.7s;
-  animation-fill-mode: backwards;
-} */
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.fade--in {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.fade--in.appear {
+  transform: translateY(0);
+  transition: transform 1s ease, opacity 1.5s ease;
+  transition-delay: 0.5s;
+  opacity: 1;
+}
