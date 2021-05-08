@@ -1,0 +1,14 @@
+{
+  "name": "scss-training",
+  "version": "1.0.0",
+  "description": "Sass Training - Learning to compile sass (scss)",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass main.scss styles.css"
+  },
+  "author": "Dan - DTM",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
