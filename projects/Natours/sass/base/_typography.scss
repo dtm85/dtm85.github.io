@@ -1,0 +1,36 @@
+body {
+  font-family: $ff-primary;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $clr-grey-4;
+  overflow: overlay;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+.heading-primary {
+  color: $clr-white;
+  text-transform: uppercase;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin-bottom: 3.75rem;
+
+  &--main {
+    display: block;
+    font-size: 3.75rem;
+    font-weight: 400;
+    letter-spacing: 2.188rem;
+    -webkit-animation: moveInLeft 1s ease-out;
+    animation: moveInLeft 1s ease-out;
+  }
+
+  &--sub {
+    display: block;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 1.094rem;
+    -webkit-animation: moveInRight 1s ease-out;
+    animation: moveInRight 1s ease-out;
+  }
+}

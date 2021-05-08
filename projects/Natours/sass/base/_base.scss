@@ -1,0 +1,38 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  box-sizing: border-box;
+
+  // Body Scrollbar color
+  &::-webkit-scrollbar {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: none;
+    margin-top: 7rem;
+    margin-bottom: 1px;
+    border-radius: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $clr-primary-1;
+    border-radius: 8rem;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $clr-primary-2;
+    border-radius: 8rem;
+  }
+}
