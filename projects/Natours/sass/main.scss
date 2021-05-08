@@ -3,11 +3,49 @@
 Variables
 =========
 */
+
+// Landing Page Light & Dark Green Colors
+$clr-home-page-light: #7ed56f;
+$clr-home-page-dark: #28b485;
 /* dar$shades of primary color*/
+$clr-primary-1: #256d3d;
+$clr-primary-2: #2e864b;
+$clr-primary-3: #36a059;
+$clr-primary-4: #3fb967;
 /* primary/main color */
+$clr-primary-5: #55c57a;
 /* lighter shades of primary color */
+$clr-primary-6: #6ece8e;
+$clr-primary-7: #88d6a2;
+$clr-primary-8: #a1dfb5;
+$clr-primary-9: #bae8c9;
+$clr-primary-10: #d4f0dd;
+$clr-primary-11: #e0f5e7;
 /* darkest grey - used for headings */
+$clr-grey-1: #444;
+$clr-grey-2: #555;
+$clr-grey-3: #666;
+$clr-grey-4: #777;
 /* grey used for paragraphs */
+$clr-grey-5: #888;
+$clr-grey-6: #999;
+$clr-grey-7: #aaa;
+$clr-grey-8: #bbb;
+$clr-grey-9: #ccc;
+$clr-grey-10: #ddd;
+$clr-white: #fff;
+$ff-primary: "Lato", sans-serif;
+$ff-secondary: "Open Sans", sans-serif;
+$transition: all 0.3s linear;
+$spacing: 0.1rem;
+$radius: 0.5rem;
+$btn-radius: 1.875rem;
+$light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+$primary-3-big-shadow: 0 0 14px 4px #36a059;
+$primary-3-small-shadow: 0 0 10px 0.25px #36a059;
+$max-width: 1170px;
+
 /* 
 =============
 Global Styles
@@ -26,10 +64,10 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: $ff-primary;
   font-weight: 400;
   line-height: 1.7;
-  color: #777;
+  color: $clr-grey-4;
   overflow: overlay;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
@@ -55,12 +93,12 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #55c57a;
+  background: $clr-primary-5;
   border-radius: 8rem;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background: #88d6a2;
+  background: $clr-primary-7;
   border-radius: 8rem;
 }
 
@@ -73,11 +111,10 @@ Hero
   height: 95vh;
   background: linear-gradient(
       to right bottom,
-      rgba(126, 213, 111, 0.8),
-      rgba(40, 180, 133, 0.8)
+      rgba($clr-home-page-light, 0.8),
+      rgba($clr-home-page-dark, 0.8)
     ),
     url(../media/images/hero.jpg) top center/cover no-repeat;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
@@ -104,9 +141,8 @@ Hero
 }
 
 .heading-primary {
-  color: #fff;
+  color: $clr-white;
   text-transform: uppercase;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   margin-bottom: 3.75rem;
 }
@@ -116,7 +152,6 @@ Hero
   font-size: 3.75rem;
   font-weight: 400;
   letter-spacing: 2.188rem;
-  -webkit-animation: moveInLeft 1s ease-out;
   animation: moveInLeft 1s ease-out;
 }
 
@@ -126,7 +161,6 @@ Hero
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 1.094rem;
-  -webkit-animation: moveInRight 1s ease-out;
   animation: moveInRight 1s ease-out;
 }
 
@@ -135,41 +169,16 @@ Hero
 Animations on Hero Text
 -----------------------
  */
-@-webkit-keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-8rem);
-  }
-  80% {
-    transform: translateX(0.65rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 @keyframes moveInLeft {
   0% {
     opacity: 0;
     transform: translateX(-8rem);
   }
+
   80% {
     transform: translateX(0.65rem);
   }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 
-@-webkit-keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(8rem);
-  }
-  80% {
-    transform: translateX(-0.65rem);
-  }
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -181,23 +190,14 @@ Animations on Hero Text
     opacity: 0;
     transform: translateX(8rem);
   }
+
   80% {
     transform: translateX(-0.65rem);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-
-@-webkit-keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(1.875rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
   }
 }
 
@@ -206,6 +206,7 @@ Animations on Hero Text
     opacity: 0;
     transform: translateY(1.875rem);
   }
+
   100% {
     opacity: 1;
     transform: translate(0);
@@ -223,7 +224,7 @@ CTA Button
   text-decoration: none;
   padding: 1rem 2.5rem;
   display: inline-block;
-  border-radius: 1.875rem;
+  border-radius: $btn-radius;
   transition: all 0.25s;
   position: relative;
 }
@@ -239,8 +240,8 @@ CTA Button
 }
 
 .btn--white {
-  background: #fff;
-  color: #777;
+  background: $clr-white;
+  color: $clr-grey-4;
   letter-spacing: 1.5px;
 }
 
