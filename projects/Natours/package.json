@@ -4,11 +4,14 @@
   "description": "Landing Page for Natours",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/styles.css"
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
   },
   "author": "Dan - DTM",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
   }
 }

@@ -1,4 +1,4 @@
-/*
+/* 
 =========
 Variables
 =========
@@ -7,26 +7,26 @@ Variables
 // Landing Page Light & Dark Green Colors
 $clr-home-page-light: #7ed56f;
 $clr-home-page-dark: #28b485;
-/* dar$shades of primary color*/
+// darkshades of primary color
 $clr-primary-1: #256d3d;
 $clr-primary-2: #2e864b;
 $clr-primary-3: #36a059;
 $clr-primary-4: #3fb967;
-/* primary/main color */
+// primary/main color
 $clr-primary-5: #55c57a;
-/* lighter shades of primary color */
+// lighter shades of primary color
 $clr-primary-6: #6ece8e;
 $clr-primary-7: #88d6a2;
 $clr-primary-8: #a1dfb5;
 $clr-primary-9: #bae8c9;
 $clr-primary-10: #d4f0dd;
 $clr-primary-11: #e0f5e7;
-/* darkest grey - used for headings */
+// arkest grey - used for headings
 $clr-grey-1: #444;
 $clr-grey-2: #555;
 $clr-grey-3: #666;
 $clr-grey-4: #777;
-/* grey used for paragraphs */
+// grey used for paragraphs
 $clr-grey-5: #888;
 $clr-grey-6: #999;
 $clr-grey-7: #aaa;
@@ -34,6 +34,7 @@ $clr-grey-8: #bbb;
 $clr-grey-9: #ccc;
 $clr-grey-10: #ddd;
 $clr-white: #fff;
+$clr-black: #000;
 $ff-primary: "Lato", sans-serif;
 $ff-secondary: "Open Sans", sans-serif;
 $transition: all 0.3s linear;
@@ -79,7 +80,7 @@ body {
 Scrollbars
 ==========
 */
-/* Body Scrollbar color */
+// Body Scrollbar color
 body::-webkit-scrollbar {
   width: 0.6rem;
   height: 0.6rem;
@@ -116,28 +117,24 @@ Hero
     ),
     url(../media/images/hero.jpg) top center/cover no-repeat;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-}
 
-.header__logo-container {
-  position: absolute;
-  top: 2.5rem;
-  left: 2.5rem;
-}
+  &__logo-container {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+  }
 
-.header__logo {
-  height: 2.25rem;
-}
+  &__logo {
+    height: 2.25rem;
+  }
 
-.header__hero-text {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.header__hero-text .btn--white {
-  margin-right: 1.35rem;
+  &__hero-text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }
 
 .heading-primary {
@@ -145,23 +142,23 @@ Hero
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 3.75rem;
-}
 
-.heading-primary--main {
-  display: block;
-  font-size: 3.75rem;
-  font-weight: 400;
-  letter-spacing: 2.188rem;
-  animation: moveInLeft 1s ease-out;
-}
+  &--main {
+    display: block;
+    font-size: 3.75rem;
+    font-weight: 400;
+    letter-spacing: 2.188rem;
+    animation: moveInLeft 1s ease-out;
+  }
 
-.heading-primary--sub {
-  display: block;
-  margin-right: 1rem;
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: 1.094rem;
-  animation: moveInRight 1s ease-out;
+  &--sub {
+    display: block;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 1.094rem;
+    animation: moveInRight 1s ease-out;
+  }
 }
 
 /* 
@@ -218,46 +215,58 @@ Animations on Hero Text
 CTA Button
 ----------
  */
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1rem 2.5rem;
-  display: inline-block;
-  border-radius: $btn-radius;
-  transition: all 0.25s;
-  position: relative;
-}
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    display: inline-block;
+    border-radius: $btn-radius;
+    transition: all 0.25s;
+    position: relative;
+  }
 
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
-}
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
+  }
 
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 0.313rem 0.625rem rgba(0, 0, 0, 0.2);
-}
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.313rem 0.625rem rgba(0, 0, 0, 0.2);
+  }
 
-.btn--white {
-  background: $clr-white;
-  color: $clr-grey-4;
-  letter-spacing: 1.5px;
-}
+  &--white {
+    background: $clr-white;
+    color: $clr-grey-4;
+    letter-spacing: 1.5px;
+  }
 
-.btn-container {
-  display: flex;
-  justify-content: center;
+  &--white-margin {
+    margin-right: 1.35rem;
+  }
+
+  &-container {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .fade--in {
   opacity: 0;
   transform: translateY(100%);
+
+  &.appear {
+    transform: translateY(0);
+    transition: transform 1s ease, opacity 1.5s ease;
+    transition-delay: 0.5s;
+    opacity: 1;
+  }
 }
 
-.fade--in.appear {
-  transform: translateY(0);
-  transition: transform 1s ease, opacity 1.5s ease;
-  transition-delay: 0.5s;
-  opacity: 1;
-}
+/* 
+====
+Hero
+====
+*/
