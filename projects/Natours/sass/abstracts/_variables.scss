@@ -1,6 +1,9 @@
 // Landing Page Light & Dark Green Colors
 $clr-home-page-light: #7ed56f;
 $clr-home-page-dark: #28b485;
+
+// Color Shades
+
 // darkshades of primary color
 $clr-primary-1: #256d3d;
 $clr-primary-2: #2e864b;
@@ -29,14 +32,24 @@ $clr-grey-9: #ccc;
 $clr-grey-10: #ddd;
 $clr-white: #fff;
 $clr-black: #000;
+// Fonts
 $ff-primary: "Lato", sans-serif;
 $ff-secondary: "Open Sans", sans-serif;
+// Transitions
 $transition: all 0.3s linear;
+// Spacing
 $spacing: 0.1rem;
+// Radius
 $radius: 0.5rem;
 $btn-radius: 1.875rem;
+// Shadows
 $light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 $dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 $primary-3-big-shadow: 0 0 14px 4px #36a059;
 $primary-3-small-shadow: 0 0 10px 0.25px #36a059;
+// Max-Width
 $max-width: 1170px;
+// GRID
+$grid-width: 71.25rem;
+$grid-gutter-virtical: 5rem;
+$grid-gutter-horizontal: 3.75rem;
