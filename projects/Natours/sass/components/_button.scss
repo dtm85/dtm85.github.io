@@ -47,3 +47,19 @@
     opacity: 1;
   }
 }
+
+.btn-text {
+  &:link,
+  &:visited {
+    color: $clr-primary-5;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $clr-primary-5;
+  }
+
+  &:hover {
+  }
+
+  &:active {
+  }
+}
