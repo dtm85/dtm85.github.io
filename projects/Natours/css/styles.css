@@ -144,10 +144,10 @@ body {
   margin-bottom: 0.938rem; }
 
 .u-margin-bottom-medium {
-  margin-bottom: 2.5rem; }
+  margin-bottom: 3.5rem; }
 
 .u-margin-bottom-big {
-  margin-bottom: 5rem; }
+  margin-bottom: 7rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -191,7 +191,44 @@ body {
   color: #55c57a;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #55c57a; }
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
+  transition: all 0.3s; }
+
+.btn-text:hover {
+  background: #55c57a;
+  color: #fff;
+  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.313rem 0.625rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 0.938rem 2.5rem rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    position: absolute;
+    transition: all 0.25s;
+    z-index: 1; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -1.25rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 1.25rem; }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 6.25rem; }
+    .composition__photo:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 4rem 0.25rem #55c57a;
+      z-index: 2; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
 
 .row {
   max-width: 71.25rem;

@@ -55,11 +55,19 @@
     display: inline-block;
     text-decoration: none;
     border-bottom: 1px solid $clr-primary-5;
+    padding: 3px;
+    transition: all 0.3s;
   }
 
   &:hover {
+    background: $clr-primary-5;
+    color: $clr-white;
+    box-shadow: 0 0.625rem 1.25rem rgba($clr-black, 0.15);
+    transform: translateY(-2px);
   }
 
   &:active {
+    box-shadow: 0 0.313rem 0.625rem rgba($clr-black, 0.15);
+    transform: translateY(0);
   }
 }
