@@ -30,6 +30,12 @@
     margin-right: 1.35rem;
   }
 
+  &--green {
+    background: $clr-home-page-light;
+    color: $clr-white;
+    letter-spacing: 1.5px;
+  }
+
   &-container {
     display: flex;
     justify-content: center;
