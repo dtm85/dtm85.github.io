@@ -228,6 +228,24 @@ body {
   margin-top: 6.25rem;
 }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.15;
+  overflow: hidden;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -555,6 +573,76 @@ body {
           transform: translateY(-0.938rem) scale(1.03);
 }
 
+.story {
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 1.875rem 3.75rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1.875rem 3.75rem rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 0.375rem;
+  padding: 3.75rem;
+  padding-left: 5.625rem;
+  -webkit-transform: skewX(-12deg);
+          transform: skewX(-12deg);
+}
+
+.story__shape {
+  width: 9.375rem;
+  height: 9.375rem;
+  float: left;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  -webkit-transform: translateX(-1.875rem) skewX(12deg);
+          transform: translateX(-1.875rem) skewX(12deg);
+}
+
+.story__img {
+  height: 100%;
+  -webkit-transform: translateX(-2.5rem) scale(1.4);
+          transform: translateX(-2.5rem) scale(1.4);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.story__text {
+  -webkit-transform: skewX(12deg);
+          transform: skewX(12deg);
+}
+
+.story__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 20%);
+          transform: translate(-50%, 20%);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.0625rem;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.story:hover .story__caption {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.story:hover .story__img {
+  -webkit-transform: translateX(-2.5rem) scale(1);
+          transform: translateX(-2.5rem) scale(1);
+  -webkit-filter: blur(0.1875rem) brightness(80%);
+          filter: blur(0.1875rem) brightness(80%);
+}
+
 .row {
   max-width: 71.25rem;
   margin: 0 auto;
@@ -653,4 +741,9 @@ body {
   background: #f7f7f7;
   padding: 17rem 0 9.375rem 0;
   margin-top: -8.5rem;
+}
+
+.section-stories {
+  position: relative;
+  padding: 9.375rem 0;
 }
