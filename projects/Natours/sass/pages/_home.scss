@@ -1,5 +1,21 @@
 .section-about {
   background: $clr-grey-light1;
-  padding: 15.625rem 0;
+  padding: 17rem 0;
   margin-top: -20vh;
+}
+
+.section-features {
+  margin-top: -7.35rem;
+  padding: 12.5rem 0;
+  background: linear-gradient(
+      to right bottom,
+      rgba($clr-home-page-light, 0.8),
+      rgba($clr-home-page-dark, 0.8)
+    ),
+    url(../media/images/nat-4.jpg) top center/cover no-repeat;
+  transform: skewY(-7.75deg);
+
+  & > * {
+    transform: skewY(7.75deg);
+  }
 }
