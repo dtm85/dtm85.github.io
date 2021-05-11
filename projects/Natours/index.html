@@ -21,6 +21,7 @@
     <title>Natours</title>
   </head>
   <body>
+    <!-- HOME -->
     <header class="header">
       <nav class="header__logo-container">
         <img
@@ -43,6 +44,7 @@
     </header>
 
     <main>
+      <!-- ABOUT -->
       <section class="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
@@ -93,6 +95,7 @@
         </div>
       </section>
 
+      <!-- FEATURES -->
       <section class="section-features">
         <div class="row">
           <div class="col-1-of-4">
@@ -149,6 +152,7 @@
         </div>
       </section>
 
+      <!-- TOURS -->
       <section class="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most Popular Tours</h2>
@@ -257,6 +261,7 @@
         </div>
       </section>
 
+      <!-- STORIES -->
       <section class="section-stories">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop playsinline>
@@ -328,9 +333,69 @@
         </div>
       </section>
 
+      <!-- BOOKING -->
       <section class="section-book">
         <div class="row">
-          <div class="book">BOOK NOW</div>
+          <div class="book">
+            <div class="book__form">
+              <form action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary">Start Booking Now</h2>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Full Name"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form__label">Full Name</label>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Email Address"
+                    id="email"
+                    required
+                  />
+                  <label for="email" class="form__label">Email Address</label>
+                </div>
+
+                <div class="form__group u-margin-bottom-smedium">
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="small"
+                      name="size"
+                    />
+                    <label for="small" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Small Tour Group
+                    </label>
+                  </div>
+
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="large"
+                      name="size"
+                    />
+                    <label for="large" class="form__radio-label">
+                      <span class="form__radio-button"></span>Large Tour Group
+                    </label>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <button class="btn btn--green">Next Step &rarr;</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
