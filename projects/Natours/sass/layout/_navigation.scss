@@ -12,6 +12,9 @@
     right: 3.75rem;
     border-radius: 50%;
     z-index: 2000;
+    box-shadow: 0 0.625rem 1.875rem rgba($clr-black, 0.1);
+    text-align: center;
+    cursor: pointer;
   }
 
   &__background {
@@ -26,8 +29,8 @@
       $clr-home-page-darker
     );
     z-index: 1000;
-
-    transform: scale(80);
+    transition: transform 0.5s cubic-bezier(0.85, 0, 0.15, 1);
+    transition-delay: 0.18s;
   }
 
   &__nav {
@@ -37,6 +40,10 @@
     top: 0;
     right: 0;
     z-index: 1500;
+
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   }
 
   &__list {
@@ -46,6 +53,7 @@
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
+    width: 100%;
   }
 
   &__item {
@@ -53,18 +61,89 @@
   }
 
   &__link {
-    font-size: 1.875rem;
-    font-weight: 300;
-    padding: 0.625rem 1.25rem;
-    color: $clr-white;
-    text-decoration: none;
-    text-transform: uppercase;
-    background-image: linear-gradient(
-      120deg,
-      orangered 0%,
-      orangered 50%,
-      $clr-white 50%
-    );
-    background-size: 100%;
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 1.875rem;
+      font-weight: 300;
+      padding: 0.625rem 1.25rem;
+      color: $clr-white;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        $clr-white 50%
+      );
+      background-size: 225%;
+      transition: all 0.4s;
+    }
+
+    span {
+      margin-right: 0.9375rem;
+      display: inline-block;
+    }
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $clr-home-page-light;
+      transform: translateX(0.625rem);
+    }
+  }
+
+  // FUNCTIONALITY
+  &__checkbox:checked ~ &__background {
+    transform: scale(80);
+  }
+
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    width: 100%;
+  }
+
+  // ICON
+  &__icon {
+    position: relative;
+    margin-top: 2.125rem;
+
+    &,
+    &::before,
+    &::after {
+      display: inline-block;
+      width: 1.875rem;
+      height: 0.1875rem;
+      border-radius: 6px;
+      background: $clr-grey-0;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+
+    &::before {
+      top: -0.625rem;
+    }
+
+    &::before {
+      top: -0.625rem;
+    }
+
+    &::after {
+      top: 0.625rem;
+    }
+  }
+
+  &__button:hover &__icon::before {
+    top: -0.75rem;
+  }
+
+  &__button:hover &__icon::after {
+    top: 0.75rem;
   }
 }
