@@ -1,0 +1,41 @@
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba($clr-black, 0.8);
+  z-index: 9999;
+
+  &__content {
+    @include absCenter;
+    display: table;
+    width: 75%;
+    background: $clr-white;
+    box-shadow: 0 1.25rem 2.5rem rgba($clr-black, 0.2);
+    border-radius: 0.25rem;
+    overflow: hidden;
+  }
+
+  &__left {
+    width: 33.333333%;
+    display: table-cell;
+  }
+
+  &__right {
+    width: 66.666667%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 1.875rem 3.125rem;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+
+  &__text {
+    font-size: 0.875rem;
+    margin-bottom: 2.5rem;
+  }
+}

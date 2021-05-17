@@ -78,22 +78,22 @@
   }
 
   &__radio-button {
+    @include absCenter;
     height: 1.875rem;
     width: 1.875rem;
     border: 5px solid $clr-home-page-light;
     border-radius: 50%;
     display: inline-block;
-    position: absolute;
     left: 0;
     top: -0.25rem;
 
     &::after {
+      @include absCenter;
       content: "";
       display: block;
       height: 0.8125rem;
       width: 0.8125rem;
       border-radius: 50%;
-      position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);

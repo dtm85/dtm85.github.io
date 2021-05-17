@@ -6,9 +6,9 @@
   height: 32.5rem;
 
   &__side {
+    @include absCenter;
     height: 32.5rem;
     transition: all 0.8s ease;
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -96,12 +96,12 @@
   }
 
   &__heading {
+    @include absCenter;
     font-size: 1.75rem;
     font-weight: 300;
     text-transform: uppercase;
     text-align: right;
     color: $clr-white;
-    position: absolute;
     top: 7.5rem;
     right: 1.25rem;
     width: 75%;
@@ -157,7 +157,7 @@
 
   // BACK SIDE STYLING
   &__cta {
-    position: absolute;
+    @include absCenter;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

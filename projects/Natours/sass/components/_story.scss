@@ -31,7 +31,7 @@
   }
 
   &__caption {
-    position: absolute;
+    @include absCenter;
     top: 50%;
     left: 50%;
     -o-transform: translate(-50%, 02%);
