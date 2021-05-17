@@ -78,7 +78,7 @@
   }
 
   &__radio-button {
-    @include absCenter;
+    position: absolute;
     height: 1.875rem;
     width: 1.875rem;
     border: 5px solid $clr-home-page-light;
@@ -88,7 +88,7 @@
     top: -0.25rem;
 
     &::after {
-      @include absCenter;
+      position: absolute;
       content: "";
       display: block;
       height: 0.8125rem;

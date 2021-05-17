@@ -2,7 +2,7 @@
   position: relative;
 
   &__photo {
-    @include absCenter;
+    position: absolute;
     width: 55%;
     box-shadow: 0 0.938rem 2.5rem rgba($clr-black, 0.4);
     border-radius: 4px;
