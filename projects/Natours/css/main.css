@@ -1032,6 +1032,28 @@ body {
   top: 0.75rem;
 }
 
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background: transparent;
+  -webkit-transition-delay: 0.18s;
+          transition-delay: 0.18s;
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  -webkit-transition-delay: 0.18s;
+          transition-delay: 0.18s;
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  -webkit-transition-delay: 0.18s;
+          transition-delay: 0.18s;
+}
+
 .section-about {
   background: #f7f7f7;
   padding: 17rem 0;
