@@ -22,6 +22,11 @@ body {
     letter-spacing: 2.188rem;
     -webkit-animation: moveInLeft 1s ease-out;
     animation: moveInLeft 1s ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 0.625rem;
+      font-family: 3.125rem;
+    }
   }
 
   &--sub {
@@ -32,6 +37,10 @@ body {
     letter-spacing: 1.094rem;
     -webkit-animation: moveInRight 1s ease-out;
     animation: moveInRight 1s ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 0.3125rem;
+    }
   }
 }
 
@@ -50,6 +59,14 @@ body {
   color: transparent;
   transition: $transition;
   letter-spacing: 2px;
+
+  @include respond(tab-port) {
+    font-size: 30px;
+  }
+
+  @include respond(phone) {
+    font-size: 25px;
+  }
 
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);

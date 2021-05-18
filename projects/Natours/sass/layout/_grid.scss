@@ -4,6 +4,14 @@
 
   &:not(:last-child) {
     margin-bottom: $grid-gutter-virtical;
+
+    @include respond(tab-port) {
+      margin-bottom: $grid-gutter-virtical-small;
+    }
+  }
+
+  @include respond(tab-port) {
+    max-width: 31.25rem;
   }
 
   @include clearfix;
@@ -13,6 +21,15 @@
 
     &:not(:last-child) {
       margin-right: $grid-gutter-horizontal;
+
+      @include respond(tab-port) {
+        margin-right: 0;
+        margin-bottom: $grid-gutter-virtical-small;
+      }
+    }
+
+    @include respond(tab-port) {
+      width: 100% !important;
     }
   }
 

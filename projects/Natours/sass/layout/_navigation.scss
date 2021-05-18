@@ -15,6 +15,11 @@
     box-shadow: 0 0.625rem 1.875rem rgba($clr-black, 0.1);
     text-align: center;
     cursor: pointer;
+
+    @include respond(tab-port) {
+      top: 2.1875rem;
+      right: 3.125rem;
+    }
   }
 
   &__background {
@@ -29,8 +34,17 @@
       $clr-home-page-darker
     );
     z-index: 1000;
-    transition: transform 0.5s cubic-bezier(0.85, 0, 0.15, 1);
-    transition-delay: 0.18s;
+    transition: transform 0.5s 0.18s cubic-bezier(0.85, 0, 0.15, 1);
+
+    @include respond(phone) {
+      top: 2.1875rem;
+      right: 3rem;
+    }
+
+    @include respond(tab-port) {
+      top: 2.525rem;
+      right: 3.415rem;
+    }
   }
 
   &__nav {
@@ -95,7 +109,7 @@
 
   // FUNCTIONALITY
   &__checkbox:checked ~ &__background {
-    transform: scale(80);
+    transform: scale(105);
   }
 
   &__checkbox:checked ~ &__nav {
@@ -112,8 +126,8 @@
     &::before,
     &::after {
       display: inline-block;
-      width: 1.875rem;
-      height: 0.1875rem;
+      width: 30px;
+      height: 4px;
       border-radius: 6px;
       background: $clr-grey-0;
     }
@@ -127,26 +141,38 @@
     }
 
     &::before {
-      top: -0.625rem;
-    }
-
-    &::before {
-      top: -0.625rem;
+      top: -11px;
     }
 
     &::after {
-      top: 0.625rem;
+      top: 11px;
     }
   }
 
   &__button:hover &__icon::before {
     top: -0.75rem;
     background: $clr-home-page-light;
+
+    @include respond(phone) {
+      top: none;
+    }
+
+    @include respond(tab-land) {
+      top: none;
+    }
   }
 
   &__button:hover &__icon::after {
     top: 0.75rem;
     background: $clr-home-page-light;
+
+    @include respond(phone) {
+      top: none;
+    }
+
+    @include respond(tab-land) {
+      top: none;
+    }
   }
 
   &__checkbox:checked + &__button &__icon {

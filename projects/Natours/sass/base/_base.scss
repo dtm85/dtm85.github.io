@@ -10,20 +10,19 @@ html {
   // Font Size set to 100% for html to use with media quries
   font-size: 100%;
 
-  @include respond(tab-port) {
-    font-size: 97.5%;
+  @include respond(tab-land) {
+    // width < 1200px?
+    font-size: 93.75%;
   }
 
-  @include respond(phone) {
+  @include respond(tab-port) {
+    // width < 900px?
     font-size: 87.5%;
   }
 
-  @include respond(tab-land) {
-    font-size: 112.5%;
-  }
-
   @include respond(big-desktop) {
-    font-size: 122.5%;
+    // width > 1800px?
+    font-size: 112.5%;
   }
 }
 

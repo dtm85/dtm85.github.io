@@ -32,6 +32,19 @@ $breakpoint argument choices:
 - big-desktop
 */
 
+/*
+ORDER
+1. Base + Typography
+2. General Layout
+3. Grid
+4. Page Layout
+5. Components
+*/
+
+/*
+1em = 16px
+*/
+
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {
