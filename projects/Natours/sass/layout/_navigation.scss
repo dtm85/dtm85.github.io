@@ -141,10 +141,12 @@
 
   &__button:hover &__icon::before {
     top: -0.75rem;
+    background: $clr-home-page-light;
   }
 
   &__button:hover &__icon::after {
     top: 0.75rem;
+    background: $clr-home-page-light;
   }
 
   &__checkbox:checked + &__button &__icon {

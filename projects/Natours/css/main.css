@@ -1,3 +1,20 @@
+/*
+0 - 600px:        Phone
+600 - 900px:      Tablet portrait
+900 - 1200px:     Tablet landscape
+
+[1200 - 1800] is where the normal desktop first styles apply
+
+1800px + :        Big desktop
+
+
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -102,7 +119,31 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 100%;
+}
+
+@media (max-width: 56.25em) {
+  html {
+    font-size: 97.5%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 112.5%;
+  }
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 122.5%;
+  }
 }
 
 body {
@@ -1119,10 +1160,12 @@ body {
 
 .navigation__button:hover .navigation__icon::before {
   top: -0.75rem;
+  background: #7ed56f;
 }
 
 .navigation__button:hover .navigation__icon::after {
   top: 0.75rem;
+  background: #7ed56f;
 }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon {
