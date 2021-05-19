@@ -61,11 +61,11 @@ body {
   letter-spacing: 2px;
 
   @include respond(tab-port) {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   @include respond(phone) {
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
 
   &:hover {

@@ -245,13 +245,13 @@ body {
 
 @media (max-width: 56.25em) {
   .heading-secondary {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 
 @media (max-width: 37.5em) {
   .heading-secondary {
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
 }
 
@@ -927,18 +927,24 @@ body {
 .footer {
   background: #333;
   padding: 6.25rem 0;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 @media (max-width: 56.25em) {
   .footer {
-    padding: 5rem 0;
+    padding: 4rem 0;
   }
 }
 
 .footer__logo-box {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 56.25em) {
+  .footer__logo-box {
+    margin-bottom: 3.75rem;
+  }
 }
 
 .footer__logo {
@@ -1346,6 +1352,12 @@ body {
   margin-top: -20vh;
 }
 
+@media (max-width: 56.25em) {
+  .section-about {
+    padding: 17 0 8rem 0;
+  }
+}
+
 .section-features {
   margin-top: -7.35rem;
   padding: 12.5rem 0;
@@ -1360,10 +1372,22 @@ body {
           transform: skewY(7.75deg);
 }
 
+@media (max-width: 56.25em) {
+  .section-features {
+    padding: 12.5rem 0 6.25rem 0;
+  }
+}
+
 .section-tours {
   background: #f7f7f7;
   padding: 17rem 0 9.375rem 0;
   margin-top: -8.5rem;
+}
+
+@media (max-width: 56.25em) {
+  .section-tours {
+    padding: 16rem 0 8rem 0;
+  }
 }
 
 .section-stories {
@@ -1371,10 +1395,22 @@ body {
   padding: 9.375rem 0;
 }
 
+@media (max-width: 56.25em) {
+  .section-stories {
+    padding: 6.25rem 0;
+  }
+}
+
 .section-book {
   padding: 9.375rem 0;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485));
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+
+@media (max-width: 56.25em) {
+  .section-book {
+    padding: 6.25rem 0;
+  }
 }
 
 .book {

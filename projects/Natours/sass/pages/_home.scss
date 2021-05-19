@@ -2,6 +2,10 @@
   background: $clr-grey-light-1;
   padding: 17rem 0;
   margin-top: -20vh;
+
+  @include respond(tab-port) {
+    padding: 17 0 8rem 0;
+  }
 }
 
 .section-features {
@@ -18,17 +22,29 @@
   & > * {
     transform: skewY(7.75deg);
   }
+
+  @include respond(tab-port) {
+    padding: 12.5rem 0 6.25rem 0;
+  }
 }
 
 .section-tours {
   background: $clr-grey-light-1;
   padding: 17rem 0 9.375rem 0;
   margin-top: -8.5rem;
+
+  @include respond(tab-port) {
+    padding: 16rem 0 8rem 0;
+  }
 }
 
 .section-stories {
   position: relative;
   padding: 9.375rem 0;
+
+  @include respond(tab-port) {
+    padding: 6.25rem 0;
+  }
 }
 
 .section-book {
@@ -38,6 +54,10 @@
     $clr-home-page-light,
     $clr-home-page-dark
   );
+
+  @include respond(tab-port) {
+    padding: 6.25rem 0;
+  }
 }
 
 .book {
