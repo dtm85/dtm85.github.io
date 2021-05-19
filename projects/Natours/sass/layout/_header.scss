@@ -9,6 +9,11 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
+  @include respond(tab-land) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 81.5vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 81.5vh, 0 100%);
+  }
+
   @include respond(phone) {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 100%);

@@ -150,28 +150,36 @@
   }
 
   &__button:hover &__icon::before {
-    top: -0.75rem;
+    transform: translateY(-3px);
     background: $clr-home-page-light;
 
-    @include respond(phone) {
-      top: none;
+    @include respond(tab-land) {
+      transform: none;
     }
 
-    @include respond(tab-land) {
-      top: none;
+    @include respond(tab-port) {
+      transform: none;
+    }
+
+    @include respond(phone) {
+      transform: none;
     }
   }
 
   &__button:hover &__icon::after {
-    top: 0.75rem;
+    transform: translateY(3px);
     background: $clr-home-page-light;
 
-    @include respond(phone) {
-      top: none;
+    @include respond(tab-land) {
+      transform: none;
     }
 
-    @include respond(tab-land) {
-      top: none;
+    @include respond(tab-port) {
+      transform: none;
+    }
+
+    @include respond(phone) {
+      transform: none;
     }
   }
 
