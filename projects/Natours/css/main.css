@@ -130,6 +130,7 @@ ORDER
 }
 
 html {
+  overflow-x: hidden;
   font-size: 100%;
 }
 
@@ -245,13 +246,7 @@ body {
 
 @media (max-width: 56.25em) {
   .heading-secondary {
-    font-size: 1.875rem;
-  }
-}
-
-@media (max-width: 37.5em) {
-  .heading-secondary {
-    font-size: 1.5625rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -262,7 +257,7 @@ body {
 }
 
 .heading-tertiary {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -293,6 +288,12 @@ body {
 
 .u-margin-bottom-big {
   margin-bottom: 7rem !important;
+}
+
+@media (max-width: 56.25em) {
+  .u-margin-bottom-big {
+    margin-bottom: 5rem !important;
+  }
 }
 
 .u-margin-top-big {
@@ -1354,7 +1355,13 @@ body {
 
 @media (max-width: 56.25em) {
   .section-about {
-    padding: 17 0 8rem 0;
+    padding: 16rem 0 8rem 0;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .section-about .heading-secondary {
+    padding: 0 auto;
   }
 }
 

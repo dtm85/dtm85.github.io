@@ -5,7 +5,7 @@ const sliders = document.querySelectorAll(".slide--in");
 const scales = document.querySelectorAll(".zoom1,.zoom2,.zoom3");
 const appearOptions = {
   threshold: 0,
-  rootMargin: "-200px 0px -300px 0px",
+  // rootMargin: "-200px 0px -300px 0px",
 };
 
 const appearOnScroll = new IntersectionObserver(function (
