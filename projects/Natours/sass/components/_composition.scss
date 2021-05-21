@@ -1,4 +1,6 @@
 .composition {
+  display: flex;
+  justify-content: center;
   position: relative;
 
   &__photo {
@@ -9,25 +11,44 @@
     transition: all 0.25s;
     z-index: 1;
 
+    @include respond(tab-port) {
+      float: none;
+      position: relative;
+      width: 33.333333;
+      box-shadow: 0 0.938rem 1.875rem rgba($clr-black, 0.2);
+    }
+
     &--p1 {
       left: 0;
       top: -1.25rem;
+
+      @include respond(tab-port) {
+        top: 0;
+      }
     }
 
     &--p2 {
       right: 0;
       top: 1.25rem;
+
+      @include respond(tab-port) {
+        top: 0;
+      }
     }
 
     &--p3 {
       left: 20%;
       top: 6.25rem;
+
+      @include respond(tab-port) {
+        top: 0;
+        left: 0;
+      }
     }
 
     &:hover {
       transform: scale(1.05);
       box-shadow: 0 0 4rem 0.25rem rgba($clr-primary-5, 1);
-      // box-shadow: 0 1.563rem 2.5rem rgba($clr-black, 0.5);
       z-index: 2;
     }
   }
