@@ -180,4 +180,49 @@
     font-size: 3.75rem;
     font-weight: 100;
   }
+
+  @include respond(tab-port) {
+    height: auto;
+    border-radius: 0.375rem;
+    background: $clr-white;
+    box-shadow: 0 0.9375rem 2.5rem rgba($clr-black, 0.15);
+
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &--back {
+        transform: rotateY(0);
+        clip-path: polygon(0% 15%, 100% 0, 100% 100%, 0% 100%);
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+    &__details {
+      padding: 0.625rem 1.875rem;
+    }
+
+    // FRONT SIDE STYLING
+    &__cta {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      padding: 5rem 2.5rem 1.25rem 2.5rem;
+    }
+
+    &__price-box {
+      margin-bottom: 1.875rem;
+    }
+
+    &__price-value {
+      margin-bottom: 2.5rem;
+      font-size: 3.125rem;
+    }
+  }
 }

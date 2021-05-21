@@ -1,6 +1,4 @@
 .composition {
-  display: flex;
-  justify-content: center;
   position: relative;
 
   &__photo {
@@ -12,9 +10,9 @@
     z-index: 1;
 
     @include respond(tab-port) {
-      float: none;
+      float: left;
       position: relative;
-      width: 33.333333;
+      width: 33.333333%;
       box-shadow: 0 0.938rem 1.875rem rgba($clr-black, 0.2);
     }
 
@@ -24,6 +22,7 @@
 
       @include respond(tab-port) {
         top: 0;
+        transform: scale(1.2);
       }
     }
 
@@ -32,7 +31,9 @@
       top: 1.25rem;
 
       @include respond(tab-port) {
-        top: 0;
+        top: -0.625rem;
+        transform: scale(1.3);
+        z-index: 2;
       }
     }
 
@@ -41,19 +42,26 @@
       top: 6.25rem;
 
       @include respond(tab-port) {
-        top: 0;
+        top: 0.625rem;
         left: 0;
+        transform: scale(1.1);
       }
     }
 
     &:hover {
       transform: scale(1.05);
       box-shadow: 0 0 4rem 0.25rem rgba($clr-primary-5, 1);
-      z-index: 2;
-    }
-  }
+      z-index: 3;
 
-  &:hover &__photo:not(:hover) {
-    transform: scale(0.95);
+      @include respond(tab-port) {
+        &:hover {
+          transform: scale(1.85);
+        }
+      }
+
+      &:hover &__photo:not(:hover) {
+        transform: scale(0.95);
+      }
+    }
   }
 }

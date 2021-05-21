@@ -7,6 +7,7 @@
 }
 
 html {
+  overflow: overlay;
   overflow-x: hidden;
 
   // Font Size set to 100% for html to use with media quries
@@ -22,10 +23,10 @@ html {
     font-size: 87.5%;
   }
 
-  @include respond(big-desktop) {
-    // width > 1800px?
-    font-size: 112.5%;
-  }
+  // @include respond(big-desktop) { // Using this media query will cause bugs with font size on cards when hovering price on the back of the card, it does not affect mobile or tablets.
+  //   /* width > 1800px? */
+  //   font-size: 112.5%;
+  // }
 }
 
 body {
