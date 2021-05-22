@@ -984,6 +984,17 @@ body {
   transition: all 0.4s;
 }
 
+.popup__text-scrollbox {
+  overflow: auto;
+  height: 100%;
+}
+
+@media (max-width: 37.5em) {
+  .popup__text-scrollbox {
+    margin-bottom: 2rem;
+  }
+}
+
 .popup__content {
   position: absolute;
   top: 50%;
@@ -1004,15 +1015,24 @@ body {
   transition: all 0.4s 0.2s;
 }
 
-@media (max-width: 75em) {
+@media (max-width: 93.75em) {
   .popup__content {
-    width: 90%;
+    width: 89%;
   }
 }
 
 .popup__left {
   width: 33.333333%;
   display: table-cell;
+}
+
+@media (max-width: 71.25em) {
+  .popup__left {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .popup__right {
@@ -1022,9 +1042,36 @@ body {
   padding: 1.875rem 3.125rem;
 }
 
+@media (max-width: 71.25em) {
+  .popup__right {
+    display: block;
+    width: 100%;
+  }
+  .popup__right .heading-secondary {
+    font-size: 1.425rem;
+  }
+  .popup__right .heading-tertiary {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
 .popup__img {
   display: block;
   width: 100%;
+}
+
+@media (max-width: 89.375em) {
+  .popup__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
 }
 
 .popup__text {
@@ -1041,6 +1088,19 @@ body {
   hyphens: auto;
 }
 
+@media (max-width: 37.5em) {
+  .popup__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+}
+
 .popup:target {
   opacity: 1;
   visibility: visible;
@@ -1053,11 +1113,16 @@ body {
 }
 
 .popup__close:link, .popup__close:visited {
-  color: #aaa;
+  color: #196f52;
   position: absolute;
   top: 0.9rem;
   right: 1.5625rem;
   font-size: 2.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1.5px solid #196f52;
+  border-radius: 50%;
+  text-align: center;
   text-decoration: none;
   display: block;
   -webkit-transition: all 0.25s;
@@ -1066,7 +1131,8 @@ body {
 }
 
 .popup__close:hover {
-  color: #7ed56f;
+  color: #af0000;
+  border: 1px solid #af0000;
 }
 
 .footer {
