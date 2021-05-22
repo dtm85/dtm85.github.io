@@ -64,6 +64,12 @@ ORDER
     }
   }
 
+  @if $breakpoint == tab-land-1500px {
+    @media (max-width: 93.75em) {
+      @content;
+    }
+  }
+
   @if $breakpoint == big-desktop {
     @media (min-width: 112.5em) {
       @content;

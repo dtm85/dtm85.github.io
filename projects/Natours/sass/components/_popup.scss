@@ -21,6 +21,10 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.4s 0.2s;
+
+    @include respond(tab-land) {
+      width: 90%;
+    }
   }
 
   &__left {
