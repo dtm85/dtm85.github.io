@@ -5,13 +5,13 @@
     <meta name="description" content="Exciting tours for adventurous people" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
-    />
+    /> -->
 
-    <link rel="stylesheet" href="./css/icon-font.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/icon-font.css" />
     <link
       rel="shortcut icon"
       type="image/png"
@@ -113,42 +113,37 @@
           <div class="col-1-of-2">
             <div class="composition">
               <img
-                srcset="./media/images/nat-1.jpg, 300w ./media/images/nat-1-large.jpg 1000w"
-                sizes="(max-width: 56.25em) 19vw, (max-with: 37.5em) 28vw, 300px"
+                srcset="
+                  ./media/images/nat-1.jpg        300w,
+                  ./media/images/nat-1-large.jpg 1000w
+                "
+                sizes="(max-width: 56.25em) 19vw, (max-width: 37.5em) 28vw, 300px"
                 alt="Photo 1"
                 class="composition__photo composition__photo--p1"
-                src="media/images/nat-1-large.jpg"
+                src="./media/images/nat-1-large.jpg"
               />
 
               <img
-                srcset="./media/images/nat-2.jpg, 300w ./media/images/nat-2-large.jpg 1000w"
-                sizes="(max-width: 56.25em) 19vw, (max-with: 37.5em) 28vw, 300px"
+                srcset="
+                  ./media/images/nat-2.jpg        300w,
+                  ./media/images/nat-2-large.jpg 1000w
+                "
+                sizes="(max-width: 56.25em) 19vw, (max-width: 37.5em) 28vw, 300px"
                 alt="Photo 2"
                 class="composition__photo composition__photo--p2"
-                src="media/images/nat-2-large.jpg"
+                src="./media/images/nat-2-large.jpg"
               />
 
               <img
-                srcset="./media/images/nat-3.jpg, 300w ./media/images/nat-3-large.jpg 1000w"
-                sizes="(max-width: 56.25em) 19vw, (max-with: 37.5em) 28vw, 300px"
+                srcset="
+                  ./media/images/nat-3.jpg        300w,
+                  ./media/images/nat-3-large.jpg 1000w
+                "
+                sizes="(max-width: 56.25em) 19vw, (max-width: 37.5em) 28vw, 300px"
                 alt="Photo 3"
                 class="composition__photo composition__photo--p3"
-                src="media/images/nat-3-large.jpg"
+                src="./media/images/nat-3-large.jpg"
               />
-
-              <!-- <img
-                src="media/images/nat-1-large.jpg"
-                alt="Photo 1"
-                class="composition__photo composition__photo--p1"
-              /><img
-                src="media/images/nat-2-large.jpg"
-                alt="Photo 2"
-                class="composition__photo composition__photo--p2"
-              /><img
-                src="media/images/nat-3-large.jpg"
-                alt="Photo 3"
-                class="composition__photo composition__photo--p3"
-              /> -->
             </div>
           </div>
         </div>
@@ -337,8 +332,19 @@
         <div class="row">
           <div class="story">
             <figure class="story__shape">
-              <img
+              <!-- <img
+                srcset="
+                  ./media/images/nat-8-small.jpeg  300w,
+                  ./media/images/nat-8.jpg        1000w
+                "
+                sizes="(max-width: 56.25em) 25vw, (max-width: 37.5em) 38vw, 300px"
+                alt="Person On A Tour 1"
+                class="story__img"
                 src="./media/images/nat-8.jpg"
+              /> -->
+
+              <img
+                src="./media/images/nat-8-small.jpeg"
                 alt="Person On A Tour"
                 class="story__img"
               />
@@ -364,8 +370,19 @@
         <div class="row">
           <div class="story">
             <figure class="story__shape">
-              <img
+              <!-- <img
+                srcset="
+                  ./media/images/nat-9-small.jpeg  300w,
+                  ./media/images/nat-9.jpg        1000w
+                "
+                sizes="(max-width: 56.25em) 25vw, (max-width: 37.5em) 38vw, 300px"
+                alt="Person On A Tour 2"
+                class="story__img"
                 src="./media/images/nat-9.jpg"
+              /> -->
+
+              <img
+                src="./media/images/nat-9-small.jpeg"
                 alt="Person On A Tour"
                 class="story__img"
               />
@@ -518,12 +535,12 @@
       <div class="popup__content">
         <div class="popup__left">
           <img
-            src="./media/images/nat-8.jpg"
+            src="./media/images/nat-8-small.jpeg"
             alt="Tour Photo"
             class="popup__img"
           />
           <img
-            src="./media/images/nat-9.jpg"
+            src="./media/images/nat-9-small.jpeg"
             alt="Tour Photo"
             class="popup__img"
           />
