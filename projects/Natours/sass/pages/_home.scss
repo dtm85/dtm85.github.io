@@ -3,6 +3,14 @@
   padding: 17rem 0;
   margin-top: -20vh;
 
+  @include respond(tab-land-1430px) {
+    padding: 15rem 3.75rem;
+  }
+
+  @include respond(tab-land) {
+    padding: 15rem 3.75rem;
+  }
+
   @include respond(tab-port) {
     padding: 15rem 0;
   }

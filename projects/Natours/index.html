@@ -113,6 +113,30 @@
           <div class="col-1-of-2">
             <div class="composition">
               <img
+                srcset="./media/images/nat-1.jpg, 300w ./media/images/nat-1-large.jpg 1000w"
+                sizes="(max-width: 56.25em) 19vw, (max-with: 37.5em) 28vw, 300px"
+                alt="Photo 1"
+                class="composition__photo composition__photo--p1"
+                src="media/images/nat-1-large.jpg"
+              />
+
+              <img
+                srcset="./media/images/nat-2.jpg, 300w ./media/images/nat-2-large.jpg 1000w"
+                sizes="(max-width: 56.25em) 19vw, (max-with: 37.5em) 28vw, 300px"
+                alt="Photo 2"
+                class="composition__photo composition__photo--p2"
+                src="media/images/nat-2-large.jpg"
+              />
+
+              <img
+                srcset="./media/images/nat-3.jpg, 300w ./media/images/nat-3-large.jpg 1000w"
+                sizes="(max-width: 56.25em) 19vw, (max-with: 37.5em) 28vw, 300px"
+                alt="Photo 3"
+                class="composition__photo composition__photo--p3"
+                src="media/images/nat-3-large.jpg"
+              />
+
+              <!-- <img
                 src="media/images/nat-1-large.jpg"
                 alt="Photo 1"
                 class="composition__photo composition__photo--p1"
@@ -124,7 +148,7 @@
                 src="media/images/nat-3-large.jpg"
                 alt="Photo 3"
                 class="composition__photo composition__photo--p3"
-              />
+              /> -->
             </div>
           </div>
         </div>
@@ -438,11 +462,23 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer__logo-box">
-        <img
-          src="./media/images/logo-green-2x.png"
-          alt="Natours Logo 2x"
-          class="footer__logo"
-        />
+        <picture class="footer__logo">
+          <source
+            srcset="
+              ./media/images/logo-green-small-1x.png,
+              ./media/images/logo-green-small-2x.png
+            "
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcset="
+              ./media/images/logo-green-1x.png 1x,
+              ./media/images/logo-green-2x.png 2x
+            "
+            alt="Natours Logo 2x"
+            src="./media/images/logo-green-2x.png 2x"
+          />
+        </picture>
       </div>
       <div class="row">
         <div class="col-1-of-2">

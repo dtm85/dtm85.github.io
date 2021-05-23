@@ -51,17 +51,16 @@
     &:hover {
       transform: scale(1.05);
       box-shadow: 0 0 4rem 0.25rem rgba($clr-primary-5, 1);
-      z-index: 3;
+      z-index: 2;
+    }
+  }
 
-      @include respond(tab-port) {
-        &:hover {
-          transform: scale(1.85);
-        }
-      }
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
 
-      &:hover &__photo:not(:hover) {
-        transform: scale(0.95);
-      }
+    @include respond(phone) {
+      transform: scale(0.99);
+      z-index: 1;
     }
   }
 }
