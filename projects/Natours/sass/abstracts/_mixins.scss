@@ -52,6 +52,12 @@ ORDER
     }
   }
 
+  @if $breakpoint == tab-port-1122px {
+    @media (max-width: 70.125em) {
+      @content;
+    }
+  }
+
   @if $breakpoint == tab-port-1140px {
     @media (max-width: 71.25em) {
       @content;

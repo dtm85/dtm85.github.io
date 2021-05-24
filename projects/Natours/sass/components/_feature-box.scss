@@ -7,6 +7,10 @@
   box-shadow: 0 0.938rem 2.5rem rgba($clr-black, 0.15);
   transition: transform 0.3s;
 
+  @include respond(tab-land-1430px) {
+    padding: 20px 24px 28px 24px;
+  }
+
   @include respond(tab-port) {
     padding: 20px 16px 28px 16px;
   }

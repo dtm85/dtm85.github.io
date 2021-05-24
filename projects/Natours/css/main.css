@@ -721,6 +721,12 @@ body {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
+@media (max-width: 89.375em) {
+  .feature-box {
+    padding: 20px 24px 28px 24px;
+  }
+}
+
 @media (max-width: 56.25em) {
   .feature-box {
     padding: 20px 16px 28px 16px;
@@ -1608,6 +1614,12 @@ body {
 .section-features > * {
   -webkit-transform: skewY(7.75deg);
           transform: skewY(7.75deg);
+}
+
+@media (max-width: 71.25em) {
+  .section-features {
+    padding: 7rem 1.75rem;
+  }
 }
 
 @media (max-width: 56.25em) {

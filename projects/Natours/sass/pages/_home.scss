@@ -37,6 +37,10 @@
     transform: skewY(7.75deg);
   }
 
+  @include respond(tab-port-1140px) {
+    padding: 7rem 1.75rem;
+  }
+
   @include respond(tab-port) {
     padding: 7rem 0;
   }
