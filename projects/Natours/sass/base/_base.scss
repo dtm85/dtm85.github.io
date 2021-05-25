@@ -6,7 +6,123 @@
   box-sizing: inherit;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+// FONTS
+
+/* lato-100 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-100.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-100.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-100.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-100.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-100.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-100.svg#Lato")
+      format("svg"); /* Legacy iOS */
+}
+/* lato-300 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-300.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-300.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-300.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-300.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-300.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-300.svg#Lato")
+      format("svg"); /* Legacy iOS */
+}
+/* lato-regular - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-regular.svg#Lato")
+      format("svg"); /* Legacy iOS */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-700.svg#Lato")
+      format("svg"); /* Legacy iOS */
+}
+/* lato-900 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-900.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-900.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-900.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-900.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-900.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-900.svg#Lato")
+      format("svg"); /* Legacy iOS */
+}
 
 html {
   overflow: overlay;

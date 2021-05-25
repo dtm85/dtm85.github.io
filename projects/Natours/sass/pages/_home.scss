@@ -11,8 +11,18 @@
     padding: 15rem 3.75rem;
   }
 
+  @include respond(tab-port-1024) {
+    .heading-secondary {
+      padding-top: 5.5rem;
+    }
+  }
+
   @include respond(tab-port) {
     padding: 15rem 0;
+
+    .heading-secondary {
+      padding-top: 2rem;
+    }
   }
 
   @include respond(phone) {
@@ -38,7 +48,7 @@
   }
 
   @include respond(tab-port-1140px) {
-    padding: 7rem 1.75rem;
+    padding: 7rem 3.75rem;
   }
 
   @include respond(tab-port) {
@@ -50,6 +60,10 @@
   background: $clr-grey-light-1;
   padding: 17rem 0 9.375rem 0;
   margin-top: -8.5rem;
+
+  @include respond(tab-land) {
+    padding: 16rem 4rem 8rem 4rem;
+  }
 
   @include respond(tab-port) {
     padding: 16rem 0 8rem 0;
@@ -76,6 +90,10 @@
     $clr-home-page-light,
     $clr-home-page-dark
   );
+
+  @include respond(tab-land) {
+    padding: 6.25rem 4rem;
+  }
 
   @include respond(tab-port) {
     padding: 6.25rem 0;

@@ -26,7 +26,6 @@ ORDER
 /*
 1em = 16px
 */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -128,6 +127,66 @@ ORDER
   padding: 0;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+}
+
+/* lato-100 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-100.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-100.eot?#iefix") format("embedded-opentype"), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-100.woff2") format("woff2"), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-100.woff") format("woff"), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-100.ttf") format("truetype"), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-100.svg#Lato") format("svg");
+  /* Legacy iOS */
+}
+
+/* lato-300 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-300.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-300.eot?#iefix") format("embedded-opentype"), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-300.woff2") format("woff2"), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-300.woff") format("woff"), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-300.ttf") format("truetype"), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-300.svg#Lato") format("svg");
+  /* Legacy iOS */
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-regular.eot?#iefix") format("embedded-opentype"), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-regular.woff2") format("woff2"), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-regular.woff") format("woff"), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-regular.ttf") format("truetype"), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-regular.svg#Lato") format("svg");
+  /* Legacy iOS */
+}
+
+/* lato-700 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-700.eot?#iefix") format("embedded-opentype"), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-700.woff2") format("woff2"), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-700.woff") format("woff"), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-700.ttf") format("truetype"), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-700.svg#Lato") format("svg");
+  /* Legacy iOS */
+}
+
+/* lato-900 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-900.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-900.eot?#iefix") format("embedded-opentype"), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-900.woff2") format("woff2"), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-900.woff") format("woff"), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-900.ttf") format("truetype"), url("/dtm85.github.io/projects/Natours/media/fonts/Lato/lato-v17-latin-900.svg#Lato") format("svg");
+  /* Legacy iOS */
 }
 
 html {
@@ -1145,8 +1204,14 @@ body {
 
 .footer {
   background: #333;
-  padding: 6.25rem 0;
+  padding: 6.25rem 0 2rem 0;
   font-size: 0.875rem;
+}
+
+@media (max-width: 71.25em) {
+  .footer {
+    padding: 4rem 4rem;
+  }
 }
 
 @media (max-width: 56.25em) {
@@ -1175,6 +1240,12 @@ body {
   border-top: 1px solid #777;
   padding-top: 1.25rem;
   display: inline-block;
+}
+
+@media (max-width: 75em) {
+  .footer__navigation {
+    float: none;
+  }
 }
 
 @media (max-width: 56.25em) {
@@ -1590,9 +1661,18 @@ body {
   }
 }
 
+@media (max-width: 64em) {
+  .section-about .heading-secondary {
+    padding-top: 5.5rem;
+  }
+}
+
 @media (max-width: 56.25em) {
   .section-about {
     padding: 15rem 0;
+  }
+  .section-about .heading-secondary {
+    padding-top: 2rem;
   }
 }
 
@@ -1618,7 +1698,7 @@ body {
 
 @media (max-width: 71.25em) {
   .section-features {
-    padding: 7rem 1.75rem;
+    padding: 7rem 3.75rem;
   }
 }
 
@@ -1632,6 +1712,12 @@ body {
   background: #f7f7f7;
   padding: 17rem 0 9.375rem 0;
   margin-top: -8.5rem;
+}
+
+@media (max-width: 75em) {
+  .section-tours {
+    padding: 16rem 4rem 8rem 4rem;
+  }
 }
 
 @media (max-width: 56.25em) {
@@ -1658,6 +1744,12 @@ body {
   padding: 9.375rem 0;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485));
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+
+@media (max-width: 75em) {
+  .section-book {
+    padding: 6.25rem 4rem;
+  }
 }
 
 @media (max-width: 56.25em) {

@@ -70,6 +70,12 @@ ORDER
     }
   }
 
+  @if $breakpoint == tab-port-1024 {
+    @media (max-width: 64em) {
+      @content;
+    }
+  }
+
   @if $breakpoint == tab-land {
     @media (max-width: 75em) {
       @content;
