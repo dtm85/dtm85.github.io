@@ -5,8 +5,57 @@
     <meta name="description" content="Exciting tours for adventurous people" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preload" as="style" href="./css/main.css" />
     <link rel="stylesheet" href="./css/icon-font.css" />
+    <link rel="preload" as="style" href="./css/icon-font.css" />
+
+    <!-- FONTS -->
+    <link
+      rel="preload"
+      href="./media/fonts/Lato/lato-v17-latin-100.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./media/fonts/Lato/lato-v17-latin-300.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./media/fonts/Lato/lato-v17-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./media/fonts/Lato/lato-v17-latin-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./media/fonts/Lato/lato-v17-latin-900.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./css/fonts/linea-basic-10.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+
+    <!-- FAVICON -->
     <link
       rel="shortcut icon"
       type="image/png"
@@ -190,7 +239,7 @@
             <div class="feature-box">
               <i class="feature-box__icon icon-basic-heart"></i>
               <h3 class="heading-tertiary u-margin-bottom-small">
-                Live A Healthier Life
+                Live A Healthy Life
               </h3>
               <p class="feature-box__text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam
@@ -327,19 +376,9 @@
         <div class="row">
           <div class="story">
             <figure class="story__shape">
-              <!-- <img
-                srcset="
-                  ./media/images/nat-8-small.jpeg  300w,
-                  ./media/images/nat-8.jpg        1000w
-                "
-                sizes="(max-width: 56.25em) 25vw, (max-width: 37.5em) 38vw, 300px"
-                alt="Person On A Tour 1"
-                class="story__img"
-                src="./media/images/nat-8.jpg"
-              /> -->
-
               <img
                 src="./media/images/nat-8-small.jpeg"
+                loading="lazy"
                 alt="Person On A Tour"
                 class="story__img"
               />
@@ -365,19 +404,9 @@
         <div class="row">
           <div class="story">
             <figure class="story__shape">
-              <!-- <img
-                srcset="
-                  ./media/images/nat-9-small.jpeg  300w,
-                  ./media/images/nat-9.jpg        1000w
-                "
-                sizes="(max-width: 56.25em) 25vw, (max-width: 37.5em) 38vw, 300px"
-                alt="Person On A Tour 2"
-                class="story__img"
-                src="./media/images/nat-9.jpg"
-              /> -->
-
               <img
                 src="./media/images/nat-9-small.jpeg"
+                loading="lazy"
                 alt="Person On A Tour"
                 class="story__img"
               />
@@ -489,6 +518,7 @@
             "
             alt="Natours Logo 2x"
             src="./media/images/logo-green-2x.png 2x"
+            loading="lazy"
           />
         </picture>
       </div>

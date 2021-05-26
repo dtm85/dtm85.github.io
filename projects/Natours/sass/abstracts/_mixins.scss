@@ -13,38 +13,6 @@
   transform: translate(-50%, -50%);
 }
 
-// MEDIA QUERY MANAGER
-/*
-0 - 600px:        Phone
-600 - 900px:      Tablet portrait
-900 - 1200px:     Tablet landscape
-
-[1200 - 1800] is where the normal desktop first styles apply
-
-1800px + :        Big desktop
-
-
-
-$breakpoint argument choices:
-- phone
-- tab-port
-- tab-land
-- big-desktop
-*/
-
-/*
-ORDER
-1. Base + Typography
-2. General Layout
-3. Grid
-4. Page Layout
-5. Components
-*/
-
-/*
-1em = 16px
-*/
-
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {

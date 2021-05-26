@@ -40,8 +40,20 @@
       rgba($clr-home-page-light, 0.8),
       rgba($clr-home-page-dark, 0.8)
     ),
-    url(../media/images/nat-4.jpg) top center/cover no-repeat;
+    url(../media/images/nat-4-small.jpeg) top center/cover no-repeat;
   transform: skewY(-7.75deg);
+
+  @media (min-width: 37.5em),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    (min-resolution: 192dpi) and (min-width: 37.5em),
+    (min-width: 125em) {
+    background: linear-gradient(
+        to right bottom,
+        rgba($clr-home-page-light, 0.8),
+        rgba($clr-home-page-dark, 0.8)
+      ),
+      url(../media/images/nat-4.jpg) top center/cover no-repeat;
+  }
 
   & > * {
     transform: skewY(7.75deg);
