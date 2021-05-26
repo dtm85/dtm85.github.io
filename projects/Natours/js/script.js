@@ -1,3 +1,45 @@
+// ********** Measure LCP **********
+// new PerformanceObserver((entryList) => {
+//   for (const entry of entryList.getEntries()) {
+//     console.log("LCP candidate:", entry.startTime, entry);
+//   }
+// }).observe({ type: "largest-contentful-paint", buffered: true });
+
+// ********** Lazy Loading **********
+const images = [
+  `/dtm85.github.io/projects/Natours/media/images/nat-4-small.jpeg`,
+  `/dtm85.github.io/projects/Natours/media/images/nat-4.jpg`,
+];
+
+const elements = document.querySelectorAll(".lazy");
+
+const observerOptions = {
+  threshold: 0,
+  rootMargin: "200px",
+};
+
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+for (const element of elements) {
+  observer.observe(element);
+}
+
+function observerCallback(entries, observer) {
+  entries.forEach((entry) => {
+    const { isIntersecting, target } = entry;
+
+    if (!isIntersecting) {
+      return;
+    }
+
+    const targetIndex = [...elements].indexOf(target);
+
+    target.style.backgroundImage = `url("${images[targetIndex]}")`;
+
+    observer.unobserve(target);
+  });
+}
+
 // ********** Animations on Scroll **********
 
 const faders = document.querySelectorAll(".fade--in");

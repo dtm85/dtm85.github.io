@@ -17,42 +17,42 @@
       href="./media/fonts/Lato/lato-v17-latin-100.woff2"
       as="font"
       type="font/woff2"
-      crossorigin
+      crossorigin="crossorigin"
     />
     <link
       rel="preload"
       href="./media/fonts/Lato/lato-v17-latin-300.woff2"
       as="font"
       type="font/woff2"
-      crossorigin
+      crossorigin="crossorigin"
     />
     <link
       rel="preload"
       href="./media/fonts/Lato/lato-v17-latin-regular.woff2"
       as="font"
       type="font/woff2"
-      crossorigin
+      crossorigin="crossorigin"
     />
     <link
       rel="preload"
       href="./media/fonts/Lato/lato-v17-latin-700.woff2"
       as="font"
       type="font/woff2"
-      crossorigin
+      crossorigin="crossorigin"
     />
     <link
       rel="preload"
       href="./media/fonts/Lato/lato-v17-latin-900.woff2"
       as="font"
       type="font/woff2"
-      crossorigin
+      crossorigin="crossorigin"
     />
     <link
       rel="preload"
       href="./css/fonts/linea-basic-10.woff"
       as="font"
       type="font/woff"
-      crossorigin
+      crossorigin="crossorigin"
     />
 
     <!-- FAVICON -->
@@ -194,7 +194,7 @@
       </section>
 
       <!-- FEATURES -->
-      <section class="section-features">
+      <section class="section-features lazy">
         <div class="row">
           <div class="col-1-of-4">
             <div class="feature-box">
@@ -362,7 +362,14 @@
       <!-- STORIES -->
       <section class="section-stories">
         <div class="bg-video">
-          <video class="bg-video__content" autoplay muted loop playsinline>
+          <video
+            preload="none"
+            class="bg-video__content"
+            autoplay
+            muted
+            loop
+            playsinline
+          >
             <source src="./media/video/video.mp4" type="video/mp4" />
             <source src="./media/video/video.webm" type="video/webm" />
             Your Browser Is Not Supported
@@ -598,42 +605,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <section class="grid-test">
-      <div class="row">
-        <div class="col-1-of-2">Col 1 of 2</div>
-        <div class="col-1-of-2">Col 1 of 2</div>
-      </div>
-
-      <div class="row">
-        <div class="col-1-of-3">Col 1 of 3</div>
-        <div class="col-1-of-3">Col 1 of 3</div>
-        <div class="col-1-of-3">Col 1 of 3</div>
-      </div>
-
-      <div class="row">
-        <div class="col-1-of-3">Col 1 of 3</div>
-        <div class="col-2-of-3">Col 2 of 3</div>
-      </div>
-
-      <div class="row">
-        <div class="col-1-of-4">Col 1 of 4</div>
-        <div class="col-1-of-4">Col 1 of 4</div>
-        <div class="col-1-of-4">Col 1 of 4</div>
-        <div class="col-1-of-4">Col 1 of 4</div>
-      </div>
-
-      <div class="row">
-        <div class="col-1-of-4">Col 1 of 4</div>
-        <div class="col-1-of-4">Col 1 of 4</div>
-        <div class="col-2-of-4">Col 2 of 4</div>
-      </div>
-
-      <div class="row">
-        <div class="col-1-of-4">Col 1 of 4</div>
-        <div class="col-3-of-4">Col 3 of 4</div>
-      </div>
-    </section> -->
 
     <script src="./js/script.js"></script>
   </body>
