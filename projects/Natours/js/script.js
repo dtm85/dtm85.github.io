@@ -6,39 +6,39 @@
 // }).observe({ type: "largest-contentful-paint", buffered: true });
 
 // ********** Lazy Loading **********
-const images = [
-  `/dtm85.github.io/projects/Natours/media/images/nat-4-small.jpeg`,
-  `/dtm85.github.io/projects/Natours/media/images/nat-4.jpg`,
-];
+// const images = [
+//   `/dtm85.github.io/projects/Natours/media/images/nat-4-small.jpeg`,
+//   `/dtm85.github.io/projects/Natours/media/images/nat-4.jpg`,
+// ];
 
-const elements = document.querySelectorAll(".lazy");
+// const elements = document.querySelectorAll(".lazy");
 
-const observerOptions = {
-  threshold: 0,
-  rootMargin: "200px",
-};
+// const observerOptions = {
+//   threshold: 0,
+//   rootMargin: "200px",
+// };
 
-const observer = new IntersectionObserver(observerCallback, observerOptions);
+// const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-for (const element of elements) {
-  observer.observe(element);
-}
+// for (const element of elements) {
+//   observer.observe(element);
+// }
 
-function observerCallback(entries, observer) {
-  entries.forEach((entry) => {
-    const { isIntersecting, target } = entry;
+// function observerCallback(entries, observer) {
+//   entries.forEach((entry) => {
+//     const { isIntersecting, target } = entry;
 
-    if (!isIntersecting) {
-      return;
-    }
+//     if (!isIntersecting) {
+//       return;
+//     }
 
-    const targetIndex = [...elements].indexOf(target);
+//     const targetIndex = [...elements].indexOf(target);
 
-    target.style.backgroundImage = `url("${images[targetIndex]}")`;
+//     target.style.backgroundImage = `url("${images[targetIndex]}")`;
 
-    observer.unobserve(target);
-  });
-}
+//     observer.unobserve(target);
+//   });
+// }
 
 // ********** Animations on Scroll **********
 
