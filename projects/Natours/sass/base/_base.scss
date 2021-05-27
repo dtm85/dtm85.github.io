@@ -125,6 +125,7 @@ html {
 
   // Font Size set to 100% for html to use with media quries
   font-size: 100%;
+  font-family: Lato, Arial, Helvetica, sans-serif;
 
   @include respond(tab-land) {
     // width < 1200px?
