@@ -1,13 +1,18 @@
 .header {
-  height: 95vh;
+  height: 85vh;
   background: linear-gradient(
       to right bottom,
       rgba($clr-home-page-light, 0.8),
       rgba($clr-home-page-dark, 0.8)
     ),
     url(../media/images/hero-small.jpg) top center/cover no-repeat;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  @supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or
+    (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    height: 95vh;
+  }
 
   @media (min-width: 37.5em),
     (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),

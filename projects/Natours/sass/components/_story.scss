@@ -23,11 +23,18 @@
     width: 9.375rem;
     height: 9.375rem;
     float: left;
-    shape-outside: circle(50% at 50% 50%);
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
     transform: translateX(-1.875rem) skewX(12deg);
     overflow: hidden;
+    border-radius: 50%;
+
+    @supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)))
+      or (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      border-radius: none;
+    }
 
     @include respond(phone) {
       transform: translateX(-1.875rem) skewX(0);
@@ -37,6 +44,7 @@
   &__img {
     height: 100%;
     transform: translateX(-2.5rem) scale(1.4);
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: all 0.5s;
   }
@@ -53,7 +61,6 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    -o-transform: translate(-50%, 02%);
     transform: translate(-50%, 20%);
     color: $clr-white;
     text-transform: uppercase;
@@ -61,6 +68,7 @@
     text-align: center;
     opacity: 0;
     transition: all 0.5s;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
 
@@ -71,6 +79,7 @@
 
   &:hover &__img {
     transform: translateX(-2.5rem) scale(1);
+    -webkit-filter: blur(0.1875rem) brightness(80%);
     filter: blur(0.1875rem) brightness(80%);
   }
 }
