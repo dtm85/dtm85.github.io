@@ -128,22 +128,22 @@
       color: $clr-home-page-darker;
       position: absolute;
       top: 0.9rem;
-      right: 1.5625rem;
+      right: 0.95rem;
       font-size: 2.5rem;
       width: 2.75rem;
       height: 2.75rem;
-      border: 1.5px solid $clr-home-page-darker;
+      background: $clr-primary-10;
       border-radius: 50%;
       text-align: center;
       text-decoration: none;
       display: block;
-      transition: all 0.25s;
+      transition: all 0.45s;
       line-height: 1;
     }
 
     &:hover {
-      color: rgb(175, 0, 0);
-      border: 1px solid rgb(175, 0, 0);
+      color: #af0000;
+      background: #ffe2e2;
     }
   }
 }
