@@ -1,37 +1,47 @@
-*,
-::after,
-::before {
+/*
+COLORS
+
+Primary: #eb2f64
+Primary light: #FF3366
+Primary dark: #BA265D
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+
+* {
   margin: 0;
   padding: 0;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 html {
+  box-sizing: border-box;
   overflow: overlay;
   overflow-x: hidden;
 
   // Font Size set to 100% for html to use with media quries
   font-size: 100%;
-  font-family: "Lato", sans-serif;
-
-  @include respond(tab-land) {
-    // width < 1200px?
-    font-size: 93.75%;
-  }
-
-  @include respond(tab-port) {
-    // width < 900px?
-    font-size: 87.5%;
-  }
-
-  // @include respond(big-desktop) { // Using this media query will cause bugs with font size on cards when hovering price on the back of the card, it does not affect mobile or tablets.
-  //   /* width > 1800px? */
-  //   font-size: 112.5%;
-  // }
 }
 
 body {
-  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+
+  height: 200vh;
 
   // Body Scrollbar color
   &::-webkit-scrollbar {
@@ -41,6 +51,7 @@ body {
 
   &::-webkit-scrollbar-track {
     background: none;
+    margin-top: 6rem;
     margin-bottom: 1px;
     border-radius: 8px;
   }
@@ -57,6 +68,6 @@ body {
 }
 
 ::selection {
-  background: $clr-home-page-light;
+  background: $clr-primary;
   color: $clr-white;
 }

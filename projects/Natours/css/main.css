@@ -690,7 +690,6 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-track {
   background: none;
-  margin-top: 7rem;
   margin-bottom: 1px;
   border-radius: 8px;
 }

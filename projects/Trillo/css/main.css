@@ -1,0 +1,75 @@
+/*
+COLORS
+
+Primary: #eb2f64
+Primary light: #FF3366
+Primary dark: #BA265D
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: overlay;
+  overflow-x: hidden;
+  font-size: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  height: 200vh;
+}
+
+body::-webkit-scrollbar {
+  width: 0.65rem;
+  height: 0.65rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: none;
+  margin-top: 6rem;
+  margin-bottom: 1px;
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #f7abc0;
+  border-radius: 8rem;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #f48ca9;
+  border-radius: 8rem;
+}
+
+::-moz-selection {
+  background: #eb2f64;
+  color: #fff;
+}
+
+::selection {
+  background: #eb2f64;
+  color: #fff;
+}
