@@ -66,16 +66,3 @@
     fill: currentColor;
   }
 }
-
-/////////////////////////////////////
-// LEGAL TEXT - COPYRIGHT
-.legal {
-  font-size: 0.75rem;
-  text-align: center;
-  color: var(--clr-grey-8);
-  padding: 1.5625rem;
-
-  &__rights {
-    display: block;
-  }
-}

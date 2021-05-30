@@ -45,11 +45,14 @@
   --radius: 0.5rem;
   --btn-radius: 1.875rem;
   // Shadows
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --shadow-light: 0 1.25rem 3.125rem rgba(0, 0, 0, 0.1);
+  --shadow-dark: 0 1.25rem 3.75rem rgba(0, 0, 0, 0.3);
   --huge-dark-shadow: 0 1.25rem 3.75rem rgba(0, 0, 0, 0.3);
   --primary-3-big-shadow: 0 0 14px 4px #f16d92;
   --primary-3-small-shadow: 0 0 10px 0.25px #f16d92;
+  // Border Bottom Line
+  --line-light: 2px solid #f4f2f2;
+  --line-dark: 2px solid #ccc;
   // Max-Width
   --max-width: 1170px;
 }

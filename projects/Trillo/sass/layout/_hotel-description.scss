@@ -1,0 +1,217 @@
+/////////////////////////////////////
+// HOTEL DESCRIPTION
+.detail {
+  font-size: 0.875rem;
+  display: flex;
+  padding: 2.8125rem;
+  background: var(--clr-grey-11);
+  border-bottom: var(--line-light);
+}
+
+.description {
+  background: var(--clr-white);
+  box-shadow: var(--shadow-light);
+  padding: 1.875rem;
+  flex: 0 0 60%;
+  margin-right: 2.8125rem;
+}
+
+.user-reviews {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/////////////////////////////////////
+// LIST
+.list {
+  list-style: none;
+  margin: 1.875rem 0;
+  padding: 1.875rem 0;
+  border-top: var(--line-light);
+  border-bottom: var(--line-light);
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    flex: 0 0 50%;
+    margin-bottom: 0.4375rem;
+  }
+
+  &__item::before {
+    content: "";
+    display: inline-block;
+    height: 0.625rem;
+    width: 0.625rem;
+    margin-right: 0.4375rem;
+    // OLDER BROWSERS
+    background-image: url(**/../../media/images/SVG/chevron-thin-right.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    // NEWER BROWSERS - MASKS
+    background: var(--clr-primary);
+    mask-image: url(**/../../media/images/SVG/chevron-thin-right.svg);
+    mask-size: cover;
+  }
+}
+
+/////////////////////////////////////
+// RECOMMEND
+.recommend {
+  font-size: 0.8125rem;
+  color: var(--clr-grey-6);
+  display: flex;
+  align-items: center;
+
+  &__count {
+    margin-right: auto;
+  }
+
+  &__photo {
+    box-sizing: content-box;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 0.1875rem solid var(--clr-white);
+
+    &:not(:last-child) {
+      margin-right: -0.9375rem;
+    }
+  }
+}
+
+/////////////////////////////////////
+// REVIEWS
+.review {
+  background: var(--clr-white);
+  box-shadow: var(--shadow-light);
+  padding: 1.875rem;
+  margin-bottom: 2.1875rem;
+  position: relative;
+  overflow: hidden;
+
+  &__text {
+    margin-bottom: 1.25rem;
+    z-index: 10;
+    position: relative;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+  }
+
+  &__photo {
+    height: 2.8125rem;
+    width: 2.8125rem;
+    border-radius: 50%;
+    margin-right: 0.9375rem;
+  }
+
+  &__user-box {
+    margin-right: auto;
+  }
+
+  &__user-name {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+
+  &__user-date {
+    font-size: 0.625rem;
+    color: var(--clr-grey-6);
+  }
+
+  &__rating {
+    color: var(--clr-primary);
+    font-size: 1.375rem;
+    font-weight: 300;
+  }
+
+  &::before {
+    content: "\201C";
+    position: absolute;
+    top: -27.5px;
+    left: -10px;
+    line-height: 1;
+    font-size: 12.5rem;
+    color: var(--clr-grey-9);
+    font-family: sans-serif;
+    z-index: 1;
+  }
+}
+
+/////////////////////////////////////
+// CALL TO ACTION
+.cta {
+  padding: 2.1875rem 0;
+  text-align: center;
+
+  &__book-now {
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 1.5625rem;
+  }
+}
+
+/////////////////////////////////////
+// CALL TO ACTION
+.btn {
+  font-size: 0.9375rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 1.875rem;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    var(--clr-primary-light),
+    var(--clr-primary-dark)
+  );
+  color: var(--clr-white);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  & > * {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s;
+  }
+
+  &__visible {
+    padding: 1.25rem 4.6875rem;
+  }
+
+  &__invisible {
+    position: absolute;
+    padding: 1.25rem 0;
+    left: 0;
+    top: -100%;
+  }
+
+  &:hover {
+    background-image: linear-gradient(
+      to left,
+      var(--clr-primary-light),
+      var(--clr-primary-dark)
+    );
+  }
+
+  &:hover &__visible {
+    transform: translateY(100%);
+  }
+
+  &:hover &__invisible {
+    top: 0;
+  }
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+  }
+}

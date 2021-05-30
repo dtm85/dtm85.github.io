@@ -3,12 +3,10 @@
 .hotel-view {
   background: var(--clr-white);
   flex: 1;
-
-  height: 50rem;
 }
 
 /////////////////////////////////////
-// HOTEL GALLERY
+// HOTEL GALLERY - TOP
 .gallery {
   display: flex;
 
@@ -23,7 +21,7 @@
 .overview {
   display: flex;
   align-items: center;
-  border-bottom: 2px solid var(--clr-grey-10);
+  border-bottom: var(--line-light);
 
   &__heading {
     font-size: 1.4063rem;
@@ -77,28 +75,5 @@
   &__rating-count {
     font-size: 0.5rem;
     text-transform: uppercase;
-  }
-}
-
-/////////////////////////////////////
-// BUTTON INLINE
-.btn-inline {
-  border: none;
-  color: var(--clr-primary);
-  font-size: inherit;
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 0.125rem;
-  display: inline-block;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.25s;
-
-  &:hover {
-    color: var(--clr-grey-0);
-  }
-
-  &:focus {
-    outline: none;
-    animation: pulsate 1s infinite;
   }
 }

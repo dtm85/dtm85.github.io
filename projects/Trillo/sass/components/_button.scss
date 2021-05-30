@@ -1,0 +1,34 @@
+/////////////////////////////////////
+// BUTTON INLINE - Under Hotel Gallery &Under Reviews
+.btn-inline {
+  border: none;
+  color: var(--clr-primary);
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.125rem;
+  display: inline-block;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.25s;
+
+  & span {
+    margin-left: 0.1875rem;
+    transition: margin-left 0.25s;
+  }
+
+  &:hover {
+    color: var(--clr-grey-0);
+
+    span {
+      margin-left: 0.5rem;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+  }
+}
+
+/////////////////////////////////////
+// CTA - Bottom of Hotel Details
