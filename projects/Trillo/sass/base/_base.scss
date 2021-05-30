@@ -17,6 +17,10 @@ html {
 
   // Font Size set to 100% for html to use with media quries
   font-size: 100%;
+
+  @include respond(bp-large-1100) {
+    font-size: 87.5%;
+  }
 }
 
 body {
@@ -44,6 +48,10 @@ body {
     background: none;
     margin-bottom: 1px;
     border-radius: 8px;
+
+    @include respond(bp-largest-1200) {
+      margin-top: 4.5rem;
+    }
   }
 
   &::-webkit-scrollbar-thumb {

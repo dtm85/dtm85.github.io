@@ -6,6 +6,10 @@
   color: var(--clr-grey-8);
   padding: 1.5625rem;
 
+  @include respond(bp-large-1000) {
+    display: none;
+  }
+
   &__rights {
     display: block;
   }

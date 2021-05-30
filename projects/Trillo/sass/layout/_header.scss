@@ -11,10 +11,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include respond(bp-large-1000) {
+    border-bottom: none;
+  }
 }
 
 .content {
   display: flex;
+
+  @include respond(bp-large-1000) {
+    flex-direction: column;
+  }
 }
 
 /////////////////////////////////////

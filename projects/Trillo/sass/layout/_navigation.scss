@@ -15,11 +15,24 @@
   list-style: none;
   margin-top: 2.1875rem;
 
+  @include respond(bp-large-1000) {
+    display: flex;
+    margin: 0;
+  }
+
   &__item {
     position: relative;
 
     &:not(:last-child) {
       margin-bottom: 0.3125rem;
+
+      @include respond(bp-large-1000) {
+        margin-bottom: 0;
+      }
+    }
+
+    @include respond(bp-large-1000) {
+      flex: 1;
     }
   }
 
@@ -34,12 +47,24 @@
     transform: scaleY(0);
     transition: transform 0.25s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
       background 0.15s;
+
+    @include respond(bp-large-1000) {
+      transform: scaleX(0);
+      bottom: 0;
+      right: 0;
+      transform-origin: bottom;
+    }
   }
 
   &__item:hover::before,
   &__item--active::before {
     transform: scaleY(1);
     width: 100%;
+
+    @include respond(bp-large-1000) {
+      transform: scaleX(1);
+      transform-origin: bottom;
+    }
   }
 
   &__item:active::before {
@@ -57,6 +82,11 @@
     align-items: center;
     position: relative;
     z-index: 1;
+
+    @include respond(bp-large-1000) {
+      justify-content: center;
+      padding: 1.25rem;
+    }
   }
 
   &__icon {

@@ -31,4 +31,59 @@
 }
 
 /////////////////////////////////////
-// CTA - Bottom of Hotel Details
+// CTA BUTTON - Bottom of Hotel Details
+.btn {
+  font-size: 0.9375rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 1.875rem;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    var(--clr-primary-light),
+    var(--clr-primary-dark)
+  );
+  color: var(--clr-white);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  & > * {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s;
+  }
+
+  &__visible {
+    padding: 1.25rem 4.6875rem;
+  }
+
+  &__invisible {
+    position: absolute;
+    padding: 1.25rem 0;
+    left: 0;
+    top: -100%;
+  }
+
+  &:hover {
+    background-image: linear-gradient(
+      to left,
+      var(--clr-primary-light),
+      var(--clr-primary-dark)
+    );
+  }
+
+  &:hover &__visible {
+    transform: translateY(100%);
+  }
+
+  &:hover &__invisible {
+    top: 0;
+  }
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+  }
+}

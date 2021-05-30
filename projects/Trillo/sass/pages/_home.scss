@@ -5,4 +5,10 @@
   box-shadow: var(--huge-dark-shadow);
 
   min-height: 31.25rem;
+
+  @include respond(bp-largest-1200) {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
 }
