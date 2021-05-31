@@ -39,7 +39,7 @@
             class="search__input"
             placeholder="Search Hotels"
           />
-          <button class="search__button">
+          <button class="search__button" aria-label="Search Button">
             <svg class="search__icon">
               <use
                 xlink:href="media/images/sprite.svg#icon-magnifying-glass"
@@ -184,7 +184,9 @@
                   xlink:href="media/images/sprite.svg#icon-location-pin"
                 ></use>
               </svg>
-              <button class="btn-inline">Albufeira, Portugal</button>
+              <button class="btn-inline" aria-label="Hotel Location">
+                Albufeira, Portugal
+              </button>
             </div>
 
             <div class="overview__rating">
@@ -206,14 +208,14 @@
                 architecto voluptate delectus, inventore iure aliquid aliquam.
               </p>
               <ul class="list">
-                <li class="list__item">Close to the Beach</li>
-                <li class="list__item">Breakfast included</li>
-                <li class="list__item">Free airport shuttle</li>
-                <li class="list__item">Free wifi in all rooms</li>
-                <li class="list__item">Air conditioning and heating</li>
-                <li class="list__item">Pets allowed</li>
-                <li class="list__item">We speak all languages</li>
-                <li class="list__item">Perfect for families</li>
+                <li class="list__item">Close To The Beach</li>
+                <li class="list__item">Breakfast Included</li>
+                <li class="list__item">Free Airport Shuttle</li>
+                <li class="list__item">Free Wi-Fi</li>
+                <li class="list__item">A/C & Heating</li>
+                <li class="list__item">Pets Allowed</li>
+                <li class="list__item">24/7 Pool Access</li>
+                <li class="list__item">Perfect For Families</li>
               </ul>
               <div class="recommend">
                 <p class="recommend__count">
@@ -282,7 +284,9 @@
                   <div class="review__rating">9.3</div>
                 </figcaption>
               </figure>
-              <button class="btn-inline">Show All <span>&rarr;</span></button>
+              <button class="btn-inline" aria-label="Show All Hotels">
+                Show All <span>&rarr;</span>
+              </button>
             </div>
           </div>
           <div class="cta">
@@ -295,6 +299,16 @@
             </button>
           </div>
         </main>
+        <footer class="footer">
+          <div class="footer__legal">
+            <img src="media/images/logo.png" alt="Trillo Logo" class="logo" />
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            <span class="legal__trillo">Trillo - All Rights Reserved.</span>
+          </div>
+        </footer>
       </div>
     </div>
     <script src="./js/script.js"></script>

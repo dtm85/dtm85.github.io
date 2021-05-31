@@ -6,6 +6,18 @@
   padding: 2.8125rem;
   background: var(--clr-grey-11);
   border-bottom: var(--line-light);
+
+  @include respond(bp-largest-1200) {
+    padding-bottom: 15.4rem;
+  }
+
+  @include respond(bp-large-1000) {
+    padding: 1.875rem;
+  }
+
+  @include respond(bp-medium-600) {
+    flex-direction: column;
+  }
 }
 
 .description {
@@ -14,6 +26,16 @@
   padding: 1.875rem;
   flex: 0 0 60%;
   margin-right: 2.8125rem;
+
+  @include respond(bp-large-1000) {
+    padding: 1.25rem;
+    margin-right: 1.875rem;
+  }
+
+  @include respond(bp-medium-600) {
+    margin-right: 0;
+    margin-bottom: 1.875rem;
+  }
 }
 
 .user-reviews {
@@ -66,9 +88,16 @@
 
   &__count {
     margin-right: auto;
+    padding-right: 1rem;
+    color: var(--clr-primary);
+  }
+
+  &__friends {
+    display: flex;
   }
 
   &__photo {
+    display: flex;
     box-sizing: content-box;
     height: 2.5rem;
     width: 2.5rem;
@@ -90,6 +119,10 @@
   margin-bottom: 2.1875rem;
   position: relative;
   overflow: hidden;
+
+  @include respond(bp-large-1000) {
+    padding: 1.25rem;
+  }
 
   &__text {
     margin-bottom: 1.25rem;
@@ -149,6 +182,10 @@
 .cta {
   padding: 2.1875rem 0;
   text-align: center;
+
+  @include respond(bp-large-1000) {
+    padding: 1.5625rem 0;
+  }
 
   &__book-now {
     font-size: 1.25rem;

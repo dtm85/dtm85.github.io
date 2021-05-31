@@ -15,6 +15,12 @@
   @include respond(bp-large-1000) {
     border-bottom: none;
   }
+
+  @include respond(bp-small-500) {
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 7.5rem;
+  }
 }
 
 .content {
