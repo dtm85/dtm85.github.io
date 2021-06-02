@@ -649,8 +649,7 @@ Testimonial
 */
 .section-testimonials {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
-    url(/projects/Omnifood/media/images/back-customers.jpg) center/cover
-      no-repeat;
+    url(**/../../media/images/back-customers.jpg) center/cover no-repeat;
   color: var(--clr-white);
   padding-bottom: 5rem;
 }
