@@ -927,6 +927,12 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  .cta {
+    padding: 1.5625rem 2rem;
+  }
+}
+
 .cta__book-now {
   font-size: 1.25rem;
   font-weight: 300;
