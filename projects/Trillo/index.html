@@ -7,11 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- connect to domain of font files -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- optionally increase loading priority -->
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap"
+    />
+
+    <!-- async CSS -->
+    <link
+      rel="stylesheet"
+      media="print"
+      onload="this.onload=null;this.removeAttribute('media');"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap"
       rel="stylesheet"
     />
+
+    <!-- no-JS fallback -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap"
+      />
+    </noscript>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css" />
