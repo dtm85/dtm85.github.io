@@ -13,11 +13,31 @@
     <link rel="preload" as="style" href="./css/icon-font.css" /> -->
 
     <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- connect to domain of font files -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- optionally increase loading priority -->
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap"
     />
+
+    <!-- async CSS -->
+    <link
+      rel="stylesheet"
+      media="print"
+      onload="this.onload=null;this.removeAttribute('media');"
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap"
+    />
+
+    <!-- no-JS fallback -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap"
+      />
+    </noscript>
 
     <!-- FAVICON -->
     <link
