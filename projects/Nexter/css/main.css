@@ -64,6 +64,7 @@ body {
   -ms-grid-rows: 80vh min-content 40vw (min-content)[3];
       grid-template-rows: 80vh -webkit-min-content 40vw repeat(3, -webkit-min-content);
       grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-  -ms-grid-columns: (minmax(71.25rem))[8];
-      grid-template-columns: repeat(8, minmax(71.25rem));
+  -ms-grid-columns: 5rem 1fr (minmax(min-content, 8.75rem))[8] 1fr;
+      grid-template-columns: 5rem 1fr repeat(8, minmax(-webkit-min-content, 8.75rem)) 1fr;
+      grid-template-columns: 5rem 1fr repeat(8, minmax(min-content, 8.75rem)) 1fr;
 }
