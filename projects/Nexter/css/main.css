@@ -21,3 +21,49 @@ body {
   font-weight: 300;
   line-height: 1.6;
 }
+
+.features {
+  background: #aaa;
+}
+
+.footer {
+  background: #101d2c;
+}
+
+.gallery {
+  background: #54483a;
+}
+
+.header {
+  background: #54483a;
+}
+
+.realtors {
+  background: #101d2c;
+}
+
+.homes {
+  background: #101d2c;
+}
+
+.sidebar {
+  background: #c69963;
+}
+
+.story__pictures {
+  background: #c69963;
+}
+
+.story__content {
+  background: #f9f7f6;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 80vh min-content 40vw (min-content)[3];
+      grid-template-rows: 80vh -webkit-min-content 40vw repeat(3, -webkit-min-content);
+      grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  -ms-grid-columns: (minmax(71.25rem))[8];
+      grid-template-columns: repeat(8, minmax(71.25rem));
+}
