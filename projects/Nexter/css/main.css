@@ -24,38 +24,48 @@ body {
 
 .features {
   background: #aaa;
+  grid-column: center-start / center-end;
 }
 
 .footer {
   background: #101d2c;
+  grid-column: full-start / full-end;
 }
 
 .gallery {
   background: #54483a;
+  grid-column: full-start / full-end;
 }
 
 .header {
   background: #54483a;
+  grid-column: full-start / col-end 6;
 }
 
 .realtors {
   background: #101d2c;
+  grid-column: col-start 7 / full-end;
 }
 
 .homes {
   background: #101d2c;
+  grid-column: center-start / center-end;
 }
 
 .sidebar {
   background: #c69963;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1;
 }
 
 .story__pictures {
   background: #c69963;
+  grid-column: full-start / col-end 4;
 }
 
 .story__content {
   background: #f9f7f6;
+  grid-column: col-start 5 / full-end;
 }
 
 .container {
@@ -64,7 +74,12 @@ body {
   -ms-grid-rows: 80vh min-content 40vw (min-content)[3];
       grid-template-rows: 80vh -webkit-min-content 40vw repeat(3, -webkit-min-content);
       grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-  -ms-grid-columns: 5rem 1fr (minmax(min-content, 8.75rem))[8] 1fr;
-      grid-template-columns: 5rem 1fr repeat(8, minmax(-webkit-min-content, 8.75rem)) 1fr;
-      grid-template-columns: 5rem 1fr repeat(8, minmax(min-content, 8.75rem)) 1fr;
+  -ms-grid-columns: [sidebar-start] 5rem [sidebar-end full-start] minmax(3.75rem, 1fr) [center-start] ([col-start] minmax(min-content, 8.75rem) [col-end])[8] [center-end] minmax(3.75rem, 1fr) [full-end];
+      grid-template-columns: [sidebar-start] 5rem [sidebar-end full-start] minmax(3.75rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 8.75rem) [col-end]) [center-end] minmax(3.75rem, 1fr) [full-end];
+      grid-template-columns: [sidebar-start] 5rem [sidebar-end full-start] minmax(3.75rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 8.75rem) [col-end]) [center-end] minmax(3.75rem, 1fr) [full-end];
+}
+
+.container > * {
+  padding: 40px;
+  font-size: 30px;
 }
