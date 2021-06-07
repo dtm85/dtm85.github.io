@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Neo Tech";
+  src: url("../../media/fonts/NeoTech-Regular(400).otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: overlay;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  font-size: 100%;
+}
+
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  font-family: "Neo Tech", sans-serif;
+  color: #393a53;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+body::-webkit-scrollbar {
+  width: 0.65rem;
+  height: 0.65rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: none;
+  margin-bottom: 1px;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 75em) {
+  body::-webkit-scrollbar-track {
+    margin-top: 4.5rem;
+  }
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #004f55;
+  border-radius: 8rem;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #44f3ff;
+  border-radius: 8rem;
+}
+
+::-moz-selection {
+  background: #0ef;
+  color: #fff;
+}
+
+::selection {
+  background: #0ef;
+  color: #fff;
+}
+
+.about__pictures {
+  background: #00afbb;
+}
+
+.about__content {
+  background: #0ef;
+}
+
+.contact {
+  background: #006f77;
+}
+
+.footer {
+  background: #777;
+}
+
+.header {
+  background: #ddd;
+}
+
+.navbar {
+  background: #999;
+}
+
+.projects {
+  background: #4e4f70;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 80vh min-content 40vw (min-content)[3];
+      grid-template-rows: 80vh -webkit-min-content 40vw repeat(3, -webkit-min-content);
+      grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  -ms-grid-columns: [sidebar-start] 5rem [sidebar-end full-start] minmax(3.75rem, 1fr) [center-start] ([col-start] minmax(min-content, 8.75rem) [col-end])[8] [center-end] minmax(3.75rem, 1fr) [full-end];
+      grid-template-columns: [sidebar-start] 5rem [sidebar-end full-start] minmax(3.75rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 8.75rem) [col-end]) [center-end] minmax(3.75rem, 1fr) [full-end];
+      grid-template-columns: [sidebar-start] 5rem [sidebar-end full-start] minmax(3.75rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 8.75rem) [col-end]) [center-end] minmax(3.75rem, 1fr) [full-end];
+}

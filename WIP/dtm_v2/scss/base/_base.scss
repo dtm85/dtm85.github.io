@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -10,14 +15,51 @@ html {
   box-sizing: border-box;
   overflow: overlay;
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
 
   // Font Size set to 100% for html to use with media quries
   font-size: 100%;
+
+  @include respond(bp-large-1100) {
+    font-size: 87.5%;
+  }
 }
 
 body {
-  font-family: $ff-primary;
+  font-family: $ff-neotech;
   color: $clr-grey-dark-2;
   font-weight: 400;
   line-height: 1.6;
+
+  // Body Scrollbar color
+  &::-webkit-scrollbar {
+    width: 0.65rem;
+    height: 0.65rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: none;
+    margin-bottom: 1px;
+    border-radius: 8px;
+
+    @include respond(bp-largest-1200) {
+      margin-top: 4.5rem;
+    }
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $clr-primary-10;
+    border-radius: 8rem;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $clr-primary-3;
+    border-radius: 8rem;
+  }
+}
+
+// Highlight Color
+::selection {
+  background: $clr-primary;
+  color: $clr-white;
 }

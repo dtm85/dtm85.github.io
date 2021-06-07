@@ -2,65 +2,15 @@
 // Fonts //
 ///////////
 
-// 300
-@font-face {
-  font-family: "Neo Tech Light";
-  src: url("/media/fonts/NeoTech-Light(300).otf") format("opentype");
-}
-
-// 300 Italic
-@font-face {
-  font-family: "Neo Tech Light Italic";
-  src: url("/media/fonts/NeoTech-Light-Italic(300i).otf") format("opentype");
-}
-
 // 400
 @font-face {
-  font-family: "Neo Tech Regular";
-  src: url("/media/fonts/NeoTech-Regular(400).otf") format("opentype");
+  font-family: "Neo Tech";
+  src: url("../../media/fonts/NeoTech-Regular\(400\).otf") format("opentype");
 }
 
-// 400 Italic
-@font-face {
-  font-family: "Neo Tech Regular Italic";
-  src: url("/media/fonts/NeoTech-Regular-Italic(400i).otf") format("opentype");
-}
-
-// 500
-@font-face {
-  font-family: "Neo Tech Medium";
-  src: url("/media/fonts/NeoTech-Medium(500).otf") format("opentype");
-}
-
-// 500 Italic
-@font-face {
-  font-family: "Neo Tech Medium Italic";
-  src: url("/media/fonts/NeoTech-Medium-Italic(500i).otf") format("opentype");
-}
-
-// 700
-@font-face {
-  font-family: "Neo Tech Bold";
-  src: url("/media/fonts/NeoTech-Bold(700).otf") format("opentype");
-}
-
-// 700 Italic
-@font-face {
-  font-family: "Neo Tech Bold Italic";
-  src: url("/media/fonts/NeoTech-Bold-Italic(700i).otf") format("opentype");
-}
-
-// 900
-@font-face {
-  font-family: "Neo Tech Black";
-  src: url("/media/fonts/NeoTech-Black(900).otf") format("opentype");
-}
-
-// 900 Italic
-@font-face {
-  font-family: "Neo Tech Black Italic";
-  src: url("/media/fonts/NeoTech-Black-Italic(900i).otf") format("opentype");
-}
+////////////
+// Colors //
+////////////
 
 // Primary Teal Colors
 $clr-primary: #0ef;
@@ -86,15 +36,17 @@ $clr-primary-11: #003033;
 // darkshades of secondary color
 $clr-secondary: #1f2687; // DARK BLUE
 
-// darkest grey - used for headings
-$clr-grey-dark-1: #54483a; // grey-dark-1
-$clr-grey-dark-2: #6d5d4b; // grey-dark-2
+// Accent color - If needed
+$clr-grey-dark-1: #4e4f70; // grey-dark-1
+$clr-grey-dark-2: #393a53; // grey-dark-2
 
+// darkest grey - used for headings
 $clr-grey-0: #333;
 $clr-grey-1: #444;
 $clr-grey-2: #555;
 $clr-grey-3: #666;
 $clr-grey-4: #777;
+
 // grey used for paragraphs & sections
 $clr-grey-5: #888;
 $clr-grey-6: #999;
@@ -106,21 +58,26 @@ $clr-grey-11: #eee;
 $clr-grey-light-1: #f9f7f6; // grey-light-1
 $clr-white: #fff;
 $clr-black: #000;
+
 // Font
 $ff-neotech: "Neo Tech", sans-serif;
-$ff-primary: "Neo Tech Black", sans-serif;
-$ff-tertiary: "Nunito", sans-serif;
+$ff-nunito: "Nunito", sans-serif;
+
 // Transitions
 $transition: all 0.3s linear;
+
 // Spacing
 $spacing: 0.1rem;
+
 // Radius
 $radius: 0.5rem;
 $btn-radius: 1.875rem;
+
 // Shadows
 $light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 $dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 $primary-3-big-shadow: 0 0 14px 4px #1f2687;
 $primary-3-small-shadow: 0 0 10px 0.25px #1f2687;
+
 // Max-Width
 $max-width: 1200px;
