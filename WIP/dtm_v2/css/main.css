@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Neo Tech";
+  font-family: "NeoTech-Regular";
   src: url("../../media/fonts/NeoTech-Regular(400).otf") format("opentype");
 }
 
@@ -26,14 +26,8 @@ html {
   font-size: 100%;
 }
 
-@media only screen and (max-width: 68.75em) {
-  html {
-    font-size: 87.5%;
-  }
-}
-
 body {
-  font-family: "Neo Tech", sans-serif;
+  font-family: "NeoTech";
   color: #393a53;
   font-weight: 400;
   line-height: 1.6;
@@ -57,12 +51,12 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #004f55;
+  background: #1f2687b3;
   border-radius: 8rem;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background: #44f3ff;
+  background: #1f2687;
   border-radius: 8rem;
 }
 
@@ -78,39 +72,60 @@ body::-webkit-scrollbar-thumb:hover {
 
 .about__pictures {
   background: #00afbb;
+  grid-column: full-start / col-end 4;
 }
 
 .about__content {
   background: #0ef;
+  grid-column: col-start 5 / full-end;
 }
 
 .contact {
   background: #006f77;
+  grid-column: full-start / full-end;
 }
 
 .footer {
   background: #777;
+  grid-column: full-start / full-end;
 }
 
 .header {
   background: #ddd;
+  grid-column: full-start / full-end;
 }
 
 .navbar {
   background: #999;
+  grid-column: nav-start / nav-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar__nav-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar__nav-list--item {
+  text-decoration: none;
 }
 
 .projects {
   background: #4e4f70;
+  grid-column: full-start / full-end;
 }
 
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 80vh min-content 40vw (min-content)[3];
-      grid-template-rows: 80vh -webkit-min-content 40vw repeat(3, -webkit-min-content);
-      grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-  -ms-grid-columns: [sidebar-start] 5rem [sidebar-end full-start] minmax(3.75rem, 1fr) [center-start] ([col-start] minmax(min-content, 8.75rem) [col-end])[8] [center-end] minmax(3.75rem, 1fr) [full-end];
-      grid-template-columns: [sidebar-start] 5rem [sidebar-end full-start] minmax(3.75rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 8.75rem) [col-end]) [center-end] minmax(3.75rem, 1fr) [full-end];
-      grid-template-columns: [sidebar-start] 5rem [sidebar-end full-start] minmax(3.75rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 8.75rem) [col-end]) [center-end] minmax(3.75rem, 1fr) [full-end];
+  -ms-grid-rows: (min-content)[7];
+      grid-template-rows: repeat(7, -webkit-min-content);
+      grid-template-rows: repeat(7, min-content);
+  -ms-grid-columns: [nav-start full-start] min-content minmax(3.75rem, 1fr) [center-start] ([col-start] minmax(min-content, 9.375rem) [col-end])[8] [center-end] minmax(3.75rem, 1fr) [full-end nav-end];
+      grid-template-columns: [nav-start full-start] -webkit-min-content minmax(3.75rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 9.375rem) [col-end]) [center-end] minmax(3.75rem, 1fr) [full-end nav-end];
+      grid-template-columns: [nav-start full-start] min-content minmax(3.75rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 9.375rem) [col-end]) [center-end] minmax(3.75rem, 1fr) [full-end nav-end];
 }

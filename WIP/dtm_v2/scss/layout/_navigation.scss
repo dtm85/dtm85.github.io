@@ -1,3 +1,14 @@
 .navbar {
   background: $clr-grey-6;
+  grid-column: nav-start / nav-end;
+  display: flex;
+
+  &__nav-list {
+    list-style: none;
+    display: flex;
+
+    &--item {
+      text-decoration: none;
+    }
+  }
 }

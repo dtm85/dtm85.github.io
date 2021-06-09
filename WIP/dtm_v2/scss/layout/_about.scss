@@ -1,9 +1,11 @@
 .about {
   &__pictures {
     background: $clr-primary-7;
+    grid-column: full-start / col-end 4;
   }
 
   &__content {
     background: $clr-primary-5;
+    grid-column: col-start 5 / full-end;
   }
 }

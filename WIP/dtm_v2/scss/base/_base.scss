@@ -20,16 +20,18 @@ html {
   // Font Size set to 100% for html to use with media quries
   font-size: 100%;
 
-  @include respond(bp-large-1100) {
-    font-size: 87.5%;
-  }
+  // @include respond(bp-large-1100) {
+  //   font-size: 87.5%;
+  // }
 }
 
 body {
-  font-family: $ff-neotech;
+  font-family: "NeoTech";
   color: $clr-grey-dark-2;
   font-weight: 400;
   line-height: 1.6;
+
+  // font-size: 30px;
 
   // Body Scrollbar color
   &::-webkit-scrollbar {
@@ -48,12 +50,12 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    background: $clr-primary-10;
+    background: $clr-secondary-dark-1;
     border-radius: 8rem;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: $clr-primary-3;
+    background: $clr-secondary;
     border-radius: 8rem;
   }
 }
