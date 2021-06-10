@@ -1,14 +1,55 @@
 .navbar {
   background: $clr-grey-6;
   grid-column: nav-start / nav-end;
-  display: flex;
+  display: grid;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 
-  &__nav-list {
+  transition: $transition;
+
+  &__container {
+    width: 100%;
+    height: 5rem;
+    padding: 1rem 2rem;
+    max-width: $max-width;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-items: end;
+  }
+
+  &__logo {
+    font-size: 1.85rem;
+  }
+
+  &__menu-btn {
+    display: none;
+
+    @include respond(bp-large-1000) {
+      display: grid;
+    }
+  }
+
+  &__nav-links {
     list-style: none;
-    display: flex;
+    display: none;
 
-    &--item {
+    @include respond(bp-large-1000) {
+      display: grid;
+    }
+
+    &--link {
       text-decoration: none;
     }
+  }
+
+  /* Fixed Navbar */
+  &.navbar-fixed {
+    background: $clr-white;
+    box-shadow: $dark-shadow;
   }
 }

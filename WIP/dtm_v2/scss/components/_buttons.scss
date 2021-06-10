@@ -1,0 +1,74 @@
+////////////////
+// Nav Button //
+////////////////
+/* Menu Button Burger Styling */
+.navbar__menu-btn {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: $transition;
+  z-index: 100;
+
+  &:hover {
+    transform: scale(1.3);
+  }
+
+  &--menu-burger {
+    width: 2rem;
+    height: 3.85px;
+    background: $clr-primary-5;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px $clr-grey-5;
+    transition: $transition;
+  }
+
+  /* Menu Burger BEFORE & AFTER Elements */
+  &--menu-burger::before,
+  &--menu-burger::after {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 3.85px;
+    background: $clr-primary-5;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px $clr-grey-5;
+    transition: $transition;
+  }
+
+  &--menu-burger::before {
+    transform: translateY(-11px);
+  }
+
+  &--menu-burger::after {
+    transform: translateY(11px);
+  }
+
+  &.navbar__menu-btn.open .navbar__menu-btn--menu-burger {
+    transform: translateX(35px);
+    background: transparent;
+    box-shadow: none;
+  }
+
+  &.navbar__menu-btn.open .navbar__menu-btn--menu-burger::before {
+    transform: rotate(45deg) translate(-25px, 25px);
+    background: #f29c9c;
+  }
+
+  &.navbar__menu-btn.open .navbar__menu-btn--menu-burger::after {
+    transform: rotate(-45deg) translate(-25px, -25px);
+    background: #f29c9c;
+  }
+
+  &.navbar__menu-btn.open .navbar__menu-btn--menu-burger:hover::after {
+    background: #c40000;
+  }
+
+  &.navbar__menu-btn.open .navbar__menu-btn--menu-burger:hover::before {
+    background: #c40000;
+  }
+}

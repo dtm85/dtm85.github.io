@@ -70,6 +70,95 @@ body::-webkit-scrollbar-thumb:hover {
   color: #fff;
 }
 
+/* Menu Button Burger Styling */
+.navbar__menu-btn {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  z-index: 100;
+  /* Menu Burger BEFORE & AFTER Elements */
+}
+
+.navbar__menu-btn:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.navbar__menu-btn--menu-burger {
+  width: 2rem;
+  height: 3.85px;
+  background: #0ef;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 4px #888;
+          box-shadow: 0 1px 4px #888;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.navbar__menu-btn--menu-burger::before, .navbar__menu-btn--menu-burger::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 3.85px;
+  background: #0ef;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 4px #888;
+          box-shadow: 0 1px 4px #888;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.navbar__menu-btn--menu-burger::before {
+  -webkit-transform: translateY(-11px);
+          transform: translateY(-11px);
+}
+
+.navbar__menu-btn--menu-burger::after {
+  -webkit-transform: translateY(11px);
+          transform: translateY(11px);
+}
+
+.navbar__menu-btn.navbar__menu-btn.open .navbar__menu-btn--menu-burger {
+  -webkit-transform: translateX(35px);
+          transform: translateX(35px);
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar__menu-btn.navbar__menu-btn.open .navbar__menu-btn--menu-burger::before {
+  -webkit-transform: rotate(45deg) translate(-25px, 25px);
+          transform: rotate(45deg) translate(-25px, 25px);
+  background: #f29c9c;
+}
+
+.navbar__menu-btn.navbar__menu-btn.open .navbar__menu-btn--menu-burger::after {
+  -webkit-transform: rotate(-45deg) translate(-25px, -25px);
+          transform: rotate(-45deg) translate(-25px, -25px);
+  background: #f29c9c;
+}
+
+.navbar__menu-btn.navbar__menu-btn.open .navbar__menu-btn--menu-burger:hover::after {
+  background: #c40000;
+}
+
+.navbar__menu-btn.navbar__menu-btn.open .navbar__menu-btn--menu-burger:hover::before {
+  background: #c40000;
+}
+
 .about__pictures {
   background: #00afbb;
   grid-column: full-start / col-end 4;
@@ -92,26 +181,78 @@ body::-webkit-scrollbar-thumb:hover {
 
 .header {
   background: #ddd;
+  height: 100vh;
   grid-column: full-start / full-end;
 }
 
 .navbar {
   background: #999;
   grid-column: nav-start / nav-end;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  /* Fixed Navbar */
 }
 
-.navbar__nav-list {
+.navbar__container {
+  width: 100%;
+  height: 5rem;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: end;
+}
+
+.navbar__logo {
+  font-size: 1.85rem;
+}
+
+.navbar__menu-btn {
+  display: none;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .navbar__menu-btn {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+.navbar__nav-links {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 
-.navbar__nav-list--item {
+@media only screen and (max-width: 62.5em) {
+  .navbar__nav-links {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+.navbar__nav-links--link {
   text-decoration: none;
+}
+
+.navbar.navbar-fixed {
+  background: #fff;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .projects {

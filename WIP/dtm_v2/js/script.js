@@ -1,5 +1,5 @@
 // Hamburger Menu Animation
-const menuBtn = document.querySelector(".menu-btn");
+const menuBtn = document.querySelector(".navbar__menu-btn");
 let menuOpen = false;
 menuBtn.addEventListener("click", () => {
   if (!menuOpen) {
@@ -11,8 +11,8 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
-const menuIcon = document.querySelector(".menu-btn");
-const navbar = document.querySelector(".nav-list");
+const menuIcon = document.querySelector(".navbar__menu-btn");
+const navbar = document.querySelector(".navbar__nav-links");
 
 menuIcon.addEventListener("click", () => {
   navbar.classList.toggle("change");
