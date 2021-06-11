@@ -20,8 +20,9 @@
   }
 
   &__logo {
-    font-size: 1.85rem;
+    font-size: 2rem;
     font-weight: 500;
+    letter-spacing: 1.5px;
     color: $clr-white;
   }
 
@@ -39,14 +40,12 @@
     grid-template-columns: repeat(5, 1fr);
     justify-content: space-evenly;
     justify-items: end;
-    list-style: none;
 
     @include respond(bp-medium-768-minwidth) {
       display: grid;
     }
 
     &--link {
-      text-decoration: none;
       text-transform: capitalize;
     }
   }
@@ -56,5 +55,70 @@
     background-color: #000105;
     box-shadow: 0 2px 12px 1px #1f2687;
     // border-bottom: 1px solid #ffffff26;
+  }
+
+  &__sidebar {
+    background: $clr-grey-3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition: $transition;
+    transform: translateX(100%);
+    z-index: 11;
+
+    &.show-sidebar {
+      transform: translateX(0);
+    }
+  }
+
+  &__sidebar-links {
+    text-align: center;
+
+    &--link:link,
+    &--link:visited {
+      font-size: 2rem;
+      margin-bottom: 4.5rem;
+      text-transform: capitalize;
+      letter-spacing: $spacing;
+      color: $clr-grey-10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: $transition;
+
+      &:hover {
+        color: $clr-primary-5;
+      }
+    }
+  }
+
+  &__sidebar-social-icons {
+    height: 40px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 40px);
+    gap: 3rem;
+  }
+
+  &__sidebar-social-icons-item {
+    height: 40px;
+  }
+
+  &__sidebar-social-icons-link:link,
+  &__sidebar-social-icons-link:visited {
+    color: $clr-grey-8;
+    display: flex;
+    height: inherit;
+    transition: $transition;
+
+    &:hover {
+      color: $clr-primary-5;
+    }
   }
 }

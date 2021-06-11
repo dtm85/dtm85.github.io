@@ -1,5 +1,5 @@
 // Hamburger Menu Animation
-const menuBtn = document.querySelector(".navbar__menu-btn");
+const menuBtn = document.getElementById("nav-btn");
 let menuOpen = false;
 menuBtn.addEventListener("click", () => {
   if (!menuOpen) {
@@ -11,11 +11,11 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
-const menuIcon = document.querySelector(".navbar__menu-btn");
-const navbar = document.querySelector(".navbar__nav-links");
+const menuIcon = document.getElementById("nav-btn");
+const navbar = document.getElementById("sidebar-links");
 
 menuIcon.addEventListener("click", () => {
-  navbar.classList.toggle("change");
+  navbar.classList.toggle("show-sidebar");
 });
 
 // Navbar Styles applied on Scroll Y

@@ -54,73 +54,112 @@
     </title>
   </head>
   <body class="container">
-    <!-- Header -->
-    <header class="header">
-      Header
-      <!-- Navbar -->
-      <nav class="navbar" id="navbar">
-        <div class="navbar__container">
-          <h1 class="navbar__logo">Dan Tech Media</h1>
-          <!-- Menu Icon -->
-          <div class="navbar__menu-btn" id="navbar__menu-btn">
-            <div class="navbar__menu-btn--menu-burger"></div>
-          </div>
-
-          <!-- Sidebar -->
-          <aside class="sidebar" id="sidebar">
-            <div class="sidebar__container">
-              <!-- sidebar-links -->
-              <ul class="sidebar__links">
-                <li><a class="sidebar__links--link" href="#">Home</a></li>
-                <li><a class="sidebar__links--link" href="#">About</a></li>
-                <li><a class="sidebar__links--link" href="#">About</a></li>
-                <li><a class="sidebar__links--link" href="#">Projects</a></li>
-                <li><a class="sidebar__links--link" href="#">Contact</a></li>
-              </ul>
-
-              <!-- social icons -->
-              <ul class="social-icons">
-                <!-- Twitter -->
-                <li>
-                  <a href="#" aria-label="Link to Twitter"> </a>
-                </li>
-
-                <!-- Linkedin -->
-                <li>
-                  <a href="#" aria-label="Link to LinkedIn"> </a>
-                </li>
-
-                <!-- GitHub -->
-                <li>
-                  <a href="#" aria-label="Link to GitHub"> </a>
-                </li>
-              </ul>
-            </div>
-          </aside>
-          <!-- end of sidebar -->
-
-          <!-- Nav Links -->
-          <ul class="navbar__nav-links">
-            <li>
-              <a class="navbar__nav-links--link" href="#">Home</a>
-            </li>
-            <li>
-              <a class="navbar__nav-links--link" href="#">About</a>
-            </li>
-            <li>
-              <a class="navbar__nav-links--link" href="#">Services</a>
-            </li>
-            <li>
-              <a class="navbar__nav-links--link" href="#">Projects</a>
-            </li>
-            <li>
-              <a class="navbar__nav-links--link" href="#">Contact</a>
-            </li>
-          </ul>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar__container">
+        <h1 class="navbar__logo">Dan Tech Media</h1>
+        <!-- Menu Icon -->
+        <div class="navbar__menu-btn" id="nav-btn">
+          <div class="navbar__menu-btn--menu-burger"></div>
         </div>
-      </nav>
-      <!-- End of Navbar -->
-    </header>
+
+        <!-- Sidebar -->
+        <aside class="navbar__sidebar" id="sidebar-links">
+          <div class="navbar__sidebar-container">
+            <!-- sidebar-links -->
+            <ul class="navbar__sidebar-links">
+              <li>
+                <a class="navbar__sidebar-links--link" href="#">Home</a>
+              </li>
+              <li>
+                <a class="navbar__sidebar-links--link" href="#">About</a>
+              </li>
+              <li>
+                <a class="navbar__sidebar-links--link" href="#">Services</a>
+              </li>
+              <li>
+                <a class="navbar__sidebar-links--link" href="#">Projects</a>
+              </li>
+              <li>
+                <a class="navbar__sidebar-links--link" href="#">Contact</a>
+              </li>
+            </ul>
+
+            <!-- social icons -->
+            <ul class="navbar__sidebar-social-icons">
+              <!-- Twitter -->
+              <li class="navbar__sidebar-social-icons-item">
+                <a
+                  class="navbar__sidebar-social-icons-link"
+                  href="#"
+                  aria-label="Link to Twitter"
+                >
+                  <svg class="navbar__sidebar-social-icons-link--icon">
+                    <use
+                      xlink:href="../../media/icons/svg/sprite-sheet.svg#twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+
+              <!-- Linkedin -->
+              <li class="navbar__sidebar-social-icons-item">
+                <a
+                  class="navbar__sidebar-social-icons-link"
+                  href="#"
+                  aria-label="Link to LinkedIn"
+                >
+                  <svg class="navbar__sidebar-social-icons-link--icon">
+                    <use
+                      xlink:href="../../media/icons/svg/sprite-sheet.svg#linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+
+              <!-- GitHub -->
+              <li class="navbar__sidebar-social-icons-item">
+                <a
+                  class="navbar__sidebar-social-icons-link"
+                  href="#"
+                  aria-label="Link to GitHub"
+                >
+                  <svg class="navbar__sidebar-social-icons-link--icon">
+                    <use
+                      xlink:href="../../media/icons/svg/sprite-sheet.svg#github"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <!-- end of sidebar -->
+
+        <!-- Nav Links -->
+        <ul class="navbar__nav-links">
+          <li>
+            <a class="navbar__nav-links--link" href="#">Home</a>
+          </li>
+          <li>
+            <a class="navbar__nav-links--link" href="#">About</a>
+          </li>
+          <li>
+            <a class="navbar__nav-links--link" href="#">Services</a>
+          </li>
+          <li>
+            <a class="navbar__nav-links--link" href="#">Projects</a>
+          </li>
+          <li>
+            <a class="navbar__nav-links--link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Header -->
+    <header class="header">Header</header>
     <!-- End of Header -->
 
     <!-- <section class="about"> -->
