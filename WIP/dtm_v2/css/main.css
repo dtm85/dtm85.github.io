@@ -186,7 +186,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .navbar {
-  background: #999;
   grid-column: nav-start / nav-end;
   display: -ms-grid;
   display: grid;
@@ -204,9 +203,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 .navbar__container {
   width: 100%;
-  height: 5rem;
   padding: 1rem 2rem;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -215,18 +213,21 @@ body::-webkit-scrollbar-thumb:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-items: end;
 }
 
 .navbar__logo {
   font-size: 1.85rem;
+  font-weight: 500;
+  color: #fff;
 }
 
 .navbar__menu-btn {
   display: none;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
-@media only screen and (max-width: 62.5em) {
+@media only screen and (max-width: 47.938em) {
   .navbar__menu-btn {
     display: -ms-grid;
     display: grid;
@@ -234,11 +235,17 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .navbar__nav-links {
-  list-style: none;
   display: none;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  justify-items: end;
+  list-style: none;
 }
 
-@media only screen and (max-width: 62.5em) {
+@media only screen and (min-width: 48em) {
   .navbar__nav-links {
     display: -ms-grid;
     display: grid;
@@ -247,12 +254,13 @@ body::-webkit-scrollbar-thumb:hover {
 
 .navbar__nav-links--link {
   text-decoration: none;
+  text-transform: capitalize;
 }
 
-.navbar.navbar-fixed {
-  background: #fff;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+.navbar.scrolling-active {
+  background-color: #000105;
+  -webkit-box-shadow: 0 2px 12px 1px #1f2687;
+          box-shadow: 0 2px 12px 1px #1f2687;
 }
 
 .projects {

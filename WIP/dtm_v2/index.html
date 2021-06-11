@@ -57,34 +57,69 @@
     <!-- Header -->
     <header class="header">
       Header
-      <!-- Navigation -->
-      <nav class="navbar">
+      <!-- Navbar -->
+      <nav class="navbar" id="navbar">
         <div class="navbar__container">
           <h1 class="navbar__logo">Dan Tech Media</h1>
           <!-- Menu Icon -->
           <div class="navbar__menu-btn" id="navbar__menu-btn">
             <div class="navbar__menu-btn--menu-burger"></div>
           </div>
+
+          <!-- Sidebar -->
+          <aside class="sidebar" id="sidebar">
+            <div class="sidebar__container">
+              <!-- sidebar-links -->
+              <ul class="sidebar__links">
+                <li><a class="sidebar__links--link" href="#">Home</a></li>
+                <li><a class="sidebar__links--link" href="#">About</a></li>
+                <li><a class="sidebar__links--link" href="#">About</a></li>
+                <li><a class="sidebar__links--link" href="#">Projects</a></li>
+                <li><a class="sidebar__links--link" href="#">Contact</a></li>
+              </ul>
+
+              <!-- social icons -->
+              <ul class="social-icons">
+                <!-- Twitter -->
+                <li>
+                  <a href="#" aria-label="Link to Twitter"> </a>
+                </li>
+
+                <!-- Linkedin -->
+                <li>
+                  <a href="#" aria-label="Link to LinkedIn"> </a>
+                </li>
+
+                <!-- GitHub -->
+                <li>
+                  <a href="#" aria-label="Link to GitHub"> </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          <!-- end of sidebar -->
+
           <!-- Nav Links -->
           <ul class="navbar__nav-links">
             <li>
-              <a class="navbar__nav-links--link" href="index.html">Home</a>
+              <a class="navbar__nav-links--link" href="#">Home</a>
             </li>
             <li>
-              <a class="navbar__nav-links--link" href="about.html">About</a>
+              <a class="navbar__nav-links--link" href="#">About</a>
             </li>
             <li>
-              <a class="navbar__nav-links--link" href="projects.html"
-                >Projects</a
-              >
+              <a class="navbar__nav-links--link" href="#">Services</a>
             </li>
             <li>
-              <a class="navbar__nav-links--link" href="contact.html">Contact</a>
+              <a class="navbar__nav-links--link" href="#">Projects</a>
+            </li>
+            <li>
+              <a class="navbar__nav-links--link" href="#">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
-      <!-- End of Navigation -->
+      <!-- End of Navbar -->
     </header>
     <!-- End of Header -->
 
@@ -123,3 +158,8 @@
         >
       </li>
     </ul> -->
+
+<!-- SVG
+    <svg class="home">
+        <use xlink:href="../../media/icons/svg/sprite-sheet.svg#home"></use>
+      </svg> -->
