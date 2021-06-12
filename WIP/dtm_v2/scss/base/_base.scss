@@ -1,8 +1,18 @@
+/* 
+=====
+RESET
+=====
+*/
 * {
   margin: 0;
   padding: 0;
 }
 
+/* 
+========================================
+RESET for Pseudo Elements & All Elements
+========================================
+*/
 *,
 *::before,
 *::after {
@@ -11,6 +21,11 @@
   box-sizing: inherit;
 }
 
+/* 
+=============
+Global Styles
+=============
+*/
 li,
 a {
   text-decoration: none;
@@ -24,6 +39,7 @@ html {
   text-rendering: optimizeLegibility;
 
   // Font Size set to 100% for html to use with media quries
+  /* Font Size set to 100% for html to use with media quries */
   font-size: 100%;
 
   // @include respond(bp-large-1100) {
@@ -40,12 +56,15 @@ body {
   // font-size: 30px;
 
   // Body Scrollbar color
+
   &::-webkit-scrollbar {
+    /* Body Scrollbar color */
     width: 0.65rem;
     height: 0.65rem;
   }
 
   &::-webkit-scrollbar-track {
+    /* Body Scrollbar Track color */
     background: none;
     margin-bottom: 1px;
     border-radius: 8px;
@@ -56,11 +75,13 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
+    /* Body Scrollbar Thumb color */
     background: $clr-secondary-dark-1;
     border-radius: 8rem;
   }
 
   &::-webkit-scrollbar-thumb:hover {
+    /* Body Scrollbar Thumb:HOVER color */
     background: $clr-secondary;
     border-radius: 8rem;
   }
@@ -68,6 +89,7 @@ body {
 
 // Highlight Color
 ::selection {
+  /* Highlight Color */
   background: $clr-primary;
   color: $clr-white;
 }

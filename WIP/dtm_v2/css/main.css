@@ -1,13 +1,29 @@
+/* 
+=====
+Fonts
+=====
+*/
 @font-face {
   font-family: "NeoTech-Regular";
   src: url("../../media/fonts/NeoTech-Regular(400).otf") format("opentype");
+  /* 300 (Light), 400 (Regular), 500 (Medium), 600 (Bold), 800 (Bolder / Dark) */
 }
 
+/* 
+=====
+RESET
+=====
+*/
 * {
   margin: 0;
   padding: 0;
 }
 
+/* 
+========================================
+RESET for Pseudo Elements & All Elements
+========================================
+*/
 *,
 *::before,
 *::after {
@@ -17,6 +33,11 @@
           box-sizing: inherit;
 }
 
+/* 
+=============
+Global Styles
+=============
+*/
 li,
 a {
   text-decoration: none;
@@ -29,6 +50,7 @@ html {
   overflow: overlay;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
+  /* Font Size set to 100% for html to use with media quries */
   font-size: 100%;
 }
 
@@ -40,11 +62,13 @@ body {
 }
 
 body::-webkit-scrollbar {
+  /* Body Scrollbar color */
   width: 0.65rem;
   height: 0.65rem;
 }
 
 body::-webkit-scrollbar-track {
+  /* Body Scrollbar Track color */
   background: none;
   margin-bottom: 1px;
   border-radius: 8px;
@@ -57,26 +81,35 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
+  /* Body Scrollbar Thumb color */
   background: #1f2687b3;
   border-radius: 8rem;
 }
 
 body::-webkit-scrollbar-thumb:hover {
+  /* Body Scrollbar Thumb:HOVER color */
   background: #1f2687;
   border-radius: 8rem;
 }
 
 ::-moz-selection {
+  /* Highlight Color */
   background: #0ef;
   color: #fff;
 }
 
 ::selection {
+  /* Highlight Color */
   background: #0ef;
   color: #fff;
 }
 
-/* Menu Button Burger Styling */
+/* 
+====================
+Navbar - Menu Button
+====================
+*/
+/* Menu Button Styling */
 .navbar__menu-btn {
   width: 2rem;
   height: 2rem;
@@ -95,7 +128,6 @@ body::-webkit-scrollbar-thumb:hover {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   z-index: 100;
-  /* Menu Burger BEFORE & AFTER Elements */
 }
 
 .navbar__menu-btn:hover {
@@ -104,6 +136,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .navbar__menu-btn--menu-burger {
+  /* Menu Burger (Bars) Styling */
   width: 2rem;
   height: 3.85px;
   background: #0ef;
@@ -115,6 +148,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .navbar__menu-btn--menu-burger::before, .navbar__menu-btn--menu-burger::after {
+  /* Menu Burger BEFORE & AFTER Elements */
   content: "";
   position: absolute;
   width: 2rem;
@@ -128,16 +162,19 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .navbar__menu-btn--menu-burger::before {
+  /* Menu Bar Translate (Neg) */
   -webkit-transform: translateY(-11px);
           transform: translateY(-11px);
 }
 
 .navbar__menu-btn--menu-burger::after {
+  /* Menu Bar Translate (Pos) */
   -webkit-transform: translateY(11px);
           transform: translateY(11px);
 }
 
 .navbar__menu-btn.navbar__menu-btn.open .navbar__menu-btn--menu-burger {
+  /* Menu.open class for JavaScript */
   -webkit-transform: translateX(35px);
           transform: translateX(35px);
   background: transparent;
@@ -146,25 +183,34 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .navbar__menu-btn.navbar__menu-btn.open .navbar__menu-btn--menu-burger::before {
+  /* Menu bar rotate (pos) BEFORE & Color */
   -webkit-transform: rotate(45deg) translate(-25px, 25px);
           transform: rotate(45deg) translate(-25px, 25px);
   background: #f29c9c;
 }
 
 .navbar__menu-btn.navbar__menu-btn.open .navbar__menu-btn--menu-burger::after {
+  /* Menu bar rotate (neg) AFTER & Color */
   -webkit-transform: rotate(-45deg) translate(-25px, -25px);
           transform: rotate(-45deg) translate(-25px, -25px);
   background: #f29c9c;
 }
 
 .navbar__menu-btn.navbar__menu-btn.open .navbar__menu-btn--menu-burger:hover::after {
+  /* Menu bars HOVER Color After Element */
   background: #c40000;
 }
 
 .navbar__menu-btn.navbar__menu-btn.open .navbar__menu-btn--menu-burger:hover::before {
+  /* Menu bars HOVER Color Before Element */
   background: #c40000;
 }
 
+/* 
+=====
+ABOUT
+=====
+*/
 .about__pictures {
   background: #00afbb;
   grid-column: full-start / col-end 4;
@@ -175,22 +221,41 @@ body::-webkit-scrollbar-thumb:hover {
   grid-column: col-start 5 / full-end;
 }
 
+/* 
+=======
+CONTACT
+=======
+*/
 .contact {
   background: #006f77;
   grid-column: full-start / full-end;
 }
 
+/*
+======
+FOOTER
+======
+*/
 .footer {
   background: #777;
   grid-column: full-start / full-end;
 }
 
+/* 
+======
+HEADER
+======
+*/
 .header {
   background: #ddd;
-  height: 100vh;
   grid-column: full-start / full-end;
 }
 
+/* 
+==========
+NAVIGATION
+==========
+*/
 .navbar {
   grid-column: nav-start / nav-end;
   display: -ms-grid;
@@ -204,7 +269,6 @@ body::-webkit-scrollbar-thumb:hover {
   z-index: 10;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  /* Fixed Navbar */
 }
 
 .navbar__container {
@@ -229,6 +293,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .navbar__menu-btn {
+  /* Menu Button display:none - for larger screens */
   display: none;
   -ms-grid-column-align: end;
       justify-self: end;
@@ -242,7 +307,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .navbar__nav-links {
+  /* Will HIDE Navbar Links on top Navbar if screen is 768px or smaller */
   display: none;
+  /* LAYOUT for Navbar Links on top Navbar for screens bigger than 768px */
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
   -webkit-box-pack: space-evenly;
@@ -253,6 +320,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media only screen and (min-width: 48em) {
   .navbar__nav-links {
+    /* Will SHOW Navbar Links on top Navbar if screen is 768px or BIGGER */
     display: -ms-grid;
     display: grid;
   }
@@ -263,12 +331,15 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .navbar.scrolling-active {
+  /* Scrolling Actice class for styles applied with JavaScript on Scroll  */
   background-color: #000105;
-  -webkit-box-shadow: 0 2px 12px 1px #1f2687;
-          box-shadow: 0 2px 12px 1px #1f2687;
+  -webkit-box-shadow: 0 2px 12px 1px #008f99;
+          box-shadow: 0 2px 12px 1px #008f99;
+  /* #1f2687 */
 }
 
 .navbar__sidebar {
+  /* Sidebar Layout & Styling - Sidebar will only show when screen is smaller than 768px */
   background: #666;
   position: fixed;
   top: 0;
@@ -291,15 +362,18 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .navbar__sidebar.show-sidebar {
+  /* Show Sidebar class for JavaScript when Menu Button is clicked */
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
 .navbar__sidebar-links {
+  /* Sidebar Links Center Alignment */
   text-align: center;
 }
 
 .navbar__sidebar-links--link:link, .navbar__sidebar-links--link:visited {
+  /* Styles applied to each link the Sidebar */
   font-size: 2rem;
   margin-bottom: 4.5rem;
   text-transform: capitalize;
@@ -323,6 +397,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .navbar__sidebar-social-icons {
+  /* Sidebar Social Icons - Display Grid */
   height: 40px;
   display: -ms-grid;
   display: grid;
@@ -338,10 +413,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .navbar__sidebar-social-icons-item {
+  /* Sidebar Social Icons Container to size SVG */
   height: 40px;
 }
 
 .navbar__sidebar-social-icons-link:link, .navbar__sidebar-social-icons-link:visited {
+  /* Sidebar SVG Colors, Inherited height from navbar__sidebar-social-icons-item container */
   color: #bbb;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -355,6 +432,11 @@ body::-webkit-scrollbar-thumb:hover {
   color: #0ef;
 }
 
+/*
+========
+PROJECTS
+========
+*/
 .projects {
   background: #4e4f70;
   grid-column: full-start / full-end;

@@ -1,3 +1,11 @@
+////////////////////////
+// NAVIGATION SECTION //
+////////////////////////
+/* 
+==========
+NAVIGATION
+==========
+*/
 .navbar {
   grid-column: nav-start / nav-end;
   display: grid;
@@ -27,6 +35,7 @@
   }
 
   &__menu-btn {
+    /* Menu Button display:none - for larger screens */
     display: none;
     justify-self: end;
 
@@ -36,12 +45,16 @@
   }
 
   &__nav-links {
+    /* Will HIDE Navbar Links on top Navbar if screen is 768px or smaller */
     display: none;
+
+    /* LAYOUT for Navbar Links on top Navbar for screens bigger than 768px */
     grid-template-columns: repeat(5, 1fr);
     justify-content: space-evenly;
     justify-items: end;
 
     @include respond(bp-medium-768-minwidth) {
+      /* Will SHOW Navbar Links on top Navbar if screen is 768px or BIGGER */
       display: grid;
     }
 
@@ -50,14 +63,14 @@
     }
   }
 
-  /* Fixed Navbar */
   &.scrolling-active {
+    /* Scrolling Actice class for styles applied with JavaScript on Scroll  */
     background-color: #000105;
-    box-shadow: 0 2px 12px 1px #1f2687;
-    // border-bottom: 1px solid #ffffff26;
+    box-shadow: 0 2px 12px 1px $clr-primary-8; /* #1f2687 */
   }
 
   &__sidebar {
+    /* Sidebar Layout & Styling - Sidebar will only show when screen is smaller than 768px */
     background: $clr-grey-3;
     position: fixed;
     top: 0;
@@ -72,15 +85,18 @@
     z-index: 11;
 
     &.show-sidebar {
+      /* Show Sidebar class for JavaScript when Menu Button is clicked */
       transform: translateX(0);
     }
   }
 
   &__sidebar-links {
+    /* Sidebar Links Center Alignment */
     text-align: center;
 
     &--link:link,
     &--link:visited {
+      /* Styles applied to each link the Sidebar */
       font-size: 2rem;
       margin-bottom: 4.5rem;
       text-transform: capitalize;
@@ -98,6 +114,7 @@
   }
 
   &__sidebar-social-icons {
+    /* Sidebar Social Icons - Display Grid */
     height: 40px;
     display: grid;
     justify-content: center;
@@ -107,11 +124,13 @@
   }
 
   &__sidebar-social-icons-item {
+    /* Sidebar Social Icons Container to size SVG */
     height: 40px;
   }
 
   &__sidebar-social-icons-link:link,
   &__sidebar-social-icons-link:visited {
+    /* Sidebar SVG Colors, Inherited height from navbar__sidebar-social-icons-item container */
     color: $clr-grey-8;
     display: flex;
     height: inherit;

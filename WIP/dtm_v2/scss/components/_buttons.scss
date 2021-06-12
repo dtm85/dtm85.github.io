@@ -1,7 +1,14 @@
-////////////////
-// Nav Button //
-////////////////
-/* Menu Button Burger Styling */
+/////////////
+// BUTTONS //
+/////////////
+
+/* 
+====================
+Navbar - Menu Button
+====================
+*/
+
+/* Menu Button Styling */
 .navbar__menu-btn {
   width: 2rem;
   height: 2rem;
@@ -19,6 +26,7 @@
   }
 
   &--menu-burger {
+    /* Menu Burger (Bars) Styling */
     width: 2rem;
     height: 3.85px;
     background: $clr-primary-5;
@@ -27,9 +35,9 @@
     transition: $transition;
   }
 
-  /* Menu Burger BEFORE & AFTER Elements */
   &--menu-burger::before,
   &--menu-burger::after {
+    /* Menu Burger BEFORE & AFTER Elements */
     content: "";
     position: absolute;
     width: 2rem;
@@ -41,34 +49,41 @@
   }
 
   &--menu-burger::before {
+    /* Menu Bar Translate (Neg) */
     transform: translateY(-11px);
   }
 
   &--menu-burger::after {
+    /* Menu Bar Translate (Pos) */
     transform: translateY(11px);
   }
 
   &.navbar__menu-btn.open .navbar__menu-btn--menu-burger {
+    /* Menu.open class for JavaScript */
     transform: translateX(35px);
     background: transparent;
     box-shadow: none;
   }
 
   &.navbar__menu-btn.open .navbar__menu-btn--menu-burger::before {
+    /* Menu bar rotate (pos) BEFORE & Color */
     transform: rotate(45deg) translate(-25px, 25px);
     background: #f29c9c;
   }
 
   &.navbar__menu-btn.open .navbar__menu-btn--menu-burger::after {
+    /* Menu bar rotate (neg) AFTER & Color */
     transform: rotate(-45deg) translate(-25px, -25px);
     background: #f29c9c;
   }
 
   &.navbar__menu-btn.open .navbar__menu-btn--menu-burger:hover::after {
+    /* Menu bars HOVER Color After Element */
     background: #c40000;
   }
 
   &.navbar__menu-btn.open .navbar__menu-btn--menu-burger:hover::before {
+    /* Menu bars HOVER Color Before Element */
     background: #c40000;
   }
 }

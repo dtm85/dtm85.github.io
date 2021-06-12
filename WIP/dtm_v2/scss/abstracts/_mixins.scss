@@ -1,6 +1,7 @@
 /////////////////
 // BREAKPOINTS //
 /////////////////
+
 @mixin respond($breakpoint) {
   @if $breakpoint == bp-largest-1200 {
     @media only screen and (max-width: 75em) {
