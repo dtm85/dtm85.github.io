@@ -23,8 +23,9 @@ NAVIGATION
     max-width: $max-width;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: auto 1fr;
+    justify-content: end;
     align-items: center;
+    grid-template-columns: 1fr 1fr;
   }
 
   &__logo {
@@ -32,6 +33,10 @@ NAVIGATION
     font-weight: 500;
     letter-spacing: 1.5px;
     color: $clr-white;
+
+    &--tech-media {
+      color: $clr-primary-5;
+    }
   }
 
   &__menu-btn {
@@ -50,7 +55,8 @@ NAVIGATION
 
     /* LAYOUT for Navbar Links on top Navbar for screens bigger than 768px */
     grid-template-columns: repeat(5, 1fr);
-    justify-content: space-evenly;
+    column-gap: 1.5rem;
+    justify-content: space-around;
     justify-items: end;
 
     @include respond(bp-medium-768-minwidth) {
@@ -60,13 +66,31 @@ NAVIGATION
 
     &--link {
       text-transform: capitalize;
+      color: $clr-white;
+      transition: $transition;
+      display: inline-block;
+      font-size: 1.1em;
+      // background: #808080;
+      padding: 13px 30px 9.5px 30px;
+      margin-top: 30px;
+      letter-spacing: 1.5px;
+      border-radius: 6px;
+
+      &:hover {
+        letter-spacing: 3px;
+        background: #00eeff;
+        color: rgb(71, 71, 71);
+        transform: scale(1.05);
+        transition: $transition;
+        box-shadow: 0 0 10px 2px #00eeff;
+      }
     }
   }
 
   &.scrolling-active {
     /* Scrolling Actice class for styles applied with JavaScript on Scroll  */
-    background-color: #000105;
-    box-shadow: 0 2px 12px 1px $clr-primary-8; /* #1f2687 */
+    background: #000105;
+    box-shadow: 0 2px 12px 1px $clr-primary-8;
   }
 
   &__sidebar {
@@ -90,6 +114,11 @@ NAVIGATION
     }
   }
 
+  &__sidebar-links-item {
+    width: 100vw;
+    border-bottom: 1px solid $clr-grey-1;
+  }
+
   &__sidebar-links {
     /* Sidebar Links Center Alignment */
     text-align: center;
@@ -101,14 +130,21 @@ NAVIGATION
       margin-bottom: 4.5rem;
       text-transform: capitalize;
       letter-spacing: $spacing;
-      color: $clr-grey-10;
-      display: flex;
+      color: $clr-white;
+      display: inline-flex;
       align-items: center;
       justify-content: center;
       transition: $transition;
 
       &:hover {
+        text-shadow: 2px 2px 25px $clr-black;
+        transform: translateY(-3px);
         color: $clr-primary-5;
+      }
+
+      &:active {
+        transform: translateY(-1px);
+        text-shadow: 2px 2px 15px $clr-black;
       }
     }
   }
@@ -131,13 +167,21 @@ NAVIGATION
   &__sidebar-social-icons-link:link,
   &__sidebar-social-icons-link:visited {
     /* Sidebar SVG Colors, Inherited height from navbar__sidebar-social-icons-item container */
-    color: $clr-grey-8;
-    display: flex;
+    color: $clr-grey-10;
+    display: inline-flex;
     height: inherit;
     transition: $transition;
 
     &:hover {
       color: $clr-primary-5;
+      box-shadow: 0 5.008px 10px 6px rgba(0, 0, 0, 0.2);
+      transform: translateY(-3px);
+      border-radius: 4px;
+    }
+
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5.008px 10px 2px rgba(0, 0, 0, 0.2);
     }
   }
 }

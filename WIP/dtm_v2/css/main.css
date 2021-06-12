@@ -44,6 +44,12 @@ a {
   list-style: none;
 }
 
+h1,
+h2 {
+  line-height: 1.2;
+  letter-spacing: 0.0938rem;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -58,7 +64,9 @@ body {
   font-family: "NeoTech";
   color: #393a53;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.2;
+  letter-spacing: 0.0938rem;
+  color: #fff;
 }
 
 body::-webkit-scrollbar {
@@ -70,8 +78,8 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
   /* Body Scrollbar Track color */
   background: none;
-  margin-bottom: 1px;
-  border-radius: 8px;
+  margin-bottom: 0.0625rem;
+  border-radius: 0.5rem;
 }
 
 @media only screen and (max-width: 75em) {
@@ -104,6 +112,36 @@ body::-webkit-scrollbar-thumb:hover {
   color: #fff;
 }
 
+/* Main Container */
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+
+/* Video Background & Overlay*/
+.video-background {
+  z-index: -2;
+  position: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(29, 29, 29, 0.7);
+  mix-blend-mode: overlay;
+}
+
 /* 
 ====================
 Navbar - Menu Button
@@ -125,8 +163,8 @@ Navbar - Menu Button
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   z-index: 100;
 }
 
@@ -143,8 +181,8 @@ Navbar - Menu Button
   border-radius: 5px;
   -webkit-box-shadow: 0 1px 4px 1px #999;
           box-shadow: 0 1px 4px 1px #999;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .navbar__menu-btn--menu-burger::before, .navbar__menu-btn--menu-burger::after {
@@ -157,8 +195,8 @@ Navbar - Menu Button
   border-radius: 5px;
   -webkit-box-shadow: 0 1px 4px 1px #999;
           box-shadow: 0 1px 4px 1px #999;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .navbar__menu-btn--menu-burger::before {
@@ -247,8 +285,8 @@ HEADER
 ======
 */
 .header {
-  background: #ddd;
   grid-column: full-start / full-end;
+  height: 200vh;
 }
 
 /* 
@@ -267,22 +305,25 @@ NAVIGATION
   top: 0;
   width: 100%;
   z-index: 10;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .navbar__container {
   width: 100%;
   padding: 1rem 2rem;
-  max-width: 1600px;
+  max-width: 100rem;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 1fr;
-      grid-template-columns: auto 1fr;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 .navbar__logo {
@@ -290,6 +331,10 @@ NAVIGATION
   font-weight: 500;
   letter-spacing: 1.5px;
   color: #fff;
+}
+
+.navbar__logo--tech-media {
+  color: #0ef;
 }
 
 .navbar__menu-btn {
@@ -312,9 +357,10 @@ NAVIGATION
   /* LAYOUT for Navbar Links on top Navbar for screens bigger than 768px */
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   justify-items: end;
 }
 
@@ -328,14 +374,34 @@ NAVIGATION
 
 .navbar__nav-links--link {
   text-transform: capitalize;
+  color: #fff;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  display: inline-block;
+  font-size: 1.1em;
+  padding: 13px 30px 9.5px 30px;
+  margin-top: 30px;
+  letter-spacing: 1.5px;
+  border-radius: 6px;
+}
+
+.navbar__nav-links--link:hover {
+  letter-spacing: 3px;
+  background: #00eeff;
+  color: #474747;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-box-shadow: 0 0 10px 2px #00eeff;
+          box-shadow: 0 0 10px 2px #00eeff;
 }
 
 .navbar.scrolling-active {
   /* Scrolling Actice class for styles applied with JavaScript on Scroll  */
-  background-color: #000105;
+  background: #000105;
   -webkit-box-shadow: 0 2px 12px 1px #008f99;
           box-shadow: 0 2px 12px 1px #008f99;
-  /* #1f2687 */
 }
 
 .navbar__sidebar {
@@ -354,8 +420,8 @@ NAVIGATION
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   z-index: 11;
@@ -365,6 +431,11 @@ NAVIGATION
   /* Show Sidebar class for JavaScript when Menu Button is clicked */
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.navbar__sidebar-links-item {
+  width: 100vw;
+  border-bottom: 1px solid #444;
 }
 
 .navbar__sidebar-links {
@@ -378,22 +449,31 @@ NAVIGATION
   margin-bottom: 4.5rem;
   text-transform: capitalize;
   letter-spacing: 0.1rem;
-  color: #ddd;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  color: #fff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .navbar__sidebar-links--link:link:hover, .navbar__sidebar-links--link:visited:hover {
+  text-shadow: 2px 2px 25px #000;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
   color: #0ef;
+}
+
+.navbar__sidebar-links--link:link:active, .navbar__sidebar-links--link:visited:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  text-shadow: 2px 2px 15px #000;
 }
 
 .navbar__sidebar-social-icons {
@@ -419,17 +499,29 @@ NAVIGATION
 
 .navbar__sidebar-social-icons-link:link, .navbar__sidebar-social-icons-link:visited {
   /* Sidebar SVG Colors, Inherited height from navbar__sidebar-social-icons-item container */
-  color: #bbb;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  color: #ddd;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   height: inherit;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .navbar__sidebar-social-icons-link:link:hover, .navbar__sidebar-social-icons-link:visited:hover {
   color: #0ef;
+  -webkit-box-shadow: 0 5.008px 10px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5.008px 10px 6px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  border-radius: 4px;
+}
+
+.navbar__sidebar-social-icons-link:link:active, .navbar__sidebar-social-icons-link:visited:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 5.008px 10px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5.008px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 /*

@@ -32,6 +32,12 @@ a {
   list-style: none;
 }
 
+h1,
+h2 {
+  line-height: 1.2;
+  letter-spacing: 0.0938rem;
+}
+
 html {
   box-sizing: border-box;
   overflow: overlay;
@@ -51,9 +57,9 @@ body {
   font-family: "NeoTech";
   color: $clr-grey-dark-2;
   font-weight: 400;
-  line-height: 1.6;
-
-  // font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: 0.0938rem;
+  color: $clr-white;
 
   // Body Scrollbar color
 
@@ -66,8 +72,8 @@ body {
   &::-webkit-scrollbar-track {
     /* Body Scrollbar Track color */
     background: none;
-    margin-bottom: 1px;
-    border-radius: 8px;
+    margin-bottom: 0.0625rem;
+    border-radius: 0.5rem;
 
     @include respond(bp-largest-1200) {
       margin-top: 4.5rem;
@@ -92,4 +98,14 @@ body {
   /* Highlight Color */
   background: $clr-primary;
   color: $clr-white;
+}
+
+////////////////////
+// Main Container //
+////////////////////
+/* Main Container */
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 2.5rem;
 }

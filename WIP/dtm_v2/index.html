@@ -53,11 +53,13 @@
       Dan Tech Media &mdash; Your Nexus for Web Development & Design
     </title>
   </head>
-  <body class="container">
+  <body>
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
       <div class="navbar__container">
-        <h1 class="navbar__logo">Dan Tech Media</h1>
+        <h1 class="navbar__logo">
+          Dan<span class="navbar__logo--tech-media">TechMedia</span>
+        </h1>
         <!-- Menu Icon -->
         <div class="navbar__menu-btn" id="nav-btn">
           <div class="navbar__menu-btn--menu-burger"></div>
@@ -158,31 +160,35 @@
     </nav>
     <!-- End of Navbar -->
 
-    <!-- Header -->
-    <header class="header">
-      <!-- Video Background -->
-      <video
-        class="video-background"
-        src="./media/videos/(1080p)_Tech_Network.mp4"
-        muted
-        loop
-        autoplay
-        playsinline
-      ></video>
-      <!-- Video Overlay -->
-      <div class="overlay"></div>
-    </header>
-    <!-- End of Header -->
+    <!-- Container -->
+    <main class="container">
+      <!-- Header -->
+      <header class="header">
+        <!-- Video Background -->
+        <video
+          class="video-background"
+          src="./media/videos/(1080p)_Tech_Network.mp4"
+          muted
+          loop
+          autoplay
+          playsinline
+        ></video>
+        <!-- Video Overlay -->
+        <div class="overlay"></div>
+      </header>
+      <!-- End of Header -->
 
-    <!-- <section class="about"> -->
-    <div class="about__pictures">About Pictures</div>
+      <!-- <section class="about"> -->
+      <div class="about__pictures">About Pictures</div>
 
-    <div class="about__content">About Content</div>
-    <!-- </section> -->
+      <div class="about__content">About Content</div>
+      <!-- </section> -->
 
-    <section class="projects">Projects</section>
+      <section class="projects">Projects</section>
 
-    <section class="contact">Contact</section>
+      <section class="contact">Contact</section>
+    </main>
+    <!-- End of Container -->
 
     <footer class="footer">Footer</footer>
 

@@ -68,12 +68,16 @@ $clr-grey-light-1: #f9f7f6; // grey-light-1
 $clr-white: #fff;
 $clr-black: #000;
 
+// Button Colors
+$clr-button-hover-text-grey: #474747; // Text Changes to grey on HOVER
+$clr-button-background-grey: #808080; // Background color of Buttons
+
 // Font
 $ff-neotech: "Neo Tech", sans-serif;
 $ff-nunito: "Nunito", sans-serif;
 
 // Transitions
-$transition: all 0.3s linear;
+$transition: all 0.25s ease-in-out;
 
 // Spacing
 $spacing: 0.1rem;
@@ -83,10 +87,10 @@ $radius: 0.5rem;
 $btn-radius: 1.875rem;
 
 // Shadows
-$light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-$dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-$primary-3-big-shadow: 0 0 14px 4px #1f2687;
-$primary-3-small-shadow: 0 0 10px 0.25px #1f2687;
+$light-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.2);
+$primary-3-big-shadow: 0 0 0.875rem 0.25rem #1f2687;
+$primary-3-small-shadow: 0 0 0.625rem 0.0156rem #1f2687;
 
 // Max-Width
-$max-width: 1600px;
+$max-width: 100rem;
