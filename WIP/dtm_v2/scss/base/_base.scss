@@ -48,9 +48,9 @@ html {
   /* Font Size set to 100% for html to use with media quries */
   font-size: 100%;
 
-  // @include respond(bp-large-1100) {
-  //   font-size: 87.5%;
-  // }
+  @include respond(bp-large-1100) {
+    font-size: 87.5%;
+  }
 }
 
 body {

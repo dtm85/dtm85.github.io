@@ -19,7 +19,7 @@ NAVIGATION
 
   &__container {
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem 1rem 2rem;
     max-width: $max-width;
     margin: 0 auto;
     display: grid;
@@ -33,6 +33,7 @@ NAVIGATION
     font-weight: 500;
     letter-spacing: 1.5px;
     color: $clr-white;
+    transition: $transition;
 
     &--tech-media {
       color: $clr-primary-5;
@@ -54,8 +55,7 @@ NAVIGATION
     display: none;
 
     /* LAYOUT for Navbar Links on top Navbar for screens bigger than 768px */
-    grid-template-columns: repeat(5, 1fr);
-    column-gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-around;
     justify-items: end;
 
@@ -69,20 +69,21 @@ NAVIGATION
       color: $clr-white;
       transition: $transition;
       display: inline-block;
-      font-size: 1.1em;
-      // background: #808080;
+      font-size: 1.1rem;
       padding: 13px 30px 9.5px 30px;
-      margin-top: 30px;
       letter-spacing: 1.5px;
       border-radius: 6px;
 
       &:hover {
-        letter-spacing: 3px;
         background: #00eeff;
         color: rgb(71, 71, 71);
-        transform: scale(1.05);
         transition: $transition;
         box-shadow: 0 0 10px 2px #00eeff;
+        transform: translateY(-3px);
+
+        &:active {
+          transform: translateY(-1px);
+        }
       }
     }
   }
@@ -95,7 +96,7 @@ NAVIGATION
 
   &__sidebar {
     /* Sidebar Layout & Styling - Sidebar will only show when screen is smaller than 768px */
-    background: $clr-grey-3;
+    background: $clr-grey-1;
     position: fixed;
     top: 0;
     left: 0;
@@ -114,6 +115,21 @@ NAVIGATION
     }
   }
 
+  &__sidebar-logo {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: $clr-white;
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+
+    &--tech-media {
+      color: $clr-primary-5;
+    }
+  }
+
   &__sidebar-links-item {
     width: 100vw;
     border-bottom: 1px solid $clr-grey-1;
@@ -126,6 +142,7 @@ NAVIGATION
     &--link:link,
     &--link:visited {
       /* Styles applied to each link the Sidebar */
+      box-sizing: border-box;
       font-size: 2rem;
       margin-bottom: 4.5rem;
       text-transform: capitalize;
@@ -138,13 +155,14 @@ NAVIGATION
 
       &:hover {
         text-shadow: 2px 2px 25px $clr-black;
-        transform: translateY(-3px);
+        transform: translateY(-3px) scale(1.25);
         color: $clr-primary-5;
       }
 
       &:active {
-        transform: translateY(-1px);
+        // transform: translateY(-1px);
         text-shadow: 2px 2px 15px $clr-black;
+        transform: translateY(-1px) scale(1.225);
       }
     }
   }
@@ -174,14 +192,14 @@ NAVIGATION
 
     &:hover {
       color: $clr-primary-5;
-      box-shadow: 0 5.008px 10px 6px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 10px 6px rgba(0, 0, 0, 0.2);
       transform: translateY(-3px);
       border-radius: 4px;
     }
 
     &:active {
       transform: translateY(-1px);
-      box-shadow: 0 5.008px 10px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
     }
   }
 }

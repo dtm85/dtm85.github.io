@@ -60,6 +60,12 @@ html {
   font-size: 100%;
 }
 
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
 body {
   font-family: "NeoTech";
   color: #393a53;
@@ -311,7 +317,7 @@ NAVIGATION
 
 .navbar__container {
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem 1rem 2rem;
   max-width: 100rem;
   margin: 0 auto;
   display: -ms-grid;
@@ -331,6 +337,8 @@ NAVIGATION
   font-weight: 500;
   letter-spacing: 1.5px;
   color: #fff;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .navbar__logo--tech-media {
@@ -355,10 +363,8 @@ NAVIGATION
   /* Will HIDE Navbar Links on top Navbar if screen is 768px or smaller */
   display: none;
   /* LAYOUT for Navbar Links on top Navbar for screens bigger than 768px */
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-  -webkit-column-gap: 1.5rem;
-          column-gap: 1.5rem;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   -ms-flex-pack: distribute;
       justify-content: space-around;
   justify-items: end;
@@ -378,23 +384,26 @@ NAVIGATION
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   display: inline-block;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   padding: 13px 30px 9.5px 30px;
-  margin-top: 30px;
   letter-spacing: 1.5px;
   border-radius: 6px;
 }
 
 .navbar__nav-links--link:hover {
-  letter-spacing: 3px;
   background: #00eeff;
   color: #474747;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   -webkit-box-shadow: 0 0 10px 2px #00eeff;
           box-shadow: 0 0 10px 2px #00eeff;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.navbar__nav-links--link:hover:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
 }
 
 .navbar.scrolling-active {
@@ -406,7 +415,7 @@ NAVIGATION
 
 .navbar__sidebar {
   /* Sidebar Layout & Styling - Sidebar will only show when screen is smaller than 768px */
-  background: #666;
+  background: #444;
   position: fixed;
   top: 0;
   left: 0;
@@ -433,6 +442,21 @@ NAVIGATION
           transform: translateX(0);
 }
 
+.navbar__sidebar-logo {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: #fff;
+  display: block;
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+}
+
+.navbar__sidebar-logo--tech-media {
+  color: #0ef;
+}
+
 .navbar__sidebar-links-item {
   width: 100vw;
   border-bottom: 1px solid #444;
@@ -445,6 +469,8 @@ NAVIGATION
 
 .navbar__sidebar-links--link:link, .navbar__sidebar-links--link:visited {
   /* Styles applied to each link the Sidebar */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 2rem;
   margin-bottom: 4.5rem;
   text-transform: capitalize;
@@ -465,15 +491,15 @@ NAVIGATION
 
 .navbar__sidebar-links--link:link:hover, .navbar__sidebar-links--link:visited:hover {
   text-shadow: 2px 2px 25px #000;
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+  -webkit-transform: translateY(-3px) scale(1.25);
+          transform: translateY(-3px) scale(1.25);
   color: #0ef;
 }
 
 .navbar__sidebar-links--link:link:active, .navbar__sidebar-links--link:visited:active {
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
   text-shadow: 2px 2px 15px #000;
+  -webkit-transform: translateY(-1px) scale(1.225);
+          transform: translateY(-1px) scale(1.225);
 }
 
 .navbar__sidebar-social-icons {
@@ -510,8 +536,8 @@ NAVIGATION
 
 .navbar__sidebar-social-icons-link:link:hover, .navbar__sidebar-social-icons-link:visited:hover {
   color: #0ef;
-  -webkit-box-shadow: 0 5.008px 10px 6px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5.008px 10px 6px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 5px 10px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px 6px rgba(0, 0, 0, 0.2);
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
   border-radius: 4px;
@@ -520,8 +546,8 @@ NAVIGATION
 .navbar__sidebar-social-icons-link:link:active, .navbar__sidebar-social-icons-link:visited:active {
   -webkit-transform: translateY(-1px);
           transform: translateY(-1px);
-  -webkit-box-shadow: 0 5.008px 10px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5.008px 10px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 /*
