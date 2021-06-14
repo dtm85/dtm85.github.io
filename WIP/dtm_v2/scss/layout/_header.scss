@@ -9,4 +9,29 @@ HEADER
 .header {
   grid-column: full-start / full-end;
   height: 200vh;
+
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* z-index: 100; */
+  overflow: hidden;
+  /* background-color: rgba(255, 122, 122, 0.185); */
+
+  &__hero-text {
+    font-family: inherit;
+  }
+
+  &__hero-text-logo {
+    &--tech-media {
+      color: $clr-primary-5;
+    }
+  }
+
+  &__text-type {
+    background: khaki;
+  }
 }

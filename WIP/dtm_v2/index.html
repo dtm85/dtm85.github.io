@@ -157,13 +157,13 @@
     </nav>
     <!-- End of Navbar -->
 
-    <!-- Container -->
+    <!-- Content Container -->
     <main class="container">
       <!-- Header -->
       <header class="header">
         <!-- Video Background -->
         <video
-          class="video-background"
+          class="header__video-background"
           src="./media/videos/(1080p)_Tech_Network.mp4"
           muted
           loop
@@ -171,7 +171,36 @@
           playsinline
         ></video>
         <!-- Video Overlay -->
-        <div class="overlay"></div>
+        <div class="header__video-background--overlay"></div>
+
+        <!--  -->
+        <div class="header__hero-text">
+          <h1 class="header__hero-text-logo">
+            Dan<span class="header__hero-text-logo--tech-media">TechMedia</span>
+          </h1>
+          <h2>
+            Your Nexus for Web
+            <span
+              class="header__text-type"
+              data-wait="2000"
+              data-words='["Development", "Design"]'
+            ></span>
+          </h2>
+          <a href="#">Hire Me</a>
+        </div>
+        <div class="header__social-container">
+          <ul class="header__social-list">
+            <li class="header__social-list--item">
+              <a href="https://github.com/dtm85" target="_blank"> </a>
+            </li>
+            <li class="header__social-list--item">
+              <a href="https://www.linkedin.com/in/dtm" target="_blank"> </a>
+            </li>
+            <li class="header__social-list--item">
+              <a href="https://twitter.com/DanTechMedia" target="_blank"> </a>
+            </li>
+          </ul>
+        </div>
       </header>
       <!-- End of Header -->
 
