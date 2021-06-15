@@ -30,12 +30,13 @@ NAVIGATION
 
   &__logo {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 300;
     letter-spacing: 1.5px;
     color: $clr-white;
     transition: $transition;
 
     &--tech-media {
+      font-weight: 500;
       color: $clr-primary-5;
     }
   }
@@ -117,7 +118,7 @@ NAVIGATION
 
   &__sidebar-logo {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 300;
     letter-spacing: 1.5px;
     color: $clr-white;
     display: block;
@@ -126,6 +127,7 @@ NAVIGATION
     left: 2rem;
 
     &--tech-media {
+      font-weight: 500;
       color: $clr-primary-5;
     }
   }

@@ -8,30 +8,50 @@ HEADER
 */
 .header {
   grid-column: full-start / full-end;
-  height: 200vh;
 
   position: relative;
   width: 100%;
   height: 100vh;
-  padding: 100px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
   align-items: center;
-  /* z-index: 100; */
-  overflow: hidden;
-  /* background-color: rgba(255, 122, 122, 0.185); */
+  // overflow: hidden;
+  // background-color: rgba(255, 122, 122, 0.185);
 
   &__hero-text {
-    font-family: inherit;
+    font-weight: 300;
   }
 
-  &__hero-text-logo {
-    &--tech-media {
+  &__hero-text-h2 {
+    font-weight: 400;
+    color: silver;
+    font-size: 2.4em;
+    line-height: 1.5em;
+
+    &--span {
       color: $clr-primary-5;
+      position: absolute;
+      margin-left: 10px;
+      font-weight: 600;
+    }
+
+    .header__hero-text-h2--span > .txt {
+      border-right: 0.19rem solid chartreuse;
+      padding: 2.5px 0;
     }
   }
 
-  &__text-type {
-    background: khaki;
+  &__hero-text-logo {
+    font-weight: 300;
+    font-size: 5em;
+    line-height: 2em;
+    // letter-spacing: 2px;
+
+    &--tech-media {
+      // letter-spacing: 5px;
+      font-weight: 500;
+      color: $clr-primary-5;
+    }
   }
 }
