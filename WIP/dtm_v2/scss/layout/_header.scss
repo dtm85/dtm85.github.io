@@ -14,6 +14,7 @@ HEADER
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
   justify-content: center;
   align-items: center;
   // overflow: hidden;
@@ -21,6 +22,7 @@ HEADER
 
   &__hero-text {
     font-weight: 300;
+    margin: 0 5rem 0 3rem;
   }
 
   &__hero-text-h2 {
@@ -52,6 +54,17 @@ HEADER
       // letter-spacing: 5px;
       font-weight: 500;
       color: $clr-primary-5;
+    }
+  }
+
+  &__iphone {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    &--img {
+      margin-top: 6rem;
+      width: 25rem;
     }
   }
 }

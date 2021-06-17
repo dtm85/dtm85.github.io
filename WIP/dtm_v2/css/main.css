@@ -332,6 +332,8 @@ HEADER
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -342,6 +344,7 @@ HEADER
 
 .header__hero-text {
   font-weight: 300;
+  margin: 0 5rem 0 3rem;
 }
 
 .header__hero-text-h2 {
@@ -372,6 +375,22 @@ HEADER
 .header__hero-text-logo--tech-media {
   font-weight: 500;
   color: #0ef;
+}
+
+.header__iphone {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__iphone--img {
+  margin-top: 6rem;
+  width: 25rem;
 }
 
 /* 
