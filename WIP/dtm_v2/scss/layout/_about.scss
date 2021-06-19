@@ -7,13 +7,40 @@ ABOUT
 =====
 */
 .about {
+  height: 100vh;
+  width: 100%;
+  grid-column: full-start / full-end;
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  margin: 3rem auto;
+  padding: 4rem;
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  // justify-content: center;
+  // align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+
   &__pictures {
-    background: $clr-primary-7;
-    grid-column: full-start / col-end 4;
+    // grid-column: col-start / col-end 4;
+    &--photo {
+      // display: block;
+      // position: relative;
+    }
+
+    &--dan-pic {
+      max-width: 15rem;
+      border-radius: 50%;
+      box-shadow: $primary-3-big-shadow;
+      position: relative;
+    }
   }
 
   &__content {
-    background: $clr-primary-5;
-    grid-column: col-start 5 / full-end;
+    // grid-column: col-start 5 / col-end 8;
+    // background: $clr-primary-5;
   }
 }

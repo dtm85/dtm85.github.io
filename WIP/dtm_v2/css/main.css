@@ -288,14 +288,33 @@ Navbar - Menu Button
 ABOUT
 =====
 */
-.about__pictures {
-  background: #00afbb;
-  grid-column: full-start / col-end 4;
+.about {
+  height: 100vh;
+  width: 100%;
+  grid-column: full-start / full-end;
+  background: rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+          box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  margin: 3rem auto;
+  padding: 4rem;
+  overflow: hidden;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
 }
 
-.about__content {
-  background: #0ef;
-  grid-column: col-start 5 / full-end;
+.about__pictures--dan-pic {
+  max-width: 15rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0.875rem 0.25rem #1f2687;
+          box-shadow: 0 0 0.875rem 0.25rem #1f2687;
+  position: relative;
 }
 
 /* 
@@ -663,9 +682,9 @@ PROJECTS
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (min-content)[7];
-      grid-template-rows: repeat(7, -webkit-min-content);
-      grid-template-rows: repeat(7, min-content);
+  -ms-grid-rows: (min-content)[5];
+      grid-template-rows: repeat(5, -webkit-min-content);
+      grid-template-rows: repeat(5, min-content);
   -ms-grid-columns: [nav-start full-start] min-content minmax(3.75rem, 1fr) [center-start] ([col-start] minmax(min-content, 9.375rem) [col-end])[8] [center-end] minmax(3.75rem, 1fr) [full-end nav-end];
       grid-template-columns: [nav-start full-start] -webkit-min-content minmax(3.75rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 9.375rem) [col-end]) [center-end] minmax(3.75rem, 1fr) [full-end nav-end];
       grid-template-columns: [nav-start full-start] min-content minmax(3.75rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 9.375rem) [col-end]) [center-end] minmax(3.75rem, 1fr) [full-end nav-end];
