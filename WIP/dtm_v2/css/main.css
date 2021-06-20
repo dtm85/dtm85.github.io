@@ -344,8 +344,16 @@ ABOUT
   line-height: 1.4;
 }
 
-.about__content {
-  background: coral;
+.about__content--h2 {
+  text-align: center;
+}
+
+.about__content--skills {
+  background: crimson;
+}
+
+.about__content--skills--skill {
+  color: #fff;
 }
 
 /* 

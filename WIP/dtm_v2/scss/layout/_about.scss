@@ -55,6 +55,17 @@ ABOUT
   }
 
   &__content {
-    background: coral;
+    &--h2 {
+      // background: cyan;
+      text-align: center;
+    }
+
+    &--skills {
+      background: crimson;
+
+      &--skill {
+        color: $clr-white;
+      }
+    }
   }
 }
