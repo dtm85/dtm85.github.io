@@ -345,15 +345,25 @@ ABOUT
 }
 
 .about__content--h2 {
+  margin-bottom: 2rem;
   text-align: center;
 }
 
 .about__content--skills {
   background: crimson;
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
 }
 
-.about__content--skills--skill {
-  color: #fff;
+.about__content--skills svg {
+  width: 3rem;
 }
 
 /* 
