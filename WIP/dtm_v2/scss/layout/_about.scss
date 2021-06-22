@@ -37,9 +37,11 @@ ABOUT
       position: relative;
     }
 
-    &--about-h2 {
+    &--about-h1 {
+      font-size: 3rem;
       text-align: center;
       margin-bottom: 2rem;
+      color: $clr-primary-5;
     }
 
     &--about-p1 {
@@ -48,30 +50,50 @@ ABOUT
 
     &--about-p1,
     &--about-p2 {
-      font-weight: 300;
+      font-weight: 400;
       letter-spacing: 2px;
       line-height: 1.4;
     }
   }
 
   &__content {
-    &--h2 {
-      // background: cyan;
-      margin-bottom: 2rem;
+    display: grid;
+    // justify-content: center;
+    align-items: center;
+
+    &--h1 {
+      font-size: 3rem;
       text-align: center;
+      margin-bottom: 2rem;
+      color: $clr-primary-5;
+    }
+
+    &--container {
+      // display: flex;
+      // justify-content: center;
+      // align-self: flex-end;
+      // margin: auto;
     }
 
     &--skills {
-      background: crimson;
       display: grid;
-      column-gap: 1rem;
-      // justify-content: center;
+      justify-content: center;
       align-items: center;
       grid-template-columns: repeat(4, 1fr);
+      column-gap: 5rem;
+      width: 100%;
 
       svg {
-        width: 3rem;
+        max-width: 5rem;
+        min-width: 3.5rem;
+        width: fit-content;
       }
+    }
+
+    &--skill {
+      display: grid;
+      justify-content: center;
+      align-items: center;
     }
 
     // &--skill-html5,
