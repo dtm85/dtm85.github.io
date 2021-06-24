@@ -300,12 +300,6 @@ ABOUT
   padding: 3rem;
   overflow: hidden;
   position: relative;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -webkit-column-gap: 3rem;
-          column-gap: 3rem;
 }
 
 .about__pictures--photo {
@@ -327,6 +321,8 @@ ABOUT
   -webkit-box-shadow: 0 0 9px 0 #0ef;
           box-shadow: 0 0 9px 0 #0ef;
   position: relative;
+  -webkit-transform: rotateZ(-2deg);
+          transform: rotateZ(-2deg);
 }
 
 .about__pictures--about-h1 {

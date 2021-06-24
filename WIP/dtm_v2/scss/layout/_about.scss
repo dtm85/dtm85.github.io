@@ -17,9 +17,9 @@ ABOUT
   padding: 3rem;
   overflow: hidden;
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 3rem;
+  // display: grid;
+  // grid-template-columns: repeat(2, 1fr);
+  // column-gap: 3rem;
 
   &__pictures {
     &--photo {
@@ -35,6 +35,7 @@ ABOUT
       border-radius: 50%;
       box-shadow: 0 0 9px 0 $clr-primary-5;
       position: relative;
+      transform: rotateZ(-2deg);
     }
 
     &--about-h1 {
