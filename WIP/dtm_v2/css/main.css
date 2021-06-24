@@ -302,47 +302,48 @@ ABOUT
   position: relative;
 }
 
-.about__pictures--photo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 5rem;
+.about__heading {
+  font-size: 3rem;
+  text-align: center;
+  margin: 4rem auto;
+  color: #0ef;
 }
 
-.about__pictures--dan-pic {
-  max-width: 15rem;
+.about__picture {
+  padding: 0 5rem;
+  margin: 0 auto;
+}
+
+.about__picture--dan-pic {
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 9px 0 #0ef;
           box-shadow: 0 0 9px 0 #0ef;
   position: relative;
   -webkit-transform: rotateZ(-2deg);
           transform: rotateZ(-2deg);
+  float: left;
+  shape-outside: circle(50% at 50% 50%);
 }
 
-.about__pictures--about-h1 {
-  font-size: 3rem;
-  text-align: center;
+.about__picture--text-container {
+  display: -ms-grid;
+  display: grid;
+}
+
+.about__picture--text-p1 {
   margin-bottom: 2rem;
-  color: #0ef;
 }
 
-.about__pictures--about-p1 {
-  margin-bottom: 2rem;
-}
-
-.about__pictures--about-p1, .about__pictures--about-p2 {
+.about__picture--text-p1, .about__picture--text-p2 {
   font-weight: 400;
   letter-spacing: 2px;
   line-height: 1.4;
 }
 
 .about__content {
+  margin: 7rem auto 4rem auto;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -357,6 +358,18 @@ ABOUT
   color: #0ef;
 }
 
+.about__content--container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
 .about__content--skills {
   display: -ms-grid;
   display: grid;
@@ -366,8 +379,8 @@ ABOUT
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
   -webkit-column-gap: 5rem;
           column-gap: 5rem;
   width: 100%;
@@ -375,7 +388,7 @@ ABOUT
 
 .about__content--skills svg {
   max-width: 5rem;
-  min-width: 3.5rem;
+  min-width: 2.5rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;

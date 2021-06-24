@@ -17,40 +17,55 @@ ABOUT
   padding: 3rem;
   overflow: hidden;
   position: relative;
-  // display: grid;
-  // grid-template-columns: repeat(2, 1fr);
-  // column-gap: 3rem;
 
-  &__pictures {
+  &__heading {
+    font-size: 3rem;
+    text-align: center;
+    margin: 4rem auto;
+    color: $clr-primary-5;
+  }
+
+  &__picture {
+    // display: grid;
+    // grid-template-columns: repeat(2, auto);
+    // column-gap: 5rem;
+    // justify-content: center;
+    // align-items: center;
+    padding: 0 5rem;
+    margin: 0 auto;
+
     &--photo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 5rem;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // margin-bottom: 5rem;
       // position: relative;
     }
 
     &--dan-pic {
-      max-width: 15rem;
+      // max-width: 15rem;
+      width: 15rem;
+      height: 15rem;
       border-radius: 50%;
       box-shadow: 0 0 9px 0 $clr-primary-5;
       position: relative;
       transform: rotateZ(-2deg);
+      float: left;
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      // shape-margin: 15rem;
     }
 
-    &--about-h1 {
-      font-size: 3rem;
-      text-align: center;
+    &--text-container {
+      display: grid;
+    }
+
+    &--text-p1 {
       margin-bottom: 2rem;
-      color: $clr-primary-5;
     }
 
-    &--about-p1 {
-      margin-bottom: 2rem;
-    }
-
-    &--about-p1,
-    &--about-p2 {
+    &--text-p1,
+    &--text-p2 {
       font-weight: 400;
       letter-spacing: 2px;
       line-height: 1.4;
@@ -58,8 +73,8 @@ ABOUT
   }
 
   &__content {
+    margin: 7rem auto 4rem auto;
     display: grid;
-    // justify-content: center;
     align-items: center;
 
     &--h1 {
@@ -70,23 +85,23 @@ ABOUT
     }
 
     &--container {
-      // display: flex;
-      // justify-content: center;
-      // align-self: flex-end;
-      // margin: auto;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
     }
 
     &--skills {
       display: grid;
       justify-content: center;
       align-items: center;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(6, 1fr);
       column-gap: 5rem;
       width: 100%;
 
       svg {
         max-width: 5rem;
-        min-width: 3.5rem;
+        min-width: 2.5rem;
         width: fit-content;
       }
     }
