@@ -325,11 +325,11 @@ ABOUT
           transform: rotateZ(-2deg);
   float: left;
   shape-outside: circle(50% at 50% 50%);
+  margin-right: 3rem;
 }
 
-.about__picture--text-container {
-  display: -ms-grid;
-  display: grid;
+.about__picture--text-h2 {
+  margin-bottom: 1rem;
 }
 
 .about__picture--text-p1 {
@@ -339,7 +339,7 @@ ABOUT
 .about__picture--text-p1, .about__picture--text-p2 {
   font-weight: 400;
   letter-spacing: 2px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .about__content {

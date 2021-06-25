@@ -26,24 +26,11 @@ ABOUT
   }
 
   &__picture {
-    // display: grid;
-    // grid-template-columns: repeat(2, auto);
-    // column-gap: 5rem;
-    // justify-content: center;
-    // align-items: center;
     padding: 0 5rem;
     margin: 0 auto;
-
-    &--photo {
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
-      // margin-bottom: 5rem;
-      // position: relative;
-    }
+    // width: 85%;
 
     &--dan-pic {
-      // max-width: 15rem;
       width: 15rem;
       height: 15rem;
       border-radius: 50%;
@@ -53,11 +40,12 @@ ABOUT
       float: left;
       -webkit-shape-outside: circle(50% at 50% 50%);
       shape-outside: circle(50% at 50% 50%);
-      // shape-margin: 15rem;
+      margin-right: 3rem;
+      // transform: translateY(-200px);
     }
 
-    &--text-container {
-      display: grid;
+    &--text-h2 {
+      margin-bottom: 1rem;
     }
 
     &--text-p1 {
@@ -68,7 +56,7 @@ ABOUT
     &--text-p2 {
       font-weight: 400;
       letter-spacing: 2px;
-      line-height: 1.4;
+      line-height: 1.5;
     }
   }
 
