@@ -763,8 +763,45 @@ PROJECTS
 ========
 */
 .projects {
-  background: #4e4f70;
   grid-column: full-start / full-end;
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  overflow: hidden;
+}
+
+.projects__heading-container {
+  /* Projects Heading Container GLOBAL */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #0ef;
+  font-size: 3rem;
+  text-align: center;
+  margin: 4rem auto;
+}
+
+.projects__glass-container {
+  background: rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+          box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  margin: 3rem auto;
+  padding: 3rem;
+  overflow: hidden;
+  position: relative;
 }
 
 .container {
