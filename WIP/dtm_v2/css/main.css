@@ -86,12 +86,7 @@ body::-webkit-scrollbar-track {
   background: none;
   margin-bottom: 0.0625rem;
   border-radius: 0.5rem;
-}
-
-@media only screen and (max-width: 75em) {
-  body::-webkit-scrollbar-track {
-    margin-top: 4.5rem;
-  }
+  margin-top: 5.5rem;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -449,19 +444,35 @@ HEADER
           align-items: center;
 }
 
+@media only screen and (max-width: 59.375em) {
+  .header {
+    /* Breakpoint for mobile */
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .header__hero-text {
   font-weight: 300;
   margin: 0 5rem 0 3rem;
 }
 
+@media only screen and (max-width: 59.375em) {
+  .header__hero-text {
+    /* Breakpoint for mobile */
+    margin: auto;
+  }
+}
+
 .header__hero-text-h2 {
   font-weight: 400;
   color: silver;
-  font-size: 2.4em;
-  line-height: 1.5em;
+  font-size: 2.4rem;
+  line-height: 1.5;
 }
 
 .header__hero-text-h2--span {
+  /* Span for typewriter text  */
   color: #0ef;
   position: absolute;
   margin-left: 10px;
@@ -469,14 +480,15 @@ HEADER
 }
 
 .header__hero-text-h2 .header__hero-text-h2--span > .txt {
+  /* Cursor for typewriter text */
   border-right: 0.19rem solid chartreuse;
   padding: 2.5px 0;
 }
 
 .header__hero-text-logo {
   font-weight: 300;
-  font-size: 5em;
-  line-height: 2em;
+  font-size: 5rem;
+  line-height: 2;
 }
 
 .header__hero-text-logo--tech-media {
@@ -498,6 +510,12 @@ HEADER
 .header__iphone--img {
   margin-top: 6rem;
   width: 25rem;
+}
+
+@media only screen and (max-width: 59.375em) {
+  .header__iphone--img {
+    display: none;
+  }
 }
 
 /* 
