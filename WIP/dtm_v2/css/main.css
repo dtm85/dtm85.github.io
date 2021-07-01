@@ -464,11 +464,43 @@ HEADER
   }
 }
 
+.header__hero-text-logo {
+  font-weight: 300;
+  font-size: 5rem;
+  line-height: 1.7;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+@media only screen and (max-width: 47.938em) {
+  .header__hero-text-logo {
+    font-size: 3.5rem;
+  }
+}
+
+.header__hero-text-logo--tech-media {
+  font-weight: 500;
+  color: #0ef;
+}
+
 .header__hero-text-h2 {
   font-weight: 400;
   color: silver;
   font-size: 2.4rem;
-  line-height: 1.5;
+  margin-bottom: 3.5rem;
+}
+
+@media only screen and (max-width: 47.938em) {
+  .header__hero-text-h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .header__hero-text-h2--breakpoint {
+    line-height: 1.8;
+    display: block;
+  }
 }
 
 .header__hero-text-h2--span {
@@ -485,15 +517,8 @@ HEADER
   padding: 2.5px 0;
 }
 
-.header__hero-text-logo {
-  font-weight: 300;
-  font-size: 5rem;
-  line-height: 2;
-}
-
-.header__hero-text-logo--tech-media {
-  font-weight: 500;
-  color: #0ef;
+.header__social-container__social-list-item {
+  color: white;
 }
 
 .header__iphone {
@@ -510,11 +535,26 @@ HEADER
 .header__iphone--img {
   margin-top: 6rem;
   width: 25rem;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 @media only screen and (max-width: 59.375em) {
   .header__iphone--img {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 59.375em) {
+  .header__hero-btn {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 

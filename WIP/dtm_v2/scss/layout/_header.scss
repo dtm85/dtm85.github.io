@@ -33,11 +33,38 @@ HEADER
     }
   }
 
+  &__hero-text-logo {
+    font-weight: 300;
+    font-size: 5rem;
+    line-height: 1.7;
+    transition: $transition;
+
+    @include respond(bp-medium-767-maxwidth) {
+      font-size: 3.5rem;
+    }
+
+    &--tech-media {
+      font-weight: 500;
+      color: $clr-primary-5;
+    }
+  }
+
   &__hero-text-h2 {
     font-weight: 400;
     color: silver;
     font-size: 2.4rem;
-    line-height: 1.5;
+    margin-bottom: 3.5rem;
+
+    @include respond(bp-medium-767-maxwidth) {
+      font-size: 1.5rem;
+    }
+
+    @include respond(bp-small-500) {
+      &--breakpoint {
+        line-height: 1.8;
+        display: block;
+      }
+    }
 
     &--span {
       /* Span for typewriter text  */
@@ -54,14 +81,14 @@ HEADER
     }
   }
 
-  &__hero-text-logo {
-    font-weight: 300;
-    font-size: 5rem;
-    line-height: 2;
+  &__social-container {
+    &__social-list {
+    }
 
-    &--tech-media {
-      font-weight: 500;
-      color: $clr-primary-5;
+    &__social-list-item {
+      color: white;
+      &--link {
+      }
     }
   }
 
@@ -73,6 +100,7 @@ HEADER
     &--img {
       margin-top: 6rem;
       width: 25rem;
+      transition: $transition;
 
       @include respond(bp-medium-950) {
         display: none;
@@ -80,10 +108,11 @@ HEADER
     }
   }
 
-  // &__social-container {
-  //   background: chartreuse;
-  //   display: grid;
-  //   place-items: center;
-  //   position: relative;
-  // }
+  &__hero-btn {
+    @include respond(bp-medium-950) {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
