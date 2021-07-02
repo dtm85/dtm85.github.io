@@ -71,7 +71,7 @@ NAVIGATION
       transition: $transition;
       display: inline-block;
       font-size: 1.1rem;
-      padding: 13px 30px 9.5px 30px;
+      padding: 0.8125rem 1.875rem 0.5938rem 1.875rem;
       letter-spacing: 1.5px;
       border-radius: 6px;
 
@@ -156,14 +156,14 @@ NAVIGATION
       transition: $transition;
 
       &:hover {
-        text-shadow: 2px 2px 25px $clr-black;
+        text-shadow: 0.125rem 0.125rem 1.5625rem $clr-black;
         transform: translateY(-3px) scale(1.25);
         color: $clr-primary-5;
       }
 
       &:active {
         // transform: translateY(-1px);
-        text-shadow: 2px 2px 15px $clr-black;
+        text-shadow: 0.125rem 0.125rem 0.9375rem $clr-black;
         transform: translateY(-1px) scale(1.225);
       }
     }
@@ -171,17 +171,17 @@ NAVIGATION
 
   &__sidebar-social-icons {
     /* Sidebar Social Icons - Display Grid */
-    height: 40px;
+    height: 2.5rem;
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(3, 40px);
+    grid-template-columns: repeat(3, 2.5rem);
     gap: 3rem;
   }
 
   &__sidebar-social-icons-item {
     /* Sidebar Social Icons Container to size SVG */
-    height: 40px;
+    height: 2.5rem;
   }
 
   &__sidebar-social-icons-link:link,

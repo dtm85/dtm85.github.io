@@ -82,27 +82,37 @@ HEADER
   }
 
   &__social-container {
+    line-height: 1;
     &--list {
-      display: grid;
+      display: inline-flex;
       justify-content: center;
       align-items: center;
       grid-template-columns: repeat(4, 1fr);
-      width: fit-content;
-      height: fit-content;
+      // width: fit-content;
+      // height: fit-content;
+      column-gap: 3rem;
+      transition: $transition;
     }
 
     &--item {
-      margin-top: 3rem;
+      margin-top: 20rem;
       background: rgba(220, 20, 60, 0.24);
     }
 
-    &--link {
-      // padding: 3rem;
+    &--link:link,
+    &--link:visited {
+      box-sizing: border-box;
+      padding: 0;
       color: $clr-white;
+      width: 1.875rem;
+      height: 1.875rem;
+    }
+    &--svg {
+      margin: 0;
     }
 
     &--svg-email {
-      height: 3.125rem;
+      height: 1.75rem;
       width: 1.875rem;
     }
 
