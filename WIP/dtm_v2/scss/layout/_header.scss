@@ -82,13 +82,35 @@ HEADER
   }
 
   &__social-container {
-    &__social-list {
+    &--list {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: repeat(4, 1fr);
+      width: fit-content;
+      height: fit-content;
     }
 
-    &__social-list-item {
-      color: white;
-      &--link {
-      }
+    &--item {
+      margin-top: 3rem;
+      background: rgba(220, 20, 60, 0.24);
+    }
+
+    &--link {
+      // padding: 3rem;
+      color: $clr-white;
+    }
+
+    &--svg-email {
+      height: 3.125rem;
+      width: 1.875rem;
+    }
+
+    &--svg-github,
+    &--svg-linkedin,
+    &--svg-twitter {
+      width: 1.875rem;
+      height: 1.875rem;
     }
   }
 

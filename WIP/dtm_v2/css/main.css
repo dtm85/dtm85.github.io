@@ -517,8 +517,42 @@ HEADER
   padding: 2.5px 0;
 }
 
-.header__social-container__social-list-item {
-  color: white;
+.header__social-container--list {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.header__social-container--item {
+  margin-top: 3rem;
+  background: rgba(220, 20, 60, 0.24);
+}
+
+.header__social-container--link {
+  color: #fff;
+}
+
+.header__social-container--svg-email {
+  height: 3.125rem;
+  width: 1.875rem;
+}
+
+.header__social-container--svg-github, .header__social-container--svg-linkedin, .header__social-container--svg-twitter {
+  width: 1.875rem;
+  height: 1.875rem;
 }
 
 .header__iphone {
