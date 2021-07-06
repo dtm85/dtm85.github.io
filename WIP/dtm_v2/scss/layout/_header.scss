@@ -85,6 +85,7 @@ HEADER
     line-height: 1;
     position: fixed;
     top: 70%;
+    margin-left: 10px;
     left: 0;
     height: fit-content;
 
@@ -118,7 +119,7 @@ HEADER
       transition: $transition;
 
       &:hover {
-        transform: translateX(5px) scale(1.2);
+        transform: scale(1.35);
         color: $clr-primary-5;
         // transition: $transition;
       }

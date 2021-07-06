@@ -117,7 +117,7 @@ body::-webkit-scrollbar-thumb:hover {
 .container {
   max-width: 100rem;
   margin: 0 auto;
-  padding: 0 2.5rem;
+  padding: 0 4.5rem;
 }
 
 /* Video Background & Overlay*/
@@ -286,18 +286,18 @@ ABOUT
 .about {
   width: 100%;
   grid-column: full-start / full-end;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(39, 39, 39, 0.95);
   -webkit-box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
           box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 25px;
   margin: 3rem auto;
-  padding: 3rem;
   overflow: hidden;
   position: relative;
 }
 
 .about__heading {
+  font-weight: 400;
   font-size: 3rem;
   text-align: center;
   margin: 4rem auto;
@@ -307,6 +307,20 @@ ABOUT
 .about__picture {
   padding: 0 5rem;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .about__picture--container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .about__picture--dan-pic {
@@ -321,6 +335,13 @@ ABOUT
   float: left;
   shape-outside: circle(50% at 50% 50%);
   margin-right: 3rem;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .about__picture--dan-pic {
+    margin-right: 0;
+    float: none;
+  }
 }
 
 .about__picture--text-h2 {
@@ -347,6 +368,7 @@ ABOUT
 }
 
 .about__content--h1 {
+  font-weight: 400;
   font-size: 3rem;
   text-align: center;
   margin-bottom: 2rem;
@@ -363,6 +385,7 @@ ABOUT
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
+  padding: 0 5rem;
 }
 
 .about__content--skills {
@@ -521,6 +544,7 @@ HEADER
   line-height: 1;
   position: fixed;
   top: 70%;
+  margin-left: 10px;
   left: 0;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -565,8 +589,8 @@ HEADER
 }
 
 .header__social-container--svg:hover {
-  -webkit-transform: translateX(5px) scale(1.2);
-          transform: translateX(5px) scale(1.2);
+  -webkit-transform: scale(1.35);
+          transform: scale(1.35);
   color: #0ef;
 }
 
