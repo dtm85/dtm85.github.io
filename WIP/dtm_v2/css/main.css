@@ -519,50 +519,58 @@ HEADER
 
 .header__social-container {
   line-height: 1;
+  position: fixed;
+  top: 70%;
+  left: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .header__social-container--list {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -webkit-column-gap: 3rem;
-          column-gap: 3rem;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  row-gap: 3.5rem;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
 
 .header__social-container--item {
-  margin-top: 20rem;
+  width: 0;
+  height: 0;
+  margin-top: 3.5rem;
   background: rgba(220, 20, 60, 0.24);
 }
 
 .header__social-container--link:link, .header__social-container--link:visited {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  display: block;
   padding: 0;
   color: #fff;
-  width: 1.875rem;
-  height: 1.875rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .header__social-container--svg {
+  display: block;
   margin: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
-.header__social-container--svg-email {
-  height: 1.75rem;
-  width: 1.875rem;
+.header__social-container--svg:hover {
+  -webkit-transform: translateX(5px) scale(1.2);
+          transform: translateX(5px) scale(1.2);
+  color: #0ef;
 }
 
-.header__social-container--svg-github, .header__social-container--svg-linkedin, .header__social-container--svg-twitter {
+.header__social-container--svg-email, .header__social-container--svg-github, .header__social-container--svg-linkedin, .header__social-container--svg-twitter {
   width: 1.875rem;
   height: 1.875rem;
 }
@@ -824,8 +832,8 @@ NAVIGATION
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: (2.5rem)[3];
-      grid-template-columns: repeat(3, 2.5rem);
+  -ms-grid-columns: (2.5rem)[4];
+      grid-template-columns: repeat(4, 2.5rem);
   gap: 3rem;
 }
 

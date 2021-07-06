@@ -83,39 +83,48 @@ HEADER
 
   &__social-container {
     line-height: 1;
+    position: fixed;
+    top: 70%;
+    left: 0;
+    height: fit-content;
+
     &--list {
-      display: inline-flex;
+      display: block;
       justify-content: center;
       align-items: center;
-      grid-template-columns: repeat(4, 1fr);
-      // width: fit-content;
-      // height: fit-content;
-      column-gap: 3rem;
+      grid-template-rows: repeat(4, 1fr);
+      row-gap: 3.5rem;
       transition: $transition;
     }
 
     &--item {
-      margin-top: 20rem;
+      width: 0;
+      height: 0;
+      margin-top: 3.5rem;
       background: rgba(220, 20, 60, 0.24);
     }
 
     &--link:link,
     &--link:visited {
-      box-sizing: border-box;
+      display: block;
       padding: 0;
       color: $clr-white;
-      width: 1.875rem;
-      height: 1.875rem;
+      width: 1.5rem;
+      height: 1.5rem;
     }
     &--svg {
+      display: block;
       margin: 0;
+      transition: $transition;
+
+      &:hover {
+        transform: translateX(5px) scale(1.2);
+        color: $clr-primary-5;
+        // transition: $transition;
+      }
     }
 
-    &--svg-email {
-      height: 1.75rem;
-      width: 1.875rem;
-    }
-
+    &--svg-email,
     &--svg-github,
     &--svg-linkedin,
     &--svg-twitter {
