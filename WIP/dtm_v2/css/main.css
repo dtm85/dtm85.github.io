@@ -558,7 +558,7 @@ HEADER
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
-    background: #97b37b;
+    margin-top: 5rem;
   }
 }
 
@@ -568,11 +568,27 @@ HEADER
   transition: all 0.25s ease-in-out;
 }
 
+@media only screen and (max-width: 40.625em) {
+  .header__social-container--list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+}
+
 .header__social-container--item {
   width: 0;
   height: 0;
   margin-top: 3.5rem;
-  background: rgba(220, 20, 60, 0.24);
 }
 
 @media only screen and (max-width: 40.625em) {
@@ -589,8 +605,6 @@ HEADER
   display: block;
   padding: 0;
   color: #fff;
-  width: 1.5rem;
-  height: 1.5rem;
 }
 
 .header__social-container--svg {
@@ -857,7 +871,6 @@ NAVIGATION
 
 .navbar__sidebar-social-icons {
   /* Sidebar Social Icons - Display Grid */
-  height: 2.5rem;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -866,23 +879,36 @@ NAVIGATION
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: (2.5rem)[4];
-      grid-template-columns: repeat(4, 2.5rem);
-  gap: 3rem;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  width: 18.75rem;
+  margin-top: 3rem;
 }
 
 .navbar__sidebar-social-icons-item {
   /* Sidebar Social Icons Container to size SVG */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__sidebar-social-icons-link {
   height: 2.5rem;
+  width: 2.5rem;
 }
 
 .navbar__sidebar-social-icons-link:link, .navbar__sidebar-social-icons-link:visited {
   /* Sidebar SVG Colors, Inherited height from navbar__sidebar-social-icons-item container */
   color: #ddd;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
@@ -891,14 +917,10 @@ NAVIGATION
   color: #0ef;
   -webkit-box-shadow: 0 5px 10px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px 6px rgba(0, 0, 0, 0.2);
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
   border-radius: 4px;
 }
 
 .navbar__sidebar-social-icons-link:link:active, .navbar__sidebar-social-icons-link:visited:active {
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
   -webkit-box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
 }
