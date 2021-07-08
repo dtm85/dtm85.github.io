@@ -30,6 +30,10 @@ ABOUT
     padding: 0 5rem;
     margin: 0 auto;
 
+    @include respond(bp-medium-650) {
+      padding: 0 1.5rem;
+    }
+
     &--container {
       @include respond(bp-medium-650) {
         display: flex;
@@ -77,6 +81,19 @@ ABOUT
     display: grid;
     align-items: center;
 
+    &--container {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      padding: 0 5rem;
+      min-width: 100%;
+
+      @include respond(bp-medium-650) {
+        padding: 0 2.5rem;
+      }
+    }
+
     &--h1 {
       font-weight: 400;
       font-size: 3rem;
@@ -85,31 +102,25 @@ ABOUT
       color: $clr-primary-5;
     }
 
-    &--container {
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      margin: auto;
-      padding: 0 5rem;
-    }
-
     &--skills {
       display: grid;
       justify-content: center;
       align-items: center;
-      grid-template-columns: repeat(6, 1fr);
-      column-gap: 5rem;
+      // grid-template-columns: repeat(auto-fill, 2.5rem);
+      // column-gap: 5rem;
       width: 100%;
 
       svg {
+        // display: inline-block;
         max-width: 5rem;
         min-width: 2.5rem;
-        width: fit-content;
+        width: 100%;
       }
     }
 
     &--skill {
       display: grid;
+      width: fit-content;
       justify-content: center;
       align-items: center;
     }
