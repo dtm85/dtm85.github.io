@@ -81,19 +81,6 @@ ABOUT
     display: grid;
     align-items: center;
 
-    &--container {
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      margin: auto;
-      padding: 0 5rem;
-      min-width: 100%;
-
-      @include respond(bp-medium-650) {
-        padding: 0 2.5rem;
-      }
-    }
-
     &--h1 {
       font-weight: 400;
       font-size: 3rem;
@@ -102,27 +89,47 @@ ABOUT
       color: $clr-primary-5;
     }
 
-    &--skills {
+    &--skills-container {
       display: grid;
       justify-content: center;
       align-items: center;
+      grid-template-columns: 1fr;
+      // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+      // margin: auto;
+      padding: 0 5rem;
+      // min-width: 100%;
+
+      @include respond(bp-medium-650) {
+        padding: 0 2.5rem;
+      }
+    }
+
+    &--skills {
+      // display: grid;
+      // justify-content: center;
+      // align-items: center;
       // grid-template-columns: repeat(auto-fill, 2.5rem);
+      // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      // grid-template-columns: 1fr;
       // column-gap: 5rem;
       width: 100%;
 
       svg {
-        // display: inline-block;
-        max-width: 5rem;
-        min-width: 2.5rem;
-        width: 100%;
+        // max-width: fit-content;
+        // min-width: 2.5rem;
+        // width: 100%;
       }
     }
 
     &--skill {
-      display: grid;
-      width: fit-content;
-      justify-content: center;
-      align-items: center;
+      // max-width: fit-content;
+      // min-width: fit-content;
+      // width: 100%;
+      // display: grid;
+      // width: fit-content;
+      // justify-content: center;
+      // align-items: center;
     }
 
     // &--skill-html5,

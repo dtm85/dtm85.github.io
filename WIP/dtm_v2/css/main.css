@@ -379,26 +379,6 @@ ABOUT
           align-items: center;
 }
 
-.about__content--container {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: auto;
-  padding: 0 5rem;
-  min-width: 100%;
-}
-
-@media only screen and (max-width: 40.625em) {
-  .about__content--container {
-    padding: 0 2.5rem;
-  }
-}
-
 .about__content--h1 {
   font-weight: 400;
   font-size: 3rem;
@@ -407,36 +387,28 @@ ABOUT
   color: #0ef;
 }
 
+.about__content--skills-container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 0 5rem;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .about__content--skills-container {
+    padding: 0 2.5rem;
+  }
+}
+
 .about__content--skills {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
-}
-
-.about__content--skills svg {
-  max-width: 5rem;
-  min-width: 2.5rem;
-  width: 100%;
-}
-
-.about__content--skill {
-  display: -ms-grid;
-  display: grid;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 /* 
