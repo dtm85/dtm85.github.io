@@ -4,7 +4,7 @@ Fonts
 =====
 */
 @font-face {
-  font-family: "NeoTech-Regular";
+  font-family: "Neo Tech";
   src: url("../../media/fonts/NeoTech-Regular(400).otf") format("opentype");
   /* 300 (Light), 400 (Regular), 500 (Medium), 600 (Bold), 800 (Bolder / Dark) */
 }
@@ -347,6 +347,7 @@ ABOUT
   float: left;
   shape-outside: circle(50% at 50% 50%);
   margin-right: 3rem;
+  margin-bottom: 0.905rem;
 }
 
 @media only screen and (max-width: 40.625em) {
@@ -377,6 +378,7 @@ ABOUT
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Skills UL of SVG's  */
 }
 
 .about__content--h1 {
@@ -388,17 +390,10 @@ ABOUT
 }
 
 .about__content--skills-container {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  background-color: coral;
+  margin: 0 auto;
   padding: 0 5rem;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 40.625em) {
@@ -407,8 +402,33 @@ ABOUT
   }
 }
 
+.about__content--skills-ul-container {
+  margin: 0 auto;
+  background-color: brown;
+  width: 80%;
+}
+
 .about__content--skills {
-  width: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.about__content--skills svg {
+  position: relative;
+  background-color: cadetblue;
+  max-height: 4rem;
+  width: 10%;
+}
+
+.about__content--skill {
+  display: block;
 }
 
 /* 
