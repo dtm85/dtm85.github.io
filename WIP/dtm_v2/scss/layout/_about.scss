@@ -92,33 +92,32 @@ ABOUT
 
     &--skills-container {
       // background-color: coral;
-      margin: 0 auto;
       padding: 0 5rem;
-      max-width: 100%;
 
-      @include respond(bp-medium-650) {
-        padding: 0 2.5rem;
-      }
+      // @include respond(bp-medium-650) {
+      //   padding: 0 2.5rem;
+      // }
     }
 
     &--skills-ul-container {
       margin: 0 auto;
+      // padding: 0 15rem;
       // background-color: brown;
-      width: 80%;
+      width: 65%;
     }
 
     /* Skills UL of SVG's  */
     &--skills {
       margin: 0 auto;
       display: grid;
-      grid-template-columns: repeat(6, minmax(2.5rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
       gap: 3rem;
       // background-color: burlywood;
 
       svg {
         position: relative;
         // background-color: cadetblue;
-        max-height: 4rem;
+        max-height: 5rem;
       }
     }
 

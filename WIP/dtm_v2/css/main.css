@@ -390,34 +390,26 @@ ABOUT
 }
 
 .about__content--skills-container {
-  margin: 0 auto;
   padding: 0 5rem;
-  max-width: 100%;
-}
-
-@media only screen and (max-width: 40.625em) {
-  .about__content--skills-container {
-    padding: 0 2.5rem;
-  }
 }
 
 .about__content--skills-ul-container {
   margin: 0 auto;
-  width: 80%;
+  width: 65%;
 }
 
 .about__content--skills {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(2.5rem, 1fr))[6];
-      grid-template-columns: repeat(6, minmax(2.5rem, 1fr));
+  -ms-grid-columns: (minmax(5rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
   gap: 3rem;
 }
 
 .about__content--skills svg {
   position: relative;
-  max-height: 4rem;
+  max-height: 5rem;
 }
 
 .about__content--skill {
