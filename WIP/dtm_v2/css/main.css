@@ -410,8 +410,9 @@ ABOUT
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(2.5rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
+  -ms-grid-columns: (minmax(2.5rem, 1fr))[6];
+      grid-template-columns: repeat(6, minmax(2.5rem, 1fr));
+  gap: 3rem;
 }
 
 .about__content--skills svg {
