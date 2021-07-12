@@ -91,11 +91,10 @@ ABOUT
     }
 
     &--skills-container {
-      background-color: coral;
+      // background-color: coral;
       margin: 0 auto;
       padding: 0 5rem;
       max-width: 100%;
-      // min-height: 1rem;
 
       @include respond(bp-medium-650) {
         padding: 0 2.5rem;
@@ -103,12 +102,8 @@ ABOUT
     }
 
     &--skills-ul-container {
-      // display: grid;
-      // justify-content: center;
-      // align-items: center;
-      // grid-template-columns: 1fr;
       margin: 0 auto;
-      background-color: brown;
+      // background-color: brown;
       width: 80%;
     }
 
@@ -116,22 +111,18 @@ ABOUT
     &--skills {
       margin: 0 auto;
       display: grid;
-      justify-content: end;
-      align-items: end;
+      grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
       // background-color: burlywood;
 
       svg {
         position: relative;
-        background-color: cadetblue;
+        // background-color: cadetblue;
         max-height: 4rem;
-        width: 10%;
       }
     }
 
     &--skill {
-      display: block;
-      // max-width: fit-content;
-      // min-width: fit-content;
+      display: flex;
     }
 
     // &--skill-html5,
@@ -149,4 +140,9 @@ ABOUT
     //   width: 2rem;
     // }
   }
+}
+
+/* Nginx inner N color fix */
+#nginx-inner-color {
+  fill: #272727f2;
 }

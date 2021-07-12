@@ -390,7 +390,6 @@ ABOUT
 }
 
 .about__content--skills-container {
-  background-color: coral;
   margin: 0 auto;
   padding: 0 5rem;
   max-width: 100%;
@@ -404,7 +403,6 @@ ABOUT
 
 .about__content--skills-ul-container {
   margin: 0 auto;
-  background-color: brown;
   width: 80%;
 }
 
@@ -412,23 +410,24 @@ ABOUT
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -ms-grid-columns: (minmax(2.5rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
 }
 
 .about__content--skills svg {
   position: relative;
-  background-color: cadetblue;
   max-height: 4rem;
-  width: 10%;
 }
 
 .about__content--skill {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Nginx inner N color fix */
+#nginx-inner-color {
+  fill: #272727f2;
 }
 
 /* 
