@@ -977,7 +977,6 @@ PROJECTS
   grid-column: full-start / full-end;
   position: relative;
   width: 100%;
-  height: auto;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -998,9 +997,13 @@ PROJECTS
       -ms-flex-align: center;
           align-items: center;
   color: #0ef;
-  font-size: 3rem;
   text-align: center;
   margin: 4rem auto;
+}
+
+.projects__heading-container--h1 {
+  font-size: 3rem;
+  font-weight: 400;
 }
 
 .projects__glass-container {
