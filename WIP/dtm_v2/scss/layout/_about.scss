@@ -31,7 +31,7 @@ ABOUT
     margin: 0 auto;
 
     @include respond(bp-medium-650) {
-      padding: 0 1.5rem;
+      padding: 0 3rem;
     }
 
     &--container {
@@ -78,15 +78,19 @@ ABOUT
   }
 
   &__content {
-    margin: 7rem auto 4rem auto;
+    margin: 10rem auto 4rem auto;
     display: grid;
     align-items: center;
+
+    @include respond(bp-medium-650) {
+      margin: 8rem auto 4rem auto;
+    }
 
     &--h1 {
       font-weight: 400;
       font-size: 3rem;
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 5rem;
       color: $clr-primary-5;
     }
 
@@ -97,6 +101,10 @@ ABOUT
       // @include respond(bp-medium-650) {
       //   padding: 0 2.5rem;
       // }
+
+      @include respond(bp-medium-650) {
+        padding: 0 3rem;
+      }
     }
 
     &--skills-ul-container {
@@ -104,6 +112,10 @@ ABOUT
       // padding: 0 15rem;
       // background-color: brown;
       width: 65%;
+
+      @include respond(bp-medium-900) {
+        width: 100%;
+      }
     }
 
     /* Skills UL of SVG's  */
@@ -113,6 +125,10 @@ ABOUT
       grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
       gap: 3rem;
       // background-color: burlywood;
+
+      @include respond(bp-medium-650) {
+        grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+      }
 
       svg {
         position: relative;

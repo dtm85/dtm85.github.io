@@ -4,9 +4,27 @@ Fonts
 =====
 */
 @font-face {
+  font-family: "Neo Tech Light";
+  src: url("../../media/fonts/NeoTech-Light(300).otf") format("opentype");
+  /* 300 (Light), 400 (Regular), 500 (Medium), 700 (Bold), 900 (Bolder / Dark) */
+}
+
+@font-face {
   font-family: "Neo Tech";
   src: url("../../media/fonts/NeoTech-Regular(400).otf") format("opentype");
-  /* 300 (Light), 400 (Regular), 500 (Medium), 600 (Bold), 800 (Bolder / Dark) */
+  /* 300 (Light), 400 (Regular), 500 (Medium), 700 (Bold), 900 (Bolder / Dark) */
+}
+
+@font-face {
+  font-family: "Neo Tech Medium";
+  src: url("../../media/fonts/NeoTech-Medium(500).otf") format("opentype");
+  /* 300 (Light), 400 (Regular), 500 (Medium), 700 (Bold), 900 (Bolder / Dark) */
+}
+
+@font-face {
+  font-family: "Neo Tech Bold";
+  src: url("../../media/fonts/NeoTech-Bold(700).otf") format("opentype");
+  /* 300 (Light), 400 (Regular), 500 (Medium), 700 (Bold), 900 (Bolder / Dark) */
 }
 
 /* 
@@ -317,7 +335,7 @@ ABOUT
 
 @media only screen and (max-width: 40.625em) {
   .about__picture {
-    padding: 0 1.5rem;
+    padding: 0 3rem;
   }
 }
 
@@ -372,7 +390,7 @@ ABOUT
 }
 
 .about__content {
-  margin: 7rem auto 4rem auto;
+  margin: 10rem auto 4rem auto;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -381,11 +399,17 @@ ABOUT
   /* Skills UL of SVG's  */
 }
 
+@media only screen and (max-width: 40.625em) {
+  .about__content {
+    margin: 8rem auto 4rem auto;
+  }
+}
+
 .about__content--h1 {
   font-weight: 400;
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   color: #0ef;
 }
 
@@ -393,9 +417,21 @@ ABOUT
   padding: 0 5rem;
 }
 
+@media only screen and (max-width: 40.625em) {
+  .about__content--skills-container {
+    padding: 0 3rem;
+  }
+}
+
 .about__content--skills-ul-container {
   margin: 0 auto;
   width: 65%;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .about__content--skills-ul-container {
+    width: 100%;
+  }
 }
 
 .about__content--skills {
@@ -405,6 +441,13 @@ ABOUT
   -ms-grid-columns: (minmax(5rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
   gap: 3rem;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .about__content--skills {
+    -ms-grid-columns: (minmax(2rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+  }
 }
 
 .about__content--skills svg {
@@ -531,7 +574,7 @@ HEADER
   color: #0ef;
   position: absolute;
   margin-left: 10px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .header__hero-text-h2 .header__hero-text-h2--span > .txt {
@@ -548,7 +591,7 @@ HEADER
   left: 0;
 }
 
-@media only screen and (max-width: 40.625em) {
+@media only screen and (max-width: 59.375em) {
   .header__social-container {
     margin-left: 0;
     position: relative;
@@ -568,7 +611,7 @@ HEADER
   transition: all 0.25s ease-in-out;
 }
 
-@media only screen and (max-width: 40.625em) {
+@media only screen and (max-width: 59.375em) {
   .header__social-container--list {
     display: -ms-grid;
     display: grid;
@@ -591,7 +634,7 @@ HEADER
   margin-top: 3.5rem;
 }
 
-@media only screen and (max-width: 40.625em) {
+@media only screen and (max-width: 59.375em) {
   .header__social-container--item {
     margin-top: 0;
     height: -webkit-fit-content;

@@ -27,6 +27,12 @@
     }
   }
 
+  @if $breakpoint == bp-medium-900 {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+
   @if $breakpoint == bp-medium-767-maxwidth {
     @media only screen and (max-width: 47.938em) {
       @content;
