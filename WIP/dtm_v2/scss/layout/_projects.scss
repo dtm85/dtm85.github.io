@@ -16,6 +16,54 @@ PROJECTS
   justify-items: center;
   overflow: hidden;
 
+  &__glass-container {
+    /* Glass Container that holds all the project cards */
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    margin: 3rem auto;
+    padding: 3rem;
+    overflow: hidden;
+    position: relative;
+
+    &__card-wrapper {
+      /* Project Cards GLOBAL */
+      background: rgba(23, 23, 23, 0.9);
+      box-shadow: 0 2px 8px 0 #1f2687b3;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 25px;
+      position: relative;
+      width: 320px;
+      height: 450px;
+      overflow: hidden;
+      will-change: transform;
+
+      &__card-wrapper::before {
+        /* Project Circle with Image of project before hover GLOBAL */
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        clip-path: circle(150px at 80% 20%);
+        transition: 0.55s ease-in-out;
+      }
+
+      /* Project Circle with Image of project on hover - Circle will move to the left GLOBAL */
+      &__card-wrapper:hover::before {
+        clip-path: circle(300px at 80% -20%);
+      }
+      /* Project 1 Image for Circle */
+
+      &__card-wrapper-project1::before {
+        background: url(../../../../media/images/projects/tea-station/main-bcg.png)
+          center/cover no-repeat;
+      }
+    }
+  }
+
   &__heading-container {
     /* Projects Heading Container GLOBAL */
     display: flex;
@@ -30,15 +78,18 @@ PROJECTS
       font-weight: 400;
     }
   }
-
-  &__glass-container {
-    background: rgba(0, 0, 0, 0.9);
-    box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 25px;
-    margin: 3rem auto;
-    padding: 3rem;
-    overflow: hidden;
-    position: relative;
-  }
 }
+
+///////////////////////////////////
+// MEDIA QUERIES 4 PROJECT CARDS //
+///////////////////////////////////
+// .projects-heading-container {
+//     display: block;
+//     padding: 8%;
+//   }
+
+//   .projects-heading {
+//     font-size: 3rem;
+//     display: inline-block;
+//     margin: 0;
+//   }

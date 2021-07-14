@@ -461,11 +461,6 @@ ABOUT
   display: flex;
 }
 
-/* Nginx inner N color fix */
-#nginx-inner-color {
-  fill: #272727f2;
-}
-
 /* 
 =======
 CONTACT
@@ -986,6 +981,58 @@ PROJECTS
   overflow: hidden;
 }
 
+.projects__glass-container {
+  /* Glass Container that holds all the project cards */
+  background: rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+          box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  margin: 3rem auto;
+  padding: 3rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.projects__glass-container__card-wrapper {
+  /* Project Cards GLOBAL */
+  background: rgba(23, 23, 23, 0.9);
+  -webkit-box-shadow: 0 2px 8px 0 #1f2687b3;
+          box-shadow: 0 2px 8px 0 #1f2687b3;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  position: relative;
+  width: 320px;
+  height: 450px;
+  overflow: hidden;
+  will-change: transform;
+  /* Project Circle with Image of project on hover - Circle will move to the left GLOBAL */
+  /* Project 1 Image for Circle */
+}
+
+.projects__glass-container__card-wrapper__card-wrapper::before {
+  /* Project Circle with Image of project before hover GLOBAL */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: circle(150px at 80% 20%);
+          clip-path: circle(150px at 80% 20%);
+  -webkit-transition: 0.55s ease-in-out;
+  transition: 0.55s ease-in-out;
+}
+
+.projects__glass-container__card-wrapper__card-wrapper:hover::before {
+  -webkit-clip-path: circle(300px at 80% -20%);
+          clip-path: circle(300px at 80% -20%);
+}
+
+.projects__glass-container__card-wrapper__card-wrapper-project1::before {
+  background: url(../../../../media/images/projects/tea-station/main-bcg.png) center/cover no-repeat;
+}
+
 .projects__heading-container {
   /* Projects Heading Container GLOBAL */
   display: -webkit-box;
@@ -1004,18 +1051,6 @@ PROJECTS
 .projects__heading-container--h1 {
   font-size: 3rem;
   font-weight: 400;
-}
-
-.projects__glass-container {
-  background: rgba(0, 0, 0, 0.9);
-  -webkit-box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
-          box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 25px;
-  margin: 3rem auto;
-  padding: 3rem;
-  overflow: hidden;
-  position: relative;
 }
 
 .container {
