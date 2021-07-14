@@ -981,6 +981,26 @@ PROJECTS
   overflow: hidden;
 }
 
+.projects__heading-container {
+  /* Projects Heading Container GLOBAL */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #0ef;
+  text-align: center;
+  margin: 4rem auto;
+}
+
+.projects__heading-container--h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
 .projects__glass-container {
   /* Glass Container that holds all the project cards */
   background: rgba(0, 0, 0, 0.9);
@@ -1007,10 +1027,13 @@ PROJECTS
   overflow: hidden;
   will-change: transform;
   /* Project Circle with Image of project on hover - Circle will move to the left GLOBAL */
-  /* Project 1 Image for Circle */
 }
 
-.projects__glass-container__card-wrapper__card-wrapper::before {
+.projects__glass-container__card-wrapper:hover .projects__glass-container__card-wrapper__project-content {
+  height: 225px;
+}
+
+.projects__glass-container__card-wrapper::before {
   /* Project Circle with Image of project before hover GLOBAL */
   content: "";
   position: absolute;
@@ -1024,33 +1047,14 @@ PROJECTS
   transition: 0.55s ease-in-out;
 }
 
-.projects__glass-container__card-wrapper__card-wrapper:hover::before {
+.projects__glass-container__card-wrapper:hover::before {
   -webkit-clip-path: circle(300px at 80% -20%);
           clip-path: circle(300px at 80% -20%);
 }
 
-.projects__glass-container__card-wrapper__card-wrapper-project1::before {
+.projects__glass-container__card-wrapper-project1::before {
+  /* Project 1 Image for Circle */
   background: url(../../../../media/images/projects/tea-station/main-bcg.png) center/cover no-repeat;
-}
-
-.projects__heading-container {
-  /* Projects Heading Container GLOBAL */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #0ef;
-  text-align: center;
-  margin: 4rem auto;
-}
-
-.projects__heading-container--h1 {
-  font-size: 3rem;
-  font-weight: 400;
 }
 
 .container {

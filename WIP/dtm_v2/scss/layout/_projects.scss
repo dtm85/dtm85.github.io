@@ -16,6 +16,21 @@ PROJECTS
   justify-items: center;
   overflow: hidden;
 
+  &__heading-container {
+    /* Projects Heading Container GLOBAL */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $clr-primary-5;
+    text-align: center;
+    margin: 4rem auto;
+
+    &--h1 {
+      font-size: 3rem;
+      font-weight: 400;
+    }
+  }
+
   &__glass-container {
     /* Glass Container that holds all the project cards */
     background: rgba(0, 0, 0, 0.9);
@@ -39,7 +54,11 @@ PROJECTS
       overflow: hidden;
       will-change: transform;
 
-      &__card-wrapper::before {
+      &:hover &__project-content {
+        height: 225px;
+      }
+
+      &::before {
         /* Project Circle with Image of project before hover GLOBAL */
         content: "";
         position: absolute;
@@ -52,30 +71,15 @@ PROJECTS
       }
 
       /* Project Circle with Image of project on hover - Circle will move to the left GLOBAL */
-      &__card-wrapper:hover::before {
+      &:hover::before {
         clip-path: circle(300px at 80% -20%);
       }
-      /* Project 1 Image for Circle */
 
-      &__card-wrapper-project1::before {
+      &-project1::before {
+        /* Project 1 Image for Circle */
         background: url(../../../../media/images/projects/tea-station/main-bcg.png)
           center/cover no-repeat;
       }
-    }
-  }
-
-  &__heading-container {
-    /* Projects Heading Container GLOBAL */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: $clr-primary-5;
-    text-align: center;
-    margin: 4rem auto;
-
-    &--h1 {
-      font-size: 3rem;
-      font-weight: 400;
     }
   }
 }
