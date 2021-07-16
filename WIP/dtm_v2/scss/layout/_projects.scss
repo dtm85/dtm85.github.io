@@ -81,6 +81,16 @@ PROJECTS
           center/cover no-repeat;
       }
     }
+
+    &__card-wrapper-project-content {
+      &--h2 {
+        position: relative;
+        letter-spacing: 2px;
+        color: silver;
+        font-size: 20rem;
+        margin: 0 auto;
+      }
+    }
   }
 }
 

@@ -1057,6 +1057,14 @@ PROJECTS
   background: url(../../../../media/images/projects/tea-station/main-bcg.png) center/cover no-repeat;
 }
 
+.projects__glass-container__card-wrapper-project-content--h2 {
+  position: relative;
+  letter-spacing: 2px;
+  color: silver;
+  font-size: 20rem;
+  margin: 0 auto;
+}
+
 .container {
   display: -ms-grid;
   display: grid;
