@@ -16,21 +16,6 @@ PROJECTS
   justify-items: center;
   overflow: hidden;
 
-  &__heading-container {
-    /* Projects Heading Container GLOBAL */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: $clr-primary-5;
-    text-align: center;
-    margin: 4rem auto;
-
-    &--h1 {
-      font-size: 3rem;
-      font-weight: 400;
-    }
-  }
-
   &__glass-container {
     /* Glass Container that holds all the project cards */
     background: rgba(0, 0, 0, 0.9);
@@ -39,8 +24,23 @@ PROJECTS
     border-radius: 25px;
     margin: 3rem auto;
     padding: 3rem;
-    overflow: hidden;
+    // overflow: hidden;
     position: relative;
+
+    &__heading-container {
+      /* Projects Heading Container GLOBAL */
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: $clr-primary-5;
+      text-align: center;
+      margin: 4rem auto;
+
+      &--h1 {
+        font-size: 3rem;
+        font-weight: 400;
+      }
+    }
 
     &__card-wrapper {
       /* Project Cards GLOBAL */
@@ -53,10 +53,6 @@ PROJECTS
       height: 450px;
       overflow: hidden;
       will-change: transform;
-
-      &:hover &__project-content {
-        height: 225px;
-      }
 
       &::before {
         /* Project Circle with Image of project before hover GLOBAL */
@@ -75,20 +71,29 @@ PROJECTS
         clip-path: circle(300px at 80% -20%);
       }
 
-      &-project1::before {
+      &:hover {
+        background-color: aqua;
+      }
+
+      &--project1::before {
         /* Project 1 Image for Circle */
         background: url(../../../../media/images/projects/tea-station/main-bcg.png)
           center/cover no-repeat;
       }
-    }
 
-    &__card-wrapper-project-content {
-      &--h2 {
-        position: relative;
-        letter-spacing: 2px;
-        color: silver;
-        font-size: 20rem;
-        margin: 0 auto;
+      &:hover &--project-content {
+        height: 225px;
+        background-color: aquamarine;
+      }
+
+      &--project-content {
+        &--h2 {
+          position: relative;
+          letter-spacing: 2px;
+          color: silver;
+          font-size: 20rem;
+          margin: 0 auto;
+        }
       }
     }
   }

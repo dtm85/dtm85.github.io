@@ -981,7 +981,19 @@ PROJECTS
   overflow: hidden;
 }
 
-.projects__heading-container {
+.projects__glass-container {
+  /* Glass Container that holds all the project cards */
+  background: rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+          box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  margin: 3rem auto;
+  padding: 3rem;
+  position: relative;
+}
+
+.projects__glass-container__heading-container {
   /* Projects Heading Container GLOBAL */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -996,22 +1008,9 @@ PROJECTS
   margin: 4rem auto;
 }
 
-.projects__heading-container--h1 {
+.projects__glass-container__heading-container--h1 {
   font-size: 3rem;
   font-weight: 400;
-}
-
-.projects__glass-container {
-  /* Glass Container that holds all the project cards */
-  background: rgba(0, 0, 0, 0.9);
-  -webkit-box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
-          box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 25px;
-  margin: 3rem auto;
-  padding: 3rem;
-  overflow: hidden;
-  position: relative;
 }
 
 .projects__glass-container__card-wrapper {
@@ -1027,10 +1026,6 @@ PROJECTS
   overflow: hidden;
   will-change: transform;
   /* Project Circle with Image of project on hover - Circle will move to the left GLOBAL */
-}
-
-.projects__glass-container__card-wrapper:hover .projects__glass-container__card-wrapper__project-content {
-  height: 225px;
 }
 
 .projects__glass-container__card-wrapper::before {
@@ -1052,12 +1047,21 @@ PROJECTS
           clip-path: circle(300px at 80% -20%);
 }
 
-.projects__glass-container__card-wrapper-project1::before {
+.projects__glass-container__card-wrapper:hover {
+  background-color: aqua;
+}
+
+.projects__glass-container__card-wrapper--project1::before {
   /* Project 1 Image for Circle */
   background: url(../../../../media/images/projects/tea-station/main-bcg.png) center/cover no-repeat;
 }
 
-.projects__glass-container__card-wrapper-project-content--h2 {
+.projects__glass-container__card-wrapper:hover .projects__glass-container__card-wrapper--project-content {
+  height: 225px;
+  background-color: aquamarine;
+}
+
+.projects__glass-container__card-wrapper--project-content--h2 {
   position: relative;
   letter-spacing: 2px;
   color: silver;
