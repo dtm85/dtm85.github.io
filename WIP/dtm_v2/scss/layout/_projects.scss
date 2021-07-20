@@ -72,6 +72,42 @@ PROJECTS
       transition: 0.7s ease-in-out;
       z-index: 1;
       will-change: transform;
+
+      &--h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        color: silver;
+      }
+
+      &--btn {
+        /* View Project Button Styling GLOBAL */
+        display: inline-block;
+        padding: 10px 20px;
+        background: rgba(112, 128, 144, 0.4);
+        border-radius: 25px;
+        margin-top: 1.5rem;
+        opacity: 0;
+        transition: 0.65s ease-in-out;
+        transform: translateY(110px);
+        letter-spacing: 1.5px;
+        padding-top: 13px;
+
+        &:hover {
+          /* View Projects Button Styling on Hover GLOBAL */
+          background: #00eeff;
+          color: #1f1f1f;
+          transition: 0.5s ease-in-out;
+          box-shadow: 0 0 10px 2px #00eeff;
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    &:hover &--btn {
+      /* Project Card Hover - Styling for View Projects Button on Hover - Transition Effect GLOBAL */
+      opacity: 1;
+      transition: 0.5s ease-in-out;
+      transform: translateY(0px);
     }
 
     &::before {
@@ -93,7 +129,7 @@ PROJECTS
 
     &--project1::before {
       /* Project 1 Image for Circle */
-      background: url(/dtm85.github.io/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png)
+      background: url("../../../../media/images/projects/tea-station/main-bcg.png")
         center/cover no-repeat;
     }
 
@@ -140,6 +176,7 @@ PROJECTS
     // }
 
     &:hover &--project-content {
+      /* Project Content moves up on Hover GLOBAL */
       height: 225px;
     }
   }

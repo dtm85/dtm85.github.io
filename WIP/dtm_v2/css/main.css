@@ -1052,6 +1052,49 @@ PROJECTS
   will-change: transform;
 }
 
+.projects__card-wrapper--project-content--h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: silver;
+}
+
+.projects__card-wrapper--project-content--btn {
+  /* View Project Button Styling GLOBAL */
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgba(112, 128, 144, 0.4);
+  border-radius: 25px;
+  margin-top: 1.5rem;
+  opacity: 0;
+  -webkit-transition: 0.65s ease-in-out;
+  transition: 0.65s ease-in-out;
+  -webkit-transform: translateY(110px);
+          transform: translateY(110px);
+  letter-spacing: 1.5px;
+  padding-top: 13px;
+}
+
+.projects__card-wrapper--project-content--btn:hover {
+  /* View Projects Button Styling on Hover GLOBAL */
+  background: #00eeff;
+  color: #1f1f1f;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-box-shadow: 0 0 10px 2px #00eeff;
+          box-shadow: 0 0 10px 2px #00eeff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.projects__card-wrapper:hover .projects__card-wrapper--btn {
+  /* Project Card Hover - Styling for View Projects Button on Hover - Transition Effect GLOBAL */
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
 .projects__card-wrapper::before {
   /* Project Circle with Image of project before hover GLOBAL */
   content: "";
@@ -1074,10 +1117,11 @@ PROJECTS
 
 .projects__card-wrapper--project1::before {
   /* Project 1 Image for Circle */
-  background: url(/dtm85.github.io/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png) center/cover no-repeat;
+  background: url("../../../../media/images/projects/tea-station/main-bcg.png") center/cover no-repeat;
 }
 
 .projects__card-wrapper:hover .projects__card-wrapper--project-content {
+  /* Project Content moves up on Hover GLOBAL */
   height: 225px;
 }
 
