@@ -49,7 +49,7 @@ PROJECTS
     display: grid;
     gap: 50px;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-template-areas: "glass-container";
+    // grid-template-areas: "glass-container";
     justify-items: center;
     justify-content: center;
     background: $background-card-dark-grey;
@@ -170,6 +170,30 @@ PROJECTS
           transition: 0.5s ease-in-out;
           box-shadow: 0 0 10px 2px $clr-primary-5;
           transform: scale(1.1);
+        }
+      }
+
+      &--github-container {
+        margin-top: 20px;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        transition: 0.55s ease-in-out;
+        transform: translateY(100px);
+
+        &--github {
+          width: 30px;
+          height: auto;
+          color: silver;
+          transition: 0.4s ease-in-out;
+
+          &:hover {
+            color: #6e5494;
+            transition: 0.4s ease-in-out;
+          }
         }
       }
     }

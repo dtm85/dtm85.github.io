@@ -1022,7 +1022,6 @@ PROJECTS
   gap: 50px;
   -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      grid-template-areas: "glass-container";
   justify-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1115,6 +1114,40 @@ PROJECTS
           box-shadow: 0 0 10px 2px #0ef;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.projects__card-wrapper--project-content--github-container {
+  margin-top: 20px;
+  width: 100%;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+  -webkit-transition: 0.55s ease-in-out;
+  transition: 0.55s ease-in-out;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+
+.projects__card-wrapper--project-content--github-container--github {
+  width: 30px;
+  height: auto;
+  color: silver;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.projects__card-wrapper--project-content--github-container--github:hover {
+  color: #6e5494;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .projects__card-wrapper:hover .projects__card-wrapper--project-content--btn {
