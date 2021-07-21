@@ -1004,8 +1004,8 @@ PROJECTS
 .projects__glass-container {
   /* Glass Container that holds all the project cards */
   background: rgba(0, 0, 0, 0.9);
-  -webkit-box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
-          box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+  -webkit-box-shadow: 0 2px 8px 0 #1f2687b3;
+          box-shadow: 0 2px 8px 0 #1f2687b3;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 25px;
   margin: 3rem auto;
@@ -1039,62 +1039,6 @@ PROJECTS
   will-change: transform;
 }
 
-.projects__card-wrapper--project-content {
-  /* Project Card Content GLOBAL */
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  text-align: center;
-  -webkit-transition: 0.7s ease-in-out;
-  transition: 0.7s ease-in-out;
-  z-index: 1;
-  will-change: transform;
-}
-
-.projects__card-wrapper--project-content--h2 {
-  font-size: 2rem;
-  font-weight: 400;
-  color: silver;
-}
-
-.projects__card-wrapper--project-content--btn {
-  /* View Project Button Styling GLOBAL */
-  display: inline-block;
-  padding: 10px 20px;
-  background: rgba(112, 128, 144, 0.4);
-  border-radius: 25px;
-  margin-top: 1.5rem;
-  opacity: 0;
-  -webkit-transition: 0.65s ease-in-out;
-  transition: 0.65s ease-in-out;
-  -webkit-transform: translateY(110px);
-          transform: translateY(110px);
-  letter-spacing: 1.5px;
-  padding-top: 13px;
-}
-
-.projects__card-wrapper--project-content--btn:hover {
-  /* View Projects Button Styling on Hover GLOBAL */
-  background: #00eeff;
-  color: #1f1f1f;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  -webkit-box-shadow: 0 0 10px 2px #00eeff;
-          box-shadow: 0 0 10px 2px #00eeff;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.projects__card-wrapper:hover .projects__card-wrapper--btn {
-  /* Project Card Hover - Styling for View Projects Button on Hover - Transition Effect GLOBAL */
-  opacity: 1;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-}
-
 .projects__card-wrapper::before {
   /* Project Circle with Image of project before hover GLOBAL */
   content: "";
@@ -1117,12 +1061,69 @@ PROJECTS
 
 .projects__card-wrapper--project1::before {
   /* Project 1 Image for Circle */
-  background: url("../../../../media/images/projects/tea-station/main-bcg.png") center/cover no-repeat;
+  background: url(/dtm85.github.io/media/images/projects/tea-station/main-bcg.png) center/cover no-repeat;
 }
 
 .projects__card-wrapper:hover .projects__card-wrapper--project-content {
   /* Project Content moves up on Hover GLOBAL */
   height: 225px;
+}
+
+.projects__card-wrapper--project-content {
+  /* Project Card Content GLOBAL */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+  z-index: 1;
+  will-change: transform;
+}
+
+.projects__card-wrapper--project-content--h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #c0c0c0;
+}
+
+.projects__card-wrapper--project-content--btn {
+  /* View Project Button Styling GLOBAL */
+  display: inline-block;
+  padding: 10px 20px;
+  color: #0ef;
+  background: #70809066;
+  border-radius: 25px;
+  margin-top: 1.5rem;
+  opacity: 0;
+  -webkit-transition: 0.65s ease-in-out;
+  transition: 0.65s ease-in-out;
+  -webkit-transform: translateY(110px);
+          transform: translateY(110px);
+  letter-spacing: 1.5px;
+  padding-top: 13px;
+}
+
+.projects__card-wrapper--project-content--btn:hover {
+  /* View Projects Button Styling on Hover GLOBAL */
+  background: #0ef;
+  color: #1f1f1f;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-box-shadow: 0 0 10px 2px #0ef;
+          box-shadow: 0 0 10px 2px #0ef;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.projects__card-wrapper:hover .projects__card-wrapper--project-content--btn {
+  /* Project Card Hover - Styling for View Projects Button on Hover - Transition Effect GLOBAL */
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 .container {

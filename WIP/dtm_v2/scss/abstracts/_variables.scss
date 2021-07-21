@@ -89,12 +89,17 @@ $clr-grey-9: #ccc;
 $clr-grey-10: #ddd;
 $clr-grey-11: #eee;
 $clr-grey-light-1: #f9f7f6; // grey-light-1
+
+// Text
+$clr-silver: #c0c0c0; // Text Color
 $clr-white: #fff;
 $clr-black: #000;
 
 // Button Colors
-$clr-button-hover-text-grey: #474747; // Text Changes to grey on HOVER
-$clr-button-background-grey: #808080; // Background color of Buttons
+$clr-button-hover-text-grey: #474747; // Text color for buttons
+$clr-button-hover-text-grey-alt: #1f1f1f; // Alternate Text color for buttons
+$clr-button-background-grey: #808080; // Background color for Buttons
+$clr-button-background-grey-alt: #70809066; // Alternate Background color for buttons
 
 // Font
 $ff-neotech: "Neo Tech", sans-serif;
@@ -109,6 +114,13 @@ $spacing: 0.1rem;
 // Radius
 $radius: 0.5rem;
 $btn-radius: 1.875rem;
+
+// Backgrounds
+$background-glass-container: rgba(0, 0, 0, 0.9);
+$background-card-dark-grey: rgba(23, 23, 23, 0.9);
+
+// Borders
+$border-light-grey: rgba(255, 255, 255, 0.1);
 
 // Shadows
 $light-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.1);
