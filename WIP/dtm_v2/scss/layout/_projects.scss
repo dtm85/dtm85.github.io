@@ -174,8 +174,9 @@ PROJECTS
       }
 
       &--github-container {
-        margin-top: 20px;
+        // margin-top: 20px;
         width: 100%;
+        height: 30px;
         bottom: 0;
         display: flex;
         justify-content: center;
@@ -185,8 +186,10 @@ PROJECTS
         transform: translateY(100px);
 
         &--github {
+          // display: inline-block;
+          background-color: skyblue;
           width: 30px;
-          height: auto;
+          height: fit-content;
           color: silver;
           transition: 0.4s ease-in-out;
 

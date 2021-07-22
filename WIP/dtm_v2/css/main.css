@@ -1117,8 +1117,8 @@ PROJECTS
 }
 
 .projects__card-wrapper--project-content--github-container {
-  margin-top: 20px;
   width: 100%;
+  height: 30px;
   bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1137,8 +1137,11 @@ PROJECTS
 }
 
 .projects__card-wrapper--project-content--github-container--github {
+  background-color: skyblue;
   width: 30px;
-  height: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   color: silver;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
