@@ -186,8 +186,10 @@ PROJECTS
         transform: translateY(100px);
 
         &--github {
-          // display: inline-block;
+          display: flex;
           background-color: skyblue;
+          padding: 0;
+          margin: 0;
           width: 30px;
           height: fit-content;
           color: silver;

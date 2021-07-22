@@ -1137,7 +1137,12 @@ PROJECTS
 }
 
 .projects__card-wrapper--project-content--github-container--github {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: skyblue;
+  padding: 0;
+  margin: 0;
   width: 30px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
