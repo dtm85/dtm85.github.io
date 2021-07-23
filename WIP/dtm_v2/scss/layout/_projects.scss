@@ -175,23 +175,19 @@ PROJECTS
 
       &--github-container {
         // margin-top: 20px;
-        width: 100%;
-        height: 30px;
-        // bottom: 0;
-        position: absolute; // test <-- turn this off when done
-        top: 0; // test <-- turn this off when done
+        width: 30px;
+        bottom: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        opacity: 1; // test <-- turn this off when done
+        opacity: 0; // test <-- turn this off when done
         transition: 0.55s ease-in-out;
         transform: translateY(100px);
 
         &--github {
-          // display: inline-block;
-          background-color: skyblue;
-          width: 30px;
-          height: 30px;
+          // display: block;
+          width: 60px;
+          height: 60px;
           color: silver;
           transition: 0.4s ease-in-out;
 
