@@ -176,13 +176,13 @@ PROJECTS
       &--github-container {
         // margin-top: 20px;
         width: 30px;
-        bottom: 0;
+        // bottom: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        opacity: 0; // test <-- turn this off when done
+        opacity: 1; // test <-- turn this off when done
         transition: 0.55s ease-in-out;
-        transform: translateY(100px);
+        // transform: translateY(100px);
 
         &--github {
           // display: block;
@@ -190,6 +190,7 @@ PROJECTS
           height: 60px;
           color: silver;
           transition: 0.4s ease-in-out;
+          display: none;
 
           &:hover {
             color: #6e5494;
@@ -200,7 +201,7 @@ PROJECTS
 
       &--code-languages {
         /* Code Languages Container GLOBAL */
-        width: 100%;
+        width: 35%;
         height: 50px;
         // margin: 42px 0 0 15px;
         display: flex;
@@ -211,8 +212,8 @@ PROJECTS
 
         &--html5 {
           /* HTML5 Icon Styling */
-          width: 15px;
-          height: 15px;
+          width: fit-content;
+          height: fit-content;
           color: silver;
           margin: 0 10px;
           transition: 0.4s ease-in-out;
@@ -226,23 +227,23 @@ PROJECTS
 
         &--css3 {
           /* CSS3 Icon Styling */
-          width: 15px;
-          height: 15px;
+          width: fit-content;
+          height: fit-content;
           color: silver;
           margin: 0 10px;
           transition: 0.4s ease-in-out;
 
           &:hover {
             /* CSS3 Icon Styling on Hover */
-            color: #dc4d25;
+            color: #254bdd;
             transition: 0.4s ease-in-out;
           }
         }
 
         &--js {
           /* JavaScript Icon Styling */
-          width: 17px;
-          height: 17px;
+          width: fit-content;
+          height: fit-content;
           color: silver;
           margin: 0 10px;
           transition: 0.4s ease-in-out;

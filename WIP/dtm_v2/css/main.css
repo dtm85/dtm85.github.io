@@ -1118,7 +1118,6 @@ PROJECTS
 
 .projects__card-wrapper--project-content--github-container {
   width: 30px;
-  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1128,11 +1127,9 @@ PROJECTS
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: 0.55s ease-in-out;
   transition: 0.55s ease-in-out;
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
 }
 
 .projects__card-wrapper--project-content--github-container--github {
@@ -1141,6 +1138,7 @@ PROJECTS
   color: silver;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
+  display: none;
 }
 
 .projects__card-wrapper--project-content--github-container--github:hover {
@@ -1151,7 +1149,7 @@ PROJECTS
 
 .projects__card-wrapper--project-content--code-languages {
   /* Code Languages Container GLOBAL */
-  width: 100%;
+  width: 35%;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1163,8 +1161,12 @@ PROJECTS
 
 .projects__card-wrapper--project-content--code-languages--html5 {
   /* HTML5 Icon Styling */
-  width: 15px;
-  height: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   color: silver;
   margin: 0 10px;
   -webkit-transition: 0.4s ease-in-out;
@@ -1180,8 +1182,12 @@ PROJECTS
 
 .projects__card-wrapper--project-content--code-languages--css3 {
   /* CSS3 Icon Styling */
-  width: 15px;
-  height: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   color: silver;
   margin: 0 10px;
   -webkit-transition: 0.4s ease-in-out;
@@ -1190,15 +1196,19 @@ PROJECTS
 
 .projects__card-wrapper--project-content--code-languages--css3:hover {
   /* CSS3 Icon Styling on Hover */
-  color: #dc4d25;
+  color: #254bdd;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
 
 .projects__card-wrapper--project-content--code-languages--js {
   /* JavaScript Icon Styling */
-  width: 17px;
-  height: 17px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   color: silver;
   margin: 0 10px;
   -webkit-transition: 0.4s ease-in-out;
