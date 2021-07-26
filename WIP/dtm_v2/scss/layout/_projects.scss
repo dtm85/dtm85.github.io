@@ -174,23 +174,22 @@ PROJECTS
       }
 
       &--github-container {
-        // margin-top: 20px;
-        width: 30px;
-        // bottom: 0;
+        margin-top: 20px;
+        width: 100%;
+        bottom: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        opacity: 1; // test <-- turn this off when done
+        opacity: 0;
         transition: 0.55s ease-in-out;
-        // transform: translateY(100px);
+        transform: translateY(100px);
 
         &--github {
-          // display: block;
-          width: 60px;
-          height: 60px;
+          display: block;
+          width: 30px;
+          height: auto;
           color: silver;
           transition: 0.4s ease-in-out;
-          display: none;
 
           &:hover {
             color: #6e5494;
@@ -205,6 +204,7 @@ PROJECTS
         height: 50px;
         // margin: 42px 0 0 15px;
         display: flex;
+        background-color: aqua;
 
         opacity: 1; // test <-- turn this off when done
         transition: 0.5s ease-in-out;
@@ -212,8 +212,9 @@ PROJECTS
 
         &--html5 {
           /* HTML5 Icon Styling */
+          background-color: aqua;
           width: fit-content;
-          height: fit-content;
+          height: 50px;
           color: silver;
           margin: 0 10px;
           transition: 0.4s ease-in-out;

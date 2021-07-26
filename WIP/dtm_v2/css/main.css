@@ -1117,7 +1117,9 @@ PROJECTS
 }
 
 .projects__card-wrapper--project-content--github-container {
-  width: 30px;
+  margin-top: 20px;
+  width: 100%;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1127,18 +1129,20 @@ PROJECTS
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: 1;
+  opacity: 0;
   -webkit-transition: 0.55s ease-in-out;
   transition: 0.55s ease-in-out;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
 }
 
 .projects__card-wrapper--project-content--github-container--github {
-  width: 60px;
-  height: 60px;
+  display: block;
+  width: 30px;
+  height: auto;
   color: silver;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
-  display: none;
 }
 
 .projects__card-wrapper--project-content--github-container--github:hover {
@@ -1154,6 +1158,7 @@ PROJECTS
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: aqua;
   opacity: 1;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
@@ -1161,12 +1166,11 @@ PROJECTS
 
 .projects__card-wrapper--project-content--code-languages--html5 {
   /* HTML5 Icon Styling */
+  background-color: aqua;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 50px;
   color: silver;
   margin: 0 10px;
   -webkit-transition: 0.4s ease-in-out;
