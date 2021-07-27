@@ -1117,6 +1117,7 @@ PROJECTS
 }
 
 .projects__card-wrapper--project-content--github-container {
+  /* GitHub Icon Layout GLOBAL */
   margin-top: 20px;
   width: 100%;
   bottom: 0;
@@ -1137,7 +1138,7 @@ PROJECTS
 }
 
 .projects__card-wrapper--project-content--github-container--github {
-  display: block;
+  /* GitHub Icon Styling GLOBAL */
   width: 30px;
   height: auto;
   color: silver;
@@ -1146,82 +1147,8 @@ PROJECTS
 }
 
 .projects__card-wrapper--project-content--github-container--github:hover {
+  /* GitHub Icon Transition on Hover GLOBAL */
   color: #6e5494;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-
-.projects__card-wrapper--project-content--code-languages {
-  /* Code Languages Container GLOBAL */
-  width: 35%;
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: aqua;
-  opacity: 1;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-.projects__card-wrapper--project-content--code-languages--html5 {
-  /* HTML5 Icon Styling */
-  background-color: aqua;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 50px;
-  color: silver;
-  margin: 0 10px;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-
-.projects__card-wrapper--project-content--code-languages--html5:hover {
-  /* HTML5 Icon Styling on Hover */
-  color: #dc4d25;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-
-.projects__card-wrapper--project-content--code-languages--css3 {
-  /* CSS3 Icon Styling */
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  color: silver;
-  margin: 0 10px;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-
-.projects__card-wrapper--project-content--code-languages--css3:hover {
-  /* CSS3 Icon Styling on Hover */
-  color: #254bdd;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-
-.projects__card-wrapper--project-content--code-languages--js {
-  /* JavaScript Icon Styling */
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  color: silver;
-  margin: 0 10px;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-
-.projects__card-wrapper--project-content--code-languages--js:hover {
-  /* JavaScript Icon Styling on Hover */
-  color: #e8d44d;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
@@ -1235,7 +1162,8 @@ PROJECTS
           transform: translateY(0px);
 }
 
-.projects__card-wrapper:hover .projects__card-wrapper--github-container {
+.projects__card-wrapper:hover
+.projects__card-wrapper--project-content--github-container {
   opacity: 1;
   -webkit-transition: 0.45s ease-in-out;
   transition: 0.45s ease-in-out;
@@ -1243,17 +1171,6 @@ PROJECTS
           transform: translateY(0px);
   -webkit-transition-delay: 0.315s;
           transition-delay: 0.315s;
-}
-
-.projects__card-wrapper:hover .projects__card-wrapper--code-languages {
-  /* Code Languages Container Transition on Hover GLOBAL */
-  opacity: 1;
-  -webkit-transition: 0.55s ease-in-out;
-  transition: 0.55s ease-in-out;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
 }
 
 .container {

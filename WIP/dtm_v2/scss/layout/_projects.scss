@@ -174,6 +174,7 @@ PROJECTS
       }
 
       &--github-container {
+        /* GitHub Icon Layout GLOBAL */
         margin-top: 20px;
         width: 100%;
         bottom: 0;
@@ -185,77 +186,79 @@ PROJECTS
         transform: translateY(100px);
 
         &--github {
-          display: block;
+          /* GitHub Icon Styling GLOBAL */
+          // display: block;
           width: 30px;
           height: auto;
           color: silver;
           transition: 0.4s ease-in-out;
 
           &:hover {
+            /* GitHub Icon Transition on Hover GLOBAL */
             color: #6e5494;
             transition: 0.4s ease-in-out;
           }
         }
       }
 
-      &--code-languages {
-        /* Code Languages Container GLOBAL */
-        width: 35%;
-        height: 50px;
-        // margin: 42px 0 0 15px;
-        display: flex;
-        background-color: aqua;
+      // &--code-languages {
+      //   /* Code Languages Container GLOBAL */
+      //   width: 35%;
+      //   height: 50px;
+      //   // margin: 42px 0 0 15px;
+      //   display: flex;
+      //   background-color: aqua;
 
-        opacity: 1; // test <-- turn this off when done
-        transition: 0.5s ease-in-out;
-        // transform: translateY(75px);
+      //   opacity: 1; // test <-- turn this off when done
+      //   transition: 0.5s ease-in-out;
+      //   // transform: translateY(75px);
 
-        &--html5 {
-          /* HTML5 Icon Styling */
-          background-color: aqua;
-          width: fit-content;
-          height: 50px;
-          color: silver;
-          margin: 0 10px;
-          transition: 0.4s ease-in-out;
+      //   &--html5 {
+      //     /* HTML5 Icon Styling */
+      //     background-color: aqua;
+      //     width: fit-content;
+      //     height: 50px;
+      //     color: silver;
+      //     margin: 0 10px;
+      //     transition: 0.4s ease-in-out;
 
-          &:hover {
-            /* HTML5 Icon Styling on Hover */
-            color: #dc4d25;
-            transition: 0.4s ease-in-out;
-          }
-        }
+      //     &:hover {
+      //       /* HTML5 Icon Styling on Hover */
+      //       color: #dc4d25;
+      //       transition: 0.4s ease-in-out;
+      //     }
+      //   }
 
-        &--css3 {
-          /* CSS3 Icon Styling */
-          width: fit-content;
-          height: fit-content;
-          color: silver;
-          margin: 0 10px;
-          transition: 0.4s ease-in-out;
+      //   &--css3 {
+      //     /* CSS3 Icon Styling */
+      //     width: fit-content;
+      //     height: fit-content;
+      //     color: silver;
+      //     margin: 0 10px;
+      //     transition: 0.4s ease-in-out;
 
-          &:hover {
-            /* CSS3 Icon Styling on Hover */
-            color: #254bdd;
-            transition: 0.4s ease-in-out;
-          }
-        }
+      //     &:hover {
+      //       /* CSS3 Icon Styling on Hover */
+      //       color: #254bdd;
+      //       transition: 0.4s ease-in-out;
+      //     }
+      //   }
 
-        &--js {
-          /* JavaScript Icon Styling */
-          width: fit-content;
-          height: fit-content;
-          color: silver;
-          margin: 0 10px;
-          transition: 0.4s ease-in-out;
+      //   &--js {
+      //     /* JavaScript Icon Styling */
+      //     width: fit-content;
+      //     height: fit-content;
+      //     color: silver;
+      //     margin: 0 10px;
+      //     transition: 0.4s ease-in-out;
 
-          &:hover {
-            /* JavaScript Icon Styling on Hover */
-            color: #e8d44d;
-            transition: 0.4s ease-in-out;
-          }
-        }
-      }
+      //     &:hover {
+      //       /* JavaScript Icon Styling on Hover */
+      //       color: #e8d44d;
+      //       transition: 0.4s ease-in-out;
+      //     }
+      //   }
+      // }
     }
 
     &:hover &--project-content--btn {
@@ -265,23 +268,23 @@ PROJECTS
       transform: translateY(0px);
     }
 
-    &:hover &--github-container {
-      opacity: 1;
-      transition: 0.45s ease-in-out;
-      transform: translateY(0px);
-      transition-delay: 0.315s;
-    }
-
-    &:hover &--code-languages {
-      /* Code Languages Container Transition on Hover GLOBAL */
-      opacity: 1;
-      transition: 0.55s ease-in-out;
-      transform: translateY(0px);
-      transition-delay: 0.4s;
-    }
+    // &:hover &--code-languages {
+    //   /* Code Languages Container Transition on Hover GLOBAL */
+    //   opacity: 1;
+    //   transition: 0.55s ease-in-out;
+    //   transform: translateY(0px);
+    //   transition-delay: 0.4s;
+    // }
   }
 }
 
+.projects__card-wrapper:hover
+  .projects__card-wrapper--project-content--github-container {
+  opacity: 1;
+  transition: 0.45s ease-in-out;
+  transform: translateY(0px);
+  transition-delay: 0.315s;
+}
 ///////////////////////////////////
 // MEDIA QUERIES 4 PROJECT CARDS //
 ///////////////////////////////////
