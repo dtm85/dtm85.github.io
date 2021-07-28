@@ -187,9 +187,9 @@ PROJECTS
 
         &--github {
           /* GitHub Icon Styling GLOBAL */
-          // display: block;
+          // display: inline-block;
           width: 30px;
-          height: auto;
+          height: 30px;
           color: silver;
           transition: 0.4s ease-in-out;
 
@@ -268,23 +268,23 @@ PROJECTS
       transform: translateY(0px);
     }
 
-    // &:hover &--code-languages {
-    //   /* Code Languages Container Transition on Hover GLOBAL */
-    //   opacity: 1;
-    //   transition: 0.55s ease-in-out;
-    //   transform: translateY(0px);
-    //   transition-delay: 0.4s;
-    // }
+    &:hover &--project-content--github-container {
+      opacity: 1;
+      transition: 0.45s ease-in-out;
+      transform: translateY(0px);
+      transition-delay: 0.315s;
+    }
+
+    &:hover &--project-content--code-languages {
+      /* Code Languages Container Transition on Hover GLOBAL */
+      opacity: 1;
+      transition: 0.55s ease-in-out;
+      transform: translateY(0px);
+      transition-delay: 0.4s;
+    }
   }
 }
 
-.projects__card-wrapper:hover
-  .projects__card-wrapper--project-content--github-container {
-  opacity: 1;
-  transition: 0.45s ease-in-out;
-  transform: translateY(0px);
-  transition-delay: 0.315s;
-}
 ///////////////////////////////////
 // MEDIA QUERIES 4 PROJECT CARDS //
 ///////////////////////////////////

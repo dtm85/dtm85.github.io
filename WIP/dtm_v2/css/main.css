@@ -1140,7 +1140,7 @@ PROJECTS
 .projects__card-wrapper--project-content--github-container--github {
   /* GitHub Icon Styling GLOBAL */
   width: 30px;
-  height: auto;
+  height: 30px;
   color: silver;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
@@ -1162,8 +1162,7 @@ PROJECTS
           transform: translateY(0px);
 }
 
-.projects__card-wrapper:hover
-.projects__card-wrapper--project-content--github-container {
+.projects__card-wrapper:hover .projects__card-wrapper--project-content--github-container {
   opacity: 1;
   -webkit-transition: 0.45s ease-in-out;
   transition: 0.45s ease-in-out;
@@ -1171,6 +1170,17 @@ PROJECTS
           transform: translateY(0px);
   -webkit-transition-delay: 0.315s;
           transition-delay: 0.315s;
+}
+
+.projects__card-wrapper:hover .projects__card-wrapper--project-content--code-languages {
+  /* Code Languages Container Transition on Hover GLOBAL */
+  opacity: 1;
+  -webkit-transition: 0.55s ease-in-out;
+  transition: 0.55s ease-in-out;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 
 .container {
