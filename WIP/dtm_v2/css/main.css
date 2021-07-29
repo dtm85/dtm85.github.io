@@ -1153,6 +1153,70 @@ PROJECTS
   transition: 0.4s ease-in-out;
 }
 
+.projects__card-wrapper--project-content--code-languages {
+  /* Code Languages Container GLOBAL */
+  width: 35%;
+  height: 50px;
+  margin: 42px 0 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.projects__card-wrapper--project-content--code-languages--html5 {
+  /* HTML5 Icon Styling */
+  width: 17px;
+  height: 17px;
+  color: silver;
+  margin: 0 10px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.projects__card-wrapper--project-content--code-languages--html5:hover {
+  /* HTML5 Icon Styling on Hover */
+  color: #dc4d25;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.projects__card-wrapper--project-content--code-languages--css3 {
+  /* CSS3 Icon Styling */
+  width: 17px;
+  height: 17px;
+  color: silver;
+  margin: 0 10px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.projects__card-wrapper--project-content--code-languages--css3:hover {
+  /* CSS3 Icon Styling on Hover */
+  color: #254bdd;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.projects__card-wrapper--project-content--code-languages--js {
+  /* JavaScript Icon Styling */
+  width: 17px;
+  height: 18px;
+  color: silver;
+  margin: 0 10px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.projects__card-wrapper--project-content--code-languages--js:hover {
+  /* JavaScript Icon Styling on Hover */
+  color: #e8d44d;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
 .projects__card-wrapper:hover .projects__card-wrapper--project-content--btn {
   /* Project Card Hover - Styling for View Projects Button on Hover - Transition Effect GLOBAL */
   opacity: 1;
