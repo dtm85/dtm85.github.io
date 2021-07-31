@@ -1082,38 +1082,44 @@ PROJECTS
 }
 
 .projects__card-wrapper--project-content--h2 {
+  /* Project H2 Styling GLOBAL */
+  position: relative;
+  letter-spacing: 2px;
   font-size: 2rem;
   font-weight: 400;
   color: #c0c0c0;
+  margin: 0 auto;
 }
 
-.projects__card-wrapper--project-content--btn {
-  /* View Project Button Styling GLOBAL */
+.projects__card-wrapper--project-content--button-container {
+  /* View Project Button Container */
   display: inline-block;
-  padding: 10px 20px;
-  color: #0ef;
-  background: #70809066;
-  border-radius: 25px;
   margin-top: 1.5rem;
   opacity: 0;
   -webkit-transition: 0.65s ease-in-out;
   transition: 0.65s ease-in-out;
+  letter-spacing: 1.5px;
   -webkit-transform: translateY(110px);
           transform: translateY(110px);
-  letter-spacing: 1.5px;
-  padding-top: 13px;
 }
 
-.projects__card-wrapper--project-content--btn:hover {
+.projects__card-wrapper--project-content--button-container--btn {
+  /* View Project Button Styling GLOBAL */
+  padding: 10px 20px;
+  color: #0ef;
+  background: #70809066;
+  border-radius: 25px;
+  padding-top: 13px;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.projects__card-wrapper--project-content--button-container--btn:hover {
   /* View Projects Button Styling on Hover GLOBAL */
   background: #0ef;
   color: #1f1f1f;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
   -webkit-box-shadow: 0 0 10px 2px #0ef;
           box-shadow: 0 0 10px 2px #0ef;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .projects__card-wrapper--project-content--github-container {
@@ -1217,7 +1223,7 @@ PROJECTS
   transition: 0.4s ease-in-out;
 }
 
-.projects__card-wrapper:hover .projects__card-wrapper--project-content--btn {
+.projects__card-wrapper:hover .projects__card-wrapper--project-content--button-container {
   /* Project Card Hover - Styling for View Projects Button on Hover - Transition Effect GLOBAL */
   opacity: 1;
   -webkit-transition: 0.5s ease-in-out;

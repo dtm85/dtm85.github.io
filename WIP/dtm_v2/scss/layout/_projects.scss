@@ -48,7 +48,6 @@ PROJECTS
     display: grid;
     gap: 50px;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    // grid-template-areas: "glass-container";
     justify-items: center;
     justify-content: center;
     background: $background-card-dark-grey;
@@ -143,32 +142,39 @@ PROJECTS
       will-change: transform;
 
       &--h2 {
+        /* Project H2 Styling GLOBAL */
+        position: relative;
+        letter-spacing: 2px;
         font-size: 2rem;
         font-weight: 400;
         color: $clr-silver;
+        margin: 0 auto;
       }
 
-      &--btn {
-        /* View Project Button Styling GLOBAL */
+      &--button-container {
+        /* View Project Button Container */
         display: inline-block;
-        padding: 10px 20px;
-        color: $clr-primary-5;
-        background: $clr-button-background-grey-alt;
-        border-radius: 25px;
         margin-top: 1.5rem;
         opacity: 0;
         transition: 0.65s ease-in-out;
-        transform: translateY(110px);
         letter-spacing: 1.5px;
-        padding-top: 13px;
+        transform: translateY(110px);
 
-        &:hover {
-          /* View Projects Button Styling on Hover GLOBAL */
-          background: $clr-primary-5;
-          color: $clr-button-hover-text-grey-alt;
-          transition: 0.5s ease-in-out;
-          box-shadow: 0 0 10px 2px $clr-primary-5;
-          transform: scale(1.1);
+        &--btn {
+          /* View Project Button Styling GLOBAL */
+          padding: 10px 20px;
+          color: $clr-primary-5;
+          background: $clr-button-background-grey-alt;
+          border-radius: 25px;
+          padding-top: 13px;
+          transition: $transition;
+
+          &:hover {
+            /* View Projects Button Styling on Hover GLOBAL */
+            background: $clr-primary-5;
+            color: $clr-button-hover-text-grey-alt;
+            box-shadow: 0 0 10px 2px $clr-primary-5;
+          }
         }
       }
 
@@ -258,7 +264,7 @@ PROJECTS
       }
     }
 
-    &:hover &--project-content--btn {
+    &:hover &--project-content--button-container {
       /* Project Card Hover - Styling for View Projects Button on Hover - Transition Effect GLOBAL */
       opacity: 1;
       transition: 0.5s ease-in-out;
