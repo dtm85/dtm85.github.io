@@ -101,12 +101,27 @@ $clr-button-hover-text-grey-alt: #1f1f1f; // Alternate Text color for buttons
 $clr-button-background-grey: #808080; // Background color for Buttons
 $clr-button-background-grey-alt: #70809066; // Alternate Background color for buttons
 
+// Other company colors
+$clr-html5: #dc4d25;
+$clr-css3: #2965f1;
+$clr-sass: #cf649a;
+$clr-bootstrap: #7852b3;
+$clr-js: #e8d44d;
+$clr-nodejs: #689f63;
+$clr-npm: #cb0a00;
+$clr-git: #fb4f28;
+$clr-github: #6e5494;
+$clr-figma: #6e5494;
+$clr-ubuntu: #e95321;
+$clr-nginx: #009639;
+$clr-linode: #02b159;
+
 // Font
 $ff-neotech: "Neo Tech", sans-serif;
 $ff-nunito: "Nunito", sans-serif;
 
 // Transitions
-$transition: all 0.25s ease-in-out;
+$transition: all 0.3s ease-in-out;
 
 // Spacing
 $spacing: 0.1rem;

@@ -162,11 +162,10 @@ PROJECTS
 
         &--btn {
           /* View Project Button Styling GLOBAL */
-          padding: 10px 20px;
+          padding: 13px 20px 10px 20px;
           color: $clr-primary-5;
           background: $clr-button-background-grey-alt;
           border-radius: 25px;
-          padding-top: 13px;
           transition: $transition;
 
           &:hover {
@@ -192,16 +191,14 @@ PROJECTS
 
         &--github {
           /* GitHub Icon Styling GLOBAL */
-          // display: inline-block;
           width: 30px;
           height: 30px;
           color: silver;
-          transition: 0.4s ease-in-out;
+          transition: $transition;
 
           &:hover {
             /* GitHub Icon Transition on Hover GLOBAL */
-            color: #6e5494;
-            transition: 0.4s ease-in-out;
+            color: $clr-github;
           }
         }
       }
@@ -213,7 +210,7 @@ PROJECTS
         margin: 42px 0 0 15px;
         display: flex;
 
-        opacity: 1; // test <-- turn this off when done
+        opacity: 0; // test <-- turn this off when done
         transition: 0.5s ease-in-out;
         // transform: translateY(75px);
 
@@ -227,7 +224,7 @@ PROJECTS
 
           &:hover {
             /* HTML5 Icon Styling on Hover */
-            color: #dc4d25;
+            color: $clr-html5;
             transition: 0.4s ease-in-out;
           }
         }
@@ -242,7 +239,7 @@ PROJECTS
 
           &:hover {
             /* CSS3 Icon Styling on Hover */
-            color: #254bdd;
+            color: $clr-css3;
             transition: 0.4s ease-in-out;
           }
         }
@@ -257,7 +254,7 @@ PROJECTS
 
           &:hover {
             /* JavaScript Icon Styling on Hover */
-            color: #e8d44d;
+            color: $clr-js;
             transition: 0.4s ease-in-out;
           }
         }
@@ -267,13 +264,11 @@ PROJECTS
     &:hover &--project-content--button-container {
       /* Project Card Hover - Styling for View Projects Button on Hover - Transition Effect GLOBAL */
       opacity: 1;
-      transition: 0.5s ease-in-out;
       transform: translateY(0px);
     }
 
     &:hover &--project-content--github-container {
       opacity: 1;
-      transition: 0.45s ease-in-out;
       transform: translateY(0px);
       transition-delay: 0.315s;
     }
@@ -281,7 +276,6 @@ PROJECTS
     &:hover &--project-content--code-languages {
       /* Code Languages Container Transition on Hover GLOBAL */
       opacity: 1;
-      transition: 0.55s ease-in-out;
       transform: translateY(0px);
       transition-delay: 0.4s;
     }

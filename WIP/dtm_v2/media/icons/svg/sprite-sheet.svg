@@ -32,9 +32,18 @@
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="facebook">
     <path fill="currentColor" d="M400 32H48A48 48 0 000 80v352a48 48 0 0048 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0048-48V80a48 48 0 00-48-48z"></path>
   </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" data-icon="figma" data-prefix="fab" viewBox="0 0 384 512" id="figma">
+  <!-- <symbol xmlns="http://www.w3.org/2000/svg" data-icon="figma" data-prefix="fab" viewBox="0 0 384 512" id="figma">
     <path fill="currentColor" d="M277 170.7A85.35 85.35 0 00277 0H106.3a85.3 85.3 0 000 170.6 85.35 85.35 0 000 170.7 85.35 85.35 0 1085.3 85.4v-256zm0 0a85.3 85.3 0 1085.3 85.3 85.31 85.31 0 00-85.3-85.3z"></path>
+  </symbol> -->
+
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" class="figma" id="figma">
+    <path d="M50 300c27.6 0 50-22.4 50-50v-50H50c-27.6 0-50 22.4-50 50s22.4 50 50 50z" fill="#0acf83"></path>
+    <path d="M0 150c0-27.6 22.4-50 50-50h50v100H50c-27.6 0-50-22.4-50-50z" fill="#a259ff"></path>
+    <path d="M0 50C0 22.4 22.4 0 50 0h50v100H50C22.4 100 0 77.6 0 50z" fill="#f24e1e"></path>
+    <path d="M100 0h50c27.6 0 50 22.4 50 50s-22.4 50-50 50h-50V0z" fill="#ff7262"></path>
+    <path d="M200 150c0 27.6-22.4 50-50 50s-50-22.4-50-50 22.4-50 50-50 50 22.4 50 50z" fill="#1abcfe"></path>
   </symbol>
+    
   <symbol xmlns="http://www.w3.org/2000/svg" data-icon="git-alt" data-prefix="fab" viewBox="0 0 448 512" id="git-alt">
     <path fill="currentColor" d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"></path>
   </symbol>

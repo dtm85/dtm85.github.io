@@ -188,8 +188,8 @@ Navbar - Menu Button
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   z-index: 100;
 }
 
@@ -206,8 +206,8 @@ Navbar - Menu Button
   border-radius: 5px;
   -webkit-box-shadow: 0 1px 4px 1px #999;
           box-shadow: 0 1px 4px 1px #999;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar__menu-btn--menu-burger::before, .navbar__menu-btn--menu-burger::after {
@@ -220,8 +220,8 @@ Navbar - Menu Button
   border-radius: 5px;
   -webkit-box-shadow: 0 1px 4px 1px #999;
           box-shadow: 0 1px 4px 1px #999;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar__menu-btn--menu-burger::before {
@@ -278,8 +278,8 @@ Navbar - Menu Button
   padding: 13px 30px 9.5px 30px;
   margin-top: 30px;
   letter-spacing: 1.5px;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border-radius: 6px;
 }
 
@@ -289,8 +289,8 @@ Navbar - Menu Button
   color: #474747;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   -webkit-box-shadow: 0 0 10px 2px #00eeff;
           box-shadow: 0 0 10px 2px #00eeff;
   -webkit-transform: translateY(-3px);
@@ -461,6 +461,10 @@ ABOUT
   display: flex;
 }
 
+.about__content--skill-figma {
+  color: silver;
+}
+
 /* 
 =======
 CONTACT
@@ -529,8 +533,8 @@ HEADER
   font-weight: 300;
   font-size: 5rem;
   line-height: 1.7;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 47.938em) {
@@ -602,8 +606,8 @@ HEADER
 
 .header__social-container--list {
   display: block;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 59.375em) {
@@ -648,8 +652,8 @@ HEADER
 .header__social-container--svg {
   display: block;
   margin: 0;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .header__social-container--svg:hover {
@@ -675,8 +679,8 @@ HEADER
 .header__iphone--img {
   margin-top: 6rem;
   width: 25rem;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 59.375em) {
@@ -714,8 +718,8 @@ NAVIGATION
   top: 0;
   width: 100%;
   z-index: 10;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar__container {
@@ -740,8 +744,8 @@ NAVIGATION
   font-weight: 300;
   letter-spacing: 1.5px;
   color: #fff;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar__logo--tech-media {
@@ -785,8 +789,8 @@ NAVIGATION
 .navbar__nav-links--link {
   text-transform: capitalize;
   color: #fff;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   display: inline-block;
   font-size: 1.1rem;
   padding: 0.8125rem 1.875rem 0.5938rem 1.875rem;
@@ -797,8 +801,8 @@ NAVIGATION
 .navbar__nav-links--link:hover {
   background: #00eeff;
   color: #474747;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   -webkit-box-shadow: 0 0 10px 2px #00eeff;
           box-shadow: 0 0 10px 2px #00eeff;
   -webkit-transform: translateY(-3px);
@@ -833,8 +837,8 @@ NAVIGATION
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   z-index: 11;
@@ -890,8 +894,8 @@ NAVIGATION
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar__sidebar-links--link:link:hover, .navbar__sidebar-links--link:visited:hover {
@@ -947,8 +951,8 @@ NAVIGATION
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar__sidebar-social-icons-link:link:hover, .navbar__sidebar-social-icons-link:visited:hover {
@@ -1105,13 +1109,12 @@ PROJECTS
 
 .projects__card-wrapper--project-content--button-container--btn {
   /* View Project Button Styling GLOBAL */
-  padding: 10px 20px;
+  padding: 13px 20px 10px 20px;
   color: #0ef;
   background: #70809066;
   border-radius: 25px;
-  padding-top: 13px;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .projects__card-wrapper--project-content--button-container--btn:hover {
@@ -1148,15 +1151,13 @@ PROJECTS
   width: 30px;
   height: 30px;
   color: silver;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .projects__card-wrapper--project-content--github-container--github:hover {
   /* GitHub Icon Transition on Hover GLOBAL */
   color: #6e5494;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
 }
 
 .projects__card-wrapper--project-content--code-languages {
@@ -1167,7 +1168,7 @@ PROJECTS
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  opacity: 1;
+  opacity: 0;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
@@ -1201,7 +1202,7 @@ PROJECTS
 
 .projects__card-wrapper--project-content--code-languages--css3:hover {
   /* CSS3 Icon Styling on Hover */
-  color: #254bdd;
+  color: #2965f1;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
@@ -1226,16 +1227,12 @@ PROJECTS
 .projects__card-wrapper:hover .projects__card-wrapper--project-content--button-container {
   /* Project Card Hover - Styling for View Projects Button on Hover - Transition Effect GLOBAL */
   opacity: 1;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
 
 .projects__card-wrapper:hover .projects__card-wrapper--project-content--github-container {
   opacity: 1;
-  -webkit-transition: 0.45s ease-in-out;
-  transition: 0.45s ease-in-out;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
   -webkit-transition-delay: 0.315s;
@@ -1245,8 +1242,6 @@ PROJECTS
 .projects__card-wrapper:hover .projects__card-wrapper--project-content--code-languages {
   /* Code Languages Container Transition on Hover GLOBAL */
   opacity: 1;
-  -webkit-transition: 0.55s ease-in-out;
-  transition: 0.55s ease-in-out;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
   -webkit-transition-delay: 0.4s;
