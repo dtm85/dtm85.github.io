@@ -461,8 +461,10 @@ ABOUT
   display: flex;
 }
 
-.about__content--skill-figma {
-  color: silver;
+.about__content--skill-figma #fill-orange {
+  fill: aqua;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /* 

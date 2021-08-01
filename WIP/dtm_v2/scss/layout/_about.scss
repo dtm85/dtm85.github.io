@@ -95,7 +95,6 @@ ABOUT
     }
 
     &--skills-container {
-      // background-color: coral;
       padding: 0 5rem;
 
       // @include respond(bp-medium-650) {
@@ -110,7 +109,6 @@ ABOUT
     &--skills-ul-container {
       margin: 0 auto;
       // padding: 0 15rem;
-      // background-color: brown;
       width: 65%;
 
       @include respond(bp-medium-900) {
@@ -124,7 +122,6 @@ ABOUT
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
       gap: 3rem;
-      // background-color: burlywood;
 
       @include respond(bp-medium-650) {
         grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
@@ -132,7 +129,6 @@ ABOUT
 
       svg {
         position: relative;
-        // background-color: cadetblue;
         max-height: 5rem;
       }
     }
@@ -157,7 +153,17 @@ ABOUT
     // }
 
     &--skill-figma {
-      color: silver;
+      #fill-orange {
+        fill: aqua;
+        transition: $transition;
+      }
     }
   }
 }
+
+// #figma:hover {
+//   .fill-orange {
+//     fill: aqua;
+//     transition: $transition;
+//   }
+// }
