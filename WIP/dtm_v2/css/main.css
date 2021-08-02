@@ -497,6 +497,7 @@ ABOUT
 }
 
 .about__content--skills svg {
+  /* Styling for all skill svg's - GLOBAL */
   position: relative;
   max-height: 5rem;
   max-width: 5.5rem;
@@ -506,6 +507,14 @@ ABOUT
           box-shadow: 0 0 8px 3px #393a53;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.about__content--skills svg:hover {
+  -webkit-box-shadow: 0 0 8px 3px #00afbb;
+          box-shadow: 0 0 8px 3px #00afbb;
 }
 
 .about__content--skill {
@@ -1162,7 +1171,7 @@ PROJECTS
 
 .projects__card-wrapper--project1::before {
   /* Project 1 Image for Circle */
-  background: url(/dtm85.github.io/media/images/projects/tea-station/main-bcg.png) center/cover no-repeat;
+  background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png") center/cover no-repeat;
 }
 
 .projects__card-wrapper:hover .projects__card-wrapper--project-content {
@@ -1225,9 +1234,8 @@ PROJECTS
 
 .projects__card-wrapper--project-content--github-container {
   /* GitHub Icon Layout GLOBAL */
-  margin-top: 20px;
+  margin-top: 30px;
   width: 100%;
-  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1249,8 +1257,8 @@ PROJECTS
   width: 30px;
   height: 30px;
   color: silver;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .projects__card-wrapper--project-content--github-container--github:hover {
@@ -1260,66 +1268,40 @@ PROJECTS
 
 .projects__card-wrapper--project-content--code-languages {
   /* Code Languages Container GLOBAL */
-  width: 35%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 50px;
-  margin: 42px 0 0 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin: 55px 0 0 15px;
   opacity: 0;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  -webkit-transform: translateY(75px);
+          transform: translateY(75px);
 }
 
 .projects__card-wrapper--project-content--code-languages--html5 {
   /* HTML5 Icon Styling */
   width: 17px;
   height: 17px;
-  color: silver;
-  margin: 0 10px;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-
-.projects__card-wrapper--project-content--code-languages--html5:hover {
-  /* HTML5 Icon Styling on Hover */
   color: #dc4d25;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
+  margin: 0 5px;
 }
 
 .projects__card-wrapper--project-content--code-languages--css3 {
   /* CSS3 Icon Styling */
   width: 17px;
   height: 17px;
-  color: silver;
-  margin: 0 10px;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-
-.projects__card-wrapper--project-content--code-languages--css3:hover {
-  /* CSS3 Icon Styling on Hover */
+  margin: 0 5px;
   color: #2965f1;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
 }
 
 .projects__card-wrapper--project-content--code-languages--js {
   /* JavaScript Icon Styling */
   width: 17px;
   height: 18px;
-  color: silver;
-  margin: 0 10px;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-
-.projects__card-wrapper--project-content--code-languages--js:hover {
-  /* JavaScript Icon Styling on Hover */
+  margin: 0 5px;
   color: #e8d44d;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
 }
 
 .projects__card-wrapper:hover .projects__card-wrapper--project-content--button-container {
@@ -1342,8 +1324,8 @@ PROJECTS
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
 }
 
 .container {

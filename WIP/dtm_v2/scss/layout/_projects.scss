@@ -79,49 +79,49 @@ PROJECTS
 
     &--project1::before {
       /* Project 1 Image for Circle */
-      background: url(/dtm85.github.io/media/images/projects/tea-station/main-bcg.png)
+      background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
         center/cover no-repeat;
     }
 
     // &--project2::before {
     //   /* Project 2 Image for Circle */
-    //   background: url(/dtm85.github.io/WIP/dtm_v2/media/images/projects/)
+    //   background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
     //     center/cover no-repeat;
     // }
 
     // &--project3::before {
     //   /* Project 3 Image for Circle */
-    //   background: url(/dtm85.github.io/WIP/dtm_v2/media/images/projects/)
+    //   background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
     //     center/cover no-repeat;
     // }
 
     // &--project4::before {
     //   /* Project 4 Image for Circle */
-    //   background: url(/dtm85.github.io/WIP/dtm_v2/media/images/projects/)
+    //   background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
     //     center/cover no-repeat;
     // }
 
     // &--project5::before {
     //   /* Project 5 Image for Circle */
-    //   background: url(/dtm85.github.io/WIP/dtm_v2/media/images/projects/)
+    //   background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
     //     center/cover no-repeat;
     // }
 
     // &--project6::before {
     //   /* Project 6 Image for Circle */
-    //   background: url(/dtm85.github.io/WIP/dtm_v2/media/images/projects/)
+    //   background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
     //     center/cover no-repeat;
     // }
 
     // &--project7::before {
     //   /* Project 7 Image for Circle */
-    //   background: url(/dtm85.github.io/WIP/dtm_v2/media/images/projects/)
+    //   background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
     //     center/cover no-repeat;
     // }
 
     // &--project8::before {
     //   /* Project 8 Image for Circle */
-    //   background: url(/dtm85.github.io/WIP/dtm_v2/media/images/projects/)
+    //   background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
     //     center/cover no-repeat;
     // }
 
@@ -179,9 +179,8 @@ PROJECTS
 
       &--github-container {
         /* GitHub Icon Layout GLOBAL */
-        margin-top: 20px;
+        margin-top: 30px;
         width: 100%;
-        bottom: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -194,7 +193,7 @@ PROJECTS
           width: 30px;
           height: 30px;
           color: silver;
-          transition: $transition;
+          transition: 0.4s ease-in-out;
 
           &:hover {
             /* GitHub Icon Transition on Hover GLOBAL */
@@ -205,58 +204,35 @@ PROJECTS
 
       &--code-languages {
         /* Code Languages Container GLOBAL */
-        width: 35%;
+        width: fit-content;
         height: 50px;
-        margin: 42px 0 0 15px;
-        display: flex;
-
-        opacity: 0; // test <-- turn this off when done
+        margin: 55px 0 0 15px;
+        opacity: 0;
         transition: 0.5s ease-in-out;
-        // transform: translateY(75px);
+        transform: translateY(75px);
 
         &--html5 {
           /* HTML5 Icon Styling */
           width: 17px;
           height: 17px;
-          color: silver;
-          margin: 0 10px;
-          transition: 0.4s ease-in-out;
-
-          &:hover {
-            /* HTML5 Icon Styling on Hover */
-            color: $clr-html5;
-            transition: 0.4s ease-in-out;
-          }
+          color: $clr-html5;
+          margin: 0 5px;
         }
 
         &--css3 {
           /* CSS3 Icon Styling */
           width: 17px;
           height: 17px;
-          color: silver;
-          margin: 0 10px;
-          transition: 0.4s ease-in-out;
-
-          &:hover {
-            /* CSS3 Icon Styling on Hover */
-            color: $clr-css3;
-            transition: 0.4s ease-in-out;
-          }
+          margin: 0 5px;
+          color: $clr-css3;
         }
 
         &--js {
           /* JavaScript Icon Styling */
           width: 17px;
           height: 18px;
-          color: silver;
-          margin: 0 10px;
-          transition: 0.4s ease-in-out;
-
-          &:hover {
-            /* JavaScript Icon Styling on Hover */
-            color: $clr-js;
-            transition: 0.4s ease-in-out;
-          }
+          margin: 0 5px;
+          color: $clr-js;
         }
       }
     }
@@ -277,7 +253,7 @@ PROJECTS
       /* Code Languages Container Transition on Hover GLOBAL */
       opacity: 1;
       transform: translateY(0px);
-      transition-delay: 0.4s;
+      transition-delay: 0.45s;
     }
   }
 }

@@ -162,6 +162,7 @@ ABOUT
       }
 
       svg {
+        /* Styling for all skill svg's - GLOBAL */
         position: relative;
         max-height: 5rem;
         max-width: 5.5rem;
@@ -174,6 +175,12 @@ ABOUT
         box-shadow: 0 0 8px 3px $clr-grey-dark-2;
         border: 1px solid $border-light-grey;
         border-radius: 10px;
+        transition: $transition;
+        overflow: hidden;
+
+        &:hover {
+          box-shadow: 0 0 8px 3px $clr-primary-7;
+        }
       }
     }
 
