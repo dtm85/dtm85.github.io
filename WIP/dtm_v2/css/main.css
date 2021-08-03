@@ -1147,6 +1147,25 @@ PROJECTS
   height: 450px;
   overflow: hidden;
   will-change: transform;
+  /*
+    
+    1. - Mapty *** NOT DONE YET***
+    
+    2. - Nexter *** NOT DONE YET***
+    
+    3. - Natours
+    
+    4. - Omnifood
+    
+    5. - Trillo
+    
+    6. - Portfolio
+    
+    7. - BackRoads
+    
+    8. - Tea Station
+    
+    */
 }
 
 .projects__card-wrapper::before {
@@ -1171,7 +1190,7 @@ PROJECTS
 
 .projects__card-wrapper--project1::before {
   /* Project 1 Image for Circle */
-  background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png") center/cover no-repeat;
+  background: url("/WIP/dtm_v2/media/images/projects/TeaStation/tea-station.png") center/cover no-repeat;
 }
 
 .projects__card-wrapper:hover .projects__card-wrapper--project-content {

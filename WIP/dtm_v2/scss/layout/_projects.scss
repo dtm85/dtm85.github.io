@@ -77,9 +77,32 @@ PROJECTS
       clip-path: circle(300px at 80% -20%);
     }
 
+    ////////////////////////////
+    // Projects in this Order //
+    ////////////////////////////
+    /*
+    
+    1. - Mapty *** NOT DONE YET***
+    
+    2. - Nexter *** NOT DONE YET***
+    
+    3. - Natours
+    
+    4. - Omnifood
+    
+    5. - Trillo
+    
+    6. - Portfolio
+    
+    7. - BackRoads
+    
+    8. - Tea Station
+    
+    */
+
     &--project1::before {
       /* Project 1 Image for Circle */
-      background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
+      background: url("/WIP/dtm_v2/media/images/projects/TeaStation/tea-station.png")
         center/cover no-repeat;
     }
 
