@@ -14,6 +14,7 @@ PROJECTS
   justify-content: center;
   justify-items: center;
   overflow: hidden;
+  grid-template-areas: "projects-heading-container" "glass-container";
 
   &__heading-container {
     /* Projects Heading Container GLOBAL */
@@ -38,9 +39,14 @@ PROJECTS
     border-radius: 25px;
     margin: 3rem auto;
     padding: 3rem;
-    width: 90%;
     overflow: hidden;
     position: relative;
+    display: grid;
+    gap: 50px;
+    grid-template-areas: "glass-container";
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-items: center;
+    justify-content: center;
   }
 
   &__card-wrapper {
@@ -102,51 +108,51 @@ PROJECTS
 
     &--project1::before {
       /* Project 1 Image for Circle */
-      background: url("/WIP/dtm_v2/media/images/projects/TeaStation/tea-station.png")
+      background: url("/WIP/dtm_v2/media/images/projects/`Under__Construction/code.jpg")
         center/cover no-repeat;
     }
 
-    // &--project2::before {
-    //   /* Project 2 Image for Circle */
-    //   background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
-    //     center/cover no-repeat;
-    // }
+    &--project2::before {
+      /* Project 2 Image for Circle */
+      background: url("/WIP/dtm_v2/media/images/projects/Natours/natours.png")
+        center/cover no-repeat;
+    }
 
-    // &--project3::before {
-    //   /* Project 3 Image for Circle */
-    //   background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
-    //     center/cover no-repeat;
-    // }
+    &--project3::before {
+      /* Project 3 Image for Circle */
+      background: url("/WIP/dtm_v2/media/images/projects/Omnifood/omnifood.png")
+        center/cover no-repeat;
+    }
 
-    // &--project4::before {
-    //   /* Project 4 Image for Circle */
-    //   background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
-    //     center/cover no-repeat;
-    // }
+    &--project4::before {
+      /* Project 4 Image for Circle */
+      background: url("/WIP/dtm_v2/media/images/projects/Trillo/trillo.png")
+        center/cover no-repeat;
+    }
 
-    // &--project5::before {
-    //   /* Project 5 Image for Circle */
-    //   background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
-    //     center/cover no-repeat;
-    // }
+    &--project5::before {
+      /* Project 5 Image for Circle */
+      background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
+        center/cover no-repeat;
+    }
 
-    // &--project6::before {
-    //   /* Project 6 Image for Circle */
-    //   background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
-    //     center/cover no-repeat;
-    // }
+    &--project6::before {
+      /* Project 6 Image for Circle */
+      background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
+        center/cover no-repeat;
+    }
 
-    // &--project7::before {
-    //   /* Project 7 Image for Circle */
-    //   background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
-    //     center/cover no-repeat;
-    // }
+    &--project7::before {
+      /* Project 7 Image for Circle */
+      background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
+        center/cover no-repeat;
+    }
 
-    // &--project8::before {
-    //   /* Project 8 Image for Circle */
-    //   background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
-    //     center/cover no-repeat;
-    // }
+    &--project8::before {
+      /* Project 8 Image for Circle */
+      background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
+        center/cover no-repeat;
+    }
 
     &:hover &--project-content {
       /* Project Content moves up on Hover GLOBAL */

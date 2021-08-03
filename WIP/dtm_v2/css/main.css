@@ -1090,6 +1090,7 @@ PROJECTS
           justify-content: center;
   justify-items: center;
   overflow: hidden;
+      grid-template-areas: "projects-heading-container" "glass-container";
 }
 
 .projects__heading-container {
@@ -1121,9 +1122,18 @@ PROJECTS
   border-radius: 25px;
   margin: 3rem auto;
   padding: 3rem;
-  width: 90%;
   overflow: hidden;
   position: relative;
+  display: -ms-grid;
+  display: grid;
+  gap: 50px;
+      grid-template-areas: "glass-container";
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .projects__card-wrapper {
@@ -1190,7 +1200,42 @@ PROJECTS
 
 .projects__card-wrapper--project1::before {
   /* Project 1 Image for Circle */
-  background: url("/WIP/dtm_v2/media/images/projects/TeaStation/tea-station.png") center/cover no-repeat;
+  background: url("/WIP/dtm_v2/media/images/projects/`Under__Construction/code.jpg") center/cover no-repeat;
+}
+
+.projects__card-wrapper--project2::before {
+  /* Project 2 Image for Circle */
+  background: url("/WIP/dtm_v2/media/images/projects/Natours/natours.png") center/cover no-repeat;
+}
+
+.projects__card-wrapper--project3::before {
+  /* Project 3 Image for Circle */
+  background: url("/WIP/dtm_v2/media/images/projects/Omnifood/omnifood.png") center/cover no-repeat;
+}
+
+.projects__card-wrapper--project4::before {
+  /* Project 4 Image for Circle */
+  background: url("/WIP/dtm_v2/media/images/projects/Trillo/trillo.png") center/cover no-repeat;
+}
+
+.projects__card-wrapper--project5::before {
+  /* Project 5 Image for Circle */
+  background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png") center/cover no-repeat;
+}
+
+.projects__card-wrapper--project6::before {
+  /* Project 6 Image for Circle */
+  background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png") center/cover no-repeat;
+}
+
+.projects__card-wrapper--project7::before {
+  /* Project 7 Image for Circle */
+  background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png") center/cover no-repeat;
+}
+
+.projects__card-wrapper--project8::before {
+  /* Project 8 Image for Circle */
+  background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png") center/cover no-repeat;
 }
 
 .projects__card-wrapper:hover .projects__card-wrapper--project-content {
