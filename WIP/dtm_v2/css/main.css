@@ -1083,14 +1083,21 @@ PROJECTS
   grid-column: full-start / full-end;
   position: relative;
   width: 100%;
+  height: auto;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  justify-items: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   overflow: hidden;
-      grid-template-areas: "projects-heading-container" "glass-container";
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .projects__heading-container {
@@ -1111,42 +1118,47 @@ PROJECTS
 .projects__heading-container--h1 {
   font-size: 3rem;
   font-weight: 400;
+  letter-spacing: 3px;
 }
 
 .projects__glass-container {
   /* Glass Container that holds all the project cards */
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   background: rgba(0, 0, 0, 0.9);
   -webkit-box-shadow: 0 2px 8px 0 #1f2687b3;
           box-shadow: 0 2px 8px 0 #1f2687b3;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 25px;
-  margin: 3rem auto;
   padding: 3rem;
+  margin: 3rem auto;
   overflow: hidden;
   position: relative;
-  display: -ms-grid;
-  display: grid;
-  gap: 50px;
-      grid-template-areas: "glass-container";
-  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  justify-items: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.projects__glass-container--card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 50px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .projects__card-wrapper {
   /* Project Card Wrapper GLOBAL */
-  display: -ms-grid;
-  display: grid;
-  gap: 50px;
-  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  justify-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: rgba(23, 23, 23, 0.9);
   -webkit-box-shadow: 0 2px 8px 0 #1f2687b3;
           box-shadow: 0 2px 8px 0 #1f2687b3;

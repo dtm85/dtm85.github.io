@@ -10,11 +10,14 @@ PROJECTS
   grid-column: full-start / full-end;
   position: relative;
   width: 100%;
+  height: auto;
   display: grid;
   justify-content: center;
-  justify-items: center;
+  justify-self: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   overflow: hidden;
-  grid-template-areas: "projects-heading-container" "glass-container";
+  transition: $transition;
 
   &__heading-container {
     /* Projects Heading Container GLOBAL */
@@ -28,34 +31,37 @@ PROJECTS
     &--h1 {
       font-size: 3rem;
       font-weight: 400;
+      letter-spacing: 3px;
     }
   }
 
   &__glass-container {
     /* Glass Container that holds all the project cards */
+    display: grid;
+    grid-template-columns: 1fr;
     background: $background-glass-container;
     box-shadow: 0 2px 8px 0 $clr-secondary-dark-1;
     border: 1px solid $border-light-grey;
     border-radius: 25px;
-    margin: 3rem auto;
     padding: 3rem;
+    margin: 3rem auto;
     overflow: hidden;
     position: relative;
-    display: grid;
-    gap: 50px;
-    grid-template-areas: "glass-container";
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    justify-items: center;
-    justify-content: center;
+    transition: $transition;
+
+    &--card-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      transition: $transition;
+      // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
   }
 
   &__card-wrapper {
     /* Project Card Wrapper GLOBAL */
-    display: grid;
-    gap: 50px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    justify-items: center;
-    justify-content: center;
     background: $background-card-dark-grey;
     box-shadow: 0 2px 8px 0 $clr-secondary-dark-1;
     border: 1px solid $border-light-grey;
