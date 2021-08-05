@@ -17,37 +17,37 @@ PROJECTS
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   overflow: hidden;
-  transition: $transition;
-
-  &__heading-container {
-    /* Projects Heading Container GLOBAL */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: $clr-primary-5;
-    text-align: center;
-    margin: 4rem auto;
-
-    &--h1 {
-      font-size: 3rem;
-      font-weight: 400;
-      letter-spacing: 3px;
-    }
-  }
 
   &__glass-container {
     /* Glass Container that holds all the project cards */
     display: grid;
     grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: center;
     background: $background-glass-container;
     box-shadow: 0 2px 8px 0 $clr-secondary-dark-1;
     border: 1px solid $border-light-grey;
     border-radius: 25px;
-    padding: 3rem;
+    width: 100%;
     margin: 3rem auto;
     overflow: hidden;
     position: relative;
-    transition: $transition;
+
+    &--heading-container {
+      /* Projects Heading Container GLOBAL */
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: $clr-primary-5;
+      text-align: center;
+      margin: 5rem auto;
+
+      &--h1 {
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: 3px;
+      }
+    }
 
     &--card-container {
       display: flex;
@@ -55,8 +55,12 @@ PROJECTS
       align-items: center;
       justify-content: center;
       gap: 50px;
+      padding: 0 3rem 4rem 3rem;
       transition: $transition;
-      // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+      @include respond(bp-small-450) {
+        padding: 0 3rem 1.75rem 3rem;
+      }
     }
   }
 
@@ -67,6 +71,7 @@ PROJECTS
     border: 1px solid $border-light-grey;
     border-radius: 25px;
     position: relative;
+    width: 100%;
     width: 320px;
     height: 450px;
     overflow: hidden;
@@ -94,21 +99,23 @@ PROJECTS
     ////////////////////////////
     /*
     
-    1. - Mapty *** NOT DONE YET***
+    1. - N / A *** NOT DONE YET***
     
-    2. - Nexter *** NOT DONE YET***
+    2. - Mapty *** NOT DONE YET***
     
-    3. - Natours
+    3. - Nexter *** NOT DONE YET***
     
-    4. - Omnifood
+    4. - Natours
     
-    5. - Trillo
+    5. - Omnifood
     
-    6. - Portfolio
+    6. - Trillo
     
-    7. - BackRoads
+    7. - Portfolio
     
-    8. - Tea Station
+    8. - Back Roads
+    
+    9. - Tea Station
     
     */
 
@@ -150,6 +157,12 @@ PROJECTS
 
     &--project7::before {
       /* Project 7 Image for Circle */
+      background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
+        center/cover no-repeat;
+    }
+
+    &--project8::before {
+      /* Project 8 Image for Circle */
       background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png")
         center/cover no-repeat;
     }

@@ -85,7 +85,7 @@ html {
 }
 
 body {
-  font-family: "NeoTech";
+  font-family: "NeoTech", sans-serif;
   color: #393a53;
   font-weight: 400;
   line-height: 1.2;
@@ -326,7 +326,7 @@ ABOUT
   font-weight: 400;
   font-size: 3rem;
   text-align: center;
-  margin: 4rem auto;
+  margin: 5rem auto;
   color: #0ef;
 }
 
@@ -1096,11 +1096,30 @@ PROJECTS
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   overflow: hidden;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
-.projects__heading-container {
+.projects__glass-container {
+  /* Glass Container that holds all the project cards */
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0 2px 8px 0 #1f2687b3;
+          box-shadow: 0 2px 8px 0 #1f2687b3;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  width: 100%;
+  margin: 3rem auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.projects__glass-container--heading-container {
   /* Projects Heading Container GLOBAL */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1112,32 +1131,13 @@ PROJECTS
           align-items: center;
   color: #0ef;
   text-align: center;
-  margin: 4rem auto;
+  margin: 5rem auto;
 }
 
-.projects__heading-container--h1 {
+.projects__glass-container--heading-container--h1 {
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 3px;
-}
-
-.projects__glass-container {
-  /* Glass Container that holds all the project cards */
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  background: rgba(0, 0, 0, 0.9);
-  -webkit-box-shadow: 0 2px 8px 0 #1f2687b3;
-          box-shadow: 0 2px 8px 0 #1f2687b3;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 25px;
-  padding: 3rem;
-  margin: 3rem auto;
-  overflow: hidden;
-  position: relative;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
 .projects__glass-container--card-container {
@@ -1153,8 +1153,15 @@ PROJECTS
       -ms-flex-pack: center;
           justify-content: center;
   gap: 50px;
+  padding: 0 3rem 4rem 3rem;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 28.125em) {
+  .projects__glass-container--card-container {
+    padding: 0 3rem 1.75rem 3rem;
+  }
 }
 
 .projects__card-wrapper {
@@ -1165,27 +1172,30 @@ PROJECTS
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 25px;
   position: relative;
+  width: 100%;
   width: 320px;
   height: 450px;
   overflow: hidden;
   will-change: transform;
   /*
     
-    1. - Mapty *** NOT DONE YET***
+    1. - N / A *** NOT DONE YET***
     
-    2. - Nexter *** NOT DONE YET***
+    2. - Mapty *** NOT DONE YET***
     
-    3. - Natours
+    3. - Nexter *** NOT DONE YET***
     
-    4. - Omnifood
+    4. - Natours
     
-    5. - Trillo
+    5. - Omnifood
     
-    6. - Portfolio
+    6. - Trillo
     
-    7. - BackRoads
+    7. - Portfolio
     
-    8. - Tea Station
+    8. - Back Roads
+    
+    9. - Tea Station
     
     */
 }
@@ -1242,6 +1252,11 @@ PROJECTS
 
 .projects__card-wrapper--project7::before {
   /* Project 7 Image for Circle */
+  background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png") center/cover no-repeat;
+}
+
+.projects__card-wrapper--project8::before {
+  /* Project 8 Image for Circle */
   background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png") center/cover no-repeat;
 }
 
