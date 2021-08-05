@@ -1227,42 +1227,42 @@ PROJECTS
 
 .projects__card-wrapper--project2::before {
   /* Project 2 Image for Circle */
-  background: url("/WIP/dtm_v2/media/images/projects/Natours/natours.png") center/cover no-repeat;
+  background: url("/WIP/dtm_v2/media/images/projects/Mapty/mapty.png") center/cover no-repeat;
 }
 
 .projects__card-wrapper--project3::before {
   /* Project 3 Image for Circle */
-  background: url("/WIP/dtm_v2/media/images/projects/Omnifood/omnifood.png") center/cover no-repeat;
+  background: url("/WIP/dtm_v2/media/images/projects/`Under__Construction/code.jpg") center/cover no-repeat;
 }
 
 .projects__card-wrapper--project4::before {
   /* Project 4 Image for Circle */
-  background: url("/WIP/dtm_v2/media/images/projects/Trillo/trillo.png") center/cover no-repeat;
+  background: url("/WIP/dtm_v2/media/images/projects/Natours/natours.png") center/cover no-repeat;
 }
 
 .projects__card-wrapper--project5::before {
   /* Project 5 Image for Circle */
-  background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png") center/cover no-repeat;
+  background: url("/WIP/dtm_v2/media/images/projects/Omnifood/omnifood.png") center/cover no-repeat;
 }
 
 .projects__card-wrapper--project6::before {
   /* Project 6 Image for Circle */
-  background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png") center/cover no-repeat;
+  background: url("/WIP/dtm_v2/media/images/projects/Trillo/trillo.png") center/cover no-repeat;
 }
 
 .projects__card-wrapper--project7::before {
   /* Project 7 Image for Circle */
-  background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png") center/cover no-repeat;
+  background: url("/WIP/dtm_v2/media/images/projects/`Under__Construction/code.jpg") center/cover no-repeat;
 }
 
 .projects__card-wrapper--project8::before {
   /* Project 8 Image for Circle */
-  background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png") center/cover no-repeat;
+  background: url("/WIP/dtm_v2/media/images/projects/BackRoads/back-roads.png") center/cover no-repeat;
 }
 
-.projects__card-wrapper--project8::before {
+.projects__card-wrapper--project9::before {
   /* Project 8 Image for Circle */
-  background: url("/WIP/dtm_v2/media/images/projects/tea-station/main-bcg.png") center/cover no-repeat;
+  background: url("/WIP/dtm_v2/media/images/projects/TeaStation/tea-station.png") center/cover no-repeat;
 }
 
 .projects__card-wrapper:hover .projects__card-wrapper--project-content {
