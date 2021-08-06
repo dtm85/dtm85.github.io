@@ -6,8 +6,10 @@ In this Readme file, I will document My Journey as I learn to code.
 
 - [x] HTML5
 - [x] CSS3
+- [ ] Advanced CSS3
 
 ### Currently Learning:
 
-- [ ] Advanced CSS3
+- [ ] JavaScript
+- [ ] Sass
 - [ ] Git & GitHub

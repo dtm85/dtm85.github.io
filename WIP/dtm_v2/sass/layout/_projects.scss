@@ -294,6 +294,7 @@ PROJECTS
     }
 
     &:hover &--project-content--github-container {
+      /* GitHub Icon Transition on Hover GLOBAL */
       opacity: 1;
       transform: translateY(0px);
       transition-delay: 0.315s;
@@ -304,6 +305,258 @@ PROJECTS
       opacity: 1;
       transform: translateY(0px);
       transition-delay: 0.45s;
+    }
+
+    &--project1-gradient-container {
+      /* Project 1 Gradient Container */
+      position: relative;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: 0.85s ease-in-out;
+      transform: translateY(0px);
+      background: radial-gradient(
+        circle farthest-corner at 100% 100%,
+        #e8d44d 1%,
+        rgba(14, 14, 14, 0) 35%
+      );
+    }
+
+    &:hover &--project1-gradient-container {
+      /* Project 1 Gradient Container Transition on Hover */
+      background: radial-gradient(
+        circle farthest-corner at 100% 100%,
+        #e8d44d 1%,
+        rgba(14, 14, 14, 0) 35%
+      );
+      opacity: 1;
+      transition: 0.85s ease-in-out;
+      transform: translateY(-219px);
+      z-index: -1;
+    }
+
+    &--project2-gradient-container {
+      /* Project 2 Gradient Container */
+      position: relative;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: 0.85s ease-in-out;
+      transform: translateY(0px);
+      background: radial-gradient(
+        circle farthest-corner at 100% 100%,
+        #12d564 1%,
+        rgba(14, 14, 14, 0) 35%
+      );
+    }
+
+    &:hover &--project2-gradient-container {
+      /* Project 2 Gradient Container Transition on Hover */
+      background: radial-gradient(
+        circle farthest-corner at 100% 100%,
+        #12d564 1%,
+        rgba(14, 14, 14, 0) 35%
+      );
+      opacity: 1;
+      transition: 0.85s ease-in-out;
+      transform: translateY(-219px);
+      z-index: -1;
+    }
+
+    &--project3-gradient-container {
+      /* Project 3 Gradient Container */
+      position: relative;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: 0.85s ease-in-out;
+      transform: translateY(0px);
+      background: radial-gradient(
+        circle farthest-corner at 100% 100%,
+        #c69963 1%,
+        rgba(14, 14, 14, 0) 35%
+      );
+    }
+
+    &:hover &--project3-gradient-container {
+      /* Project 3 Gradient Container Transition on Hover */
+      background: radial-gradient(
+        circle farthest-corner at 100% 100%,
+        #c69963 1%,
+        rgba(14, 14, 14, 0) 35%
+      );
+      opacity: 1;
+      transition: 0.85s ease-in-out;
+      transform: translateY(-219px);
+      z-index: -1;
+    }
+
+    &--project4-gradient-container {
+      /* Project 4 Gradient Container */
+      position: relative;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: 0.85s ease-in-out;
+      transform: translateY(0px);
+      background: radial-gradient(
+        circle farthest-corner at 100% 100%,
+        #55c57a 1%,
+        rgba(14, 14, 14, 0) 35%
+      );
+    }
+
+    &:hover &--project4-gradient-container {
+      /* Project 4 Gradient Container Transition on Hover */
+      background: radial-gradient(
+        circle farthest-corner at 100% 100%,
+        #55c57a 1%,
+        rgba(14, 14, 14, 0) 35%
+      );
+      opacity: 1;
+      transition: 0.85s ease-in-out;
+      transform: translateY(-219px);
+      z-index: -1;
+    }
+
+    &--project5-gradient-container {
+      /* Project 5 Gradient Container */
+      position: relative;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: 0.85s ease-in-out;
+      transform: translateY(0px);
+      background: radial-gradient(
+        circle farthest-corner at 100% 100%,
+        #e67e22 1%,
+        rgba(14, 14, 14, 0) 35%
+      );
+    }
+
+    &:hover &--project5-gradient-container {
+      /* Project 5 Gradient Container Transition on Hover */
+      background: radial-gradient(
+        circle farthest-corner at 100% 100%,
+        #e67e22 1%,
+        rgba(14, 14, 14, 0) 35%
+      );
+      opacity: 1;
+      transition: 0.85s ease-in-out;
+      transform: translateY(-219px);
+      z-index: -1;
+    }
+
+    &--project6-gradient-container {
+      /* Project 6 Gradient Container */
+      position: relative;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: 0.85s ease-in-out;
+      transform: translateY(0px);
+      background: radial-gradient(
+        circle farthest-corner at 100% 100%,
+        #eb2f64 1%,
+        rgba(14, 14, 14, 0) 35%
+      );
+    }
+
+    &:hover &--project6-gradient-container {
+      /* Project 6 Gradient Container Transition on Hover */
+      background: radial-gradient(
+        circle farthest-corner at 100% 100%,
+        #eb2f64 1%,
+        rgba(14, 14, 14, 0) 35%
+      );
+      opacity: 1;
+      transition: 0.85s ease-in-out;
+      transform: translateY(-219px);
+      z-index: -1;
+    }
+
+    &--project7-gradient-container {
+      /* Project 7 Gradient Container */
+      position: relative;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: 0.85s ease-in-out;
+      transform: translateY(0px);
+      background: radial-gradient(
+        circle farthest-corner at 100% 100%,
+        #e9b949 1%,
+        rgba(14, 14, 14, 0) 35%
+      );
+    }
+
+    &:hover &--project7-gradient-container {
+      /* Project 7 Gradient Container Transition on Hover */
+      background: radial-gradient(
+        circle farthest-corner at 100% 100%,
+        #e9b949 1%,
+        rgba(14, 14, 14, 0) 35%
+      );
+      opacity: 1;
+      transition: 0.85s ease-in-out;
+      transform: translateY(-219px);
+      z-index: -1;
+    }
+
+    &--project8-gradient-container {
+      /* Project 8 Gradient Container */
+      position: relative;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: 0.85s ease-in-out;
+      transform: translateY(0px);
+      background: radial-gradient(
+        circle farthest-corner at 100% 100%,
+        #2caeba 1%,
+        rgba(14, 14, 14, 0) 35%
+      );
+    }
+
+    &:hover &--project8-gradient-container {
+      /* Project 8 Gradient Container Transition on Hover */
+      background: radial-gradient(
+        circle farthest-corner at 100% 100%,
+        #2caeba 1%,
+        rgba(14, 14, 14, 0) 35%
+      );
+      opacity: 1;
+      transition: 0.85s ease-in-out;
+      transform: translateY(-219px);
+      z-index: -1;
+    }
+
+    &--project9-gradient-container {
+      /* Project 9 Gradient Container */
+      position: relative;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: 0.85s ease-in-out;
+      transform: translateY(0px);
+      background: radial-gradient(
+        circle farthest-corner at 100% 100%,
+        #678e3e 1%,
+        rgba(14, 14, 14, 0) 35%
+      );
+    }
+
+    &:hover &--project9-gradient-container {
+      /* Project 9 Gradient Container Transition on Hover */
+      background: radial-gradient(
+        circle farthest-corner at 100% 100%,
+        #678e3e 1%,
+        rgba(14, 14, 14, 0) 35%
+      );
+      opacity: 1;
+      transition: 0.85s ease-in-out;
+      transform: translateY(-219px);
+      z-index: -1;
     }
   }
 }
