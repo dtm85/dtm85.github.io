@@ -578,8 +578,48 @@ CONTACT
 =======
 */
 .contact {
-  background: #006f77;
   grid-column: full-start / full-end;
+  margin: 3rem auto;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .contact {
+    padding: 6.25rem 0;
+  }
+}
+
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(39, 39, 39, 0.95);
+  -webkit-box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+          box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  padding: 4rem;
+}
+
+.contact__container--social-media {
+  background: radial-gradient(circle farthest-corner at 100% 100%, #393a53 1%, #0e0e0e00 50%);
+  -webkit-box-shadow: 0 0 8px 3px #393a53;
+          box-shadow: 0 0 8px 3px #393a53;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.contact__container--message {
+  background: radial-gradient(circle farthest-corner at 100% 100%, #393a53 1%, #0e0e0e00 50%);
+  -webkit-box-shadow: 0 0 8px 3px #393a53;
+          box-shadow: 0 0 8px 3px #393a53;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
 }
 
 /*
