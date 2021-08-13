@@ -11,22 +11,31 @@ CONTACT
   grid-column: full-start / full-end;
   // padding: 9.375rem 0;
   margin: 3rem auto;
+  // width: 100%;
 
   @include respond(bp-medium-900) {
     padding: 6.25rem 0;
   }
 
   &__container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // column-gap: 14rem;
     justify-content: center;
-    align-items: center;
-    background: rgba(39, 39, 39, 0.95);
-    box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+    justify-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: linear-gradient(
+      to top left,
+      $clr-grey-dark-2 1%,
+      #0e0e0e00 70%
+    );
+    box-shadow: $box-shadow;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 25px;
-    padding: 4rem;
+    padding: 14rem;
 
-    &--social-media {
+    &--contact {
       background: radial-gradient(
         circle farthest-corner at 100% 100%,
         $clr-grey-dark-2 1%,
