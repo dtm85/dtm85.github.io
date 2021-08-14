@@ -578,6 +578,7 @@ CONTACT
 =======
 */
 .contact {
+  /* Contact Section */
   grid-column: full-start / full-end;
   margin: 3rem auto;
 }
@@ -589,6 +590,33 @@ CONTACT
 }
 
 .contact__container {
+  /* Contact Glass Container */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: -webkit-gradient(linear, right bottom, left top, color-stop(1%, rgba(23, 23, 23, 0.9)), color-stop(70%, #0e0e0e00));
+  background: linear-gradient(to top left, rgba(23, 23, 23, 0.9) 1%, #0e0e0e00 70%);
+  -webkit-box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+          box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  padding: 14rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact__container--email-svg {
+  /* Email SVG - Background */
+  fill: rgba(192, 192, 192, 0.15);
+  position: absolute;
+  left: -85px;
+  top: 75px;
+  width: 25rem;
+  height: 25rem;
+  z-index: -1;
+}
+
+.contact__container--wrapper {
+  /* Contact Info & Message Wrapper */
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -597,31 +625,38 @@ CONTACT
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  background: -webkit-gradient(linear, right bottom, left top, color-stop(1%, #393a53), color-stop(70%, #0e0e0e00));
-  background: linear-gradient(to top left, #393a53 1%, #0e0e0e00 70%);
   -webkit-box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
           box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 25px;
-  padding: 14rem;
 }
 
-.contact__container--contact {
-  background: radial-gradient(circle farthest-corner at 100% 100%, #393a53 1%, #0e0e0e00 50%);
+.contact__container--wrapper--contact {
+  /* Contact Info */
+  height: 90%;
+  width: 100%;
+  background: radial-gradient(circle farthest-corner at 100% 100%, #c0c0c0 1%, #0e0e0e00 20%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   -webkit-box-shadow: 0 0 8px 3px #393a53;
           box-shadow: 0 0 8px 3px #393a53;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
+  z-index: 2;
 }
 
-.contact__container--message {
-  background: radial-gradient(circle farthest-corner at 100% 100%, #393a53 1%, #0e0e0e00 50%);
+.contact__container--wrapper--message {
+  /* Message - Submit Form */
+  height: 90%;
+  width: 100%;
+  background: radial-gradient(circle farthest-corner at 100% 100%, #c0c0c0 1%, #0e0e0e00 20%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   -webkit-box-shadow: 0 0 8px 3px #393a53;
           box-shadow: 0 0 8px 3px #393a53;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
+  z-index: 2;
 }
 
 /*
