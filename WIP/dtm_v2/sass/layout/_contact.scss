@@ -36,10 +36,10 @@ CONTACT
 
     &--email-svg {
       /* Email SVG - Background */
-      fill: rgba(192, 192, 192, 0.15);
+      fill: rgba(192, 192, 192, 0.1);
       position: absolute;
       left: -85px;
-      top: 75px;
+      bottom: 50;
       width: 25rem;
       height: 25rem;
       z-index: -1;
@@ -53,37 +53,21 @@ CONTACT
       justify-content: center;
       justify-items: center;
 
-      // background-color: rgba(70, 131, 180, 0.507);
-      box-shadow: $box-shadow;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 25px;
-
       &--contact {
         /* Contact Info */
         height: 90%;
-        width: 100%;
-        background: radial-gradient(
-          circle farthest-corner at 100% 100%,
-          $clr-silver 1%,
-          /* #ddfdfd3f 1%, */ #0e0e0e00 20%
-        );
-        // background-color: $background-card-dark-grey;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        box-shadow: 0 0 8px 3px $clr-grey-dark-2;
-        border: 1px solid $border-light-grey;
-        border-radius: 10px;
+        width: 90%;
         z-index: 2;
       }
 
       &--message {
         /* Message - Submit Form */
         height: 90%;
-        width: 100%;
-        background: radial-gradient(
-          circle farthest-corner at 100% 100%,
-          $clr-silver 1%,
-          /* #ddfdfd3f 1%, */ #0e0e0e00 20%
+        width: 90%;
+        background: linear-gradient(
+          135deg,
+          $clr-grey-dark-1 0%,
+          $clr-grey-dark-2 100%
         );
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
