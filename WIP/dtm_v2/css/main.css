@@ -615,7 +615,7 @@ CONTACT
   z-index: -1;
 }
 
-.contact__container--wrapper {
+.contact__container--card-wrapper {
   /* Contact Info & Message Wrapper */
   display: -ms-grid;
   display: grid;
@@ -627,14 +627,37 @@ CONTACT
   justify-items: center;
 }
 
-.contact__container--wrapper--contact {
+.contact__container--card-wrapper--connect {
   /* Contact Info */
   height: 90%;
   width: 90%;
   z-index: 2;
 }
 
-.contact__container--wrapper--message {
+.contact__container--card-wrapper--connect--info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 0;
+}
+
+.contact__container--card-wrapper--connect--info--svg-phone {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.contact__container--card-wrapper--connect--info--svg-phone, .contact__container--card-wrapper--connect--info--svg-email, .contact__container--card-wrapper--connect--info--svg-map-marker {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.contact__container--card-wrapper--message {
   /* Message - Submit Form */
   height: 90%;
   width: 90%;
