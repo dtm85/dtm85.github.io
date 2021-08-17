@@ -31,7 +31,7 @@ NAVIGATION
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: 1.5px;
-    color: $clr-white;
+    color: $clr-text;
     transition: $transition;
 
     &--tech-media {
@@ -66,7 +66,7 @@ NAVIGATION
 
     &--link {
       text-transform: capitalize;
-      color: $clr-white;
+      color: $clr-text;
       transition: $transition;
       display: inline-block;
       font-size: 1.1rem;
@@ -119,7 +119,7 @@ NAVIGATION
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: 1.5px;
-    color: $clr-white;
+    color: $clr-text;
     display: block;
     position: absolute;
     top: 1.5rem;
@@ -148,7 +148,7 @@ NAVIGATION
       margin-bottom: 4.5rem;
       text-transform: capitalize;
       letter-spacing: $spacing;
-      color: $clr-white;
+      color: $clr-text;
       display: inline-flex;
       align-items: center;
       justify-content: center;

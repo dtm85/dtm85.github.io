@@ -38,6 +38,7 @@ HEADER
     font-size: 5rem;
     line-height: 1.7;
     transition: $transition;
+    color: $clr-text;
 
     @include respond(bp-medium-767-maxwidth) {
       font-size: 3.5rem;
@@ -126,7 +127,7 @@ HEADER
     &--link:visited {
       display: block;
       padding: 0;
-      color: $clr-white;
+      color: $clr-text;
     }
     &--svg {
       display: block;

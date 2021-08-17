@@ -56,24 +56,49 @@ CONTACT
       &--connect {
         /* Contact Info */
         height: 90%;
-        width: 90%;
+        width: 75%;
+        line-height: 1.4;
         z-index: 2;
+
+        &--header {
+          &--h2 {
+            color: $clr-primary-5;
+            font-weight: 400;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+          }
+
+          &--p1 {
+            font-weight: 400;
+            letter-spacing: 2px;
+            color: $clr-text;
+            // width: 26rem;
+          }
+        }
 
         &--info {
           display: flex;
-          justify-content: center;
           align-items: center;
-          padding: 1.5rem 0;
+          padding: 1.5rem 0 1.5rem 2rem;
 
           &--svg-phone {
             transform: rotate(90deg);
           }
 
+          &--h4-phone,
+          &--h4-email,
+          &--h4-location {
+            padding-left: 0.7rem;
+            font-weight: 400;
+            display: inline-block;
+          }
+
           &--svg-phone,
           &--svg-email,
           &--svg-map-marker {
-            width: 1.25rem;
-            height: 1.25rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            color: $clr-primary-5;
           }
         }
       }

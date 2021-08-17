@@ -408,8 +408,9 @@ ABOUT
 
 .about__picture--text-p1, .about__picture--text-p2 {
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1.5;
+  color: #e2e2e2;
 }
 
 .about__content {
@@ -630,21 +631,32 @@ CONTACT
 .contact__container--card-wrapper--connect {
   /* Contact Info */
   height: 90%;
-  width: 90%;
+  width: 75%;
+  line-height: 1.4;
   z-index: 2;
+}
+
+.contact__container--card-wrapper--connect--header--h2 {
+  color: #0ef;
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact__container--card-wrapper--connect--header--p1 {
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #e2e2e2;
 }
 
 .contact__container--card-wrapper--connect--info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 1.5rem 2rem;
 }
 
 .contact__container--card-wrapper--connect--info--svg-phone {
@@ -652,9 +664,16 @@ CONTACT
           transform: rotate(90deg);
 }
 
+.contact__container--card-wrapper--connect--info--h4-phone, .contact__container--card-wrapper--connect--info--h4-email, .contact__container--card-wrapper--connect--info--h4-location {
+  padding-left: 0.7rem;
+  font-weight: 400;
+  display: inline-block;
+}
+
 .contact__container--card-wrapper--connect--info--svg-phone, .contact__container--card-wrapper--connect--info--svg-email, .contact__container--card-wrapper--connect--info--svg-map-marker {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #0ef;
 }
 
 .contact__container--card-wrapper--message {
@@ -731,6 +750,7 @@ HEADER
   line-height: 1.7;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  color: #e2e2e2;
 }
 
 @media only screen and (max-width: 47.938em) {
@@ -842,7 +862,7 @@ HEADER
 .header__social-container--link:link, .header__social-container--link:visited {
   display: block;
   padding: 0;
-  color: #fff;
+  color: #e2e2e2;
 }
 
 .header__social-container--svg {
@@ -939,7 +959,7 @@ NAVIGATION
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: 1.5px;
-  color: #fff;
+  color: #e2e2e2;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -984,7 +1004,7 @@ NAVIGATION
 
 .navbar__nav-links--link {
   text-transform: capitalize;
-  color: #fff;
+  color: #e2e2e2;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   display: inline-block;
@@ -1050,7 +1070,7 @@ NAVIGATION
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: 1.5px;
-  color: #fff;
+  color: #e2e2e2;
   display: block;
   position: absolute;
   top: 1.5rem;
@@ -1080,7 +1100,7 @@ NAVIGATION
   margin-bottom: 4.5rem;
   text-transform: capitalize;
   letter-spacing: 0.1rem;
-  color: #fff;
+  color: #e2e2e2;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1377,7 +1397,7 @@ PROJECTS
   letter-spacing: 2px;
   font-size: 2rem;
   font-weight: 400;
-  color: #c0c0c0;
+  color: #e2e2e2;
   margin: 0 auto;
 }
 
@@ -1435,7 +1455,7 @@ PROJECTS
   /* GitHub Icon Styling GLOBAL */
   width: 30px;
   height: 30px;
-  color: silver;
+  color: #e2e2e2;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }

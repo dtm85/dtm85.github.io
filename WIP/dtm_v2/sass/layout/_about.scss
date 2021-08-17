@@ -92,8 +92,9 @@ ABOUT
     &--text-p1,
     &--text-p2 {
       font-weight: 400;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       line-height: 1.5;
+      color: $clr-text;
     }
   }
 
