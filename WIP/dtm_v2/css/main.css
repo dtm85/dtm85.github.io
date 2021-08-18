@@ -303,404 +303,6 @@ Navbar - Menu Button
 }
 
 /* 
-=====
-ABOUT
-=====
-*/
-.about {
-  /* About Glass Container */
-  width: 100%;
-  grid-column: full-start / full-end;
-  background: rgba(39, 39, 39, 0.95);
-  -webkit-box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
-          box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 25px;
-  margin: 3rem auto;
-  overflow: hidden;
-  position: relative;
-}
-
-.about__heading {
-  /* About Me Title */
-  font-weight: 400;
-  font-size: 3rem;
-  text-align: center;
-  margin: 5rem auto;
-  color: #0ef;
-}
-
-.about__picture {
-  /* About Me Section - Picture & Description */
-  padding: 2rem 5.5rem;
-  margin: 0 auto;
-  width: 90%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  background: radial-gradient(circle farthest-corner at 100% 100%, #393a53 1%, #0e0e0e00 50%);
-  -webkit-box-shadow: 0 0 8px 3px #393a53;
-          box-shadow: 0 0 8px 3px #393a53;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-}
-
-@media only screen and (max-width: 40.625em) {
-  .about__picture {
-    padding: 2rem 3rem;
-  }
-}
-
-.about__picture--container {
-  /* Profile Picture Container - Used to change Picture & Description from 2 Column over to 1 Column Layout */
-}
-
-@media only screen and (max-width: 40.625em) {
-  .about__picture--container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-.about__picture--dan-pic {
-  /* Profile Picture Styling */
-  width: 15rem;
-  height: 15rem;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 9px 0 #0ef;
-          box-shadow: 0 0 9px 0 #0ef;
-  position: relative;
-  -webkit-transform: rotateZ(-2deg);
-          transform: rotateZ(-2deg);
-  float: left;
-  shape-outside: circle(50% at 50% 50%);
-  margin-right: 3rem;
-  margin-bottom: 0.905rem;
-}
-
-@media only screen and (max-width: 40.625em) {
-  .about__picture--dan-pic {
-    margin-right: 0;
-    float: none;
-  }
-}
-
-.about__picture--text-h2 {
-  margin-bottom: 1rem;
-}
-
-.about__picture--text-p1 {
-  margin-bottom: 2rem;
-}
-
-.about__picture--text-p1--bold-hello {
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: #0ef;
-}
-
-.about__picture--text-p1, .about__picture--text-p2 {
-  font-weight: 400;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  color: #e2e2e2;
-}
-
-.about__content {
-  margin: 10rem auto 4rem auto;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* Skills UL of SVG's  */
-}
-
-@media only screen and (max-width: 40.625em) {
-  .about__content {
-    margin: 8rem auto 4rem auto;
-  }
-}
-
-.about__content--h1 {
-  font-weight: 400;
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 5rem;
-  color: #0ef;
-}
-
-.about__content--skills-container {
-  padding: 0 5rem;
-}
-
-@media only screen and (max-width: 40.625em) {
-  .about__content--skills-container {
-    padding: 0 3rem;
-  }
-}
-
-.about__content--skills-ul-container {
-  margin: 0 auto;
-  width: 65%;
-}
-
-@media only screen and (max-width: 56.25em) {
-  .about__content--skills-ul-container {
-    width: 100%;
-  }
-}
-
-.about__content--skills {
-  margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  gap: 3rem;
-  /* 
-      ================================================================================================
-      6 Column Layout on Skills section that wraps - also has WIDE padding to hold the 6 column layout
-      - The WIDE padding will be removed at 900px as it will still hold the 6 Column Layout at 900px
-      ================================================================================================
-      */
-  -ms-grid-columns: (minmax(5rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
-  /* 4 Column Layout + Some padding that helps to keep the 4 Column Layout */
-  /* 5 Column Layout due to the padding changing to even less. */
-  /* 3 Column Layout - without this media query it would default to 2 columns with too much space */
-}
-
-@media only screen and (max-width: 42em) {
-  .about__content--skills {
-    -ms-grid-columns: (minmax(4.5rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
-  }
-}
-
-@media only screen and (max-width: 40.625em) {
-  .about__content--skills {
-    -ms-grid-columns: (minmax(4.5rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
-  }
-}
-
-@media only screen and (max-width: 26.75em) {
-  .about__content--skills {
-    -ms-grid-columns: (minmax(4.25rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(4.25rem, 1fr));
-  }
-}
-
-.about__content--skills svg {
-  /* Styling for all skill svg's - GLOBAL */
-  position: relative;
-  max-height: 5rem;
-  max-width: 5.5rem;
-  padding: 0.5rem;
-  background: radial-gradient(circle farthest-corner at 100% 100%, #393a53 1%, #0e0e0e00 50%);
-  -webkit-box-shadow: 0 0 8px 3px #393a53;
-          box-shadow: 0 0 8px 3px #393a53;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  overflow: hidden;
-}
-
-.about__content--skills svg:hover {
-  -webkit-box-shadow: 0 0 8px 3px #00afbb;
-          box-shadow: 0 0 8px 3px #00afbb;
-}
-
-.about__content--skill {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-}
-
-.about__content--skill-html5 {
-  color: #dc4d25;
-}
-
-.about__content--skill-css3 {
-  color: #2965f1;
-}
-
-.about__content--skill-sass {
-  color: #cf649a;
-}
-
-.about__content--skill-bootstrap {
-  color: #7852b3;
-}
-
-.about__content--skill-js {
-  color: #e8d44d;
-}
-
-.about__content--skill-node-js {
-  color: #689f63;
-}
-
-.about__content--skill-npm {
-  color: #cb0a00;
-}
-
-.about__content--skill-git {
-  color: #fb4f28;
-}
-
-.about__content--skill-figma {
-  color: #6e5494;
-}
-
-.about__content--skill-ubuntu {
-  color: #e95321;
-}
-
-.about__content--skill-nginx {
-  color: #009639;
-}
-
-.about__content--skill-linode {
-  color: #02b159;
-}
-
-/* 
-=======
-CONTACT
-=======
-*/
-.contact {
-  /* Contact Section */
-  grid-column: full-start / full-end;
-  margin: 3rem auto;
-}
-
-@media only screen and (max-width: 56.25em) {
-  .contact {
-    padding: 6.25rem 0;
-  }
-}
-
-.contact__container {
-  /* Contact Glass Container */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  background: -webkit-gradient(linear, right bottom, left top, color-stop(1%, rgba(23, 23, 23, 0.9)), color-stop(70%, #0e0e0e00));
-  background: linear-gradient(to top left, rgba(23, 23, 23, 0.9) 1%, #0e0e0e00 70%);
-  -webkit-box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
-          box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 25px;
-  padding: 14rem 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.contact__container--email-svg {
-  /* Email SVG - Background */
-  fill: rgba(192, 192, 192, 0.1);
-  position: absolute;
-  left: -85px;
-  bottom: 50;
-  width: 25rem;
-  height: 25rem;
-  z-index: -1;
-}
-
-.contact__container--card-wrapper {
-  /* Contact Info & Message Wrapper */
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  justify-items: center;
-}
-
-.contact__container--card-wrapper--connect {
-  /* Contact Info */
-  height: 90%;
-  width: 75%;
-  line-height: 1.4;
-  z-index: 2;
-}
-
-.contact__container--card-wrapper--connect--header--h2 {
-  color: #0ef;
-  font-weight: 400;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.contact__container--card-wrapper--connect--header--p1 {
-  font-weight: 400;
-  letter-spacing: 2px;
-  color: #e2e2e2;
-}
-
-.contact__container--card-wrapper--connect--info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1.5rem 0 1.5rem 2rem;
-}
-
-.contact__container--card-wrapper--connect--info--svg-phone {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.contact__container--card-wrapper--connect--info--h4-phone, .contact__container--card-wrapper--connect--info--h4-email, .contact__container--card-wrapper--connect--info--h4-location {
-  padding-left: 0.7rem;
-  font-weight: 400;
-  display: inline-block;
-}
-
-.contact__container--card-wrapper--connect--info--svg-phone, .contact__container--card-wrapper--connect--info--svg-email, .contact__container--card-wrapper--connect--info--svg-map-marker {
-  width: 1.5rem;
-  height: 1.5rem;
-  color: #0ef;
-}
-
-.contact__container--card-wrapper--message {
-  /* Message - Submit Form */
-  height: 90%;
-  width: 90%;
-  background: linear-gradient(135deg, #4e4f70 0%, #393a53 100%);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  -webkit-box-shadow: 0 0 8px 3px #393a53;
-          box-shadow: 0 0 8px 3px #393a53;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  z-index: 2;
-}
-
-/*
-======
-FOOTER
-======
-*/
-.footer {
-  background: #444;
-  grid-column: full-start / full-end;
-}
-
-/* 
 ======
 HEADER
 ======
@@ -1181,6 +783,277 @@ NAVIGATION
 .navbar__sidebar-social-icons-link:link:active, .navbar__sidebar-social-icons-link:visited:active {
   -webkit-box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* 
+=====
+ABOUT
+=====
+*/
+.about {
+  /* About Glass Container */
+  width: 100%;
+  grid-column: full-start / full-end;
+  background: rgba(39, 39, 39, 0.95);
+  -webkit-box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+          box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  margin: 3rem auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.about__heading {
+  /* About Me Title */
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+  margin: 5rem auto;
+  color: #0ef;
+}
+
+.about__picture {
+  /* About Me Section - Picture & Description */
+  padding: 2rem 5.5rem;
+  margin: 0 auto;
+  width: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: radial-gradient(circle farthest-corner at 100% 100%, #393a53 1%, #0e0e0e00 50%);
+  -webkit-box-shadow: 0 0 8px 3px #393a53;
+          box-shadow: 0 0 8px 3px #393a53;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .about__picture {
+    padding: 2rem 3rem;
+  }
+}
+
+.about__picture--container {
+  /* Profile Picture Container - Used to change Picture & Description from 2 Column over to 1 Column Layout */
+}
+
+@media only screen and (max-width: 40.625em) {
+  .about__picture--container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.about__picture--dan-pic {
+  /* Profile Picture Styling */
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 9px 0 #0ef;
+          box-shadow: 0 0 9px 0 #0ef;
+  position: relative;
+  -webkit-transform: rotateZ(-2deg);
+          transform: rotateZ(-2deg);
+  float: left;
+  shape-outside: circle(50% at 50% 50%);
+  margin-right: 3rem;
+  margin-bottom: 0.905rem;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .about__picture--dan-pic {
+    margin-right: 0;
+    float: none;
+  }
+}
+
+.about__picture--text-h2 {
+  margin-bottom: 1rem;
+}
+
+.about__picture--text-p1 {
+  margin-bottom: 2rem;
+}
+
+.about__picture--text-p1--bold-hello {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #0ef;
+}
+
+.about__picture--text-p1, .about__picture--text-p2 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #e2e2e2;
+}
+
+.about__content {
+  margin: 10rem auto 4rem auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Skills UL of SVG's  */
+}
+
+@media only screen and (max-width: 40.625em) {
+  .about__content {
+    margin: 8rem auto 4rem auto;
+  }
+}
+
+.about__content--h1 {
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  color: #0ef;
+}
+
+.about__content--skills-container {
+  padding: 0 5rem;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .about__content--skills-container {
+    padding: 0 3rem;
+  }
+}
+
+.about__content--skills-ul-container {
+  margin: 0 auto;
+  width: 65%;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .about__content--skills-ul-container {
+    width: 100%;
+  }
+}
+
+.about__content--skills {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 3rem;
+  /* 
+      ================================================================================================
+      6 Column Layout on Skills section that wraps - also has WIDE padding to hold the 6 column layout
+      - The WIDE padding will be removed at 900px as it will still hold the 6 Column Layout at 900px
+      ================================================================================================
+      */
+  -ms-grid-columns: (minmax(5rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  /* 4 Column Layout + Some padding that helps to keep the 4 Column Layout */
+  /* 5 Column Layout due to the padding changing to even less. */
+  /* 3 Column Layout - without this media query it would default to 2 columns with too much space */
+}
+
+@media only screen and (max-width: 42em) {
+  .about__content--skills {
+    -ms-grid-columns: (minmax(4.5rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
+  }
+}
+
+@media only screen and (max-width: 40.625em) {
+  .about__content--skills {
+    -ms-grid-columns: (minmax(4.5rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
+  }
+}
+
+@media only screen and (max-width: 26.75em) {
+  .about__content--skills {
+    -ms-grid-columns: (minmax(4.25rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(4.25rem, 1fr));
+  }
+}
+
+.about__content--skills svg {
+  /* Styling for all skill svg's - GLOBAL */
+  position: relative;
+  max-height: 5rem;
+  max-width: 5.5rem;
+  padding: 0.5rem;
+  background: radial-gradient(circle farthest-corner at 100% 100%, #393a53 1%, #0e0e0e00 50%);
+  -webkit-box-shadow: 0 0 8px 3px #393a53;
+          box-shadow: 0 0 8px 3px #393a53;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.about__content--skills svg:hover {
+  -webkit-box-shadow: 0 0 8px 3px #00afbb;
+          box-shadow: 0 0 8px 3px #00afbb;
+}
+
+.about__content--skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.about__content--skill-html5 {
+  color: #dc4d25;
+}
+
+.about__content--skill-css3 {
+  color: #2965f1;
+}
+
+.about__content--skill-sass {
+  color: #cf649a;
+}
+
+.about__content--skill-bootstrap {
+  color: #7852b3;
+}
+
+.about__content--skill-js {
+  color: #e8d44d;
+}
+
+.about__content--skill-node-js {
+  color: #689f63;
+}
+
+.about__content--skill-npm {
+  color: #cb0a00;
+}
+
+.about__content--skill-git {
+  color: #fb4f28;
+}
+
+.about__content--skill-figma {
+  color: #6e5494;
+}
+
+.about__content--skill-ubuntu {
+  color: #e95321;
+}
+
+.about__content--skill-nginx {
+  color: #009639;
+}
+
+.about__content--skill-linode {
+  color: #02b159;
 }
 
 /*
@@ -1742,6 +1615,168 @@ PROJECTS
   -webkit-transform: translateY(-219px);
           transform: translateY(-219px);
   z-index: -1;
+}
+
+/* 
+=======
+CONTACT
+=======
+*/
+.contact {
+  /* Contact Section */
+  grid-column: full-start / full-end;
+  margin: 3rem auto;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .contact {
+    padding: 6.25rem 0;
+  }
+}
+
+.contact__container {
+  /* Contact Glass Container */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: -webkit-gradient(linear, right bottom, left top, color-stop(1%, rgba(23, 23, 23, 0.9)), color-stop(70%, #0e0e0e00));
+  background: linear-gradient(to top left, rgba(23, 23, 23, 0.9) 1%, #0e0e0e00 70%);
+  -webkit-box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+          box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  padding: 14rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact__container--email-svg {
+  /* Email SVG - Background */
+  fill: rgba(192, 192, 192, 0.1);
+  position: absolute;
+  left: -85px;
+  bottom: 50;
+  width: 25rem;
+  height: 25rem;
+  z-index: -1;
+}
+
+.contact__container--card-wrapper {
+  /* Contact Info & Message Wrapper */
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.contact__container--card-wrapper--connect {
+  /* Contact Info */
+  height: 90%;
+  width: 75%;
+  line-height: 1.4;
+  z-index: 2;
+}
+
+.contact__container--card-wrapper--connect--flex-wrapper {
+  /* Flex wrapper to add space in between header / info / social containers */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact__container--card-wrapper--connect--flex-wrapper--header {
+  /* Header Container */
+}
+
+.contact__container--card-wrapper--connect--flex-wrapper--header--h2 {
+  /* h2 Header */
+  color: #0ef;
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact__container--card-wrapper--connect--flex-wrapper--header--p1 {
+  /* Header Description */
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #e2e2e2;
+}
+
+.contact__container--card-wrapper--connect--flex-wrapper--info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 0 1.5rem 2rem;
+}
+
+.contact__container--card-wrapper--connect--flex-wrapper--info--svg-phone {
+  /* Flipped SVG by 90deg so that the phone is faceing towards the numbers */
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.contact__container--card-wrapper--connect--flex-wrapper--info--h4-phone, .contact__container--card-wrapper--connect--flex-wrapper--info--email-link, .contact__container--card-wrapper--connect--flex-wrapper--info--h4-location {
+  /* Padding, font-weight & color of text in the info section */
+  padding-left: 0.7rem;
+  font-weight: 400;
+  color: #e2e2e2;
+}
+
+.contact__container--card-wrapper--connect--flex-wrapper--info--email-link {
+  /* Email link text color */
+  color: #e2e2e2;
+}
+
+.contact__container--card-wrapper--connect--flex-wrapper--info--h4-location {
+  /* Extra padding on the top to help make the text be more centered as align-items: center; did not center 100% */
+  padding-top: 0.25rem;
+}
+
+.contact__container--card-wrapper--connect--flex-wrapper--info--svg-phone, .contact__container--card-wrapper--connect--flex-wrapper--info--svg-email, .contact__container--card-wrapper--connect--flex-wrapper--info--svg-map-marker {
+  /* SVG Color, Width & Height */
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #0ef;
+}
+
+.contact__container--card-wrapper--connect--flex-wrapper__social {
+  width: 3rem;
+  height: 4rem;
+  background-color: tan;
+}
+
+.contact__container--card-wrapper--message {
+  /* Message - Submit Form */
+  height: 90%;
+  width: 90%;
+  background: linear-gradient(135deg, #4e4f70 0%, #393a53 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -webkit-box-shadow: 0 0 8px 3px #393a53;
+          box-shadow: 0 0 8px 3px #393a53;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  z-index: 2;
+}
+
+/*
+======
+FOOTER
+======
+*/
+.footer {
+  background: #444;
+  grid-column: full-start / full-end;
 }
 
 .container {
