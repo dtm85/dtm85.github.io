@@ -124,11 +124,79 @@ CONTACT
           }
 
           &__social {
-            width: 3rem;
-            height: 4rem;
-            background-color: tan;
+            &--links-wrapper {
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              grid-template-rows: 1fr;
+              justify-content: start;
+              align-items: center;
+              width: 100%;
 
-            // Discord color #7289DA
+              &--linkedin {
+                padding: 0.5rem;
+                background: radial-gradient(
+                  circle farthest-corner at 100% 100%,
+                  $clr-grey-dark-2 1%,
+                  #ffffffe3 50%
+                );
+                box-shadow: 0 0 8px 3px $clr-grey-dark-2;
+                border: 1px solid $border-light-grey;
+                border-radius: 10px;
+                transition: $transition;
+                overflow: hidden;
+                color: #0e76a8;
+                width: 2.8rem;
+                height: 2.8rem;
+              }
+              &--twitter {
+                padding: 0.5rem;
+                background: radial-gradient(
+                  circle farthest-corner at 100% 100%,
+                  $clr-grey-dark-2 1%,
+                  #ffffffe3 50%
+                );
+                box-shadow: 0 0 8px 3px $clr-grey-dark-2;
+                border: 1px solid $border-light-grey;
+                border-radius: 10px;
+                transition: $transition;
+                overflow: hidden;
+                color: #08a0e9;
+                width: 2.8rem;
+                height: 2.8rem;
+              }
+              &--discord {
+                padding: 0.5rem;
+                background: radial-gradient(
+                  circle farthest-corner at 100% 100%,
+                  $clr-grey-dark-2 1%,
+                  #ffffffe3 50%
+                );
+                box-shadow: 0 0 8px 3px $clr-grey-dark-2;
+                border: 1px solid $border-light-grey;
+                border-radius: 10px;
+                transition: $transition;
+                overflow: hidden;
+                color: #7289da;
+                width: 2.8rem;
+                height: 2.8rem;
+              }
+              &--microsoft-teams {
+                // padding: 0.5rem;
+                background: radial-gradient(
+                  circle farthest-corner at 100% 100%,
+                  $clr-grey-dark-2 1%,
+                  #ffffffe3 50%
+                );
+                box-shadow: 0 0 8px 3px $clr-grey-dark-2;
+                border: 1px solid $border-light-grey;
+                border-radius: 10px;
+                transition: $transition;
+                overflow: hidden;
+                color: #6264a7;
+                width: 2.8rem;
+                height: 2.8rem;
+              }
+            }
           }
         }
       }

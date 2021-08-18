@@ -1749,10 +1749,79 @@ CONTACT
   color: #0ef;
 }
 
-.contact__container--card-wrapper--connect--flex-wrapper__social {
-  width: 3rem;
-  height: 4rem;
-  background-color: tan;
+.contact__container--card-wrapper--connect--flex-wrapper__social--links-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.contact__container--card-wrapper--connect--flex-wrapper__social--links-wrapper--linkedin {
+  padding: 0.5rem;
+  background: radial-gradient(circle farthest-corner at 100% 100%, #393a53 1%, #ffffffe3 50%);
+  -webkit-box-shadow: 0 0 8px 3px #393a53;
+          box-shadow: 0 0 8px 3px #393a53;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  color: #0e76a8;
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.contact__container--card-wrapper--connect--flex-wrapper__social--links-wrapper--twitter {
+  padding: 0.5rem;
+  background: radial-gradient(circle farthest-corner at 100% 100%, #393a53 1%, #ffffffe3 50%);
+  -webkit-box-shadow: 0 0 8px 3px #393a53;
+          box-shadow: 0 0 8px 3px #393a53;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  color: #08a0e9;
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.contact__container--card-wrapper--connect--flex-wrapper__social--links-wrapper--discord {
+  padding: 0.5rem;
+  background: radial-gradient(circle farthest-corner at 100% 100%, #393a53 1%, #ffffffe3 50%);
+  -webkit-box-shadow: 0 0 8px 3px #393a53;
+          box-shadow: 0 0 8px 3px #393a53;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  color: #7289da;
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.contact__container--card-wrapper--connect--flex-wrapper__social--links-wrapper--microsoft-teams {
+  background: radial-gradient(circle farthest-corner at 100% 100%, #393a53 1%, #ffffffe3 50%);
+  -webkit-box-shadow: 0 0 8px 3px #393a53;
+          box-shadow: 0 0 8px 3px #393a53;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  color: #6264a7;
+  width: 2.8rem;
+  height: 2.8rem;
 }
 
 .contact__container--card-wrapper--message {
