@@ -1766,18 +1766,24 @@ CONTACT
 }
 
 .contact__container--card-wrapper--connect--flex-wrapper__social--links-wrapper--linkedin {
-  padding: 0.5rem;
-  background: radial-gradient(circle farthest-corner at 100% 100%, #393a53 1%, #ffffffe3 50%);
   -webkit-box-shadow: 0 0 8px 3px #393a53;
           box-shadow: 0 0 8px 3px #393a53;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+  border-radius: 4px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  overflow: hidden;
   color: #0e76a8;
-  width: 2.8rem;
-  height: 2.8rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.contact__container--card-wrapper--connect--flex-wrapper__social--links-wrapper--linkedin:hover {
+  -webkit-box-shadow: 0 0 8px 3px #0ef;
+          box-shadow: 0 0 8px 3px #0ef;
 }
 
 .contact__container--card-wrapper--connect--flex-wrapper__social--links-wrapper--twitter {

@@ -133,20 +133,24 @@ CONTACT
               width: 100%;
 
               &--linkedin {
-                padding: 0.5rem;
-                background: radial-gradient(
-                  circle farthest-corner at 100% 100%,
-                  $clr-grey-dark-2 1%,
-                  #ffffffe3 50%
-                );
+                // padding: 0.5rem;
+                // background: radial-gradient(
+                //   circle farthest-corner at 100% 100%,
+                //   $clr-grey-dark-2 1%,
+                //   #ffffffe3 50%
+                // );
                 box-shadow: 0 0 8px 3px $clr-grey-dark-2;
                 border: 1px solid $border-light-grey;
-                border-radius: 10px;
+                border-radius: 4px;
                 transition: $transition;
-                overflow: hidden;
+                // overflow: hidden;
                 color: #0e76a8;
-                width: 2.8rem;
-                height: 2.8rem;
+                width: fit-content;
+                height: fit-content;
+
+                &:hover {
+                  box-shadow: 0 0 8px 3px $clr-primary-5;
+                }
               }
               &--twitter {
                 padding: 0.5rem;
