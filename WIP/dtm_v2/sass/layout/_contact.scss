@@ -30,7 +30,7 @@ CONTACT
     box-shadow: $box-shadow;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 25px;
-    padding: 14rem 0;
+    padding: 3.5rem 0;
     position: relative;
     overflow: hidden;
 
@@ -55,10 +55,20 @@ CONTACT
 
       &--connect {
         /* Contact Info */
-        height: 90%;
+        height: 40.625rem;
+        background-color: bisque;
+        display: flex;
+        align-items: stretch;
+        // height: 90%;
         width: 75%;
         line-height: 1.4;
         z-index: 2;
+
+        &--connect-wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
 
         &--flex-wrapper {
           /* Flex wrapper to add space in between header / info / social containers */

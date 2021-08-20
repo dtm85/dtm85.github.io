@@ -1644,7 +1644,7 @@ CONTACT
           box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 25px;
-  padding: 14rem 0;
+  padding: 3.5rem 0;
   position: relative;
   overflow: hidden;
 }
@@ -1674,10 +1674,30 @@ CONTACT
 
 .contact__container--card-wrapper--connect {
   /* Contact Info */
-  height: 90%;
+  height: 40.625rem;
+  background-color: bisque;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   width: 75%;
   line-height: 1.4;
   z-index: 2;
+}
+
+.contact__container--card-wrapper--connect--connect-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contact__container--card-wrapper--connect--flex-wrapper {
