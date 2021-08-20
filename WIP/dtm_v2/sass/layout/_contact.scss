@@ -124,81 +124,66 @@ CONTACT
           }
 
           &__social {
-            &--links-wrapper {
-              display: grid;
-              grid-template-columns: repeat(4, 1fr);
-              grid-template-rows: 1fr;
-              justify-content: start;
+            width: 100%;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &__social-wrapper {
+              display: flex;
               align-items: center;
-              width: 100%;
+              justify-content: space-between;
+              width: 50%;
+              height: fit-content;
 
-              &--linkedin {
-                // padding: 0.5rem;
-                // background: radial-gradient(
-                //   circle farthest-corner at 100% 100%,
-                //   $clr-grey-dark-2 1%,
-                //   #ffffffe3 50%
-                // );
-                box-shadow: 0 0 8px 3px $clr-grey-dark-2;
-                border: 1px solid $border-light-grey;
-                border-radius: 4px;
-                transition: $transition;
-                // overflow: hidden;
-                color: #0e76a8;
-                width: fit-content;
-                height: fit-content;
+              &--links-wrapper {
+                display: inline-flex;
 
-                &:hover {
-                  box-shadow: 0 0 8px 3px $clr-primary-5;
+                &--linkedin {
+                  display: flex;
+                  transition: $transition;
+                  color: #0e76a8;
+                  width: 2rem;
+                  height: 2rem;
+
+                  &:hover {
+                    transform: scale(1.4);
+                  }
                 }
-              }
-              &--twitter {
-                padding: 0.5rem;
-                background: radial-gradient(
-                  circle farthest-corner at 100% 100%,
-                  $clr-grey-dark-2 1%,
-                  #ffffffe3 50%
-                );
-                box-shadow: 0 0 8px 3px $clr-grey-dark-2;
-                border: 1px solid $border-light-grey;
-                border-radius: 10px;
-                transition: $transition;
-                overflow: hidden;
-                color: #08a0e9;
-                width: 2.8rem;
-                height: 2.8rem;
-              }
-              &--discord {
-                padding: 0.5rem;
-                background: radial-gradient(
-                  circle farthest-corner at 100% 100%,
-                  $clr-grey-dark-2 1%,
-                  #ffffffe3 50%
-                );
-                box-shadow: 0 0 8px 3px $clr-grey-dark-2;
-                border: 1px solid $border-light-grey;
-                border-radius: 10px;
-                transition: $transition;
-                overflow: hidden;
-                color: #7289da;
-                width: 2.8rem;
-                height: 2.8rem;
-              }
-              &--microsoft-teams {
-                // padding: 0.5rem;
-                background: radial-gradient(
-                  circle farthest-corner at 100% 100%,
-                  $clr-grey-dark-2 1%,
-                  #ffffffe3 50%
-                );
-                box-shadow: 0 0 8px 3px $clr-grey-dark-2;
-                border: 1px solid $border-light-grey;
-                border-radius: 10px;
-                transition: $transition;
-                overflow: hidden;
-                color: #6264a7;
-                width: 2.8rem;
-                height: 2.8rem;
+
+                &--twitter {
+                  transition: $transition;
+                  color: #08a0e9;
+                  width: 2rem;
+                  height: 2rem;
+
+                  &:hover {
+                    transform: scale(1.4);
+                  }
+                }
+
+                &--discord {
+                  transition: $transition;
+                  color: #7289da;
+                  width: 2rem;
+                  height: 2rem;
+
+                  &:hover {
+                    transform: scale(1.4);
+                  }
+                }
+
+                &--microsoft-teams {
+                  transition: $transition;
+                  color: #6264a7;
+                  width: 2.25rem;
+                  height: 2.25rem;
+
+                  &:hover {
+                    transform: scale(1.6);
+                  }
+                }
               }
             }
           }
