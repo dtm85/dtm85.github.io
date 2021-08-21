@@ -55,8 +55,6 @@ CONTACT
 
       &--connect {
         /* Contact Info */
-        height: 40.625rem;
-        background-color: bisque;
         display: flex;
         align-items: stretch;
         // height: 90%;
@@ -97,7 +95,7 @@ CONTACT
           &--info {
             display: flex;
             align-items: center;
-            padding: 1.5rem 0 1.5rem 2rem;
+            padding: 1.2rem 0 1.2rem 2rem;
 
             &--svg-phone {
               /* Flipped SVG by 90deg so that the phone is faceing towards the numbers */
@@ -116,6 +114,11 @@ CONTACT
             &--email-link {
               /* Email link text color */
               color: $clr-text;
+              transition: $transition;
+
+              &:hover {
+                color: rgb(148, 148, 255);
+              }
             }
 
             &--h4-location {
@@ -187,11 +190,11 @@ CONTACT
                 &--microsoft-teams {
                   transition: $transition;
                   color: #6264a7;
-                  width: 2.25rem;
-                  height: 2.25rem;
+                  width: 3rem;
+                  height: 3rem;
 
                   &:hover {
-                    transform: scale(1.6);
+                    transform: scale(1.4);
                   }
                 }
               }
@@ -202,7 +205,7 @@ CONTACT
 
       &--message {
         /* Message - Submit Form */
-        height: 90%;
+        height: 40rem;
         width: 90%;
         background: linear-gradient(
           135deg,

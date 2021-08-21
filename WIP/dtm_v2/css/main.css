@@ -1674,8 +1674,6 @@ CONTACT
 
 .contact__container--card-wrapper--connect {
   /* Contact Info */
-  height: 40.625rem;
-  background-color: bisque;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1736,7 +1734,7 @@ CONTACT
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.5rem 0 1.5rem 2rem;
+  padding: 1.2rem 0 1.2rem 2rem;
 }
 
 .contact__container--card-wrapper--connect--flex-wrapper--info--svg-phone {
@@ -1755,6 +1753,12 @@ CONTACT
 .contact__container--card-wrapper--connect--flex-wrapper--info--email-link {
   /* Email link text color */
   color: #e2e2e2;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact__container--card-wrapper--connect--flex-wrapper--info--email-link:hover {
+  color: #9494ff;
 }
 
 .contact__container--card-wrapper--connect--flex-wrapper--info--h4-location {
@@ -1851,18 +1855,18 @@ CONTACT
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #6264a7;
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .contact__container--card-wrapper--connect--flex-wrapper__social__social-wrapper--links-wrapper--microsoft-teams:hover {
-  -webkit-transform: scale(1.6);
-          transform: scale(1.6);
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 .contact__container--card-wrapper--message {
   /* Message - Submit Form */
-  height: 90%;
+  height: 40rem;
   width: 90%;
   background: linear-gradient(135deg, #4e4f70 0%, #393a53 100%);
   backdrop-filter: blur(10px);
