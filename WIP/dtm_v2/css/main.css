@@ -1855,8 +1855,8 @@ CONTACT
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #6264a7;
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .contact__container--card-wrapper--connect--flex-wrapper__social__social-wrapper--links-wrapper--microsoft-teams:hover {
