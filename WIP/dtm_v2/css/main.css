@@ -144,6 +144,17 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
+.grid-wrapper-2-col {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
 /* Video Background & Overlay*/
 .header__video-background {
   z-index: -2;
