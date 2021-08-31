@@ -18,7 +18,7 @@ CONTACT
     padding: 6.25rem 0;
   }
 
-  &__container {
+  &__container-background {
     /* Contact Glass Container */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -44,180 +44,180 @@ CONTACT
       height: 35rem;
       z-index: -1;
     }
+  }
 
-    &--card-wrapper {
-      /* Contact Info & Message Wrapper */
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      justify-content: center;
-      justify-items: center;
+  &__wrapper {
+    /* Contact Info & Message Wrapper */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
 
-      &--connect {
-        /* Contact Info */
+    &--connect {
+      /* Contact Info */
+      display: flex;
+      align-items: stretch;
+      // height: 90%;
+      width: 75%;
+      line-height: 1.4;
+      z-index: 2;
+
+      &--connect-wrapper {
         display: flex;
-        align-items: stretch;
-        // height: 90%;
-        width: 75%;
-        line-height: 1.4;
-        z-index: 2;
+        flex-direction: column;
+        justify-content: space-between;
+      }
 
-        &--connect-wrapper {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
+      &--flex-wrapper {
+        /* Flex wrapper to add space in between header / info / social containers */
+        // height: 100%;
+        // display: flex;
+        // justify-content: space-between;
+
+        &--header {
+          /* Header Container */
+          &--h2 {
+            /* h2 Header */
+            color: $clr-primary-5;
+            font-weight: 400;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+          }
+
+          &--p1 {
+            /* Header Description */
+            font-weight: 400;
+            letter-spacing: 2px;
+            color: $clr-text;
+          }
         }
 
-        &--flex-wrapper {
-          /* Flex wrapper to add space in between header / info / social containers */
-          // height: 100%;
+        &--info {
           display: flex;
-          justify-content: space-between;
+          align-items: center;
+          padding: 1.2rem 0 1.2rem 2rem;
 
-          &--header {
-            /* Header Container */
-            &--h2 {
-              /* h2 Header */
-              color: $clr-primary-5;
-              font-weight: 400;
-              font-size: 2.5rem;
-              margin-bottom: 1rem;
-            }
+          &--svg-phone {
+            /* Flipped SVG by 90deg so that the phone is faceing towards the numbers */
+            transform: rotate(90deg);
+          }
 
-            &--p1 {
-              /* Header Description */
-              font-weight: 400;
-              letter-spacing: 2px;
-              color: $clr-text;
+          &--h4-phone,
+          &--email-link,
+          &--h4-location {
+            /* Padding, font-weight & color of text in the info section */
+            padding-left: 0.7rem;
+            font-weight: 400;
+            color: $clr-text;
+          }
+
+          &--email-link {
+            /* Email link text color */
+            color: $clr-text;
+            transition: $transition;
+
+            &:hover {
+              color: rgb(148, 148, 255);
             }
           }
 
-          &--info {
+          &--h4-location {
+            /* Extra padding on the top to help make the text be more centered as align-items: center; did not center 100% */
+            padding-top: 0.25rem;
+          }
+
+          &--svg-phone,
+          &--svg-email,
+          &--svg-map-marker {
+            /* SVG Color, Width & Height */
+            width: 1.25rem;
+            height: 1.25rem;
+            color: $clr-primary-5;
+          }
+        }
+
+        &__social {
+          width: 100%;
+          height: 4rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &__social-wrapper {
             display: flex;
             align-items: center;
-            padding: 1.2rem 0 1.2rem 2rem;
+            justify-content: space-between;
+            width: 50%;
+            height: fit-content;
 
-            &--svg-phone {
-              /* Flipped SVG by 90deg so that the phone is faceing towards the numbers */
-              transform: rotate(90deg);
-            }
+            &--links-wrapper {
+              display: inline-flex;
 
-            &--h4-phone,
-            &--email-link,
-            &--h4-location {
-              /* Padding, font-weight & color of text in the info section */
-              padding-left: 0.7rem;
-              font-weight: 400;
-              color: $clr-text;
-            }
+              &--linkedin {
+                display: flex;
+                transition: $transition;
+                color: #0e76a8;
+                width: 2rem;
+                height: 2rem;
 
-            &--email-link {
-              /* Email link text color */
-              color: $clr-text;
-              transition: $transition;
-
-              &:hover {
-                color: rgb(148, 148, 255);
+                &:hover {
+                  transform: scale(1.4);
+                }
               }
-            }
 
-            &--h4-location {
-              /* Extra padding on the top to help make the text be more centered as align-items: center; did not center 100% */
-              padding-top: 0.25rem;
-            }
+              &--twitter {
+                transition: $transition;
+                color: #08a0e9;
+                width: 2rem;
+                height: 2rem;
 
-            &--svg-phone,
-            &--svg-email,
-            &--svg-map-marker {
-              /* SVG Color, Width & Height */
-              width: 1.25rem;
-              height: 1.25rem;
-              color: $clr-primary-5;
-            }
-          }
-
-          &__social {
-            width: 100%;
-            height: 4rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            &__social-wrapper {
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              width: 50%;
-              height: fit-content;
-
-              &--links-wrapper {
-                display: inline-flex;
-
-                &--linkedin {
-                  display: flex;
-                  transition: $transition;
-                  color: #0e76a8;
-                  width: 2rem;
-                  height: 2rem;
-
-                  &:hover {
-                    transform: scale(1.4);
-                  }
+                &:hover {
+                  transform: scale(1.4);
                 }
+              }
 
-                &--twitter {
-                  transition: $transition;
-                  color: #08a0e9;
-                  width: 2rem;
-                  height: 2rem;
+              &--discord {
+                transition: $transition;
+                color: #7289da;
+                width: 2rem;
+                height: 2rem;
 
-                  &:hover {
-                    transform: scale(1.4);
-                  }
+                &:hover {
+                  transform: scale(1.4);
                 }
+              }
 
-                &--discord {
-                  transition: $transition;
-                  color: #7289da;
-                  width: 2rem;
-                  height: 2rem;
+              &--microsoft-teams {
+                transition: $transition;
+                color: #6264a7;
+                width: 2rem;
+                height: 2rem;
 
-                  &:hover {
-                    transform: scale(1.4);
-                  }
-                }
-
-                &--microsoft-teams {
-                  transition: $transition;
-                  color: #6264a7;
-                  width: 2rem;
-                  height: 2rem;
-
-                  &:hover {
-                    transform: scale(1.4);
-                  }
+                &:hover {
+                  transform: scale(1.4);
                 }
               }
             }
           }
         }
       }
+    }
 
-      &--message {
-        /* Message - Submit Form */
-        height: 40rem;
-        width: 90%;
-        background: linear-gradient(
-          135deg,
-          $clr-grey-dark-1 0%,
-          $clr-grey-dark-2 100%
-        );
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        box-shadow: 0 0 8px 3px $clr-grey-dark-2;
-        border: 1px solid $border-light-grey;
-        border-radius: 10px;
-        z-index: 2;
-      }
+    &--message {
+      /* Message - Submit Form */
+      height: 40rem;
+      width: 90%;
+      background: linear-gradient(
+        135deg,
+        $clr-grey-dark-1 0%,
+        $clr-grey-dark-2 100%
+      );
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 0 8px 3px $clr-grey-dark-2;
+      border: 1px solid $border-light-grey;
+      border-radius: 10px;
+      z-index: 2;
     }
   }
 }
