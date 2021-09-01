@@ -78,28 +78,6 @@ CONTACT
 
     &--flex-wrapper {
       /* Flex wrapper to add space in between header / info / social containers */
-      // height: 100%;
-      // display: flex;
-      // justify-content: space-between;
-
-      &--header {
-        /* Header Container */
-        &--h2 {
-          /* h2 Header */
-          color: $clr-primary-5;
-          font-weight: 400;
-          font-size: 2.5rem;
-          margin-bottom: 1rem;
-        }
-
-        &--p1 {
-          /* Header Description */
-          line-height: 1.4;
-          font-weight: 400;
-          letter-spacing: 2px;
-          color: $clr-text;
-        }
-      }
 
       &--info {
         display: flex;
@@ -210,5 +188,21 @@ CONTACT
         }
       }
     }
+  }
+
+  &__title {
+    /* h2 Header */
+    color: $clr-primary-5;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    /* Header Description */
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: $clr-text;
   }
 }

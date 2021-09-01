@@ -1725,26 +1725,6 @@ CONTACT
   /* Flex wrapper to add space in between header / info / social containers */
 }
 
-.contact__connect--flex-wrapper--header {
-  /* Header Container */
-}
-
-.contact__connect--flex-wrapper--header--h2 {
-  /* h2 Header */
-  color: #0ef;
-  font-weight: 400;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.contact__connect--flex-wrapper--header--p1 {
-  /* Header Description */
-  line-height: 1.4;
-  font-weight: 400;
-  letter-spacing: 2px;
-  color: #e2e2e2;
-}
-
 .contact__connect--flex-wrapper--info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1880,6 +1860,22 @@ CONTACT
 .contact__connect--flex-wrapper__social__social-wrapper--links-wrapper--microsoft-teams:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
+}
+
+.contact__title {
+  /* h2 Header */
+  color: #0ef;
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact__description {
+  /* Header Description */
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #e2e2e2;
 }
 
 /*
