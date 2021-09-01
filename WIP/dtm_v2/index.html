@@ -1454,25 +1454,21 @@
             <use href="./media/icons/svg/sprite-sheet.svg#email-open"></use>
           </svg>
 
-          <!-- Contact Info Wrapper for 2 Column Grid Layout -->
-          <div class="contact__wrapper grid-wrapper-2-col">
-            <!-- ////////
-              Connect - Flexbox styling to speard out heade
-              ////////-->
-            <article class="contact__wrapper--connect grid-wrapper-2-col">
-              <!--////////
-                Contact Info Wrapper (For use with space between containers example: header / info / social) 
-                ////////-->
-              <div class="contact__wrapper--connect--connect-wrapper">
+          <!-- Contact Info & Form Wrapper with 2 Column Grid Layout -->
+          <div class="contact__wrapper">
+            <!-- Connect section - header / info / social sections (display: flex;)-->
+            <article class="contact__connect">
+              <!-- Used utility class to add space between the header / info / social sections -->
+              <div class="flex-col-space-between">
                 <!-- Contact Info Header -->
-                <div class="contact__wrapper--connect--flex-wrapper--header">
+                <div class="contact__connect--flex-wrapper--header">
                   <h2
-                    class="contact__wrapper--connect--flex-wrapper--header--h2"
+                    class="contact__connect--flex-wrapper--header--h2"
                   >
                     Get In Touch
                   </h2>
                   <p
-                    class="contact__wrapper--connect--flex-wrapper--header--p1"
+                    class="contact__connect--flex-wrapper--header--p1"
                   >
                     Do you have an idea for a project or just want to say hello?
                     Fill out the form and I'll be in touch quickily.
@@ -1481,13 +1477,13 @@
 
                 <!-- Contact Info / Phone / Email / Location -->
                 <div
-                  class="contact__wrapper--connect--flex-wrapper--info-wrapper"
+                  class="contact__connect--flex-wrapper--info-wrapper"
                 >
                   <!-- Phone SVG -->
-                  <div class="contact__wrapper--connect--flex-wrapper--info">
+                  <div class="contact__connect--flex-wrapper--info">
                     <svg
                       class="
-                        contact__wrapper--connect--flex-wrapper--info--svg-phone
+                        contact__connect--flex-wrapper--info--svg-phone
                       "
                     >
                       <use
@@ -1497,7 +1493,7 @@
                     <!-- h4 Phone Number -->
                     <h4
                       class="
-                        contact__wrapper--connect--flex-wrapper--info--h4-phone
+                        contact__connect--flex-wrapper--info--h4-phone
                       "
                     >
                       (503)-490-3935
@@ -1505,10 +1501,10 @@
                   </div>
 
                   <!-- Email SVG -->
-                  <div class="contact__wrapper--connect--flex-wrapper--info">
+                  <div class="contact__connect--flex-wrapper--info">
                     <svg
                       class="
-                        contact__wrapper--connect--flex-wrapper--info--svg-email
+                        contact__connect--flex-wrapper--info--svg-email
                       "
                     >
                       <use
@@ -1519,7 +1515,7 @@
                     <!-- Email link -->
                     <a
                       class="
-                        contact__wrapper--connect--flex-wrapper--info--email-link
+                        contact__connect--flex-wrapper--info--email-link
                       "
                       href="mailto:dan@dantechmedia.com"
                       >dan@dantechmedia.com</a
@@ -1527,10 +1523,10 @@
                   </div>
 
                   <!-- Location SVG -->
-                  <div class="contact__wrapper--connect--flex-wrapper--info">
+                  <div class="contact__connect--flex-wrapper--info">
                     <svg
                       class="
-                        contact__wrapper--connect--flex-wrapper--info--svg-map-marker
+                        contact__connect--flex-wrapper--info--svg-map-marker
                       "
                     >
                       <use
@@ -1540,7 +1536,7 @@
                     <!-- h4 Location -->
                     <h4
                       class="
-                        contact__wrapper--connect--flex-wrapper--info--h4-location
+                        contact__connect--flex-wrapper--info--h4-location
                       "
                     >
                       Salem, OR
@@ -1549,10 +1545,10 @@
                 </div>
 
                 <!-- Social Media Links -->
-                <div class="contact__wrapper--connect--flex-wrapper__social">
+                <div class="contact__connect--flex-wrapper__social">
                   <div
                     class="
-                      contact__wrapper--connect--flex-wrapper__social__social-wrapper
+                      contact__connect--flex-wrapper__social__social-wrapper
                     "
                   >
                     <!-- LinkedIn -->
@@ -1560,12 +1556,12 @@
                       href="https://www.linkedin.com/in/dtm/"
                       target="_blank"
                       class="
-                        contact__wrapper--connect--flex-wrapper__social__social-wrapper--links-wrapper
+                        contact__connect--flex-wrapper__social__social-wrapper--links-wrapper
                       "
                     >
                       <svg
                         class="
-                          contact__wrapper--connect--flex-wrapper__social__social-wrapper--links-wrapper--linkedin
+                          contact__connect--flex-wrapper__social__social-wrapper--links-wrapper--linkedin
                         "
                       >
                         <use
@@ -1578,12 +1574,12 @@
                       href="https://twitter.com/DanTechMedia"
                       target="_blank"
                       class="
-                        contact__wrapper--connect--flex-wrapper__social__social-wrapper--links-wrapper
+                        contact__connect--flex-wrapper__social__social-wrapper--links-wrapper
                       "
                     >
                       <svg
                         class="
-                          contact__wrapper--connect--flex-wrapper__social__social-wrapper--links-wrapper--twitter
+                          contact__connect--flex-wrapper__social__social-wrapper--links-wrapper--twitter
                         "
                       >
                         <use
@@ -1596,12 +1592,12 @@
                       href="https://discord.gg/GcBxh8fR97"
                       target="_blank"
                       class="
-                        contact__wrapper--connect--flex-wrapper__social__social-wrapper--links-wrapper
+                        contact__connect--flex-wrapper__social__social-wrapper--links-wrapper
                       "
                     >
                       <svg
                         class="
-                          contact__wrapper--connect--flex-wrapper__social__social-wrapper--links-wrapper--discord
+                          contact__connect--flex-wrapper__social__social-wrapper--links-wrapper--discord
                         "
                       >
                         <use
@@ -1614,12 +1610,12 @@
                       href="https://teams.microsoft.com/l/channel/19%3a48c526c6853c48a8b7e890480ac6188f%40thread.tacv2/General?groupId=6735be74-4744-4f29-8abf-0be2909b0409&tenantId=1169f266-1f68-40cb-9c71-c413e7760f17"
                       target="_blank"
                       class="
-                        contact__wrapper--connect--flex-wrapper__social__social-wrapper--links-wrapper
+                        contact__connect--flex-wrapper__social__social-wrapper--links-wrapper
                       "
                     >
                       <svg
                         class="
-                          contact__wrapper--connect--flex-wrapper__social__social-wrapper--links-wrapper--microsoft-teams
+                          contact__connect--flex-wrapper__social__social-wrapper--links-wrapper--microsoft-teams
                         "
                       >
                         <use

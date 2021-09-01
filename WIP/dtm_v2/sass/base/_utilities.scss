@@ -9,3 +9,11 @@
   justify-content: center;
   justify-items: center;
 }
+
+/* Flex - Column /  SPACE  BETWEEN  / */
+/* Flex wrapper that adds space in between containers, for example header / info / social containers */
+.flex-col-space-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

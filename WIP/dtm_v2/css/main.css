@@ -156,6 +156,21 @@ body::-webkit-scrollbar-thumb:hover {
   justify-items: center;
 }
 
+/* Flex - Column /  SPACE  BETWEEN  / */
+/* Flex wrapper that adds space in between containers, for example header / info / social containers */
+.flex-col-space-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 /* Video Background & Overlay*/
 .header__video-background {
   z-index: -2;
@@ -1684,41 +1699,37 @@ CONTACT
   justify-items: center;
 }
 
-.contact__wrapper--connect {
+.contact__wrapper--message {
+  /* Message - Submit Form */
+  height: 40rem;
+  width: 90%;
+  background: linear-gradient(135deg, #4e4f70 0%, #393a53 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -webkit-box-shadow: 0 0 8px 3px #393a53;
+          box-shadow: 0 0 8px 3px #393a53;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.contact__connect {
   /* Contact Info */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
   width: 75%;
-  line-height: 1.4;
-  z-index: 2;
 }
 
-.contact__wrapper--connect--connect-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.contact__wrapper--connect--flex-wrapper {
+.contact__connect--flex-wrapper {
   /* Flex wrapper to add space in between header / info / social containers */
 }
 
-.contact__wrapper--connect--flex-wrapper--header {
+.contact__connect--flex-wrapper--header {
   /* Header Container */
 }
 
-.contact__wrapper--connect--flex-wrapper--header--h2 {
+.contact__connect--flex-wrapper--header--h2 {
   /* h2 Header */
   color: #0ef;
   font-weight: 400;
@@ -1726,14 +1737,15 @@ CONTACT
   margin-bottom: 1rem;
 }
 
-.contact__wrapper--connect--flex-wrapper--header--p1 {
+.contact__connect--flex-wrapper--header--p1 {
   /* Header Description */
+  line-height: 1.4;
   font-weight: 400;
   letter-spacing: 2px;
   color: #e2e2e2;
 }
 
-.contact__wrapper--connect--flex-wrapper--info {
+.contact__connect--flex-wrapper--info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1743,43 +1755,43 @@ CONTACT
   padding: 1.2rem 0 1.2rem 2rem;
 }
 
-.contact__wrapper--connect--flex-wrapper--info--svg-phone {
+.contact__connect--flex-wrapper--info--svg-phone {
   /* Flipped SVG by 90deg so that the phone is faceing towards the numbers */
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-.contact__wrapper--connect--flex-wrapper--info--h4-phone, .contact__wrapper--connect--flex-wrapper--info--email-link, .contact__wrapper--connect--flex-wrapper--info--h4-location {
+.contact__connect--flex-wrapper--info--h4-phone, .contact__connect--flex-wrapper--info--email-link, .contact__connect--flex-wrapper--info--h4-location {
   /* Padding, font-weight & color of text in the info section */
   padding-left: 0.7rem;
   font-weight: 400;
   color: #e2e2e2;
 }
 
-.contact__wrapper--connect--flex-wrapper--info--email-link {
+.contact__connect--flex-wrapper--info--email-link {
   /* Email link text color */
   color: #e2e2e2;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-.contact__wrapper--connect--flex-wrapper--info--email-link:hover {
+.contact__connect--flex-wrapper--info--email-link:hover {
   color: #9494ff;
 }
 
-.contact__wrapper--connect--flex-wrapper--info--h4-location {
+.contact__connect--flex-wrapper--info--h4-location {
   /* Extra padding on the top to help make the text be more centered as align-items: center; did not center 100% */
   padding-top: 0.25rem;
 }
 
-.contact__wrapper--connect--flex-wrapper--info--svg-phone, .contact__wrapper--connect--flex-wrapper--info--svg-email, .contact__wrapper--connect--flex-wrapper--info--svg-map-marker {
+.contact__connect--flex-wrapper--info--svg-phone, .contact__connect--flex-wrapper--info--svg-email, .contact__connect--flex-wrapper--info--svg-map-marker {
   /* SVG Color, Width & Height */
   width: 1.25rem;
   height: 1.25rem;
   color: #0ef;
 }
 
-.contact__wrapper--connect--flex-wrapper__social {
+.contact__connect--flex-wrapper__social {
   width: 100%;
   height: 4rem;
   display: -webkit-box;
@@ -1793,7 +1805,7 @@ CONTACT
           justify-content: center;
 }
 
-.contact__wrapper--connect--flex-wrapper__social__social-wrapper {
+.contact__connect--flex-wrapper__social__social-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1809,13 +1821,13 @@ CONTACT
   height: fit-content;
 }
 
-.contact__wrapper--connect--flex-wrapper__social__social-wrapper--links-wrapper {
+.contact__connect--flex-wrapper__social__social-wrapper--links-wrapper {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.contact__wrapper--connect--flex-wrapper__social__social-wrapper--links-wrapper--linkedin {
+.contact__connect--flex-wrapper__social__social-wrapper--links-wrapper--linkedin {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1826,12 +1838,12 @@ CONTACT
   height: 2rem;
 }
 
-.contact__wrapper--connect--flex-wrapper__social__social-wrapper--links-wrapper--linkedin:hover {
+.contact__connect--flex-wrapper__social__social-wrapper--links-wrapper--linkedin:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
 }
 
-.contact__wrapper--connect--flex-wrapper__social__social-wrapper--links-wrapper--twitter {
+.contact__connect--flex-wrapper__social__social-wrapper--links-wrapper--twitter {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #08a0e9;
@@ -1839,12 +1851,12 @@ CONTACT
   height: 2rem;
 }
 
-.contact__wrapper--connect--flex-wrapper__social__social-wrapper--links-wrapper--twitter:hover {
+.contact__connect--flex-wrapper__social__social-wrapper--links-wrapper--twitter:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
 }
 
-.contact__wrapper--connect--flex-wrapper__social__social-wrapper--links-wrapper--discord {
+.contact__connect--flex-wrapper__social__social-wrapper--links-wrapper--discord {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #7289da;
@@ -1852,12 +1864,12 @@ CONTACT
   height: 2rem;
 }
 
-.contact__wrapper--connect--flex-wrapper__social__social-wrapper--links-wrapper--discord:hover {
+.contact__connect--flex-wrapper__social__social-wrapper--links-wrapper--discord:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
 }
 
-.contact__wrapper--connect--flex-wrapper__social__social-wrapper--links-wrapper--microsoft-teams {
+.contact__connect--flex-wrapper__social__social-wrapper--links-wrapper--microsoft-teams {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #6264a7;
@@ -1865,23 +1877,9 @@ CONTACT
   height: 2rem;
 }
 
-.contact__wrapper--connect--flex-wrapper__social__social-wrapper--links-wrapper--microsoft-teams:hover {
+.contact__connect--flex-wrapper__social__social-wrapper--links-wrapper--microsoft-teams:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
-}
-
-.contact__wrapper--message {
-  /* Message - Submit Form */
-  height: 40rem;
-  width: 90%;
-  background: linear-gradient(135deg, #4e4f70 0%, #393a53 100%);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  -webkit-box-shadow: 0 0 8px 3px #393a53;
-          box-shadow: 0 0 8px 3px #393a53;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  z-index: 2;
 }
 
 /*
