@@ -1721,97 +1721,6 @@ CONTACT
   width: 75%;
 }
 
-.contact__connect__social {
-  width: 100%;
-  height: 4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.contact__connect__social__social-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 50%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.contact__connect__social__social-wrapper--links-wrapper {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.contact__connect__social__social-wrapper--links-wrapper--linkedin {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  color: #0e76a8;
-  width: 2rem;
-  height: 2rem;
-}
-
-.contact__connect__social__social-wrapper--links-wrapper--linkedin:hover {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
-}
-
-.contact__connect__social__social-wrapper--links-wrapper--twitter {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  color: #08a0e9;
-  width: 2rem;
-  height: 2rem;
-}
-
-.contact__connect__social__social-wrapper--links-wrapper--twitter:hover {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
-}
-
-.contact__connect__social__social-wrapper--links-wrapper--discord {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  color: #7289da;
-  width: 2rem;
-  height: 2rem;
-}
-
-.contact__connect__social__social-wrapper--links-wrapper--discord:hover {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
-}
-
-.contact__connect__social__social-wrapper--links-wrapper--microsoft-teams {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  color: #6264a7;
-  width: 2rem;
-  height: 2rem;
-}
-
-.contact__connect__social__social-wrapper--links-wrapper--microsoft-teams:hover {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
-}
-
 .contact__title {
   /* h2 Header */
   color: #0ef;
@@ -1828,7 +1737,7 @@ CONTACT
   color: #e2e2e2;
 }
 
-.contact__phone {
+.contact__phone, .contact__email, .contact__location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1844,18 +1753,18 @@ CONTACT
           transform: rotate(90deg);
 }
 
-.contact__phone--h4, .contact__email--link, .contact__location--h4 {
-  /* Padding, font-weight & color of text in the info section */
-  padding-left: 0.7rem;
-  font-weight: 400;
-  color: #e2e2e2;
-}
-
 .contact__phone--svg, .contact__email--svg, .contact__location--svg {
   /* SVG Color, Width & Height */
   width: 1.25rem;
   height: 1.25rem;
   color: #0ef;
+}
+
+.contact__phone--h4, .contact__email--link, .contact__location--h4 {
+  /* Padding, font-weight & color of text in the info section */
+  padding-left: 0.7rem;
+  font-weight: 400;
+  color: #e2e2e2;
 }
 
 .contact__email--link {
@@ -1869,9 +1778,100 @@ CONTACT
   color: #9494ff;
 }
 
-.contact__location--text {
+.contact__location--h4 {
   /* Extra padding on the top to help make the text be more centered as align-items: center; did not center 100% */
   padding-top: 0.25rem;
+}
+
+.contact__social {
+  width: 100%;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact__icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.contact__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.contact__link--linkedin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #0e76a8;
+  width: 2rem;
+  height: 2rem;
+}
+
+.contact__link--linkedin:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.contact__link--twitter {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #08a0e9;
+  width: 2rem;
+  height: 2rem;
+}
+
+.contact__link--twitter:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.contact__link--discord {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #7289da;
+  width: 2rem;
+  height: 2rem;
+}
+
+.contact__link--discord:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.contact__link--microsoft-teams {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #6264a7;
+  width: 2rem;
+  height: 2rem;
+}
+
+.contact__link--microsoft-teams:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 /*
