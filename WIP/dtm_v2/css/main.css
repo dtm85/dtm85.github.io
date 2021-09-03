@@ -1699,20 +1699,6 @@ CONTACT
   justify-items: center;
 }
 
-.contact__wrapper--message {
-  /* Message - Submit Form */
-  height: 40rem;
-  width: 90%;
-  background: linear-gradient(135deg, #4e4f70 0%, #393a53 100%);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  -webkit-box-shadow: 0 0 8px 3px #393a53;
-          box-shadow: 0 0 8px 3px #393a53;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  z-index: 2;
-}
-
 .contact__connect {
   /* Contact Info */
   display: -webkit-box;
@@ -1872,6 +1858,20 @@ CONTACT
 .contact__link--microsoft-teams:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
+}
+
+.contact__message {
+  /* Message - Submit Form */
+  height: 40rem;
+  width: 90%;
+  background: linear-gradient(135deg, #4e4f70 0%, #393a53 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -webkit-box-shadow: 0 0 8px 3px #393a53;
+          box-shadow: 0 0 8px 3px #393a53;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  z-index: 2;
 }
 
 /*

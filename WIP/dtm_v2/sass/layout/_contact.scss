@@ -52,23 +52,6 @@ CONTACT
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     justify-items: center;
-
-    &--message {
-      /* Message - Submit Form */
-      height: 40rem;
-      width: 90%;
-      background: linear-gradient(
-        135deg,
-        $clr-grey-dark-1 0%,
-        $clr-grey-dark-2 100%
-      );
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      box-shadow: 0 0 8px 3px $clr-grey-dark-2;
-      border: 1px solid $border-light-grey;
-      border-radius: 10px;
-      z-index: 2;
-    }
   }
 
   &__connect {
@@ -202,5 +185,22 @@ CONTACT
         transform: scale(1.4);
       }
     }
+  }
+
+  &__message {
+    /* Message - Submit Form */
+    height: 40rem;
+    width: 90%;
+    background: linear-gradient(
+      135deg,
+      $clr-grey-dark-1 0%,
+      $clr-grey-dark-2 100%
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 8px 3px $clr-grey-dark-2;
+    border: 1px solid $border-light-grey;
+    border-radius: 10px;
+    z-index: 2;
   }
 }
