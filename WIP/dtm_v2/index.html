@@ -67,7 +67,7 @@
 
         <!-- Sidebar -->
         <aside class="navbar__sidebar" id="sidebar-links">
-          <div class="navbar__sidebar-container">
+          <div>
             <h1 class="navbar__sidebar-logo">
               Dan<span class="navbar__sidebar-logo--tech-media">TechMedia</span>
             </h1>
@@ -76,7 +76,7 @@
               <li>
                 <a
                   class="navbar__sidebar-links--link"
-                  href="#"
+                  href="#home"
                   aria-label="Sidebar Link to Home"
                   >Home</a
                 >
@@ -84,7 +84,7 @@
               <li>
                 <a
                   class="navbar__sidebar-links--link"
-                  href="#"
+                  href="#about"
                   aria-label="Sidebar Link to About"
                   >About</a
                 >
@@ -92,7 +92,7 @@
               <li>
                 <a
                   class="navbar__sidebar-links--link"
-                  href="#"
+                  href="#projects"
                   aria-label="Sidebar Link to Projects"
                   >Projects</a
                 >
@@ -100,7 +100,7 @@
               <li>
                 <a
                   class="navbar__sidebar-links--link"
-                  href="#"
+                  href="#contact"
                   aria-label="Sidebar Link to Contact"
                   >Contact</a
                 >
@@ -113,8 +113,9 @@
               <li class="navbar__sidebar-social-icons-item">
                 <a
                   class="navbar__sidebar-social-icons-link"
-                  href="#"
+                  href="mailto:dan@dantechmedia.com"
                   aria-label="Link to Email"
+                  target="_blank"
                 >
                   <svg class="navbar__sidebar-social-icons-link--icon">
                     <use
@@ -128,8 +129,9 @@
               <li class="navbar__sidebar-social-icons-item">
                 <a
                   class="navbar__sidebar-social-icons-link"
-                  href="#"
+                  href="https://github.com/dtm85"
                   aria-label="Link to GitHub"
+                  target="_blank"
                 >
                   <svg class="navbar__sidebar-social-icons-link--icon">
                     <use href="./media/icons/svg/sprite-sheet.svg#github"></use>
@@ -141,8 +143,9 @@
               <li class="navbar__sidebar-social-icons-item">
                 <a
                   class="navbar__sidebar-social-icons-link"
-                  href="#"
+                  href="https://www.linkedin.com/in/dtm"
                   aria-label="Link to LinkedIn"
+                  target="_blank"
                 >
                   <svg class="navbar__sidebar-social-icons-link--icon">
                     <use
@@ -156,8 +159,9 @@
               <li class="navbar__sidebar-social-icons-item">
                 <a
                   class="navbar__sidebar-social-icons-link"
-                  href="#"
+                  href="https://twitter.com/DanTechMedia"
                   aria-label="Link to Twitter"
+                  target="_blank"
                 >
                   <svg class="navbar__sidebar-social-icons-link--icon">
                     <use
@@ -167,7 +171,7 @@
                 </a>
               </li>
             </ul>
-          </div>
+          <!-- </div> -->
         </aside>
         <!-- end of sidebar -->
 
@@ -176,7 +180,7 @@
           <li>
             <a
               class="navbar__nav-links--link"
-              href="#"
+              href="#home"
               aria-label="Navbar Link to Home"
               >Home</a
             >
@@ -184,7 +188,7 @@
           <li>
             <a
               class="navbar__nav-links--link"
-              href="#"
+              href="#about"
               aria-label="Navbar Link to About"
               >About</a
             >
@@ -192,7 +196,7 @@
           <li>
             <a
               class="navbar__nav-links--link"
-              href="#"
+              href="#projects"
               aria-label="Navbar Link to Projects"
               >Projects</a
             >
@@ -200,7 +204,7 @@
           <li>
             <a
               class="navbar__nav-links--link"
-              href="#"
+              href="#contact"
               aria-label="Navbar Link to Contact"
               >Contact</a
             >
@@ -213,7 +217,7 @@
     <!-- Content Container -->
     <main class="container">
       <!-- Header -->
-      <header class="header">
+      <header class="header" id="home">
         <!-- Video Background -->
         <video
           class="header__video-background"
@@ -244,7 +248,7 @@
           </h2>
           <!-- Hero Button HIRE ME -->
           <div class="header__hero-btn">
-            <a class="btn hire-me" href="#" aria-label="Hire Me Button Link"
+            <a class="btn hire-me" href="#contact" aria-label="Hire Me Button Link to Contact Section"
               >Hire Me</a
             >
           </div>
@@ -340,7 +344,7 @@
 
       <!-- About -->
       <!-- About Me Section -->
-      <section class="about">
+      <section class="about" id="about">
         <h1 class="about__heading">About Me</h1>
         <!-- About Profile Picture -->
         <div class="about__picture">
@@ -476,7 +480,7 @@
       <!-- End of About -->
 
       <!-- Projects Section -->
-      <section class="projects">
+      <section class="projects" id="projects">
         <!-- Glass Container -->
         <div class="projects__glass-container">
           <!-- Heading Container -->
@@ -1501,7 +1505,7 @@
       </section>
 
       <!-- Contact Section -->
-      <section class="contact">
+      <section class="contact" id="contact">
         <!-- Contact Background Container -->
         <div class="contact__container-background">
           <!-- SVG Email-Open Background Picture -->

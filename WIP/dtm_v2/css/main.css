@@ -711,11 +711,6 @@ NAVIGATION
   color: #0ef;
 }
 
-.navbar__sidebar-links-item {
-  width: 100vw;
-  border-bottom: 1px solid #444;
-}
-
 .navbar__sidebar-links {
   /* Sidebar Links Center Alignment */
   text-align: center;
