@@ -173,35 +173,33 @@ NAVIGATION
     margin-top: 3rem;
   }
 
-  &__sidebar-social-icons-item {
+  &__social-item {
     /* Sidebar Social Icons Container to size SVG */
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  &__sidebar-social-icons-link {
+  &__social-link {
     // background-color: cornflowerblue;
     height: 2.5rem;
     width: 2.5rem;
   }
 
-  &__sidebar-social-icons-link:link,
-  &__sidebar-social-icons-link:visited {
+  &__social-link:link,
+  &__social-link:visited {
     /* Sidebar SVG Colors, Inherited height from navbar__sidebar-social-icons-item container */
-    color: $clr-grey-10;
+    // color: $clr-grey-10;
     display: flex;
     // height: inherit;
     transition: $transition;
 
     &:hover {
-      color: $clr-primary-5;
-      box-shadow: 0 5px 10px 6px rgba(0, 0, 0, 0.2);
-      border-radius: 4px;
+      transform: scale(1.4);
     }
+  }
 
-    &:active {
-      box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
-    }
+  &__social-svg--github {
+    color: #cea5fb;
   }
 }

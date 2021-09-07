@@ -767,7 +767,7 @@ NAVIGATION
   margin-top: 3rem;
 }
 
-.navbar__sidebar-social-icons-item {
+.navbar__social-item {
   /* Sidebar Social Icons Container to size SVG */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -780,14 +780,13 @@ NAVIGATION
           align-items: center;
 }
 
-.navbar__sidebar-social-icons-link {
+.navbar__social-link {
   height: 2.5rem;
   width: 2.5rem;
 }
 
-.navbar__sidebar-social-icons-link:link, .navbar__sidebar-social-icons-link:visited {
+.navbar__social-link:link, .navbar__social-link:visited {
   /* Sidebar SVG Colors, Inherited height from navbar__sidebar-social-icons-item container */
-  color: #ddd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -795,16 +794,13 @@ NAVIGATION
   transition: all 0.3s ease-in-out;
 }
 
-.navbar__sidebar-social-icons-link:link:hover, .navbar__sidebar-social-icons-link:visited:hover {
-  color: #0ef;
-  -webkit-box-shadow: 0 5px 10px 6px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5px 10px 6px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+.navbar__social-link:link:hover, .navbar__social-link:visited:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
-.navbar__sidebar-social-icons-link:link:active, .navbar__sidebar-social-icons-link:visited:active {
-  -webkit-box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
+.navbar__social-svg--github {
+  color: #cea5fb;
 }
 
 /* 
