@@ -799,8 +799,20 @@ NAVIGATION
           transform: scale(1.4);
 }
 
+.navbar .sidebar__social-svg--email {
+  color: bisque;
+}
+
 .navbar .sidebar__social-svg--github {
-  color: #cea5fb;
+  color: #6e5494;
+}
+
+.navbar .sidebar__social-svg--linkedin {
+  color: #0e76a8;
+}
+
+.navbar .sidebar__social-svg--twitter {
+  color: #08a0e9;
 }
 
 /* 

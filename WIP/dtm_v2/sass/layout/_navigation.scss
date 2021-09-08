@@ -202,8 +202,20 @@ NAVIGATION
       }
     }
 
+    &__social-svg--email {
+      color: bisque;
+    }
+
     &__social-svg--github {
-      color: #cea5fb;
+      color: $clr-github;
+    }
+
+    &__social-svg--linkedin {
+      color: $clr-linkedin;
+    }
+
+    &__social-svg--twitter {
+      color: $clr-twitter;
     }
   }
 }

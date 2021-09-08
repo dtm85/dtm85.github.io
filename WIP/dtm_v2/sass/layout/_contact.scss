@@ -144,7 +144,7 @@ CONTACT
     &--linkedin {
       display: flex;
       transition: $transition;
-      color: #0e76a8;
+      color: $clr-linkedin;
       width: 2rem;
       height: 2rem;
 
@@ -155,7 +155,7 @@ CONTACT
 
     &--twitter {
       transition: $transition;
-      color: #08a0e9;
+      color: $clr-twitter;
       width: 2rem;
       height: 2rem;
 
@@ -166,7 +166,7 @@ CONTACT
 
     &--discord {
       transition: $transition;
-      color: #7289da;
+      color: $clr-discord;
       width: 2rem;
       height: 2rem;
 
@@ -177,7 +177,7 @@ CONTACT
 
     &--microsoft-teams {
       transition: $transition;
-      color: #6264a7;
+      color: $clr-microsoft-teams;
       width: 2rem;
       height: 2rem;
 
