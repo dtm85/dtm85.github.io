@@ -666,7 +666,7 @@ NAVIGATION
           box-shadow: 0 2px 12px 1px #008f99;
 }
 
-.navbar__sidebar {
+.navbar .sidebar {
   /* Sidebar Layout & Styling - Sidebar will only show when screen is smaller than 768px */
   background: #444;
   position: fixed;
@@ -689,13 +689,13 @@ NAVIGATION
   z-index: 11;
 }
 
-.navbar__sidebar.show-sidebar {
+.navbar .sidebar.show-sidebar {
   /* Show Sidebar class for JavaScript when Menu Button is clicked */
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-.navbar__sidebar-logo {
+.navbar .sidebar__logo {
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: 1.5px;
@@ -706,17 +706,17 @@ NAVIGATION
   left: 2rem;
 }
 
-.navbar__sidebar-logo--tech-media {
+.navbar .sidebar__logo--tech-media {
   font-weight: 500;
   color: #0ef;
 }
 
-.navbar__sidebar-links {
+.navbar .sidebar__links {
   /* Sidebar Links Center Alignment */
   text-align: center;
 }
 
-.navbar__sidebar-links--link:link, .navbar__sidebar-links--link:visited {
+.navbar .sidebar__links--link:link, .navbar .sidebar__links--link:visited {
   /* Styles applied to each link the Sidebar */
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -738,20 +738,20 @@ NAVIGATION
   transition: all 0.3s ease-in-out;
 }
 
-.navbar__sidebar-links--link:link:hover, .navbar__sidebar-links--link:visited:hover {
+.navbar .sidebar__links--link:link:hover, .navbar .sidebar__links--link:visited:hover {
   text-shadow: 0.125rem 0.125rem 1.5625rem #000;
   -webkit-transform: translateY(-3px) scale(1.25);
           transform: translateY(-3px) scale(1.25);
   color: #0ef;
 }
 
-.navbar__sidebar-links--link:link:active, .navbar__sidebar-links--link:visited:active {
+.navbar .sidebar__links--link:link:active, .navbar .sidebar__links--link:visited:active {
   text-shadow: 0.125rem 0.125rem 0.9375rem #000;
   -webkit-transform: translateY(-1px) scale(1.225);
           transform: translateY(-1px) scale(1.225);
 }
 
-.navbar__sidebar-social-icons {
+.navbar .sidebar__social-icons {
   /* Sidebar Social Icons - Display Grid */
   display: -ms-grid;
   display: grid;
@@ -767,7 +767,7 @@ NAVIGATION
   margin-top: 3rem;
 }
 
-.navbar__social-item {
+.navbar .sidebar__social-item {
   /* Sidebar Social Icons Container to size SVG */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -780,12 +780,12 @@ NAVIGATION
           align-items: center;
 }
 
-.navbar__social-link {
+.navbar .sidebar__social-link {
   height: 2.5rem;
   width: 2.5rem;
 }
 
-.navbar__social-link:link, .navbar__social-link:visited {
+.navbar .sidebar__social-link:link, .navbar .sidebar__social-link:visited {
   /* Sidebar SVG Colors, Inherited height from navbar__sidebar-social-icons-item container */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -794,12 +794,12 @@ NAVIGATION
   transition: all 0.3s ease-in-out;
 }
 
-.navbar__social-link:link:hover, .navbar__social-link:visited:hover {
+.navbar .sidebar__social-link:link:hover, .navbar .sidebar__social-link:visited:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
 }
 
-.navbar__social-svg--github {
+.navbar .sidebar__social-svg--github {
   color: #cea5fb;
 }
 

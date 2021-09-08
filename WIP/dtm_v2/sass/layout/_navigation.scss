@@ -94,7 +94,11 @@ NAVIGATION
     box-shadow: 0 2px 12px 1px $clr-primary-8;
   }
 
-  &__sidebar {
+  ////////////////////
+  // SIDEBAR - NAV //
+  ////////////////////
+
+  .sidebar {
     /* Sidebar Layout & Styling - Sidebar will only show when screen is smaller than 768px */
     background: $clr-grey-1;
     position: fixed;
@@ -113,93 +117,93 @@ NAVIGATION
       /* Show Sidebar class for JavaScript when Menu Button is clicked */
       transform: translateX(0);
     }
-  }
 
-  &__sidebar-logo {
-    font-size: 2rem;
-    font-weight: 300;
-    letter-spacing: 1.5px;
-    color: $clr-text;
-    display: block;
-    position: absolute;
-    top: 1.5rem;
-    left: 2rem;
-
-    &--tech-media {
-      font-weight: 500;
-      color: $clr-primary-5;
-    }
-  }
-
-  &__sidebar-links {
-    /* Sidebar Links Center Alignment */
-    text-align: center;
-
-    &--link:link,
-    &--link:visited {
-      /* Styles applied to each link the Sidebar */
-      box-sizing: border-box;
+    &__logo {
       font-size: 2rem;
-      margin-bottom: 4.5rem;
-      text-transform: capitalize;
-      letter-spacing: $spacing;
+      font-weight: 300;
+      letter-spacing: 1.5px;
       color: $clr-text;
-      display: inline-flex;
-      align-items: center;
+      display: block;
+      position: absolute;
+      top: 1.5rem;
+      left: 2rem;
+
+      &--tech-media {
+        font-weight: 500;
+        color: $clr-primary-5;
+      }
+    }
+
+    &__links {
+      /* Sidebar Links Center Alignment */
+      text-align: center;
+
+      &--link:link,
+      &--link:visited {
+        /* Styles applied to each link the Sidebar */
+        box-sizing: border-box;
+        font-size: 2rem;
+        margin-bottom: 4.5rem;
+        text-transform: capitalize;
+        letter-spacing: $spacing;
+        color: $clr-text;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: $transition;
+
+        &:hover {
+          text-shadow: 0.125rem 0.125rem 1.5625rem $clr-black;
+          transform: translateY(-3px) scale(1.25);
+          color: $clr-primary-5;
+        }
+
+        &:active {
+          // transform: translateY(-1px);
+          text-shadow: 0.125rem 0.125rem 0.9375rem $clr-black;
+          transform: translateY(-1px) scale(1.225);
+        }
+      }
+    }
+
+    &__social-icons {
+      /* Sidebar Social Icons - Display Grid */
+      display: grid;
       justify-content: center;
+      align-items: center;
+      grid-template-columns: repeat(4, 1fr);
+      width: 18.75rem;
+      margin-top: 3rem;
+    }
+
+    &__social-item {
+      /* Sidebar Social Icons Container to size SVG */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__social-link {
+      // background-color: cornflowerblue;
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+
+    &__social-link:link,
+    &__social-link:visited {
+      /* Sidebar SVG Colors, Inherited height from navbar__sidebar-social-icons-item container */
+      // color: $clr-grey-10;
+      display: flex;
+      // height: inherit;
       transition: $transition;
 
       &:hover {
-        text-shadow: 0.125rem 0.125rem 1.5625rem $clr-black;
-        transform: translateY(-3px) scale(1.25);
-        color: $clr-primary-5;
-      }
-
-      &:active {
-        // transform: translateY(-1px);
-        text-shadow: 0.125rem 0.125rem 0.9375rem $clr-black;
-        transform: translateY(-1px) scale(1.225);
+        transform: scale(1.4);
       }
     }
-  }
 
-  &__sidebar-social-icons {
-    /* Sidebar Social Icons - Display Grid */
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    width: 18.75rem;
-    margin-top: 3rem;
-  }
-
-  &__social-item {
-    /* Sidebar Social Icons Container to size SVG */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__social-link {
-    // background-color: cornflowerblue;
-    height: 2.5rem;
-    width: 2.5rem;
-  }
-
-  &__social-link:link,
-  &__social-link:visited {
-    /* Sidebar SVG Colors, Inherited height from navbar__sidebar-social-icons-item container */
-    // color: $clr-grey-10;
-    display: flex;
-    // height: inherit;
-    transition: $transition;
-
-    &:hover {
-      transform: scale(1.4);
+    &__social-svg--github {
+      color: #cea5fb;
     }
-  }
-
-  &__social-svg--github {
-    color: #cea5fb;
   }
 }
