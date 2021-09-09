@@ -132,14 +132,40 @@ CONTACT
 
   &__icon-wrapper {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    width: 50%;
+    width: 90%;
     height: fit-content;
+    background-color: cadetblue;
   }
 
   &__link {
     display: inline-flex;
+
+    &--email {
+      display: flex;
+      transition: $transition;
+      color: $clr-grey-3;
+      width: 2rem;
+      height: 2rem;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    &--github {
+      display: flex;
+      transition: $transition;
+      color: $clr-github;
+      width: 2rem;
+      height: 2rem;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
 
     &--linkedin {
       display: flex;
@@ -149,7 +175,7 @@ CONTACT
       height: 2rem;
 
       &:hover {
-        transform: scale(1.4);
+        transform: scale(1.2);
       }
     }
 
@@ -160,7 +186,7 @@ CONTACT
       height: 2rem;
 
       &:hover {
-        transform: scale(1.4);
+        transform: scale(1.2);
       }
     }
 
@@ -171,7 +197,7 @@ CONTACT
       height: 2rem;
 
       &:hover {
-        transform: scale(1.4);
+        transform: scale(1.2);
       }
     }
 
@@ -182,7 +208,7 @@ CONTACT
       height: 2rem;
 
       &:hover {
-        transform: scale(1.4);
+        transform: scale(1.2);
       }
     }
   }

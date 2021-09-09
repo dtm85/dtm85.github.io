@@ -753,17 +753,16 @@ NAVIGATION
 
 .navbar .sidebar__social-icons {
   /* Sidebar Social Icons - Display Grid */
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  width: 18.75rem;
+  width: 23rem;
   margin-top: 3rem;
 }
 
@@ -781,15 +780,13 @@ NAVIGATION
 }
 
 .navbar .sidebar__social-link {
-  height: 2.5rem;
-  width: 2.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .navbar .sidebar__social-link:link, .navbar .sidebar__social-link:visited {
   /* Sidebar SVG Colors, Inherited height from navbar__sidebar-social-icons-item container */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -800,19 +797,39 @@ NAVIGATION
 }
 
 .navbar .sidebar__social-svg--email {
-  color: bisque;
+  color: #666;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .navbar .sidebar__social-svg--github {
   color: #6e5494;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .navbar .sidebar__social-svg--linkedin {
   color: #0e76a8;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .navbar .sidebar__social-svg--twitter {
   color: #08a0e9;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.navbar .sidebar__social-svg--discord {
+  color: #7289da;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.navbar .sidebar__social-svg--microsoft-teams {
+  color: #6264a7;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 /* 
@@ -1790,22 +1807,57 @@ CONTACT
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 50%;
+  width: 90%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  background-color: cadetblue;
 }
 
 .contact__link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.contact__link--email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #666;
+  width: 2rem;
+  height: 2rem;
+}
+
+.contact__link--email:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.contact__link--github {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #6e5494;
+  width: 2rem;
+  height: 2rem;
+}
+
+.contact__link--github:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .contact__link--linkedin {
@@ -1820,8 +1872,8 @@ CONTACT
 }
 
 .contact__link--linkedin:hover {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .contact__link--twitter {
@@ -1833,8 +1885,8 @@ CONTACT
 }
 
 .contact__link--twitter:hover {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .contact__link--discord {
@@ -1846,8 +1898,8 @@ CONTACT
 }
 
 .contact__link--discord:hover {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .contact__link--microsoft-teams {
@@ -1859,8 +1911,8 @@ CONTACT
 }
 
 .contact__link--microsoft-teams:hover {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .contact__message {

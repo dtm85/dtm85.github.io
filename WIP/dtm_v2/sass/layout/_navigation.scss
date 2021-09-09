@@ -168,11 +168,10 @@ NAVIGATION
 
     &__social-icons {
       /* Sidebar Social Icons - Display Grid */
-      display: grid;
-      justify-content: center;
+      display: flex;
+      justify-content: space-between;
       align-items: center;
-      grid-template-columns: repeat(4, 1fr);
-      width: 18.75rem;
+      width: 23rem;
       margin-top: 3rem;
     }
 
@@ -184,17 +183,12 @@ NAVIGATION
     }
 
     &__social-link {
-      // background-color: cornflowerblue;
-      height: 2.5rem;
-      width: 2.5rem;
+      display: inline-flex;
     }
 
     &__social-link:link,
     &__social-link:visited {
       /* Sidebar SVG Colors, Inherited height from navbar__sidebar-social-icons-item container */
-      // color: $clr-grey-10;
-      display: flex;
-      // height: inherit;
       transition: $transition;
 
       &:hover {
@@ -203,19 +197,39 @@ NAVIGATION
     }
 
     &__social-svg--email {
-      color: bisque;
+      color: $clr-grey-3;
+      height: 2.5rem;
+      width: 2.5rem;
     }
 
     &__social-svg--github {
       color: $clr-github;
+      height: 2.5rem;
+      width: 2.5rem;
     }
 
     &__social-svg--linkedin {
       color: $clr-linkedin;
+      height: 2.5rem;
+      width: 2.5rem;
     }
 
     &__social-svg--twitter {
       color: $clr-twitter;
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+
+    &__social-svg--discord {
+      color: $clr-discord;
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+
+    &__social-svg--microsoft-teams {
+      color: $clr-microsoft-teams;
+      height: 2.5rem;
+      width: 2.5rem;
     }
   }
 }
