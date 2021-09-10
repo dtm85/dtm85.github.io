@@ -373,7 +373,7 @@ HEADER
   }
 }
 
-.header__hero-text-logo {
+.header__logo {
   font-weight: 300;
   font-size: 5rem;
   line-height: 1.7;
@@ -383,17 +383,17 @@ HEADER
 }
 
 @media only screen and (max-width: 47.938em) {
-  .header__hero-text-logo {
+  .header__logo {
     font-size: 3.5rem;
   }
 }
 
-.header__hero-text-logo--tech-media {
+.header__logo--tech-media {
   font-weight: 500;
   color: #0ef;
 }
 
-.header__hero-text-h2 {
+.header__description {
   font-weight: 400;
   color: silver;
   font-size: 2.4rem;
@@ -401,19 +401,19 @@ HEADER
 }
 
 @media only screen and (max-width: 47.938em) {
-  .header__hero-text-h2 {
+  .header__description {
     font-size: 1.5rem;
   }
 }
 
 @media only screen and (max-width: 31.25em) {
-  .header__hero-text-h2--breakpoint {
+  .header__description--breakpoint {
     line-height: 1.8;
     display: block;
   }
 }
 
-.header__hero-text-h2--span {
+.header__description--typewriter {
   /* Span for typewriter text  */
   color: #0ef;
   position: absolute;
@@ -421,13 +421,13 @@ HEADER
   font-weight: 700;
 }
 
-.header__hero-text-h2 .header__hero-text-h2--span > .txt {
+.header__description .header__description--typewriter > .txt {
   /* Cursor for typewriter text */
   border-right: 0.19rem solid chartreuse;
   padding: 2.5px 0;
 }
 
-.header__social-container {
+.header__social-wrapper {
   line-height: 1;
   position: fixed;
   top: 70%;
@@ -436,7 +436,7 @@ HEADER
 }
 
 @media only screen and (max-width: 59.375em) {
-  .header__social-container {
+  .header__social-wrapper {
     margin-left: 0;
     position: relative;
     display: -ms-grid;
@@ -449,14 +449,14 @@ HEADER
   }
 }
 
-.header__social-container--list {
+.header__social-icons {
   display: block;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 59.375em) {
-  .header__social-container--list {
+  .header__social-icons {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[4];
@@ -472,14 +472,14 @@ HEADER
   }
 }
 
-.header__social-container--item {
+.header__social-item {
   width: 0;
   height: 0;
   margin-top: 3.5rem;
 }
 
 @media only screen and (max-width: 59.375em) {
-  .header__social-container--item {
+  .header__social-item {
     margin-top: 0;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -488,26 +488,26 @@ HEADER
   }
 }
 
-.header__social-container--link:link, .header__social-container--link:visited {
-  display: block;
-  padding: 0;
-  color: #e2e2e2;
-}
-
-.header__social-container--svg {
+.header__social-link--svg {
   display: block;
   margin: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-.header__social-container--svg:hover {
+.header__social-link--svg:hover {
   color: #0ef;
 }
 
-.header__social-container--svg-email, .header__social-container--svg-github, .header__social-container--svg-linkedin, .header__social-container--svg-twitter {
+.header__social-link--email, .header__social-link--github, .header__social-link--linkedin, .header__social-link--twitter {
   width: 1.875rem;
   height: 1.875rem;
+}
+
+.header__social-link:link, .header__social-link:visited {
+  display: block;
+  padding: 0;
+  color: #e2e2e2;
 }
 
 .header__iphone {
@@ -783,6 +783,43 @@ NAVIGATION
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  /* SVGs */
+}
+
+.navbar .sidebar__social-link--email {
+  color: #666;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.navbar .sidebar__social-link--github {
+  color: #6e5494;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.navbar .sidebar__social-link--linkedin {
+  color: #0e76a8;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.navbar .sidebar__social-link--twitter {
+  color: #08a0e9;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.navbar .sidebar__social-link--discord {
+  color: #7289da;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.navbar .sidebar__social-link--microsoft-teams {
+  color: #6264a7;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .navbar .sidebar__social-link:link, .navbar .sidebar__social-link:visited {
@@ -794,42 +831,6 @@ NAVIGATION
 .navbar .sidebar__social-link:link:hover, .navbar .sidebar__social-link:visited:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
-}
-
-.navbar .sidebar__social-svg--email {
-  color: #666;
-  height: 2.5rem;
-  width: 2.5rem;
-}
-
-.navbar .sidebar__social-svg--github {
-  color: #6e5494;
-  height: 2.5rem;
-  width: 2.5rem;
-}
-
-.navbar .sidebar__social-svg--linkedin {
-  color: #0e76a8;
-  height: 2.5rem;
-  width: 2.5rem;
-}
-
-.navbar .sidebar__social-svg--twitter {
-  color: #08a0e9;
-  height: 2.5rem;
-  width: 2.5rem;
-}
-
-.navbar .sidebar__social-svg--discord {
-  color: #7289da;
-  height: 2.5rem;
-  width: 2.5rem;
-}
-
-.navbar .sidebar__social-svg--microsoft-teams {
-  color: #6264a7;
-  height: 2.5rem;
-  width: 2.5rem;
 }
 
 /* 
@@ -1826,6 +1827,7 @@ CONTACT
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  /* SVGs */
 }
 
 .contact__link--email {

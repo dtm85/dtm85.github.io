@@ -108,6 +108,7 @@
             </ul>
 
             <!-- social icons -->
+
             <!-- Email -->
             <ul class="sidebar__social-icons">
               <li class="sidebar__social-item">
@@ -117,7 +118,8 @@
                   aria-label="Link to Email"
                   target="_blank"
                 >
-                  <svg class="sidebar__social-svg--email">
+                  <!-- Email SVG -->
+                  <svg class="sidebar__social-link--email">
                     <use
                       href="./media/icons/svg/sprite-sheet.svg#email-square-bisque"
                     ></use>
@@ -133,7 +135,8 @@
                   aria-label="Link to GitHub"
                   target="_blank"
                 >
-                  <svg class="sidebar__social-svg--github">
+                  <!-- GitHub SVG -->
+                  <svg class="sidebar__social-link--github">
                     <use
                       href="./media/icons/svg/sprite-sheet.svg#github-white-background"
                     ></use>
@@ -149,7 +152,8 @@
                   aria-label="Link to LinkedIn"
                   target="_blank"
                 >
-                  <svg class="sidebar__social-svg--linkedin">
+                  <!-- Linkedin SVG -->
+                  <svg class="sidebar__social-link--linkedin">
                     <use
                       href="./media/icons/svg/sprite-sheet.svg#linkedin-white-text"
                     ></use>
@@ -165,7 +169,8 @@
                   aria-label="Link to Twitter"
                   target="_blank"
                 >
-                  <svg class="sidebar__social-svg--twitter">
+                  <!-- Twitter SVG -->
+                  <svg class="sidebar__social-link--twitter">
                     <use
                       href="./media/icons/svg/sprite-sheet.svg#twitter-white-logo"
                     ></use>
@@ -181,7 +186,8 @@
                   aria-label="Link to Discord Channel"
                   target="_blank"
                 >
-                  <svg class="sidebar__social-svg--discord">
+                  <!-- Discord SVG -->
+                  <svg class="sidebar__social-link--discord">
                     <use
                       href="./media/icons/svg/sprite-sheet.svg#discord-white-logo"
                     ></use>
@@ -197,7 +203,8 @@
                   aria-label="Link to Microsoft Teams Channel"
                   target="_blank"
                 >
-                  <svg class="sidebar__social-svg--microsoft-teams">
+                  <!-- Microsoft Teams SVG -->
+                  <svg class="sidebar__social-link--microsoft-teams">
                     <use
                       href="./media/icons/svg/sprite-sheet.svg#microsoft-teams"
                     ></use>
@@ -266,15 +273,19 @@
 
         <!-- Header Hero Text -->
         <div class="header__hero-text">
-          <h1 class="header__hero-text-logo">
-            Dan<span class="header__hero-text-logo--tech-media">TechMedia</span>
+          <!-- Logo Heading -->
+          <h1 class="header__logo">
+            Dan<span class="header__logo--tech-media">TechMedia</span>
           </h1>
-          <h2 class="header__hero-text-h2">
+          <!-- Logo Subheading -->
+          <h2 class="header__description">
             Your Nexus for
-            <span class="header__hero-text-h2--breakpoint"
+            <!-- Breakpoint for 500px screens -->
+            <span class="header__description--breakpoint"
               >Web
+              <!-- Typewriter Effect -->
               <span
-                class="header__hero-text-h2--span"
+                class="header__description--typewriter"
                 data-wait="2000"
                 data-words='["Development", "Design"]'
               ></span
@@ -290,19 +301,20 @@
             >
           </div>
           <!-- Social Links on Hero Section -->
-          <div class="header__social-container">
-            <ul class="header__social-container--list">
-              <li class="header__social-container--item">
+          <!-- Social Wrapper -->
+          <div class="header__social-wrapper">
+            <!-- Social Icons - Unordered List -->
+            <ul class="header__social-icons">
+              <li class="header__social-item">
+                <!-- Email -->
                 <a
-                  class="header__social-container--link"
+                  class="header__social-link"
                   href="mailto:dan@dantechmedia.com"
                   aria-label="Link to Email"
                 >
+                  <!-- Email SVG -->
                   <svg
-                    class="
-                      header__social-container--svg
-                      header__social-container--svg-email
-                    "
+                    class="header__social-link--svg header__social-link--email"
                   >
                     <use
                       href="./media/icons/svg/sprite-sheet.svg#email-square"
@@ -310,34 +322,34 @@
                   </svg>
                 </a>
               </li>
-              <li class="header__social-container--item">
+              <li class="header__social-item">
+                <!-- GitHub -->
                 <a
-                  class="header__social-container--link"
+                  class="header__social-link"
                   href="https://github.com/dtm85"
                   aria-label="Link to GitHub"
                   target="_blank"
                 >
+                  <!-- GitHub SVG -->
                   <svg
-                    class="
-                      header__social-container--svg
-                      header__social-container--svg-github
-                    "
+                    class="header__social-link--svg header__social-link--github"
                   >
                     <use href="./media/icons/svg/sprite-sheet.svg#github"></use>
                   </svg>
                 </a>
               </li>
-              <li class="header__social-container--item">
+              <li class="header__social-item">
+                <!-- Linkedin -->
                 <a
-                  class="header__social-container--link"
+                  class="header__social-link"
                   href="https://www.linkedin.com/in/dtm"
                   aria-label="Link to LinkedIn"
                   target="_blank"
                 >
+                  <!-- Linkedin SVG -->
                   <svg
                     class="
-                      header__social-container--svg
-                      header__social-container--svg-linkedin
+                      header__social-link--svg header__social-link--linkedin
                     "
                   >
                     <use
@@ -346,17 +358,18 @@
                   </svg>
                 </a>
               </li>
-              <li class="header__social-container--item">
+              <li class="header__social-item">
+                <!-- Twitter -->
                 <a
-                  class="header__social-container--link"
+                  class="header__social-link"
                   href="https://twitter.com/DanTechMedia"
                   aria-label="Link to Twitter"
                   target="_blank"
                 >
+                  <!-- Twitter SVG -->
                   <svg
                     class="
-                      header__social-container--svg
-                      header__social-container--svg-twitter
+                      header__social-link--svg header__social-link--twitter
                     "
                   >
                     <use

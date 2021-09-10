@@ -184,6 +184,43 @@ NAVIGATION
 
     &__social-link {
       display: inline-flex;
+
+      /* SVGs */
+      &--email {
+        color: $clr-grey-3;
+        height: 2.5rem;
+        width: 2.5rem;
+      }
+
+      &--github {
+        color: $clr-github;
+        height: 2.5rem;
+        width: 2.5rem;
+      }
+
+      &--linkedin {
+        color: $clr-linkedin;
+        height: 2.5rem;
+        width: 2.5rem;
+      }
+
+      &--twitter {
+        color: $clr-twitter;
+        height: 2.5rem;
+        width: 2.5rem;
+      }
+
+      &--discord {
+        color: $clr-discord;
+        height: 2.5rem;
+        width: 2.5rem;
+      }
+
+      &--microsoft-teams {
+        color: $clr-microsoft-teams;
+        height: 2.5rem;
+        width: 2.5rem;
+      }
     }
 
     &__social-link:link,
@@ -194,42 +231,6 @@ NAVIGATION
       &:hover {
         transform: scale(1.4);
       }
-    }
-
-    &__social-svg--email {
-      color: $clr-grey-3;
-      height: 2.5rem;
-      width: 2.5rem;
-    }
-
-    &__social-svg--github {
-      color: $clr-github;
-      height: 2.5rem;
-      width: 2.5rem;
-    }
-
-    &__social-svg--linkedin {
-      color: $clr-linkedin;
-      height: 2.5rem;
-      width: 2.5rem;
-    }
-
-    &__social-svg--twitter {
-      color: $clr-twitter;
-      height: 2.5rem;
-      width: 2.5rem;
-    }
-
-    &__social-svg--discord {
-      color: $clr-discord;
-      height: 2.5rem;
-      width: 2.5rem;
-    }
-
-    &__social-svg--microsoft-teams {
-      color: $clr-microsoft-teams;
-      height: 2.5rem;
-      width: 2.5rem;
     }
   }
 }

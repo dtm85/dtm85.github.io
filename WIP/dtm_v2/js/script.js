@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", init);
 
 // Init App
 function init() {
-  const txtElement = document.querySelector(".header__hero-text-h2--span");
+  const txtElement = document.querySelector(".header__description--typewriter");
   const words = JSON.parse(txtElement.getAttribute("data-words"));
   const wait = txtElement.getAttribute("data-wait");
 

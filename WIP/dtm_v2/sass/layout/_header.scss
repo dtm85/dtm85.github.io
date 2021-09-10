@@ -33,7 +33,7 @@ HEADER
     }
   }
 
-  &__hero-text-logo {
+  &__logo {
     font-weight: 300;
     font-size: 5rem;
     line-height: 1.7;
@@ -50,7 +50,7 @@ HEADER
     }
   }
 
-  &__hero-text-h2 {
+  &__description {
     font-weight: 400;
     color: silver;
     font-size: 2.4rem;
@@ -67,7 +67,7 @@ HEADER
       }
     }
 
-    &--span {
+    &--typewriter {
       /* Span for typewriter text  */
       color: $clr-primary-5;
       position: absolute;
@@ -75,14 +75,14 @@ HEADER
       font-weight: 700;
     }
 
-    .header__hero-text-h2--span > .txt {
+    .header__description--typewriter > .txt {
       /* Cursor for typewriter text */
       border-right: 0.19rem solid chartreuse;
       padding: 2.5px 0;
     }
   }
 
-  &__social-container {
+  &__social-wrapper {
     line-height: 1;
     position: fixed;
     top: 70%;
@@ -97,55 +97,56 @@ HEADER
       width: 100%;
       margin-top: 5rem;
     }
+  }
 
-    &--list {
-      display: block;
-      transition: $transition;
+  &__social-icons {
+    display: block;
+    transition: $transition;
 
-      @include respond(bp-medium-950) {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        justify-content: center;
-        align-items: center;
-        column-gap: 2rem;
-      }
+    @include respond(bp-medium-950) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: center;
+      align-items: center;
+      column-gap: 2rem;
     }
+  }
 
-    &--item {
-      width: 0;
-      height: 0;
-      margin-top: 3.5rem;
+  &__social-item {
+    width: 0;
+    height: 0;
+    margin-top: 3.5rem;
 
-      @include respond(bp-medium-950) {
-        margin-top: 0;
-        height: fit-content;
-        width: 100%;
-      }
+    @include respond(bp-medium-950) {
+      margin-top: 0;
+      height: fit-content;
+      width: 100%;
     }
+  }
 
-    &--link:link,
-    &--link:visited {
-      display: block;
-      padding: 0;
-      color: $clr-text;
-    }
-    &--svg {
-      display: block;
-      margin: 0;
-      transition: $transition;
+  &__social-link--svg {
+    display: block;
+    margin: 0;
+    transition: $transition;
 
-      &:hover {
-        color: $clr-primary-5;
-      }
+    &:hover {
+      color: $clr-primary-5;
     }
+  }
 
-    &--svg-email,
-    &--svg-github,
-    &--svg-linkedin,
-    &--svg-twitter {
-      width: 1.875rem;
-      height: 1.875rem;
-    }
+  &__social-link--email,
+  &__social-link--github,
+  &__social-link--linkedin,
+  &__social-link--twitter {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+
+  &__social-link:link,
+  &__social-link:visited {
+    display: block;
+    padding: 0;
+    color: $clr-text;
   }
 
   &__iphone {
