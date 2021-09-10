@@ -439,12 +439,17 @@ HEADER
   .header__social-wrapper {
     margin-left: 0;
     position: relative;
-    display: -ms-grid;
-    display: grid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
+    top: 0%;
     margin-top: 5rem;
   }
 }
@@ -457,10 +462,9 @@ HEADER
 
 @media only screen and (max-width: 59.375em) {
   .header__social-icons {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -488,24 +492,59 @@ HEADER
   }
 }
 
-.header__social-link--svg {
-  display: block;
-  margin: 0;
+.header__social-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-.header__social-link--svg:hover {
-  color: #0ef;
+.header__social-link:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
-.header__social-link--email, .header__social-link--github, .header__social-link--linkedin, .header__social-link--twitter {
+.header__social-link--email {
   width: 1.875rem;
   height: 1.875rem;
+  color: #666;
+}
+
+.header__social-link--github {
+  width: 1.875rem;
+  height: 1.875rem;
+  color: #6e5494;
+}
+
+.header__social-link--twitter {
+  width: 1.875rem;
+  height: 1.875rem;
+  color: #08a0e9;
+}
+
+.header__social-link--linkedin {
+  width: 1.875rem;
+  height: 1.875rem;
+  color: #08a0e9;
+}
+
+.header__social-link--discord {
+  width: 1.875rem;
+  height: 1.875rem;
+  color: #7289da;
+}
+
+.header__social-link--microsoft-teams {
+  width: 1.875rem;
+  height: 1.875rem;
+  color: #6264a7;
 }
 
 .header__social-link:link, .header__social-link:visited {
-  display: block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   padding: 0;
   color: #e2e2e2;
 }
@@ -1820,7 +1859,6 @@ CONTACT
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: cadetblue;
 }
 
 .contact__link {

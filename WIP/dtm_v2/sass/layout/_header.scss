@@ -92,9 +92,11 @@ HEADER
     @include respond(bp-medium-950) {
       margin-left: 0;
       position: relative;
-      display: grid;
+      display: flex;
       justify-content: center;
+      align-items: center;
       width: 100%;
+      top: 0%;
       margin-top: 5rem;
     }
   }
@@ -104,8 +106,8 @@ HEADER
     transition: $transition;
 
     @include respond(bp-medium-950) {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      display: flex;
+      // grid-template-columns: repeat(4, 1fr);
       justify-content: center;
       align-items: center;
       column-gap: 2rem;
@@ -124,27 +126,64 @@ HEADER
     }
   }
 
-  &__social-link--svg {
-    display: block;
-    margin: 0;
+  // &__social-link--svg {
+  //   display: block;
+  //   margin: 0;
+  //   transition: $transition;
+
+  //   &:hover {
+  //     color: $clr-primary-5;
+  //   }
+  // }
+
+  &__social-link {
+    display: inline-flex;
     transition: $transition;
 
     &:hover {
-      color: $clr-primary-5;
+      transform: scale(1.2);
     }
-  }
 
-  &__social-link--email,
-  &__social-link--github,
-  &__social-link--linkedin,
-  &__social-link--twitter {
-    width: 1.875rem;
-    height: 1.875rem;
+    &--email {
+      width: 1.875rem;
+      height: 1.875rem;
+      color: $clr-grey-3;
+    }
+
+    &--github {
+      width: 1.875rem;
+      height: 1.875rem;
+      color: $clr-github;
+    }
+
+    &--twitter {
+      width: 1.875rem;
+      height: 1.875rem;
+      color: $clr-twitter;
+    }
+
+    &--linkedin {
+      width: 1.875rem;
+      height: 1.875rem;
+      color: $clr-twitter;
+    }
+
+    &--discord {
+      width: 1.875rem;
+      height: 1.875rem;
+      color: $clr-discord;
+    }
+
+    &--microsoft-teams {
+      width: 1.875rem;
+      height: 1.875rem;
+      color: $clr-microsoft-teams;
+    }
   }
 
   &__social-link:link,
   &__social-link:visited {
-    display: block;
+    display: inline-flex;
     padding: 0;
     color: $clr-text;
   }
