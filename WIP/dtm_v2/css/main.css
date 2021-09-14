@@ -889,7 +889,6 @@ ABOUT
   margin: 3rem auto;
   overflow: hidden;
   position: relative;
-  /* BELOW HERE */
 }
 
 .about__heading {
@@ -940,27 +939,6 @@ ABOUT
   }
 }
 
-.about__intro--text-h2 {
-  margin-bottom: 1rem;
-}
-
-.about__intro--text-p1 {
-  margin-bottom: 2rem;
-}
-
-.about__intro--text-p1--bold-hello {
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: #0ef;
-}
-
-.about__intro--text-p1, .about__intro--text-p2 {
-  font-weight: 400;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  color: #e2e2e2;
-}
-
 .about__photo {
   /* Profile Picture Styling */
   width: 15rem;
@@ -984,7 +962,28 @@ ABOUT
   }
 }
 
-.about__content {
+.about__text-h2 {
+  margin-bottom: 1rem;
+}
+
+.about__text-p1 {
+  margin-bottom: 2rem;
+}
+
+.about__text-p1--bold-hello {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #0ef;
+}
+
+.about__text-p1, .about__text-p2 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #e2e2e2;
+}
+
+.about__skills {
   margin: 10rem auto 4rem auto;
   display: -ms-grid;
   display: grid;
@@ -995,41 +994,33 @@ ABOUT
 }
 
 @media only screen and (max-width: 40.625em) {
-  .about__content {
+  .about__skills {
     margin: 8rem auto 4rem auto;
   }
 }
 
-.about__content--h1 {
-  font-weight: 400;
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 5rem;
-  color: #0ef;
-}
-
-.about__content--skills-container {
+.about__skills--skills-container {
   padding: 0 5rem;
 }
 
 @media only screen and (max-width: 40.625em) {
-  .about__content--skills-container {
+  .about__skills--skills-container {
     padding: 0 3rem;
   }
 }
 
-.about__content--skills-ul-container {
+.about__skills--skills-ul-container {
   margin: 0 auto;
   width: 65%;
 }
 
 @media only screen and (max-width: 56.25em) {
-  .about__content--skills-ul-container {
+  .about__skills--skills-ul-container {
     width: 100%;
   }
 }
 
-.about__content--skills {
+.about__skills--skills {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -1048,27 +1039,27 @@ ABOUT
 }
 
 @media only screen and (max-width: 42em) {
-  .about__content--skills {
+  .about__skills--skills {
     -ms-grid-columns: (minmax(4.5rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
   }
 }
 
 @media only screen and (max-width: 40.625em) {
-  .about__content--skills {
+  .about__skills--skills {
     -ms-grid-columns: (minmax(4.5rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
   }
 }
 
 @media only screen and (max-width: 26.75em) {
-  .about__content--skills {
+  .about__skills--skills {
     -ms-grid-columns: (minmax(4.25rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(4.25rem, 1fr));
   }
 }
 
-.about__content--skills svg {
+.about__skills--skills svg {
   /* Styling for all skill svg's - GLOBAL */
   position: relative;
   max-height: 5rem;
@@ -1084,64 +1075,72 @@ ABOUT
   overflow: hidden;
 }
 
-.about__content--skills svg:hover {
+.about__skills--skills svg:hover {
   -webkit-box-shadow: 0 0 8px 3px #00afbb;
           box-shadow: 0 0 8px 3px #00afbb;
 }
 
-.about__content--skill {
+.about__skills--skill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
 }
 
-.about__content--skill-html5 {
+.about__skills--html5 {
   color: #dc4d25;
 }
 
-.about__content--skill-css3 {
+.about__skills--css3 {
   color: #2965f1;
 }
 
-.about__content--skill-sass {
+.about__skills--sass {
   color: #cf649a;
 }
 
-.about__content--skill-bootstrap {
+.about__skills--bootstrap {
   color: #7852b3;
 }
 
-.about__content--skill-js {
+.about__skills--js {
   color: #e8d44d;
 }
 
-.about__content--skill-node-js {
+.about__skills--node-js {
   color: #689f63;
 }
 
-.about__content--skill-npm {
+.about__skills--npm {
   color: #cb0a00;
 }
 
-.about__content--skill-git {
+.about__skills--git {
   color: #fb4f28;
 }
 
-.about__content--skill-figma {
+.about__skills--figma {
   color: #6e5494;
 }
 
-.about__content--skill-ubuntu {
+.about__skills--ubuntu {
   color: #e95321;
 }
 
-.about__content--skill-nginx {
+.about__skills--nginx {
   color: #009639;
 }
 
-.about__content--skill-linode {
+.about__skills--linode {
   color: #02b159;
+}
+
+.about__heading {
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  color: #0ef;
 }
 
 /*
