@@ -27,9 +27,9 @@ ABOUT
     color: $clr-primary-5;
   }
 
-  &__picture {
+  &__intro {
     /* About Me Section - Picture & Description */
-    padding: 2rem 5.5rem;
+    padding: 2rem 5.5rem 3rem 5.5rem;
     margin: 0 auto;
     width: 90%;
     height: fit-content;
@@ -46,32 +46,12 @@ ABOUT
       padding: 2rem 3rem;
     }
 
-    &--container {
+    &--mobile-view {
       /* Profile Picture Container - Used to change Picture & Description from 2 Column over to 1 Column Layout */
       @include respond(bp-medium-650) {
         display: flex;
         justify-content: center;
         align-items: center;
-      }
-    }
-
-    &--dan-pic {
-      /* Profile Picture Styling */
-      width: 15rem;
-      height: 15rem;
-      border-radius: 50%;
-      box-shadow: 0 0 9px 0 $clr-primary-5;
-      position: relative;
-      transform: rotateZ(-2deg);
-      float: left;
-      -webkit-shape-outside: circle(50% at 50% 50%);
-      shape-outside: circle(50% at 50% 50%);
-      margin-right: 3rem;
-      margin-bottom: 0.905rem;
-
-      @include respond(bp-medium-650) {
-        margin-right: 0;
-        float: none;
       }
     }
 
@@ -95,6 +75,26 @@ ABOUT
       letter-spacing: 1px;
       line-height: 1.5;
       color: $clr-text;
+    }
+  }
+  /* BELOW HERE */
+  &__photo {
+    /* Profile Picture Styling */
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    box-shadow: 0 0 9px 0 $clr-primary-5;
+    position: relative;
+    transform: rotateZ(-2deg);
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    margin-right: 3rem;
+    margin-bottom: 0.905rem;
+
+    @include respond(bp-medium-650) {
+      margin-right: 0;
+      float: none;
     }
   }
 

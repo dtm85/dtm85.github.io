@@ -889,6 +889,7 @@ ABOUT
   margin: 3rem auto;
   overflow: hidden;
   position: relative;
+  /* BELOW HERE */
 }
 
 .about__heading {
@@ -900,9 +901,9 @@ ABOUT
   color: #0ef;
 }
 
-.about__picture {
+.about__intro {
   /* About Me Section - Picture & Description */
-  padding: 2rem 5.5rem;
+  padding: 2rem 5.5rem 3rem 5.5rem;
   margin: 0 auto;
   width: 90%;
   height: -webkit-fit-content;
@@ -916,17 +917,17 @@ ABOUT
 }
 
 @media only screen and (max-width: 40.625em) {
-  .about__picture {
+  .about__intro {
     padding: 2rem 3rem;
   }
 }
 
-.about__picture--container {
+.about__intro--mobile-view {
   /* Profile Picture Container - Used to change Picture & Description from 2 Column over to 1 Column Layout */
 }
 
 @media only screen and (max-width: 40.625em) {
-  .about__picture--container {
+  .about__intro--mobile-view {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -939,7 +940,28 @@ ABOUT
   }
 }
 
-.about__picture--dan-pic {
+.about__intro--text-h2 {
+  margin-bottom: 1rem;
+}
+
+.about__intro--text-p1 {
+  margin-bottom: 2rem;
+}
+
+.about__intro--text-p1--bold-hello {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #0ef;
+}
+
+.about__intro--text-p1, .about__intro--text-p2 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #e2e2e2;
+}
+
+.about__photo {
   /* Profile Picture Styling */
   width: 15rem;
   height: 15rem;
@@ -956,31 +978,10 @@ ABOUT
 }
 
 @media only screen and (max-width: 40.625em) {
-  .about__picture--dan-pic {
+  .about__photo {
     margin-right: 0;
     float: none;
   }
-}
-
-.about__picture--text-h2 {
-  margin-bottom: 1rem;
-}
-
-.about__picture--text-p1 {
-  margin-bottom: 2rem;
-}
-
-.about__picture--text-p1--bold-hello {
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: #0ef;
-}
-
-.about__picture--text-p1, .about__picture--text-p2 {
-  font-weight: 400;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  color: #e2e2e2;
 }
 
 .about__content {
