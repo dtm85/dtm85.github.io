@@ -50,7 +50,7 @@ PROJECTS
     letter-spacing: 3px;
   }
 
-  &__card-container {
+  &__cards-container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -64,7 +64,7 @@ PROJECTS
     }
   }
 
-  &__card-wrapper {
+  &__card {
     /* Project Card Wrapper GLOBAL */
     background: $background-card-dark-grey;
     box-shadow: 0 2px 8px 0 $clr-secondary-dark-1;

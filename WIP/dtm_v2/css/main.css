@@ -1209,7 +1209,7 @@ PROJECTS
   letter-spacing: 3px;
 }
 
-.projects__card-container {
+.projects__cards-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1228,12 +1228,12 @@ PROJECTS
 }
 
 @media only screen and (max-width: 28.125em) {
-  .projects__card-container {
+  .projects__cards-container {
     padding: 0 3rem 1.75rem 3rem;
   }
 }
 
-.projects__card-wrapper {
+.projects__card {
   /* Project Card Wrapper GLOBAL */
   background: rgba(23, 23, 23, 0.9);
   -webkit-box-shadow: 0 2px 8px 0 #1f2687b3;
@@ -1269,7 +1269,7 @@ PROJECTS
     */
 }
 
-.projects__card-wrapper::before {
+.projects__card::before {
   /* Project Circle with Image of project before hover GLOBAL */
   content: "";
   position: absolute;
@@ -1283,63 +1283,63 @@ PROJECTS
   transition: 0.55s ease-in-out;
 }
 
-.projects__card-wrapper:hover::before {
+.projects__card:hover::before {
   /* Project Circle with Image of project on hover - Circle will move to the left GLOBAL */
   -webkit-clip-path: circle(300px at 80% -20%);
           clip-path: circle(300px at 80% -20%);
 }
 
-.projects__card-wrapper--project1::before {
+.projects__card--project1::before {
   /* Project 1 Image for Circle */
   background: url("/WIP/dtm_v2/media/images/projects/`Under__Construction/code.jpg") center/cover no-repeat;
 }
 
-.projects__card-wrapper--project2::before {
+.projects__card--project2::before {
   /* Project 2 Image for Circle */
   background: url("/WIP/dtm_v2/media/images/projects/Mapty/mapty.png") center/cover no-repeat;
 }
 
-.projects__card-wrapper--project3::before {
+.projects__card--project3::before {
   /* Project 3 Image for Circle */
   background: url("/WIP/dtm_v2/media/images/projects/`Under__Construction/code.jpg") center/cover no-repeat;
 }
 
-.projects__card-wrapper--project4::before {
+.projects__card--project4::before {
   /* Project 4 Image for Circle */
   background: url("/WIP/dtm_v2/media/images/projects/Natours/natours.png") center/cover no-repeat;
 }
 
-.projects__card-wrapper--project5::before {
+.projects__card--project5::before {
   /* Project 5 Image for Circle */
   background: url("/WIP/dtm_v2/media/images/projects/Omnifood/omnifood.png") center/cover no-repeat;
 }
 
-.projects__card-wrapper--project6::before {
+.projects__card--project6::before {
   /* Project 6 Image for Circle */
   background: url("/WIP/dtm_v2/media/images/projects/Trillo/trillo.png") center/cover no-repeat;
 }
 
-.projects__card-wrapper--project7::before {
+.projects__card--project7::before {
   /* Project 7 Image for Circle */
   background: url("/WIP/dtm_v2/media/images/projects/`Under__Construction/code.jpg") center/cover no-repeat;
 }
 
-.projects__card-wrapper--project8::before {
+.projects__card--project8::before {
   /* Project 8 Image for Circle */
   background: url("/WIP/dtm_v2/media/images/projects/BackRoads/back-roads.png") center/cover no-repeat;
 }
 
-.projects__card-wrapper--project9::before {
+.projects__card--project9::before {
   /* Project 8 Image for Circle */
   background: url("/WIP/dtm_v2/media/images/projects/TeaStation/tea-station.png") center/cover no-repeat;
 }
 
-.projects__card-wrapper:hover .projects__card-wrapper--project-content {
+.projects__card:hover .projects__card--project-content {
   /* Project Content moves up on Hover GLOBAL */
   height: 225px;
 }
 
-.projects__card-wrapper--project-content {
+.projects__card--project-content {
   /* Project Card Content GLOBAL */
   position: absolute;
   bottom: 0;
@@ -1352,7 +1352,7 @@ PROJECTS
   will-change: transform;
 }
 
-.projects__card-wrapper--project-content--h2 {
+.projects__card--project-content--h2 {
   /* Project H2 Styling GLOBAL */
   position: relative;
   letter-spacing: 2px;
@@ -1362,7 +1362,7 @@ PROJECTS
   margin: 0 auto;
 }
 
-.projects__card-wrapper--project-content--button-container {
+.projects__card--project-content--button-container {
   /* View Project Button Container */
   display: inline-block;
   margin-top: 1.5rem;
@@ -1374,7 +1374,7 @@ PROJECTS
           transform: translateY(110px);
 }
 
-.projects__card-wrapper--project-content--button-container--btn {
+.projects__card--project-content--button-container--btn {
   /* View Project Button Styling GLOBAL */
   padding: 13px 20px 10px 20px;
   color: #0ef;
@@ -1384,7 +1384,7 @@ PROJECTS
   transition: all 0.3s ease-in-out;
 }
 
-.projects__card-wrapper--project-content--button-container--btn:hover {
+.projects__card--project-content--button-container--btn:hover {
   /* View Projects Button Styling on Hover GLOBAL */
   background: #0ef;
   color: #1f1f1f;
@@ -1392,7 +1392,7 @@ PROJECTS
           box-shadow: 0 0 10px 2px #0ef;
 }
 
-.projects__card-wrapper--project-content--github-container {
+.projects__card--project-content--github-container {
   /* GitHub Icon Layout GLOBAL */
   margin-top: 30px;
   width: 100%;
@@ -1412,7 +1412,7 @@ PROJECTS
           transform: translateY(100px);
 }
 
-.projects__card-wrapper--project-content--github-container--github {
+.projects__card--project-content--github-container--github {
   /* GitHub Icon Styling GLOBAL */
   width: 30px;
   height: 30px;
@@ -1421,12 +1421,12 @@ PROJECTS
   transition: 0.4s ease-in-out;
 }
 
-.projects__card-wrapper--project-content--github-container--github:hover {
+.projects__card--project-content--github-container--github:hover {
   /* GitHub Icon Transition on Hover GLOBAL */
   color: #6e5494;
 }
 
-.projects__card-wrapper--project-content--code-languages {
+.projects__card--project-content--code-languages {
   /* Code Languages Container GLOBAL */
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -1440,7 +1440,7 @@ PROJECTS
           transform: translateY(75px);
 }
 
-.projects__card-wrapper--project-content--code-languages--html5 {
+.projects__card--project-content--code-languages--html5 {
   /* HTML5 Icon Styling */
   width: 17px;
   height: 17px;
@@ -1448,7 +1448,7 @@ PROJECTS
   margin: 0 5px;
 }
 
-.projects__card-wrapper--project-content--code-languages--css3 {
+.projects__card--project-content--code-languages--css3 {
   /* CSS3 Icon Styling */
   width: 17px;
   height: 17px;
@@ -1456,7 +1456,7 @@ PROJECTS
   color: #2965f1;
 }
 
-.projects__card-wrapper--project-content--code-languages--js {
+.projects__card--project-content--code-languages--js {
   /* JavaScript Icon Styling */
   width: 17px;
   height: 18px;
@@ -1464,14 +1464,14 @@ PROJECTS
   color: #e8d44d;
 }
 
-.projects__card-wrapper:hover .projects__card-wrapper--project-content--button-container {
+.projects__card:hover .projects__card--project-content--button-container {
   /* Project Card Hover - Styling for View Projects Button on Hover - Transition Effect GLOBAL */
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
 
-.projects__card-wrapper:hover .projects__card-wrapper--project-content--github-container {
+.projects__card:hover .projects__card--project-content--github-container {
   /* GitHub Icon Transition on Hover GLOBAL */
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -1480,7 +1480,7 @@ PROJECTS
           transition-delay: 0.315s;
 }
 
-.projects__card-wrapper:hover .projects__card-wrapper--project-content--code-languages {
+.projects__card:hover .projects__card--project-content--code-languages {
   /* Code Languages Container Transition on Hover GLOBAL */
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -1489,7 +1489,7 @@ PROJECTS
           transition-delay: 0.45s;
 }
 
-.projects__card-wrapper--project1-gradient-container {
+.projects__card--project1-gradient-container {
   /* Project 1 Gradient Container */
   position: relative;
   width: 100%;
@@ -1502,7 +1502,7 @@ PROJECTS
   background: radial-gradient(circle farthest-corner at 100% 100%, #e8d44d 1%, rgba(14, 14, 14, 0) 35%);
 }
 
-.projects__card-wrapper:hover .projects__card-wrapper--project1-gradient-container {
+.projects__card:hover .projects__card--project1-gradient-container {
   /* Project 1 Gradient Container Transition on Hover */
   background: radial-gradient(circle farthest-corner at 100% 100%, #e8d44d 1%, rgba(14, 14, 14, 0) 35%);
   opacity: 1;
@@ -1513,7 +1513,7 @@ PROJECTS
   z-index: -1;
 }
 
-.projects__card-wrapper--project2-gradient-container {
+.projects__card--project2-gradient-container {
   /* Project 2 Gradient Container */
   position: relative;
   width: 100%;
@@ -1526,7 +1526,7 @@ PROJECTS
   background: radial-gradient(circle farthest-corner at 100% 100%, #12d564 1%, rgba(14, 14, 14, 0) 35%);
 }
 
-.projects__card-wrapper:hover .projects__card-wrapper--project2-gradient-container {
+.projects__card:hover .projects__card--project2-gradient-container {
   /* Project 2 Gradient Container Transition on Hover */
   background: radial-gradient(circle farthest-corner at 100% 100%, #12d564 1%, rgba(14, 14, 14, 0) 35%);
   opacity: 1;
@@ -1537,7 +1537,7 @@ PROJECTS
   z-index: -1;
 }
 
-.projects__card-wrapper--project3-gradient-container {
+.projects__card--project3-gradient-container {
   /* Project 3 Gradient Container */
   position: relative;
   width: 100%;
@@ -1550,7 +1550,7 @@ PROJECTS
   background: radial-gradient(circle farthest-corner at 100% 100%, #c69963 1%, rgba(14, 14, 14, 0) 35%);
 }
 
-.projects__card-wrapper:hover .projects__card-wrapper--project3-gradient-container {
+.projects__card:hover .projects__card--project3-gradient-container {
   /* Project 3 Gradient Container Transition on Hover */
   background: radial-gradient(circle farthest-corner at 100% 100%, #c69963 1%, rgba(14, 14, 14, 0) 35%);
   opacity: 1;
@@ -1561,7 +1561,7 @@ PROJECTS
   z-index: -1;
 }
 
-.projects__card-wrapper--project4-gradient-container {
+.projects__card--project4-gradient-container {
   /* Project 4 Gradient Container */
   position: relative;
   width: 100%;
@@ -1574,7 +1574,7 @@ PROJECTS
   background: radial-gradient(circle farthest-corner at 100% 100%, #55c57a 1%, rgba(14, 14, 14, 0) 35%);
 }
 
-.projects__card-wrapper:hover .projects__card-wrapper--project4-gradient-container {
+.projects__card:hover .projects__card--project4-gradient-container {
   /* Project 4 Gradient Container Transition on Hover */
   background: radial-gradient(circle farthest-corner at 100% 100%, #55c57a 1%, rgba(14, 14, 14, 0) 35%);
   opacity: 1;
@@ -1585,7 +1585,7 @@ PROJECTS
   z-index: -1;
 }
 
-.projects__card-wrapper--project5-gradient-container {
+.projects__card--project5-gradient-container {
   /* Project 5 Gradient Container */
   position: relative;
   width: 100%;
@@ -1598,7 +1598,7 @@ PROJECTS
   background: radial-gradient(circle farthest-corner at 100% 100%, #e67e22 1%, rgba(14, 14, 14, 0) 35%);
 }
 
-.projects__card-wrapper:hover .projects__card-wrapper--project5-gradient-container {
+.projects__card:hover .projects__card--project5-gradient-container {
   /* Project 5 Gradient Container Transition on Hover */
   background: radial-gradient(circle farthest-corner at 100% 100%, #e67e22 1%, rgba(14, 14, 14, 0) 35%);
   opacity: 1;
@@ -1609,7 +1609,7 @@ PROJECTS
   z-index: -1;
 }
 
-.projects__card-wrapper--project6-gradient-container {
+.projects__card--project6-gradient-container {
   /* Project 6 Gradient Container */
   position: relative;
   width: 100%;
@@ -1622,7 +1622,7 @@ PROJECTS
   background: radial-gradient(circle farthest-corner at 100% 100%, #eb2f64 1%, rgba(14, 14, 14, 0) 35%);
 }
 
-.projects__card-wrapper:hover .projects__card-wrapper--project6-gradient-container {
+.projects__card:hover .projects__card--project6-gradient-container {
   /* Project 6 Gradient Container Transition on Hover */
   background: radial-gradient(circle farthest-corner at 100% 100%, #eb2f64 1%, rgba(14, 14, 14, 0) 35%);
   opacity: 1;
@@ -1633,7 +1633,7 @@ PROJECTS
   z-index: -1;
 }
 
-.projects__card-wrapper--project7-gradient-container {
+.projects__card--project7-gradient-container {
   /* Project 7 Gradient Container */
   position: relative;
   width: 100%;
@@ -1646,7 +1646,7 @@ PROJECTS
   background: radial-gradient(circle farthest-corner at 100% 100%, #e9b949 1%, rgba(14, 14, 14, 0) 35%);
 }
 
-.projects__card-wrapper:hover .projects__card-wrapper--project7-gradient-container {
+.projects__card:hover .projects__card--project7-gradient-container {
   /* Project 7 Gradient Container Transition on Hover */
   background: radial-gradient(circle farthest-corner at 100% 100%, #e9b949 1%, rgba(14, 14, 14, 0) 35%);
   opacity: 1;
@@ -1657,7 +1657,7 @@ PROJECTS
   z-index: -1;
 }
 
-.projects__card-wrapper--project8-gradient-container {
+.projects__card--project8-gradient-container {
   /* Project 8 Gradient Container */
   position: relative;
   width: 100%;
@@ -1670,7 +1670,7 @@ PROJECTS
   background: radial-gradient(circle farthest-corner at 100% 100%, #2caeba 1%, rgba(14, 14, 14, 0) 35%);
 }
 
-.projects__card-wrapper:hover .projects__card-wrapper--project8-gradient-container {
+.projects__card:hover .projects__card--project8-gradient-container {
   /* Project 8 Gradient Container Transition on Hover */
   background: radial-gradient(circle farthest-corner at 100% 100%, #2caeba 1%, rgba(14, 14, 14, 0) 35%);
   opacity: 1;
@@ -1681,7 +1681,7 @@ PROJECTS
   z-index: -1;
 }
 
-.projects__card-wrapper--project9-gradient-container {
+.projects__card--project9-gradient-container {
   /* Project 9 Gradient Container */
   position: relative;
   width: 100%;
@@ -1694,7 +1694,7 @@ PROJECTS
   background: radial-gradient(circle farthest-corner at 100% 100%, #678e3e 1%, rgba(14, 14, 14, 0) 35%);
 }
 
-.projects__card-wrapper:hover .projects__card-wrapper--project9-gradient-container {
+.projects__card:hover .projects__card--project9-gradient-container {
   /* Project 9 Gradient Container Transition on Hover */
   background: radial-gradient(circle farthest-corner at 100% 100%, #678e3e 1%, rgba(14, 14, 14, 0) 35%);
   opacity: 1;
