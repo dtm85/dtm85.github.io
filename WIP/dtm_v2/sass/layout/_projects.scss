@@ -32,35 +32,35 @@ PROJECTS
     margin: 3rem auto;
     overflow: hidden;
     position: relative;
+  }
 
-    &--heading-container {
-      /* Projects Heading Container GLOBAL */
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      color: $clr-primary-5;
-      text-align: center;
-      margin: 5rem auto;
+  &__heading-container {
+    /* Projects Heading Container GLOBAL */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $clr-primary-5;
+    text-align: center;
+    margin: 5rem auto;
+  }
 
-      &--h1 {
-        font-size: 3rem;
-        font-weight: 400;
-        letter-spacing: 3px;
-      }
-    }
+  &__heading {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
 
-    &--card-container {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      gap: 50px;
-      padding: 0 3rem 4rem 3rem;
-      transition: $transition;
+  &__card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 3rem 4rem 3rem;
+    transition: $transition;
 
-      @include respond(bp-small-450) {
-        padding: 0 3rem 1.75rem 3rem;
-      }
+    @include respond(bp-small-450) {
+      padding: 0 3rem 1.75rem 3rem;
     }
   }
 

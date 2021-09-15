@@ -983,7 +983,8 @@ ABOUT
   color: #e2e2e2;
 }
 
-.about__skills {
+.skills {
+  /* Skills Section Container */
   margin: 10rem auto 4rem auto;
   display: -ms-grid;
   display: grid;
@@ -994,43 +995,51 @@ ABOUT
 }
 
 @media only screen and (max-width: 40.625em) {
-  .about__skills {
+  .skills {
     margin: 8rem auto 4rem auto;
   }
 }
 
-.about__skills--skills-container {
+.skills__heading {
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  color: #0ef;
+}
+
+.skills__section-container {
   padding: 0 5rem;
 }
 
 @media only screen and (max-width: 40.625em) {
-  .about__skills--skills-container {
+  .skills__section-container {
     padding: 0 3rem;
   }
 }
 
-.about__skills--skills-ul-container {
+.skills__outer-wrapper {
   margin: 0 auto;
   width: 65%;
 }
 
 @media only screen and (max-width: 56.25em) {
-  .about__skills--skills-ul-container {
+  .skills__outer-wrapper {
     width: 100%;
   }
 }
 
-.about__skills--skills {
+.skills__icon-container {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
   gap: 3rem;
   /* 
-      ================================================================================================
-      6 Column Layout on Skills section that wraps - also has WIDE padding to hold the 6 column layout
-      - The WIDE padding will be removed at 900px as it will still hold the 6 Column Layout at 900px
-      ================================================================================================
-      */
+    ================================================================================================
+    6 Column Layout on Skills section that wraps - also has WIDE padding to hold the 6 column layout
+    - The WIDE padding will be removed at 900px as it will still hold the 6 Column Layout at 900px
+    ================================================================================================
+    */
   -ms-grid-columns: (minmax(5rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
   /* 4 Column Layout + Some padding that helps to keep the 4 Column Layout */
@@ -1039,27 +1048,27 @@ ABOUT
 }
 
 @media only screen and (max-width: 42em) {
-  .about__skills--skills {
+  .skills__icon-container {
     -ms-grid-columns: (minmax(4.5rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
   }
 }
 
 @media only screen and (max-width: 40.625em) {
-  .about__skills--skills {
+  .skills__icon-container {
     -ms-grid-columns: (minmax(4.5rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
   }
 }
 
 @media only screen and (max-width: 26.75em) {
-  .about__skills--skills {
+  .skills__icon-container {
     -ms-grid-columns: (minmax(4.25rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(4.25rem, 1fr));
   }
 }
 
-.about__skills--skills svg {
+.skills__icon-container svg {
   /* Styling for all skill svg's - GLOBAL */
   position: relative;
   max-height: 5rem;
@@ -1075,72 +1084,64 @@ ABOUT
   overflow: hidden;
 }
 
-.about__skills--skills svg:hover {
+.skills__icon-container svg:hover {
   -webkit-box-shadow: 0 0 8px 3px #00afbb;
           box-shadow: 0 0 8px 3px #00afbb;
 }
 
-.about__skills--skill {
+.skills__skill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
 }
 
-.about__skills--html5 {
+.skills__skill--html5 {
   color: #dc4d25;
 }
 
-.about__skills--css3 {
+.skills__skill--css3 {
   color: #2965f1;
 }
 
-.about__skills--sass {
+.skills__skill--sass {
   color: #cf649a;
 }
 
-.about__skills--bootstrap {
+.skills__skill--bootstrap {
   color: #7852b3;
 }
 
-.about__skills--js {
+.skills__skill--js {
   color: #e8d44d;
 }
 
-.about__skills--node-js {
+.skills__skill--node-js {
   color: #689f63;
 }
 
-.about__skills--npm {
+.skills__skill--npm {
   color: #cb0a00;
 }
 
-.about__skills--git {
+.skills__skill--git {
   color: #fb4f28;
 }
 
-.about__skills--figma {
+.skills__skill--figma {
   color: #6e5494;
 }
 
-.about__skills--ubuntu {
+.skills__skill--ubuntu {
   color: #e95321;
 }
 
-.about__skills--nginx {
+.skills__skill--nginx {
   color: #009639;
 }
 
-.about__skills--linode {
+.skills__skill--linode {
   color: #02b159;
-}
-
-.about__heading {
-  font-weight: 400;
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 5rem;
-  color: #0ef;
 }
 
 /*
@@ -1187,7 +1188,7 @@ PROJECTS
   position: relative;
 }
 
-.projects__glass-container--heading-container {
+.projects__heading-container {
   /* Projects Heading Container GLOBAL */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1202,13 +1203,13 @@ PROJECTS
   margin: 5rem auto;
 }
 
-.projects__glass-container--heading-container--h1 {
+.projects__heading {
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 3px;
 }
 
-.projects__glass-container--card-container {
+.projects__card-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1227,7 +1228,7 @@ PROJECTS
 }
 
 @media only screen and (max-width: 28.125em) {
-  .projects__glass-container--card-container {
+  .projects__card-container {
     padding: 0 3rem 1.75rem 3rem;
   }
 }

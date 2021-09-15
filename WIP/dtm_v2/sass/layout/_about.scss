@@ -97,90 +97,103 @@ ABOUT
     line-height: 1.5;
     color: $clr-text;
   }
+}
 
-  &__skills {
-    margin: 10rem auto 4rem auto;
-    display: grid;
-    align-items: center;
+////////////////////
+// SKILLS SECTION //
+////////////////////
+
+.skills {
+  /* Skills Section Container */
+  margin: 10rem auto 4rem auto;
+  display: grid;
+  align-items: center;
+
+  @include respond(bp-medium-650) {
+    margin: 8rem auto 4rem auto;
+  }
+
+  &__heading {
+    font-weight: 400;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: $clr-primary-5;
+  }
+
+  &__section-container {
+    padding: 0 5rem;
 
     @include respond(bp-medium-650) {
-      margin: 8rem auto 4rem auto;
+      padding: 0 3rem;
+    }
+  }
+
+  &__outer-wrapper {
+    margin: 0 auto;
+    // padding: 0 2rem;
+    width: 65%;
+
+    @include respond(bp-medium-900) {
+      width: 100%;
+    }
+  }
+
+  /* Skills UL of SVG's  */
+  &__icon-container {
+    margin: 0 auto;
+    display: grid;
+    gap: 3rem;
+
+    /* 
+    ================================================================================================
+    6 Column Layout on Skills section that wraps - also has WIDE padding to hold the 6 column layout
+    - The WIDE padding will be removed at 900px as it will still hold the 6 Column Layout at 900px
+    ================================================================================================
+    */
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+
+    /* 4 Column Layout + Some padding that helps to keep the 4 Column Layout */
+    @include respond(bp-medium-672) {
+      grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
     }
 
-    &--skills-container {
-      padding: 0 5rem;
-
-      @include respond(bp-medium-650) {
-        padding: 0 3rem;
-      }
+    /* 5 Column Layout due to the padding changing to even less. */
+    @include respond(bp-medium-650) {
+      grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
     }
 
-    &--skills-ul-container {
-      margin: 0 auto;
-      // padding: 0 2rem;
-      width: 65%;
-
-      @include respond(bp-medium-900) {
-        width: 100%;
-      }
+    /* 3 Column Layout - without this media query it would default to 2 columns with too much space */
+    @include respond(bp-small-428) {
+      grid-template-columns: repeat(auto-fit, minmax(4.25rem, 1fr));
     }
 
-    /* Skills UL of SVG's  */
-    &--skills {
-      margin: 0 auto;
-      display: grid;
-      gap: 3rem;
+    svg {
+      /* Styling for all skill svg's - GLOBAL */
+      position: relative;
+      max-height: 5rem;
+      max-width: 5.5rem;
+      padding: 0.5rem;
+      background: radial-gradient(
+        circle farthest-corner at 100% 100%,
+        $clr-grey-dark-2 1%,
+        /* #ddfdfd3f 1%, */ #0e0e0e00 50%
+      );
+      box-shadow: 0 0 8px 3px $clr-grey-dark-2;
+      border: 1px solid $border-light-grey;
+      border-radius: 10px;
+      transition: $transition;
+      overflow: hidden;
 
-      /* 
-      ================================================================================================
-      6 Column Layout on Skills section that wraps - also has WIDE padding to hold the 6 column layout
-      - The WIDE padding will be removed at 900px as it will still hold the 6 Column Layout at 900px
-      ================================================================================================
-      */
-      grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
-
-      /* 4 Column Layout + Some padding that helps to keep the 4 Column Layout */
-      @include respond(bp-medium-672) {
-        grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
-      }
-
-      /* 5 Column Layout due to the padding changing to even less. */
-      @include respond(bp-medium-650) {
-        grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
-      }
-
-      /* 3 Column Layout - without this media query it would default to 2 columns with too much space */
-      @include respond(bp-small-428) {
-        grid-template-columns: repeat(auto-fit, minmax(4.25rem, 1fr));
-      }
-
-      svg {
-        /* Styling for all skill svg's - GLOBAL */
-        position: relative;
-        max-height: 5rem;
-        max-width: 5.5rem;
-        padding: 0.5rem;
-        background: radial-gradient(
-          circle farthest-corner at 100% 100%,
-          $clr-grey-dark-2 1%,
-          /* #ddfdfd3f 1%, */ #0e0e0e00 50%
-        );
-        box-shadow: 0 0 8px 3px $clr-grey-dark-2;
-        border: 1px solid $border-light-grey;
-        border-radius: 10px;
-        transition: $transition;
-        overflow: hidden;
-
-        &:hover {
-          box-shadow: 0 0 8px 3px $clr-primary-7;
-        }
+      &:hover {
+        box-shadow: 0 0 8px 3px $clr-primary-7;
       }
     }
+  }
 
-    &--skill {
-      display: flex;
-      margin: 0 auto;
-    }
+  &__skill {
+    display: flex;
+    margin: 0 auto;
 
     &--html5 {
       color: $clr-html5;
@@ -229,13 +242,5 @@ ABOUT
     &--linode {
       color: $clr-linode;
     }
-  }
-
-  &__heading {
-    font-weight: 400;
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 5rem;
-    color: $clr-primary-5;
   }
 }
