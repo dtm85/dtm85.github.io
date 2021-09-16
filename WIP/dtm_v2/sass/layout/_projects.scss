@@ -175,132 +175,25 @@ PROJECTS
         center/cover no-repeat;
     }
 
-    &:hover &--project-content {
+    &:hover .projects__project-content {
       /* Project Content moves up on Hover GLOBAL */
       height: 225px;
     }
 
-    &--project-content {
-      /* Project Card Content GLOBAL */
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 100px;
-      text-align: center;
-      transition: 0.7s ease-in-out;
-      z-index: 1;
-      will-change: transform;
-
-      &--h2 {
-        /* Project H2 Styling GLOBAL */
-        position: relative;
-        letter-spacing: 2px;
-        font-size: 2rem;
-        font-weight: 400;
-        color: $clr-text;
-        margin: 0 auto;
-      }
-
-      &--button-container {
-        /* View Project Button Container */
-        display: inline-block;
-        margin-top: 1.5rem;
-        opacity: 0;
-        transition: 0.65s ease-in-out;
-        letter-spacing: 1.5px;
-        transform: translateY(110px);
-
-        &--btn {
-          /* View Project Button Styling GLOBAL */
-          padding: 13px 20px 10px 20px;
-          color: $clr-primary-5;
-          background: $clr-button-background-grey-alt;
-          border-radius: 25px;
-          transition: $transition;
-
-          &:hover {
-            /* View Projects Button Styling on Hover GLOBAL */
-            background: $clr-primary-5;
-            color: $clr-button-hover-text-grey-alt;
-            box-shadow: 0 0 10px 2px $clr-primary-5;
-          }
-        }
-      }
-
-      &--github-container {
-        /* GitHub Icon Layout GLOBAL */
-        margin-top: 30px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity: 0;
-        transition: 0.55s ease-in-out;
-        transform: translateY(100px);
-
-        &--github {
-          /* GitHub Icon Styling GLOBAL */
-          width: 30px;
-          height: 30px;
-          color: $clr-text;
-          transition: 0.4s ease-in-out;
-
-          &:hover {
-            /* GitHub Icon Transition on Hover GLOBAL */
-            color: $clr-github;
-          }
-        }
-      }
-
-      &--code-languages {
-        /* Code Languages Container GLOBAL */
-        width: fit-content;
-        height: 50px;
-        margin: 55px 0 0 15px;
-        opacity: 0;
-        transition: 0.5s ease-in-out;
-        transform: translateY(75px);
-
-        &--html5 {
-          /* HTML5 Icon Styling */
-          width: 17px;
-          height: 17px;
-          color: $clr-html5;
-          margin: 0 5px;
-        }
-
-        &--css3 {
-          /* CSS3 Icon Styling */
-          width: 17px;
-          height: 17px;
-          margin: 0 5px;
-          color: $clr-css3;
-        }
-
-        &--js {
-          /* JavaScript Icon Styling */
-          width: 17px;
-          height: 18px;
-          margin: 0 5px;
-          color: $clr-js;
-        }
-      }
-    }
-
-    &:hover &--project-content--button-container {
+    &:hover .projects__project-content--button-container {
       /* Project Card Hover - Styling for View Projects Button on Hover - Transition Effect GLOBAL */
       opacity: 1;
       transform: translateY(0px);
     }
 
-    &:hover &--project-content--github-container {
+    &:hover .projects__project-content--github-container {
       /* GitHub Icon Transition on Hover GLOBAL */
       opacity: 1;
       transform: translateY(0px);
       transition-delay: 0.315s;
     }
 
-    &:hover &--project-content--code-languages {
+    &:hover .projects__project-content--code-languages {
       /* Code Languages Container Transition on Hover GLOBAL */
       opacity: 1;
       transform: translateY(0px);
@@ -557,6 +450,113 @@ PROJECTS
       transition: 0.85s ease-in-out;
       transform: translateY(-219px);
       z-index: -1;
+    }
+  }
+
+  &__project-content {
+    /* Project Card Content GLOBAL */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 0.7s ease-in-out;
+    z-index: 1;
+    will-change: transform;
+
+    &--h2 {
+      /* Project H2 Styling GLOBAL */
+      position: relative;
+      letter-spacing: 2px;
+      font-size: 2rem;
+      font-weight: 400;
+      color: $clr-text;
+      margin: 0 auto;
+    }
+
+    &--button-container {
+      /* View Project Button Container */
+      display: inline-block;
+      margin-top: 1.5rem;
+      opacity: 0;
+      transition: 0.65s ease-in-out;
+      letter-spacing: 1.5px;
+      transform: translateY(110px);
+
+      &--btn {
+        /* View Project Button Styling GLOBAL */
+        padding: 13px 20px 10px 20px;
+        color: $clr-primary-5;
+        background: $clr-button-background-grey-alt;
+        border-radius: 25px;
+        transition: $transition;
+
+        &:hover {
+          /* View Projects Button Styling on Hover GLOBAL */
+          background: $clr-primary-5;
+          color: $clr-button-hover-text-grey-alt;
+          box-shadow: 0 0 10px 2px $clr-primary-5;
+        }
+      }
+    }
+
+    &--github-container {
+      /* GitHub Icon Layout GLOBAL */
+      margin-top: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: 0.55s ease-in-out;
+      transform: translateY(100px);
+
+      &--github {
+        /* GitHub Icon Styling GLOBAL */
+        width: 30px;
+        height: 30px;
+        color: $clr-text;
+        transition: 0.4s ease-in-out;
+
+        &:hover {
+          /* GitHub Icon Transition on Hover GLOBAL */
+          color: $clr-github;
+        }
+      }
+    }
+
+    &--code-languages {
+      /* Code Languages Container GLOBAL */
+      width: fit-content;
+      height: 50px;
+      margin: 55px 0 0 15px;
+      opacity: 0;
+      transition: 0.5s ease-in-out;
+      transform: translateY(75px);
+
+      &--html5 {
+        /* HTML5 Icon Styling */
+        width: 17px;
+        height: 17px;
+        color: $clr-html5;
+        margin: 0 5px;
+      }
+
+      &--css3 {
+        /* CSS3 Icon Styling */
+        width: 17px;
+        height: 17px;
+        margin: 0 5px;
+        color: $clr-css3;
+      }
+
+      &--js {
+        /* JavaScript Icon Styling */
+        width: 17px;
+        height: 18px;
+        margin: 0 5px;
+        color: $clr-js;
+      }
     }
   }
 }
