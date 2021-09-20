@@ -1296,7 +1296,7 @@ PROJECTS
 
 .projects__card--project2::before {
   /* Project 2 Image for Circle */
-  background: url("/WIP/dtm_v2/media/images/projects/Mapty/mapty.png") center/cover no-repeat;
+  background: url("/WIP/dtm_v2/media/images/projects//`Under__Construction/code.jpg") center/cover no-repeat;
 }
 
 .projects__card--project3::before {
@@ -1339,14 +1339,14 @@ PROJECTS
   height: 225px;
 }
 
-.projects__card:hover .projects__project-content--button-container {
+.projects__card:hover .projects__btn-container {
   /* Project Card Hover - Styling for View Projects Button on Hover - Transition Effect GLOBAL */
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
 
-.projects__card:hover .projects__project-content--github-container {
+.projects__card:hover .projects__github-container {
   /* GitHub Icon Transition on Hover GLOBAL */
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -1355,7 +1355,7 @@ PROJECTS
           transition-delay: 0.315s;
 }
 
-.projects__card:hover .projects__project-content--code-languages {
+.projects__card:hover .projects__code-languages {
   /* Code Languages Container Transition on Hover GLOBAL */
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -1364,7 +1364,7 @@ PROJECTS
           transition-delay: 0.45s;
 }
 
-.projects__card--project1-gradient-container {
+.projects__card--project1-gradient {
   /* Project 1 Gradient Container */
   position: relative;
   width: 100%;
@@ -1374,12 +1374,12 @@ PROJECTS
   transition: 0.85s ease-in-out;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
-  background: radial-gradient(circle farthest-corner at 100% 100%, #e8d44d 1%, rgba(14, 14, 14, 0) 35%);
+  background: radial-gradient(circle farthest-corner at 100% 100%, #d87f36 1%, rgba(14, 14, 14, 0) 35%);
 }
 
-.projects__card:hover .projects__card--project1-gradient-container {
+.projects__card:hover .projects__card--project1-gradient {
   /* Project 1 Gradient Container Transition on Hover */
-  background: radial-gradient(circle farthest-corner at 100% 100%, #e8d44d 1%, rgba(14, 14, 14, 0) 35%);
+  background: radial-gradient(circle farthest-corner at 100% 100%, #d87f36 1%, rgba(14, 14, 14, 0) 35%);
   opacity: 1;
   -webkit-transition: 0.85s ease-in-out;
   transition: 0.85s ease-in-out;
@@ -1388,7 +1388,7 @@ PROJECTS
   z-index: -1;
 }
 
-.projects__card--project2-gradient-container {
+.projects__card--project2-gradient {
   /* Project 2 Gradient Container */
   position: relative;
   width: 100%;
@@ -1401,7 +1401,7 @@ PROJECTS
   background: radial-gradient(circle farthest-corner at 100% 100%, #12d564 1%, rgba(14, 14, 14, 0) 35%);
 }
 
-.projects__card:hover .projects__card--project2-gradient-container {
+.projects__card:hover .projects__card--project2-gradient {
   /* Project 2 Gradient Container Transition on Hover */
   background: radial-gradient(circle farthest-corner at 100% 100%, #12d564 1%, rgba(14, 14, 14, 0) 35%);
   opacity: 1;
@@ -1412,7 +1412,7 @@ PROJECTS
   z-index: -1;
 }
 
-.projects__card--project3-gradient-container {
+.projects__card--project3-gradient {
   /* Project 3 Gradient Container */
   position: relative;
   width: 100%;
@@ -1425,7 +1425,7 @@ PROJECTS
   background: radial-gradient(circle farthest-corner at 100% 100%, #c69963 1%, rgba(14, 14, 14, 0) 35%);
 }
 
-.projects__card:hover .projects__card--project3-gradient-container {
+.projects__card:hover .projects__card--project3-gradient {
   /* Project 3 Gradient Container Transition on Hover */
   background: radial-gradient(circle farthest-corner at 100% 100%, #c69963 1%, rgba(14, 14, 14, 0) 35%);
   opacity: 1;
@@ -1436,7 +1436,7 @@ PROJECTS
   z-index: -1;
 }
 
-.projects__card--project4-gradient-container {
+.projects__card--project4-gradient {
   /* Project 4 Gradient Container */
   position: relative;
   width: 100%;
@@ -1449,7 +1449,7 @@ PROJECTS
   background: radial-gradient(circle farthest-corner at 100% 100%, #55c57a 1%, rgba(14, 14, 14, 0) 35%);
 }
 
-.projects__card:hover .projects__card--project4-gradient-container {
+.projects__card:hover .projects__card--project4-gradient {
   /* Project 4 Gradient Container Transition on Hover */
   background: radial-gradient(circle farthest-corner at 100% 100%, #55c57a 1%, rgba(14, 14, 14, 0) 35%);
   opacity: 1;
@@ -1460,7 +1460,7 @@ PROJECTS
   z-index: -1;
 }
 
-.projects__card--project5-gradient-container {
+.projects__card--project5-gradient {
   /* Project 5 Gradient Container */
   position: relative;
   width: 100%;
@@ -1473,7 +1473,7 @@ PROJECTS
   background: radial-gradient(circle farthest-corner at 100% 100%, #e67e22 1%, rgba(14, 14, 14, 0) 35%);
 }
 
-.projects__card:hover .projects__card--project5-gradient-container {
+.projects__card:hover .projects__card--project5-gradient {
   /* Project 5 Gradient Container Transition on Hover */
   background: radial-gradient(circle farthest-corner at 100% 100%, #e67e22 1%, rgba(14, 14, 14, 0) 35%);
   opacity: 1;
@@ -1484,7 +1484,7 @@ PROJECTS
   z-index: -1;
 }
 
-.projects__card--project6-gradient-container {
+.projects__card--project6-gradient {
   /* Project 6 Gradient Container */
   position: relative;
   width: 100%;
@@ -1497,7 +1497,7 @@ PROJECTS
   background: radial-gradient(circle farthest-corner at 100% 100%, #eb2f64 1%, rgba(14, 14, 14, 0) 35%);
 }
 
-.projects__card:hover .projects__card--project6-gradient-container {
+.projects__card:hover .projects__card--project6-gradient {
   /* Project 6 Gradient Container Transition on Hover */
   background: radial-gradient(circle farthest-corner at 100% 100%, #eb2f64 1%, rgba(14, 14, 14, 0) 35%);
   opacity: 1;
@@ -1508,7 +1508,7 @@ PROJECTS
   z-index: -1;
 }
 
-.projects__card--project7-gradient-container {
+.projects__card--project7-gradient {
   /* Project 7 Gradient Container */
   position: relative;
   width: 100%;
@@ -1521,7 +1521,7 @@ PROJECTS
   background: radial-gradient(circle farthest-corner at 100% 100%, #e9b949 1%, rgba(14, 14, 14, 0) 35%);
 }
 
-.projects__card:hover .projects__card--project7-gradient-container {
+.projects__card:hover .projects__card--project7-gradient {
   /* Project 7 Gradient Container Transition on Hover */
   background: radial-gradient(circle farthest-corner at 100% 100%, #e9b949 1%, rgba(14, 14, 14, 0) 35%);
   opacity: 1;
@@ -1532,7 +1532,7 @@ PROJECTS
   z-index: -1;
 }
 
-.projects__card--project8-gradient-container {
+.projects__card--project8-gradient {
   /* Project 8 Gradient Container */
   position: relative;
   width: 100%;
@@ -1545,7 +1545,7 @@ PROJECTS
   background: radial-gradient(circle farthest-corner at 100% 100%, #2caeba 1%, rgba(14, 14, 14, 0) 35%);
 }
 
-.projects__card:hover .projects__card--project8-gradient-container {
+.projects__card:hover .projects__card--project8-gradient {
   /* Project 8 Gradient Container Transition on Hover */
   background: radial-gradient(circle farthest-corner at 100% 100%, #2caeba 1%, rgba(14, 14, 14, 0) 35%);
   opacity: 1;
@@ -1556,7 +1556,7 @@ PROJECTS
   z-index: -1;
 }
 
-.projects__card--project9-gradient-container {
+.projects__card--project9-gradient {
   /* Project 9 Gradient Container */
   position: relative;
   width: 100%;
@@ -1569,7 +1569,7 @@ PROJECTS
   background: radial-gradient(circle farthest-corner at 100% 100%, #678e3e 1%, rgba(14, 14, 14, 0) 35%);
 }
 
-.projects__card:hover .projects__card--project9-gradient-container {
+.projects__card:hover .projects__card--project9-gradient {
   /* Project 9 Gradient Container Transition on Hover */
   background: radial-gradient(circle farthest-corner at 100% 100%, #678e3e 1%, rgba(14, 14, 14, 0) 35%);
   opacity: 1;
@@ -1593,8 +1593,8 @@ PROJECTS
   will-change: transform;
 }
 
-.projects__project-content--h2 {
-  /* Project H2 Styling GLOBAL */
+.projects__title {
+  /* Project Card Title H2 Styling GLOBAL */
   position: relative;
   letter-spacing: 2px;
   font-size: 2rem;
@@ -1603,7 +1603,7 @@ PROJECTS
   margin: 0 auto;
 }
 
-.projects__project-content--button-container {
+.projects__btn-container {
   /* View Project Button Container */
   display: inline-block;
   margin-top: 1.5rem;
@@ -1615,7 +1615,7 @@ PROJECTS
           transform: translateY(110px);
 }
 
-.projects__project-content--button-container--btn {
+.projects__view-project-btn {
   /* View Project Button Styling GLOBAL */
   padding: 13px 20px 10px 20px;
   color: #0ef;
@@ -1625,7 +1625,7 @@ PROJECTS
   transition: all 0.3s ease-in-out;
 }
 
-.projects__project-content--button-container--btn:hover {
+.projects__view-project-btn:hover {
   /* View Projects Button Styling on Hover GLOBAL */
   background: #0ef;
   color: #1f1f1f;
@@ -1633,7 +1633,7 @@ PROJECTS
           box-shadow: 0 0 10px 2px #0ef;
 }
 
-.projects__project-content--github-container {
+.projects__github-container {
   /* GitHub Icon Layout GLOBAL */
   margin-top: 30px;
   width: 100%;
@@ -1653,7 +1653,13 @@ PROJECTS
           transform: translateY(100px);
 }
 
-.projects__project-content--github-container--github {
+.projects__github-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.projects__github-svg {
   /* GitHub Icon Styling GLOBAL */
   width: 30px;
   height: 30px;
@@ -1662,12 +1668,12 @@ PROJECTS
   transition: 0.4s ease-in-out;
 }
 
-.projects__project-content--github-container--github:hover {
+.projects__github-svg:hover {
   /* GitHub Icon Transition on Hover GLOBAL */
   color: #6e5494;
 }
 
-.projects__project-content--code-languages {
+.projects__code-languages {
   /* Code Languages Container GLOBAL */
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -1681,7 +1687,7 @@ PROJECTS
           transform: translateY(75px);
 }
 
-.projects__project-content--code-languages--html5 {
+.projects__html5-svg {
   /* HTML5 Icon Styling */
   width: 17px;
   height: 17px;
@@ -1689,7 +1695,7 @@ PROJECTS
   margin: 0 5px;
 }
 
-.projects__project-content--code-languages--css3 {
+.projects__css3-svg {
   /* CSS3 Icon Styling */
   width: 17px;
   height: 17px;
@@ -1697,7 +1703,7 @@ PROJECTS
   color: #2965f1;
 }
 
-.projects__project-content--code-languages--js {
+.projects__js-svg {
   /* JavaScript Icon Styling */
   width: 17px;
   height: 18px;

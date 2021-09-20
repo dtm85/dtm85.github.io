@@ -127,7 +127,7 @@ PROJECTS
 
     &--project2::before {
       /* Project 2 Image for Circle */
-      background: url("/WIP/dtm_v2/media/images/projects/Mapty/mapty.png")
+      background: url("/WIP/dtm_v2/media/images/projects//`Under__Construction/code.jpg")
         center/cover no-repeat;
     }
 
@@ -180,27 +180,27 @@ PROJECTS
       height: 225px;
     }
 
-    &:hover .projects__project-content--button-container {
+    &:hover .projects__btn-container {
       /* Project Card Hover - Styling for View Projects Button on Hover - Transition Effect GLOBAL */
       opacity: 1;
       transform: translateY(0px);
     }
 
-    &:hover .projects__project-content--github-container {
+    &:hover .projects__github-container {
       /* GitHub Icon Transition on Hover GLOBAL */
       opacity: 1;
       transform: translateY(0px);
       transition-delay: 0.315s;
     }
 
-    &:hover .projects__project-content--code-languages {
+    &:hover .projects__code-languages {
       /* Code Languages Container Transition on Hover GLOBAL */
       opacity: 1;
       transform: translateY(0px);
       transition-delay: 0.45s;
     }
 
-    &--project1-gradient-container {
+    &--project1-gradient {
       /* Project 1 Gradient Container */
       position: relative;
       width: 100%;
@@ -210,16 +210,16 @@ PROJECTS
       transform: translateY(0px);
       background: radial-gradient(
         circle farthest-corner at 100% 100%,
-        #e8d44d 1%,
+        #d87f36 1%,
         rgba(14, 14, 14, 0) 35%
       );
     }
 
-    &:hover &--project1-gradient-container {
+    &:hover &--project1-gradient {
       /* Project 1 Gradient Container Transition on Hover */
       background: radial-gradient(
         circle farthest-corner at 100% 100%,
-        #e8d44d 1%,
+        #d87f36 1%,
         rgba(14, 14, 14, 0) 35%
       );
       opacity: 1;
@@ -228,7 +228,7 @@ PROJECTS
       z-index: -1;
     }
 
-    &--project2-gradient-container {
+    &--project2-gradient {
       /* Project 2 Gradient Container */
       position: relative;
       width: 100%;
@@ -243,7 +243,7 @@ PROJECTS
       );
     }
 
-    &:hover &--project2-gradient-container {
+    &:hover &--project2-gradient {
       /* Project 2 Gradient Container Transition on Hover */
       background: radial-gradient(
         circle farthest-corner at 100% 100%,
@@ -256,7 +256,7 @@ PROJECTS
       z-index: -1;
     }
 
-    &--project3-gradient-container {
+    &--project3-gradient {
       /* Project 3 Gradient Container */
       position: relative;
       width: 100%;
@@ -271,7 +271,7 @@ PROJECTS
       );
     }
 
-    &:hover &--project3-gradient-container {
+    &:hover &--project3-gradient {
       /* Project 3 Gradient Container Transition on Hover */
       background: radial-gradient(
         circle farthest-corner at 100% 100%,
@@ -284,7 +284,7 @@ PROJECTS
       z-index: -1;
     }
 
-    &--project4-gradient-container {
+    &--project4-gradient {
       /* Project 4 Gradient Container */
       position: relative;
       width: 100%;
@@ -299,7 +299,7 @@ PROJECTS
       );
     }
 
-    &:hover &--project4-gradient-container {
+    &:hover &--project4-gradient {
       /* Project 4 Gradient Container Transition on Hover */
       background: radial-gradient(
         circle farthest-corner at 100% 100%,
@@ -312,7 +312,7 @@ PROJECTS
       z-index: -1;
     }
 
-    &--project5-gradient-container {
+    &--project5-gradient {
       /* Project 5 Gradient Container */
       position: relative;
       width: 100%;
@@ -327,7 +327,7 @@ PROJECTS
       );
     }
 
-    &:hover &--project5-gradient-container {
+    &:hover &--project5-gradient {
       /* Project 5 Gradient Container Transition on Hover */
       background: radial-gradient(
         circle farthest-corner at 100% 100%,
@@ -340,7 +340,7 @@ PROJECTS
       z-index: -1;
     }
 
-    &--project6-gradient-container {
+    &--project6-gradient {
       /* Project 6 Gradient Container */
       position: relative;
       width: 100%;
@@ -355,7 +355,7 @@ PROJECTS
       );
     }
 
-    &:hover &--project6-gradient-container {
+    &:hover &--project6-gradient {
       /* Project 6 Gradient Container Transition on Hover */
       background: radial-gradient(
         circle farthest-corner at 100% 100%,
@@ -368,7 +368,7 @@ PROJECTS
       z-index: -1;
     }
 
-    &--project7-gradient-container {
+    &--project7-gradient {
       /* Project 7 Gradient Container */
       position: relative;
       width: 100%;
@@ -383,7 +383,7 @@ PROJECTS
       );
     }
 
-    &:hover &--project7-gradient-container {
+    &:hover &--project7-gradient {
       /* Project 7 Gradient Container Transition on Hover */
       background: radial-gradient(
         circle farthest-corner at 100% 100%,
@@ -396,7 +396,7 @@ PROJECTS
       z-index: -1;
     }
 
-    &--project8-gradient-container {
+    &--project8-gradient {
       /* Project 8 Gradient Container */
       position: relative;
       width: 100%;
@@ -411,7 +411,7 @@ PROJECTS
       );
     }
 
-    &:hover &--project8-gradient-container {
+    &:hover &--project8-gradient {
       /* Project 8 Gradient Container Transition on Hover */
       background: radial-gradient(
         circle farthest-corner at 100% 100%,
@@ -424,7 +424,7 @@ PROJECTS
       z-index: -1;
     }
 
-    &--project9-gradient-container {
+    &--project9-gradient {
       /* Project 9 Gradient Container */
       position: relative;
       width: 100%;
@@ -439,7 +439,7 @@ PROJECTS
       );
     }
 
-    &:hover &--project9-gradient-container {
+    &:hover &--project9-gradient {
       /* Project 9 Gradient Container Transition on Hover */
       background: radial-gradient(
         circle farthest-corner at 100% 100%,
@@ -452,6 +452,9 @@ PROJECTS
       z-index: -1;
     }
   }
+  ////////////////////
+  //.card ENDS HERE //
+  ////////////////////
 
   &__project-content {
     /* Project Card Content GLOBAL */
@@ -463,101 +466,105 @@ PROJECTS
     transition: 0.7s ease-in-out;
     z-index: 1;
     will-change: transform;
+  }
 
-    &--h2 {
-      /* Project H2 Styling GLOBAL */
-      position: relative;
-      letter-spacing: 2px;
-      font-size: 2rem;
-      font-weight: 400;
-      color: $clr-text;
-      margin: 0 auto;
+  &__title {
+    /* Project Card Title H2 Styling GLOBAL */
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    font-weight: 400;
+    color: $clr-text;
+    margin: 0 auto;
+  }
+
+  &__btn-container {
+    /* View Project Button Container */
+    display: inline-block;
+    margin-top: 1.5rem;
+    opacity: 0;
+    transition: 0.65s ease-in-out;
+    letter-spacing: 1.5px;
+    transform: translateY(110px);
+  }
+
+  &__view-project-btn {
+    /* View Project Button Styling GLOBAL */
+    padding: 13px 20px 10px 20px;
+    color: $clr-primary-5;
+    background: $clr-button-background-grey-alt;
+    border-radius: 25px;
+    transition: $transition;
+
+    &:hover {
+      /* View Projects Button Styling on Hover GLOBAL */
+      background: $clr-primary-5;
+      color: $clr-button-hover-text-grey-alt;
+      box-shadow: 0 0 10px 2px $clr-primary-5;
     }
+  }
 
-    &--button-container {
-      /* View Project Button Container */
-      display: inline-block;
-      margin-top: 1.5rem;
-      opacity: 0;
-      transition: 0.65s ease-in-out;
-      letter-spacing: 1.5px;
-      transform: translateY(110px);
+  &__github-container {
+    /* GitHub Icon Layout GLOBAL */
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.55s ease-in-out;
+    transform: translateY(100px);
+  }
 
-      &--btn {
-        /* View Project Button Styling GLOBAL */
-        padding: 13px 20px 10px 20px;
-        color: $clr-primary-5;
-        background: $clr-button-background-grey-alt;
-        border-radius: 25px;
-        transition: $transition;
+  &__github-link {
+    display: inline-flex;
+  }
 
-        &:hover {
-          /* View Projects Button Styling on Hover GLOBAL */
-          background: $clr-primary-5;
-          color: $clr-button-hover-text-grey-alt;
-          box-shadow: 0 0 10px 2px $clr-primary-5;
-        }
-      }
+  &__github-svg {
+    /* GitHub Icon Styling GLOBAL */
+    width: 30px;
+    height: 30px;
+    color: $clr-text;
+    transition: 0.4s ease-in-out;
+
+    &:hover {
+      /* GitHub Icon Transition on Hover GLOBAL */
+      color: $clr-github;
     }
+  }
 
-    &--github-container {
-      /* GitHub Icon Layout GLOBAL */
-      margin-top: 30px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      opacity: 0;
-      transition: 0.55s ease-in-out;
-      transform: translateY(100px);
+  &__code-languages {
+    /* Code Languages Container GLOBAL */
+    width: fit-content;
+    height: 50px;
+    margin: 55px 0 0 15px;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    transform: translateY(75px);
+  }
 
-      &--github {
-        /* GitHub Icon Styling GLOBAL */
-        width: 30px;
-        height: 30px;
-        color: $clr-text;
-        transition: 0.4s ease-in-out;
+  &__html5-svg {
+    /* HTML5 Icon Styling */
+    width: 17px;
+    height: 17px;
+    color: $clr-html5;
+    margin: 0 5px;
+  }
 
-        &:hover {
-          /* GitHub Icon Transition on Hover GLOBAL */
-          color: $clr-github;
-        }
-      }
-    }
+  &__css3-svg {
+    /* CSS3 Icon Styling */
+    width: 17px;
+    height: 17px;
+    margin: 0 5px;
+    color: $clr-css3;
+  }
 
-    &--code-languages {
-      /* Code Languages Container GLOBAL */
-      width: fit-content;
-      height: 50px;
-      margin: 55px 0 0 15px;
-      opacity: 0;
-      transition: 0.5s ease-in-out;
-      transform: translateY(75px);
-
-      &--html5 {
-        /* HTML5 Icon Styling */
-        width: 17px;
-        height: 17px;
-        color: $clr-html5;
-        margin: 0 5px;
-      }
-
-      &--css3 {
-        /* CSS3 Icon Styling */
-        width: 17px;
-        height: 17px;
-        margin: 0 5px;
-        color: $clr-css3;
-      }
-
-      &--js {
-        /* JavaScript Icon Styling */
-        width: 17px;
-        height: 18px;
-        margin: 0 5px;
-        color: $clr-js;
-      }
-    }
+  &__js-svg {
+    /* JavaScript Icon Styling */
+    width: 17px;
+    height: 18px;
+    margin: 0 5px;
+    color: $clr-js;
   }
 }
 
