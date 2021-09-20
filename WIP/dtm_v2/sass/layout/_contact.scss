@@ -8,14 +8,12 @@ CONTACT
 */
 .contact {
   /* Contact Section */
-  // background: $clr-primary-9;
   grid-column: full-start / full-end;
-  // padding: 9.375rem 0;
   margin: 3rem auto;
-  // width: 100%;
 
   @include respond(bp-medium-900) {
     padding: 6.25rem 0;
+    width: 100%;
   }
 
   &__container-background {
@@ -52,12 +50,21 @@ CONTACT
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     justify-items: center;
+    transition: $transition;
+
+    @include respond(bp-medium-900) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__connect {
     /* Contact Info */
     display: flex;
     width: 75%;
+
+    @include respond(bp-medium-900) {
+      height: 30rem;
+    }
   }
 
   &__title {
@@ -65,9 +72,22 @@ CONTACT
     color: $clr-primary-5;
     font-weight: 400;
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
+  &__description,
+  &__description2 {
+    /* Header Description for Paragraph 1 & 2 */
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: $clr-text;
+  }
+
+  &__description2 {
+    /* Header Description */
+    padding-top: 1.5rem;
+  }
   &__description {
     /* Header Description */
     line-height: 1.4;
@@ -137,6 +157,14 @@ CONTACT
     justify-content: space-between;
     width: 90%;
     height: fit-content;
+
+    // @include respond(bp-medium-900) {
+    //   width: 100%;
+    //   display: grid;
+    //   grid-template-columns: repeat(6, 1fr);
+    //   background-color: bisque;
+    //   justify-content: space-evenly;
+    // }
   }
 
   &__link {
@@ -228,5 +256,9 @@ CONTACT
     border: 1px solid $border-light-grey;
     border-radius: 10px;
     z-index: 2;
+
+    @include respond(bp-medium-900) {
+      margin-top: 2rem;
+    }
   }
 }

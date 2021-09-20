@@ -1725,6 +1725,7 @@ CONTACT
 @media only screen and (max-width: 56.25em) {
   .contact {
     padding: 6.25rem 0;
+    width: 100%;
   }
 }
 
@@ -1764,6 +1765,15 @@ CONTACT
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .contact__wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .contact__connect {
@@ -1774,12 +1784,31 @@ CONTACT
   width: 75%;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .contact__connect {
+    height: 30rem;
+  }
+}
+
 .contact__title {
   /* h2 Header */
   color: #0ef;
   font-weight: 400;
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact__description, .contact__description2 {
+  /* Header Description for Paragraph 1 & 2 */
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #e2e2e2;
+}
+
+.contact__description2 {
+  /* Header Description */
+  padding-top: 1.5rem;
 }
 
 .contact__description {
@@ -1974,6 +2003,12 @@ CONTACT
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   z-index: 2;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .contact__message {
+    margin-top: 2rem;
+  }
 }
 
 /*
