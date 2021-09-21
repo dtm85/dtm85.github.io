@@ -2109,7 +2109,7 @@ CONTACT
           transform: scale(1.2);
 }
 
-.contact__message {
+.contact__form-wrapper {
   /* Message - Submit Form */
   height: 40rem;
   width: 90%;
@@ -2126,7 +2126,7 @@ CONTACT
 }
 
 @media only screen and (max-width: 56.25em) {
-  .contact__message {
+  .contact__form-wrapper {
     margin-top: 10rem;
   }
 }

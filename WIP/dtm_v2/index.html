@@ -1351,8 +1351,59 @@
               </div>
             </article>
 
-            <!-- Message Wrapper -->
-            <article class="contact__message">Message</article>
+            <!-- Form Wrapper -->
+            <article class="contact__form-wrapper">
+              <div class="contact__form">
+                <form action="#" class="form">
+                  <!-- Name Field -->
+                  <div class="form__group">
+                    <input
+                      type="text"
+                      class="form__input"
+                      placeholder="Full Name"
+                      id="name"
+                      required
+                    />
+                    <label for="name" class="form__label">Full Name</label>
+                  </div>
+
+                  <!-- Email Field -->
+                  <div class="form__group">
+                    <input
+                      type="email"
+                      class="form__input"
+                      placeholder="Email Address"
+                      id="email"
+                      required
+                    />
+                    <label for="email" class="form__label">Email Address</label>
+                  </div>
+
+                  <!-- Message Field -->
+                  <div class="form__group">
+                    <textarea
+                      name="message"
+                      class="form__input"
+                      placeholder="message"
+                      id="message"
+                      rows="10"
+                      required
+                    ></textarea>
+                    <label for="message" class="form__label">Message</label>
+
+                    <!-- Submit Form Button -->
+                    <div class="form__group">
+                      <button
+                        class="btn hire-me"
+                        aria-label="Submit Form Button"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </article>
           </div>
         </div>
       </section>

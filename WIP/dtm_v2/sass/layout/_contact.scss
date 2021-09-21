@@ -288,7 +288,7 @@ CONTACT
     }
   }
 
-  &__message {
+  &__form-wrapper {
     /* Message - Submit Form */
     height: 40rem;
     width: 90%;
@@ -308,9 +308,5 @@ CONTACT
     @include respond(bp-medium-900) {
       margin-top: 10rem;
     }
-
-    // @include respond(bp-small-500) {
-    //   margin-top: 10rem;
-    // }
   }
 }
