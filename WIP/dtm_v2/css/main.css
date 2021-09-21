@@ -351,6 +351,8 @@ HEADER
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 59.375em) {
@@ -364,6 +366,8 @@ HEADER
 .header__hero-text {
   font-weight: 300;
   margin: 0 5rem 0 3rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 59.375em) {
@@ -398,6 +402,8 @@ HEADER
   color: silver;
   font-size: 2.4rem;
   margin-bottom: 3.5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 47.938em) {
@@ -433,6 +439,8 @@ HEADER
   top: 60%;
   margin-left: 10px;
   left: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 59.375em) {
@@ -480,6 +488,8 @@ HEADER
   width: 0;
   height: 0;
   margin-top: 3.5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 59.375em) {
@@ -571,6 +581,11 @@ HEADER
   .header__iphone--img {
     display: none;
   }
+}
+
+.header__hero-btn {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 59.375em) {
@@ -913,6 +928,8 @@ ABOUT
           box-shadow: 0 0 8px 3px #393a53;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 40.625em) {
@@ -923,6 +940,8 @@ ABOUT
 
 .about__intro--mobile-view {
   /* Profile Picture Container - Used to change Picture & Description from 2 Column over to 1 Column Layout */
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 40.625em) {
@@ -953,6 +972,8 @@ ABOUT
   shape-outside: circle(50% at 50% 50%);
   margin-right: 3rem;
   margin-bottom: 0.905rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 40.625em) {
@@ -991,6 +1012,8 @@ ABOUT
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   /* Skills UL of SVG's  */
 }
 
@@ -1010,6 +1033,8 @@ ABOUT
 
 .skills__section-container {
   padding: 0 5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 40.625em) {
@@ -1021,6 +1046,8 @@ ABOUT
 .skills__outer-wrapper {
   margin: 0 auto;
   width: 65%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -1034,6 +1061,8 @@ ABOUT
   display: -ms-grid;
   display: grid;
   gap: 3rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   /* 
     ================================================================================================
     6 Column Layout on Skills section that wraps - also has WIDE padding to hold the 6 column layout
@@ -1044,7 +1073,8 @@ ABOUT
       grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
   /* 4 Column Layout + Some padding that helps to keep the 4 Column Layout */
   /* 5 Column Layout due to the padding changing to even less. */
-  /* 3 Column Layout - without this media query it would default to 2 columns with too much space */
+  /* 3 Column Layout (428px) - without this media query it would default to 2 columns with too much space */
+  /* 3 Column Layout (414px) - without this media query it would default to 2 columns with too much space */
 }
 
 @media only screen and (max-width: 42em) {
@@ -1065,6 +1095,13 @@ ABOUT
   .skills__icon-container {
     -ms-grid-columns: (minmax(4.25rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(4.25rem, 1fr));
+  }
+}
+
+@media only screen and (max-width: 26.125em) {
+  .skills__icon-container {
+    -ms-grid-columns: (minmax(4.05rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(4.05rem, 1fr));
   }
 }
 
@@ -1165,6 +1202,8 @@ PROJECTS
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .projects__glass-container {
@@ -1774,7 +1813,7 @@ CONTACT
 @media only screen and (max-width: 56.25em) {
   .contact__container-background--email-svg {
     left: -50px;
-    top: 120px;
+    top: 230px;
     width: 27rem;
     height: 27rem;
   }
@@ -1783,7 +1822,7 @@ CONTACT
 @media only screen and (max-width: 40.625em) {
   .contact__container-background--email-svg {
     left: -50px;
-    top: 150px;
+    top: 260px;
     width: 25rem;
     height: 25rem;
   }
@@ -1792,7 +1831,7 @@ CONTACT
 @media only screen and (max-width: 28.125em) {
   .contact__container-background--email-svg {
     left: -50px;
-    top: 215px;
+    top: 330px;
     width: 20rem;
     height: 20rem;
   }

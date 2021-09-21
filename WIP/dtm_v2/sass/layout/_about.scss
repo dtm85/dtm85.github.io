@@ -41,6 +41,7 @@ ABOUT
     box-shadow: 0 0 8px 3px $clr-grey-dark-2;
     border: 1px solid $border-light-grey;
     border-radius: 10px;
+    transition: $transition;
 
     @include respond(bp-medium-650) {
       padding: 2rem 3rem;
@@ -48,6 +49,8 @@ ABOUT
 
     &--mobile-view {
       /* Profile Picture Container - Used to change Picture & Description from 2 Column over to 1 Column Layout */
+      transition: $transition;
+
       @include respond(bp-medium-650) {
         display: flex;
         justify-content: center;
@@ -69,6 +72,7 @@ ABOUT
     shape-outside: circle(50% at 50% 50%);
     margin-right: 3rem;
     margin-bottom: 0.905rem;
+    transition: $transition;
 
     @include respond(bp-medium-650) {
       margin-right: 0;
@@ -108,6 +112,7 @@ ABOUT
   margin: 10rem auto 4rem auto;
   display: grid;
   align-items: center;
+  transition: $transition;
 
   @include respond(bp-medium-650) {
     margin: 8rem auto 4rem auto;
@@ -123,6 +128,7 @@ ABOUT
 
   &__section-container {
     padding: 0 5rem;
+    transition: $transition;
 
     @include respond(bp-medium-650) {
       padding: 0 3rem;
@@ -131,8 +137,8 @@ ABOUT
 
   &__outer-wrapper {
     margin: 0 auto;
-    // padding: 0 2rem;
     width: 65%;
+    transition: $transition;
 
     @include respond(bp-medium-900) {
       width: 100%;
@@ -144,6 +150,7 @@ ABOUT
     margin: 0 auto;
     display: grid;
     gap: 3rem;
+    transition: $transition;
 
     /* 
     ================================================================================================
@@ -163,9 +170,14 @@ ABOUT
       grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
     }
 
-    /* 3 Column Layout - without this media query it would default to 2 columns with too much space */
+    /* 3 Column Layout (428px) - without this media query it would default to 2 columns with too much space */
     @include respond(bp-small-428) {
       grid-template-columns: repeat(auto-fit, minmax(4.25rem, 1fr));
+    }
+
+    /* 3 Column Layout (414px) - without this media query it would default to 2 columns with too much space */
+    @include respond(bp-small-418) {
+      grid-template-columns: repeat(auto-fit, minmax(4.05rem, 1fr));
     }
 
     svg {
