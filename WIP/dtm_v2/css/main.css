@@ -1742,6 +1742,20 @@ CONTACT
   padding: 3.5rem 0;
   position: relative;
   overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .contact__container-background {
+    padding: 3.5rem 0 2.5rem 0;
+  }
+}
+
+@media only screen and (max-width: 40.625em) {
+  .contact__container-background {
+    padding-bottom: 1.5rem;
+  }
 }
 
 .contact__container-background--email-svg {
@@ -1753,6 +1767,35 @@ CONTACT
   width: 35rem;
   height: 35rem;
   z-index: -1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .contact__container-background--email-svg {
+    left: -50px;
+    top: 120px;
+    width: 27rem;
+    height: 27rem;
+  }
+}
+
+@media only screen and (max-width: 40.625em) {
+  .contact__container-background--email-svg {
+    left: -50px;
+    top: 150px;
+    width: 25rem;
+    height: 25rem;
+  }
+}
+
+@media only screen and (max-width: 28.125em) {
+  .contact__container-background--email-svg {
+    left: -50px;
+    top: 215px;
+    width: 20rem;
+    height: 20rem;
+  }
 }
 
 .contact__wrapper {
@@ -1782,11 +1825,17 @@ CONTACT
   display: -ms-flexbox;
   display: flex;
   width: 75%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 56.25em) {
   .contact__connect {
     height: 30rem;
+    width: 90%;
   }
 }
 
@@ -1817,6 +1866,18 @@ CONTACT
   font-weight: 400;
   letter-spacing: 2px;
   color: #e2e2e2;
+}
+
+.contact__info-space {
+  /* Adds extra space to info section for mobile view */
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .contact__info-space {
+    margin: 5rem 0;
+  }
 }
 
 .contact__phone, .contact__email, .contact__location {
@@ -1880,11 +1941,9 @@ CONTACT
 }
 
 .contact__icon-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1895,6 +1954,26 @@ CONTACT
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .contact__icon-wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 47.938em) {
+  .contact__icon-wrapper {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .contact__icon-wrapper {
+    width: 100%;
+  }
 }
 
 .contact__link {
@@ -2003,11 +2082,13 @@ CONTACT
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   z-index: 2;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 56.25em) {
   .contact__message {
-    margin-top: 2rem;
+    margin-top: 10rem;
   }
 }
 
