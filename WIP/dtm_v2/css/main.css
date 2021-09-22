@@ -329,6 +329,47 @@ Navbar - Menu Button
           transform: translateY(-1px);
 }
 
+.form {
+  padding: 1.5rem 2rem;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.form__input {
+  width: 100%;
+  display: block;
+  font-size: 1.2rem;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+}
+
+.form__input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #0ef;
+}
+
+.form__input:focus:invalid {
+  border-bottom: 3px solid #cb0a00;
+}
+
+.form__input:focus:valid {
+  border-bottom: 3px solid #55c57a;
+}
+
+.form__input::-webkit-input-placeholder {
+  position: relative;
+  top: 6px;
+  color: #777;
+}
+
 /* 
 ======
 HEADER
@@ -2109,9 +2150,8 @@ CONTACT
           transform: scale(1.2);
 }
 
-.contact__form-wrapper {
+.contact__form-section {
   /* Message - Submit Form */
-  height: 40rem;
   width: 90%;
   background: linear-gradient(135deg, #4e4f70 0%, #393a53 100%);
   backdrop-filter: blur(10px);
@@ -2126,7 +2166,7 @@ CONTACT
 }
 
 @media only screen and (max-width: 56.25em) {
-  .contact__form-wrapper {
+  .contact__form-section {
     margin-top: 10rem;
   }
 }

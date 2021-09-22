@@ -69,6 +69,16 @@ $clr-secondary: #1f2687; // Used fro scrollbar when hovering.
 $clr-secondary-dark-1: #1f2687b3; // Used for scrollbar when NOT hovering.
 $clr-secondary-dark-2: #1f268740; // DARKER BLUE
 
+// Red / Orange Colors - For Invalid Inputs
+$clr-invalid-0: #ffb900;
+$clr-invalid-1: #cb0a00;
+$clr-invalid-2: #ff7730;
+
+// Green Colors - For Valid Inputs
+$clr-valid-0: #7ed56f;
+$clr-valid-1: #55c57a;
+$clr-valid-2: #28b485;
+
 // Accent color - If needed
 $clr-grey-dark-1: #4e4f70; // grey-dark-1
 $clr-grey-dark-2: #393a53; // grey-dark-2
@@ -123,7 +133,7 @@ $clr-microsoft-teams: #6264a7;
 $clr-twitter: #08a0e9;
 
 // Font
-$ff-neotech: "Neo Tech", sans-serif;
+$ff-neotech: "NeoTech", Helvetica, sans-serif;
 $ff-nunito: "Nunito", sans-serif;
 
 // Transitions
