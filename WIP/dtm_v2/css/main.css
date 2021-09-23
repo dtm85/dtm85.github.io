@@ -297,7 +297,9 @@ Navbar - Menu Button
 }
 
 .hire-me {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   font-size: 1.1em;
   font-weight: 400;
   background: gray;
@@ -308,6 +310,11 @@ Navbar - Menu Button
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   border-radius: 6px;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  cursor: pointer;
 }
 
 .hire-me:hover {
@@ -329,8 +336,59 @@ Navbar - Menu Button
           transform: translateY(-1px);
 }
 
+.submit {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 1.1em;
+  font-weight: 400;
+  background: gray;
+  color: #0ef;
+  padding: 13px 30px 9.5px 30px;
+  margin-top: 30px;
+  letter-spacing: 1.5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 6px;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+.submit:hover {
+  letter-spacing: 3px;
+  background: #00eeff;
+  color: #474747;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 0 10px 2px #00eeff;
+          box-shadow: 0 0 10px 2px #00eeff;
+}
+
 .form {
   padding: 1.5rem 2rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 68.75em) {
+  .form {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .form {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 40.625em) {
+  .form {
+    padding: 1.5rem 1rem;
+  }
 }
 
 .form__group:not(:last-child) {
@@ -345,7 +403,8 @@ Navbar - Menu Button
   width: 100%;
   display: block;
   font-size: 1rem;
-  font-family: "NeoTech-Light";
+  font-family: "NeoTech";
+  letter-spacing: 2px;
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
   color: #1f2687;
@@ -380,7 +439,7 @@ Navbar - Menu Button
 .form__input::-webkit-input-placeholder {
   position: relative;
   top: 3px;
-  color: #777;
+  color: rgba(31, 38, 135, 0.25);
 }
 
 .form__input:-webkit-autofill, .form__input:-webkit-autofill:hover, .form__input:-webkit-autofill:focus, .form__input:-webkit-autofill:active {
@@ -390,7 +449,34 @@ Navbar - Menu Button
 }
 
 .form__label {
-  font-size: 1rem;
+  color: #1f2687;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-2.25rem);
+          transform: translateY(-2.25rem);
+}
+
+.form__btn {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 /* 
@@ -1842,7 +1928,7 @@ CONTACT
           box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 25px;
-  padding: 3.5rem 0;
+  padding: 3.5rem 2.5rem 3.5rem 0;
   position: relative;
   overflow: hidden;
   -webkit-transition: all 0.3s ease-in-out;

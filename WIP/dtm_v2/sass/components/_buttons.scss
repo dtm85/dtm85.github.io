@@ -89,7 +89,7 @@ Navbar - Menu Button
 }
 
 .hire-me {
-  display: inline-block;
+  display: inline-flex;
   font-size: 1.1em;
   font-weight: 400;
   background: gray;
@@ -99,6 +99,12 @@ Navbar - Menu Button
   letter-spacing: 1.5px;
   transition: $transition;
   border-radius: 6px;
+  outline: none;
+  box-shadow: none;
+
+  // Change for the <button> element
+  border: none;
+  cursor: pointer;
 
   &:hover {
     letter-spacing: 3px;
@@ -112,5 +118,37 @@ Navbar - Menu Button
     &:active {
       transform: translateY(-1px);
     }
+  }
+}
+.submit {
+  display: inline-flex;
+  font-size: 1.1em;
+  font-weight: 400;
+  background: gray;
+  color: $clr-primary;
+  padding: 13px 30px 9.5px 30px;
+  margin-top: 30px;
+  letter-spacing: 1.5px;
+  transition: $transition;
+  border-radius: 6px;
+  outline: none;
+  box-shadow: none;
+
+  // Change for the <button> element
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    letter-spacing: 3px;
+    background: #00eeff;
+    color: rgb(71, 71, 71);
+    transform: scale(1.05);
+    // transition: $transition;
+    box-shadow: 0 0 10px 2px #00eeff;
+    // transform: translateY(-3px);
+
+    // &:active {
+    //   transform: translateY(-1px);
+    // }
   }
 }

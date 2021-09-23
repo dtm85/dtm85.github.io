@@ -4,6 +4,19 @@
 
 .form {
   padding: 1.5rem 2rem;
+  transition: $transition;
+
+  @include respond(bp-large-1100) {
+    padding: 1.5rem 1rem;
+  }
+
+  @include respond(bp-medium-900) {
+    padding: 1.5rem 2rem;
+  }
+
+  @include respond(bp-medium-650) {
+    padding: 1.5rem 1rem;
+  }
 
   &__group:not(:last-child) {
     margin-bottom: 2rem;
@@ -17,7 +30,9 @@
     width: 100%;
     display: block;
     font-size: 1rem;
-    font-family: "NeoTech-Light";
+    font-family: "NeoTech";
+    // font-weight: 300;
+    letter-spacing: 2px;
     padding: 1.5rem 2rem;
     border-radius: $radius;
     color: $clr-secondary;
@@ -49,7 +64,7 @@
     &::-webkit-input-placeholder {
       position: relative;
       top: 3px;
-      color: $clr-grey-4;
+      color: rgba($clr-secondary, 0.25);
     }
   }
 
@@ -62,6 +77,26 @@
   }
 
   &__label {
-    font-size: 1rem;
+    color: rgba($clr-secondary, 1);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: $transition;
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-2.25rem);
+  }
+
+  &__btn {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: end;
   }
 }
