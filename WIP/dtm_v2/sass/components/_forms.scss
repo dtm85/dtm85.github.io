@@ -9,21 +9,32 @@
     margin-bottom: 2rem;
   }
 
+  &__input:not(.form__input--message) {
+    height: 3rem;
+  }
+
   &__input {
     width: 100%;
     display: block;
-    font-size: 1.2rem;
-    font-family: inherit;
+    font-size: 1rem;
+    font-family: "NeoTech-Light";
     padding: 1.5rem 2rem;
     border-radius: $radius;
     background-color: rgba($clr-white, 0.5);
     border: none;
+    border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
+    transition: $transition;
 
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba($clr-black, 0.1);
       border-bottom: 3px solid $clr-primary-5;
+    }
+
+    &:focus::target-text {
+      position: relative;
+      top: 14px;
     }
 
     &:focus:invalid {
@@ -36,11 +47,20 @@
 
     &::-webkit-input-placeholder {
       position: relative;
-      top: 6px;
+      top: 3px;
       color: $clr-grey-4;
     }
   }
 
+  &__input:-webkit-autofill,
+  &__input:-webkit-autofill:hover,
+  &__input:-webkit-autofill:focus,
+  &__input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: $clr-secondary !important;
+  }
+
   &__label {
+    font-size: 1rem;
   }
 }

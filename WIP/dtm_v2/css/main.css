@@ -337,16 +337,23 @@ Navbar - Menu Button
   margin-bottom: 2rem;
 }
 
+.form__input:not(.form__input--message) {
+  height: 3rem;
+}
+
 .form__input {
   width: 100%;
   display: block;
-  font-size: 1.2rem;
-  font-family: inherit;
+  font-size: 1rem;
+  font-family: "NeoTech-Light";
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
+  border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .form__input:focus {
@@ -354,6 +361,11 @@ Navbar - Menu Button
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid #0ef;
+}
+
+.form__input:focus::target-text {
+  position: relative;
+  top: 14px;
 }
 
 .form__input:focus:invalid {
@@ -366,8 +378,18 @@ Navbar - Menu Button
 
 .form__input::-webkit-input-placeholder {
   position: relative;
-  top: 6px;
+  top: 3px;
   color: #777;
+}
+
+.form__input:-webkit-autofill, .form__input:-webkit-autofill:hover, .form__input:-webkit-autofill:focus, .form__input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #1f2687 !important;
+}
+
+.form__label {
+  font-size: 1rem;
 }
 
 /* 
