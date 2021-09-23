@@ -348,6 +348,7 @@ Navbar - Menu Button
   font-family: "NeoTech-Light";
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
+  color: #1f2687;
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
   border-top: 3px solid transparent;
