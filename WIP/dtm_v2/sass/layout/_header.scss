@@ -91,7 +91,6 @@ HEADER
     margin-left: 10px;
     left: 0;
     transition: $transition;
-    z-index: 5;
 
     @include respond(bp-medium-950) {
       margin-left: 0;

@@ -16,18 +16,33 @@ FOOTER
   );
   box-shadow: 0 2px 12px 1px $clr-primary-8;
   grid-column: full-start / full-end;
-  height: 5rem;
+  height: fit-content;
+  bottom: 0;
   margin-top: 5rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo-container {
+    margin: 0 auto;
+  }
 
   &__logo {
+    color: $clr-text;
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: 1.5px;
     color: $clr-text;
-    display: block;
-    position: absolute;
     top: 1.5rem;
     left: 2rem;
+    margin: 2rem auto;
 
     &--tech-media {
       font-weight: 500;
@@ -36,7 +51,15 @@ FOOTER
   }
 
   &__legal {
+    // color: $clr-text;
+    color: $clr-grey-3;
     font-weight: 300;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+
+    &--dan {
+      color: $clr-text;
+    }
 
     &--tech-media {
       font-weight: 500;
