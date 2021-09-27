@@ -12,12 +12,43 @@ menuBtn.addEventListener("click", () => {
 });
 
 // ********** nav toggle ************
-const menuIcon = document.getElementById("nav-btn");
-const navbar = document.getElementById("sidebar-links");
+const navBtn = document.getElementById("nav-btn");
+const links = document.getElementById("sidebar-links");
 
 // Add Event Listener
-menuIcon.addEventListener("click", () => {
-  navbar.classList.toggle("show-sidebar");
+navBtn.addEventListener("click", () => {
+  links.classList.toggle("show-sidebar");
+});
+
+// ********** Smooth Scroll **********
+const smoothScroll = document.querySelectorAll(".smooth-scroll");
+
+smoothScroll.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    links.classList.remove("show-sidebar");
+    // Remove the open class for nav-btn to change menu animation from X to Menu
+    if (!menuOpen) {
+      menuBtn.classList.add("open");
+      menuOpen = true;
+    } else {
+      menuBtn.classList.remove("open");
+      menuOpen = false;
+    }
+
+    const id = e.target.getAttribute("href").slice(1);
+    const element = document.getElementById(id);
+
+    let position = element.offsetTop - 115;
+
+    // Window scrollTo
+    window.scrollTo({
+      left: 0,
+      top: position,
+      behavior: "smooth",
+    });
+  });
 });
 
 // Navbar Styles applied on Scroll Y
@@ -95,34 +126,3 @@ function init() {
   // Init TypeWriter
   new TypeWriter(txtElement, words, wait);
 }
-
-// Smooth Scroll
-const scrollLinks = document.querySelectorAll(".scroll-link");
-
-scrollLinks.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    links.classList.remove("show-links");
-    // Remove the open class for nav-btn to change menu animation from X to Menu
-    if (!menuOpen) {
-      menuBtn.classList.add("open");
-      menuOpen = true;
-    } else {
-      menuBtn.classList.remove("open");
-      menuOpen = false;
-    }
-
-    const id = e.target.getAttribute("href").slice(1);
-    const element = document.getElementById(id);
-
-    let position = element.offsetTop - 62;
-
-    // Window scrollTo
-    window.scrollTo({
-      left: 0,
-      top: position,
-      behavior: "smooth",
-    });
-  });
-});
