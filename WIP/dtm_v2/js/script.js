@@ -11,9 +11,11 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
+// ********** nav toggle ************
 const menuIcon = document.getElementById("nav-btn");
 const navbar = document.getElementById("sidebar-links");
 
+// Add Event Listener
 menuIcon.addEventListener("click", () => {
   navbar.classList.toggle("show-sidebar");
 });
@@ -95,3 +97,32 @@ function init() {
 }
 
 // Smooth Scroll
+const scrollLinks = document.querySelectorAll(".scroll-link");
+
+scrollLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    links.classList.remove("show-links");
+    // Remove the open class for nav-btn to change menu animation from X to Menu
+    if (!menuOpen) {
+      menuBtn.classList.add("open");
+      menuOpen = true;
+    } else {
+      menuBtn.classList.remove("open");
+      menuOpen = false;
+    }
+
+    const id = e.target.getAttribute("href").slice(1);
+    const element = document.getElementById(id);
+
+    let position = element.offsetTop - 62;
+
+    // Window scrollTo
+    window.scrollTo({
+      left: 0,
+      top: position,
+      behavior: "smooth",
+    });
+  });
+});
