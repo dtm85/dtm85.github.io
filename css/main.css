@@ -5,25 +5,25 @@ Fonts
 */
 @font-face {
   font-family: "Neo Tech Light";
-  src: url("../../media/fonts/NeoTech-Light(300).otf") format("opentype");
+  src: url("/media/fonts/neotech-light300.otf") format("opentype");
   /* 300 (Light), 400 (Regular), 500 (Medium), 700 (Bold), 900 (Bolder / Dark) */
 }
 
 @font-face {
   font-family: "Neo Tech";
-  src: url("../../media/fonts/NeoTech-Regular(400).otf") format("opentype");
+  src: url("/media/fonts/neotech-regular400.otf") format("opentype");
   /* 300 (Light), 400 (Regular), 500 (Medium), 700 (Bold), 900 (Bolder / Dark) */
 }
 
 @font-face {
   font-family: "Neo Tech Medium";
-  src: url("../../media/fonts/NeoTech-Medium(500).otf") format("opentype");
+  src: url("/media/fonts/neotech-medium500.otf") format("opentype");
   /* 300 (Light), 400 (Regular), 500 (Medium), 700 (Bold), 900 (Bolder / Dark) */
 }
 
 @font-face {
   font-family: "Neo Tech Bold";
-  src: url("../../media/fonts/NeoTech-Bold(700).otf") format("opentype");
+  src: url("/media/fonts/neotech-bold700.otf") format("opentype");
   /* 300 (Light), 400 (Regular), 500 (Medium), 700 (Bold), 900 (Bolder / Dark) */
 }
 
@@ -85,7 +85,7 @@ html {
 }
 
 body {
-  font-family: "NeoTech", sans-serif;
+  font-family: "Neo Tech", sans-serif;
   color: #393a53;
   font-weight: 400;
   line-height: 1.2;
@@ -403,7 +403,7 @@ Navbar - Menu Button
   width: 100%;
   display: block;
   font-size: 1rem;
-  font-family: "NeoTech";
+  font-family: "Neo Tech";
   letter-spacing: 2px;
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
@@ -1173,6 +1173,12 @@ ABOUT
   }
 }
 
+@media only screen and (max-width: 26.125em) {
+  .skills {
+    margin: 8rem auto 1.5rem auto;
+  }
+}
+
 .skills__heading {
   font-weight: 400;
   font-size: 3rem;
@@ -1190,6 +1196,12 @@ ABOUT
 @media only screen and (max-width: 40.625em) {
   .skills__section-container {
     padding: 0 3rem;
+  }
+}
+
+@media only screen and (max-width: 26.125em) {
+  .skills__section-container {
+    padding: 0 1rem;
   }
 }
 
@@ -1225,6 +1237,18 @@ ABOUT
   /* 5 Column Layout due to the padding changing to even less. */
   /* 3 Column Layout (428px) - without this media query it would default to 2 columns with too much space */
   /* 3 Column Layout (414px) - without this media query it would default to 2 columns with too much space */
+}
+
+@media only screen and (max-width: 28.125em) {
+  .skills__icon-container {
+    gap: 2.1rem;
+  }
+}
+
+@media only screen and (max-width: 26.125em) {
+  .skills__icon-container {
+    gap: 2.2rem;
+  }
 }
 
 @media only screen and (max-width: 42em) {
@@ -1480,47 +1504,47 @@ PROJECTS
 
 .projects__card--project1::before {
   /* Project 1 Image for Circle */
-  background: url("/WIP/dtm_v2/media/images/projects/`Under__Construction/code.jpg") center/cover no-repeat;
+  background: url("/media/images/projects/`Under__Construction/code.jpg") center/cover no-repeat;
 }
 
 .projects__card--project2::before {
   /* Project 2 Image for Circle */
-  background: url("/WIP/dtm_v2/media/images/projects//`Under__Construction/code.jpg") center/cover no-repeat;
+  background: url("/media/images/projects//`Under__Construction/code.jpg") center/cover no-repeat;
 }
 
 .projects__card--project3::before {
   /* Project 3 Image for Circle */
-  background: url("/WIP/dtm_v2/media/images/projects/`Under__Construction/code.jpg") center/cover no-repeat;
+  background: url("/media/images/projects/`Under__Construction/code.jpg") center/cover no-repeat;
 }
 
 .projects__card--project4::before {
   /* Project 4 Image for Circle */
-  background: url("/WIP/dtm_v2/media/images/projects/Natours/natours.png") center/cover no-repeat;
+  background: url("/media/images/projects/Natours/natours.png") center/cover no-repeat;
 }
 
 .projects__card--project5::before {
   /* Project 5 Image for Circle */
-  background: url("/WIP/dtm_v2/media/images/projects/Omnifood/omnifood.png") center/cover no-repeat;
+  background: url("/media/images/projects/Omnifood/omnifood.png") center/cover no-repeat;
 }
 
 .projects__card--project6::before {
   /* Project 6 Image for Circle */
-  background: url("/WIP/dtm_v2/media/images/projects/Trillo/trillo.png") center/cover no-repeat;
+  background: url("/media/images/projects/Trillo/trillo.png") center/cover no-repeat;
 }
 
 .projects__card--project7::before {
   /* Project 7 Image for Circle */
-  background: url("/WIP/dtm_v2/media/images/projects/Portfolio/portfolio.png") center/cover no-repeat;
+  background: url("/media/images/projects/Portfolio/portfolio.png") center/cover no-repeat;
 }
 
 .projects__card--project8::before {
   /* Project 8 Image for Circle */
-  background: url("/WIP/dtm_v2/media/images/projects/BackRoads/back-roads.png") center/cover no-repeat;
+  background: url("/media/images/projects/BackRoads/back-roads.png") center/cover no-repeat;
 }
 
 .projects__card--project9::before {
   /* Project 8 Image for Circle */
-  background: url("/WIP/dtm_v2/media/images/projects/TeaStation/tea-station.png") center/cover no-repeat;
+  background: url("/media/images/projects/TeaStation/tea-station.png") center/cover no-repeat;
 }
 
 .projects__card:hover .projects__project-content {

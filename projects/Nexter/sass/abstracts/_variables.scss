@@ -1,0 +1,67 @@
+// Primary Brown Colors
+$clr-primary: #c69963;
+$clr-primary-dark: #b28451;
+
+// Color Shades
+
+// darkshades of primary color
+$clr-primary-0: #f3eadf;
+$clr-primary-1: #eadac7;
+$clr-primary-2: #e1caae;
+$clr-primary-3: #d8ba95;
+$clr-primary-4: #cfa97c;
+// primary/main color
+$clr-primary-5: #c69963;
+// lighter shades of primary color
+$clr-primary-6: #bd894a;
+$clr-primary-7: #a8773d;
+$clr-primary-8: #8f6634;
+$clr-primary-9: #76542b;
+$clr-primary-10: #5d4222;
+$clr-primary-11: #443119;
+
+// darkshades of secondary color
+$clr-secondary: #101d2c; // DARK BLUE
+
+// darkest grey - used for headings
+$clr-grey-dark-1: #54483a; // grey-dark-1
+$clr-grey-dark-2: #6d5d4b; // grey-dark-2
+
+$clr-grey-0: #333;
+$clr-grey-1: #444;
+$clr-grey-2: #555;
+$clr-grey-3: #666;
+$clr-grey-4: #777;
+// grey used for paragraphs & sections
+$clr-grey-5: #888;
+$clr-grey-6: #999;
+$clr-grey-7: #aaa; // grey-light-2
+$clr-grey-8: #bbb;
+$clr-grey-9: #ccc;
+$clr-grey-10: #ddd;
+$clr-grey-11: #eee;
+$clr-grey-light-1: #f9f7f6; // grey-light-1
+$clr-white: #fff;
+$clr-black: #000;
+// Font
+$ff-primary: "Nunito", sans-serif;
+$ff-secondary: "Josefin Sans", sans-serif;
+// Transitions
+$transition: all 0.3s linear;
+// Spacing
+$spacing: 0.1rem;
+// Radius
+$radius: 0.5rem;
+$btn-radius: 1.875rem;
+// Shadows
+$light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+$primary-3-big-shadow: 0 0 14px 4px #c69963;
+$primary-3-small-shadow: 0 0 10px 0.25px #c69963;
+// Max-Width
+$max-width: 1170px;
+// GRID
+$grid-width: 71.25rem;
+$grid-gutter-virtical: 5rem;
+$grid-gutter-virtical-small: 3.75rem;
+$grid-gutter-horizontal: 3.75rem;

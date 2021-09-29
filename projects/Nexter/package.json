@@ -1,0 +1,24 @@
+{
+  "name": "nexter",
+  "version": "1.0.0",
+  "description": "Nexter - Your Home, Your Freedom",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/main.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/main.comp.css",
+    "prefix:css": "postcss --no-map --use autoprefixer -b 'last 10 versions' css/main.comp.css -o css/main.prefix.css",
+    "compress:css": "node-sass css/main.prefix.css css/main.css --output-style expanded",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "Dan - DTM",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "concat": "^1.0.3",
+    "node-sass": "^6.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^8.3.1"
+  }
+}

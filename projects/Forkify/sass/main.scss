@@ -1,0 +1,27 @@
+///////////////////////////
+// MAIN SASS (SCSS) FILE //
+///////////////////////////
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/bg-video";
+@import "components/buttons";
+@import "components/cards";
+@import "components/compositions";
+@import "components/forms";
+@import "components/popups";
+
+@import "layout/about";
+@import "layout/contact";
+@import "layout/footer";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/projects";
+
+@import "pages/home";

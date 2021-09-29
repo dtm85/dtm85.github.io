@@ -1,0 +1,53 @@
+/////////////////////////////////////
+// LEGAL TEXT - COPYRIGHT
+.legal {
+  font-size: 0.75rem;
+  text-align: center;
+  color: var(--clr-grey-8);
+  padding: 1.5625rem;
+
+  @include respond(bp-large-1000) {
+    display: none;
+  }
+
+  &__rights {
+    display: block;
+  }
+}
+
+.footer {
+  display: none;
+
+  &__legal {
+    display: none;
+
+    @include respond(bp-large-1000) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &--logo {
+        width: 4rem;
+        margin-right: 2rem;
+      }
+    }
+
+    @include respond(bp-small-500) {
+      flex-direction: column;
+
+      &--logo {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  @include respond(bp-large-1000) {
+    display: block;
+    position: absolute;
+    width: 100%;
+    padding: 2rem;
+    background: var(--clr-grey-0);
+    color: var(--clr-grey-6);
+  }
+}

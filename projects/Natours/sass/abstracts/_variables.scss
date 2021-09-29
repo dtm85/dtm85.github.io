@@ -1,0 +1,67 @@
+// Landing Page Light & Dark Green Colors
+$clr-home-page-light: #7ed56f;
+$clr-home-page-dark: #28b485;
+$clr-home-page-darker: #196f52;
+
+// Card Colors
+$clr-secondary-light: #ffb900;
+$clr-secondary-dark: #ff7730;
+
+$clr-tertiary-light: #2998ff;
+$clr-tertiary-dark: #5643fa;
+
+// Color Shades (pages)
+
+// darkshades of primary color
+$clr-primary-1: #256d3d;
+$clr-primary-2: #2e864b;
+$clr-primary-3: #36a059;
+$clr-primary-4: #3fb967;
+// primary/main color
+$clr-primary-5: #55c57a;
+// lighter shades of primary color
+$clr-primary-6: #6ece8e;
+$clr-primary-7: #88d6a2;
+$clr-primary-8: #a1dfb5;
+$clr-primary-9: #bae8c9;
+$clr-primary-10: #d4f0dd;
+$clr-primary-11: #e0f5e7;
+// arkest grey - used for headings
+$clr-grey-0: #333;
+$clr-grey-1: #444;
+$clr-grey-2: #555;
+$clr-grey-3: #666;
+$clr-grey-4: #777;
+// grey used for paragraphs & sections
+$clr-grey-5: #888;
+$clr-grey-6: #999;
+$clr-grey-7: #aaa;
+$clr-grey-8: #bbb;
+$clr-grey-9: #ccc;
+$clr-grey-10: #ddd;
+$clr-grey-11: #eee;
+$clr-grey-light-1: #f7f7f7;
+$clr-white: #fff;
+$clr-black: #000;
+// Font
+$ff-primary: "Lato", sans-serif;
+$ff-secondary: "Open Sans", sans-serif;
+// Transitions
+$transition: all 0.3s linear;
+// Spacing
+$spacing: 0.1rem;
+// Radius
+$radius: 0.5rem;
+$btn-radius: 1.875rem;
+// Shadows
+$light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+$primary-3-big-shadow: 0 0 14px 4px #36a059;
+$primary-3-small-shadow: 0 0 10px 0.25px #36a059;
+// Max-Width
+$max-width: 1170px;
+// GRID
+$grid-width: 71.25rem;
+$grid-gutter-virtical: 5rem;
+$grid-gutter-virtical-small: 3.75rem;
+$grid-gutter-horizontal: 3.75rem;

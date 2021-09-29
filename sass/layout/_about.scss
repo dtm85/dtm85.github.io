@@ -118,6 +118,10 @@ ABOUT
     margin: 8rem auto 4rem auto;
   }
 
+  @include respond(bp-small-418) {
+    margin: 8rem auto 1.5rem auto;
+  }
+
   &__heading {
     font-weight: 400;
     font-size: 3rem;
@@ -132,6 +136,10 @@ ABOUT
 
     @include respond(bp-medium-650) {
       padding: 0 3rem;
+    }
+
+    @include respond(bp-small-418) {
+      padding: 0 1rem;
     }
   }
 
@@ -151,6 +159,14 @@ ABOUT
     display: grid;
     gap: 3rem;
     transition: $transition;
+
+    @include respond(bp-small-450) {
+      gap: 2.1rem;
+    }
+
+    @include respond(bp-small-418) {
+      gap: 2.2rem;
+    }
 
     /* 
     ================================================================================================

@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio - The Portfolio of John Doe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>John Doe || Home</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <!-- nav logo -->
+          <svg
+            width="236"
+            height="40"
+            viewBox="0 0 236 40"
+            fill="none"
+            class="nav-logo"
+            alt="nav-logo"
+          >
+            <g filter="url(#filter0_d)">
+              <path
+                d="M36.9883 8.67188H41.3828V23.4375C41.3828 24.7949 41.0801 25.9961 40.4746 27.041C39.8789 28.0762 39.0342 28.877 37.9404 29.4434C36.8467 30.0098 35.6113 30.293 34.2344 30.293C31.9785 30.293 30.2207 29.7217 28.9609 28.5791C27.7012 27.4268 27.0713 25.8008 27.0713 23.7012H31.4951C31.4951 24.7461 31.7148 25.5176 32.1543 26.0156C32.5938 26.5137 33.2871 26.7627 34.2344 26.7627C35.0742 26.7627 35.7432 26.4746 36.2412 25.8984C36.7393 25.3223 36.9883 24.502 36.9883 23.4375V8.67188ZM53.21 21.9287C53.21 20.3564 53.5127 18.9551 54.1182 17.7246C54.7236 16.4941 55.5928 15.542 56.7256 14.8682C57.8682 14.1943 59.1914 13.8574 60.6953 13.8574C62.834 13.8574 64.5771 14.5117 65.9248 15.8203C67.2822 17.1289 68.0391 18.9062 68.1953 21.1523L68.2246 22.2363C68.2246 24.668 67.5459 26.6211 66.1885 28.0957C64.8311 29.5605 63.0098 30.293 60.7246 30.293C58.4395 30.293 56.6133 29.5605 55.2461 28.0957C53.8887 26.6309 53.21 24.6387 53.21 22.1191V21.9287ZM57.4434 22.2363C57.4434 23.7402 57.7266 24.8926 58.293 25.6934C58.8594 26.4844 59.6699 26.8799 60.7246 26.8799C61.75 26.8799 62.5508 26.4893 63.127 25.708C63.7031 24.917 63.9912 23.6572 63.9912 21.9287C63.9912 20.4541 63.7031 19.3115 63.127 18.501C62.5508 17.6904 61.7402 17.2852 60.6953 17.2852C59.6602 17.2852 58.8594 17.6904 58.293 18.501C57.7266 19.3018 57.4434 20.5469 57.4434 22.2363ZM83.9629 15.8789C85.0859 14.5312 86.4971 13.8574 88.1963 13.8574C91.6338 13.8574 93.377 15.8545 93.4258 19.8486V30H89.1924V19.9658C89.1924 19.0576 88.9971 18.3887 88.6064 17.959C88.2158 17.5195 87.5664 17.2998 86.6582 17.2998C85.418 17.2998 84.5195 17.7783 83.9629 18.7354V30H79.7295V7.5H83.9629V15.8789ZM109.516 14.1504L109.647 15.9814C110.78 14.5654 112.299 13.8574 114.203 13.8574C115.883 13.8574 117.133 14.3506 117.953 15.3369C118.773 16.3232 119.193 17.7979 119.213 19.7607V30H114.979V19.8633C114.979 18.9648 114.784 18.3154 114.394 17.915C114.003 17.5049 113.354 17.2998 112.445 17.2998C111.254 17.2998 110.36 17.8076 109.765 18.8232V30H105.531V14.1504H109.516Z"
+                fill="#222222"
+              />
+              <path
+                d="M131.714 30V8.67188H138.276C140.151 8.67188 141.826 9.09668 143.301 9.94629C144.785 10.7861 145.942 11.9873 146.772 13.5498C147.603 15.1025 148.018 16.8701 148.018 18.8525V19.834C148.018 21.8164 147.607 23.5791 146.787 25.1221C145.977 26.665 144.829 27.8613 143.345 28.7109C141.86 29.5605 140.186 29.9902 138.32 30H131.714ZM136.108 12.2314V26.4697H138.232C139.951 26.4697 141.265 25.9082 142.173 24.7852C143.081 23.6621 143.545 22.0557 143.564 19.9658V18.8379C143.564 16.6699 143.115 15.0293 142.217 13.916C141.318 12.793 140.005 12.2314 138.276 12.2314H136.108ZM159.288 21.9287C159.288 20.3564 159.591 18.9551 160.196 17.7246C160.802 16.4941 161.671 15.542 162.804 14.8682C163.946 14.1943 165.27 13.8574 166.773 13.8574C168.912 13.8574 170.655 14.5117 172.003 15.8203C173.36 17.1289 174.117 18.9062 174.273 21.1523L174.303 22.2363C174.303 24.668 173.624 26.6211 172.267 28.0957C170.909 29.5605 169.088 30.293 166.803 30.293C164.518 30.293 162.691 29.5605 161.324 28.0957C159.967 26.6309 159.288 24.6387 159.288 22.1191V21.9287ZM163.521 22.2363C163.521 23.7402 163.805 24.8926 164.371 25.6934C164.938 26.4844 165.748 26.8799 166.803 26.8799C167.828 26.8799 168.629 26.4893 169.205 25.708C169.781 24.917 170.069 23.6572 170.069 21.9287C170.069 20.4541 169.781 19.3115 169.205 18.501C168.629 17.6904 167.818 17.2852 166.773 17.2852C165.738 17.2852 164.938 17.6904 164.371 18.501C163.805 19.3018 163.521 20.5469 163.521 22.2363ZM193.205 30.293C190.881 30.293 188.986 29.5801 187.521 28.1543C186.066 26.7285 185.339 24.8291 185.339 22.4561V22.0459C185.339 20.4541 185.646 19.0332 186.262 17.7832C186.877 16.5234 187.746 15.5566 188.869 14.8828C190.002 14.1992 191.291 13.8574 192.736 13.8574C194.904 13.8574 196.608 14.541 197.849 15.9082C199.099 17.2754 199.724 19.2139 199.724 21.7236V23.4521H189.631C189.768 24.4873 190.178 25.3174 190.861 25.9424C191.555 26.5674 192.429 26.8799 193.483 26.8799C195.114 26.8799 196.389 26.2891 197.307 25.1074L199.387 27.4365C198.752 28.335 197.893 29.0381 196.809 29.5459C195.725 30.0439 194.523 30.293 193.205 30.293ZM192.722 17.2852C191.882 17.2852 191.198 17.5684 190.671 18.1348C190.153 18.7012 189.821 19.5117 189.675 20.5664H195.563V20.2295C195.544 19.292 195.29 18.5693 194.802 18.0615C194.313 17.5439 193.62 17.2852 192.722 17.2852Z"
+                fill="#E9B949"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_d"
+                x="23.0713"
+                y="7.5"
+                width="180.652"
+                height="30.793"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                />
+                <feOffset dy="4" />
+                <feGaussianBlur stdDeviation="2" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow"
+                  result="shape"
+                />
+              </filter>
+            </defs>
+          </svg>
+
+          <!-- Menu Icon -->
+          <div class="nav-btn" id="nav-btn">
+            <div class="menu-burger"></div>
+          </div>
+        </div>
+
+        <!-- sidebar -->
+        <aside class="sidebar" id="sidebar-links">
+          <div class="sidebar-container">
+            <!-- sidebar-links -->
+            <ul class="sidebar-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- social icons -->
+            <ul class="social-icons">
+              <!-- Twitter -->
+              <li>
+                <a href="#" aria-label="Link to Twitter">
+                  <svg class="svg-twitter social-icon" viewBox="0 0 448 512">
+                    <path
+                      fill="currentColor"
+                      d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+
+              <!-- Facebook -->
+              <li>
+                <a href="#" aria-label="Link to Facebook">
+                  <svg class="svg-facebook social-icon" viewBox="0 0 448 512">
+                    <path
+                      fill="currentColor"
+                      d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+
+              <!-- Linkedin -->
+              <li>
+                <a href="#" aria-label="Link to LinkedIn">
+                  <svg class="svg-linkedin social-icon" viewBox="0 0 448 512">
+                    <path
+                      fill="currentColor"
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+
+              <!-- GitHub -->
+              <li>
+                <a href="#" aria-label="Link to GitHub">
+                  <svg
+                    class="svg-github-social social-icon"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+
+              <!-- Square Space -->
+              <li>
+                <a href="#" aria-label="Link to Square Space">
+                  <svg
+                    class="svg-squarespace social-icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M186.12 343.34c-9.65 9.65-9.65 25.29 0 34.94 9.65 9.65 25.29 9.65 34.94 0L378.24 221.1c19.29-19.29 50.57-19.29 69.86 0s19.29 50.57 0 69.86L293.95 445.1c19.27 19.29 50.53 19.31 69.82.04l.04-.04 119.25-119.24c38.59-38.59 38.59-101.14 0-139.72-38.59-38.59-101.15-38.59-139.72 0l-157.22 157.2zm244.53-104.8c-9.65-9.65-25.29-9.65-34.93 0l-157.2 157.18c-19.27 19.29-50.53 19.31-69.82.05l-.05-.05c-9.64-9.64-25.27-9.65-34.92-.01l-.01.01c-9.65 9.64-9.66 25.28-.02 34.93l.02.02c38.58 38.57 101.14 38.57 139.72 0l157.2-157.2c9.65-9.65 9.65-25.29.01-34.93zm-261.99 87.33l157.18-157.18c9.64-9.65 9.64-25.29 0-34.94-9.64-9.64-25.27-9.64-34.91 0L133.72 290.93c-19.28 19.29-50.56 19.3-69.85.01l-.01-.01c-19.29-19.28-19.31-50.54-.03-69.84l.03-.03L218.03 66.89c-19.28-19.29-50.55-19.3-69.85-.02l-.02.02L28.93 186.14c-38.58 38.59-38.58 101.14 0 139.72 38.6 38.59 101.13 38.59 139.73.01zm-87.33-52.4c9.64 9.64 25.27 9.64 34.91 0l157.21-157.19c19.28-19.29 50.55-19.3 69.84-.02l.02.02c9.65 9.65 25.29 9.65 34.93 0 9.65-9.65 9.65-25.29 0-34.93-38.59-38.59-101.13-38.59-139.72 0L81.33 238.54c-9.65 9.64-9.65 25.28-.01 34.93h.01z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+
+              <!-- Behance -->
+              <li>
+                <a href="#" aria-label="Link to Behance">
+                  <svg class="svg-behance social-icon" viewBox="0 0 448 512">
+                    <path
+                      fill="currentColor"
+                      d="M186.5 293c0 19.3-14 25.4-31.2 25.4h-45.1v-52.9h46c18.6.1 30.3 7.8 30.3 27.5zm-7.7-82.3c0-17.7-13.7-21.9-28.9-21.9h-39.6v44.8H153c15.1 0 25.8-6.6 25.8-22.9zm132.3 23.2c-18.3 0-30.5 11.4-31.7 29.7h62.2c-1.7-18.5-11.3-29.7-30.5-29.7zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM271.7 185h77.8v-18.9h-77.8V185zm-43 110.3c0-24.1-11.4-44.9-35-51.6 17.2-8.2 26.2-17.7 26.2-37 0-38.2-28.5-47.5-61.4-47.5H68v192h93.1c34.9-.2 67.6-16.9 67.6-55.9zM380 280.5c0-41.1-24.1-75.4-67.6-75.4-42.4 0-71.1 31.8-71.1 73.6 0 43.3 27.3 73 71.1 73 33.2 0 54.7-14.9 65.1-46.8h-33.7c-3.7 11.9-18.6 18.1-30.2 18.1-22.4 0-34.1-13.1-34.1-35.3h100.2c.1-2.3.3-4.8.3-7.2z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+
+              <!-- Instagram -->
+              <li>
+                <a href="#" aria-label="Link to Instagram">
+                  <svg class="svg-instagram social-icon" viewBox="0 0 448 512">
+                    <path
+                      fill="currentColor"
+                      d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <!-- end of sidebar -->
+        <!-- end of nav header -->
+
+        <!-- nav-links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- end of navbar -->
+
+    <!-- header -->
+    <header class="hero">
+      <div class="section-center hero-center">
+        <article class="hero-info">
+          <div class="underline"></div>
+          <h1>I'm John</h1>
+          <h4>Freelance Web & Mobile UI/UX Designer</h4>
+          <a href="contact.html" class="btn hero-btn">Hire Me</a>
+          <!-- social icons -->
+          <ul class="social-icons hero-icons">
+            <!-- Twitter -->
+            <li>
+              <a href="#" aria-label="Link to Twitter">
+                <svg class="svg-twitter social-icon" viewBox="0 0 448 512">
+                  <path
+                    fill="currentColor"
+                    d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+
+            <!-- Facebook -->
+            <li>
+              <a href="#" aria-label="Link to Facebook">
+                <svg class="svg-facebook social-icon" viewBox="0 0 448 512">
+                  <path
+                    fill="currentColor"
+                    d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+
+            <!-- Linkedin -->
+            <li>
+              <a href="#" aria-label="Link to LinkedIn">
+                <svg class="svg-linkedin social-icon" viewBox="0 0 448 512">
+                  <path
+                    fill="currentColor"
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+
+            <!-- GitHub -->
+            <li>
+              <a href="#" aria-label="Link to GitHub">
+                <svg
+                  class="svg-github-social social-icon"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+
+            <!-- Square Space -->
+            <li>
+              <a href="#" aria-label="Link to Square Space">
+                <svg class="svg-squarespace social-icon" viewBox="0 0 512 512">
+                  <path
+                    fill="currentColor"
+                    d="M186.12 343.34c-9.65 9.65-9.65 25.29 0 34.94 9.65 9.65 25.29 9.65 34.94 0L378.24 221.1c19.29-19.29 50.57-19.29 69.86 0s19.29 50.57 0 69.86L293.95 445.1c19.27 19.29 50.53 19.31 69.82.04l.04-.04 119.25-119.24c38.59-38.59 38.59-101.14 0-139.72-38.59-38.59-101.15-38.59-139.72 0l-157.22 157.2zm244.53-104.8c-9.65-9.65-25.29-9.65-34.93 0l-157.2 157.18c-19.27 19.29-50.53 19.31-69.82.05l-.05-.05c-9.64-9.64-25.27-9.65-34.92-.01l-.01.01c-9.65 9.64-9.66 25.28-.02 34.93l.02.02c38.58 38.57 101.14 38.57 139.72 0l157.2-157.2c9.65-9.65 9.65-25.29.01-34.93zm-261.99 87.33l157.18-157.18c9.64-9.65 9.64-25.29 0-34.94-9.64-9.64-25.27-9.64-34.91 0L133.72 290.93c-19.28 19.29-50.56 19.3-69.85.01l-.01-.01c-19.29-19.28-19.31-50.54-.03-69.84l.03-.03L218.03 66.89c-19.28-19.29-50.55-19.3-69.85-.02l-.02.02L28.93 186.14c-38.58 38.59-38.58 101.14 0 139.72 38.6 38.59 101.13 38.59 139.73.01zm-87.33-52.4c9.64 9.64 25.27 9.64 34.91 0l157.21-157.19c19.28-19.29 50.55-19.3 69.84-.02l.02.02c9.65 9.65 25.29 9.65 34.93 0 9.65-9.65 9.65-25.29 0-34.93-38.59-38.59-101.13-38.59-139.72 0L81.33 238.54c-9.65 9.64-9.65 25.28-.01 34.93h.01z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+
+            <!-- Behance -->
+            <li>
+              <a href="#" aria-label="Link to Behance">
+                <svg class="svg-behance social-icon" viewBox="0 0 448 512">
+                  <path
+                    fill="currentColor"
+                    d="M186.5 293c0 19.3-14 25.4-31.2 25.4h-45.1v-52.9h46c18.6.1 30.3 7.8 30.3 27.5zm-7.7-82.3c0-17.7-13.7-21.9-28.9-21.9h-39.6v44.8H153c15.1 0 25.8-6.6 25.8-22.9zm132.3 23.2c-18.3 0-30.5 11.4-31.7 29.7h62.2c-1.7-18.5-11.3-29.7-30.5-29.7zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM271.7 185h77.8v-18.9h-77.8V185zm-43 110.3c0-24.1-11.4-44.9-35-51.6 17.2-8.2 26.2-17.7 26.2-37 0-38.2-28.5-47.5-61.4-47.5H68v192h93.1c34.9-.2 67.6-16.9 67.6-55.9zM380 280.5c0-41.1-24.1-75.4-67.6-75.4-42.4 0-71.1 31.8-71.1 73.6 0 43.3 27.3 73 71.1 73 33.2 0 54.7-14.9 65.1-46.8h-33.7c-3.7 11.9-18.6 18.1-30.2 18.1-22.4 0-34.1-13.1-34.1-35.3h100.2c.1-2.3.3-4.8.3-7.2z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+
+            <!-- Instagram -->
+            <li>
+              <a href="#" aria-label="Link to Instagram">
+                <svg class="svg-instagram social-icon" viewBox="0 0 448 512">
+                  <path
+                    fill="currentColor"
+                    d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </article>
+        <article class="hero-img">
+          <img
+            src="./media/images/hero-img.jpeg"
+            class="hero-photo"
+            alt="John Doe"
+          />
+        </article>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- about -->
+    <section class="section about">
+      <div class="section-center about-center">
+        <!-- About IMG -->
+        <article class="about-img">
+          <img
+            src="./media/images/about-img.jpeg"
+            class="hero-photo"
+            alt="About Image"
+          />
+        </article>
+        <!-- About Info -->
+        <article class="about-info">
+          <!-- Section Title -->
+          <div class="section-title about-title">
+            <h2>About</h2>
+            <div class="underline"></div>
+          </div>
+          <!-- End of Section Title -->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ab
+            quidem consequuntur, nisi temporibus praesentium fugit fuga corrupti
+            placeat a maiores asperiores. Quasi tempora doloribus accusantium
+            neque quibusdam porro adipisci architecto libero dolorem
+            necessitatibus eos maiores odit aliquam, minima in.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ab
+            quidem consequuntur, nisi temporibus praesentium fugit fuga corrupti
+            placeat a maiores asperiores. Quasi tempora doloribus accusantium
+            neque quibusdam porro adipisci architecto libero dolorem
+            necessitatibus eos maiores odit aliquam, minima in.
+          </p>
+          <a href="about.html" class="btn">About Me</a>
+        </article>
+      </div>
+    </section>
+    <!-- end of about -->
+
+    <!-- services -->
+    <section class="section bg-grey">
+      <!-- Section Title -->
+      <div class="section-title">
+        <h2>Services</h2>
+        <div class="underline services-underline"></div>
+      </div>
+      <!-- End of Section Title -->
+      <div class="services-center section-center">
+        <!-- Single Service -->
+        <article class="service">
+          <svg class="svg-code service-icon" viewBox="0 0 640 512">
+            <path
+              fill="currentColor"
+              d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"
+            ></path>
+          </svg>
+          <h4>Web Development</h4>
+          <div class="underline"></div>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, harum
+            voluptatibus illum ipsum vero unde perspiciatis non aliquam pariatur
+            quos.
+          </p>
+        </article>
+        <!-- End of Single Service -->
+
+        <!-- Single Service -->
+        <article class="service">
+          <svg class="svg-sketch service-icon" viewBox="0 0 512 512">
+            <path
+              fill="currentColor"
+              d="M27.5 162.2L9 187.1h90.5l6.9-130.7-78.9 105.8zM396.3 45.7L267.7 32l135.7 147.2-7.1-133.5zM112.2 218.3l-11.2-22H9.9L234.8 458zm2-31.2h284l-81.5-88.5L256.3 33zm297.3 9.1L277.6 458l224.8-261.7h-90.9zM415.4 69L406 56.4l.9 17.3 6.1 113.4h90.3zM113.5 93.5l-4.6 85.6L244.7 32 116.1 45.7zm287.7 102.7h-290l42.4 82.9L256.3 480l144.9-283.8z"
+            ></path>
+          </svg>
+          <h4>Web Design</h4>
+          <div class="underline"></div>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, harum
+            voluptatibus illum ipsum vero unde perspiciatis non aliquam pariatur
+            quos.
+          </p>
+        </article>
+        <!-- End of Single Service -->
+
+        <!-- Single Service -->
+        <article class="service">
+          <svg class="svg-android service-icon" viewBox="0 0 576 512">
+            <path
+              fill="currentColor"
+              d="M420.55,301.93a24,24,0,1,1,24-24,24,24,0,0,1-24,24m-265.1,0a24,24,0,1,1,24-24,24,24,0,0,1-24,24m273.7-144.48,47.94-83a10,10,0,1,0-17.27-10h0l-48.54,84.07a301.25,301.25,0,0,0-246.56,0L116.18,64.45a10,10,0,1,0-17.27,10h0l47.94,83C64.53,202.22,8.24,285.55,0,384H576c-8.24-98.45-64.54-181.78-146.85-226.55"
+            ></path>
+          </svg>
+          <h4>App Design</h4>
+          <div class="underline"></div>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, harum
+            voluptatibus illum ipsum vero unde perspiciatis non aliquam pariatur
+            quos.
+          </p>
+        </article>
+        <!-- End of Single Service -->
+      </div>
+    </section>
+    <!-- end of services -->
+
+    <!-- projects -->
+    <section class="section projects">
+      <!-- Section Title -->
+      <div class="section-title">
+        <h2>Latest Works</h2>
+        <div class="underline projects-underline"></div>
+        <p class="projects-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          fugit provident inventore accusantium enim ipsum libero nisi. Dolores,
+          ad fugiat. Dolore nisi iste corrupti quam. Beatae sed consequatur,
+          atque earum tempora reiciendis voluptatum non distinctio quibusdam,
+          facere et expedita accusamus?
+        </p>
+      </div>
+      <!-- End of Section Title -->
+      <div class="section-center projects-center">
+        <!-- Single Project -->
+        <a href="projects.html" class="project-1">
+          <article class="project">
+            <img
+              src="./media/images/project-1.jpeg"
+              class="project-img"
+              alt="Project 1"
+            />
+            <div class="project-info">
+              <h4>Project Title</h4>
+              <p>Client Name</p>
+            </div>
+          </article>
+        </a>
+        <!-- End of Single Project -->
+
+        <!-- Single Project -->
+        <a href="projects.html" class="project-2">
+          <article class="project">
+            <img
+              src="./media/images/project-2.jpeg"
+              class="project-img"
+              alt="Project 2"
+            />
+            <div class="project-info">
+              <h4>Project Title</h4>
+              <p>Client Name</p>
+            </div>
+          </article>
+        </a>
+        <!-- End of Single Project -->
+
+        <!-- Single Project -->
+        <a href="projects.html" class="project-3">
+          <article class="project">
+            <img
+              src="./media/images/project-3.jpeg"
+              class="project-img"
+              alt="Project 3"
+            />
+            <div class="project-info">
+              <h4>Project Title</h4>
+              <p>Client Name</p>
+            </div>
+          </article>
+        </a>
+        <!-- End of Single Project -->
+
+        <!-- Single Project -->
+        <a href="projects.html" class="project-4">
+          <article class="project">
+            <img
+              src="./media/images/project-4.jpeg"
+              class="project-img"
+              alt="Project 4"
+            />
+            <div class="project-info">
+              <h4>Project Title</h4>
+              <p>Client Name</p>
+            </div>
+          </article>
+        </a>
+        <!-- End of Single Project -->
+      </div>
+    </section>
+    <!-- end of projects -->
+
+    <!-- connect -->
+    <section class="connect">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="video-container"
+        poster="./media/images/connect.png"
+      >
+        <source
+          src="./media/video/connect.mp4"
+          type="video/mp4"
+          alt="Connect Video"
+        />
+        Sorry, your browser does not support embedded videos
+      </video>
+      <div class="video-banner">
+        <!-- Section Title -->
+        <div class="section-title">
+          <h2>Lets Get In Touch</h2>
+          <div class="underline connect-underline"></div>
+        </div>
+        <!-- End of Section Title -->
+        <p class="video-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+          laborum. Fuga eligendi necessitatibus harum nihil aspernatur
+          reprehenderit eos ipsa, ab voluptatibus laudantium, doloremque quod
+          qui molestiae error minima provident, expedita sapiente at corrupti.
+          Totam, nostrum. Quod minus vero blanditiis delectus!
+        </p>
+        <a href="contact.html" class="btn">Contact Me</a>
+      </div>
+    </section>
+    <!-- end of connect -->
+
+    <!-- skills -->
+    <section class="section skills">
+      <!-- Section Title -->
+      <div class="section-title">
+        <h2>Skills</h2>
+        <div class="underline skills-underline"></div>
+      </div>
+      <!-- End of Section Title -->
+      <div class="section-center skills-center">
+        <!-- Skills Column 1 -->
+        <article>
+          <h3>Front End</h3>
+          <!-- Single Skill -->
+          <div class="skill">
+            <p>HTML/CSS</p>
+            <div class="skill-container">
+              <div class="skill-value"></div>
+              <p class="skill-text">50%</p>
+            </div>
+          </div>
+          <!-- End of Single Skill -->
+
+          <!-- Single Skill -->
+          <div class="skill">
+            <p>JavaScript</p>
+            <div class="skill-container">
+              <div class="skill-value value-70"></div>
+              <p class="skill-text skill-text-70">70%</p>
+            </div>
+          </div>
+          <!-- End of Single Skill -->
+
+          <!-- Single Skill -->
+          <div class="skill">
+            <p>React</p>
+            <div class="skill-container">
+              <div class="skill-value value-80"></div>
+              <p class="skill-text skill-text-80">80%</p>
+            </div>
+          </div>
+          <!-- End of Single Skill -->
+        </article>
+
+        <!-- Skills Column 2 -->
+        <article>
+          <h3>Back End</h3>
+          <!-- Single Skill -->
+          <div class="skill">
+            <p>Node</p>
+            <div class="skill-container">
+              <div class="skill-value"></div>
+              <p class="skill-text">50%</p>
+            </div>
+          </div>
+          <!-- End of Single Skill -->
+
+          <!-- Single Skill -->
+          <div class="skill">
+            <p>PHP</p>
+            <div class="skill-container">
+              <div class="skill-value value-70"></div>
+              <p class="skill-text skill-text-70">70%</p>
+            </div>
+          </div>
+          <!-- End of Single Skill -->
+
+          <!-- Single Skill -->
+          <div class="skill">
+            <p>Python</p>
+            <div class="skill-container">
+              <div class="skill-value value-80"></div>
+              <p class="skill-text skill-text-80">80%</p>
+            </div>
+          </div>
+          <!-- End of Single Skill -->
+        </article>
+      </div>
+    </section>
+    <!-- end of skills -->
+
+    <!-- timeline -->
+    <section class="section timeline">
+      <!-- Section Title -->
+      <div class="section-title">
+        <h2>Timeline</h2>
+        <div class="underline timeline-underline"></div>
+      </div>
+      <!-- End of Section Title -->
+      <div class="section-center timeline-center">
+        <!-- Single Timeline Item -->
+        <article class="timeline-item">
+          <h4>2020</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            dolores porro eaque reiciendis adipisci quod, exercitationem ex.
+            Quasi, similique quisquam.
+          </p>
+          <span class="number">1</span>
+        </article>
+        <!-- End of Single Timeline Item -->
+
+        <!-- Single Timeline Item -->
+        <article class="timeline-item">
+          <h4>2019</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            dolores porro eaque reiciendis adipisci quod, exercitationem ex.
+            Quasi, similique quisquam.
+          </p>
+          <span class="number">2</span>
+        </article>
+        <!-- End of Single Timeline Item -->
+
+        <!-- Single Timeline Item -->
+        <article class="timeline-item">
+          <h4>2018</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            dolores porro eaque reiciendis adipisci quod, exercitationem ex.
+            Quasi, similique quisquam.
+          </p>
+          <span class="number">3</span>
+        </article>
+        <!-- End of Single Timeline Item -->
+
+        <!-- Single Timeline Item -->
+        <article class="timeline-item">
+          <h4>2017</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            dolores porro eaque reiciendis adipisci quod, exercitationem ex.
+            Quasi, similique quisquam.
+          </p>
+          <span class="number">4</span>
+        </article>
+        <!-- End of Single Timeline Item -->
+
+        <!-- Single Timeline Item -->
+        <article class="timeline-item">
+          <h4>2016</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            dolores porro eaque reiciendis adipisci quod, exercitationem ex.
+            Quasi, similique quisquam.
+          </p>
+          <span class="number">5</span>
+        </article>
+        <!-- End of Single Timeline Item -->
+
+        <!-- Single Timeline Item -->
+        <article class="timeline-item">
+          <h4>2015</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            dolores porro eaque reiciendis adipisci quod, exercitationem ex.
+            Quasi, similique quisquam.
+          </p>
+          <span class="number">6</span>
+        </article>
+        <!-- End of Single Timeline Item -->
+      </div>
+    </section>
+    <!--end of  timeline -->
+
+    <!-- blog -->
+    <section class="section blog">
+      <!-- Section Title -->
+      <div class="section-title">
+        <h2>Blog</h2>
+        <div class="underline blog-underline"></div>
+      </div>
+      <!-- End of Section Title -->
+
+      <div class="section-center blog-center">
+        <!-- Single Article -->
+        <div class="card">
+          <!-- Card Front -->
+          <div class="card-side card-front">
+            <img src="./media/images/project-1.jpeg" alt="" />
+            <div class="card-info">
+              <h4>Article Title</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati vel ea laboriosam eligendi blanditiis eum omnis est
+                dolor quidem alias.
+              </p>
+            </div>
+            <div class="card-footer">
+              <img
+                src="./media/images/hero-img-small.jpeg"
+                alt="Author Image"
+              />
+              <p>7 Min Read</p>
+            </div>
+          </div>
+          <!-- Card Back -->
+          <div class="card-side card-back">
+            <button class="btn">Read More</button>
+          </div>
+        </div>
+        <!-- End of Single Article -->
+
+        <!-- Single Article -->
+        <div class="card">
+          <!-- Card Front -->
+          <div class="card-side card-front">
+            <img src="./media/images/project-2.jpeg" alt="" />
+            <div class="card-info">
+              <h4>Article Title</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati vel ea laboriosam eligendi blanditiis eum omnis est
+                dolor quidem alias.
+              </p>
+            </div>
+            <div class="card-footer">
+              <img
+                src="./media/images/hero-img-small.jpeg"
+                alt="Author Image"
+              />
+              <p>7 Min Read</p>
+            </div>
+          </div>
+          <!-- Card Back -->
+          <div class="card-side card-back">
+            <button class="btn">Read More</button>
+          </div>
+        </div>
+        <!-- End of Single Article -->
+
+        <!-- Single Article -->
+        <div class="card">
+          <!-- Card Front -->
+          <div class="card-side card-front">
+            <img src="./media/images/project-3.jpeg" alt="" />
+            <div class="card-info">
+              <h4>Article Title</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati vel ea laboriosam eligendi blanditiis eum omnis est
+                dolor quidem alias.
+              </p>
+            </div>
+            <div class="card-footer">
+              <img
+                src="./media/images/hero-img-small.jpeg"
+                alt="Author Image"
+              />
+              <p>7 Min Read</p>
+            </div>
+          </div>
+          <!-- Card Back -->
+          <div class="card-side card-back">
+            <button class="btn">Read More</button>
+          </div>
+        </div>
+        <!-- End of Single Article -->
+
+        <!-- Single Article -->
+        <div class="card">
+          <!-- Card Front -->
+          <div class="card-side card-front">
+            <img src="./media/images/project-4.jpeg" alt="" />
+            <div class="card-info">
+              <h4>Article Title</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati vel ea laboriosam eligendi blanditiis eum omnis est
+                dolor quidem alias.
+              </p>
+            </div>
+            <div class="card-footer">
+              <img
+                src="./media/images/hero-img-small.jpeg"
+                alt="Author Image"
+              />
+              <p>7 Min Read</p>
+            </div>
+          </div>
+          <!-- Card Back -->
+          <div class="card-side card-back">
+            <button class="btn">Read More</button>
+          </div>
+        </div>
+        <!-- End of Single Article -->
+
+        <!-- Single Article -->
+        <div class="card">
+          <!-- Card Front -->
+          <div class="card-side card-front">
+            <img src="./media/images/project-5.jpg" alt="" />
+            <div class="card-info">
+              <h4>Article Title</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati vel ea laboriosam eligendi blanditiis eum omnis est
+                dolor quidem alias.
+              </p>
+            </div>
+            <div class="card-footer">
+              <img
+                src="./media/images/hero-img-small.jpeg"
+                alt="Author Image"
+              />
+              <p>7 Min Read</p>
+            </div>
+          </div>
+          <!-- Card Back -->
+          <div class="card-side card-back">
+            <button class="btn">Read More</button>
+          </div>
+        </div>
+        <!-- End of Single Article -->
+
+        <!-- Single Article -->
+        <div class="card">
+          <!-- Card Front -->
+          <div class="card-side card-front">
+            <img src="./media/images/project-6.jpg" alt="" />
+            <div class="card-info">
+              <h4>Article Title</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati vel ea laboriosam eligendi blanditiis eum omnis est
+                dolor quidem alias.
+              </p>
+            </div>
+            <div class="card-footer">
+              <img
+                src="./media/images/hero-img-small.jpeg"
+                alt="Author Image"
+              />
+              <p>7 Min Read</p>
+            </div>
+          </div>
+          <!-- Card Back -->
+          <div class="card-side card-back">
+            <button class="btn">Read More</button>
+          </div>
+        </div>
+        <!-- End of Single Article -->
+      </div>
+    </section>
+    <!--end of  blog -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <!-- social icons -->
+      <ul class="social-icons">
+        <!-- Twitter -->
+        <li>
+          <a href="#" aria-label="Link to Twitter">
+            <svg class="svg-twitter social-icon" viewBox="0 0 448 512">
+              <path
+                fill="currentColor"
+                d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"
+              ></path>
+            </svg>
+          </a>
+        </li>
+
+        <!-- Facebook -->
+        <li>
+          <a href="#" aria-label="Link to Facebook">
+            <svg class="svg-facebook social-icon" viewBox="0 0 448 512">
+              <path
+                fill="currentColor"
+                d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"
+              ></path>
+            </svg>
+          </a>
+        </li>
+
+        <!-- Linkedin -->
+        <li>
+          <a href="#" aria-label="Link to LinkeIn">
+            <svg class="svg-linkedin social-icon" viewBox="0 0 448 512">
+              <path
+                fill="currentColor"
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+              ></path>
+            </svg>
+          </a>
+        </li>
+
+        <!-- GitHub -->
+        <li>
+          <a href="#" aria-label="Link to GitHub">
+            <svg class="svg-github-social social-icon" viewBox="0 0 448 512">
+              <path
+                fill="currentColor"
+                d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"
+              ></path>
+            </svg>
+          </a>
+        </li>
+
+        <!-- Square Space -->
+        <li>
+          <a href="#" aria-label="Link to Square Space">
+            <svg class="svg-squarespace social-icon" viewBox="0 0 512 512">
+              <path
+                fill="currentColor"
+                d="M186.12 343.34c-9.65 9.65-9.65 25.29 0 34.94 9.65 9.65 25.29 9.65 34.94 0L378.24 221.1c19.29-19.29 50.57-19.29 69.86 0s19.29 50.57 0 69.86L293.95 445.1c19.27 19.29 50.53 19.31 69.82.04l.04-.04 119.25-119.24c38.59-38.59 38.59-101.14 0-139.72-38.59-38.59-101.15-38.59-139.72 0l-157.22 157.2zm244.53-104.8c-9.65-9.65-25.29-9.65-34.93 0l-157.2 157.18c-19.27 19.29-50.53 19.31-69.82.05l-.05-.05c-9.64-9.64-25.27-9.65-34.92-.01l-.01.01c-9.65 9.64-9.66 25.28-.02 34.93l.02.02c38.58 38.57 101.14 38.57 139.72 0l157.2-157.2c9.65-9.65 9.65-25.29.01-34.93zm-261.99 87.33l157.18-157.18c9.64-9.65 9.64-25.29 0-34.94-9.64-9.64-25.27-9.64-34.91 0L133.72 290.93c-19.28 19.29-50.56 19.3-69.85.01l-.01-.01c-19.29-19.28-19.31-50.54-.03-69.84l.03-.03L218.03 66.89c-19.28-19.29-50.55-19.3-69.85-.02l-.02.02L28.93 186.14c-38.58 38.59-38.58 101.14 0 139.72 38.6 38.59 101.13 38.59 139.73.01zm-87.33-52.4c9.64 9.64 25.27 9.64 34.91 0l157.21-157.19c19.28-19.29 50.55-19.3 69.84-.02l.02.02c9.65 9.65 25.29 9.65 34.93 0 9.65-9.65 9.65-25.29 0-34.93-38.59-38.59-101.13-38.59-139.72 0L81.33 238.54c-9.65 9.64-9.65 25.28-.01 34.93h.01z"
+              ></path>
+            </svg>
+          </a>
+        </li>
+
+        <!-- Behance -->
+        <li>
+          <a href="#" aria-label="Link to Behance">
+            <svg class="svg-behance social-icon" viewBox="0 0 448 512">
+              <path
+                fill="currentColor"
+                d="M186.5 293c0 19.3-14 25.4-31.2 25.4h-45.1v-52.9h46c18.6.1 30.3 7.8 30.3 27.5zm-7.7-82.3c0-17.7-13.7-21.9-28.9-21.9h-39.6v44.8H153c15.1 0 25.8-6.6 25.8-22.9zm132.3 23.2c-18.3 0-30.5 11.4-31.7 29.7h62.2c-1.7-18.5-11.3-29.7-30.5-29.7zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM271.7 185h77.8v-18.9h-77.8V185zm-43 110.3c0-24.1-11.4-44.9-35-51.6 17.2-8.2 26.2-17.7 26.2-37 0-38.2-28.5-47.5-61.4-47.5H68v192h93.1c34.9-.2 67.6-16.9 67.6-55.9zM380 280.5c0-41.1-24.1-75.4-67.6-75.4-42.4 0-71.1 31.8-71.1 73.6 0 43.3 27.3 73 71.1 73 33.2 0 54.7-14.9 65.1-46.8h-33.7c-3.7 11.9-18.6 18.1-30.2 18.1-22.4 0-34.1-13.1-34.1-35.3h100.2c.1-2.3.3-4.8.3-7.2z"
+              ></path>
+            </svg>
+          </a>
+        </li>
+
+        <!-- Instagram -->
+        <li>
+          <a href="#" aria-label="Link to Instagram">
+            <svg class="svg-instagram social-icon" viewBox="0 0 448 512">
+              <path
+                fill="currentColor"
+                d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"
+              ></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <!-- Copyright -->
+      <p class="copyright">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        <span class="john-white">John</span
+        ><span class="doe-primary-5">Doe</span> - All Rights Reserved
+      </p>
+    </footer>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

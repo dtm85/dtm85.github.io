@@ -10,7 +10,7 @@ Fonts
 // 300
 @font-face {
   font-family: "Neo Tech Light";
-  src: url("../../media/fonts/NeoTech-Light\(300\).otf") format("opentype");
+  src: url("/media/fonts/neotech-light300.otf") format("opentype");
   // 300 (Light), 400 (Regular), 500 (Medium), 700 (Bold), 900 (Bolder / Dark)
   /* 300 (Light), 400 (Regular), 500 (Medium), 700 (Bold), 900 (Bolder / Dark) */
 }
@@ -18,7 +18,7 @@ Fonts
 // 400
 @font-face {
   font-family: "Neo Tech";
-  src: url("../../media/fonts/NeoTech-Regular\(400\).otf") format("opentype");
+  src: url("/media/fonts/neotech-regular400.otf") format("opentype");
   // 300 (Light), 400 (Regular), 500 (Medium), 700 (Bold), 900 (Bolder / Dark)
   /* 300 (Light), 400 (Regular), 500 (Medium), 700 (Bold), 900 (Bolder / Dark) */
 }
@@ -26,7 +26,7 @@ Fonts
 // 500
 @font-face {
   font-family: "Neo Tech Medium";
-  src: url("../../media/fonts/NeoTech-Medium\(500\).otf") format("opentype");
+  src: url("/media/fonts/neotech-medium500.otf") format("opentype");
   // 300 (Light), 400 (Regular), 500 (Medium), 700 (Bold), 900 (Bolder / Dark)
   /* 300 (Light), 400 (Regular), 500 (Medium), 700 (Bold), 900 (Bolder / Dark) */
 }
@@ -34,7 +34,7 @@ Fonts
 //700
 @font-face {
   font-family: "Neo Tech Bold";
-  src: url("../../media/fonts/NeoTech-Bold\(700\).otf") format("opentype");
+  src: url("/media/fonts/neotech-bold700.otf") format("opentype");
   // 300 (Light), 400 (Regular), 500 (Medium), 700 (Bold), 900 (Bolder / Dark)
   /* 300 (Light), 400 (Regular), 500 (Medium), 700 (Bold), 900 (Bolder / Dark) */
 }
@@ -133,7 +133,7 @@ $clr-microsoft-teams: #6264a7;
 $clr-twitter: #08a0e9;
 
 // Font
-$ff-neotech: "NeoTech", Helvetica, sans-serif;
+$ff-neotech: "Neo Tech", Helvetica, sans-serif;
 $ff-nunito: "Nunito", sans-serif;
 
 // Transitions

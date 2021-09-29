@@ -1,0 +1,62 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  overflow: overlay;
+  overflow-x: hidden;
+
+  // Font Size set to 100% for html to use with media quries
+  font-size: 100%;
+  font-family: "Lato", sans-serif;
+
+  @include respond(tab-land) {
+    // width < 1200px?
+    font-size: 93.75%;
+  }
+
+  @include respond(tab-port) {
+    // width < 900px?
+    font-size: 87.5%;
+  }
+
+  // @include respond(big-desktop) { // Using this media query will cause bugs with font size on cards when hovering price on the back of the card, it does not affect mobile or tablets.
+  //   /* width > 1800px? */
+  //   font-size: 112.5%;
+  // }
+}
+
+body {
+  box-sizing: border-box;
+
+  // Body Scrollbar color
+  &::-webkit-scrollbar {
+    width: 0.65rem;
+    height: 0.65rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: none;
+    margin-bottom: 1px;
+    border-radius: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $clr-primary-1;
+    border-radius: 8rem;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $clr-primary-2;
+    border-radius: 8rem;
+  }
+}
+
+::selection {
+  background: $clr-home-page-light;
+  color: $clr-white;
+}

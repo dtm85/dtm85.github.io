@@ -1,0 +1,11 @@
+.story {
+  &__pictures {
+    background: $clr-primary;
+    grid-column: full-start / col-end 4;
+  }
+
+  &__content {
+    background: $clr-grey-light-1;
+    grid-column: col-start 5 / full-end;
+  }
+}
