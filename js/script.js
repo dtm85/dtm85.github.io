@@ -1,5 +1,5 @@
 // Hamburger Menu Animation
-const menuBtn = document.querySelector(".menu-btn");
+const menuBtn = document.getElementById("nav-btn");
 let menuOpen = false;
 menuBtn.addEventListener("click", () => {
   if (!menuOpen) {
@@ -11,16 +11,49 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
-const menuIcon = document.querySelector(".menu-btn");
-const navbar = document.querySelector(".nav-list");
+// ********** nav toggle ************
+const navBtn = document.getElementById("nav-btn");
+const links = document.getElementById("sidebar-links");
 
-menuIcon.addEventListener("click", () => {
-  navbar.classList.toggle("change");
+// Add Event Listener
+navBtn.addEventListener("click", () => {
+  links.classList.toggle("show-sidebar");
+});
+
+// ********** Smooth Scroll **********
+const smoothScroll = document.querySelectorAll(".smooth-scroll");
+
+smoothScroll.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    links.classList.remove("show-sidebar");
+    // Remove the open class for nav-btn to change menu animation from X to Menu
+    if (!menuOpen) {
+      menuBtn.classList.add("open");
+      menuOpen = true;
+    } else {
+      menuBtn.classList.remove("open");
+      menuOpen = false;
+    }
+
+    const id = e.target.getAttribute("href").slice(1);
+    const element = document.getElementById(id);
+
+    let position = element.offsetTop - 115;
+
+    // Window scrollTo
+    window.scrollTo({
+      left: 0,
+      top: position,
+      behavior: "smooth",
+    });
+  });
 });
 
 // Navbar Styles applied on Scroll Y
 window.addEventListener("scroll", function () {
-  let header = document.querySelector("header");
+  let header = document.querySelector("nav");
   let windowPosition = window.scrollY > 0;
   header.classList.toggle("scrolling-active", windowPosition);
 });
@@ -86,12 +119,10 @@ document.addEventListener("DOMContentLoaded", init);
 
 // Init App
 function init() {
-  const txtElement = document.querySelector(".text-type");
+  const txtElement = document.querySelector(".header__description--typewriter");
   const words = JSON.parse(txtElement.getAttribute("data-words"));
   const wait = txtElement.getAttribute("data-wait");
 
   // Init TypeWriter
   new TypeWriter(txtElement, words, wait);
 }
-
-// Smooth Scroll
