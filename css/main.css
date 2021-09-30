@@ -1504,47 +1504,47 @@ PROJECTS
 
 .projects__card--project1::before {
   /* Project 1 Image for Circle */
-  background: url("/media/images/projects/`Under__Construction/code.jpg") center/cover no-repeat;
+  background: url("/media/images/projects/`Under__Construction/code.jpg.webp") center/cover no-repeat;
 }
 
 .projects__card--project2::before {
   /* Project 2 Image for Circle */
-  background: url("/media/images/projects//`Under__Construction/code.jpg") center/cover no-repeat;
+  background: url("/media/images/projects//`Under__Construction/code.jpg.webp") center/cover no-repeat;
 }
 
 .projects__card--project3::before {
   /* Project 3 Image for Circle */
-  background: url("/media/images/projects/`Under__Construction/code.jpg") center/cover no-repeat;
+  background: url("/media/images/projects/`Under__Construction/code.jpg.webp") center/cover no-repeat;
 }
 
 .projects__card--project4::before {
   /* Project 4 Image for Circle */
-  background: url("/media/images/projects/Natours/natours.png") center/cover no-repeat;
+  background: url("/media/images/projects/Natours/natours.png.webp") center/cover no-repeat;
 }
 
 .projects__card--project5::before {
   /* Project 5 Image for Circle */
-  background: url("/media/images/projects/Omnifood/omnifood.png") center/cover no-repeat;
+  background: url("/media/images/projects/Omnifood/omnifood.png.webp") center/cover no-repeat;
 }
 
 .projects__card--project6::before {
   /* Project 6 Image for Circle */
-  background: url("/media/images/projects/Trillo/trillo.png") center/cover no-repeat;
+  background: url("/media/images/projects/Trillo/trillo.png.webp") center/cover no-repeat;
 }
 
 .projects__card--project7::before {
   /* Project 7 Image for Circle */
-  background: url("/media/images/projects/Portfolio/portfolio.png") center/cover no-repeat;
+  background: url("/media/images/projects/Portfolio/portfolio.png.webp") center/cover no-repeat;
 }
 
 .projects__card--project8::before {
   /* Project 8 Image for Circle */
-  background: url("/media/images/projects/BackRoads/back-roads.png") center/cover no-repeat;
+  background: url("/media/images/projects/BackRoads/back-roads.png.webp") center/cover no-repeat;
 }
 
 .projects__card--project9::before {
   /* Project 8 Image for Circle */
-  background: url("/media/images/projects/TeaStation/tea-station.png") center/cover no-repeat;
+  background: url("/media/images/projects/TeaStation/tea-station.png.webp") center/cover no-repeat;
 }
 
 .projects__card:hover .projects__project-content {
