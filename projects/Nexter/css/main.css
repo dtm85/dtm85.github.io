@@ -80,6 +80,6 @@ body {
 }
 
 .container > * {
-  padding: 40px;
-  font-size: 30px;
+  padding: 2.5rem;
+  font-size: 1.875rem;
 }
