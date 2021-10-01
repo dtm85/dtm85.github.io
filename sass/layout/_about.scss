@@ -11,9 +11,9 @@ ABOUT
   width: 100%;
   grid-column: full-start / full-end;
   background: rgba(39, 39, 39, 0.95);
-  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 25px;
+  box-shadow: 0 0.125rem 0.5rem 0 rgba(31, 38, 135, 0.702);
+  border: 0.0625rem solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5625rem;
   margin: 3rem auto;
   overflow: hidden;
   position: relative;
@@ -38,9 +38,9 @@ ABOUT
       $clr-grey-dark-2 1%,
       /* #ddfdfd3f 1%, */ #0e0e0e00 50%
     );
-    box-shadow: 0 0 8px 3px $clr-grey-dark-2;
-    border: 1px solid $border-light-grey;
-    border-radius: 10px;
+    box-shadow: 0 0 0.5rem 0.1875rem $clr-grey-dark-2;
+    border: 0.0625rem solid $border-light-grey;
+    border-radius: 0.625rem;
     transition: $transition;
 
     @include respond(bp-medium-650) {
@@ -64,7 +64,7 @@ ABOUT
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
-    box-shadow: 0 0 9px 0 $clr-primary-5;
+    box-shadow: 0 0 0.5625rem 0 $clr-primary-5;
     position: relative;
     transform: rotateZ(-2deg);
     float: left;
@@ -205,16 +205,16 @@ ABOUT
       background: radial-gradient(
         circle farthest-corner at 100% 100%,
         $clr-grey-dark-2 1%,
-        /* #ddfdfd3f 1%, */ #0e0e0e00 50%
+        #0e0e0e00 50%
       );
-      box-shadow: 0 0 8px 3px $clr-grey-dark-2;
-      border: 1px solid $border-light-grey;
-      border-radius: 10px;
+      box-shadow: 0 0 0.5rem 0.1875rem $clr-grey-dark-2;
+      border: 0.0625rem solid $border-light-grey;
+      border-radius: 0.625rem;
       transition: $transition;
       overflow: hidden;
 
       &:hover {
-        box-shadow: 0 0 8px 3px $clr-primary-7;
+        box-shadow: 0 0 0.5rem 0.1875rem $clr-primary-7;
       }
     }
   }

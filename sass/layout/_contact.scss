@@ -18,16 +18,16 @@ CONTACT
 
   &__container-background {
     /* Contact Glass Container */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(0.625rem);
+    -webkit-backdrop-filter: blur(0.625rem);
     background: linear-gradient(
       to top left,
       $background-card-dark-grey 1%,
       #0e0e0e00 70%
     );
     box-shadow: $box-shadow;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 25px;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.5625rem;
     padding: 3.5rem 2.5rem 3.5rem 0;
     position: relative;
     overflow: hidden;
@@ -45,30 +45,30 @@ CONTACT
       /* Email SVG - Background */
       fill: rgba(192, 192, 192, 0.1);
       position: absolute;
-      left: -50px;
-      bottom: -50px;
+      left: -3.125rem;
+      bottom: -3.125rem;
       width: 35rem;
       height: 35rem;
       z-index: -1;
       transition: $transition;
 
       @include respond(bp-medium-900) {
-        left: -50px;
-        top: 230px;
+        left: -3.125rem;
+        top: 14.375rem;
         width: 27rem;
         height: 27rem;
       }
 
       @include respond(bp-medium-650) {
-        left: -50px;
-        top: 260px;
+        left: -3.125rem;
+        top: 16.25rem;
         width: 25rem;
         height: 25rem;
       }
 
       @include respond(bp-small-450) {
-        left: -50px;
-        top: 330px;
+        left: -3.125rem;
+        top: 20.625rem;
         width: 20rem;
         height: 20rem;
       }
@@ -296,11 +296,11 @@ CONTACT
       $clr-grey-dark-1 0%,
       $clr-grey-dark-2 100%
     );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 0 8px 3px $clr-grey-dark-2;
-    border: 1px solid $border-light-grey;
-    border-radius: 10px;
+    backdrop-filter: blur(0.625rem);
+    -webkit-backdrop-filter: blur(0.625rem);
+    box-shadow: 0 0 0.5rem 0.1875rem $clr-grey-dark-2;
+    border: 0.0625rem solid $border-light-grey;
+    border-radius: 0.625rem;
     z-index: 2;
     transition: $transition;
 

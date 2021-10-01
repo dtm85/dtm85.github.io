@@ -7,14 +7,14 @@ FOOTER
 ======
 */
 .footer {
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(0.625rem);
+  -webkit-backdrop-filter: blur(0.625rem);
   background: linear-gradient(
     to top,
     $background-card-dark-grey 1%,
     #0e0e0e00 70%
   );
-  box-shadow: 0 2px 12px 1px $clr-primary-8;
+  box-shadow: 0 0.125rem 0.75rem 0.0625rem $clr-primary-8;
   grid-column: full-start / full-end;
   height: fit-content;
   bottom: 0;
@@ -38,7 +38,7 @@ FOOTER
     color: $clr-text;
     font-size: 2rem;
     font-weight: 300;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     color: $clr-text;
     top: 1.5rem;
     left: 2rem;

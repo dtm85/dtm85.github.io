@@ -73,14 +73,14 @@ HEADER
       /* Span for typewriter text  */
       color: $clr-primary-5;
       position: absolute;
-      margin-left: 10px;
+      margin-left: 0.5rem;
       font-weight: 700;
     }
 
     .header__description--typewriter > .txt {
       /* Cursor for typewriter text */
       border-right: 0.19rem solid chartreuse;
-      padding: 2.5px 0;
+      padding: 0.1875rem 0;
     }
   }
 
@@ -88,7 +88,7 @@ HEADER
     line-height: 1;
     position: fixed;
     top: 60%;
-    margin-left: 10px;
+    margin-left: 0.625rem;
     left: 0;
     transition: $transition;
 

@@ -30,7 +30,7 @@ NAVIGATION
   &__logo {
     font-size: 2rem;
     font-weight: 300;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     color: $clr-text;
     transition: $transition;
 
@@ -71,18 +71,18 @@ NAVIGATION
       display: inline-block;
       font-size: 1.1rem;
       padding: 0.8125rem 1.875rem 0.5938rem 1.875rem;
-      letter-spacing: 1.5px;
-      border-radius: 6px;
+      letter-spacing: 1px;
+      border-radius: 0.375rem;
 
       &:hover {
         background: #00eeff;
         color: rgb(71, 71, 71);
         transition: $transition;
-        box-shadow: 0 0 10px 2px #00eeff;
-        transform: translateY(-3px);
+        box-shadow: 0 0 0.625rem 0.125rem #00eeff;
+        transform: translateY(-0.1875rem);
 
         &:active {
-          transform: translateY(-1px);
+          transform: translateY(-0.0625rem);
         }
       }
     }
@@ -91,7 +91,7 @@ NAVIGATION
   &.scrolling-active {
     /* Scrolling Actice class for styles applied with JavaScript on Scroll  */
     background: #000105;
-    box-shadow: 0 2px 12px 1px $clr-primary-8;
+    box-shadow: 0 0.125rem 0.75rem 0.0625rem $clr-primary-8;
   }
 
   ////////////////////
@@ -121,7 +121,7 @@ NAVIGATION
     &__logo {
       font-size: 2rem;
       font-weight: 300;
-      letter-spacing: 1.5px;
+      letter-spacing: 2px;
       color: $clr-text;
       display: block;
       position: absolute;
@@ -154,14 +154,13 @@ NAVIGATION
 
         &:hover {
           text-shadow: 0.125rem 0.125rem 1.5625rem $clr-black;
-          transform: translateY(-3px) scale(1.25);
+          transform: translateY(-0.1875rem) scale(1.25);
           color: $clr-primary-5;
         }
 
         &:active {
-          // transform: translateY(-1px);
           text-shadow: 0.125rem 0.125rem 0.9375rem $clr-black;
-          transform: translateY(-1px) scale(1.225);
+          transform: translateY(-0.0625rem) scale(1.225);
         }
       }
     }

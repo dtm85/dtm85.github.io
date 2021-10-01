@@ -31,38 +31,38 @@
     display: block;
     font-size: 1rem;
     font-family: "Neo Tech";
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     padding: 1.5rem 2rem;
     border-radius: $radius;
     color: $clr-secondary;
     background-color: rgba($clr-white, 0.5);
     border: none;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid transparent;
+    border-top: 0.1875rem solid transparent;
+    border-bottom: 0.1875rem solid transparent;
     transition: $transition;
 
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba($clr-black, 0.1);
-      border-bottom: 3px solid $clr-primary-5;
+      border-bottom: 0.1875rem solid $clr-primary-5;
     }
 
     &:focus::target-text {
       position: relative;
-      top: 14px;
+      top: 0.875rem;
     }
 
     &:focus:invalid {
-      border-bottom: 3px solid $clr-invalid-1;
+      border-bottom: 0.1875rem solid $clr-invalid-1;
     }
 
     &:focus:valid {
-      border-bottom: 3px solid $clr-valid-1;
+      border-bottom: 0.1875rem solid $clr-valid-1;
     }
 
     &::-webkit-input-placeholder {
       position: relative;
-      top: 3px;
+      top: 0.1875rem;
       color: rgba($clr-secondary, 0.25);
     }
   }

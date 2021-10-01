@@ -26,9 +26,9 @@ PROJECTS
     justify-items: center;
     justify-content: center;
     background: $background-glass-container;
-    box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.702);
-    border: 1px solid $border-light-grey;
-    border-radius: 25px;
+    box-shadow: 0 0.125rem 0.5rem 0 rgba(31, 38, 135, 0.702);
+    border: 0.0625rem solid $border-light-grey;
+    border-radius: 1.5625rem;
     width: 100%;
     margin: 3rem auto;
     overflow: hidden;
@@ -56,7 +56,7 @@ PROJECTS
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 3.125rem;
     padding: 0 3rem 4rem 3rem;
     transition: $transition;
 
@@ -68,13 +68,13 @@ PROJECTS
   &__card {
     /* Project Card Wrapper GLOBAL */
     background: $background-card-dark-grey;
-    box-shadow: 0 2px 8px 0 $clr-secondary-dark-1;
-    border: 1px solid $border-light-grey;
-    border-radius: 25px;
+    box-shadow: 0 0.125rem 0.5rem 0 $clr-secondary-dark-1;
+    border: 0.0625rem solid $border-light-grey;
+    border-radius: 1.5625rem;
     position: relative;
     width: 100%;
-    width: 320px;
-    height: 450px;
+    width: 20rem;
+    height: 28.125rem;
     overflow: hidden;
     will-change: transform;
 
@@ -86,13 +86,13 @@ PROJECTS
       left: 0;
       width: 100%;
       height: 100%;
-      clip-path: circle(150px at 80% 20%);
+      clip-path: circle(9.375rem at 80% 20%);
       transition: 0.55s ease-in-out;
     }
 
     &:hover::before {
       /* Project Circle with Image of project on hover - Circle will move to the left GLOBAL */
-      clip-path: circle(300px at 80% -20%);
+      clip-path: circle(18.75rem at 80% -20%);
     }
 
     ////////////////////////////
@@ -178,26 +178,26 @@ PROJECTS
 
     &:hover .projects__project-content {
       /* Project Content moves up on Hover GLOBAL */
-      height: 225px;
+      height: 14.0625rem;
     }
 
     &:hover .projects__btn-container {
       /* Project Card Hover - Styling for View Projects Button on Hover - Transition Effect GLOBAL */
       opacity: 1;
-      transform: translateY(0px);
+      transform: translateY(0rem);
     }
 
     &:hover .projects__github-container {
       /* GitHub Icon Transition on Hover GLOBAL */
       opacity: 1;
-      transform: translateY(0px);
+      transform: translateY(0rem);
       transition-delay: 0.315s;
     }
 
     &:hover .projects__code-languages {
       /* Code Languages Container Transition on Hover GLOBAL */
       opacity: 1;
-      transform: translateY(0px);
+      transform: translateY(0rem);
       transition-delay: 0.45s;
     }
 
@@ -208,7 +208,7 @@ PROJECTS
       height: 100%;
       opacity: 0;
       transition: 0.85s ease-in-out;
-      transform: translateY(0px);
+      transform: translateY(0rem);
       background: radial-gradient(
         circle farthest-corner at 100% 100%,
         #d87f36 1%,
@@ -225,7 +225,7 @@ PROJECTS
       );
       opacity: 1;
       transition: 0.85s ease-in-out;
-      transform: translateY(-219px);
+      transform: translateY(-13.6875rem);
       z-index: -1;
     }
 
@@ -236,7 +236,7 @@ PROJECTS
       height: 100%;
       opacity: 0;
       transition: 0.85s ease-in-out;
-      transform: translateY(0px);
+      transform: translateY(0rem);
       background: radial-gradient(
         circle farthest-corner at 100% 100%,
         #12d564 1%,
@@ -253,7 +253,7 @@ PROJECTS
       );
       opacity: 1;
       transition: 0.85s ease-in-out;
-      transform: translateY(-219px);
+      transform: translateY(-13.6875rem);
       z-index: -1;
     }
 
@@ -264,7 +264,7 @@ PROJECTS
       height: 100%;
       opacity: 0;
       transition: 0.85s ease-in-out;
-      transform: translateY(0px);
+      transform: translateY(0rem);
       background: radial-gradient(
         circle farthest-corner at 100% 100%,
         #c69963 1%,
@@ -281,7 +281,7 @@ PROJECTS
       );
       opacity: 1;
       transition: 0.85s ease-in-out;
-      transform: translateY(-219px);
+      transform: translateY(-13.6875rem);
       z-index: -1;
     }
 
@@ -292,7 +292,7 @@ PROJECTS
       height: 100%;
       opacity: 0;
       transition: 0.85s ease-in-out;
-      transform: translateY(0px);
+      transform: translateY(0rem);
       background: radial-gradient(
         circle farthest-corner at 100% 100%,
         #55c57a 1%,
@@ -309,7 +309,7 @@ PROJECTS
       );
       opacity: 1;
       transition: 0.85s ease-in-out;
-      transform: translateY(-219px);
+      transform: translateY(-13.6875rem);
       z-index: -1;
     }
 
@@ -320,7 +320,7 @@ PROJECTS
       height: 100%;
       opacity: 0;
       transition: 0.85s ease-in-out;
-      transform: translateY(0px);
+      transform: translateY(0rem);
       background: radial-gradient(
         circle farthest-corner at 100% 100%,
         #e67e22 1%,
@@ -337,7 +337,7 @@ PROJECTS
       );
       opacity: 1;
       transition: 0.85s ease-in-out;
-      transform: translateY(-219px);
+      transform: translateY(-13.6875rem);
       z-index: -1;
     }
 
@@ -348,7 +348,7 @@ PROJECTS
       height: 100%;
       opacity: 0;
       transition: 0.85s ease-in-out;
-      transform: translateY(0px);
+      transform: translateY(0rem);
       background: radial-gradient(
         circle farthest-corner at 100% 100%,
         #eb2f64 1%,
@@ -365,7 +365,7 @@ PROJECTS
       );
       opacity: 1;
       transition: 0.85s ease-in-out;
-      transform: translateY(-219px);
+      transform: translateY(-13.6875rem);
       z-index: -1;
     }
 
@@ -376,7 +376,7 @@ PROJECTS
       height: 100%;
       opacity: 0;
       transition: 0.85s ease-in-out;
-      transform: translateY(0px);
+      transform: translateY(0rem);
       background: radial-gradient(
         circle farthest-corner at 100% 100%,
         #e9b949 1%,
@@ -393,7 +393,7 @@ PROJECTS
       );
       opacity: 1;
       transition: 0.85s ease-in-out;
-      transform: translateY(-219px);
+      transform: translateY(-13.6875rem);
       z-index: -1;
     }
 
@@ -404,7 +404,7 @@ PROJECTS
       height: 100%;
       opacity: 0;
       transition: 0.85s ease-in-out;
-      transform: translateY(0px);
+      transform: translateY(0rem);
       background: radial-gradient(
         circle farthest-corner at 100% 100%,
         #2caeba 1%,
@@ -421,7 +421,7 @@ PROJECTS
       );
       opacity: 1;
       transition: 0.85s ease-in-out;
-      transform: translateY(-219px);
+      transform: translateY(-13.6875rem);
       z-index: -1;
     }
 
@@ -432,7 +432,7 @@ PROJECTS
       height: 100%;
       opacity: 0;
       transition: 0.85s ease-in-out;
-      transform: translateY(0px);
+      transform: translateY(0rem);
       background: radial-gradient(
         circle farthest-corner at 100% 100%,
         #678e3e 1%,
@@ -449,7 +449,7 @@ PROJECTS
       );
       opacity: 1;
       transition: 0.85s ease-in-out;
-      transform: translateY(-219px);
+      transform: translateY(-13.6875rem);
       z-index: -1;
     }
   }
@@ -462,7 +462,7 @@ PROJECTS
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 100px;
+    height: 6.25rem;
     text-align: center;
     transition: 0.7s ease-in-out;
     z-index: 1;
@@ -485,36 +485,36 @@ PROJECTS
     margin-top: 1.5rem;
     opacity: 0;
     transition: 0.65s ease-in-out;
-    letter-spacing: 1.5px;
-    transform: translateY(110px);
+    letter-spacing: 2px;
+    transform: translateY(6.875rem);
   }
 
   &__view-project-btn {
     /* View Project Button Styling GLOBAL */
-    padding: 13px 20px 10px 20px;
+    padding: 0.8125rem 1.25rem 0.625rem 1.25rem;
     color: $clr-primary-5;
     background: $clr-button-background-grey-alt;
-    border-radius: 25px;
+    border-radius: 1.5625rem;
     transition: $transition;
 
     &:hover {
       /* View Projects Button Styling on Hover GLOBAL */
       background: $clr-primary-5;
       color: $clr-button-hover-text-grey-alt;
-      box-shadow: 0 0 10px 2px $clr-primary-5;
+      box-shadow: 0 0 0.625rem 0.125rem $clr-primary-5;
     }
   }
 
   &__github-container {
     /* GitHub Icon Layout GLOBAL */
-    margin-top: 30px;
+    margin-top: 1.875rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
     transition: 0.55s ease-in-out;
-    transform: translateY(100px);
+    transform: translateY(6.25rem);
   }
 
   &__github-link {
@@ -523,8 +523,8 @@ PROJECTS
 
   &__github-svg {
     /* GitHub Icon Styling GLOBAL */
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     color: $clr-text;
     transition: 0.4s ease-in-out;
 
@@ -537,34 +537,34 @@ PROJECTS
   &__code-languages {
     /* Code Languages Container GLOBAL */
     width: fit-content;
-    height: 50px;
-    margin: 55px 0 0 15px;
+    height: 3.125rem;
+    margin: 3.4375rem 0 0 0.9375rem;
     opacity: 0;
     transition: 0.5s ease-in-out;
-    transform: translateY(75px);
+    transform: translateY(4.6875rem);
   }
 
   &__html5-svg {
     /* HTML5 Icon Styling */
-    width: 17px;
-    height: 17px;
+    width: 1.0625rem;
+    height: 1.0625rem;
     color: $clr-html5;
-    margin: 0 5px;
+    margin: 0 0.3125rem;
   }
 
   &__css3-svg {
     /* CSS3 Icon Styling */
-    width: 17px;
-    height: 17px;
-    margin: 0 5px;
+    width: 1.0625rem;
+    height: 1.0625rem;
+    margin: 0 0.3125rem;
     color: $clr-css3;
   }
 
   &__js-svg {
     /* JavaScript Icon Styling */
-    width: 17px;
-    height: 18px;
-    margin: 0 5px;
+    width: 1.0625rem;
+    height: 1.125rem;
+    margin: 0 0.3125rem;
     color: $clr-js;
   }
 }

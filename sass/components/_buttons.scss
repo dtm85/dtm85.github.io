@@ -28,10 +28,10 @@ Navbar - Menu Button
   &--menu-burger {
     /* Menu Burger (Bars) Styling */
     width: 2rem;
-    height: 3.85px;
+    height: 3.8496px;
     background: $clr-primary-5;
-    border-radius: 5px;
-    box-shadow: 0 1px 4px 1px $clr-grey-6;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.0625rem 0.25rem 0.0625rem $clr-grey-6;
     transition: $transition;
 
     &::before,
@@ -40,40 +40,40 @@ Navbar - Menu Button
       content: "";
       position: absolute;
       width: 2rem;
-      height: 3.85px;
+      height: 3.8496px;
       background: $clr-primary-5;
-      border-radius: 5px;
-      box-shadow: 0 1px 4px 1px $clr-grey-6;
+      border-radius: 0.3125rem;
+      box-shadow: 0 0.0625rem 0.25rem 0.0625rem $clr-grey-6;
       transition: $transition;
     }
 
     &::before {
       /* Menu Bar Translate (Neg) */
-      transform: translateY(-11px);
+      transform: translateY(-0.6875rem);
     }
 
     &::after {
       /* Menu Bar Translate (Pos) */
-      transform: translateY(11px);
+      transform: translateY(0.6875rem);
     }
   }
 
   &.navbar__menu-btn.open .navbar__menu-btn--menu-burger {
     /* Menu.open class for JavaScript */
-    transform: translateX(35px);
+    transform: translateX(2.1875rem);
     background: transparent;
     box-shadow: none;
   }
 
   &.navbar__menu-btn.open .navbar__menu-btn--menu-burger::before {
     /* Menu bar rotate (pos) BEFORE & Color */
-    transform: rotate(45deg) translate(-25px, 25px);
+    transform: rotate(45deg) translate(-1.5625rem, 1.5625rem);
     background: #f29c9c;
   }
 
   &.navbar__menu-btn.open .navbar__menu-btn--menu-burger::after {
     /* Menu bar rotate (neg) AFTER & Color */
-    transform: rotate(-45deg) translate(-25px, -25px);
+    transform: rotate(-45deg) translate(-1.5625rem, -1.5625rem);
     background: #f29c9c;
   }
 
@@ -94,11 +94,11 @@ Navbar - Menu Button
   font-weight: 400;
   background: gray;
   color: $clr-primary;
-  padding: 13px 30px 9.5px 30px;
-  margin-top: 30px;
-  letter-spacing: 1.5px;
+  padding: 0.8125rem 1.875rem 0.5938rem 1.875rem;
+  margin-top: 1.875rem;
+  letter-spacing: 1px;
   transition: $transition;
-  border-radius: 6px;
+  border-radius: 0.375rem;
   outline: none;
   box-shadow: none;
 
@@ -112,11 +112,11 @@ Navbar - Menu Button
     color: rgb(71, 71, 71);
     transform: scale(1.05);
     transition: $transition;
-    box-shadow: 0 0 10px 2px #00eeff;
-    transform: translateY(-3px);
+    box-shadow: 0 0 0.625rem 0.125rem #00eeff;
+    transform: translateY(-0.1875rem);
 
     &:active {
-      transform: translateY(-1px);
+      transform: translateY(-0.0625rem);
     }
   }
 }
@@ -126,11 +126,11 @@ Navbar - Menu Button
   font-weight: 400;
   background: gray;
   color: $clr-primary;
-  padding: 13px 30px 9.5px 30px;
-  margin-top: 30px;
-  letter-spacing: 1.5px;
+  padding: 0.8125rem 1.875rem 0.5938rem 1.875rem;
+  margin-top: 1.875rem;
+  letter-spacing: 1px;
   transition: $transition;
-  border-radius: 6px;
+  border-radius: 0.375rem;
   outline: none;
   box-shadow: none;
 
@@ -142,7 +142,7 @@ Navbar - Menu Button
     letter-spacing: 3px;
     background: #00eeff;
     color: rgb(71, 71, 71);
-    transform: scale(1.05);
-    box-shadow: 0 0 10px 2px #00eeff;
+    transform: scale(1.15);
+    box-shadow: 0 0 0.625rem 0.125rem #00eeff;
   }
 }
