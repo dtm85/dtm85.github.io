@@ -5,9 +5,4 @@
     [sidebar-start] 5rem [sidebar-end full-start] minmax(3.75rem, 1fr)
     [center-start] repeat(8, [col-start] minmax(min-content, 8.75rem) [col-end])
     [center-end] minmax(3.75rem, 1fr) [full-end];
-
-  & > * {
-    padding: 2.5rem;
-    font-size: 1.875rem;
-  }
 }
