@@ -1,0 +1,29 @@
+%heading {
+  font-family: $ff-display;
+  font-weight: 400;
+}
+
+.heading-1 {
+  @extend %heading;
+}
+
+.heading-2 {
+  @extend %heading;
+}
+
+.heading-3 {
+  @extend %heading;
+}
+
+.heading-4 {
+  @extend %heading;
+  font-size: 1.1875rem;
+
+  &--light {
+    color: $clr-grey-light-1;
+  }
+
+  &--dark {
+    color: $clr-grey-dark-1;
+  }
+}

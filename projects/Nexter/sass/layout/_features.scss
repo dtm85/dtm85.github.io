@@ -2,6 +2,27 @@
   grid-column: center-start / center-end;
   margin: 15rem 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  // grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
   gap: 3.75rem;
+  align-items: start;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  row-gap: 0.9375rem;
+  column-gap: 1.5625rem;
+
+  &__icon {
+    grid-row: 1 / span 2;
+    fill: $clr-primary;
+    width: 2.8125rem;
+    height: 2.8125rem;
+    transform: translateY(-0.625rem);
+  }
+
+  &__text {
+    font-size: 1.0625rem;
+  }
 }
