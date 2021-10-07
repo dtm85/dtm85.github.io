@@ -59,6 +59,22 @@ body {
   color: #54483a;
 }
 
+.mb-sm {
+  margin-bottom: 1.25rem;
+}
+
+.mb-md {
+  margin-bottom: 1.875rem;
+}
+
+.mb-lg {
+  margin-bottom: 2.5rem;
+}
+
+.mb-hg {
+  margin-bottom: 5rem;
+}
+
 .btn {
   background-color: #c69963;
   color: #fff;
@@ -155,12 +171,26 @@ body {
 .story__content {
   background: #f9f7f6;
   grid-column: col-start 5 / full-end;
-  padding: 3.75rem 7.5rem;
+  padding: 3.75rem 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .story__text {
   font-size: 0.9375rem;
   font-style: italic;
+  margin-bottom: 2.5rem;
 }
 
 .container {
