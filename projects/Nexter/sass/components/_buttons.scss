@@ -1,0 +1,16 @@
+.btn {
+  background-color: $clr-primary;
+  color: $clr-white;
+  border: none;
+  border-radius: 0;
+  font-family: $ff-display;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  padding: 1.125rem 1.875rem;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    background-color: $clr-primary-dark;
+  }
+}
