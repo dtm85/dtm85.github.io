@@ -166,6 +166,29 @@ body {
 .story__pictures {
   background: #c69963;
   grid-column: full-start / col-end 4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.story__img--1 {
+  width: 100%;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  grid-row: 2 /6;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2 /6;
+}
+
+.story__img--2 {
+  width: 100%;
 }
 
 .story__content {
