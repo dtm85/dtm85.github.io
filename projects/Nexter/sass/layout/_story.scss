@@ -2,6 +2,11 @@
   &__pictures {
     background: $clr-primary;
     grid-column: full-start / col-end 4;
+    background-image: linear-gradient(
+        rgba($clr-primary, 0.5),
+        rgba($clr-primary, 0.5)
+      ),
+      url(/projects/Nexter/media/images/back.jpg);
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(6, 1fr);
@@ -12,10 +17,15 @@
     width: 100%;
     grid-row: 2 /6;
     grid-column: 2 /6;
+    box-shadow: 0 1.25rem 3.125rem rgba(#000, 0.2);
   }
 
   &__img--2 {
-    width: 100%;
+    width: 115%;
+    grid-row: 4 / 6;
+    grid-column: 4 / 7;
+    box-shadow: 0 1.25rem 3.125rem rgba(#000, 0.3);
+    z-index: 1;
   }
 
   &__content {

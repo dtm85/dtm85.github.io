@@ -166,6 +166,8 @@ body {
 .story__pictures {
   background: #c69963;
   grid-column: full-start / col-end 4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(198, 153, 99, 0.5)), to(rgba(198, 153, 99, 0.5))), url(/projects/Nexter/media/images/back.jpg);
+  background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(/projects/Nexter/media/images/back.jpg);
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (1fr)[6];
@@ -185,10 +187,21 @@ body {
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-column: 2 /6;
+  -webkit-box-shadow: 0 1.25rem 3.125rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1.25rem 3.125rem rgba(0, 0, 0, 0.2);
 }
 
 .story__img--2 {
-  width: 100%;
+  width: 115%;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4 / 6;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4 / 7;
+  -webkit-box-shadow: 0 1.25rem 3.125rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1.25rem 3.125rem rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .story__content {
