@@ -153,8 +153,27 @@ body {
 }
 
 .homes {
-  background: #101d2c;
   grid-column: center-start / center-end;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15.625rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+  gap: 4.375rem;
+  margin: 9.375rem 0;
+}
+
+.home {
+  background-color: #f9f7f6;
+}
+
+.home__img {
+  width: 100%;
+}
+
+.home__location svg, .home__rooms svg, .home__area svg, .home__price svg {
+  fill: #c69963;
+  height: 1.25rem;
+  width: 1.25rem;
 }
 
 .sidebar {
