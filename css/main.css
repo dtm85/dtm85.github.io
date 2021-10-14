@@ -1514,7 +1514,7 @@ PROJECTS
 
 .projects__card--project3::before {
   /* Project 3 Image for Circle */
-  background: url("/media/images/projects/`Under__Construction/code.jpg.webp") center/cover no-repeat;
+  background: url("/media/images/projects/Nexter/nexter.png.webp") center/cover no-repeat;
 }
 
 .projects__card--project4::before {
