@@ -1,9 +1,89 @@
 .header {
-  background: $clr-grey-dark-1;
   grid-column: full-start / col-end 6;
+  background-image: linear-gradient(
+      rgba($clr-secondary, 0.93),
+      rgba($clr-secondary, 0.93)
+    ),
+    url(/projects/Nexter/media/images/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 1fr min-content 3.75rem 1fr;
+  grid-template-columns: max-content;
+  row-gap: 0.9375rem;
+  padding: 5rem;
+  padding-top: 2.5rem;
+  justify-content: center;
+
+  &__logo {
+    height: 1.875rem;
+    justify-self: center;
+  }
+
+  &__btn {
+    align-self: start;
+    justify-self: start;
+  }
+
+  &__seenon-text {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 0.9375rem;
+    align-items: center;
+    font-size: 1rem;
+    color: $clr-grey-7;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: currentColor;
+    }
+  }
+
+  &__seenon-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.875rem;
+    justify-items: center;
+
+    img {
+      height: 1.5625rem;
+      filter: brightness(70%);
+    }
+  }
 }
 
 .realtors {
   background: $clr-secondary;
   grid-column: col-start 7 / full-end;
+  padding: 1.875rem;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  row-gap: 1.25rem;
+
+  &__list {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    column-gap: 1.25rem;
+    row-gap: 5vh;
+    align-items: center;
+    letter-spacing: 1px;
+  }
+
+  &__img {
+    width: 4.375rem;
+    border-radius: 50%;
+    display: block;
+  }
+
+  &__sold {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    color: $clr-grey-7;
+    margin-top: -3px;
+  }
 }
