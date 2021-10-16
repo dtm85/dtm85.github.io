@@ -7,10 +7,17 @@
         rgba($clr-primary, 0.5)
       ),
       url(/projects/Nexter/media/images/back.jpg);
+    background-size: cover;
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(6, 1fr);
     align-items: center;
+    transition: $transition;
+
+    @include respond(bp-medium-869) {
+      grid-column: 1 / -1;
+      padding: 60px;
+    }
   }
 
   &__img--1 {
@@ -18,6 +25,12 @@
     grid-row: 2 /6;
     grid-column: 2 /6;
     box-shadow: 0 1.25rem 3.125rem rgba(#000, 0.2);
+    transition: $transition;
+
+    @include respond(bp-medium-869) {
+      grid-column: 1 / 5;
+      grid-row: 1 / -1;
+    }
   }
 
   &__img--2 {
@@ -26,16 +39,27 @@
     grid-column: 4 / 7;
     box-shadow: 0 1.25rem 3.125rem rgba(#000, 0.3);
     z-index: 1;
+    transition: $transition;
+
+    @include respond(bp-medium-869) {
+      grid-row: 1 / -1;
+      width: 100%;
+    }
   }
 
   &__content {
     background: $clr-grey-light-1;
     grid-column: col-start 5 / full-end;
     padding: 3.75rem 8vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    display: grid;
+    align-content: center;
+    justify-items: start;
+    transition: $transition;
+
+    @include respond(bp-medium-869) {
+      grid-column: 1 / -1;
+      grid-row: 5 / 6;
+    }
   }
 
   &__text {

@@ -8,12 +8,21 @@
   background-size: cover;
   background-position: center;
   display: grid;
-  grid-template-rows: 1fr min-content 3.75rem 1fr;
-  grid-template-columns: max-content;
+  grid-template-rows: 1fr min-content minmax(3.75rem, min-content) 1fr;
+  grid-template-columns: minmax(min-content, max-content);
   row-gap: 0.9375rem;
   padding: 5rem;
   padding-top: 2.5rem;
   justify-content: center;
+  transition: $transition;
+
+  @include respond(bp-medium-869) {
+    grid-column: 1 / -1;
+  }
+
+  @include respond(bp-medium-650) {
+    padding: 3.125rem;
+  }
 
   &__logo {
     height: 1.875rem;
@@ -32,6 +41,7 @@
     align-items: center;
     font-size: 1rem;
     color: $clr-grey-7;
+    transition: $transition;
 
     &::before,
     &::after {
@@ -47,9 +57,11 @@
     grid-template-columns: repeat(4, 1fr);
     column-gap: 1.875rem;
     justify-items: center;
+    align-items: center;
 
     img {
-      height: 1.5625rem;
+      max-height: 1.5625rem;
+      max-width: 100%;
       filter: brightness(70%);
     }
   }
@@ -64,14 +76,31 @@
   justify-content: center;
   justify-items: center;
   row-gap: 1.25rem;
+  transition: $transition;
+
+  @include respond(bp-medium-869) {
+    grid-column: 1 / -1;
+  }
+
+  @include respond(bp-medium-650) {
+    padding: 3.125rem;
+  }
 
   &__list {
     display: grid;
-    grid-template-columns: min-content max-content;
     column-gap: 1.25rem;
     row-gap: 5vh;
     align-items: center;
     letter-spacing: 1px;
+    transition: $transition;
+
+    @include respond(bp-medium-869) {
+      grid-template-columns: repeat(3, min-content max-content);
+    }
+
+    @include respond(bp-medium-650) {
+      grid-template-columns: min-content max-content;
+    }
   }
 
   &__img {

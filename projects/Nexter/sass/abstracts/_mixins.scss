@@ -1,0 +1,113 @@
+/////////////////
+// BREAKPOINTS //
+/////////////////
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == bp-largest-1320 {
+    @media only screen and (max-width: 82.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-largest-1200 {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-large-1100 {
+    @media only screen and (max-width: 68.75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-large-1050 {
+    @media only screen and (max-width: 65.625em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-large-1000 {
+    @media only screen and (max-width: 62.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-medium-950 {
+    @media only screen and (max-width: 59.375em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-medium-900 {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-medium-869 {
+    @media only screen and (max-width: 54.313em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-medium-767-maxwidth {
+    @media only screen and (max-width: 47.938em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-medium-768-minwidth {
+    @media only screen and (min-width: 48em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-medium-650 {
+    @media only screen and (max-width: 40.625em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-medium-672 {
+    @media only screen and (max-width: 42em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-medium-600 {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-small-560 {
+    @media only screen and (max-width: 35em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-small-500 {
+    @media only screen and (max-width: 31.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-small-450 {
+    @media only screen and (max-width: 28.125em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-small-428 {
+    @media only screen and (max-width: 26.75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-small-418 {
+    @media only screen and (max-width: 26.125em) {
+      @content;
+    }
+  }
+}

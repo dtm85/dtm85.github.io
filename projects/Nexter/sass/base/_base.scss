@@ -10,9 +10,20 @@ html {
   box-sizing: border-box;
   overflow: overlay;
   overflow-x: hidden;
+  transition: $transition;
 
   // Font Size set to 100% for html to use with media quries
   font-size: 100%;
+
+  @include respond(bp-largest-1200) {
+    // width < 1200px?
+    font-size: 93.75%;
+  }
+
+  @include respond(bp-large-1050) {
+    // width < 1050px?
+    font-size: 87.5%;
+  }
 }
 
 body {
