@@ -359,8 +359,8 @@ body {
 
 .header {
   grid-column: full-start / col-end 6;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 29, 44, 0.93)), to(rgba(16, 29, 44, 0.93))), url(/projects/Nexter/media/images/hero.jpeg);
-  background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(/projects/Nexter/media/images/hero.jpeg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 29, 44, 0.93)), to(rgba(16, 29, 44, 0.93))), url(/projects/Nexter/media/images/hero.jpeg.webp);
+  background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(/projects/Nexter/media/images/hero.jpeg.webp);
   background-size: cover;
   background-position: center;
   display: -ms-grid;
@@ -691,8 +691,8 @@ body {
 .story__pictures {
   background: #c69963;
   grid-column: full-start / col-end 4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(198, 153, 99, 0.5)), to(rgba(198, 153, 99, 0.5))), url(/projects/Nexter/media/images/back.jpg);
-  background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(/projects/Nexter/media/images/back.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(198, 153, 99, 0.5)), to(rgba(198, 153, 99, 0.5))), url(/projects/Nexter/media/images/back.jpg.webp);
+  background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(/projects/Nexter/media/images/back.jpg.webp);
   background-size: cover;
   display: -ms-grid;
   display: grid;
