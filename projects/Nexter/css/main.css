@@ -79,6 +79,10 @@ body {
   color: #54483a;
 }
 
+.mb-xsm {
+  margin-bottom: 0.75rem;
+}
+
 .mb-sm {
   margin-bottom: 1.25rem;
 }
@@ -353,10 +357,6 @@ body {
      object-fit: cover;
 }
 
-.gallery > * {
-  width: 100%;
-}
-
 .header {
   grid-column: full-start / col-end 6;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 29, 44, 0.93)), to(rgba(16, 29, 44, 0.93))), url(/projects/Nexter/media/images/hero.jpeg.webp);
@@ -483,6 +483,9 @@ body {
 .realtors__list {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: min-content max-content;
+      grid-template-columns: -webkit-min-content -webkit-max-content;
+      grid-template-columns: min-content max-content;
   -webkit-column-gap: 1.25rem;
           column-gap: 1.25rem;
   row-gap: 5vh;
