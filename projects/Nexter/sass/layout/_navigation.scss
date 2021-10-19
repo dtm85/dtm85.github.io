@@ -4,6 +4,7 @@
   grid-row: 1 / -1;
   display: flex;
   justify-content: center;
+  transition: $transition;
 
   @include respond(bp-large-1050) {
     grid-column: 1 / -1;

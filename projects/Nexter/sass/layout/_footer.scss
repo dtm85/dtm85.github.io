@@ -9,6 +9,7 @@
     grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr));
     gap: 1.25rem;
     align-items: center;
+    transition: $transition;
 
     &__link:link,
     &__link:visited {
