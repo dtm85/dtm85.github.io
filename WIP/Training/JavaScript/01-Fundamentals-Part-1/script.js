@@ -83,9 +83,21 @@ const averageAge = (ageDan + ageSarah) / 2;
 console.log(ageDan, ageSarah, averageAge);
 */
 
-const markMass = 78;
-const markHeight = 1.69;
-const johnMass = 95;
+// const markMass = 78;
+// const markHeight = 1.69;
+// const johnMass = 92;
+// const johnHeight = 1.95;
+
+const markMass = 95;
+const markHeight = 1.88;
+const johnMass = 85;
 const johnHeight = 1.76;
 
-console.log((markMass + johnMass / markHeight + johnHeight) ** 2);
+const markBMI = markMass / markHeight ** 2;
+console.log(markBMI);
+
+const johmBMI = johnMass / johnHeight ** 2;
+console.log(johmBMI);
+
+const markHigherBMI = markBMI > johmBMI;
+console.log(markHigherBMI);
