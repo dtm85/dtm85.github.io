@@ -81,7 +81,6 @@ console.log(x, y);
 
 const averageAge = (ageDan + ageSarah) / 2;
 console.log(ageDan, ageSarah, averageAge);
-*/
 
 // const markMass = 78;
 // const markHeight = 1.69;
@@ -101,3 +100,16 @@ console.log(johmBMI);
 
 const markHigherBMI = markBMI > johmBMI;
 console.log(markHigherBMI);
+*/
+
+const firstName = "Dan";
+const job = "Full Stack Developer";
+const birthYear = 1985;
+const year = 2021;
+
+const dan =
+  "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
+console.log(dan);
+
+const danNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(danNew);
