@@ -79,6 +79,9 @@ let x, y;
 x = y = 25 - 10 - 5; // x= y = 10, x = 10
 console.log(x, y);
 
+///////////////
+//  AVERAGE  //
+///////////////
 const averageAge = (ageDan + ageSarah) / 2;
 console.log(ageDan, ageSarah, averageAge);
 
@@ -206,4 +209,28 @@ if (favorite === 7) {
 }
 
 if (favorite !== 7) console.log("Why not 7?");
+
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision) {
+//   console.log("Sharah is able to drive!");
+// } else {
+//   console.log("Someone else should drive...");
+// }
+
+const isTired = false; // C
+
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log("Sharah is able to drive!");
+} else {
+  console.log("Someone else should drive...");
+}
 */

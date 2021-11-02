@@ -27,3 +27,31 @@ if (markBMI >= johmBMI) {
   console.log(`John's BMI (${johmBMI}) is higher than Mark's BMI (${markBMI})`);
 }
 */
+
+// Average Score (Dolphins)
+const averageScoreDolphins = (96 + 108 + 89) / 2;
+// console.log(averageScoreDolphins);
+
+// Average Score (Koalas)
+const averageScoreKoalas = (88 + 91 + 110) / 2;
+// console.log(averageScoreKoalas);
+
+// Dolphins
+const winDolphins = averageScoreDolphins > averageScoreKoalas;
+
+// Koalas
+const winKoalas = console.log("Koalas Win!");
+
+if (averageScoreDolphins > averageScoreKoalas) {
+  console.log("Dolphins Win!");
+} else {
+  console.log("Koalas Win!");
+}
+if (averageScoreDolphins === averageScoreKoalas) {
+  console.log("Its a tie!");
+}
+
+// const greaterThan100 = (
+//   if (averageScoreDolphins && averageScoreKoalas >= 100)
+//   console.log()
+// )
