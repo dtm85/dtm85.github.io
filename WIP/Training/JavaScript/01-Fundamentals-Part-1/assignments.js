@@ -103,4 +103,11 @@ if (
 } else {
   console.log("Nobody Wins! 😕");
 }
+
+const bill1 = 275
+const bill2 = 40
+const bill3 = 430
+
+const tip = bill1 * .2 
+console.log(`The bill was ${}, the tip was ${} and the total value was ${}`);
 */
