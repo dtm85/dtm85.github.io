@@ -1,7 +1,10 @@
-*.DS_Store
-WIP/.DS_Store
-projects/Natours/node_modules
-projects/Trillo/node_modules
-projects/Nexter/node_modules
-WIP/dtm_v2/index.html
-WIP/.DS_Store
+**/.DS_Store
+.DS_Store
+/.DS_Store
+/WIP/.DS_Store
+/WIP/Training/.DS_Store
+/WIP/Training/JavaScript/.DS_Store
+/WIP/Training/JavaScript/02-Fundamentals-Part-2/.DS_Store
+/projects/Natours/node_modules
+/projects/Trillo/node_modules
+/projects/Nexter/node_modules
