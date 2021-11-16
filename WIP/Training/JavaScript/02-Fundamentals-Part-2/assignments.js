@@ -32,3 +32,22 @@ scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);
 */
+
+const bill = 275;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`
+);
+
+const calcTip = function (checkTip) {
+  if (bills >= 2 * avgKoalas) {
+    console.log(`Dolphins win 🏆 (${avgDolhins} vs. ${avgKoalas})`);
+  } else if (avgKoalas >= 2 * avgDolhins) {
+    console.log(`Koalas win 🏆 (${avgKoalas} vs. ${avgDolhins})`);
+  } else {
+    console.log(`No team wins...😕`);
+  }
+};
+const bills = [125, 555, 44];
+const tips = [125, 555, 44];
+const total = [125, 555, 44];
