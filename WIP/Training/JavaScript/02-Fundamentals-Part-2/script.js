@@ -177,3 +177,19 @@ if (friends.includes("Steven")) {
   console.log(`You have a friend called Steven`);
 }
 */
+
+const danArray = [
+  "Dan",
+  "Dumitru",
+  "2037 - 1991",
+  "Web Dev",
+  ["Michael", "Peter", "Steven"],
+];
+
+const dan = {
+  firstName: "Dan",
+  lastName: "Dumitru",
+  age: 2037 - 1991,
+  job: "Web Developer",
+  friends: ["Michael", "Peter", "Steven"],
+};
