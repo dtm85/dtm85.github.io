@@ -176,7 +176,6 @@ console.log(friends.includes(23));
 if (friends.includes("Steven")) {
   console.log(`You have a friend called Steven`);
 }
-*/
 
 const danArray = [
   "Dan",
@@ -193,3 +192,36 @@ const dan = {
   job: "Web Developer",
   friends: ["Michael", "Peter", "Steven"],
 };
+console.log(dan);
+
+console.log(dan.lastName);
+console.log(dan["lastName"]);
+
+const nameKey = "Name";
+console.log(dan["first" + nameKey]);
+console.log(dan["last" + nameKey]);
+
+// console.log(dan."last" + nameKey)
+
+const interesteIN = prompt(
+  "What do you want to know about Dan? Choose between firstName, lastName, age, job and friends"
+);
+
+console.log(dan[interesteIN]);
+
+if (dan[interesteIN]) {
+  console.log(dan[interesteIN]);
+} else {
+  console.log(`This value doesn't exist, try again!`);
+}
+
+dan.location = "Salem, OR";
+dan["twitter"] = "@DanTechMedia";
+console.log(dan);
+
+// Challenge
+// "Dan has 3 friends, and his best friend is called Michael"
+console.log(
+  `${dan.firstName} has ${dan.friends.length}, and his best friend is called ${dan.friends[0]}`
+);
+*/
