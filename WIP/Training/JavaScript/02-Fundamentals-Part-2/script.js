@@ -224,4 +224,47 @@ console.log(dan);
 console.log(
   `${dan.firstName} has ${dan.friends.length}, and his best friend is called ${dan.friends[0]}`
 );
+
+const dan = {
+  firstName: "Dan",
+  lastName: "Dumitru",
+  birthYear: 1991,
+  job: "Web Developer",
+  friends: ["Michael", "Peter", "Steven"],
+  hasDriversLicense: true,
+
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // },
+
+  // calcAge: function () {
+  //   console.log(this);
+  //   return 2037 - this.birthYear;
+  // },
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return console.log(
+      `${this.firstName} ${
+        this.lastName
+      } is ${this.calcAge()} and is a successful ${this.job} with ${
+        this.friends.length
+      } friends - ${this.friends[0]}, ${this.friends[1]} and ${
+        this.friends[2]
+      }. He also has ${this.hasDriversLicense ? "a" : "no"} driver's license!`
+    );
+  },
+};
+
+console.log(dan.calcAge());
+
+console.log(dan.age);
+console.log(dan.age);
+console.log(dan.age);
+
+console.log(dan.getSummary());
 */

@@ -51,3 +51,53 @@ const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
 console.log(bills, tips, totals);
 */
+
+// const markMass = 78;
+// const markHeight = 1.69;
+
+// const markBMI = markMass / markHeight ** 2;
+
+const markData = {
+  firstName: "Mark",
+  lastName: "Miller",
+  mass: 78,
+  height: 1.69,
+  // bmi: markData.mass / markData.height ** 2,
+
+  calcBMIMark: function () {
+    const bmiMark = this.mass / this.height ** 2;
+    return bmiMark;
+  },
+};
+
+console.log(markData.calcBMIMark());
+
+// const johnMass = 92;
+// const johnHeight = 1.95;
+
+// const johmBMI = johnMass / johnHeight ** 2;
+
+const johnData = {
+  firstName: "John",
+  lastName: "Smith",
+  mass: 92,
+  height: 1.95,
+  // bmi: mass / height ** 2,
+
+  calcBMIJohn: function () {
+    const bmiJohn = this.mass / this.height ** 2;
+    return bmiJohn;
+  },
+};
+
+console.log(johnData.calcBMIJohn());
+
+if (markData.calcBMIMark > johnData.calcBMIJohn) {
+  console.log(
+    `${markData.firstName} ${markData.lastName} BMI ${markData.calcBMIMark} is higher than ${johnData.firstName} ${johnData.lastName} BMI ${johnData.calcBMIJohn}`
+  );
+} else {
+  console.log(
+    `${johnData.firstName} ${johnData.lastName} BMI ${johnData.calcBMIMark} is higher than ${markData.firstName} ${markData.lastName} BMI ${markData.calcBMIJohn}`
+  );
+}
