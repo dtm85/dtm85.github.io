@@ -50,7 +50,6 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
 console.log(bills, tips, totals);
-*/
 
 // const markMass = 78;
 // const markHeight = 1.69;
@@ -62,15 +61,15 @@ const markData = {
   lastName: "Miller",
   mass: 78,
   height: 1.69,
-  // bmi: markData.mass / markData.height ** 2,
 
-  calcBMIMark: function () {
-    const bmiMark = this.mass / this.height ** 2;
-    return bmiMark;
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
   },
 };
 
-console.log(markData.calcBMIMark());
+markData.calcBMI();
+console.log(markData.bmi);
 
 // const johnMass = 92;
 // const johnHeight = 1.95;
@@ -82,22 +81,23 @@ const johnData = {
   lastName: "Smith",
   mass: 92,
   height: 1.95,
-  // bmi: mass / height ** 2,
 
-  calcBMIJohn: function () {
-    const bmiJohn = this.mass / this.height ** 2;
-    return bmiJohn;
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
   },
 };
 
-console.log(johnData.calcBMIJohn());
+johnData.calcBMI();
+console.log(johnData.bmi);
 
-if (markData.calcBMIMark > johnData.calcBMIJohn) {
+if (markData.bmi > johnData.bmi) {
   console.log(
-    `${markData.firstName} ${markData.lastName} BMI ${markData.calcBMIMark} is higher than ${johnData.firstName} ${johnData.lastName} BMI ${johnData.calcBMIJohn}`
+    `${markData.firstName} ${markData.lastName}'s BMI (${markData.bmi}) is higher than ${johnData.firstName} ${johnData.lastName}'s BMI (${johnData.bmi})`
   );
-} else {
+} else if (johnData.bmi > markData.bmi) {
   console.log(
-    `${johnData.firstName} ${johnData.lastName} BMI ${johnData.calcBMIMark} is higher than ${markData.firstName} ${markData.lastName} BMI ${markData.calcBMIJohn}`
+    `${johnData.firstName} ${johnData.lastName}'s BMI (${johnData.bmi}) is higher than ${markData.firstName} ${markData.lastName}'s BMI (${markData.bmi})`
   );
 }
+*/
