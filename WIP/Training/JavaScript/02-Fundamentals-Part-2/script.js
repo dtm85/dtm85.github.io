@@ -283,7 +283,6 @@ console.log(dan.getSummary());
 for (let rep = 1; rep <= 10; rep++) {
   console.log(`lifting weights repetition ${rep} 🏋️‍♀️`);
 }
-*/
 
 const danArray = [
   "Dan",
@@ -328,3 +327,32 @@ for (let i = 0; i < danArray.length; i++) {
 
   console.log(danArray[i], typeof danArray[i]);
 }
+
+const danArray = [
+  "Dan",
+  "Dumitru",
+  2037 - 1991,
+  "Web Dev",
+  ["Michael", "Peter", "Steven"],
+  true,
+];
+
+// 0, 1, ..., 4
+// 4, 3, 2, 1, 0
+
+for (let i = danArray.length - 1; i >= 0; i--) {
+  console.log(i, danArray[i]);
+}
+
+for (let exercise = 1; exercise <= 3; exercise++) {
+  console.log(`-------- Starting Exercise ${exercise}`);
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${exercise}: Lifting Weight Repetion ${rep} 🏋️‍♀️`);
+  }
+}
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting Weights Repetition ${rep} 🏋️‍♀️`);
+}
+*/
