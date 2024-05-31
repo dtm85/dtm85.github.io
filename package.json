@@ -17,6 +17,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "concat": "^1.0.3",
+    "live-server": "^1.2.2",
     "node-sass": "^9.0.0",
     "postcss-cli": "^11.0.0"
   }
